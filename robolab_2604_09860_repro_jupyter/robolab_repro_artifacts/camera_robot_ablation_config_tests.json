@@ -1,0 +1,318 @@
+{
+  "type": "config_level_ablation_test",
+  "boundary": "No Isaac Sim run was launched. SSH to robolab4090 failed with Permission denied in this local session.",
+  "baseline": {
+    "env_cfg": "C:\\Users\\robot\\Documents\\成长学习库\\robolab_2604_09860_repro_jupyter\\remote_outputs\\pi05_banana_full_20260620_015206\\env_cfg.json",
+    "task": "BananaInBowlTask",
+    "policy": "pi05",
+    "instruction": "Pick up the banana and place it in the bowl",
+    "image_observation_terms": [
+      "over_shoulder_left_camera",
+      "wrist_cam"
+    ],
+    "proprio_observation_terms": [
+      "arm_joint_pos",
+      "ee_pos",
+      "ee_quat",
+      "eef_pos",
+      "eef_quat",
+      "gripper_pos"
+    ],
+    "policy_cameras": [
+      {
+        "name": "over_shoulder_left_camera",
+        "prim_path": "/World/envs/env_.*/over_shoulder_left_camera",
+        "offset": {
+          "pos": [
+            0.05,
+            0.57,
+            0.66
+          ],
+          "rot": [
+            -0.393,
+            -0.195,
+            0.399,
+            0.805
+          ],
+          "convention": "opengl"
+        },
+        "width": 1280,
+        "height": 720,
+        "focal_length": 2.1,
+        "horizontal_aperture": 5.376,
+        "vertical_aperture": 3.024
+      },
+      {
+        "name": "wrist_cam",
+        "prim_path": "/World/envs/env_.*/robot/Gripper/Robotiq_2F_85/base_link/wrist_cam",
+        "offset": {
+          "pos": [
+            0.011,
+            -0.031,
+            -0.074
+          ],
+          "rot": [
+            -0.42,
+            0.57,
+            0.576,
+            -0.409
+          ],
+          "convention": "opengl"
+        },
+        "width": 1280,
+        "height": 720,
+        "focal_length": 2.8,
+        "horizontal_aperture": 5.376,
+        "vertical_aperture": 3.024
+      }
+    ],
+    "viewport_camera": {
+      "name": "egocentric_mirrored_camera",
+      "prim_path": "/World/envs/env_.*/egocentric_mirrored_camera",
+      "offset": {
+        "pos": [
+          1.5,
+          0.0,
+          1.0
+        ],
+        "rot": [
+          0.653,
+          0.271,
+          0.271,
+          0.653
+        ],
+        "convention": "opengl"
+      },
+      "width": 864,
+      "height": 480,
+      "focal_length": 24.0,
+      "horizontal_aperture": 20.955,
+      "vertical_aperture": 15.29
+    },
+    "viewer": {
+      "eye": [
+        1.5,
+        0.0,
+        1.0
+      ],
+      "lookat": [
+        0.2,
+        0.0,
+        0.0
+      ],
+      "cam_prim_path": "/OmniverseKit_Persp",
+      "resolution": [
+        1280,
+        720
+      ],
+      "origin_type": "world",
+      "env_index": 0,
+      "asset_name": null,
+      "body_name": null
+    },
+    "robot": {
+      "usd_path": "/home/yjl/codex_robolab_4090_20260619/RoboLab/assets/robots/franka_robotiq_2f_85_flattened.usd",
+      "init_joint_pos_keys": [
+        "finger_joint",
+        "left_inner.*",
+        "panda_joint1",
+        "panda_joint2",
+        "panda_joint3",
+        "panda_joint4",
+        "panda_joint5",
+        "panda_joint6",
+        "panda_joint7",
+        "right_inner.*",
+        "right_outer.*"
+      ],
+      "body_action_joints": [
+        "panda_joint.*"
+      ],
+      "gripper_action_joints": [
+        "finger_joint"
+      ],
+      "frame_root": "/World/envs/env_.*/robot/panda_link0",
+      "target_frame_names": [
+        "panda_link0",
+        "panda_link1",
+        "panda_link2",
+        "panda_link3",
+        "panda_link4",
+        "panda_link5",
+        "panda_link6",
+        "panda_link7",
+        "gripper_base",
+        "eef_frame"
+      ]
+    },
+    "baseline_success": true,
+    "baseline_score": 1.0,
+    "baseline_episode_step": 178
+  },
+  "experiment_matrix": [
+    {
+      "id": "baseline_pi05_banana",
+      "question": "默认相机与默认 Franka+Robotiq 下的参考成绩。",
+      "runnable_without_adapter": true,
+      "expected_effect": "作为 sanity baseline；既有结果 success=True, score=1.0。"
+    },
+    {
+      "id": "external_camera_small_angle_sweep",
+      "question": "调整外部/肩部相机角度会如何？",
+      "runnable_without_adapter": true,
+      "config_surface": "scene.over_shoulder_left_camera.offset.pos/rot",
+      "suggested_variants": [
+        {
+          "name": "default",
+          "pos": [
+            0.05,
+            0.57,
+            0.66
+          ]
+        },
+        {
+          "name": "higher",
+          "pos": [
+            0.05,
+            0.57,
+            0.76
+          ]
+        },
+        {
+          "name": "lower",
+          "pos": [
+            0.05,
+            0.57,
+            0.56
+          ]
+        },
+        {
+          "name": "left_shift",
+          "pos": [
+            0.05,
+            0.67,
+            0.66
+          ]
+        },
+        {
+          "name": "right_shift",
+          "pos": [
+            0.05,
+            0.47,
+            0.66
+          ]
+        }
+      ],
+      "expected_effect": "小角度通常能启动，但会改变物体投影、遮挡和深度线索；Pi05 若依赖 DROID 风格视角，成功率和步数可能变差。"
+    },
+    {
+      "id": "remove_wrist_camera_hard",
+      "question": "取消腕部相机会如何？",
+      "runnable_without_adapter": false,
+      "config_surface": "scene.wrist_cam + observations.image_obs.wrist_cam",
+      "expected_effect": "硬删除会破坏 Pi05 image observation 合约，客户端/请求侧大概率直接缺 key，而不是得到一个公平的性能分数。"
+    },
+    {
+      "id": "wrist_camera_blackout_soft",
+      "question": "保留腕部相机 key，但把图像置黑会如何？",
+      "runnable_without_adapter": false,
+      "needs_patch": "Pi05 observation adapter 中对 wrist_cam 做 zero-image 或 last-frame mask。",
+      "expected_effect": "这是更公平的腕部相机消融：程序仍可跑，但近距离抓取、遮挡恢复、放置精度预计下降。"
+    },
+    {
+      "id": "robot_usd_only_swap",
+      "question": "只替换机器人 USD 会如何？",
+      "runnable_without_adapter": false,
+      "config_surface": "scene.robot.spawn.usd_path",
+      "expected_effect": "只换 USD 会保留 panda_joint/finger_joint/eef_frame 等旧合约，通常会在动作、frame、接触传感器或腕部相机路径上失败。"
+    },
+    {
+      "id": "robot_full_adapter_swap",
+      "question": "完整替换机器人会如何？",
+      "runnable_without_adapter": false,
+      "needs_patch": "robot cfg、action space、frame transformer、gripper/contact sensors、wrist camera mount、policy action adapter 全部同步。",
+      "expected_effect": "这才是有效的跨机器人实验；否则测到的是配置不兼容，不是策略泛化。"
+    }
+  ],
+  "tests": [
+    {
+      "name": "baseline_has_two_pi05_policy_cameras",
+      "passed": true,
+      "details": [
+        "over_shoulder_left_camera",
+        "wrist_cam"
+      ]
+    },
+    {
+      "name": "baseline_wrist_camera_is_mounted_on_robot",
+      "passed": true,
+      "details": "/World/envs/env_.*/robot/Gripper/Robotiq_2F_85/base_link/wrist_cam"
+    },
+    {
+      "name": "baseline_uses_franka_action_contract",
+      "passed": true,
+      "details": {
+        "usd_path": "/home/yjl/codex_robolab_4090_20260619/RoboLab/assets/robots/franka_robotiq_2f_85_flattened.usd",
+        "init_joint_pos_keys": [
+          "finger_joint",
+          "left_inner.*",
+          "panda_joint1",
+          "panda_joint2",
+          "panda_joint3",
+          "panda_joint4",
+          "panda_joint5",
+          "panda_joint6",
+          "panda_joint7",
+          "right_inner.*",
+          "right_outer.*"
+        ],
+        "body_action_joints": [
+          "panda_joint.*"
+        ],
+        "gripper_action_joints": [
+          "finger_joint"
+        ],
+        "frame_root": "/World/envs/env_.*/robot/panda_link0",
+        "target_frame_names": [
+          "panda_link0",
+          "panda_link1",
+          "panda_link2",
+          "panda_link3",
+          "panda_link4",
+          "panda_link5",
+          "panda_link6",
+          "panda_link7",
+          "gripper_base",
+          "eef_frame"
+        ]
+      }
+    },
+    {
+      "name": "external_camera_sweep_preserves_pi05_contract",
+      "passed": true,
+      "details": "只改 over_shoulder_left_camera offset，不删除 observation term。"
+    },
+    {
+      "name": "hard_remove_wrist_breaks_pi05_contract_as_expected",
+      "passed": true,
+      "details": [
+        "over_shoulder_left_camera"
+      ]
+    },
+    {
+      "name": "robot_usd_only_swap_still_has_old_franka_contract",
+      "passed": true,
+      "details": "说明只换 USD 不够；action/frame/camera/contact 仍是 Franka 合约。"
+    },
+    {
+      "name": "baseline_success_record_is_available",
+      "passed": true,
+      "details": {
+        "success": true,
+        "score": 1.0,
+        "episode_step": 178
+      }
+    }
+  ],
+  "passed": true
+}

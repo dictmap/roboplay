@@ -5730,6 +5730,8 @@ def main() -> None:
 - `EXPLAIN_14_deep_runtime_code_chain.md`：精讲14补充深挖版，把源码主干继续拆成输入、处理、输出、状态边界、故障路由和证据归档，重点讲透 `runner -> episode -> client -> Pi05 server -> env/world -> event -> HDF5 -> summarize -> dashboard`，已内嵌进 notebook，并配有运行链路覆盖轻量测试用例。
 - `EXPLAIN_15_reviewer_synthesis.md`：全文总梳理与审稿人视角精讲，覆盖贡献、优点、主要问题、优化点和未来创新方向，已内嵌进 notebook，并配有 reviewer rubric 轻量测试用例。
 - `EXPLAIN_16_recommended_reading.md`：基于 RoboLab 的推荐阅读与开源学习路线，已改成 2026-first：优先补 RoboLab、RoboCasa365、RDT2、GR00T N1.7、Isaac Lab-Arena、Lightwheel LW-BenchHub、Lyra 和 NVIDIA 2026 Physical AI stack；BEHAVIOR/DROID/OpenVLA/Octo/ReKep 等降级为基础背景，已内嵌进 notebook，并配有 reading map 轻量测试用例。
+- `EXPERIMENT_17_camera_robot_ablation.md`：实验拓展，分析外部相机角度、取消/遮蔽腕部相机、替换机器人三类消融的原理、可运行边界、真实 4090 测试矩阵和风险。
+- `robolab_repro_artifacts/camera_robot_ablation_config_tests.json`：基于真实 Pi05 `env_cfg.json` 的配置级测试结果；验证 baseline 相机/机器人合约、硬删腕部相机的 schema 风险、只换机器人 USD 的无效性。
 - `COMPLETE_REPRO_pi05_banana_20260620.md`：Pi05 / BananaInBowlTask 成功闭环记录，已内嵌进 notebook。
 - `COMPLEX_TASKS_pi05_20260620.md`：Pi05 三个复杂任务抽样复现记录，已内嵌进 notebook。
 - `remote_logs/`：2026-06-19 远端 RTX 4090 实测证据，包含安装日志、依赖版本、资产下载日志、no-policy smoke 日志和 episode 输出。
