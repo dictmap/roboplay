@@ -1477,7 +1477,7 @@ def main() -> None:
             """
             ## 0.14 论文精讲：论文实验总览与 Algorithm 1
 
-            下面这节来自本目录的 [EXPLAIN_08_paper_experiments.md](./EXPLAIN_08_paper_experiments.md)，对应论文中的实验体系：RoboLab-120 策略评测、细粒度能力分析、扰动敏感性、真实世界相关性、场景生成质量、任务生成质量，以及你截图里的 Algorithm 1 Spatial Constraint Solver。
+            下面这节来自本目录的 [EXPLAIN_08_paper_experiments.md](./EXPLAIN_08_paper_experiments.md)，对应论文中的实验体系：RoboLab-120 策略评测、细粒度能力分析、扰动敏感性、真实世界相关性、场景生成质量、任务生成质量，以及你截图里的 Algorithm 1 Spatial Constraint Solver。本次已加深为“实验地图 + 证据链”：补充 success/score/event/trajectory 的职责差异、主表能力画像读法、场景生成质量表和 task generation judge 六维、以及 4090 上可承受的小论文矩阵。
             """
         ),
         md_file("EXPLAIN_08_paper_experiments.md"),
@@ -1735,6 +1735,69 @@ def main() -> None:
                 "task_generation": ["alignment", "clarity", "feasibility", "match", "coverage"],
             }
 
+            evidence_contract = {
+                "success": "binary final completion; good for leaderboard but too coarse alone",
+                "score": "graded subtask/event completion; separates partial completion from total failure",
+                "event_log": "diagnostic failure evidence such as wrong object, drop, hit, tipped, out of scene",
+                "trajectory": "SPARC, speed, and path length for motion quality",
+                "artifacts": ["episode_results.jsonl", "run_<idx>.hdf5", "log_<run>_env<id>.json", "mp4"],
+            }
+
+            scene_generation_eval_schema = {
+                "VQA": "render/text consistency and visual recognizability",
+                "Real": "realism of the tabletop scene",
+                "Func": "whether the scene supports manipulation",
+                "Lay": "natural and structured layout",
+                "Compl": "scene completeness",
+                "Qual": "overall quality",
+                "Pref": "paired GPT preference against baseline",
+            }
+
+            task_generation_judge_dimensions = {
+                "relation_match": "spatial/logical relation is preserved",
+                "target_match": "goal state matches the instruction",
+                "object_match": "referenced objects are correct",
+                "quantifier_match": "all/any/count semantics match",
+                "clarity": "instruction is unambiguous",
+                "feasibility": "task is physically and robotically achievable",
+            }
+
+            mini_paper_matrix = {
+                "tasks": {"visual": 5, "procedural": 5, "relational": 5},
+                "difficulty_minimum": {"easy": 3, "medium": 3, "hard": 3},
+                "policies": ["pi05_first", "robochallenge_pi_optional", "rekep_optional"],
+                "episodes_per_task": "1-3 for trend only; do not claim full statistical significance",
+                "variation_probe": ["one lighting sweep or one object-pose sweep"],
+                "required_outputs": ["task_result_table.csv", "axis_summary.csv", "difficulty_summary.csv", "failure_reason_summary.csv"],
+            }
+
+            toy_episode_results = [
+                {"task": "visual_pick", "axis": "visual", "difficulty": "easy", "success": True, "score": 1.0, "reason": "success"},
+                {"task": "spatial_left", "axis": "relational", "difficulty": "medium", "success": False, "score": 0.55, "reason": "wrong object"},
+                {"task": "stack_two", "axis": "procedural", "difficulty": "hard", "success": False, "score": 0.35, "reason": "drop"},
+            ]
+
+            def summarize_by_key(rows, key):
+                groups = {}
+                for row in rows:
+                    bucket = groups.setdefault(row[key], {"n": 0, "successes": 0, "score_sum": 0.0, "reasons": {}})
+                    bucket["n"] += 1
+                    bucket["successes"] += int(row["success"])
+                    bucket["score_sum"] += float(row["score"])
+                    bucket["reasons"][row["reason"]] = bucket["reasons"].get(row["reason"], 0) + 1
+                return {
+                    name: {
+                        "n": values["n"],
+                        "success_rate": values["successes"] / values["n"],
+                        "mean_score": values["score_sum"] / values["n"],
+                        "reasons": values["reasons"],
+                    }
+                    for name, values in groups.items()
+                }
+
+            axis_summary = summarize_by_key(toy_episode_results, "axis")
+            difficulty_summary = summarize_by_key(toy_episode_results, "difficulty")
+
             paper_experiment_tests = [
                 ("algorithm_returns_success", toy_result["success"]),
                 ("all_objects_within_table_bounds", all(in_bounds(name) for name in poses)),
@@ -1749,9 +1812,42 @@ def main() -> None:
                         experiment_taxonomy
                     ),
                 ),
+                (
+                    "evidence_contract_separates_success_score_events_trajectory",
+                    {"success", "score", "event_log", "trajectory", "artifacts"}.issubset(evidence_contract),
+                ),
+                (
+                    "scene_generation_eval_schema_has_quality_and_preference",
+                    {"VQA", "Real", "Func", "Lay", "Compl", "Qual", "Pref"}.issubset(scene_generation_eval_schema),
+                ),
+                (
+                    "task_generation_judge_has_six_dimensions",
+                    set(task_generation_judge_dimensions)
+                    == {"relation_match", "target_match", "object_match", "quantifier_match", "clarity", "feasibility"},
+                ),
+                (
+                    "mini_paper_matrix_covers_three_axes_and_outputs",
+                    set(mini_paper_matrix["tasks"]) == {"visual", "procedural", "relational"}
+                    and len(mini_paper_matrix["required_outputs"]) == 4,
+                ),
+                (
+                    "toy_axis_summary_preserves_partial_scores",
+                    axis_summary["relational"]["success_rate"] == 0.0
+                    and 0.0 < axis_summary["relational"]["mean_score"] < 1.0,
+                ),
+                (
+                    "toy_difficulty_summary_keeps_failure_reasons",
+                    difficulty_summary["hard"]["reasons"].get("drop") == 1,
+                ),
             ]
 
             print(json.dumps(toy_result, ensure_ascii=False, indent=2))
+            print("Evidence contract:")
+            print(json.dumps(evidence_contract, ensure_ascii=False, indent=2))
+            print("Mini paper matrix:")
+            print(json.dumps(mini_paper_matrix, ensure_ascii=False, indent=2))
+            print("Toy axis summary:")
+            print(json.dumps(axis_summary, ensure_ascii=False, indent=2))
             for name, ok in paper_experiment_tests:
                 print(f"{name}: {'PASS' if ok else 'FAIL'}")
 
@@ -1763,8 +1859,14 @@ def main() -> None:
                     "toy_result": toy_result,
                     "final_collisions": final_collisions,
                     "experiment_taxonomy": experiment_taxonomy,
+                    "evidence_contract": evidence_contract,
+                    "scene_generation_eval_schema": scene_generation_eval_schema,
+                    "task_generation_judge_dimensions": task_generation_judge_dimensions,
+                    "mini_paper_matrix": mini_paper_matrix,
+                    "axis_summary": axis_summary,
+                    "difficulty_summary": difficulty_summary,
                     "tests": [{"name": name, "passed": bool(ok)} for name, ok in paper_experiment_tests],
-                    "boundary": "This validates Algorithm 1 structure on a toy 2D layout; it is not a replacement for RoboLab spatial_solver.py or Isaac physics settle.",
+                    "boundary": "This validates EXPLAIN_08's experiment map and Algorithm 1 structure on toy data; it is not a replacement for RoboLab-120, official analysis scripts, spatial_solver.py, or Isaac physics settle.",
                 },
             )
             """
@@ -5096,6 +5198,7 @@ def main() -> None:
                     "global RoboLab architecture, evaluation intent, and reproduction boundary framing",
                     "Appendix C-C baseline scene generation method and Appendix C-D scene generation comparison metrics",
                     "paper experiments: RoboLab-120 policy benchmark, granular analysis, sensitivity analysis, real-world verification, scene generation evaluation, task generation evaluation, and Algorithm 1 spatial solver",
+                    "EXPLAIN_08 deepened experiment map: evidence chain from scene/task generation to rollout artifacts, success-score-event-trajectory contract, capability-profile reading of main tables, scene generation evaluation schema, task generation judge dimensions, and 4090 mini-paper reproduction matrix",
                     "Appendix D Details on Task Generation Evaluation: LLM-as-judge dimensions, Table IX metrics, object coverage, and predicate coverage",
                     "Appendix C Stage I Semantic Planning prompts: system prompt, JSON-only output contract, user prompt template, feedback block, and scene generation prompt rationale",
                     "Appendix C Stage II geometric and physical solving: Algorithm 1 spatial constraint solver, Figure 17 feedback block, and Algorithm 2 physical placement solver",
@@ -5492,7 +5595,7 @@ def main() -> None:
 - `EXPLAIN_05_sparc_trajectory_metric.md`：论文“SPARC 轨迹平滑度指标”的代码实现精讲，已内嵌进 notebook，并配有 SPARC 方向性轻量测试用例。
 - `EXPLAIN_06_mnpe_sensitivity_analysis.md`：论文“MNPE 敏感性分析”的代码实现精讲，已内嵌进 notebook，并配有 posterior 直觉轻量测试用例。
 - `EXPLAIN_07_baseline_method.md`：论文 Appendix C-C “Baseline Method”的代码实现精讲，已内嵌进 notebook，并配有 grid+jitter baseline 轻量测试用例。
-- `EXPLAIN_08_paper_experiments.md`：论文实验体系与 Algorithm 1 Spatial Constraint Solver 精讲，已内嵌进 notebook，并配有 2D 空间约束求解轻量测试用例。
+- `EXPLAIN_08_paper_experiments.md`：论文实验体系与 Algorithm 1 Spatial Constraint Solver 精讲，已加深为“实验地图 + 证据链”，覆盖 success/score/event/trajectory 指标分工、主表能力画像读法、场景生成质量表、task generation judge 六维和 4090 小论文矩阵，已内嵌进 notebook，并配有增强版实验地图/2D 空间约束轻量测试用例。
 - `EXPLAIN_09_dtge.md`：论文 Appendix D “Details on Task Generation Evaluation / DTGE”的精讲，已内嵌进 notebook，并配有 AST 静态抽取与简化 judge 轻量测试用例。
 - `EXPLAIN_10_prompt_design.md`：论文 Appendix C Stage I scene generation prompt 精讲，已内嵌进 notebook，并配有 prompt 输出格式/依赖/对象目录/尺寸限制轻量测试用例。
 - `EXPLAIN_11_spatial_physical_solver_feedback.md`：论文 Appendix C 空间求解器、物理放置求解器和失败反馈块精讲，已加深 Spatial/Physical 的 typed predicate 中间表示、dense scene margin retry、相对坐标、碰撞推开、support 局部坐标、container packing、stability threshold 和反馈诊断压缩，已内嵌进 notebook，并配有增强版支撑/容器/反馈轻量测试用例。
@@ -5523,7 +5626,7 @@ def main() -> None:
 - 已新增“SPARC 轨迹平滑度指标”精讲，覆盖论文 III-C Trajectory Metrics、`compute_sparc`、HDF5 到 `episode_metrics.json` 的离线指标链路，并在 notebook 里加入平滑/抖动/静止速度曲线测试。
 - 已新增“MNPE 敏感性分析”精讲，覆盖论文 III-D 与 Appendix B、`posterior_inference.py` 的 CSV -> `theta/x` -> MNPE/NPE -> posterior 采样链路，并在 notebook 里加入 success posterior 直觉测试。
 - 已新增“Baseline 场景生成方法”精讲，覆盖论文 Appendix C-C 的 grid+jitter 单次布局 baseline、与谓词/solver/feedback 主方法的差异，并在 notebook 里加入 baseline vs hierarchical semantic relation 轻量测试。
-- 已新增“论文实验总览与 Algorithm 1”精讲，覆盖 RoboLab-120 策略评测、细粒度能力分析、扰动敏感性、真实世界相关性、场景/任务生成质量实验，并在 notebook 里加入 Spatial Constraint Solver 三阶段轻量测试。
+- 已增强“论文实验总览与 Algorithm 1”精讲，把原先的实验清单扩展成论文级证据链：从场景/任务生成质量，到 rollout artifact、success/score/event/trajectory、能力画像、扰动敏感性、真实相关性和 4090 小论文矩阵；notebook 里也加入实验地图与分组汇总轻量测试。
 - 已新增“DTGE 任务生成质量评估”精讲，覆盖 Appendix D 的 LLM-as-judge、instruction-code alignment、relation/target/object/quantifier/clarity/feasibility 六维评分、object/predicate coverage，并在 notebook 里加入 AST 静态抽取轻量测试。
 - 已新增“Scene Generation Prompt 设计”精讲，覆盖 Appendix C 三段 prompt 的系统约束、JSON-only 合约、对象目录注入、medium scene strategy、失败反馈思路，并在 notebook 里加入 6 类 prompt 输出校验用例。
 - 已增强“空间求解器、物理放置求解器与失败反馈”精讲，覆盖 Algorithm 1、Figure 17 和 Algorithm 2，并进一步补充 Spatial 的 dense scene/margin retry/relative coordinate/collision repair，以及 Physical 的 support-frame packing/container packing/stability threshold/feedback diagnostics；notebook 里也加入相对关系、碰撞推开、support yaw 旋转和容器拥挤测试。

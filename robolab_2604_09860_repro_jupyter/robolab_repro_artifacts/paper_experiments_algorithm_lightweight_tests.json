@@ -78,6 +78,114 @@
       "coverage"
     ]
   },
+  "evidence_contract": {
+    "success": "binary final completion; good for leaderboard but too coarse alone",
+    "score": "graded subtask/event completion; separates partial completion from total failure",
+    "event_log": "diagnostic failure evidence such as wrong object, drop, hit, tipped, out of scene",
+    "trajectory": "SPARC, speed, and path length for motion quality",
+    "artifacts": [
+      "episode_results.jsonl",
+      "run_<idx>.hdf5",
+      "log_<run>_env<id>.json",
+      "mp4"
+    ]
+  },
+  "scene_generation_eval_schema": {
+    "VQA": "render/text consistency and visual recognizability",
+    "Real": "realism of the tabletop scene",
+    "Func": "whether the scene supports manipulation",
+    "Lay": "natural and structured layout",
+    "Compl": "scene completeness",
+    "Qual": "overall quality",
+    "Pref": "paired GPT preference against baseline"
+  },
+  "task_generation_judge_dimensions": {
+    "relation_match": "spatial/logical relation is preserved",
+    "target_match": "goal state matches the instruction",
+    "object_match": "referenced objects are correct",
+    "quantifier_match": "all/any/count semantics match",
+    "clarity": "instruction is unambiguous",
+    "feasibility": "task is physically and robotically achievable"
+  },
+  "mini_paper_matrix": {
+    "tasks": {
+      "visual": 5,
+      "procedural": 5,
+      "relational": 5
+    },
+    "difficulty_minimum": {
+      "easy": 3,
+      "medium": 3,
+      "hard": 3
+    },
+    "policies": [
+      "pi05_first",
+      "robochallenge_pi_optional",
+      "rekep_optional"
+    ],
+    "episodes_per_task": "1-3 for trend only; do not claim full statistical significance",
+    "variation_probe": [
+      "one lighting sweep or one object-pose sweep"
+    ],
+    "required_outputs": [
+      "task_result_table.csv",
+      "axis_summary.csv",
+      "difficulty_summary.csv",
+      "failure_reason_summary.csv"
+    ]
+  },
+  "axis_summary": {
+    "visual": {
+      "n": 1,
+      "success_rate": 1.0,
+      "mean_score": 1.0,
+      "reasons": {
+        "success": 1
+      }
+    },
+    "relational": {
+      "n": 1,
+      "success_rate": 0.0,
+      "mean_score": 0.55,
+      "reasons": {
+        "wrong object": 1
+      }
+    },
+    "procedural": {
+      "n": 1,
+      "success_rate": 0.0,
+      "mean_score": 0.35,
+      "reasons": {
+        "drop": 1
+      }
+    }
+  },
+  "difficulty_summary": {
+    "easy": {
+      "n": 1,
+      "success_rate": 1.0,
+      "mean_score": 1.0,
+      "reasons": {
+        "success": 1
+      }
+    },
+    "medium": {
+      "n": 1,
+      "success_rate": 0.0,
+      "mean_score": 0.55,
+      "reasons": {
+        "wrong object": 1
+      }
+    },
+    "hard": {
+      "n": 1,
+      "success_rate": 0.0,
+      "mean_score": 0.35,
+      "reasons": {
+        "drop": 1
+      }
+    }
+  },
   "tests": [
     {
       "name": "algorithm_returns_success",
@@ -110,7 +218,31 @@
     {
       "name": "experiment_taxonomy_complete",
       "passed": true
+    },
+    {
+      "name": "evidence_contract_separates_success_score_events_trajectory",
+      "passed": true
+    },
+    {
+      "name": "scene_generation_eval_schema_has_quality_and_preference",
+      "passed": true
+    },
+    {
+      "name": "task_generation_judge_has_six_dimensions",
+      "passed": true
+    },
+    {
+      "name": "mini_paper_matrix_covers_three_axes_and_outputs",
+      "passed": true
+    },
+    {
+      "name": "toy_axis_summary_preserves_partial_scores",
+      "passed": true
+    },
+    {
+      "name": "toy_difficulty_summary_keeps_failure_reasons",
+      "passed": true
     }
   ],
-  "boundary": "This validates Algorithm 1 structure on a toy 2D layout; it is not a replacement for RoboLab spatial_solver.py or Isaac physics settle."
+  "boundary": "This validates EXPLAIN_08's experiment map and Algorithm 1 structure on toy data; it is not a replacement for RoboLab-120, official analysis scripts, spatial_solver.py, or Isaac physics settle."
 }

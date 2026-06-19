@@ -19,6 +19,7 @@
         "global RoboLab architecture, evaluation intent, and reproduction boundary framing",
         "Appendix C-C baseline scene generation method and Appendix C-D scene generation comparison metrics",
         "paper experiments: RoboLab-120 policy benchmark, granular analysis, sensitivity analysis, real-world verification, scene generation evaluation, task generation evaluation, and Algorithm 1 spatial solver",
+        "EXPLAIN_08 deepened experiment map: evidence chain from scene/task generation to rollout artifacts, success-score-event-trajectory contract, capability-profile reading of main tables, scene generation evaluation schema, task generation judge dimensions, and 4090 mini-paper reproduction matrix",
         "Appendix D Details on Task Generation Evaluation: LLM-as-judge dimensions, Table IX metrics, object coverage, and predicate coverage",
         "Appendix C Stage I Semantic Planning prompts: system prompt, JSON-only output contract, user prompt template, feedback block, and scene generation prompt rationale",
         "Appendix C Stage II geometric and physical solving: Algorithm 1 spatial constraint solver, Figure 17 feedback block, and Algorithm 2 physical placement solver",

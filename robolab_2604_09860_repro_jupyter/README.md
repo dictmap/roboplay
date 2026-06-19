@@ -15,7 +15,7 @@
 - `EXPLAIN_05_sparc_trajectory_metric.md`：论文“SPARC 轨迹平滑度指标”的代码实现精讲，已内嵌进 notebook，并配有 SPARC 方向性轻量测试用例。
 - `EXPLAIN_06_mnpe_sensitivity_analysis.md`：论文“MNPE 敏感性分析”的代码实现精讲，已内嵌进 notebook，并配有 posterior 直觉轻量测试用例。
 - `EXPLAIN_07_baseline_method.md`：论文 Appendix C-C “Baseline Method”的代码实现精讲，已内嵌进 notebook，并配有 grid+jitter baseline 轻量测试用例。
-- `EXPLAIN_08_paper_experiments.md`：论文实验体系与 Algorithm 1 Spatial Constraint Solver 精讲，已内嵌进 notebook，并配有 2D 空间约束求解轻量测试用例。
+- `EXPLAIN_08_paper_experiments.md`：论文实验体系与 Algorithm 1 Spatial Constraint Solver 精讲，已加深为“实验地图 + 证据链”，覆盖 success/score/event/trajectory 指标分工、主表能力画像读法、场景生成质量表、task generation judge 六维和 4090 小论文矩阵，已内嵌进 notebook，并配有增强版实验地图/2D 空间约束轻量测试用例。
 - `EXPLAIN_09_dtge.md`：论文 Appendix D “Details on Task Generation Evaluation / DTGE”的精讲，已内嵌进 notebook，并配有 AST 静态抽取与简化 judge 轻量测试用例。
 - `EXPLAIN_10_prompt_design.md`：论文 Appendix C Stage I scene generation prompt 精讲，已内嵌进 notebook，并配有 prompt 输出格式/依赖/对象目录/尺寸限制轻量测试用例。
 - `EXPLAIN_11_spatial_physical_solver_feedback.md`：论文 Appendix C 空间求解器、物理放置求解器和失败反馈块精讲，已加深 Spatial/Physical 的 typed predicate 中间表示、dense scene margin retry、相对坐标、碰撞推开、support 局部坐标、container packing、stability threshold 和反馈诊断压缩，已内嵌进 notebook，并配有增强版支撑/容器/反馈轻量测试用例。
@@ -46,7 +46,7 @@
 - 已新增“SPARC 轨迹平滑度指标”精讲，覆盖论文 III-C Trajectory Metrics、`compute_sparc`、HDF5 到 `episode_metrics.json` 的离线指标链路，并在 notebook 里加入平滑/抖动/静止速度曲线测试。
 - 已新增“MNPE 敏感性分析”精讲，覆盖论文 III-D 与 Appendix B、`posterior_inference.py` 的 CSV -> `theta/x` -> MNPE/NPE -> posterior 采样链路，并在 notebook 里加入 success posterior 直觉测试。
 - 已新增“Baseline 场景生成方法”精讲，覆盖论文 Appendix C-C 的 grid+jitter 单次布局 baseline、与谓词/solver/feedback 主方法的差异，并在 notebook 里加入 baseline vs hierarchical semantic relation 轻量测试。
-- 已新增“论文实验总览与 Algorithm 1”精讲，覆盖 RoboLab-120 策略评测、细粒度能力分析、扰动敏感性、真实世界相关性、场景/任务生成质量实验，并在 notebook 里加入 Spatial Constraint Solver 三阶段轻量测试。
+- 已增强“论文实验总览与 Algorithm 1”精讲，把原先的实验清单扩展成论文级证据链：从场景/任务生成质量，到 rollout artifact、success/score/event/trajectory、能力画像、扰动敏感性、真实相关性和 4090 小论文矩阵；notebook 里也加入实验地图与分组汇总轻量测试。
 - 已新增“DTGE 任务生成质量评估”精讲，覆盖 Appendix D 的 LLM-as-judge、instruction-code alignment、relation/target/object/quantifier/clarity/feasibility 六维评分、object/predicate coverage，并在 notebook 里加入 AST 静态抽取轻量测试。
 - 已新增“Scene Generation Prompt 设计”精讲，覆盖 Appendix C 三段 prompt 的系统约束、JSON-only 合约、对象目录注入、medium scene strategy、失败反馈思路，并在 notebook 里加入 6 类 prompt 输出校验用例。
 - 已增强“空间求解器、物理放置求解器与失败反馈”精讲，覆盖 Algorithm 1、Figure 17 和 Algorithm 2，并进一步补充 Spatial 的 dense scene/margin retry/relative coordinate/collision repair，以及 Physical 的 support-frame packing/container packing/stability threshold/feedback diagnostics；notebook 里也加入相对关系、碰撞推开、support yaw 旋转和容器拥挤测试。
