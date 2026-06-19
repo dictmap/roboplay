@@ -1,0 +1,16 @@
+[
+  {
+    "source": "arXiv 2604.09860v3 Table I",
+    "label": "best reported policy row in table",
+    "overall_success_pct": 28.0,
+    "overall_score": 0.43,
+    "note": "Use as a coarse orientation only; verify exact model identity and setup before formal comparison."
+  },
+  {
+    "source": "arXiv 2604.09860v3 Table I",
+    "label": "GR00T N1.6",
+    "overall_success_pct": 7.2,
+    "overall_score": 0.17,
+    "note": "Paper-scale baseline, not a target for a 5-task smoke subset."
+  }
+]

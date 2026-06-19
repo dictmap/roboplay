@@ -1,0 +1,21 @@
+{
+  "all_passed": true,
+  "smooth_sparc": -2.0015560468310407,
+  "jerky_sparc": -2.612613380932918,
+  "stationary_sparc_is_nan": true,
+  "tests": [
+    {
+      "name": "smooth_is_closer_to_zero",
+      "passed": true
+    },
+    {
+      "name": "jerky_is_more_negative",
+      "passed": true
+    },
+    {
+      "name": "stationary_returns_nan",
+      "passed": true
+    }
+  ],
+  "boundary": "This validates SPARC direction and motion gate on synthetic speed profiles; real runs should compute metrics from HDF5."
+}

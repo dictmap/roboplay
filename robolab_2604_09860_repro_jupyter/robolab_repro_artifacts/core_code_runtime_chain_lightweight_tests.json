@@ -1,0 +1,306 @@
+{
+  "runtime_code_chain": [
+    {
+      "stage": "runner",
+      "files": [
+        "robolab/eval/runner.py",
+        "policies/pi0_family/run.py"
+      ],
+      "core_functions": [
+        "add_common_eval_args",
+        "run_evaluation",
+        "client_factory"
+      ],
+      "input": [
+        "task_or_tag",
+        "num_envs",
+        "num_runs",
+        "instruction_type",
+        "video_mode",
+        "policy_name"
+      ],
+      "output": [
+        "output_dir",
+        "task_envs",
+        "episode_results_jsonl",
+        "env_cfg"
+      ],
+      "failure_hint": "任务没跑、续跑跳过、num_envs OOM、输出目录不对，优先查这里。"
+    },
+    {
+      "stage": "episode_loop",
+      "files": [
+        "robolab/eval/episode.py"
+      ],
+      "core_functions": [
+        "run_episode",
+        "TimingStats"
+      ],
+      "input": [
+        "env",
+        "env_cfg",
+        "episode_index",
+        "InferenceClient",
+        "video_mode"
+      ],
+      "output": [
+        "env_results",
+        "subtask_status",
+        "timing",
+        "videos",
+        "run_hdf5"
+      ],
+      "failure_hint": "动作没进 env、视频不写、已终止 env 还在动，优先查这里。"
+    },
+    {
+      "stage": "inference_client_contract",
+      "files": [
+        "robolab/eval/base_client.py"
+      ],
+      "core_functions": [
+        "infer",
+        "_extract_observation",
+        "_pack_request",
+        "_query_server",
+        "_unpack_response",
+        "_postprocess_chunk"
+      ],
+      "input": [
+        "raw_obs",
+        "instruction",
+        "env_id"
+      ],
+      "output": [
+        "action",
+        "viz"
+      ],
+      "failure_hint": "接新模型/新机器人时，先确认这五个 hook 的输入输出。"
+    },
+    {
+      "stage": "pi05_client_adapter",
+      "files": [
+        "policies/pi0_family/client.py"
+      ],
+      "core_functions": [
+        "Pi0DroidJointposClient",
+        "_extract_observation",
+        "_pack_request",
+        "_infer_with_retry",
+        "_postprocess_chunk"
+      ],
+      "input": [
+        "over_shoulder_left_camera",
+        "wrist_cam",
+        "arm_joint_pos",
+        "gripper_pos",
+        "prompt"
+      ],
+      "output": [
+        "openpi_request",
+        "action_chunk",
+        "binary_gripper_action"
+      ],
+      "failure_hint": "server 连上但动作怪，重点查 OpenPI request key、图像 resize、action horizon、gripper 二值化。"
+    },
+    {
+      "stage": "env_world_conditionals",
+      "files": [
+        "robolab/core/environments/env.py",
+        "robolab/core/world/world_state.py",
+        "robolab/core/task/conditionals.py"
+      ],
+      "core_functions": [
+        "RobolabEnv.step",
+        "get_world",
+        "WorldState",
+        "object_in_container",
+        "object_grabbed"
+      ],
+      "input": [
+        "actions",
+        "scene_entities",
+        "contact_sensors",
+        "object_poses"
+      ],
+      "output": [
+        "termination_state",
+        "subtask_state",
+        "spatial_relations",
+        "contact_relations"
+      ],
+      "failure_hint": "视频看着成功但 success=False，重点查 WorldState、contact、bbox、tolerance、detached 条件。"
+    },
+    {
+      "stage": "event_tracking",
+      "files": [
+        "robolab/core/task/event_tracker.py"
+      ],
+      "core_functions": [
+        "EventTracker",
+        "check_events",
+        "reset_envs"
+      ],
+      "input": [
+        "per_env_intended_targets",
+        "frozen_mask",
+        "world_state"
+      ],
+      "output": [
+        "wrong_object",
+        "target_dropped",
+        "hit_table",
+        "object_moved",
+        "env_mask"
+      ],
+      "failure_hint": "失败原因空或不准，查 event tracker 是否触发和 recorder 是否导出事件。"
+    },
+    {
+      "stage": "recording",
+      "files": [
+        "robolab/core/logging/recorder_manager.py",
+        "robolab/core/logging/streaming_hdf5_handler.py"
+      ],
+      "core_functions": [
+        "RobolabRecorderManager",
+        "set_hdf5_file",
+        "set_episode_index",
+        "flush_buffer"
+      ],
+      "input": [
+        "per_step_state",
+        "actions",
+        "obs",
+        "env_ids"
+      ],
+      "output": [
+        "run_0.hdf5",
+        "demo_0",
+        "demo_1"
+      ],
+      "failure_hint": "HDF5 空、demo 缺失、长 episode 内存涨，优先查 recorder manager。"
+    },
+    {
+      "stage": "summarize_results",
+      "files": [
+        "robolab/eval/summarize.py",
+        "robolab/core/logging/results.py"
+      ],
+      "core_functions": [
+        "summarize_run",
+        "build_run_summary",
+        "update_experiment_results",
+        "summarize_experiment_results"
+      ],
+      "input": [
+        "env_results",
+        "events",
+        "HDF5",
+        "env_cfg",
+        "timing"
+      ],
+      "output": [
+        "log_0_env0.json",
+        "episode_results.jsonl",
+        "trajectory_metrics",
+        "score"
+      ],
+      "failure_hint": "视频/HDF5 有了但 JSONL 没新增，查 summarize_run 和 update_experiment_results。"
+    },
+    {
+      "stage": "dashboard_loader",
+      "files": [
+        "dashboard/loaders/local.py"
+      ],
+      "core_functions": [
+        "_cached_load_episodes",
+        "_sr_beta_ci",
+        "_score_ci",
+        "EpisodeRow",
+        "TaskSummary"
+      ],
+      "input": [
+        "episode_results.jsonl",
+        "task_folders",
+        "HDF5",
+        "videos",
+        "logs"
+      ],
+      "output": [
+        "dashboard_rows",
+        "success_rate_CI",
+        "score_CI",
+        "video_links"
+      ],
+      "failure_hint": "Dashboard 看不到结果，查路径、mtime cache、JSONL/HDF5/video 是否齐全。"
+    }
+  ],
+  "stage_order": [
+    "runner",
+    "episode_loop",
+    "inference_client_contract",
+    "pi05_client_adapter",
+    "env_world_conditionals",
+    "event_tracking",
+    "recording",
+    "summarize_results",
+    "dashboard_loader"
+  ],
+  "issue_routing_examples": {
+    "hdf5_empty": "recording",
+    "success_false": "env_world_conditionals",
+    "server_request": "pi05_client_adapter",
+    "dashboard_missing": "dashboard_loader"
+  },
+  "tests": [
+    {
+      "name": "chain_starts_with_runner",
+      "passed": true
+    },
+    {
+      "name": "chain_ends_with_dashboard_loader",
+      "passed": true
+    },
+    {
+      "name": "episode_loop_between_runner_and_client",
+      "passed": true
+    },
+    {
+      "name": "client_contract_has_required_hooks",
+      "passed": true
+    },
+    {
+      "name": "pi05_client_exposes_droid_observation_keys",
+      "passed": true
+    },
+    {
+      "name": "world_layer_outputs_conditions",
+      "passed": true
+    },
+    {
+      "name": "event_layer_outputs_failure_taxonomy",
+      "passed": true
+    },
+    {
+      "name": "recording_layer_outputs_hdf5_demos",
+      "passed": true
+    },
+    {
+      "name": "summarize_layer_outputs_jsonl",
+      "passed": true
+    },
+    {
+      "name": "issue_router_maps_hdf5_to_recording",
+      "passed": true
+    },
+    {
+      "name": "issue_router_maps_success_false_to_world",
+      "passed": true
+    },
+    {
+      "name": "issue_router_maps_server_to_client",
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "boundary": "This validates the source-code mental model only. It does not import Isaac Sim or call a policy server."
+}

@@ -1,0 +1,94 @@
+{
+  "all_passed": true,
+  "poses": {
+    "bowl_0": {
+      "x": 0.4,
+      "y": 0.15,
+      "z": 0.04,
+      "yaw": 23.0,
+      "source": "spatial/place-on-base"
+    },
+    "plate_large": {
+      "x": 0.65,
+      "y": -0.1,
+      "z": 0.0125,
+      "yaw": 156.0,
+      "source": "spatial/place-on-base"
+    },
+    "apple_01": {
+      "x": 0.36875,
+      "y": 0.148,
+      "z": 0.1175,
+      "yaw": 23.0,
+      "source": "physical/place-in/bowl_0"
+    },
+    "orange_01": {
+      "x": 0.43125,
+      "y": 0.152,
+      "z": 0.12,
+      "yaw": 46.0,
+      "source": "physical/place-in/bowl_0"
+    },
+    "banana": {
+      "x": 0.65,
+      "y": -0.1,
+      "z": 0.043500000000000004,
+      "yaw": 156.0,
+      "source": "physical/place-on/plate_large"
+    }
+  },
+  "physical_messages": [
+    [
+      "place-in",
+      true,
+      "placed in container"
+    ],
+    [
+      "place-on",
+      true,
+      "placed on support"
+    ]
+  ],
+  "crowded_ok": false,
+  "crowded_message": "container crowding: total object area 0.126 > 0.8 * container area 0.032",
+  "feedback": "PREVIOUS ATTEMPT FAILED:\ncontainer crowding: total object area 0.126 > 0.8 * container area 0.032\nCollisions: large_box/bowl_0\n\nPlease fix the issues. Common fixes:\n- Use MORE containment (place-in) to reduce table crowding\n- Use MORE stacking (place-on) to utilize vertical space\n- Use clustering (cluster-around) instead of individual placements\n- Select SMALLER objects if collisions persist",
+  "tests": [
+    {
+      "name": "base_anchors_have_2d_and_z_pose",
+      "passed": true
+    },
+    {
+      "name": "place_on_sets_banana_above_plate",
+      "passed": true
+    },
+    {
+      "name": "place_in_sets_fruit_above_bowl",
+      "passed": true
+    },
+    {
+      "name": "container_objects_have_distinct_xy",
+      "passed": true
+    },
+    {
+      "name": "physical_messages_successful",
+      "passed": true
+    },
+    {
+      "name": "crowded_container_failure_detected",
+      "passed": true
+    },
+    {
+      "name": "feedback_mentions_previous_attempt_failed",
+      "passed": true
+    },
+    {
+      "name": "feedback_suggests_containment_stacking_clustering",
+      "passed": true
+    },
+    {
+      "name": "feedback_suggests_smaller_objects",
+      "passed": true
+    }
+  ],
+  "boundary": "This is a toy implementation for explaining Algorithm 1/2 and Figure 17; real RoboLab placement uses spatial_solver.py, physical_solver.py, and Isaac/physics validation."
+}

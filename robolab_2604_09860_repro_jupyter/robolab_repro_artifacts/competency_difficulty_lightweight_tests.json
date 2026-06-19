@@ -1,0 +1,73 @@
+{
+  "all_passed": true,
+  "rows": [
+    {
+      "task": "BananaInBowlTask",
+      "attributes": [
+        "semantics"
+      ],
+      "axes": [
+        "visual"
+      ],
+      "num_subtasks": 1,
+      "score": 1,
+      "label": "simple",
+      "passed": true
+    },
+    {
+      "task": "RubiksCubeLeftOfBowlTask",
+      "attributes": [
+        "spatial"
+      ],
+      "axes": [
+        "relational"
+      ],
+      "num_subtasks": 1,
+      "score": 2,
+      "label": "simple",
+      "passed": true
+    },
+    {
+      "task": "RedItemsInBinTask",
+      "attributes": [
+        "color",
+        "sorting"
+      ],
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "num_subtasks": 2,
+      "score": 4,
+      "label": "moderate",
+      "passed": true
+    },
+    {
+      "task": "Stack3RubiksCubeTask",
+      "attributes": [
+        "stacking"
+      ],
+      "axes": [
+        "procedural"
+      ],
+      "num_subtasks": 2,
+      "score": 4,
+      "label": "moderate",
+      "passed": true
+    },
+    {
+      "task": "LongReorientationExample",
+      "attributes": [
+        "reorientation"
+      ],
+      "axes": [
+        "procedural"
+      ],
+      "num_subtasks": 3,
+      "score": 6,
+      "label": "complex",
+      "passed": true
+    }
+  ],
+  "boundary": "This validates the metadata/difficulty formula; it does not measure policy success probability."
+}

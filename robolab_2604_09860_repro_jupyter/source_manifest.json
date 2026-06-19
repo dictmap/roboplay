@@ -1,0 +1,383 @@
+{
+  "generated_at": "2026-06-19T00:00:00+08:00",
+  "artifact": "RoboLab_4090_repro_learning_record.ipynb",
+  "robolab_github_head_at_generation": "7d45d74904eade3b578a8eb1f2f9f89bc3d40326",
+  "sources": [
+    {
+      "title": "RoboLab paper",
+      "url": "https://arxiv.org/html/2604.09860",
+      "used_for": [
+        "benchmark purpose",
+        "RoboLab-120 competency axes",
+        "metrics and comparison framing",
+        "paper reference orientation values",
+        "core mechanism explanation for scene/task generation, metrics, and sensitivity analysis",
+        "scaling task generation validation and repair loop",
+        "benchmark design: competency axes, subtasks, and difficulty scoring",
+        "trajectory metrics: SPARC smoothness, speed, path length, and ISJ",
+        "MNPE sensitivity analysis and posterior interpretation",
+        "global RoboLab architecture, evaluation intent, and reproduction boundary framing",
+        "Appendix C-C baseline scene generation method and Appendix C-D scene generation comparison metrics",
+        "paper experiments: RoboLab-120 policy benchmark, granular analysis, sensitivity analysis, real-world verification, scene generation evaluation, task generation evaluation, and Algorithm 1 spatial solver",
+        "Appendix D Details on Task Generation Evaluation: LLM-as-judge dimensions, Table IX metrics, object coverage, and predicate coverage",
+        "Appendix C Stage I Semantic Planning prompts: system prompt, JSON-only output contract, user prompt template, feedback block, and scene generation prompt rationale",
+        "Appendix C Stage II geometric and physical solving: Algorithm 1 spatial constraint solver, Figure 17 feedback block, and Algorithm 2 physical placement solver",
+        "Figure 13 Gaussian Splat + Mesh scene, collision mesh, mesh foreground, VoMP mass/density, 3DGRT/3DGUT references, and MNPE Gaussian KDE distinction",
+        "EXPLAIN_12 frontier source table: NuRec, 3DGUT, Isaac Sim 6.0 EDR, Lyra, Physically Embodied Gaussians, and Marble+Isaac Sim links with read-focus notes",
+        "remaining core evaluation topics: IV-A experiment setup, success-vs-score interpretation, language variations, complexity sweeps, event-driven failure analysis, RoboArena real-world verification, statistical confidence, and limitations",
+        "EXPLAIN_15 whole-paper reviewer synthesis: contributions, strengths, weaknesses, limitations, real-world verification, optimization directions, and future innovation routes",
+        "EXPLAIN_16 source-linked reading map: what to read after RoboLab for simulation benchmarks, real-world data, VLA policies, SimReady assets, and sim-to-real evaluation",
+        "EXPLAIN_16 core source-and-content evidence table: the originating problem, source content, and reading question behind each recommendation"
+      ],
+      "observed": "arXiv:2604.09860v3, 14 May 2026"
+    },
+    {
+      "title": "NVIDIA Omniverse NuRec",
+      "url": "https://developer.nvidia.com/omniverse/nurec",
+      "used_for": [
+        "2026 NVIDIA frontier route: camera/lidar neural reconstruction to OpenUSD scene",
+        "NuRec gsplat rendering and gRPC/Isaac Sim integration framing",
+        "distinguishing photoreal Gaussian rendering from collider/physics requirements",
+        "EXPLAIN_12 clickable frontier source table and nvidia_frontier_link_map"
+      ],
+      "observed": "checked 2026-06-20"
+    },
+    {
+      "title": "NVIDIA Research 3DGUT",
+      "url": "https://research.nvidia.com/labs/toronto-ai/3DGUT/",
+      "used_for": [
+        "3D Gaussian rendering with nonlinear camera models",
+        "rolling shutter and secondary ray support such as reflection/refraction",
+        "relationship between RoboLab Figure 13 references and current NVIDIA Gaussian rendering research",
+        "EXPLAIN_12 3DGUT source link and read-focus notes"
+      ],
+      "observed": "checked 2026-06-20"
+    },
+    {
+      "title": "NVIDIA Isaac Sim",
+      "url": "https://developer.nvidia.com/isaac/sim",
+      "used_for": [
+        "Isaac Sim neural reconstruction / NuRec framing",
+        "Isaac Sim as the physics and sensor layer around Gaussian-reconstructed visuals",
+        "EXPLAIN_12 Isaac Sim source link for NuRec, OpenUSD, physics, sensor, and synthetic-data context"
+      ],
+      "observed": "checked 2026-06-20"
+    },
+    {
+      "title": "Isaac Sim 6.0 Early Developer Release for GTC'26",
+      "url": "https://forums.developer.nvidia.com/t/announcement-isaac-sim-6-0-early-developer-release-for-gtc26/363709",
+      "used_for": [
+        "2026 Isaac Sim 6.0 EDR NuRec 3DGS library and Fabric Scene Delegate context",
+        "multiple physics backends and Warp-based API frontier note",
+        "EXPLAIN_12 Isaac Sim 6.0 EDR source link and read-focus notes"
+      ],
+      "observed": "checked 2026-06-20"
+    },
+    {
+      "title": "NVIDIA Research Lyra",
+      "url": "https://research.nvidia.com/labs/toronto-ai/lyra/",
+      "used_for": [
+        "2026 generative 3DGS world route from text, image, or video",
+        "Lyra/Lyra 2.0 relationship to future fast scene generation for simulation",
+        "EXPLAIN_12 Lyra source link and read-focus notes"
+      ],
+      "observed": "checked 2026-06-20"
+    },
+    {
+      "title": "NVIDIA Technical Blog: Building Robotic Mental Models with NVIDIA Warp and Gaussian Splatting",
+      "url": "https://developer.nvidia.com/blog/building-robotic-mental-models-with-nvidia-warp-and-gaussian-splatting/",
+      "used_for": [
+        "Physically Embodied Gaussians as adjacent frontier",
+        "particle plus 3D Gaussian dual representation and differentiable rendering feedback loop",
+        "EXPLAIN_12 Physically Embodied Gaussians source link and read-focus notes"
+      ],
+      "observed": "checked 2026-06-20"
+    },
+    {
+      "title": "NVIDIA Technical Blog: Simulate Robotic Environments Faster with NVIDIA Isaac Sim and World Labs Marble",
+      "url": "https://developer.nvidia.com/blog/simulate-robotic-environments-faster-with-nvidia-isaac-sim-and-world-labs-marble/",
+      "used_for": [
+        "Gaussian splat PLY plus collider GLB to NuRec/USDZ/Isaac Sim workflow",
+        "engineering example of aligning photoreal splat visuals with physics collider mesh",
+        "EXPLAIN_12 Marble+Isaac Sim+NuRec workflow source link and read-focus notes"
+      ],
+      "observed": "checked 2026-06-20"
+    },
+    {
+      "title": "RoboLab project page",
+      "url": "https://research.nvidia.com/labs/srl/projects/robolab/",
+      "used_for": [
+        "project overview",
+        "agentic scene/task generation",
+        "dashboard and benchmark description",
+        "sensitivity analysis framing",
+        "EXPLAIN_15 overview framing for benchmark/system-paper reviewer interpretation",
+        "EXPLAIN_16 reading-route anchor for RoboLab's benchmark, dashboard, agentic generation, and evaluation ecosystem",
+        "EXPLAIN_16 source evidence table anchor for the central problem: simulation evaluation of real-world task-generalist policies"
+      ]
+    },
+    {
+      "title": "NVlabs/RoboLab README",
+      "url": "https://github.com/NVlabs/RoboLab",
+      "used_for": [
+        "installation commands",
+        "Isaac Sim 5.0 and Isaac Lab 2.2.0 via uv sync",
+        "Python 3.11 and Ubuntu 22.04+ requirements",
+        "GPU/VRAM and speed caveats",
+        "quick run commands",
+        "source tree orientation for task/env/policy/eval modules",
+        "EXPLAIN_15 engineering and reproducibility reviewer perspective: install, policy server-client, multi-env, dashboard, hardware cost, and subset protocol recommendations",
+        "EXPLAIN_16 practical reading order for continuing from RoboLab install/repro into policies, assets, and benchmark extensions",
+        "EXPLAIN_16 source content map for README-to-learning-route traceability"
+      ]
+    },
+    {
+      "title": "Stanford / Fei-Fei / OmniGibson reading track",
+      "url": "https://proceedings.mlr.press/v205/li23a.html",
+      "used_for": [
+        "EXPLAIN_16 recommended reading: BEHAVIOR-1K / OmniGibson as the human-centered household benchmark line",
+        "EXPLAIN_16 related sources: https://behavior.stanford.edu/ and https://github.com/StanfordVL/BEHAVIOR-1K",
+        "EXPLAIN_16 Stanford real-world/evaluation context: DROID, RoboArena, and ReKep as adjacent sources"
+      ],
+      "observed": "checked 2026-06-20"
+    },
+    {
+      "title": "Open VLA policy reading track",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "used_for": [
+        "EXPLAIN_16 recommended reading: OpenPI / pi0 / pi0.5 as the current RoboLab policy stack",
+        "EXPLAIN_16 related policy sources: OpenVLA, Octo, GR00T, LeRobot, and RDT/RDT2",
+        "EXPLAIN_16 policy adapter study questions: observation schema, action chunk, server-client, fine-tuning, dataset format"
+      ],
+      "observed": "checked 2026-06-20"
+    },
+    {
+      "title": "Tsinghua embodied policy reading track",
+      "url": "https://github.com/thu-ml/RoboticsDiffusionTransformer",
+      "used_for": [
+        "EXPLAIN_16 recommended reading: RDT-1B and RDT2 as Tsinghua THU-ML/TSAIL embodied foundation model sources",
+        "EXPLAIN_16 comparison route: diffusion transformer, unified action space, bimanual manipulation, unseen embodiment",
+        "EXPLAIN_16 2026-first reading track: RDT2 arXiv 2602.03310, zero-shot cross-embodiment, RDT2-VQ/RDT2-FM, UMI data scaling, and RTX 4090 inference note"
+      ],
+      "observed": "checked 2026-06-20"
+    },
+    {
+      "title": "Domestic embodied benchmark and data reading track",
+      "url": "https://robotwin-platform.github.io/",
+      "used_for": [
+        "EXPLAIN_16 recommended reading: RoboTwin / RoboTwin 2.0 for generative digital twins and bimanual benchmark generation",
+        "EXPLAIN_16 related sources: RoboMIND for multi-embodiment data and failure demos, RH20T for contact-rich multimodal data, VLABench for language-conditioned long-horizon manipulation"
+      ],
+      "observed": "checked 2026-06-20"
+    },
+    {
+      "title": "Lightwheel / SimReady reading track",
+      "url": "https://github.com/LightwheelAI",
+      "used_for": [
+        "EXPLAIN_16 recommended reading: LightwheelAI GitHub, LW-BenchHub, Lightwheel SimReady assets, Lightwheel_Kitchen, and mjcf2usd",
+        "EXPLAIN_16 source for asset-scale learning route: SimReady assets, benchmark hub, teleoperation, VLA fine-tuning, Isaac ecosystem integration",
+        "EXPLAIN_16 2026-first reading track: LW-BenchHub, LeIsaac, AutoDataGen, SimReady assets, 268-task benchmark hub, and Isaac Lab-Arena alignment"
+      ],
+      "observed": "checked 2026-06-20"
+    },
+    {
+      "title": "NVIDIA Physical AI reading track",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "used_for": [
+        "EXPLAIN_16 recommended reading: Isaac GR00T, Isaac Lab, Isaac Lab-Arena, Cosmos, SimReady Foundation, and RoboCasa365",
+        "EXPLAIN_16 future route: VLA model evaluation, world models, SimReady assets, composable task/env benchmark engineering",
+        "EXPLAIN_16 2026-first reading track: GR00T N1.7, 20K hours EgoScale, relative EEF action, Cosmos 2.5, Isaac Lab-Arena, and LeRobot integration"
+      ],
+      "observed": "checked 2026-06-20"
+    },
+    {
+      "title": "RoboCasa365 release",
+      "url": "https://github.com/robocasa/robocasa/releases",
+      "used_for": [
+        "EXPLAIN_16 2026-first reading track: ICLR 2026 household/kitchen benchmark",
+        "RoboCasa365 v1.0 release facts: 365 tasks, 2500+ kitchen scenes, 3200+ 3D objects, 600+ human demonstration hours, 1600+ robot dataset hours, and Diffusion Policy/Pi/GR00T benchmarking support"
+      ],
+      "observed": "checked 2026-06-20"
+    },
+    {
+      "title": "RDT2 GitHub",
+      "url": "https://github.com/thu-ml/RDT2",
+      "used_for": [
+        "EXPLAIN_16 2026-first reading track: arXiv 2602.03310 and RDT2 release",
+        "RDT2 source facts: unseen embodiment zero-shot, RDT2-VQ/RDT2-FM, 10000+ hours UMI human manipulation videos, and 16GB RTX 4090 inference note"
+      ],
+      "observed": "checked 2026-06-20"
+    },
+    {
+      "title": "NVIDIA Isaac GR00T N1.7",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "used_for": [
+        "EXPLAIN_16 2026-first reading track: GR00T N1.7 Early Access",
+        "GR00T source facts: new VLM backbone, 20K hours EgoScale human video, relative EEF action space, Apache-2.0 license, and 16GB+ VRAM inference requirement"
+      ],
+      "observed": "checked 2026-06-20"
+    },
+    {
+      "title": "NVIDIA 2026 Physical AI release",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Releases-New-Physical-AI-Models-as-Global-Partners-Unveil-Next-Generation-Robots/default.aspx",
+      "used_for": [
+        "EXPLAIN_16 2026-first reading track: official physical AI ecosystem update",
+        "Release facts: Cosmos and GR00T open models, Isaac Lab-Arena, OSMO, Hugging Face LeRobot integration, and Jetson Thor context"
+      ],
+      "observed": "checked 2026-06-20"
+    },
+    {
+      "title": "NVIDIA Isaac Lab-Arena technical blog",
+      "url": "https://developer.nvidia.com/blog/simplify-generalist-robot-policy-evaluation-in-simulation-with-nvidia-isaac-lab-arena/",
+      "used_for": [
+        "EXPLAIN_16 2026-first reading track: scalable policy evaluation in simulation",
+        "Isaac Lab-Arena source facts: co-developed with Lightwheel, modular task creation, automated diversification, large-scale parallel benchmarking, and LeRobot/GR00T/pi0/SmolVLA integration"
+      ],
+      "observed": "checked 2026-06-20"
+    },
+    {
+      "title": "NVIDIA Research Lyra",
+      "url": "https://research.nvidia.com/labs/toronto-ai/lyra/",
+      "used_for": [
+        "EXPLAIN_16 2026-first reading track: ICLR 2026 generative 3D/4D Gaussian scene route",
+        "Lyra source facts: text/image/video to 3D/4D Gaussian scenes, generated 3D Gaussians imported into Isaac Sim, and future RoboLab scene generation reference"
+      ],
+      "observed": "checked 2026-06-20"
+    },
+    {
+      "title": "RoboLab source files inspected on remote RTX 4090 checkout",
+      "url": "https://github.com/NVlabs/RoboLab/tree/7d45d74904eade3b578a8eb1f2f9f89bc3d40326",
+      "used_for": [
+        "core code walkthrough",
+        "global source tree map for EXPLAIN_00",
+        "scene generation predicates, spatial solver, and physical solver",
+        "examples/run_empty.py no-policy call flow",
+        "robolab/core/environments/runtime.py create_env explanation",
+        "robolab/core/environments/config.py and factory.py dynamic environment config generation",
+        "robolab/registrations/droid/auto_env_registrations_jointpos.py robot/camera/background registration flow",
+        "robolab/tasks/benchmark/banana_in_bowl_task.py task definition explanation",
+        "robolab/tasks/benchmark/rubiks_cube_left_of_bowl.py relational task example",
+        "robolab/tasks/benchmark/red_items_in_bin.py multi-object sorting task example",
+        "robolab/tasks/benchmark/rubiks_cube_stacking_task.py stacking subtask example",
+        "robolab/core/task/conditionals.py and subtask.py scoring explanation",
+        "robolab/core/task/task_utils.py load_task_from_file task import validation",
+        "robolab/tasks/_utils/generate_task_metadata.py and load_task_info.py metadata/difficulty extraction",
+        "robolab/core/scenes/utils.py scrape_scene/import_scene scene object validation",
+        "robolab/scene_gen/llm_scene_gen/feedback_system.py feedback loop pattern",
+        "robolab/constants.py SKILL_WEIGHTS, DIFFICULTY_THRESHOLDS, BENCHMARK_TASK_CATEGORIES",
+        "robolab/core/task/task.py Task.attributes and Task.subtasks fields",
+        "robolab/core/task/subtask.py parallel conditions and logical modes",
+        "robolab/core/task/subtask_utils.py count_subtasks and compute_difficulty_score",
+        "robolab/core/metrics/trajectory_metrics.py SPARC, ISJ, speed, and path length metrics",
+        "robolab/core/metrics/compute_metrics.py HDF5-to-episode_metrics trajectory metric pipeline",
+        "analysis/sensitivity_analysis/posterior_inference.py MNPE/NPE posterior inference pipeline",
+        "analysis/sensitivity_analysis/README_posterior_inference.md MNPE CLI usage and output interpretation",
+        "policies/pi0_family/run_camera_pose_variation.py camera pose variation data generation",
+        "policies/pi0_family/run_background_variation.py background variation data generation",
+        "policies/pi0_family/run_table_variation.py table material variation data generation",
+        "robolab/variations/camera.py camera configuration source for sensitivity parameters",
+        "robolab/variations/backgrounds.py HDR/EXR background variation source",
+        "robolab/variations/lighting.py lighting variation source",
+        "policies/pi0_family/run.py and client.py policy interface explanation",
+        "task annotation schema: scene, instruction, terminations, subtasks, attributes, and episode outputs",
+        "robolab/scene_gen/llm_scene_gen/predicates.py predicate vocabulary for scene generation",
+        "robolab/scene_gen/llm_scene_gen/spatial_solver.py geometric constraint solving contrast with grid baseline",
+        "robolab/scene_gen/llm_scene_gen/physical_solver.py place-in/place-on physical relation contrast with grid baseline",
+        "robolab/scene_gen/llm_scene_gen/feedback_system.py solver and physics feedback loop contrast with one-pass baseline",
+        "robolab/scene_gen/llm_scene_gen/spatial_solver.py Algorithm 1 spatial constraint solver implementation",
+        "robolab/eval/runner.py shared policy evaluation loop for paper-style experiments",
+        "robolab/core/logging/results.py grouping by attributes, object count, and subtask count",
+        "policies/pi0_family/run_lighting.py, run_background_variation.py, run_table_variation.py, and run_camera_pose_variation.py variation experiment runners",
+        "robolab/core/task/task.py Task schema, resolve_instruction, and verify_task_valid static validation fields used to explain DTGE",
+        "robolab/scene_gen/llm_scene_gen/predicates.py predicate grammar targeted by the Stage I prompts",
+        "robolab/scene_gen/llm_scene_gen/feedback_system.py solver and physics feedback messages that feed prompt repair",
+        "robolab/scene_gen/llm_scene_gen/physical_solver.py place-on grouping, support slot search, place-in container packing, and z-height assignment",
+        "robolab/scene_gen/llm_scene_gen/spatial_solver.py base-pose solving before physical placement",
+        "EXPLAIN_14 source-code runtime chain: robolab/eval/runner.py task selection, resume, adaptive sampling, output directory, and call into run_episode/summarize_run",
+        "EXPLAIN_14 source-code runtime chain: robolab/eval/episode.py policy-controlled step loop, active env filtering, HDF5 run file selection, video writers, timing, and client reset",
+        "EXPLAIN_14 source-code runtime chain: robolab/eval/base_client.py InferenceClient hook contract and per-env action chunk cache",
+        "EXPLAIN_14 source-code runtime chain: policies/pi0_family/client.py OpenPI/Pi05 observation extraction, request schema, websocket retry, action chunk unpacking, and gripper binarization",
+        "EXPLAIN_14 source-code runtime chain: robolab/core/world/world_state.py unified object/geometry/contact query layer and predicate state cache",
+        "EXPLAIN_14 source-code runtime chain: robolab/core/task/event_tracker.py wrong object, dropped target, hit table, moved object, tipped object, and env-mask failure events",
+        "EXPLAIN_14 source-code runtime chain: robolab/core/logging/recorder_manager.py streaming HDF5 recorder, per-env EpisodeData, run_<idx>.hdf5, and demo_<env_id> indexing",
+        "EXPLAIN_14 source-code runtime chain: robolab/eval/summarize.py and robolab/core/logging/results.py event log writing, trajectory metric folding, final score extraction, and episode_results.jsonl append",
+        "EXPLAIN_14 source-code runtime chain: dashboard/loaders/local.py offline result loading, HDF5/video/log discovery, and SR/Score confidence interval display",
+        "EXPLAIN_15 reviewer synthesis source grounding: evaluation runners, dashboard, policy adapters, event logs, result schema, and 4090-cost reproduction constraints",
+        "EXPLAIN_16 reading-route grounding: RoboLab modules used to organize external recommended reading by policy client, scene/task generation, asset preflight, real-world correlation, long-horizon reasoning, and failure analysis"
+      ]
+    },
+    {
+      "title": "RoboLab scene generation skill notes in remote checkout",
+      "url": "local:/home/yjl/codex_robolab_4090_20260619/RoboLab/skills/robolab-scenegen/SKILL.md",
+      "used_for": [
+        "predicate JSON examples",
+        "scene file generation pattern",
+        "base_empty.usda payload insertion and settle workflow",
+        "scene generation prompt design: object catalog exact naming, predicate JSON, solver pipeline, and medium-scene constraints"
+      ]
+    },
+    {
+      "title": "RoboLab task generation skill notes in remote checkout",
+      "url": "local:/home/yjl/codex_robolab_4090_20260619/RoboLab/skills/robolab-taskgen/SKILL.md",
+      "used_for": [
+        "Task dataclass generation template",
+        "task examples for pick/place, sorting, and stacking",
+        "conditionals predicate library mapping",
+        "syntax/resource validation and repair-prompt explanation",
+        "DTGE static extraction targets: instruction, terminations.success, attributes, subtasks, and predicate parameters"
+      ],
+      "related_files": [
+        "local:/home/yjl/codex_robolab_4090_20260619/RoboLab/skills/robolab-taskgen/references/examples.md",
+        "local:/home/yjl/codex_robolab_4090_20260619/RoboLab/skills/robolab-taskgen/references/conditionals.md"
+      ]
+    },
+    {
+      "title": "RoboLab docs: Analysis and Results Parsing",
+      "url": "https://raw.githubusercontent.com/NVlabs/RoboLab/main/docs/analysis.md",
+      "used_for": [
+        "result parsing commands",
+        "summary dimensions",
+        "confidence interval caveat",
+        "paper experiment result parsing by attributes, difficulty, instruction type, scene, wrong objects, and beta credible interval",
+        "EXPLAIN_13 analysis commands for score/success, instruction type, wrong objects, and episode aggregation"
+      ]
+    },
+    {
+      "title": "RoboLab docs: Data Storage and Output",
+      "url": "https://raw.githubusercontent.com/NVlabs/RoboLab/main/docs/data.md",
+      "used_for": [
+        "episode_results.jsonl fields",
+        "HDF5/video output structure",
+        "EXPLAIN_13 evidence chain: videos for human inspection and JSON/HDF5/event logs for paper-style statistics"
+      ]
+    },
+    {
+      "title": "RoboLab docs: Event Tracking",
+      "url": "https://raw.githubusercontent.com/NVlabs/RoboLab/main/docs/event_tracking.md",
+      "used_for": [
+        "EXPLAIN_13 failure taxonomy: wrong object, gripper hit table, dropped target, object moved, tipped, and out-of-scene events"
+      ]
+    },
+    {
+      "title": "RoboLab docs: Subtask Checking",
+      "url": "https://raw.githubusercontent.com/NVlabs/RoboLab/main/docs/subtask.md",
+      "used_for": [
+        "EXPLAIN_13 success-vs-score explanation and hierarchical subtask/condition state machine interpretation"
+      ]
+    },
+    {
+      "title": "RoboLab docs: Dashboard",
+      "url": "https://raw.githubusercontent.com/NVlabs/RoboLab/main/docs/dashboard.md",
+      "used_for": [
+        "EXPLAIN_13 dashboard evidence and confidence interval explanation: SR Beta credible interval and Score Student-t interval"
+      ]
+    },
+    {
+      "title": "RoboLab docs: num_envs VRAM guide",
+      "url": "https://raw.githubusercontent.com/NVlabs/RoboLab/main/docs/env_vram_size_guide.md",
+      "used_for": [
+        "task names and VRAM caution; L40 48GB values treated only as upper-bound orientation"
+      ]
+    }
+  ]
+}

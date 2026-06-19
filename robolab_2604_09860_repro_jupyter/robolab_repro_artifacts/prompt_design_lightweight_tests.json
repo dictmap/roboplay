@@ -1,0 +1,184 @@
+{
+  "all_passed": true,
+  "validations": {
+    "good_output": {
+      "valid": true,
+      "issues": [],
+      "object_count": 7,
+      "predicate_types": {
+        "place-on-base": 2,
+        "place-in": 1,
+        "place-on": 1,
+        "cluster-around": 1
+      },
+      "large_objects": [],
+      "yaw_values": [
+        23.0,
+        156.0
+      ]
+    },
+    "hallucinated_object_output": {
+      "valid": false,
+      "issues": [
+        "catalog name mismatch: ['beautiful_red_ceramic_bowl']"
+      ],
+      "object_count": 2,
+      "predicate_types": {
+        "place-on-base": 1,
+        "place-in": 1
+      },
+      "large_objects": [],
+      "yaw_values": [
+        30.0
+      ]
+    },
+    "dependency_error_output": {
+      "valid": false,
+      "issues": [
+        "container/support must be placed first: bowl_0"
+      ],
+      "object_count": 2,
+      "predicate_types": {
+        "place-in": 1
+      },
+      "large_objects": [],
+      "yaw_values": []
+    },
+    "grid_like_output": {
+      "valid": false,
+      "issues": [
+        "all yaw angles are cardinal grid angles"
+      ],
+      "object_count": 4,
+      "predicate_types": {
+        "place-on-base": 4
+      },
+      "large_objects": [],
+      "yaw_values": [
+        0.0,
+        90.0,
+        180.0,
+        270.0
+      ]
+    },
+    "too_many_large_objects_output": {
+      "valid": false,
+      "issues": [
+        "too many large objects for medium scene: ['storage_bin', 'large_box', 'tray']",
+        "medium scene lacks containment/support/clustering structure"
+      ],
+      "object_count": 5,
+      "predicate_types": {
+        "place-on-base": 5
+      },
+      "large_objects": [
+        "storage_bin",
+        "large_box",
+        "tray"
+      ],
+      "yaw_values": [
+        19.0,
+        71.0,
+        133.0,
+        44.0,
+        28.0
+      ]
+    },
+    "markdown_wrapped_output": {
+      "valid": false,
+      "issues": [
+        "output is not JSON-only; likely contains prose or markdown"
+      ]
+    }
+  },
+  "rendered_prompt": {
+    "scene_request": "kitchen counter with fruit and utensils",
+    "target_count": 10,
+    "table_size": "0.7m x 1.0m = 0.70m^2",
+    "size_limits": {
+      "large_objects": [
+        "tray",
+        "storage_bin",
+        "large_box"
+      ],
+      "rule": "max 1-2 large objects; prefer smaller for 8+ items"
+    },
+    "available_objects": {
+      "containers": [
+        "bowl_0",
+        "large_box",
+        "mug",
+        "storage_bin"
+      ],
+      "supports": [
+        "large_box",
+        "plate_large",
+        "tray"
+      ],
+      "food": [
+        "apple_01",
+        "banana",
+        "orange_01"
+      ],
+      "tools": [
+        "spoon"
+      ],
+      "other": [
+        "large_box",
+        "mug"
+      ]
+    },
+    "medium_scene_strategy": [
+      "Use 1-2 containers/supports as anchors",
+      "Put 2-4 objects in containers",
+      "Stack 1-2 items on supports",
+      "Cluster 2-3 objects near anchors",
+      "Vary yaw angles"
+    ],
+    "suggested_for_diversity": [
+      "bowl_0",
+      "plate_large",
+      "banana",
+      "spoon"
+    ]
+  },
+  "tests": [
+    {
+      "name": "good_output_is_valid",
+      "passed": true
+    },
+    {
+      "name": "good_output_uses_semantic_predicates",
+      "passed": true
+    },
+    {
+      "name": "hallucinated_object_detected",
+      "passed": true
+    },
+    {
+      "name": "dependency_error_detected",
+      "passed": true
+    },
+    {
+      "name": "grid_yaw_detected",
+      "passed": true
+    },
+    {
+      "name": "too_many_large_objects_detected",
+      "passed": true
+    },
+    {
+      "name": "markdown_wrapper_rejected",
+      "passed": true
+    },
+    {
+      "name": "runtime_prompt_has_catalog_categories",
+      "passed": true
+    },
+    {
+      "name": "runtime_prompt_has_size_warning",
+      "passed": true
+    }
+  ],
+  "boundary": "These tests validate prompt-output constraints and runtime prompt structure with synthetic examples; they do not call the paper's LLM or render USD scenes."
+}

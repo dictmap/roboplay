@@ -1,0 +1,106 @@
+{
+  "reviewer_synthesis": {
+    "paper_type": "benchmark_system_evaluation",
+    "provisional_verdict": "weak_accept_to_accept_boundary_for_learning_review",
+    "summary": "RoboLab 最强的贡献不是单点策略算法，而是把高保真仿真、任务/场景生成、策略接入、细粒度诊断、扰动敏感性和真实世界相关性组织成一个可运行的评测框架。",
+    "contributions": {
+      "framework": "提供从 scene/task/env 到 policy rollout、日志、视频、指标和 dashboard 的完整评测闭环。",
+      "benchmark": "构建 RoboLab-120，用 visual、procedural、relational 能力轴组织任务。",
+      "diagnostics": "不只报告 success rate，还记录 score、事件失败、任务属性、对象数和子任务数。",
+      "sensitivity": "用 MNPE/NPE 分析相机、光照、背景、纹理等扰动对策略表现的影响。",
+      "generation": "用 LLM 生成语义场景和任务，再通过语法、资源、空间和物理检查做修复。",
+      "real_world_proxy": "用 RoboArena 等真实机器人结果检查仿真 benchmark 的外部相关性。",
+      "toolchain": "公开 GitHub、运行入口、dashboard、策略客户端和复现所需工程结构。"
+    },
+    "strengths": [
+      "诊断粒度比只看二值成功率更高，能解释失败类型和能力短板。",
+      "任务覆盖更接近真实桌面操作中的多对象、多属性、多步骤组合。",
+      "generation + validation + feedback loop 让 benchmark 可扩展，而不是手写少量固定场景。",
+      "同一框架能比较策略、扰动敏感性、任务难度和真实世界 proxy 排名。",
+      "工程链路较完整，复现时可以追踪到视频、HDF5、JSONL、event log 和 dashboard。"
+    ],
+    "major_concerns": {
+      "real_world_correlation_depth": "真实世界相关性是重要亮点，但还需要更细粒度地说明哪些任务、哪些能力轴、哪些失败类型能稳定预测真实机器人表现。",
+      "rigid_tabletop_scope": "当前主要是刚体桌面操作，离软体、铰链、液体、工具使用和长程导航还有距离。",
+      "task_generation_governance": "LLM 生成任务很有扩展性，但需要更系统的版本控制、去重、难度校准和无效任务审计。",
+      "sim_fidelity_audit": "论文强调视觉/几何保真，但需要更多关于接触、摩擦、遮挡、质量、反光和 collision mesh 的误差分析。",
+      "evaluation_cost": "完整 RoboLab-120 对 24GB 4090 用户成本较高，需要官方级 subset、early-stop 和低成本统计协议。"
+    },
+    "minor_concerns": [
+      "README 的测试命令和当前仓库文件面不完全一致，需要记录版本差异。",
+      "资产 LFS 下载慢会影响复现体验，建议提供按任务解析依赖的 manifest。",
+      "4090 复现需要明确 num_envs、视频开关、headless 和缓存策略。",
+      "prompt、solver、validator 的版本最好和任务元数据一起固化。"
+    ],
+    "future_directions": {
+      "real_correlation": "建立 RoboLab-RealCorrelation：按任务属性/失败类型预测真实机器人表现，而不是只做总体排名相关。",
+      "adversarial_task_generation": "让 LLM/搜索器主动生成能区分策略能力边界的 hard cases，并用 validator 控制物理可行性。",
+      "causal_mnpe": "把 MNPE 从相关性敏感分析推进到因果扰动设计，回答哪个场景因素真正导致失败。",
+      "deformable_contact_rich": "加入软体、铰链、工具、液体、推拉旋拧等接触密集任务，突破刚体 tabletop 边界。",
+      "neural_scene_nurec": "结合 NuRec、3DGS/3DGUT/3DGRT 等 neural scene 方法，让真实场景外观进入可交互评测闭环。",
+      "low_cost_24gb_protocol": "设计 24GB GPU 友好的分层评测：single-env smoke、能力轴 subset、adaptive sampling、失败优先重跑。",
+      "unified_policy_adapter": "统一 Pi0/Pi05、RoboChallenge、ReKep、RT-2/ACT 等策略的观测/action adapter 和结果 schema。",
+      "failure_report_generator": "自动把 video、event、HDF5、trajectory metric 和 task metadata 汇总成可读 failure report。"
+    },
+    "our_next_routes": {
+      "reproduction": [
+        "保持 BananaInBowlTask 完整成功闭环作为 sanity baseline。",
+        "继续按能力轴挑复杂任务补资产、跑视频、记录 failure reason。",
+        "不要在资产未齐、策略 server 未稳、并行度未校准前盲跑完整 RoboLab-120。"
+      ],
+      "comparison": [
+        "把 OpenPI pi05、RoboChallenge pi、ReKep 统一成同一张任务/输入/输出/失败类型表。",
+        "先比较少量代表任务，再扩展到能力轴 subset。"
+      ],
+      "innovation": [
+        "优先做 4090 低成本评测协议和自动 failure report。",
+        "其次做 adversarial task generation 和真实世界相关性细分分析。"
+      ]
+    },
+    "boundary": "This is a learning-oriented reviewer synthesis, not an official peer-review decision and not a new experiment."
+  },
+  "tests": [
+    {
+      "name": "classified_as_benchmark_system_paper",
+      "passed": true
+    },
+    {
+      "name": "has_seven_contribution_buckets",
+      "passed": true
+    },
+    {
+      "name": "strengths_cover_diagnostics_and_toolchain",
+      "passed": true
+    },
+    {
+      "name": "major_concerns_cover_five_review_axes",
+      "passed": true
+    },
+    {
+      "name": "future_directions_cover_eight_routes",
+      "passed": true
+    },
+    {
+      "name": "future_includes_24gb_protocol",
+      "passed": true
+    },
+    {
+      "name": "future_includes_nurec_or_gaussian",
+      "passed": true
+    },
+    {
+      "name": "roadmap_has_reproduction_comparison_innovation",
+      "passed": true
+    },
+    {
+      "name": "boundary_not_official_review",
+      "passed": true
+    },
+    {
+      "name": "boundary_not_new_experiment",
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "boundary": "Coverage check for EXPLAIN_15 only; it does not execute Isaac Sim, policies, or RoboLab-120."
+}

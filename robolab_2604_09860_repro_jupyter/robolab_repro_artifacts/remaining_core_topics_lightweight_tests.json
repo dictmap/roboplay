@@ -1,0 +1,201 @@
+{
+  "remaining_core_topics": {
+    "evaluation_protocol": {
+      "paper_section": "IV-A Experiment Setup",
+      "input": [
+        "task",
+        "scene",
+        "instruction",
+        "robot",
+        "policy",
+        "camera_config",
+        "variation_seed"
+      ],
+      "output": [
+        "episode_results",
+        "HDF5",
+        "videos",
+        "event_logs"
+      ],
+      "why": "定义什么才算论文级 rollout，而不是单个好看的仿真视频。",
+      "covered_in_explain13": true
+    },
+    "success_vs_score_gap": {
+      "paper_section": "III-C Metrics / IV-B Task Results",
+      "input": [
+        "subtask_state",
+        "termination_state"
+      ],
+      "output": [
+        "strict_success",
+        "partial_score"
+      ],
+      "why": "success 看最终完成，score 看中间能力；二者差距暴露模型部分理解。",
+      "covered_in_explain13": true
+    },
+    "language_variations": {
+      "paper_section": "III-C Language Variations / IV-B instruction specificity",
+      "input": [
+        "default_instruction",
+        "vague_instruction",
+        "specific_instruction"
+      ],
+      "output": [
+        "success_by_instruction_type"
+      ],
+      "why": "验证策略是否理解目标状态，而不是只记住固定语言模板。",
+      "covered_in_explain13": true
+    },
+    "complexity_sweeps": {
+      "paper_section": "IV-B instruction specificity / scene complexity / task horizon",
+      "input": [
+        "instruction_specificity",
+        "visible_object_count",
+        "subtask_count"
+      ],
+      "output": [
+        "performance_degradation_curve"
+      ],
+      "why": "定位失败来自语言抽象、视觉干扰还是长时序规划。",
+      "covered_in_explain13": true
+    },
+    "event_tracking_failures": {
+      "paper_section": "Figure 3 and docs/event_tracking.md",
+      "input": [
+        "world_state",
+        "contact_state",
+        "target_object_list"
+      ],
+      "output": [
+        "wrong_object",
+        "dropped_target",
+        "hit_table",
+        "object_moved"
+      ],
+      "why": "把失败从一个 False 拆成可诊断的行为错误。",
+      "covered_in_explain13": true
+    },
+    "real_world_verification": {
+      "paper_section": "IV-D Real-World Verification",
+      "input": [
+        "robolab_success_rate_by_policy",
+        "roboarena_elo_by_policy"
+      ],
+      "output": [
+        "rank_correlation",
+        "proxy_interpretation"
+      ],
+      "why": "解释 RoboLab 为什么可以作为真实评测 proxy，但不是逐任务等价证明。",
+      "covered_in_explain13": true
+    },
+    "statistical_confidence_dashboard": {
+      "paper_section": "Appendix A-A and dashboard docs",
+      "input": [
+        "episode_results_jsonl",
+        "score_samples",
+        "success_samples"
+      ],
+      "output": [
+        "CI",
+        "dashboard_tables",
+        "analysis_csv"
+      ],
+      "why": "防止用一条 episode 视频替代多 episode 统计结论。",
+      "covered_in_explain13": true
+    },
+    "limitations_boundary": {
+      "paper_section": "V Limitations",
+      "input": [
+        "task_type",
+        "object_physics",
+        "instruction_ambiguity"
+      ],
+      "output": [
+        "benchmark_scope_judgment"
+      ],
+      "why": "区分策略失败、环境失败和 benchmark 当前不擅长回答的问题。",
+      "covered_in_explain13": true
+    }
+  },
+  "score_example": {
+    "group_progress": {
+      "banana": [
+        4,
+        4
+      ],
+      "rubiks_cube": [
+        1,
+        4
+      ]
+    },
+    "strict_success": false,
+    "partial_score": 0.625,
+    "interpretation": "模型做完 banana 但 cube 只完成抓取，所以最终失败但有部分分数。"
+  },
+  "rank_correlation_example": {
+    "robolab_policy_rank": {
+      "pi05": 0.28,
+      "pi0": 0.155,
+      "groot": 0.072,
+      "paligemma": 0.034
+    },
+    "roboarena_policy_rank": {
+      "pi05": 1300,
+      "pi0": 1200,
+      "groot": 1100,
+      "paligemma": 1000
+    },
+    "spearman": 1.0,
+    "boundary": "Toy ranking example for explaining proxy interpretation, not a fresh RoboArena result."
+  },
+  "failure_routing_examples": {
+    "asset_missing": "复现环境问题",
+    "deformable": "RoboLab 当前边界",
+    "single_episode": "证据规模不足",
+    "wrong_object": "策略泛化/执行问题"
+  },
+  "tests": [
+    {
+      "name": "all_remaining_topics_marked_covered",
+      "passed": true
+    },
+    {
+      "name": "each_topic_has_input_output_why",
+      "passed": true
+    },
+    {
+      "name": "success_can_be_false_while_score_positive",
+      "passed": true
+    },
+    {
+      "name": "language_variations_include_three_types",
+      "passed": true
+    },
+    {
+      "name": "complexity_sweeps_cover_three_axes",
+      "passed": true
+    },
+    {
+      "name": "event_tracking_covers_wrong_and_dropped",
+      "passed": true
+    },
+    {
+      "name": "real_world_proxy_uses_rank_correlation",
+      "passed": true
+    },
+    {
+      "name": "limitation_router_detects_deformable_boundary",
+      "passed": true
+    },
+    {
+      "name": "limitation_router_detects_single_episode_gap",
+      "passed": true
+    },
+    {
+      "name": "environment_failure_not_confused_with_policy_failure",
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "boundary": "This coverage check validates the explanation map. It does not rerun RoboLab-120 or compute new policy statistics."
+}

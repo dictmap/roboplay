@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+
+# Local/remote runtime evidence can be large. Keep summaries in Markdown/JSON,
+# but do not commit videos, copied output trees, or transient logs by default.
+remote_outputs/
+remote_logs/
+RoboLab_4090_repro_learning_record.executed.html
+

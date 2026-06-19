@@ -1,0 +1,6 @@
+{
+  "subset_tasks": 3,
+  "subset_episodes": 3,
+  "subset_success_pct": 33.33333333333333,
+  "warning": "This is a subset/smoke metric, not full RoboLab-120 reproduction."
+}

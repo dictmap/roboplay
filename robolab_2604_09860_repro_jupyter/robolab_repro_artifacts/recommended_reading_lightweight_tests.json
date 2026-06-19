@@ -1,0 +1,867 @@
+{
+  "reading_items": [
+    {
+      "id": "robolab",
+      "title": "NVIDIA RoboLab",
+      "group": "main_paper",
+      "priority": "P0",
+      "urls": [
+        "https://arxiv.org/html/2604.09860",
+        "https://github.com/NVlabs/RoboLab"
+      ],
+      "why": "主线论文和代码，定义 scene/task/env/policy/result/dashboard 评测闭环。",
+      "study_focus": [
+        "competency_axes",
+        "task_generation",
+        "policy_eval",
+        "dashboard"
+      ],
+      "robolab_link": "source_of_truth",
+      "release_year": 2026,
+      "recency_tier": "2026_frontier"
+    },
+    {
+      "id": "behavior_1k_omnigibson",
+      "title": "BEHAVIOR-1K / OmniGibson",
+      "group": "stanford_feifei_omnigibson",
+      "priority": "P0",
+      "urls": [
+        "https://proceedings.mlr.press/v205/li23a.html",
+        "https://behavior.stanford.edu/",
+        "https://github.com/StanfordVL/BEHAVIOR-1K"
+      ],
+      "why": "人类真实需求驱动的 embodied benchmark，包含长程 household tasks 和 OmniGibson 仿真。",
+      "study_focus": [
+        "long_horizon",
+        "household_tasks",
+        "object_states",
+        "sim_to_real_gap"
+      ],
+      "robolab_link": "extends_task_scope",
+      "release_year": "pre_2026_or_background",
+      "recency_tier": "foundation_background"
+    },
+    {
+      "id": "droid",
+      "title": "DROID",
+      "group": "stanford_real_world_data",
+      "priority": "P0",
+      "urls": [
+        "https://droid-dataset.github.io/",
+        "https://github.com/droid-dataset/droid_policy_learning"
+      ],
+      "why": "真实机器人、多地点、多任务 demonstration 数据，是理解 VLA 泛化训练数据的重要来源。",
+      "study_focus": [
+        "real_robot_data",
+        "multi_scene",
+        "policy_learning",
+        "data_schema"
+      ],
+      "robolab_link": "real_data_context",
+      "release_year": "pre_2026_or_background",
+      "recency_tier": "foundation_background"
+    },
+    {
+      "id": "roboarena",
+      "title": "RoboArena",
+      "group": "sim_real_evaluation",
+      "priority": "P0",
+      "urls": [
+        "https://robo-arena.github.io/",
+        "https://arxiv.org/html/2506.18123v1"
+      ],
+      "why": "真实世界 generalist robot policy 分布式评测，用来理解 RoboLab 的 real-world correlation。",
+      "study_focus": [
+        "real_world_eval",
+        "ranking",
+        "pairwise_comparison",
+        "correlation"
+      ],
+      "robolab_link": "external_validity",
+      "release_year": "pre_2026_or_background",
+      "recency_tier": "foundation_background"
+    },
+    {
+      "id": "rekep",
+      "title": "ReKep",
+      "group": "constraint_planning",
+      "priority": "P1",
+      "urls": [
+        "https://rekep-robot.github.io/",
+        "https://github.com/huangwl18/ReKep"
+      ],
+      "why": "把语言任务变成 3D keypoint constraints，适合作为 VLA 端到端策略的对照路线。",
+      "study_focus": [
+        "keypoint_constraints",
+        "hierarchical_optimization",
+        "closed_loop_control"
+      ],
+      "robolab_link": "baseline_contrast",
+      "release_year": "pre_2026_or_background",
+      "recency_tier": "foundation_background"
+    },
+    {
+      "id": "openpi_pi05",
+      "title": "OpenPI / pi0 / pi0.5",
+      "group": "policy_models",
+      "priority": "P0",
+      "urls": [
+        "https://github.com/Physical-Intelligence/openpi",
+        "https://arxiv.org/abs/2504.16054"
+      ],
+      "why": "当前复现使用的 Pi05 系列策略，直接对应 RoboLab policy client 和 action chunk。",
+      "study_focus": [
+        "vla",
+        "action_chunk",
+        "observation_schema",
+        "server_client"
+      ],
+      "robolab_link": "current_policy",
+      "release_year": "pre_2026_or_background",
+      "recency_tier": "foundation_background"
+    },
+    {
+      "id": "isaac_lab_arena",
+      "title": "Isaac Lab / Isaac Lab-Arena",
+      "group": "nvidia_simulation",
+      "priority": "P0",
+      "urls": [
+        "https://github.com/isaac-sim/IsaacLab",
+        "https://github.com/isaac-sim/IsaacLab-Arena"
+      ],
+      "why": "RoboLab 的底层仿真生态和未来可组合 benchmark 方向。",
+      "study_focus": [
+        "simulation_framework",
+        "scene_embodiment_task",
+        "sensors",
+        "parallel_envs"
+      ],
+      "robolab_link": "runtime_foundation",
+      "release_year": 2026,
+      "recency_tier": "2026_frontier"
+    },
+    {
+      "id": "lightwheel_lw_benchhub",
+      "title": "Lightwheel / LW-BenchHub / SimReady Assets",
+      "group": "lightwheel_simready",
+      "priority": "P0",
+      "urls": [
+        "https://github.com/LightwheelAI",
+        "https://lightwheel.ai/release/lwlab",
+        "https://docs.lightwheel.net/"
+      ],
+      "why": "光轮的 SimReady 资产、场景和 benchmark hub 方向可直接缓解 RoboLab 资产和场景规模化瓶颈。",
+      "study_focus": [
+        "simready_assets",
+        "benchmark_hub",
+        "teleoperation",
+        "vla_finetuning"
+      ],
+      "robolab_link": "asset_and_benchmark_scaling",
+      "release_year": 2026,
+      "recency_tier": "2026_frontier"
+    },
+    {
+      "id": "rdt_1b",
+      "title": "RDT-1B",
+      "group": "tsinghua_embodied",
+      "priority": "P0",
+      "urls": [
+        "https://github.com/thu-ml/RoboticsDiffusionTransformer",
+        "https://rdt-robotics.github.io/rdt-robotics/",
+        "https://arxiv.org/html/2410.07864v1"
+      ],
+      "why": "清华 THU-ML/TSAIL 的 diffusion transformer 机器人 foundation model，适合作为 OpenPI/GR00T 的策略路线对照。",
+      "study_focus": [
+        "diffusion_transformer",
+        "unified_action_space",
+        "bimanual",
+        "multi_robot_data"
+      ],
+      "robolab_link": "candidate_policy_family",
+      "release_year": "pre_2026_or_background",
+      "recency_tier": "foundation_background"
+    },
+    {
+      "id": "rdt2",
+      "title": "RDT2",
+      "group": "tsinghua_embodied",
+      "priority": "P1",
+      "urls": [
+        "https://github.com/thu-ml/RDT2",
+        "https://arxiv.org/abs/2602.03310"
+      ],
+      "why": "2026 RDT 续作，强调 unseen embodiment zero-shot、RDT2-VQ/RDT2-FM 和 open-world instruction following。",
+      "study_focus": [
+        "unseen_embodiment",
+        "action_tokenizer",
+        "flow_matching",
+        "zero_shot",
+        "umi_video_scale"
+      ],
+      "robolab_link": "future_cross_embodiment_eval",
+      "release_year": 2026,
+      "recency_tier": "2026_frontier"
+    },
+    {
+      "id": "robotwin",
+      "title": "RoboTwin / RoboTwin 2.0",
+      "group": "domestic_generation_benchmark",
+      "priority": "P0",
+      "urls": [
+        "https://robotwin-platform.github.io/",
+        "https://github.com/robotwin-Platform/robotwin"
+      ],
+      "why": "双臂 manipulation、generative digital twins、自动任务和 expert data generation，适合对照 RoboLab scene/task generation。",
+      "study_focus": [
+        "bimanual",
+        "digital_twin",
+        "task_program_synthesis",
+        "domain_randomization"
+      ],
+      "robolab_link": "generation_pipeline_reference",
+      "release_year": "pre_2026_or_background",
+      "recency_tier": "foundation_background"
+    },
+    {
+      "id": "robomind",
+      "title": "RoboMIND",
+      "group": "domestic_real_world_data",
+      "priority": "P1",
+      "urls": [
+        "https://x-humanoid-robomind.github.io/",
+        "https://arxiv.org/abs/2412.13877"
+      ],
+      "why": "多 embodiment 真实 teleoperation 数据和 failure demonstrations，可启发 RoboLab failure report。",
+      "study_focus": [
+        "multi_embodiment",
+        "failure_demos",
+        "digital_twin",
+        "teleoperation"
+      ],
+      "robolab_link": "failure_dataset_inspiration",
+      "release_year": "pre_2026_or_background",
+      "recency_tier": "foundation_background"
+    },
+    {
+      "id": "rh20t",
+      "title": "RH20T",
+      "group": "contact_rich_data",
+      "priority": "P1",
+      "urls": [
+        "https://rh20t.github.io/",
+        "https://github.com/rh20t/rh20t_api"
+      ],
+      "why": "接触丰富、多模态真实机器人数据，补 RoboLab 当前刚体桌面任务的边界。",
+      "study_focus": [
+        "contact_rich",
+        "force",
+        "audio",
+        "multi_modal"
+      ],
+      "robolab_link": "future_contact_rich_extension",
+      "release_year": "pre_2026_or_background",
+      "recency_tier": "foundation_background"
+    },
+    {
+      "id": "groot",
+      "title": "NVIDIA Isaac GR00T N1.7",
+      "group": "nvidia_policy_models",
+      "priority": "P0",
+      "urls": [
+        "https://github.com/NVIDIA/Isaac-GR00T",
+        "https://research.nvidia.com/labs/gear/gr00t-n1_5/"
+      ],
+      "why": "2026 当前 GitHub 指向 GR00T N1.7 EA：新 VLM backbone、20K 小时 EgoScale human video、relative EEF action space。",
+      "study_focus": [
+        "vla",
+        "humanoid",
+        "lerobot_format",
+        "finetuning",
+        "relative_eef_action"
+      ],
+      "robolab_link": "candidate_policy_family",
+      "release_year": 2026,
+      "recency_tier": "2026_frontier"
+    },
+    {
+      "id": "cosmos",
+      "title": "NVIDIA Cosmos",
+      "group": "nvidia_world_models",
+      "priority": "P1",
+      "urls": [
+        "https://github.com/nvidia-cosmos",
+        "https://github.com/nvidia-cosmos/cosmos-predict2.5",
+        "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Releases-New-Physical-AI-Models-as-Global-Partners-Unveil-Next-Generation-Robots/default.aspx"
+      ],
+      "why": "2026 NVIDIA Physical AI stack 的 world model 方向，适合未来做场景扰动、合成数据和 world model 预演。",
+      "study_focus": [
+        "world_foundation_model",
+        "synthetic_data",
+        "physical_ai",
+        "video_prediction",
+        "cosmos_transfer_predict_reason"
+      ],
+      "robolab_link": "future_scene_generation_and_augmentation",
+      "release_year": 2026,
+      "recency_tier": "2026_frontier"
+    },
+    {
+      "id": "nvidia_physical_ai_2026_release",
+      "title": "NVIDIA 2026 Physical AI Release",
+      "group": "nvidia_physical_ai_ecosystem",
+      "priority": "P0",
+      "urls": [
+        "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Releases-New-Physical-AI-Models-as-Global-Partners-Unveil-Next-Generation-Robots/default.aspx"
+      ],
+      "why": "2026-01-05 官方发布把 Cosmos、GR00T、Isaac Lab-Arena、OSMO 和 LeRobot integration 放到同一条 physical AI workflow。",
+      "study_focus": [
+        "physical_ai_stack",
+        "cosmos",
+        "groot",
+        "isaac_lab_arena",
+        "lerobot"
+      ],
+      "robolab_link": "ecosystem_roadmap",
+      "release_year": 2026,
+      "recency_tier": "2026_frontier"
+    },
+    {
+      "id": "lyra_2026",
+      "title": "NVIDIA Research Lyra",
+      "group": "nvidia_world_models",
+      "priority": "P1",
+      "urls": [
+        "https://research.nvidia.com/labs/toronto-ai/lyra/"
+      ],
+      "why": "ICLR 2026 生成式 3D/4D Gaussian 场景方向，可作为 RoboLab 未来快速生成候选场景的前沿参照。",
+      "study_focus": [
+        "3d_gaussian_scene_generation",
+        "text_image_video_to_3d",
+        "isaac_sim_import",
+        "world_model"
+      ],
+      "robolab_link": "future_scene_generation_and_augmentation",
+      "release_year": 2026,
+      "recency_tier": "2026_frontier"
+    },
+    {
+      "id": "simready_foundation",
+      "title": "NVIDIA SimReady Foundation",
+      "group": "nvidia_simready",
+      "priority": "P0",
+      "urls": [
+        "https://github.com/NVIDIA/simready-foundation"
+      ],
+      "why": "学习可仿真 USD/SimReady 资产规范，解释 RoboLab LFS、collision、physics、scale、semantic label 问题。",
+      "study_focus": [
+        "usd",
+        "lfs",
+        "asset_validation",
+        "physics_properties"
+      ],
+      "robolab_link": "asset_preflight",
+      "release_year": "pre_2026_or_background",
+      "recency_tier": "foundation_background"
+    },
+    {
+      "id": "robocasa365",
+      "title": "RoboCasa / RoboCasa365",
+      "group": "nvidia_related_household_benchmark",
+      "priority": "P1",
+      "urls": [
+        "https://robocasa.ai/",
+        "https://github.com/robocasa/robocasa",
+        "https://github.com/robocasa/robocasa/releases",
+        "https://arxiv.org/html/2603.04356v1"
+      ],
+      "why": "ICLR 2026 / v1.0 release 的大规模 kitchen/household simulation benchmark，可对照 RoboLab 的桌面操作和任务规模。",
+      "study_focus": [
+        "kitchen_tasks",
+        "household_simulation",
+        "demonstrations",
+        "benchmarking",
+        "365_tasks"
+      ],
+      "robolab_link": "household_scale_reference",
+      "release_year": 2026,
+      "recency_tier": "2026_frontier"
+    },
+    {
+      "id": "openvla",
+      "title": "OpenVLA",
+      "group": "policy_models",
+      "priority": "P1",
+      "urls": [
+        "https://github.com/openvla/openvla",
+        "https://arxiv.org/html/2406.09246v1"
+      ],
+      "why": "开源 7B VLA 代表，适合对照 OpenPI/GR00T/RDT 的 policy adapter 设计。",
+      "study_focus": [
+        "rlds",
+        "finetuning",
+        "libero_eval",
+        "bridge_data"
+      ],
+      "robolab_link": "candidate_policy_family",
+      "release_year": "pre_2026_or_background",
+      "recency_tier": "foundation_background"
+    },
+    {
+      "id": "octo",
+      "title": "Octo",
+      "group": "policy_models",
+      "priority": "P1",
+      "urls": [
+        "https://octo-models.github.io/",
+        "https://github.com/octo-models/octo"
+      ],
+      "why": "开源 generalist robot policy，基于 transformer/diffusion policy，适合做非 OpenPI 基线。",
+      "study_focus": [
+        "diffusion_policy",
+        "generalist_policy",
+        "finetuning",
+        "multi_robot"
+      ],
+      "robolab_link": "candidate_policy_family",
+      "release_year": "pre_2026_or_background",
+      "recency_tier": "foundation_background"
+    },
+    {
+      "id": "lerobot",
+      "title": "LeRobot",
+      "group": "tooling_and_dataset_format",
+      "priority": "P1",
+      "urls": [
+        "https://github.com/huggingface/lerobot",
+        "https://huggingface.co/docs/lerobot/en/index"
+      ],
+      "why": "工程化机器人学习工具链，统一 dataset、policy、训练和评测，可作为 RoboLab 输出转数据集的参考。",
+      "study_focus": [
+        "dataset_format",
+        "video_parquet",
+        "policy_training",
+        "hub"
+      ],
+      "robolab_link": "data_format_bridge",
+      "release_year": "pre_2026_or_background",
+      "recency_tier": "foundation_background"
+    },
+    {
+      "id": "simpler",
+      "title": "SIMPLER",
+      "group": "sim_real_evaluation",
+      "priority": "P1",
+      "urls": [
+        "https://simpler-env.github.io/",
+        "https://github.com/simpler-env/SimplerEnv"
+      ],
+      "why": "仿真评测预测真实机器人表现的代表工作，可对照 RoboLab 的 real-world correlation。",
+      "study_focus": [
+        "sim_to_real_proxy",
+        "paired_eval",
+        "correlation_metrics",
+        "mmrv"
+      ],
+      "robolab_link": "external_validity_reference",
+      "release_year": "pre_2026_or_background",
+      "recency_tier": "foundation_background"
+    },
+    {
+      "id": "vlabench",
+      "title": "VLABench",
+      "group": "language_conditioned_benchmarks",
+      "priority": "P1",
+      "urls": [
+        "https://vlabench.github.io/",
+        "https://github.com/OpenMOSS/VLABench",
+        "https://arxiv.org/abs/2412.18194"
+      ],
+      "why": "长程语言条件机器人 manipulation benchmark，补 RoboLab 的语言理解和常识推理视角。",
+      "study_focus": [
+        "language_conditioned_manipulation",
+        "long_horizon",
+        "spatial_reasoning",
+        "common_sense"
+      ],
+      "robolab_link": "competency_axis_reference",
+      "release_year": "pre_2026_or_background",
+      "recency_tier": "foundation_background"
+    }
+  ],
+  "source_groups": [
+    "constraint_planning",
+    "contact_rich_data",
+    "domestic_generation_benchmark",
+    "domestic_real_world_data",
+    "language_conditioned_benchmarks",
+    "lightwheel_simready",
+    "main_paper",
+    "nvidia_physical_ai_ecosystem",
+    "nvidia_policy_models",
+    "nvidia_related_household_benchmark",
+    "nvidia_simready",
+    "nvidia_simulation",
+    "nvidia_world_models",
+    "policy_models",
+    "sim_real_evaluation",
+    "stanford_feifei_omnigibson",
+    "stanford_real_world_data",
+    "tooling_and_dataset_format",
+    "tsinghua_embodied"
+  ],
+  "priority_counts": {
+    "P0": 12,
+    "P1": 12,
+    "P2": 0
+  },
+  "source_evidence_map": {
+    "robolab": {
+      "core_problem": "真实 generalist robot policy 的仿真评测是否能揭示泛化、失败模式和扰动敏感性。",
+      "source_content": "高保真仿真、RoboLab-120、能力轴、任务生成、指标、MNPE、真实世界相关性。",
+      "reading_question": "先看 scene -> task -> env -> policy -> event -> result -> dashboard。"
+    },
+    "behavior_1k_omnigibson": {
+      "core_problem": "机器人 benchmark 是否应从真实人类家庭需求出发。",
+      "source_content": "1000 个日常 household activities、OmniGibson、长程移动操作和 richer object states。",
+      "reading_question": "看 long-horizon task、object state 和 sim-to-real gap。"
+    },
+    "droid": {
+      "core_problem": "VLA/generalist policy 的真实机器人训练数据从哪里来。",
+      "source_content": "大规模 in-the-wild robot manipulation demonstrations，覆盖多场景、多任务、多采集者。",
+      "reading_question": "看 camera/robot/action schema，不先下载全量数据。"
+    },
+    "roboarena": {
+      "core_problem": "真实机器人评测如何从单点 success 走向分布式 ranking。",
+      "source_content": "真实世界 generalist policy pairwise comparison 和 ranking 评测。",
+      "reading_question": "看仿真结果和真实 ranking 之间能比较什么、不能比较什么。"
+    },
+    "rekep": {
+      "core_problem": "关系推理能否用显式 3D keypoint constraints 表达，而不是只靠端到端动作生成。",
+      "source_content": "Relational Keypoint Constraints 和层级优化闭环控制。",
+      "reading_question": "看 keypoint function、constraint cost、hierarchical optimization。"
+    },
+    "openpi_pi05": {
+      "core_problem": "当前 Pi05 策略如何把多相机、语言和状态转成 action chunk。",
+      "source_content": "openpi 模型和工具包，包含 pi0、pi0-FAST、pi0.5 等 VLA 系列。",
+      "reading_question": "看 server-client、observation schema、action horizon、gripper postprocess。"
+    },
+    "isaac_lab_arena": {
+      "core_problem": "评测环境如何工程化、组合化、并行化。",
+      "source_content": "Isaac Lab 机器人学习框架，2026 Isaac Lab-Arena 由 NVIDIA 与 Lightwheel 共建，面向 task creation、diversification、parallel benchmarking 和 LeRobot/GR00T/pi0/SmolVLA 集成。",
+      "reading_question": "看 Scene/Embodiment/Task 抽象、parallel env 和 policy evaluation pipeline。"
+    },
+    "lightwheel_lw_benchhub": {
+      "core_problem": "SimReady 资产和 benchmark hub 如何支撑大规模具身评测。",
+      "source_content": "Lightwheel SimReady assets、LW-BenchHub、teleoperation、policy training/eval pipeline；2026 GitHub 组织页显示 LW-BenchHub、LeIsaac、AutoDataGen 等持续更新。",
+      "reading_question": "看资产规范、benchmark skeleton、teleop、VLA fine-tuning 和 268-task benchmark hub。"
+    },
+    "simready_foundation": {
+      "core_problem": "普通 3D 模型为什么不能直接用于机器人仿真评测。",
+      "source_content": "OpenUSD content profiles、features、requirements 和 validation workflow。",
+      "reading_question": "看 LFS、default prim、scale、physics、profile validation。"
+    },
+    "rdt_1b": {
+      "core_problem": "国内 diffusion transformer 路线如何做机器人 foundation policy。",
+      "source_content": "RDT-1B、1M+ 多机器人 episodes、统一动作空间、双臂 manipulation。",
+      "reading_question": "看 unified action space 和 diffusion action generation。"
+    },
+    "rdt2": {
+      "core_problem": "foundation policy 能否跨 unseen embodiment zero-shot。",
+      "source_content": "arXiv 2602.03310；RDT2-VQ / RDT2-FM、Residual VQ action tokenizer、flow matching、open-world instruction following、10,000+ 小时 UMI 人类操作视频。",
+      "reading_question": "看 action tokenization、flow-matching action expert、4090 推理条件和 unseen embodiment 约束。"
+    },
+    "robotwin": {
+      "core_problem": "如何自动生成双臂任务、数字孪生资产和专家数据。",
+      "source_content": "RoboTwin 2.0、generative digital twins、object dataset、task program synthesis、domain randomization。",
+      "reading_question": "看 task program synthesis 和 expert data generation。"
+    },
+    "robomind": {
+      "core_problem": "真实机器人数据是否应该记录失败原因。",
+      "source_content": "多 embodiment teleoperation、failure demonstrations、Isaac Sim digital twin。",
+      "reading_question": "看 failure demos 如何转成反思和修正信号。"
+    },
+    "rh20t": {
+      "core_problem": "接触丰富 manipulation 需要哪些额外传感。",
+      "source_content": "视觉、力、音频、动作、人类示范视频的 contact-rich robot manipulation 数据。",
+      "reading_question": "看 force/audio/action 对齐和 contact-rich skill taxonomy。"
+    },
+    "groot": {
+      "core_problem": "NVIDIA generalist robot VLA 如何训练、微调和部署。",
+      "source_content": "Isaac GR00T N1.7 EA、Cosmos-Reason2/Qwen3-VL backbone、20K 小时 EgoScale human video、relative EEF action space、Apache-2.0、16GB+ VRAM inference。",
+      "reading_question": "看 fine-tuning、inference、relative EEF action 和 LeRobot/Policy API 接口。"
+    },
+    "cosmos": {
+      "core_problem": "世界模型如何补充仿真评测和合成数据生成。",
+      "source_content": "2026 NVIDIA Physical AI 发布中的 Cosmos Transfer/Predict 2.5、Cosmos Reason 2 和 world foundation model route。",
+      "reading_question": "看 world model 如何生成扰动、视频和训练数据。"
+    },
+    "nvidia_physical_ai_2026_release": {
+      "core_problem": "RoboLab 之外的 2026 NVIDIA physical AI 生态如何把模型、仿真、评测和训练编排连接起来。",
+      "source_content": "2026-01-05 官方发布：Cosmos/GR00T open models、Isaac Lab-Arena、OSMO、HuggingFace LeRobot integration、Jetson Thor/edge compute。",
+      "reading_question": "看它如何把 RoboLab 所在的评测问题放入 end-to-end robot development lifecycle。"
+    },
+    "lyra_2026": {
+      "core_problem": "能否从 text/image/video 快速生成可导入仿真的 3D/4D 场景。",
+      "source_content": "ICLR 2026 Lyra：video diffusion self-distillation 到 3D/4D Gaussian scenes，并展示 3D Gaussians 导入 Isaac Sim / NuRec 可视化。",
+      "reading_question": "看视觉真实场景生成如何接 OpenUSD/Isaac Sim，以及还缺哪些物理交互层。"
+    },
+    "robocasa365": {
+      "core_problem": "kitchen/household generalist benchmark 如何大规模组织。",
+      "source_content": "ICLR 2026 / RoboCasa v1.0 release：365 tasks、2500+ kitchen scenes、3200+ 3D objects、600+ 小时人类示范、1600+ 小时机器人数据，并支持 Diffusion Policy、Pi、GR00T benchmarking。",
+      "reading_question": "看 task diversity、scene diversity、demo 数据来源和 policy benchmark protocol。"
+    },
+    "openvla": {
+      "core_problem": "开源 VLA 如何训练、fine-tune 和评测。",
+      "source_content": "OpenVLA、RLDS 数据混合、LoRA/full fine-tuning、LIBERO/BridgeData eval。",
+      "reading_question": "看 dataset mixture 和 fine-tuning protocol。"
+    },
+    "octo": {
+      "core_problem": "generalist diffusion policy 如何适配多机器人多任务。",
+      "source_content": "Octo transformer-based diffusion policy，800k robot trajectories。",
+      "reading_question": "看 observation/action flexibility 和 finetuning。"
+    },
+    "lerobot": {
+      "core_problem": "机器人学习数据、训练、评测如何工程化。",
+      "source_content": "LeRobotDataset、视频/Parquet、HF Hub、policy training/evaluation tools。",
+      "reading_question": "看数据格式桥接 RoboLab HDF5/video 的可能性。"
+    },
+    "simpler": {
+      "core_problem": "仿真评测如何预测真实机器人表现。",
+      "source_content": "SIMPLER paired sim-real manipulation policy evaluation 和相关性指标。",
+      "reading_question": "看 correlation metrics 和 paired setup。"
+    },
+    "vlabench": {
+      "core_problem": "语言条件、长程、常识和空间推理如何压测 VLA。",
+      "source_content": "100 task categories、2000+ objects、language-conditioned long-horizon manipulation。",
+      "reading_question": "看 language-conditioned task design 和 competence dimensions。"
+    }
+  },
+  "robolab_module_to_reading": {
+    "policy_client": [
+      "openpi_pi05",
+      "groot",
+      "rdt2",
+      "openvla",
+      "octo",
+      "rdt_1b",
+      "lerobot"
+    ],
+    "scene_task_generation": [
+      "robolab",
+      "robotwin",
+      "robocasa365",
+      "lightwheel_lw_benchhub",
+      "cosmos",
+      "lyra_2026",
+      "behavior_1k_omnigibson"
+    ],
+    "asset_preflight": [
+      "simready_foundation",
+      "lightwheel_lw_benchhub",
+      "isaac_lab_arena"
+    ],
+    "real_world_correlation": [
+      "droid",
+      "roboarena",
+      "simpler",
+      "robomind"
+    ],
+    "long_horizon_reasoning": [
+      "behavior_1k_omnigibson",
+      "vlabench",
+      "robocasa365",
+      "robotwin"
+    ],
+    "failure_analysis": [
+      "robomind",
+      "rh20t",
+      "rekep",
+      "simpler"
+    ],
+    "4090_practical_repro": [
+      "robolab",
+      "openpi_pi05",
+      "groot",
+      "rdt2",
+      "isaac_lab_arena",
+      "lightwheel_lw_benchhub"
+    ]
+  },
+  "fresh_2026_reading_track": [
+    {
+      "id": "robolab",
+      "date_or_version": "arXiv:2604.09860v3, 2026-05-14",
+      "role": "主评测系统",
+      "why_updated": "RoboLab-120、三类能力轴、任务生成、扰动敏感性和真实世界相关性是本次复现主线。",
+      "url": "https://arxiv.org/html/2604.09860"
+    },
+    {
+      "id": "robocasa365",
+      "date_or_version": "ICLR 2026 / RoboCasa v1.0 release",
+      "role": "household/kitchen benchmark",
+      "why_updated": "365 个任务、2500+ 厨房场景、3200+ 3D 对象、600+ 小时人类示范、1600+ 小时机器人数据，并支持 Pi/GR00T 等评测。",
+      "url": "https://github.com/robocasa/robocasa/releases"
+    },
+    {
+      "id": "rdt2",
+      "date_or_version": "arXiv:2602.03310, 2026-02",
+      "role": "清华 VLA / diffusion policy",
+      "why_updated": "强调 unseen embodiment zero-shot、RDT2-VQ/RDT2-FM 和 10,000+ 小时 UMI 人类操作视频。",
+      "url": "https://github.com/thu-ml/RDT2"
+    },
+    {
+      "id": "groot",
+      "date_or_version": "GR00T N1.7 Early Access, 2026 current GitHub",
+      "role": "NVIDIA open VLA policy",
+      "why_updated": "新 VLM backbone、20K 小时 EgoScale human video、relative EEF action space，并标出 16GB+ VRAM inference。",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T"
+    },
+    {
+      "id": "nvidia_physical_ai_2026_release",
+      "date_or_version": "NVIDIA release, 2026-01-05",
+      "role": "physical AI ecosystem roadmap",
+      "why_updated": "同一官方发布里出现 Cosmos、GR00T、Isaac Lab-Arena、OSMO 和 LeRobot integration。",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Releases-New-Physical-AI-Models-as-Global-Partners-Unveil-Next-Generation-Robots/default.aspx"
+    },
+    {
+      "id": "isaac_lab_arena",
+      "date_or_version": "2026 NVIDIA Technical Blog",
+      "role": "可组合仿真评测框架",
+      "why_updated": "NVIDIA 与 Lightwheel 共建，用于 scalable policy evaluation、task creation、diversification 和 parallel benchmarking。",
+      "url": "https://developer.nvidia.com/blog/simplify-generalist-robot-policy-evaluation-in-simulation-with-nvidia-isaac-lab-arena/"
+    },
+    {
+      "id": "lightwheel_lw_benchhub",
+      "date_or_version": "2026 active GitHub / LW-BenchHub release page",
+      "role": "benchmark hub / SimReady asset pipeline",
+      "why_updated": "覆盖 SimReady scenes/assets、teleoperation、policy training/evaluation，GitHub 组织下多项目在 2026 持续更新。",
+      "url": "https://lightwheel.ai/release/lwlab"
+    },
+    {
+      "id": "lyra_2026",
+      "date_or_version": "ICLR 2026",
+      "role": "生成式 3D/4D Gaussian 场景",
+      "why_updated": "text/image/video 到 3D/4D Gaussian 场景，并展示导入 Isaac Sim 的未来路线。",
+      "url": "https://research.nvidia.com/labs/toronto-ai/lyra/"
+    }
+  ],
+  "historical_background_track": [
+    {
+      "id": "behavior_1k_omnigibson",
+      "why_keep": "仍是家庭任务和 object state 的基础参照，但不是 2026 前沿主线。"
+    },
+    {
+      "id": "droid",
+      "why_keep": "仍用于理解真实机器人数据分布和 policy 数据源。"
+    },
+    {
+      "id": "roboarena",
+      "why_keep": "仍用于理解真实世界 ranking 和仿真-真实相关性边界。"
+    },
+    {
+      "id": "simpler",
+      "why_keep": "仍用于理解 paired sim-real evaluation。"
+    },
+    {
+      "id": "openvla",
+      "why_keep": "仍是开放 VLA adapter 和 fine-tuning 的基础背景。"
+    },
+    {
+      "id": "octo",
+      "why_keep": "仍是 generalist diffusion policy 的早期基线。"
+    },
+    {
+      "id": "rekep",
+      "why_keep": "仍适合作为显式约束规划对照。"
+    },
+    {
+      "id": "robotwin",
+      "why_keep": "仍可参考 generative digital twins 和自动任务/数据生成。"
+    },
+    {
+      "id": "robomind",
+      "why_keep": "仍可参考 failure demonstrations 和多 embodiment 数据。"
+    }
+  ],
+  "tests": [
+    {
+      "name": "has_at_least_20_items",
+      "passed": true
+    },
+    {
+      "name": "covers_required_source_groups",
+      "passed": true
+    },
+    {
+      "name": "has_p0_items",
+      "passed": true
+    },
+    {
+      "name": "every_item_has_url",
+      "passed": true
+    },
+    {
+      "name": "every_item_has_robolab_link",
+      "passed": true
+    },
+    {
+      "name": "source_evidence_covers_every_item",
+      "passed": true
+    },
+    {
+      "name": "source_evidence_has_problem_content_question",
+      "passed": true
+    },
+    {
+      "name": "source_evidence_mentions_robolab_main_problem",
+      "passed": true
+    },
+    {
+      "name": "module_map_covers_key_robolab_topics",
+      "passed": true
+    },
+    {
+      "name": "policy_client_has_current_policy",
+      "passed": true
+    },
+    {
+      "name": "asset_preflight_has_simready",
+      "passed": true
+    },
+    {
+      "name": "real_correlation_has_roboarena",
+      "passed": true
+    },
+    {
+      "name": "4090_route_has_robolab_openpi_isaac_lightwheel",
+      "passed": true
+    },
+    {
+      "name": "has_2026_frontier_track",
+      "passed": true
+    },
+    {
+      "name": "2026_track_has_robolab_rdt2_groot_robocasa365",
+      "passed": true
+    },
+    {
+      "name": "2026_track_has_lightwheel_isaac_arena_lyra",
+      "passed": true
+    },
+    {
+      "name": "2026_track_has_links",
+      "passed": true
+    },
+    {
+      "name": "historical_track_explicitly_downgraded",
+      "passed": true
+    },
+    {
+      "name": "frontier_items_marked_2026",
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "boundary": "This is a curated reading map with live-checked public URLs. It does not mirror papers, clone repos, download datasets, or validate licenses beyond link-level notes."
+}

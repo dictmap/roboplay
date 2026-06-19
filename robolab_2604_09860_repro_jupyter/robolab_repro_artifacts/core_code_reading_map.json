@@ -1,0 +1,62 @@
+[
+  {
+    "论文机制": "RoboLab-120 任务集合与能力轴",
+    "核心文件": "robolab/tasks/_metadata/task_metadata.json",
+    "关键字段/函数": "task_name, scene, instruction, attributes, num_subtasks, difficulty_label",
+    "怎么理解": "这是任务索引表；论文里的 visual/procedural/relational 和 difficulty 在这里落成可统计字段。"
+  },
+  {
+    "论文机制": "单个任务如何定义目标状态",
+    "核心文件": "robolab/tasks/benchmark/banana_in_bowl_task.py",
+    "关键字段/函数": "contact_object_list, scene, terminations, instruction, attributes, subtasks",
+    "怎么理解": "一个 task 文件不是策略代码，而是目标状态声明：用哪个场景、哪些对象需要 contact sensor、成功条件是什么、拆成哪些 subtask。"
+  },
+  {
+    "论文机制": "从任务名创建仿真环境",
+    "核心文件": "robolab/core/environments/runtime.py",
+    "关键字段/函数": "create_env, parse_env_cfg, resolve_instruction, merge_events_cfg, gym.make",
+    "怎么理解": "这里把 task name 变成 Isaac Lab env；语言版本、扰动事件、policy 名称都在这个阶段绑定进去。"
+  },
+  {
+    "论文机制": "评测 episode 的生命周期",
+    "核心文件": "robolab/core/environments/env.py",
+    "关键字段/函数": "RobolabEnv.step, _reset_idx, all_terminated, reset_eval_state",
+    "怎么理解": "评测时环境不应自动重置并丢掉结果；RoboLab 把已终止 env 冻结，记录成功/失败和终止 step，再导出 episode。"
+  },
+  {
+    "论文机制": "subtask/event 评分",
+    "核心文件": "robolab/core/task/conditionals.py + robolab/core/task/subtask.py",
+    "关键字段/函数": "pick_and_place, object_in_container, object_grabbed, Subtask(score/logical/K)",
+    "怎么理解": "论文说不只看二值 success；这里把任务拆成条件序列，支持 all/any/choose 和子分数。"
+  },
+  {
+    "论文机制": "no-policy 环境 smoke",
+    "核心文件": "examples/run_empty.py",
+    "关键字段/函数": "auto_register_droid_envs, get_envs, create_env, run_empty_episode, update_experiment_results",
+    "怎么理解": "这是当前 4090 已跑通的主入口：它验证环境能创建和导出日志，但没有调用 VLA policy。"
+  },
+  {
+    "论文机制": "真实 policy 评测入口",
+    "核心文件": "policies/pi0_family/run.py + robolab/eval/runner.py",
+    "关键字段/函数": "add_common_eval_args, run_evaluation, client_factory, run_episode, summarize_run",
+    "怎么理解": "Pi0/Pi05 入口只负责接 policy server；通用循环在 runner.py 里，按 task/run/env_id 写 episode 结果。"
+  },
+  {
+    "论文机制": "Pi05 观测打包与动作解包",
+    "核心文件": "policies/pi0_family/client.py",
+    "关键字段/函数": "_extract_observation, _pack_request, _query_server, _unpack_response, open_loop_horizon",
+    "怎么理解": "这里把 RoboLab 的相机图像、关节状态、夹爪状态和语言指令转成 OpenPI server 请求，再把 action chunk 还给环境。"
+  },
+  {
+    "论文机制": "结果汇总和错误分析",
+    "核心文件": "robolab/core/logging/results.py",
+    "关键字段/函数": "init_experiment, update_experiment_results, summarize_experiment_results, summarize_error_reasons",
+    "怎么理解": "episode_results.jsonl 的写入和汇总在这里；后续按任务、能力轴、错误原因统计都依赖它。"
+  },
+  {
+    "论文机制": "轨迹质量指标",
+    "核心文件": "robolab/core/metrics/trajectory_metrics.py",
+    "关键字段/函数": "compute_sparc, compute_ee_path_length, compute_*_isj",
+    "怎么理解": "论文里的 motion quality/trajectory metric 在这里落地；没有 policy action 时这些指标没有论文意义。"
+  }
+]

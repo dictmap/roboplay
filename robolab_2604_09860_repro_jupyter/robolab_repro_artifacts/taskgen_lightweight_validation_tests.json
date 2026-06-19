@@ -1,0 +1,30 @@
+{
+  "all_passed": true,
+  "tests": [
+    {
+      "name": "valid_spec_passes",
+      "passed": true
+    },
+    {
+      "name": "syntax_error_fails",
+      "passed": true
+    },
+    {
+      "name": "missing_object_fails",
+      "passed": true
+    },
+    {
+      "name": "disabled_object_fails",
+      "passed": true
+    },
+    {
+      "name": "container_too_small_fails",
+      "passed": true
+    },
+    {
+      "name": "repair_prompt_contains_context",
+      "passed": true
+    }
+  ],
+  "boundary": "This is a lightweight pre-Isaac validation test; it does not replace full simulation smoke."
+}

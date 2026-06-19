@@ -1,0 +1,50 @@
+{
+  "execute_preflight": false,
+  "is_linux": false,
+  "commands": [
+    {
+      "label": "os_release",
+      "cmd": "cat /etc/os-release"
+    },
+    {
+      "label": "kernel",
+      "cmd": "uname -a"
+    },
+    {
+      "label": "disk",
+      "cmd": "df -h ."
+    },
+    {
+      "label": "gpu",
+      "cmd": "nvidia-smi"
+    },
+    {
+      "label": "driver_query",
+      "cmd": "nvidia-smi --query-gpu=name,driver_version,memory.total,memory.free --format=csv"
+    },
+    {
+      "label": "python",
+      "cmd": "python3 --version"
+    },
+    {
+      "label": "uv",
+      "cmd": "uv --version"
+    },
+    {
+      "label": "ffmpeg",
+      "cmd": "ffmpeg -version | head -n 2"
+    },
+    {
+      "label": "git_lfs",
+      "cmd": "git lfs version"
+    },
+    {
+      "label": "gcc",
+      "cmd": "gcc-11 --version | head -n 1"
+    },
+    {
+      "label": "gpp",
+      "cmd": "g++-11 --version | head -n 1"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "checkpoint_verify_ok": true,
+  "checkpoint_objects": 26,
+  "checkpoint_total_gib": 11.581122905947268,
+  "server_ready": true,
+  "checkpoint_restored": true,
+  "smoke_status": "0",
+  "num_episode_records": 1,
+  "episode_records": [
+    {
+      "env_name": "BananaInBowlTask",
+      "task_name": "BananaInBowlTask",
+      "run_name": "BananaInBowlTask_0",
+      "run": 0,
+      "episode": 0,
+      "env_id": 0,
+      "policy": "pi05",
+      "instruction": "Pick up the banana and place it in the bowl",
+      "attributes": [
+        "semantics",
+        "simple"
+      ],
+      "success": true,
+      "episode_step": 178,
+      "duration": 11.866666666666667,
+      "dt": 0.06666666666666667,
+      "metrics": {
+        "ee_sparc": -3.0750618979831144,
+        "joint_sparc_mean": -4.771975889544045,
+        "ee_isj": 43.321915382560334,
+        "joint_isj": 1851.6264499537913,
+        "ee_path_length": 0.8358141335178071,
+        "joint_rmse_mean": 0.025471204971977156,
+        "ee_speed_max": 0.20027506351470947,
+        "ee_speed_mean": 0.06720063835382462
+      },
+      "events": {
+        "GRIPPER_HIT_TABLE": 1,
+        "TARGET_OBJECT_DROPPED": 1
+      },
+      "instruction_type": "default",
+      "timing": {
+        "policy_inference_s": 14.989,
+        "policy_inference_avg_ms": 84.2,
+        "env_step_s": 38.986,
+        "env_step_avg_ms": 219.0,
+        "wall_total_s": 53.975,
+        "it_per_sec": 3.3
+      },
+      "score": 1.0,
+      "reason": "Completed subtask 'pick_and_place' 1/1",
+      "_source": "pi05_banana_smoke_20260620_005711\\episode_results.jsonl"
+    }
+  ],
+  "event_rows": [
+    {
+      "step": 108,
+      "name": "GRIPPER_HIT_TABLE",
+      "score": 0.0,
+      "info": "Gripper hit table"
+    },
+    {
+      "step": 109,
+      "name": "OBJECT_GRABBED_SUCCESS",
+      "score": 0.0,
+      "info": "success: object_grabbed(object=banana). advanced 1 step(s) to step 1 for banana."
+    },
+    {
+      "step": 176,
+      "name": "TARGET_OBJECT_DROPPED",
+      "score": 0.0,
+      "info": "Target object dropped during transport"
+    },
+    {
+      "step": 176,
+      "name": "OBJECT_GRABBED_FAILURE",
+      "score": 0.0,
+      "info": "failed: object_grabbed(object=banana). regressing to step 0 for banana."
+    },
+    {
+      "step": 177,
+      "name": "OBJECT_GRABBED_SUCCESS",
+      "score": 1.0,
+      "info": "Completed subtask 'pick_and_place' 1/1"
+    }
+  ],
+  "evidence_dir": "C:\\Users\\robot\\Documents\\成长学习库\\robolab_2604_09860_repro_jupyter\\remote_logs\\pi05_policy_smoke_20260620_005711"
+}

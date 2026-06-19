@@ -1,0 +1,309 @@
+{
+  "robolab_gaussian_stack": {
+    "gaussian_splat_background": {
+      "direct_in_paper": true,
+      "input": [
+        "images_or_reconstructed_scene"
+      ],
+      "output": [
+        "photorealistic_background_rendering"
+      ],
+      "role": "visual_rendering",
+      "physics_contact": false,
+      "plain_cn": "负责让背景看起来真实，但本身不是机器人碰撞体。"
+    },
+    "collision_mesh_for_splat": {
+      "direct_in_paper": true,
+      "input": [
+        "reconstructed_or_estimated_geometry"
+      ],
+      "output": [
+        "collider_proxy_for_physics"
+      ],
+      "role": "physical_collision",
+      "physics_contact": true,
+      "plain_cn": "负责让机器人和背景几何发生碰撞，避免只看得到却穿过去。"
+    },
+    "mesh_foreground_objects": {
+      "direct_in_paper": true,
+      "input": [
+        "SimReady_or_catalog_assets"
+      ],
+      "output": [
+        "interactive_visual_mesh_and_collision_mesh"
+      ],
+      "role": "manipulable_objects",
+      "physics_contact": true,
+      "plain_cn": "负责桌面上的可抓取、可放置、可堆叠前景对象。"
+    },
+    "vomp_mass_density": {
+      "direct_in_paper": true,
+      "input": [
+        "object_geometry_and_mechanical_property_estimate"
+      ],
+      "output": [
+        "mass_density_or_mass_proxy"
+      ],
+      "role": "mechanical_properties",
+      "physics_contact": "supports_dynamics",
+      "plain_cn": "补质量/密度这类物理参数，不是渲染方法。"
+    },
+    "mnpe_gaussian_kde": {
+      "direct_in_paper": true,
+      "input": [
+        "sampled_variation_parameters"
+      ],
+      "output": [
+        "importance_sampling_density_weight"
+      ],
+      "role": "statistical_density_estimation",
+      "physics_contact": false,
+      "plain_cn": "这是 MNPE 统计分析里的高斯核密度估计，不是 3D Gaussian Splatting。"
+    }
+  },
+  "layer_map": {
+    "gaussian_splat_background": "视觉层",
+    "collision_mesh_for_splat": "物理/几何层",
+    "mesh_foreground_objects": "物理/几何层",
+    "vomp_mass_density": "物理/几何层",
+    "mnpe_gaussian_kde": "统计分析层"
+  },
+  "nvidia_frontiers_2026": {
+    "omniverse_nurec": {
+      "status": "frontier_engineering",
+      "url": "https://developer.nvidia.com/omniverse/nurec",
+      "source_title": "NVIDIA Omniverse NuRec",
+      "input": [
+        "camera_data",
+        "lidar_data"
+      ],
+      "output": [
+        "OpenUSD_scene",
+        "interactive_gaussian_rendering"
+      ],
+      "why_relevant": "把真实数据重建成 Isaac/Omniverse 可用的神经重建场景。",
+      "read_focus": [
+        "NCore data standard",
+        "USD scene",
+        "gRPC rendering",
+        "Isaac Sim integration"
+      ]
+    },
+    "3dgut_3dgrt": {
+      "status": "research_to_tooling",
+      "url": "https://research.nvidia.com/labs/toronto-ai/3DGUT/",
+      "source_title": "NVIDIA Research 3DGUT",
+      "input": [
+        "3D_Gaussians"
+      ],
+      "output": [
+        "nonlinear_camera_rendering",
+        "rolling_shutter",
+        "secondary_rays"
+      ],
+      "why_relevant": "让高斯渲染支持复杂相机和反射/折射等 secondary rays。",
+      "read_focus": [
+        "nonlinear camera projections",
+        "rolling shutter",
+        "reflections/refractions",
+        "3DGRT alignment"
+      ]
+    },
+    "isaac_sim_6_nurec": {
+      "status": "2026_early_developer_release",
+      "url": "https://forums.developer.nvidia.com/t/announcement-isaac-sim-6-0-early-developer-release-for-gtc26/363709",
+      "source_title": "Isaac Sim 6.0 Early Developer Release for GTC'26",
+      "input": [
+        "NuRec_3DGS_scene"
+      ],
+      "output": [
+        "Fabric_Scene_Delegate_integration"
+      ],
+      "why_relevant": "把 NuRec/3DGS 更直接地放进 Isaac Sim 工程栈。",
+      "read_focus": [
+        "NuRec 3DGS libraries",
+        "Fabric Scene Delegate",
+        "PhysX/Newton",
+        "Warp-based Core API"
+      ]
+    },
+    "lyra_2": {
+      "status": "2026_generative_world_model",
+      "url": "https://research.nvidia.com/labs/toronto-ai/lyra/",
+      "source_title": "NVIDIA Research Lyra",
+      "input": [
+        "text",
+        "single_image",
+        "video"
+      ],
+      "output": [
+        "3DGS_world",
+        "explorable_long_horizon_world"
+      ],
+      "why_relevant": "从生成式输入产生 3DGS 世界，适合未来快速构造仿真场景。",
+      "read_focus": [
+        "3DGS decoder",
+        "text/image/video-to-3D",
+        "Isaac Sim import",
+        "dynamic 3D/4D scenes"
+      ]
+    },
+    "physically_embodied_gaussians": {
+      "status": "adjacent_frontier_research",
+      "url": "https://developer.nvidia.com/blog/building-robotic-mental-models-with-nvidia-warp-and-gaussian-splatting/",
+      "source_title": "NVIDIA Blog: Building Robotic Mental Models with NVIDIA Warp and Gaussian Splatting",
+      "input": [
+        "few_camera_views",
+        "robot_priors",
+        "interaction_feedback"
+      ],
+      "output": [
+        "particles_plus_3D_Gaussians_live_world_model"
+      ],
+      "why_relevant": "把视觉高斯和物理粒子绑定，让机器人边看边更新物理世界模型。",
+      "read_focus": [
+        "particles + Gaussians dual representation",
+        "differentiable rendering",
+        "NVIDIA Warp",
+        "gsplat"
+      ]
+    },
+    "marble_isaac_nurec_workflow": {
+      "status": "integration_workflow",
+      "url": "https://developer.nvidia.com/blog/simulate-robotic-environments-faster-with-nvidia-isaac-sim-and-world-labs-marble/",
+      "source_title": "NVIDIA Blog: Simulate Robotic Environments Faster with NVIDIA Isaac Sim and World Labs Marble",
+      "input": [
+        "Gaussian_splat_PLY",
+        "collider_GLB"
+      ],
+      "output": [
+        "USDZ_or_Isaac_Sim_scene"
+      ],
+      "why_relevant": "工程上展示了 photoreal splat 与 collider mesh 必须对齐。",
+      "read_focus": [
+        "Gaussian splat PLY",
+        "collider GLB",
+        "PLY-to-USDZ",
+        "Gaussian/collider alignment"
+      ]
+    }
+  },
+  "nvidia_frontier_link_map": {
+    "omniverse_nurec": {
+      "source_title": "NVIDIA Omniverse NuRec",
+      "url": "https://developer.nvidia.com/omniverse/nurec",
+      "read_focus": [
+        "NCore data standard",
+        "USD scene",
+        "gRPC rendering",
+        "Isaac Sim integration"
+      ]
+    },
+    "3dgut_3dgrt": {
+      "source_title": "NVIDIA Research 3DGUT",
+      "url": "https://research.nvidia.com/labs/toronto-ai/3DGUT/",
+      "read_focus": [
+        "nonlinear camera projections",
+        "rolling shutter",
+        "reflections/refractions",
+        "3DGRT alignment"
+      ]
+    },
+    "isaac_sim_6_nurec": {
+      "source_title": "Isaac Sim 6.0 Early Developer Release for GTC'26",
+      "url": "https://forums.developer.nvidia.com/t/announcement-isaac-sim-6-0-early-developer-release-for-gtc26/363709",
+      "read_focus": [
+        "NuRec 3DGS libraries",
+        "Fabric Scene Delegate",
+        "PhysX/Newton",
+        "Warp-based Core API"
+      ]
+    },
+    "lyra_2": {
+      "source_title": "NVIDIA Research Lyra",
+      "url": "https://research.nvidia.com/labs/toronto-ai/lyra/",
+      "read_focus": [
+        "3DGS decoder",
+        "text/image/video-to-3D",
+        "Isaac Sim import",
+        "dynamic 3D/4D scenes"
+      ]
+    },
+    "physically_embodied_gaussians": {
+      "source_title": "NVIDIA Blog: Building Robotic Mental Models with NVIDIA Warp and Gaussian Splatting",
+      "url": "https://developer.nvidia.com/blog/building-robotic-mental-models-with-nvidia-warp-and-gaussian-splatting/",
+      "read_focus": [
+        "particles + Gaussians dual representation",
+        "differentiable rendering",
+        "NVIDIA Warp",
+        "gsplat"
+      ]
+    },
+    "marble_isaac_nurec_workflow": {
+      "source_title": "NVIDIA Blog: Simulate Robotic Environments Faster with NVIDIA Isaac Sim and World Labs Marble",
+      "url": "https://developer.nvidia.com/blog/simulate-robotic-environments-faster-with-nvidia-isaac-sim-and-world-labs-marble/",
+      "read_focus": [
+        "Gaussian splat PLY",
+        "collider GLB",
+        "PLY-to-USDZ",
+        "Gaussian/collider alignment"
+      ]
+    }
+  },
+  "tests": [
+    {
+      "name": "paper_has_visual_splat_and_physics_mesh",
+      "passed": true
+    },
+    {
+      "name": "gaussian_splat_not_claimed_as_physics",
+      "passed": true
+    },
+    {
+      "name": "collision_mesh_is_contact_layer",
+      "passed": true
+    },
+    {
+      "name": "foreground_mesh_is_manipulation_layer",
+      "passed": true
+    },
+    {
+      "name": "vomp_is_mechanical_not_rendering",
+      "passed": true
+    },
+    {
+      "name": "mnpe_kde_is_statistical_not_3dgs",
+      "passed": true
+    },
+    {
+      "name": "frontiers_cover_nurec_3dgut_lyra",
+      "passed": true
+    },
+    {
+      "name": "each_frontier_has_url",
+      "passed": true
+    },
+    {
+      "name": "each_frontier_has_read_focus",
+      "passed": true
+    },
+    {
+      "name": "frontier_link_map_includes_marble_workflow",
+      "passed": true
+    },
+    {
+      "name": "each_frontier_has_input_and_output",
+      "passed": true
+    },
+    {
+      "name": "isaac_sim_6_marked_as_2026_integration",
+      "passed": true
+    },
+    {
+      "name": "not_all_frontiers_claimed_as_robolab_direct_use",
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "boundary": "This is a source-grounded conceptual test. It does not run NuRec/3DGS rendering or Isaac Sim physics."
+}

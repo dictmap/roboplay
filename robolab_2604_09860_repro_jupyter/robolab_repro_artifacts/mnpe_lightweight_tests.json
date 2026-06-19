@@ -1,0 +1,51 @@
+{
+  "all_passed": true,
+  "prior_camera_mean": 0.4994766410302887,
+  "posterior_camera_mean_given_success": 0.33240274488970445,
+  "prior_camera_95ci": [
+    0.02579954296741127,
+    0.9742385266694394
+  ],
+  "posterior_camera_95ci_given_success": [
+    0.012737151986954917,
+    0.880081545368189
+  ],
+  "prior_lighting_probs": [
+    0.3307,
+    0.33785,
+    0.33145
+  ],
+  "posterior_lighting_probs_given_success": [
+    0.1968931534531634,
+    0.48445753243340023,
+    0.3186493141134362
+  ],
+  "flat_likelihood_camera_mean": 0.49947664103028866,
+  "flat_likelihood_camera_95ci": [
+    0.02579954296741127,
+    0.9742385266694394
+  ],
+  "tests": [
+    {
+      "name": "success_posterior_moves_camera_toward_reference",
+      "passed": true
+    },
+    {
+      "name": "success_posterior_has_lower_upper_ci",
+      "passed": true
+    },
+    {
+      "name": "normal_lighting_more_likely_given_success",
+      "passed": true
+    },
+    {
+      "name": "uninformative_likelihood_keeps_prior_mean",
+      "passed": true
+    },
+    {
+      "name": "uninformative_likelihood_keeps_prior_ci",
+      "passed": true
+    }
+  ],
+  "boundary": "This validates posterior-conditioning intuition on synthetic data; real RoboLab MNPE requires variation rollout CSV and sbi."
+}

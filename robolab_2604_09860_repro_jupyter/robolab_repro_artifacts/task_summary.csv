@@ -1,0 +1,4 @@
+task_name,episodes,success_rate,mean_score,mean_duration_s,wrong_grabs,dropped
+ReorientWhiteMugsTask,1,0.0,0.2,60.0,0,2
+RubiksCubeLeftOfBowlTask,1,0.0,0.4,50.0,1,0
+BananaInBowlTask,1,1.0,1.0,14.8,0,0

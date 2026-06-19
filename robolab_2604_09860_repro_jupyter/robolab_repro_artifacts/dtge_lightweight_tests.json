@@ -1,0 +1,256 @@
+{
+  "all_passed": true,
+  "extracted": [
+    {
+      "task_class": "AppleInBowlTask",
+      "instruction": "Place the apple in the bowl",
+      "attributes": [
+        "semantics"
+      ],
+      "success_func": "object_in_container",
+      "success_params": {
+        "object": "apple",
+        "container": "bowl",
+        "logical": "all"
+      }
+    },
+    {
+      "task_class": "AppleInBowlTask",
+      "instruction": "Place the apple in the bowl",
+      "attributes": [
+        "semantics"
+      ],
+      "success_func": "object_in_container",
+      "success_params": {
+        "object": "banana",
+        "container": "bowl",
+        "logical": "all"
+      }
+    },
+    {
+      "task_class": "BoxInSmallBowlTask",
+      "instruction": "Place the large_box in the small_bowl",
+      "attributes": [
+        "spatial"
+      ],
+      "success_func": "object_in_container",
+      "success_params": {
+        "object": "large_box",
+        "container": "small_bowl",
+        "logical": "all"
+      }
+    }
+  ],
+  "judged": [
+    {
+      "relation_match": 1.0,
+      "target_match": 1.0,
+      "object_match": 1.0,
+      "quantifier_match": 1.0,
+      "clarity": 1.0,
+      "feasibility": 1.0,
+      "semantic_match": 1.0,
+      "alignment": 1.0,
+      "verdict": "aligned",
+      "mentioned_in_text": [
+        "apple",
+        "bowl"
+      ],
+      "referenced_in_code": [
+        "all",
+        "apple",
+        "bowl"
+      ],
+      "expected_relation": "object_in_container",
+      "actual_func": "object_in_container"
+    },
+    {
+      "relation_match": 1.0,
+      "target_match": 1.0,
+      "object_match": 0.5,
+      "quantifier_match": 1.0,
+      "clarity": 1.0,
+      "feasibility": 1.0,
+      "semantic_match": 0.875,
+      "alignment": 0.9,
+      "verdict": "partial",
+      "mentioned_in_text": [
+        "apple",
+        "bowl"
+      ],
+      "referenced_in_code": [
+        "all",
+        "banana",
+        "bowl"
+      ],
+      "expected_relation": "object_in_container",
+      "actual_func": "object_in_container"
+    },
+    {
+      "relation_match": 1.0,
+      "target_match": 1.0,
+      "object_match": 0.6666666666666666,
+      "quantifier_match": 1.0,
+      "clarity": 1.0,
+      "feasibility": 0.0,
+      "semantic_match": 0.9166666666666666,
+      "alignment": 0.7833333333333333,
+      "verdict": "misaligned",
+      "mentioned_in_text": [
+        "bowl",
+        "large_box",
+        "small_bowl"
+      ],
+      "referenced_in_code": [
+        "all",
+        "large_box",
+        "small_bowl"
+      ],
+      "expected_relation": "object_in_container",
+      "actual_func": "object_in_container"
+    }
+  ],
+  "coverage": {
+    "object_coverage": 0.8333333333333334,
+    "predicate_coverage": 0.14285714285714285,
+    "used_objects": [
+      "apple",
+      "banana",
+      "bowl",
+      "large_box",
+      "small_bowl"
+    ],
+    "used_predicates": [
+      "object_in_container"
+    ]
+  },
+  "paper_table": {
+    "color": {
+      "count": 116,
+      "alignment": 0.81,
+      "clarity": 0.94,
+      "feasibility": 0.8,
+      "match": 0.9,
+      "aligned_pct": 57,
+      "partial_pct": 40,
+      "object_coverage": 0.88,
+      "predicate_coverage": 0.29
+    },
+    "conjunction": {
+      "count": 116,
+      "alignment": 0.97,
+      "clarity": 0.98,
+      "feasibility": 1.0,
+      "match": 0.98,
+      "aligned_pct": 91,
+      "partial_pct": 9,
+      "object_coverage": 0.88,
+      "predicate_coverage": 0.29
+    },
+    "counting": {
+      "count": 116,
+      "alignment": 0.87,
+      "clarity": 0.97,
+      "feasibility": 0.9,
+      "match": 0.92,
+      "aligned_pct": 60,
+      "partial_pct": 38,
+      "object_coverage": 0.88,
+      "predicate_coverage": 0.29
+    },
+    "recognition": {
+      "count": 116,
+      "alignment": 0.96,
+      "clarity": 0.97,
+      "feasibility": 0.96,
+      "match": 0.97,
+      "aligned_pct": 85,
+      "partial_pct": 15,
+      "object_coverage": 0.88,
+      "predicate_coverage": 0.29
+    },
+    "semantics": {
+      "count": 116,
+      "alignment": 0.89,
+      "clarity": 0.95,
+      "feasibility": 0.94,
+      "match": 0.94,
+      "aligned_pct": 72,
+      "partial_pct": 27,
+      "object_coverage": 0.88,
+      "predicate_coverage": 0.29
+    },
+    "sorting": {
+      "count": 116,
+      "alignment": 0.94,
+      "clarity": 0.95,
+      "feasibility": 0.97,
+      "match": 0.96,
+      "aligned_pct": 86,
+      "partial_pct": 14,
+      "object_coverage": 0.88,
+      "predicate_coverage": 0.29
+    },
+    "spatial": {
+      "count": 116,
+      "alignment": 0.92,
+      "clarity": 0.98,
+      "feasibility": 0.89,
+      "match": 0.95,
+      "aligned_pct": 80,
+      "partial_pct": 17,
+      "object_coverage": 0.88,
+      "predicate_coverage": 0.29
+    },
+    "overall": {
+      "count": 812,
+      "alignment": 0.91,
+      "clarity": 0.96,
+      "feasibility": 0.92,
+      "match": 0.95,
+      "aligned_pct": 76,
+      "partial_pct": 23,
+      "object_coverage": 0.88,
+      "predicate_coverage": 0.29
+    }
+  },
+  "tests": [
+    {
+      "name": "static_extraction_gets_instruction",
+      "passed": true
+    },
+    {
+      "name": "static_extraction_gets_success_predicate",
+      "passed": true
+    },
+    {
+      "name": "aligned_task_verdict_aligned",
+      "passed": true
+    },
+    {
+      "name": "object_mismatch_detected",
+      "passed": true
+    },
+    {
+      "name": "physical_infeasibility_detected",
+      "passed": true
+    },
+    {
+      "name": "coverage_metrics_in_range",
+      "passed": true
+    },
+    {
+      "name": "predicate_coverage_is_conservative",
+      "passed": true
+    },
+    {
+      "name": "paper_table_total_is_812",
+      "passed": true
+    },
+    {
+      "name": "paper_overall_alignment_matches_appendix_d",
+      "passed": true
+    }
+  ],
+  "boundary": "This simulates DTGE static extraction and judge dimensions; real reproduction requires the paper's exact LLM prompts/model settings and generated task corpus."
+}

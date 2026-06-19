@@ -1,0 +1,116 @@
+{
+  "all_passed": true,
+  "toy_result": {
+    "success": true,
+    "margin": 0.02,
+    "iterations": 10,
+    "poses": {
+      "bowl_anchor": {
+        "x": 0.55,
+        "y": 0.0,
+        "theta": 0.0
+      },
+      "red_mug": {
+        "x": 0.6774349066254107,
+        "y": -0.0037174792676069536,
+        "theta": 0.0
+      },
+      "blue_mug": {
+        "x": 0.42551946120207546,
+        "y": -0.002009209270136474,
+        "theta": 0.0
+      },
+      "cube": {
+        "x": 0.5449300270976634,
+        "y": 0.2184895176656046,
+        "theta": 0.0
+      },
+      "spoon": {
+        "x": 0.5270343290870185,
+        "y": 0.12508847916649687,
+        "theta": 0.0
+      }
+    },
+    "phase_log": [
+      "margin=0.020: initialized",
+      "relative constraints and orientations applied",
+      "collision resolution succeeded"
+    ]
+  },
+  "final_collisions": [],
+  "experiment_taxonomy": {
+    "policy_benchmark": [
+      "success",
+      "score",
+      "episode_results.jsonl"
+    ],
+    "granular_analysis": [
+      "attributes",
+      "difficulty",
+      "num_objects",
+      "num_subtasks"
+    ],
+    "sensitivity": [
+      "lighting",
+      "background",
+      "table",
+      "camera",
+      "object_pose"
+    ],
+    "real_world": [
+      "RoboLab score",
+      "RoboArena/Elo correlation"
+    ],
+    "scene_generation": [
+      "VQA",
+      "GPT preference",
+      "Real",
+      "Func",
+      "Lay",
+      "Compl",
+      "Qual"
+    ],
+    "task_generation": [
+      "alignment",
+      "clarity",
+      "feasibility",
+      "match",
+      "coverage"
+    ]
+  },
+  "tests": [
+    {
+      "name": "algorithm_returns_success",
+      "passed": true
+    },
+    {
+      "name": "all_objects_within_table_bounds",
+      "passed": true
+    },
+    {
+      "name": "no_final_circle_collisions",
+      "passed": true
+    },
+    {
+      "name": "cluster_red_mug_near_anchor",
+      "passed": true
+    },
+    {
+      "name": "cluster_blue_mug_near_anchor",
+      "passed": true
+    },
+    {
+      "name": "left_of_constraint_satisfied",
+      "passed": true
+    },
+    {
+      "name": "orientation_constraint_satisfied",
+      "passed": true
+    },
+    {
+      "name": "experiment_taxonomy_complete",
+      "passed": true
+    }
+  ],
+  "boundary": "This validates Algorithm 1 structure on a toy 2D layout; it is not a replacement for RoboLab spatial_solver.py or Isaac physics settle."
+}

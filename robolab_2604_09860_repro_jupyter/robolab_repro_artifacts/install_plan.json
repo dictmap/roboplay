@@ -1,0 +1,8 @@
+{
+  "execute_install": false,
+  "robolab_dir": "C:\\Users\\robot\\Documents\\成长学习库\\robolab_2604_09860_repro_jupyter\\robolab_workspace\\RoboLab",
+  "notes": [
+    "Main path uses uv sync; do not build Isaac Sim from source unless debugging or developing Isaac Sim itself.",
+    "Record uv sync duration and uv_freeze.txt after a real run."
+  ]
+}
