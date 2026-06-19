@@ -7,6 +7,7 @@
 - [RoboLab 4090 复现与学习记录](./robolab_2604_09860_repro_jupyter/README.md)
 - [RoboLab 主 Jupyter Notebook](./robolab_2604_09860_repro_jupyter/RoboLab_4090_repro_learning_record.ipynb)
 - [RoboLab 精讲 0-16](./robolab_2604_09860_repro_jupyter/)
+- [RoboLab 远端实测证据清单](./robolab_2604_09860_repro_jupyter/REMOTE_EVIDENCE_MANIFEST.md)
 
 ## 提交策略
 
@@ -19,3 +20,4 @@
 
 暂不提交远端原始视频、大体积日志、缓存目录和运行输出目录；这些后续可以按需用 Git LFS 或 release artifact 管理。
 
+如果你在 GitHub 页面上没有看到 `remote_outputs/`、`remote_logs/` 或 HTML 渲染版，这不是 push 失败，而是当前提交策略主动排除了原始运行输出。已提交的证据边界见 [RoboLab 远端实测证据清单](./robolab_2604_09860_repro_jupyter/REMOTE_EVIDENCE_MANIFEST.md)。

@@ -7,6 +7,7 @@
 - `RoboLab_4090_repro_learning_record.ipynb`：主 notebook，按阶段记录环境检查、安装、验证、smoke run、4090 小子集评测、论文机制、核心源码讲解、结果解析和学习日志。
 - `source_manifest.json`：准备 notebook 时核对过的官方来源。
 - `build_robolab_notebook.py`：生成 notebook 和来源清单的脚本。
+- `REMOTE_EVIDENCE_MANIFEST.md`：解释 GitHub 已提交资料与本地原始远端证据之间的边界，列出 `remote_outputs/`、`remote_logs/`、HTML 渲染版未直接提交的原因和本地证据概览。
 - `EXPLAIN_SOURCE_QUESTION_INDEX.md`：所有精讲的问题来源与核心内容索引，把每个精讲对应的原问题、论文/代码来源、来源核心内容和复现/代码落点并排展示，已内嵌进 notebook，并配有来源覆盖轻量测试用例。
 - `EXPLAIN_00_global_overview.md`：论文与复现全局总览精讲，已优化为全精讲入口，补齐来源索引阅读顺序、四条主线、全精讲路线图、复现证据层级、任务标注、策略接入、4090 边界和后续路线，已内嵌进 notebook，并配有全局结构轻量测试用例。
 - `EXPLAIN_01_real_to_sim_eval.md`：论文“真实场景到模拟场景评估”的代码实现精讲，已内嵌进 notebook。
@@ -29,7 +30,7 @@
 - `EXPLAIN_16_recommended_reading.md`：基于 RoboLab 的推荐阅读与开源学习路线，已改成 2026-first：优先补 RoboLab、RoboCasa365、RDT2、GR00T N1.7、Isaac Lab-Arena、Lightwheel LW-BenchHub、Lyra 和 NVIDIA 2026 Physical AI stack；BEHAVIOR/DROID/OpenVLA/Octo/ReKep 等降级为基础背景，已内嵌进 notebook，并配有 reading map 轻量测试用例。
 - `COMPLETE_REPRO_pi05_banana_20260620.md`：Pi05 / BananaInBowlTask 成功闭环记录，已内嵌进 notebook。
 - `COMPLEX_TASKS_pi05_20260620.md`：Pi05 三个复杂任务抽样复现记录，已内嵌进 notebook。
-- `remote_logs/`：2026-06-19 远端 RTX 4090 实测证据，包含安装日志、依赖版本、资产下载日志、no-policy smoke 日志和 episode 输出。
+- `REMOTE_EVIDENCE_MANIFEST.md`：远端原始证据清单。`remote_logs/`、`remote_outputs/` 和 HTML 渲染版目前保留在本地，未进入普通 Git 提交；如需完整原始视频/HDF5，可后续走 Git LFS 或 GitHub Release artifact。
 
 ## 当前状态
 
