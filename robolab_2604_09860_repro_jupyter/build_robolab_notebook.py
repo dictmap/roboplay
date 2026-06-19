@@ -302,6 +302,67 @@ def main() -> None:
         ),
         md(
             """
+            ## 0.00 精讲问题来源与核心内容索引
+
+            下面这节来自本目录的 [EXPLAIN_SOURCE_QUESTION_INDEX.md](./EXPLAIN_SOURCE_QUESTION_INDEX.md)。它补的是所有精讲共同缺的一层：每个精讲到底回答哪个问题，问题来自论文哪一节、哪张图、哪个 appendix 或哪段源码，来源里的核心内容是什么，以及复现时应该落到哪些代码/证据文件。
+            """
+        ),
+        md_file("EXPLAIN_SOURCE_QUESTION_INDEX.md"),
+        code(
+            r"""
+            # ===== 精讲问题来源索引轻量验证 =====
+            # 这个 cell 不验证论文结论本身，只验证所有精讲是否有可追溯入口：
+            # question / source / source_content / implementation_anchor 四类信息必须齐全。
+
+            source_question_index = [
+                {"id": "00", "file": "EXPLAIN_00_global_overview.md", "question": "RoboLab 的全局定位是什么？", "source": "Paper Abstract/Introduction/III/IV + GitHub README", "source_content": "benchmark platform, RoboLab-120, scene/task generation, policy analysis", "implementation_anchor": ["robolab/eval", "robolab/scene_gen", "notebook evidence"]},
+                {"id": "01", "file": "EXPLAIN_01_real_to_sim_eval.md", "question": "real-to-sim evaluation 在 RoboLab 中如何落地？", "source": "Paper II-B + III-A", "source_content": "scale scene/task generation instead of per-scene video reconstruction", "implementation_anchor": ["assets", "scene_gen", "variation runners"]},
+                {"id": "02", "file": "EXPLAIN_02_scene_task_env_generation.md", "question": "scene/task/env 三步如何生成？", "source": "Paper III-A", "source_content": "place objects, define task instruction, instantiate env with robot/policy/variations", "implementation_anchor": ["runtime.py", "task registry", "scene configs"]},
+                {"id": "03", "file": "EXPLAIN_03_task_generation_validation.md", "question": "LLM task code 如何验证和修复？", "source": "Paper III-A2 + Appendix D + taskgen skill", "source_content": "syntax/resource/feasibility validation and repair prompt loop", "implementation_anchor": ["skills/robolab-taskgen", "conditionals", "asset validation"]},
+                {"id": "04", "file": "EXPLAIN_04_competency_axes_difficulty.md", "question": "能力轴和难度分数怎么定义？", "source": "Paper III-B + Figure 4", "source_content": "visual/procedural/relational axes, multi-label attributes, subtask difficulty", "implementation_anchor": ["task metadata", "subtask_utils.py", "constants.py"]},
+                {"id": "05", "file": "EXPLAIN_05_sparc_trajectory_metric.md", "question": "SPARC 为什么衡量轨迹平滑度？", "source": "Paper III-C Trajectory Metrics", "source_content": "spectral arc length of end-effector speed profile", "implementation_anchor": ["HDF5 trajectory", "analysis/read_results.py"]},
+                {"id": "06", "file": "EXPLAIN_06_mnpe_sensitivity_analysis.md", "question": "MNPE 如何解释扰动敏感性？", "source": "Paper III-D + Appendix B", "source_content": "learn posterior over variation parameters conditioned on rollout outcome", "implementation_anchor": ["analysis/sensitivity_analysis/posterior_inference.py", "variation CSV"]},
+                {"id": "07", "file": "EXPLAIN_07_baseline_method.md", "question": "Appendix C-C baseline 到底是什么？", "source": "Paper Appendix C-C", "source_content": "LLM object selection plus grid/jitter one-pass scene baseline", "implementation_anchor": ["grid baseline toy check", "scene generation comparison"]},
+                {"id": "08", "file": "EXPLAIN_08_paper_experiments.md", "question": "论文实验的证据链是什么？", "source": "Paper IV + III-C + Appendix C-D/D", "source_content": "policy benchmark, granular analysis, sensitivity, real-world verification, generation quality", "implementation_anchor": ["runner.py", "results.py", "dashboard", "analysis scripts"]},
+                {"id": "09", "file": "EXPLAIN_09_dtge.md", "question": "DTGE 具体评什么？", "source": "Paper Appendix D", "source_content": "LLM-as-judge over instruction/code alignment, relation/object/quantifier/clarity/feasibility", "implementation_anchor": ["AST extraction", "judge schema"]},
+                {"id": "10", "file": "EXPLAIN_10_prompt_design.md", "question": "scene prompt 为什么这样写？", "source": "Paper Appendix C Stage I + prompt figures", "source_content": "real-world scene principles, JSON-only contract, object catalog, placement types, size limits", "implementation_anchor": ["prompt schema", "catalog injection", "JSON validation"]},
+                {"id": "11", "file": "EXPLAIN_11_spatial_physical_solver_feedback.md", "question": "Spatial/Physical/Feedback 怎么串起来？", "source": "Paper Appendix C-B + Algorithm 1/Figure 17/Algorithm 2 + source files", "source_content": "2D base pose solving, 3D place-on/place-in, feedback to LLM repair", "implementation_anchor": ["spatial_solver.py", "physical_solver.py", "feedback_system.py"]},
+                {"id": "12", "file": "EXPLAIN_12_gaussian_sim_methods.md", "question": "本文和 Gaussian/2026 前沿路线有什么关系？", "source": "Paper real-to-sim discussion + MNPE KDE + NVIDIA sources", "source_content": "RoboLab is not primarily per-scene Gaussian reconstruction; frontier methods are adjacent extensions", "implementation_anchor": ["NuRec/3DGUT/Lyra links", "Isaac Sim route"]},
+                {"id": "13", "file": "EXPLAIN_13_remaining_core_topics.md", "question": "评测侧还有哪些核心内容没讲透？", "source": "Paper III-C/IV-B/IV-D/Appendix A/Limitations", "source_content": "success-score gap, language variants, complexity sweeps, event tracking, confidence, real-world correlation", "implementation_anchor": ["episode_results.jsonl", "event log", "dashboard"]},
+                {"id": "13b", "file": "EXPLAIN_13_deep_evaluation_evidence_chain.md", "question": "单条 rollout 如何变成论文级结论？", "source": "Paper metrics + event/result schema", "source_content": "video, HDF5, JSONL, event log, dashboard have different evidence roles", "implementation_anchor": ["HDF5", "event JSON", "results.py", "dashboard loader"]},
+                {"id": "14", "file": "EXPLAIN_14_core_code_runtime_chain.md", "question": "真实策略评测 runtime 主链是什么？", "source": "GitHub eval runner/episode/base_client/pi0_family/summarize", "source_content": "task selection, episode loop, policy client, summary/result writing", "implementation_anchor": ["runner.py", "episode.py", "base_client.py", "summarize.py"]},
+                {"id": "14b", "file": "EXPLAIN_14_deep_runtime_code_chain.md", "question": "多 env/action chunk/WorldState/EventTracker 状态边界是什么？", "source": "GitHub eval/world/logging/dashboard source files", "source_content": "env_id isolation, action chunk cache, predicate state, sparse failure events, artifact loading", "implementation_anchor": ["WorldState", "EventTracker", "RecorderManager", "dashboard"]},
+                {"id": "15", "file": "EXPLAIN_15_reviewer_synthesis.md", "question": "审稿人视角怎么看这篇论文？", "source": "Paper full text + Limitations + reproduction evidence", "source_content": "strengths, weaknesses, reproducibility risk, future innovation routes", "implementation_anchor": ["review rubric", "subset protocol", "hardware boundary"]},
+                {"id": "16", "file": "EXPLAIN_16_recommended_reading.md", "question": "读完 RoboLab 后该补哪些来源？", "source": "RoboLab related work + official project/source links", "source_content": "2026-first reading map across policies, benchmarks, assets, real data, world models", "implementation_anchor": ["source-linked reading map"]},
+            ]
+
+            required_keys = {"id", "file", "question", "source", "source_content", "implementation_anchor"}
+            tests = [
+                ("index_markdown_exists", (NOTEBOOK_ROOT / "EXPLAIN_SOURCE_QUESTION_INDEX.md").exists()),
+                ("covers_all_explain_files", len(source_question_index) >= 19),
+                ("every_entry_has_required_keys", all(required_keys.issubset(entry) for entry in source_question_index)),
+                ("every_entry_file_exists", all((NOTEBOOK_ROOT / entry["file"]).exists() for entry in source_question_index)),
+                ("every_entry_has_nonempty_source_content", all(entry["source_content"] for entry in source_question_index)),
+                ("contains_paper_sections_and_code_sources", any("Appendix C" in entry["source"] for entry in source_question_index) and any("GitHub" in entry["source"] for entry in source_question_index)),
+                ("contains_reproduction_artifact_anchors", any("HDF5" in " ".join(entry["implementation_anchor"]) for entry in source_question_index)),
+            ]
+
+            report = {
+                "entries": source_question_index,
+                "tests": [{"name": name, "passed": bool(ok)} for name, ok in tests],
+                "all_passed": all(ok for _, ok in tests),
+                "boundary": "This validates source/question coverage for the lecture index; it does not re-verify paper claims or execute RoboLab.",
+            }
+
+            print(json.dumps(report, ensure_ascii=False, indent=2))
+            for name, ok in tests:
+                print(f"{name}: {'PASS' if ok else 'FAIL'}")
+            assert report["all_passed"], tests
+            write_status("explain_source_question_index_tests", report)
+            """
+        ),
+        md(
+            """
             ## 0.0 论文精讲 0：RoboLab 全局总览
 
             下面这节来自本目录的 [EXPLAIN_00_global_overview.md](./EXPLAIN_00_global_overview.md)。它把之前从精讲 1 里轻量化掉的“全局观”补回来：先从论文动机、系统架构、任务标注、策略接入、证据口径、4090 边界和后续对比路线讲清楚，再进入后面 1-6 的专项深挖。
@@ -5166,6 +5227,12 @@ def main() -> None:
                 "G45_recommended_reading_tests_passed": (
                     ARTIFACT_DIR / "recommended_reading_lightweight_tests.json"
                 ).exists(),
+                "G46_explain_source_question_index_saved": (
+                    NOTEBOOK_ROOT / "EXPLAIN_SOURCE_QUESTION_INDEX.md"
+                ).exists(),
+                "G47_explain_source_question_index_tests_passed": (
+                    ARTIFACT_DIR / "explain_source_question_index_tests.json"
+                ).exists(),
                 "note": "Local install gates depend on EXECUTE_INSTALL. Remote 4090 evidence is read from remote_logs/. G12 is a single-task Pi05 policy smoke, not a full RoboLab-120 benchmark.",
             }
             write_status("repro_status", final_checklist)
@@ -5199,6 +5266,7 @@ def main() -> None:
                     "Appendix C-C baseline scene generation method and Appendix C-D scene generation comparison metrics",
                     "paper experiments: RoboLab-120 policy benchmark, granular analysis, sensitivity analysis, real-world verification, scene generation evaluation, task generation evaluation, and Algorithm 1 spatial solver",
                     "EXPLAIN_08 deepened experiment map: evidence chain from scene/task generation to rollout artifacts, success-score-event-trajectory contract, capability-profile reading of main tables, scene generation evaluation schema, task generation judge dimensions, and 4090 mini-paper reproduction matrix",
+                    "EXPLAIN_SOURCE_QUESTION_INDEX: cross-lecture map from each lecture question to its paper section, appendix, figure, code source, source-content summary, and reproduction/code anchor",
                     "Appendix D Details on Task Generation Evaluation: LLM-as-judge dimensions, Table IX metrics, object coverage, and predicate coverage",
                     "Appendix C Stage I Semantic Planning prompts: system prompt, JSON-only output contract, user prompt template, feedback block, and scene generation prompt rationale",
                     "Appendix C Stage II geometric and physical solving: Algorithm 1 spatial constraint solver, Figure 17 feedback block, and Algorithm 2 physical placement solver",
@@ -5587,6 +5655,7 @@ def main() -> None:
 - `{NOTEBOOK_NAME}`：主 notebook，按阶段记录环境检查、安装、验证、smoke run、4090 小子集评测、论文机制、核心源码讲解、结果解析和学习日志。
 - `{MANIFEST_NAME}`：准备 notebook 时核对过的官方来源。
 - `build_robolab_notebook.py`：生成 notebook 和来源清单的脚本。
+- `EXPLAIN_SOURCE_QUESTION_INDEX.md`：所有精讲的问题来源与核心内容索引，把每个精讲对应的原问题、论文/代码来源、来源核心内容和复现/代码落点并排展示，已内嵌进 notebook，并配有来源覆盖轻量测试用例。
 - `EXPLAIN_00_global_overview.md`：论文与复现全局总览精讲，补回系统架构、任务标注、策略接入、证据口径和后续路线，已内嵌进 notebook。
 - `EXPLAIN_01_real_to_sim_eval.md`：论文“真实场景到模拟场景评估”的代码实现精讲，已内嵌进 notebook。
 - `EXPLAIN_02_scene_task_env_generation.md`：论文“场景、任务和环境生成”的代码实现精讲，已内嵌进 notebook。
@@ -5618,6 +5687,7 @@ def main() -> None:
 - 已追加三任务 no-policy subset smoke：`RubiksCubeAndBananaTask`、`RubiksCubeLeftOfBowlTask`、`ReorientWhiteMugsTask`，三者均完成环境初始化、2 step 和 episode log 导出。
 - 已扩展到累计 21 个 no-policy 初始化 smoke，覆盖语义、颜色、空间关系、顺序组合、重定向、堆叠等任务属性；额外候选任务失败原因已记录，证据包为 `remote_logs/robolab_remote_policy_subset21_evidence_20260619_223200.tar.gz`。
 - 已新增论文与核心源码讲解章节，并生成 `robolab_repro_artifacts/core_code_reading_map.json`，用于追踪论文概念到源码文件的映射。
+- 已新增“精讲问题来源与核心内容索引”，集中展示每个精讲回答的问题、问题来自论文哪一节/appendix/图/源码、来源核心内容和复现代码落点，避免只看解释而看不到出处。
 - 已新增“精讲0：RoboLab 全局总览”，把论文动机、系统架构、任务标注、策略接入、4090 复现边界、RoboChallenge/OpenPI/ReKep 对比前提和完整复现分级串成一张总图。
 - 已新增“场景、任务和环境生成”精讲，覆盖 `scene_gen` 谓词求解、`Task` 语言/成功条件、registration/runtime 环境装配，并包含场景 JSON、任务类、背景随机化等示例。
 - 已新增“扩展任务生成、验证和自动修复”精讲，覆盖 taskgen skill、谓词库、`load_task_from_file`、场景对象验证、容器尺寸检查和失败修复提示，并在 notebook 里加入 6 个轻量测试用例。

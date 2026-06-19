@@ -1,0 +1,261 @@
+{
+  "entries": [
+    {
+      "id": "00",
+      "file": "EXPLAIN_00_global_overview.md",
+      "question": "RoboLab 的全局定位是什么？",
+      "source": "Paper Abstract/Introduction/III/IV + GitHub README",
+      "source_content": "benchmark platform, RoboLab-120, scene/task generation, policy analysis",
+      "implementation_anchor": [
+        "robolab/eval",
+        "robolab/scene_gen",
+        "notebook evidence"
+      ]
+    },
+    {
+      "id": "01",
+      "file": "EXPLAIN_01_real_to_sim_eval.md",
+      "question": "real-to-sim evaluation 在 RoboLab 中如何落地？",
+      "source": "Paper II-B + III-A",
+      "source_content": "scale scene/task generation instead of per-scene video reconstruction",
+      "implementation_anchor": [
+        "assets",
+        "scene_gen",
+        "variation runners"
+      ]
+    },
+    {
+      "id": "02",
+      "file": "EXPLAIN_02_scene_task_env_generation.md",
+      "question": "scene/task/env 三步如何生成？",
+      "source": "Paper III-A",
+      "source_content": "place objects, define task instruction, instantiate env with robot/policy/variations",
+      "implementation_anchor": [
+        "runtime.py",
+        "task registry",
+        "scene configs"
+      ]
+    },
+    {
+      "id": "03",
+      "file": "EXPLAIN_03_task_generation_validation.md",
+      "question": "LLM task code 如何验证和修复？",
+      "source": "Paper III-A2 + Appendix D + taskgen skill",
+      "source_content": "syntax/resource/feasibility validation and repair prompt loop",
+      "implementation_anchor": [
+        "skills/robolab-taskgen",
+        "conditionals",
+        "asset validation"
+      ]
+    },
+    {
+      "id": "04",
+      "file": "EXPLAIN_04_competency_axes_difficulty.md",
+      "question": "能力轴和难度分数怎么定义？",
+      "source": "Paper III-B + Figure 4",
+      "source_content": "visual/procedural/relational axes, multi-label attributes, subtask difficulty",
+      "implementation_anchor": [
+        "task metadata",
+        "subtask_utils.py",
+        "constants.py"
+      ]
+    },
+    {
+      "id": "05",
+      "file": "EXPLAIN_05_sparc_trajectory_metric.md",
+      "question": "SPARC 为什么衡量轨迹平滑度？",
+      "source": "Paper III-C Trajectory Metrics",
+      "source_content": "spectral arc length of end-effector speed profile",
+      "implementation_anchor": [
+        "HDF5 trajectory",
+        "analysis/read_results.py"
+      ]
+    },
+    {
+      "id": "06",
+      "file": "EXPLAIN_06_mnpe_sensitivity_analysis.md",
+      "question": "MNPE 如何解释扰动敏感性？",
+      "source": "Paper III-D + Appendix B",
+      "source_content": "learn posterior over variation parameters conditioned on rollout outcome",
+      "implementation_anchor": [
+        "analysis/sensitivity_analysis/posterior_inference.py",
+        "variation CSV"
+      ]
+    },
+    {
+      "id": "07",
+      "file": "EXPLAIN_07_baseline_method.md",
+      "question": "Appendix C-C baseline 到底是什么？",
+      "source": "Paper Appendix C-C",
+      "source_content": "LLM object selection plus grid/jitter one-pass scene baseline",
+      "implementation_anchor": [
+        "grid baseline toy check",
+        "scene generation comparison"
+      ]
+    },
+    {
+      "id": "08",
+      "file": "EXPLAIN_08_paper_experiments.md",
+      "question": "论文实验的证据链是什么？",
+      "source": "Paper IV + III-C + Appendix C-D/D",
+      "source_content": "policy benchmark, granular analysis, sensitivity, real-world verification, generation quality",
+      "implementation_anchor": [
+        "runner.py",
+        "results.py",
+        "dashboard",
+        "analysis scripts"
+      ]
+    },
+    {
+      "id": "09",
+      "file": "EXPLAIN_09_dtge.md",
+      "question": "DTGE 具体评什么？",
+      "source": "Paper Appendix D",
+      "source_content": "LLM-as-judge over instruction/code alignment, relation/object/quantifier/clarity/feasibility",
+      "implementation_anchor": [
+        "AST extraction",
+        "judge schema"
+      ]
+    },
+    {
+      "id": "10",
+      "file": "EXPLAIN_10_prompt_design.md",
+      "question": "scene prompt 为什么这样写？",
+      "source": "Paper Appendix C Stage I + prompt figures",
+      "source_content": "real-world scene principles, JSON-only contract, object catalog, placement types, size limits",
+      "implementation_anchor": [
+        "prompt schema",
+        "catalog injection",
+        "JSON validation"
+      ]
+    },
+    {
+      "id": "11",
+      "file": "EXPLAIN_11_spatial_physical_solver_feedback.md",
+      "question": "Spatial/Physical/Feedback 怎么串起来？",
+      "source": "Paper Appendix C-B + Algorithm 1/Figure 17/Algorithm 2 + source files",
+      "source_content": "2D base pose solving, 3D place-on/place-in, feedback to LLM repair",
+      "implementation_anchor": [
+        "spatial_solver.py",
+        "physical_solver.py",
+        "feedback_system.py"
+      ]
+    },
+    {
+      "id": "12",
+      "file": "EXPLAIN_12_gaussian_sim_methods.md",
+      "question": "本文和 Gaussian/2026 前沿路线有什么关系？",
+      "source": "Paper real-to-sim discussion + MNPE KDE + NVIDIA sources",
+      "source_content": "RoboLab is not primarily per-scene Gaussian reconstruction; frontier methods are adjacent extensions",
+      "implementation_anchor": [
+        "NuRec/3DGUT/Lyra links",
+        "Isaac Sim route"
+      ]
+    },
+    {
+      "id": "13",
+      "file": "EXPLAIN_13_remaining_core_topics.md",
+      "question": "评测侧还有哪些核心内容没讲透？",
+      "source": "Paper III-C/IV-B/IV-D/Appendix A/Limitations",
+      "source_content": "success-score gap, language variants, complexity sweeps, event tracking, confidence, real-world correlation",
+      "implementation_anchor": [
+        "episode_results.jsonl",
+        "event log",
+        "dashboard"
+      ]
+    },
+    {
+      "id": "13b",
+      "file": "EXPLAIN_13_deep_evaluation_evidence_chain.md",
+      "question": "单条 rollout 如何变成论文级结论？",
+      "source": "Paper metrics + event/result schema",
+      "source_content": "video, HDF5, JSONL, event log, dashboard have different evidence roles",
+      "implementation_anchor": [
+        "HDF5",
+        "event JSON",
+        "results.py",
+        "dashboard loader"
+      ]
+    },
+    {
+      "id": "14",
+      "file": "EXPLAIN_14_core_code_runtime_chain.md",
+      "question": "真实策略评测 runtime 主链是什么？",
+      "source": "GitHub eval runner/episode/base_client/pi0_family/summarize",
+      "source_content": "task selection, episode loop, policy client, summary/result writing",
+      "implementation_anchor": [
+        "runner.py",
+        "episode.py",
+        "base_client.py",
+        "summarize.py"
+      ]
+    },
+    {
+      "id": "14b",
+      "file": "EXPLAIN_14_deep_runtime_code_chain.md",
+      "question": "多 env/action chunk/WorldState/EventTracker 状态边界是什么？",
+      "source": "GitHub eval/world/logging/dashboard source files",
+      "source_content": "env_id isolation, action chunk cache, predicate state, sparse failure events, artifact loading",
+      "implementation_anchor": [
+        "WorldState",
+        "EventTracker",
+        "RecorderManager",
+        "dashboard"
+      ]
+    },
+    {
+      "id": "15",
+      "file": "EXPLAIN_15_reviewer_synthesis.md",
+      "question": "审稿人视角怎么看这篇论文？",
+      "source": "Paper full text + Limitations + reproduction evidence",
+      "source_content": "strengths, weaknesses, reproducibility risk, future innovation routes",
+      "implementation_anchor": [
+        "review rubric",
+        "subset protocol",
+        "hardware boundary"
+      ]
+    },
+    {
+      "id": "16",
+      "file": "EXPLAIN_16_recommended_reading.md",
+      "question": "读完 RoboLab 后该补哪些来源？",
+      "source": "RoboLab related work + official project/source links",
+      "source_content": "2026-first reading map across policies, benchmarks, assets, real data, world models",
+      "implementation_anchor": [
+        "source-linked reading map"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "index_markdown_exists",
+      "passed": true
+    },
+    {
+      "name": "covers_all_explain_files",
+      "passed": true
+    },
+    {
+      "name": "every_entry_has_required_keys",
+      "passed": true
+    },
+    {
+      "name": "every_entry_file_exists",
+      "passed": true
+    },
+    {
+      "name": "every_entry_has_nonempty_source_content",
+      "passed": true
+    },
+    {
+      "name": "contains_paper_sections_and_code_sources",
+      "passed": true
+    },
+    {
+      "name": "contains_reproduction_artifact_anchors",
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "boundary": "This validates source/question coverage for the lecture index; it does not re-verify paper claims or execute RoboLab."
+}

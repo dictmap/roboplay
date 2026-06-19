@@ -50,5 +50,7 @@
   "G43_reviewer_synthesis_tests_passed": true,
   "G44_recommended_reading_explain_saved": true,
   "G45_recommended_reading_tests_passed": true,
+  "G46_explain_source_question_index_saved": true,
+  "G47_explain_source_question_index_tests_passed": true,
   "note": "Local install gates depend on EXECUTE_INSTALL. Remote 4090 evidence is read from remote_logs/. G12 is a single-task Pi05 policy smoke, not a full RoboLab-120 benchmark."
 }

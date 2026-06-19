@@ -7,6 +7,7 @@
 - `RoboLab_4090_repro_learning_record.ipynb`：主 notebook，按阶段记录环境检查、安装、验证、smoke run、4090 小子集评测、论文机制、核心源码讲解、结果解析和学习日志。
 - `source_manifest.json`：准备 notebook 时核对过的官方来源。
 - `build_robolab_notebook.py`：生成 notebook 和来源清单的脚本。
+- `EXPLAIN_SOURCE_QUESTION_INDEX.md`：所有精讲的问题来源与核心内容索引，把每个精讲对应的原问题、论文/代码来源、来源核心内容和复现/代码落点并排展示，已内嵌进 notebook，并配有来源覆盖轻量测试用例。
 - `EXPLAIN_00_global_overview.md`：论文与复现全局总览精讲，补回系统架构、任务标注、策略接入、证据口径和后续路线，已内嵌进 notebook。
 - `EXPLAIN_01_real_to_sim_eval.md`：论文“真实场景到模拟场景评估”的代码实现精讲，已内嵌进 notebook。
 - `EXPLAIN_02_scene_task_env_generation.md`：论文“场景、任务和环境生成”的代码实现精讲，已内嵌进 notebook。
@@ -38,6 +39,7 @@
 - 已追加三任务 no-policy subset smoke：`RubiksCubeAndBananaTask`、`RubiksCubeLeftOfBowlTask`、`ReorientWhiteMugsTask`，三者均完成环境初始化、2 step 和 episode log 导出。
 - 已扩展到累计 21 个 no-policy 初始化 smoke，覆盖语义、颜色、空间关系、顺序组合、重定向、堆叠等任务属性；额外候选任务失败原因已记录，证据包为 `remote_logs/robolab_remote_policy_subset21_evidence_20260619_223200.tar.gz`。
 - 已新增论文与核心源码讲解章节，并生成 `robolab_repro_artifacts/core_code_reading_map.json`，用于追踪论文概念到源码文件的映射。
+- 已新增“精讲问题来源与核心内容索引”，集中展示每个精讲回答的问题、问题来自论文哪一节/appendix/图/源码、来源核心内容和复现代码落点，避免只看解释而看不到出处。
 - 已新增“精讲0：RoboLab 全局总览”，把论文动机、系统架构、任务标注、策略接入、4090 复现边界、RoboChallenge/OpenPI/ReKep 对比前提和完整复现分级串成一张总图。
 - 已新增“场景、任务和环境生成”精讲，覆盖 `scene_gen` 谓词求解、`Task` 语言/成功条件、registration/runtime 环境装配，并包含场景 JSON、任务类、背景随机化等示例。
 - 已新增“扩展任务生成、验证和自动修复”精讲，覆盖 taskgen skill、谓词库、`load_task_from_file`、场景对象验证、容器尺寸检查和失败修复提示，并在 notebook 里加入 6 个轻量测试用例。
