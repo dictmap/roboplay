@@ -1,0 +1,296 @@
+{
+  "deep_runtime_layers": [
+    {
+      "id": "runner",
+      "source": "robolab/eval/runner.py",
+      "inputs": [
+        "task",
+        "tag",
+        "num_envs",
+        "num_runs",
+        "instruction_type",
+        "video_mode",
+        "output_folder_name"
+      ],
+      "responsibilities": [
+        "parse_shared_eval_args",
+        "defer_heavy_isaac_imports_until_run_evaluation",
+        "select_task_envs",
+        "create_output_dir",
+        "resume_or_skip_completed_runs",
+        "create_env",
+        "create_policy_client",
+        "call_run_episode",
+        "call_summarize_run"
+      ],
+      "outputs": [
+        "output_dir",
+        "episode_results.jsonl",
+        "per_task_output_folder"
+      ]
+    },
+    {
+      "id": "episode_loop",
+      "source": "robolab/eval/episode.py",
+      "inputs": [
+        "env",
+        "env_cfg",
+        "episode",
+        "client",
+        "headless",
+        "save_videos",
+        "video_mode"
+      ],
+      "responsibilities": [
+        "reset_env",
+        "set_run_hdf5_file",
+        "set_per_env_demo_index",
+        "create_video_writers",
+        "infer_actions_for_active_envs_only",
+        "step_env",
+        "collect_subtask_infos",
+        "skip_video_for_frozen_envs",
+        "release_video_writers",
+        "reset_client_chunk_cache"
+      ],
+      "outputs": [
+        "env_results",
+        "subtask_status",
+        "timing"
+      ]
+    },
+    {
+      "id": "inference_client_contract",
+      "source": "robolab/eval/base_client.py",
+      "inputs": [
+        "raw_obs",
+        "instruction",
+        "env_id"
+      ],
+      "responsibilities": [
+        "_extract_observation",
+        "_pack_request",
+        "_query_server",
+        "_unpack_response",
+        "_postprocess_chunk",
+        "_build_visualization",
+        "per_env_action_chunk_cache"
+      ],
+      "outputs": [
+        "action",
+        "viz"
+      ]
+    },
+    {
+      "id": "pi05_adapter",
+      "source": "policies/pi0_family/client.py",
+      "inputs": [
+        "over_shoulder_camera",
+        "wrist_camera",
+        "arm_joint_pos",
+        "gripper_pos",
+        "prompt"
+      ],
+      "responsibilities": [
+        "resize_and_pack_images",
+        "pack_joint_and_gripper_state",
+        "send_websocket_request",
+        "unpack_action_chunk",
+        "binarize_gripper_action",
+        "flush_chunk_cache_after_reconnect"
+      ],
+      "outputs": [
+        "open_loop_action_chunk"
+      ]
+    },
+    {
+      "id": "world_state",
+      "source": "robolab/core/world/world_state.py",
+      "inputs": [
+        "env",
+        "body_name",
+        "env_id"
+      ],
+      "responsibilities": [
+        "query_pose_velocity_geometry_contact",
+        "support_batched_env_id_none_queries",
+        "cache_static_local_geometry",
+        "reset_stateful_predicate_latches_per_env"
+      ],
+      "outputs": [
+        "pose",
+        "velocity",
+        "bbox",
+        "dimensions",
+        "contact",
+        "predicate_state"
+      ]
+    },
+    {
+      "id": "event_tracker",
+      "source": "robolab/core/task/event_tracker.py",
+      "inputs": [
+        "env",
+        "per_env_intended_objects",
+        "frozen_mask"
+      ],
+      "responsibilities": [
+        "record_wrong_object_grabbed",
+        "record_gripper_hit_table",
+        "record_object_moved_or_bumped",
+        "record_object_out_of_scene",
+        "record_tipped_objects",
+        "record_target_dropped",
+        "respect_active_env_mask"
+      ],
+      "outputs": [
+        "sparse_events_with_status_codes"
+      ]
+    },
+    {
+      "id": "recorder_hdf5",
+      "source": "robolab/core/logging/recorder_manager.py",
+      "inputs": [
+        "obs",
+        "actions",
+        "states",
+        "subtask_score",
+        "env_id",
+        "run_idx"
+      ],
+      "responsibilities": [
+        "stream_episode_data",
+        "write_run_level_hdf5",
+        "store_demo_per_env",
+        "persist_subtask_score"
+      ],
+      "outputs": [
+        "run_<idx>.hdf5",
+        "data/demo_<env_id>/subtask/score"
+      ]
+    },
+    {
+      "id": "summarize_results",
+      "source": "robolab/eval/summarize.py + robolab/core/logging/results.py",
+      "inputs": [
+        "env_results",
+        "events",
+        "hdf5",
+        "timing",
+        "env_cfg"
+      ],
+      "responsibilities": [
+        "write_per_env_event_log",
+        "load_trajectory_metrics_from_hdf5",
+        "read_canonical_final_score_from_hdf5",
+        "build_run_summary",
+        "append_episode_results_jsonl",
+        "compute_beta_confidence_interval"
+      ],
+      "outputs": [
+        "log_<run>_env<id>.json",
+        "episode_results.jsonl",
+        "confidence_intervals"
+      ]
+    },
+    {
+      "id": "dashboard_view",
+      "source": "dashboard/loaders/local.py",
+      "inputs": [
+        "episode_results.jsonl",
+        "event_logs",
+        "hdf5",
+        "videos"
+      ],
+      "responsibilities": [
+        "load_offline_result_tree",
+        "match_results_to_artifacts",
+        "display_success_rate_score_ci_and_videos"
+      ],
+      "outputs": [
+        "human_readable_dashboard"
+      ]
+    }
+  ],
+  "client_hook_contract": {
+    "_extract_observation": "把 RoboLab 原始 batched obs 转成单 env flat dict",
+    "_pack_request": "把 flat obs 和 instruction 转成策略服务请求",
+    "_query_server": "负责 websocket、HTTP 或本地推理调用",
+    "_unpack_response": "把服务响应转成 (horizon, action_dim) action chunk",
+    "_postprocess_chunk": "处理 gripper、padding、符号和单位等动作约定",
+    "_build_visualization": "生成调试可视化图像"
+  },
+  "diagnostic_examples": {
+    "episode_id_run3_env2_numenv4": 14,
+    "queries_for_31_steps_horizon15": 3,
+    "success_false_route": "world_state/event_tracker/summarize"
+  },
+  "tests": [
+    {
+      "name": "covers_all_runtime_layers",
+      "passed": true
+    },
+    {
+      "name": "runner_keeps_import_lifecycle_explicit",
+      "passed": true
+    },
+    {
+      "name": "episode_handles_active_and_frozen_envs",
+      "passed": true
+    },
+    {
+      "name": "client_contract_has_six_hooks",
+      "passed": true
+    },
+    {
+      "name": "pi05_adapter_mentions_images_state_prompt_and_gripper",
+      "passed": true
+    },
+    {
+      "name": "episode_id_formula_matches_parallel_env_indexing",
+      "passed": true
+    },
+    {
+      "name": "chunk_refresh_logic_detects_empty_or_exhausted_chunk",
+      "passed": true
+    },
+    {
+      "name": "chunk_refresh_logic_reuses_non_exhausted_chunk",
+      "passed": true
+    },
+    {
+      "name": "server_query_estimate_respects_horizon",
+      "passed": true
+    },
+    {
+      "name": "world_state_supports_batched_queries_and_predicate_reset",
+      "passed": true
+    },
+    {
+      "name": "event_tracker_records_failure_events_and_respects_masks",
+      "passed": true
+    },
+    {
+      "name": "hdf5_is_registered_as_score_source",
+      "passed": true
+    },
+    {
+      "name": "summarize_uses_hdf5_and_jsonl",
+      "passed": true
+    },
+    {
+      "name": "routes_server_issue_to_client",
+      "passed": true
+    },
+    {
+      "name": "routes_success_false_to_semantic_chain",
+      "passed": true
+    },
+    {
+      "name": "routes_dashboard_issue_to_artifact_matching",
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "boundary": "Coverage check for EXPLAIN_14_deep_runtime_code_chain only; it does not execute Isaac Sim or connect to Pi05/OpenPI."
+}

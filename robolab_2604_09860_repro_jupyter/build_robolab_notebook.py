@@ -2255,7 +2255,7 @@ def main() -> None:
                     else:
                         issues.append(f"unknown predicate type: {pred_type}")
 
-                large_objects = [name for name in name_set if name in catalog and catalog[name]["footprint"] > 0.08]
+                large_objects = sorted(name for name in name_set if name in catalog and catalog[name]["footprint"] > 0.08)
                 if len(large_objects) > 2:
                     issues.append(f"too many large objects for medium scene: {large_objects}")
 
@@ -3227,6 +3227,282 @@ def main() -> None:
 
             assert report["all_passed"], code_chain_tests
             write_status("core_code_runtime_chain_lightweight_tests", report)
+            """
+        ),
+        md(
+            """
+            ## 0.20b 代码精讲：精讲14补充，核心运行时代码深挖
+
+            下面这节来自本目录的 [EXPLAIN_14_deep_runtime_code_chain.md](./EXPLAIN_14_deep_runtime_code_chain.md)。它把精讲 14 从“文件导览”继续推进到“输入、处理、输出、故障路由和复现证据链”：为什么 `runner.py` 要延迟导入 Isaac 相关模块，`episode.py` 怎样处理 active/frozen env，`InferenceClient` 为什么按 `env_id` 缓存 action chunk，Pi05 client 如何把 RoboLab 观测转成 OpenPI/Pi05 请求，`WorldState/EventTracker` 如何支撑谓词与失败事件，HDF5、event log、`episode_results.jsonl` 和 dashboard 分别承担什么证据角色。
+            """
+        ),
+        md_file("EXPLAIN_14_deep_runtime_code_chain.md"),
+        code(
+            r"""
+            # ===== 精讲14-补充：核心运行时代码深挖轻量验证 =====
+            # 这个 cell 不启动 Isaac Sim，也不连接 Pi05 server。
+            # 它把精讲 14-补充中的运行时代码链路转成结构化检查，
+            # 用于确认 notebook 已覆盖从 runner 到 dashboard 的核心证据流。
+            import json
+
+            deep_runtime_layers = [
+                {
+                    "id": "runner",
+                    "source": "robolab/eval/runner.py",
+                    "inputs": ["task", "tag", "num_envs", "num_runs", "instruction_type", "video_mode", "output_folder_name"],
+                    "responsibilities": [
+                        "parse_shared_eval_args",
+                        "defer_heavy_isaac_imports_until_run_evaluation",
+                        "select_task_envs",
+                        "create_output_dir",
+                        "resume_or_skip_completed_runs",
+                        "create_env",
+                        "create_policy_client",
+                        "call_run_episode",
+                        "call_summarize_run",
+                    ],
+                    "outputs": ["output_dir", "episode_results.jsonl", "per_task_output_folder"],
+                },
+                {
+                    "id": "episode_loop",
+                    "source": "robolab/eval/episode.py",
+                    "inputs": ["env", "env_cfg", "episode", "client", "headless", "save_videos", "video_mode"],
+                    "responsibilities": [
+                        "reset_env",
+                        "set_run_hdf5_file",
+                        "set_per_env_demo_index",
+                        "create_video_writers",
+                        "infer_actions_for_active_envs_only",
+                        "step_env",
+                        "collect_subtask_infos",
+                        "skip_video_for_frozen_envs",
+                        "release_video_writers",
+                        "reset_client_chunk_cache",
+                    ],
+                    "outputs": ["env_results", "subtask_status", "timing"],
+                },
+                {
+                    "id": "inference_client_contract",
+                    "source": "robolab/eval/base_client.py",
+                    "inputs": ["raw_obs", "instruction", "env_id"],
+                    "responsibilities": [
+                        "_extract_observation",
+                        "_pack_request",
+                        "_query_server",
+                        "_unpack_response",
+                        "_postprocess_chunk",
+                        "_build_visualization",
+                        "per_env_action_chunk_cache",
+                    ],
+                    "outputs": ["action", "viz"],
+                },
+                {
+                    "id": "pi05_adapter",
+                    "source": "policies/pi0_family/client.py",
+                    "inputs": ["over_shoulder_camera", "wrist_camera", "arm_joint_pos", "gripper_pos", "prompt"],
+                    "responsibilities": [
+                        "resize_and_pack_images",
+                        "pack_joint_and_gripper_state",
+                        "send_websocket_request",
+                        "unpack_action_chunk",
+                        "binarize_gripper_action",
+                        "flush_chunk_cache_after_reconnect",
+                    ],
+                    "outputs": ["open_loop_action_chunk"],
+                },
+                {
+                    "id": "world_state",
+                    "source": "robolab/core/world/world_state.py",
+                    "inputs": ["env", "body_name", "env_id"],
+                    "responsibilities": [
+                        "query_pose_velocity_geometry_contact",
+                        "support_batched_env_id_none_queries",
+                        "cache_static_local_geometry",
+                        "reset_stateful_predicate_latches_per_env",
+                    ],
+                    "outputs": ["pose", "velocity", "bbox", "dimensions", "contact", "predicate_state"],
+                },
+                {
+                    "id": "event_tracker",
+                    "source": "robolab/core/task/event_tracker.py",
+                    "inputs": ["env", "per_env_intended_objects", "frozen_mask"],
+                    "responsibilities": [
+                        "record_wrong_object_grabbed",
+                        "record_gripper_hit_table",
+                        "record_object_moved_or_bumped",
+                        "record_object_out_of_scene",
+                        "record_tipped_objects",
+                        "record_target_dropped",
+                        "respect_active_env_mask",
+                    ],
+                    "outputs": ["sparse_events_with_status_codes"],
+                },
+                {
+                    "id": "recorder_hdf5",
+                    "source": "robolab/core/logging/recorder_manager.py",
+                    "inputs": ["obs", "actions", "states", "subtask_score", "env_id", "run_idx"],
+                    "responsibilities": [
+                        "stream_episode_data",
+                        "write_run_level_hdf5",
+                        "store_demo_per_env",
+                        "persist_subtask_score",
+                    ],
+                    "outputs": ["run_<idx>.hdf5", "data/demo_<env_id>/subtask/score"],
+                },
+                {
+                    "id": "summarize_results",
+                    "source": "robolab/eval/summarize.py + robolab/core/logging/results.py",
+                    "inputs": ["env_results", "events", "hdf5", "timing", "env_cfg"],
+                    "responsibilities": [
+                        "write_per_env_event_log",
+                        "load_trajectory_metrics_from_hdf5",
+                        "read_canonical_final_score_from_hdf5",
+                        "build_run_summary",
+                        "append_episode_results_jsonl",
+                        "compute_beta_confidence_interval",
+                    ],
+                    "outputs": ["log_<run>_env<id>.json", "episode_results.jsonl", "confidence_intervals"],
+                },
+                {
+                    "id": "dashboard_view",
+                    "source": "dashboard/loaders/local.py",
+                    "inputs": ["episode_results.jsonl", "event_logs", "hdf5", "videos"],
+                    "responsibilities": [
+                        "load_offline_result_tree",
+                        "match_results_to_artifacts",
+                        "display_success_rate_score_ci_and_videos",
+                    ],
+                    "outputs": ["human_readable_dashboard"],
+                },
+            ]
+
+            client_hook_contract = {
+                "_extract_observation": "把 RoboLab 原始 batched obs 转成单 env flat dict",
+                "_pack_request": "把 flat obs 和 instruction 转成策略服务请求",
+                "_query_server": "负责 websocket、HTTP 或本地推理调用",
+                "_unpack_response": "把服务响应转成 (horizon, action_dim) action chunk",
+                "_postprocess_chunk": "处理 gripper、padding、符号和单位等动作约定",
+                "_build_visualization": "生成调试可视化图像",
+            }
+
+            def episode_id(run_idx: int, num_envs: int, env_id: int) -> int:
+                return run_idx * num_envs + env_id
+
+            def needs_refresh(counter: int, horizon: int, has_chunk: bool = True) -> bool:
+                return (not has_chunk) or counter >= horizon
+
+            def estimate_server_queries(num_steps: int, horizon: int) -> int:
+                return (num_steps + horizon - 1) // horizon
+
+            def route_runtime_issue(symptom: str) -> str:
+                symptom = symptom.lower()
+                if "skip" in symptom or "output dir" in symptom:
+                    return "runner/results"
+                if "server" in symptom or "websocket" in symptom or "timeout" in symptom:
+                    return "inference_client/pi05_adapter"
+                if "shape" in symptom or "gripper" in symptom or "joint" in symptom:
+                    return "action_schema"
+                if "success=false" in symptom or "score" in symptom or "predicate" in symptom:
+                    return "world_state/event_tracker/summarize"
+                if "video" in symptom or "dashboard" in symptom:
+                    return "dashboard/artifact_matching"
+                return "manual_trace_required"
+
+            required_layers = {
+                "runner",
+                "episode_loop",
+                "inference_client_contract",
+                "pi05_adapter",
+                "world_state",
+                "event_tracker",
+                "recorder_hdf5",
+                "summarize_results",
+                "dashboard_view",
+            }
+            layer_ids = {layer["id"] for layer in deep_runtime_layers}
+
+            tests = [
+                ("covers_all_runtime_layers", required_layers.issubset(layer_ids)),
+                (
+                    "runner_keeps_import_lifecycle_explicit",
+                    "defer_heavy_isaac_imports_until_run_evaluation"
+                    in next(layer for layer in deep_runtime_layers if layer["id"] == "runner")["responsibilities"],
+                ),
+                (
+                    "episode_handles_active_and_frozen_envs",
+                    {"infer_actions_for_active_envs_only", "skip_video_for_frozen_envs"}.issubset(
+                        set(next(layer for layer in deep_runtime_layers if layer["id"] == "episode_loop")["responsibilities"])
+                    ),
+                ),
+                (
+                    "client_contract_has_six_hooks",
+                    set(client_hook_contract) == {
+                        "_extract_observation",
+                        "_pack_request",
+                        "_query_server",
+                        "_unpack_response",
+                        "_postprocess_chunk",
+                        "_build_visualization",
+                    },
+                ),
+                (
+                    "pi05_adapter_mentions_images_state_prompt_and_gripper",
+                    {"over_shoulder_camera", "wrist_camera", "arm_joint_pos", "gripper_pos", "prompt"}.issubset(
+                        set(next(layer for layer in deep_runtime_layers if layer["id"] == "pi05_adapter")["inputs"])
+                    )
+                    and "binarize_gripper_action"
+                    in next(layer for layer in deep_runtime_layers if layer["id"] == "pi05_adapter")["responsibilities"],
+                ),
+                ("episode_id_formula_matches_parallel_env_indexing", episode_id(3, 4, 2) == 14),
+                ("chunk_refresh_logic_detects_empty_or_exhausted_chunk", needs_refresh(0, 15, False) and needs_refresh(15, 15, True)),
+                ("chunk_refresh_logic_reuses_non_exhausted_chunk", not needs_refresh(7, 15, True)),
+                ("server_query_estimate_respects_horizon", estimate_server_queries(31, 15) == 3),
+                (
+                    "world_state_supports_batched_queries_and_predicate_reset",
+                    {"support_batched_env_id_none_queries", "reset_stateful_predicate_latches_per_env"}.issubset(
+                        set(next(layer for layer in deep_runtime_layers if layer["id"] == "world_state")["responsibilities"])
+                    ),
+                ),
+                (
+                    "event_tracker_records_failure_events_and_respects_masks",
+                    "respect_active_env_mask"
+                    in next(layer for layer in deep_runtime_layers if layer["id"] == "event_tracker")["responsibilities"],
+                ),
+                (
+                    "hdf5_is_registered_as_score_source",
+                    "data/demo_<env_id>/subtask/score"
+                    in next(layer for layer in deep_runtime_layers if layer["id"] == "recorder_hdf5")["outputs"],
+                ),
+                (
+                    "summarize_uses_hdf5_and_jsonl",
+                    {"read_canonical_final_score_from_hdf5", "append_episode_results_jsonl"}.issubset(
+                        set(next(layer for layer in deep_runtime_layers if layer["id"] == "summarize_results")["responsibilities"])
+                    ),
+                ),
+                ("routes_server_issue_to_client", route_runtime_issue("websocket server timeout") == "inference_client/pi05_adapter"),
+                ("routes_success_false_to_semantic_chain", route_runtime_issue("success=false but video looks ok score missing") == "world_state/event_tracker/summarize"),
+                ("routes_dashboard_issue_to_artifact_matching", route_runtime_issue("dashboard cannot show video") == "dashboard/artifact_matching"),
+            ]
+
+            report = {
+                "deep_runtime_layers": deep_runtime_layers,
+                "client_hook_contract": client_hook_contract,
+                "diagnostic_examples": {
+                    "episode_id_run3_env2_numenv4": episode_id(3, 4, 2),
+                    "queries_for_31_steps_horizon15": estimate_server_queries(31, 15),
+                    "success_false_route": route_runtime_issue("success=false but video looks ok score missing"),
+                },
+                "tests": [{"name": name, "passed": bool(ok)} for name, ok in tests],
+                "all_passed": all(ok for _, ok in tests),
+                "boundary": "Coverage check for EXPLAIN_14_deep_runtime_code_chain only; it does not execute Isaac Sim or connect to Pi05/OpenPI.",
+            }
+
+            print(json.dumps(report, ensure_ascii=False, indent=2))
+            for name, ok in tests:
+                print(f"{name}: {'PASS' if ok else 'FAIL'}")
+
+            assert report["all_passed"], tests
+            write_status("core_code_runtime_deep_lightweight_tests", report)
             """
         ),
         md(
@@ -4691,6 +4967,12 @@ def main() -> None:
                 "G41_core_code_runtime_chain_tests_passed": (
                     ARTIFACT_DIR / "core_code_runtime_chain_lightweight_tests.json"
                 ).exists(),
+                "G41a_core_code_runtime_deep_explain_saved": (
+                    NOTEBOOK_ROOT / "EXPLAIN_14_deep_runtime_code_chain.md"
+                ).exists(),
+                "G41b_core_code_runtime_deep_tests_passed": (
+                    ARTIFACT_DIR / "core_code_runtime_deep_lightweight_tests.json"
+                ).exists(),
                 "G42_reviewer_synthesis_explain_saved": (
                     NOTEBOOK_ROOT / "EXPLAIN_15_reviewer_synthesis.md"
                 ).exists(),
@@ -5019,6 +5301,13 @@ def main() -> None:
                     "EXPLAIN_14 source-code runtime chain: robolab/core/logging/recorder_manager.py streaming HDF5 recorder, per-env EpisodeData, run_<idx>.hdf5, and demo_<env_id> indexing",
                     "EXPLAIN_14 source-code runtime chain: robolab/eval/summarize.py and robolab/core/logging/results.py event log writing, trajectory metric folding, final score extraction, and episode_results.jsonl append",
                     "EXPLAIN_14 source-code runtime chain: dashboard/loaders/local.py offline result loading, HDF5/video/log discovery, and SR/Score confidence interval display",
+                    "EXPLAIN_14_deep runtime source grounding: runner.py import lifecycle, task/tag filtering, resume logic, adaptive sampling, env/client creation, and run_episode/summarize_run handoff",
+                    "EXPLAIN_14_deep runtime source grounding: episode.py active-env action loop, frozen-env video skip, action_dim selection, per-run HDF5, per-env demo indexing, timing, and client reset boundary",
+                    "EXPLAIN_14_deep runtime source grounding: base_client.py hook contract, per-env action chunk cache, open_loop_horizon refresh behavior, and reset semantics",
+                    "EXPLAIN_14_deep runtime source grounding: pi0_family/client.py Pi05 observation keys, request schema, websocket transport, action chunk unpacking, reconnect cache flush, and gripper binarization",
+                    "EXPLAIN_14_deep runtime source grounding: WorldState batched env queries, local geometry cache, predicate state reset, pose/velocity/geometry/contact reads, and event predicate support",
+                    "EXPLAIN_14_deep runtime source grounding: EventTracker sparse failure events, active/frozen masks, wrong-object tracking, object movement/out-of-scene/tipped/drop diagnostics",
+                    "EXPLAIN_14_deep runtime source grounding: RecorderManager/HDF5 run_<idx>.hdf5, data/demo_<env_id>, subtask score storage, summarize.py canonical score read, JSONL summary, and dashboard artifact loading",
                     "EXPLAIN_15 reviewer synthesis source grounding: evaluation runners, dashboard, policy adapters, event logs, result schema, and 4090-cost reproduction constraints",
                     "EXPLAIN_16 reading-route grounding: RoboLab modules used to organize external recommended reading by policy client, scene/task generation, asset preflight, real-world correlation, long-horizon reasoning, and failure analysis",
                 ],
@@ -5128,6 +5417,7 @@ def main() -> None:
 - `EXPLAIN_13_remaining_core_topics.md`：对照论文后补充的剩余核心内容精讲，覆盖实验协议、success/score gap、语言变体、复杂度 sweep、事件追踪、真实世界相关性、统计置信和限制边界，已内嵌进 notebook，并配有覆盖差分轻量测试用例。
 - `EXPLAIN_13_deep_evaluation_evidence_chain.md`：精讲13补充深挖版，把单条 rollout 到论文结论的证据链讲透，覆盖 episode 样本单位、score/success 数学直觉、event tracking、置信区间、dashboard、RoboArena 相关性、limitations 和 4090 小矩阵实验设计，已内嵌进 notebook，并配有深挖轻量测试用例。
 - `EXPLAIN_14_core_code_runtime_chain.md`：RoboLab policy rollout 到证据链的核心代码精讲，覆盖 `runner.py`、`episode.py`、`InferenceClient`、Pi05 client、`WorldState`、`EventTracker`、HDF5 recorder、`summarize_run`、results 和 dashboard loader，已内嵌进 notebook，并配有源码链路轻量测试用例。
+- `EXPLAIN_14_deep_runtime_code_chain.md`：精讲14补充深挖版，把源码主干继续拆成输入、处理、输出、状态边界、故障路由和证据归档，重点讲透 `runner -> episode -> client -> Pi05 server -> env/world -> event -> HDF5 -> summarize -> dashboard`，已内嵌进 notebook，并配有运行链路覆盖轻量测试用例。
 - `EXPLAIN_15_reviewer_synthesis.md`：全文总梳理与审稿人视角精讲，覆盖贡献、优点、主要问题、优化点和未来创新方向，已内嵌进 notebook，并配有 reviewer rubric 轻量测试用例。
 - `EXPLAIN_16_recommended_reading.md`：基于 RoboLab 的推荐阅读与开源学习路线，已改成 2026-first：优先补 RoboLab、RoboCasa365、RDT2、GR00T N1.7、Isaac Lab-Arena、Lightwheel LW-BenchHub、Lyra 和 NVIDIA 2026 Physical AI stack；BEHAVIOR/DROID/OpenVLA/Octo/ReKep 等降级为基础背景，已内嵌进 notebook，并配有 reading map 轻量测试用例。
 - `COMPLETE_REPRO_pi05_banana_20260620.md`：Pi05 / BananaInBowlTask 成功闭环记录，已内嵌进 notebook。
@@ -5158,6 +5448,7 @@ def main() -> None:
 - 已新增“剩余核心内容与评测证据链”精讲，补齐实验协议、`success` 与 `score` 的差异、语言变体、复杂度 sweep、事件追踪、RoboArena 真实世界相关性、统计置信区间和论文限制边界。
 - 已新增“精讲13补充：评测证据链深挖”，把原先偏目录式的剩余内容扩展成论文级评测逻辑：episode identity、视频/HDF5/event/result/dashboard 证据分工、score/success gap、event failure taxonomy、CI 解释、真实世界 rank correlation 边界和 4090 小规模实验矩阵。
 - 已新增“policy rollout 到证据链”代码精讲，补齐真实策略评测时 `runner -> episode -> client -> env/world -> event -> recorder -> summarize -> dashboard` 的源码主干和故障定位路径。
+- 已新增“精讲14补充：核心运行时代码深挖”，把精讲14从文件作用说明扩展到源码输入/输出、action chunk、active/frozen env、多 env 隔离、WorldState 谓词、EventTracker 稀疏事件、HDF5 score、JSONL summary、dashboard 读取和 4090 故障路由。
 - 已新增“全文总梳理与审稿人视角”精讲，补齐论文贡献评价、审稿式 strengths/weaknesses/questions、复现侧优化点和未来创新方向。
 - 已增强“推荐阅读与开源学习路线”精讲，补上每个推荐来源背后的核心问题、原始内容要点、和 RoboLab 的关系；本次又新增 2026-first 阅读层，把 RoboLab、RoboCasa365、RDT2、GR00T N1.7、Isaac Lab-Arena、Lightwheel LW-BenchHub、Lyra 和 NVIDIA 2026 Physical AI stack 放到最前，并把 2025 及更早材料明确标成基础背景。
 - `uv run pytest tests/` 在当前 HEAD 返回 4，因为仓库没有 `tests/` 路径；这已记录为 README 与当前仓库文件面的不一致。

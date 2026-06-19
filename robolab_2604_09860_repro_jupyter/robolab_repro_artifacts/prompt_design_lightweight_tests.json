@@ -64,7 +64,7 @@
     "too_many_large_objects_output": {
       "valid": false,
       "issues": [
-        "too many large objects for medium scene: ['storage_bin', 'tray', 'large_box']",
+        "too many large objects for medium scene: ['large_box', 'storage_bin', 'tray']",
         "medium scene lacks containment/support/clustering structure"
       ],
       "object_count": 5,
@@ -72,9 +72,9 @@
         "place-on-base": 5
       },
       "large_objects": [
+        "large_box",
         "storage_bin",
-        "tray",
-        "large_box"
+        "tray"
       ],
       "yaw_values": [
         19.0,

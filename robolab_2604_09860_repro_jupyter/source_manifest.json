@@ -303,6 +303,13 @@
         "EXPLAIN_14 source-code runtime chain: robolab/core/logging/recorder_manager.py streaming HDF5 recorder, per-env EpisodeData, run_<idx>.hdf5, and demo_<env_id> indexing",
         "EXPLAIN_14 source-code runtime chain: robolab/eval/summarize.py and robolab/core/logging/results.py event log writing, trajectory metric folding, final score extraction, and episode_results.jsonl append",
         "EXPLAIN_14 source-code runtime chain: dashboard/loaders/local.py offline result loading, HDF5/video/log discovery, and SR/Score confidence interval display",
+        "EXPLAIN_14_deep runtime source grounding: runner.py import lifecycle, task/tag filtering, resume logic, adaptive sampling, env/client creation, and run_episode/summarize_run handoff",
+        "EXPLAIN_14_deep runtime source grounding: episode.py active-env action loop, frozen-env video skip, action_dim selection, per-run HDF5, per-env demo indexing, timing, and client reset boundary",
+        "EXPLAIN_14_deep runtime source grounding: base_client.py hook contract, per-env action chunk cache, open_loop_horizon refresh behavior, and reset semantics",
+        "EXPLAIN_14_deep runtime source grounding: pi0_family/client.py Pi05 observation keys, request schema, websocket transport, action chunk unpacking, reconnect cache flush, and gripper binarization",
+        "EXPLAIN_14_deep runtime source grounding: WorldState batched env queries, local geometry cache, predicate state reset, pose/velocity/geometry/contact reads, and event predicate support",
+        "EXPLAIN_14_deep runtime source grounding: EventTracker sparse failure events, active/frozen masks, wrong-object tracking, object movement/out-of-scene/tipped/drop diagnostics",
+        "EXPLAIN_14_deep runtime source grounding: RecorderManager/HDF5 run_<idx>.hdf5, data/demo_<env_id>, subtask score storage, summarize.py canonical score read, JSONL summary, and dashboard artifact loading",
         "EXPLAIN_15 reviewer synthesis source grounding: evaluation runners, dashboard, policy adapters, event logs, result schema, and 4090-cost reproduction constraints",
         "EXPLAIN_16 reading-route grounding: RoboLab modules used to organize external recommended reading by policy client, scene/task generation, asset preflight, real-world correlation, long-horizon reasoning, and failure analysis"
       ]
