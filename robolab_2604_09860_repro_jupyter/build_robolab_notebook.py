@@ -2357,7 +2357,7 @@ def main() -> None:
             """
             ## 0.17 论文精讲：空间求解器、物理放置求解器与失败反馈
 
-            下面这节来自本目录的 [EXPLAIN_11_spatial_physical_solver_feedback.md](./EXPLAIN_11_spatial_physical_solver_feedback.md)，对应论文 Appendix C 的 Algorithm 1 Spatial Constraint Solver、你截图里的 Figure 17 feedback block，以及 Algorithm 2 Physical Placement Solver。重点是理解：空间求解器先解基础对象 2D 位姿，物理放置求解器再解 `place-on` / `place-in` 的 3D 坐标，失败反馈再回到下一轮 prompt。
+            下面这节来自本目录的 [EXPLAIN_11_spatial_physical_solver_feedback.md](./EXPLAIN_11_spatial_physical_solver_feedback.md)，对应论文 Appendix C 的 Algorithm 1 Spatial Constraint Solver、你截图里的 Figure 17 feedback block，以及 Algorithm 2 Physical Placement Solver。重点是理解：空间求解器先解基础对象 2D 位姿，物理放置求解器再解 `place-on` / `place-in` 的 3D 坐标，失败反馈再回到下一轮 prompt。本次已加深 Spatial/Physical 部分：补充 typed predicate 中间表示、dense scene margin retry、相对关系坐标系、collision local repair、support 局部坐标旋转、container ellipse/layer packing、stability threshold 和反馈诊断压缩。
             """
         ),
         md_file("EXPLAIN_11_spatial_physical_solver_feedback.md"),
@@ -2379,6 +2379,7 @@ def main() -> None:
                 "apple_01": (0.055, 0.055, 0.055),
                 "orange_01": (0.060, 0.060, 0.060),
                 "banana": (0.14, 0.045, 0.035),
+                "spoon_0": (0.16, 0.035, 0.018),
                 "large_box": (0.32, 0.24, 0.16),
                 "storage_bin": (0.24, 0.18, 0.12),
             }
@@ -2400,11 +2401,70 @@ def main() -> None:
                     }
                 return poses
 
+            def apply_relative_position(poses, obj_name, reference_name, relation, distance=0.10):
+                # Algorithm 1 Phase 2 教学版：按 RoboLab 世界坐标约定应用相对关系。
+                # Front=+X, Back=-X, Left=+Y, Right=-Y。
+                ref = poses[reference_name]
+                pose = poses.setdefault(obj_name, {"x": ref["x"], "y": ref["y"], "z": 0.0, "yaw": 0.0, "source": "spatial/relative"})
+                if relation == "left-of":
+                    pose["x"] = ref["x"]
+                    pose["y"] = ref["y"] + distance
+                elif relation == "right-of":
+                    pose["x"] = ref["x"]
+                    pose["y"] = ref["y"] - distance
+                elif relation == "front-of":
+                    pose["x"] = ref["x"] + distance
+                    pose["y"] = ref["y"]
+                elif relation == "back-of":
+                    pose["x"] = ref["x"] - distance
+                    pose["y"] = ref["y"]
+                else:
+                    raise ValueError(f"unknown relation: {relation}")
+                pose["source"] = f"spatial/{relation}/{reference_name}"
+                return pose
+
+            def footprint_radius(name, dims, margin=0.02):
+                return max(dims[name][0], dims[name][1]) / 2.0 + margin
+
+            def circle_collides(a, b, poses, dims, margin=0.02):
+                dx = poses[a]["x"] - poses[b]["x"]
+                dy = poses[a]["y"] - poses[b]["y"]
+                return math.hypot(dx, dy) < footprint_radius(a, dims, margin) + footprint_radius(b, dims, margin)
+
+            def resolve_collision_pair(a, b, poses, dims, table_bounds=(0.25, 0.85, -0.40, 0.40), margin=0.02):
+                # Algorithm 1 Phase 3 教学版：沿中心连线把两个对象推开，再 clamp 回桌面边界。
+                dx = poses[a]["x"] - poses[b]["x"]
+                dy = poses[a]["y"] - poses[b]["y"]
+                dist = math.hypot(dx, dy)
+                if dist < 1e-6:
+                    dx, dy, dist = 1.0, 0.0, 1.0
+                dx, dy = dx / dist, dy / dist
+                required = footprint_radius(a, dims, margin) + footprint_radius(b, dims, margin)
+                push = max(0.0, required - dist) / 2.0 + 0.005
+                poses[a]["x"] += dx * push
+                poses[a]["y"] += dy * push
+                poses[b]["x"] -= dx * push
+                poses[b]["y"] -= dy * push
+                min_x, max_x, min_y, max_y = table_bounds
+                for name in [a, b]:
+                    radius = footprint_radius(name, dims, margin)
+                    poses[name]["x"] = min(max(poses[name]["x"], min_x + radius), max_x - radius)
+                    poses[name]["y"] = min(max(poses[name]["y"], min_y + radius), max_y - radius)
+                return not circle_collides(a, b, poses, dims, margin)
+
             def support_offsets(position):
                 # Algorithm 2 的 FindSpot 教学版：center 优先，edge 给几个候选点。
                 if position == "edge":
                     return [(0.08, 0.0), (-0.08, 0.0), (0.0, 0.06), (0.0, -0.06), (0.0, 0.0)]
                 return [(0.0, 0.0), (0.04, 0.0), (-0.04, 0.0), (0.0, 0.04), (0.0, -0.04)]
+
+            def rotate_offset(yaw_deg, local_x, local_y):
+                # support/container 的局部候选 offset 需要按 yaw 旋转回世界坐标。
+                theta = math.radians(yaw_deg)
+                return (
+                    local_x * math.cos(theta) - local_y * math.sin(theta),
+                    local_x * math.sin(theta) + local_y * math.cos(theta),
+                )
 
             def rect_fits_support(local_x, local_y, obj_dim, support_dim):
                 return (
@@ -2429,10 +2489,11 @@ def main() -> None:
                     too_close = any(abs(local_x - sx) < (obj_dim[0] + sw) / 2.0 and abs(local_y - sy) < (obj_dim[1] + sh) / 2.0 for sx, sy, sw, sh in support_slots)
                     if too_close:
                         continue
+                    world_dx, world_dy = rotate_offset(support_pose.get("yaw", 0.0), local_x, local_y)
                     support_slots.append((local_x, local_y, obj_dim[0], obj_dim[1]))
                     poses[obj] = {
-                        "x": support_pose["x"] + local_x,
-                        "y": support_pose["y"] + local_y,
+                        "x": support_pose["x"] + world_dx,
+                        "y": support_pose["y"] + world_dy,
                         "z": support_pose["z"] + support_dim[2] / 2.0 + obj_dim[2] / 2.0 + 0.001,
                         "yaw": support_pose.get("yaw", 0.0),
                         "source": f"physical/place-on/{support}",
@@ -2497,9 +2558,17 @@ def main() -> None:
                 {"type": "place-on-base", "object": "bowl_0", "x": 0.40, "y": 0.15, "yaw": 23},
                 {"type": "place-on-base", "object": "plate_large", "x": 0.65, "y": -0.10, "yaw": 156},
                 {"type": "place-in", "objects": ["apple_01", "orange_01"], "container": "bowl_0"},
-                {"type": "place-on", "object": "banana", "support": "plate_large", "position": "center"},
+                {"type": "place-on", "object": "banana", "support": "plate_large", "position": "edge"},
             ]
             poses = base_pose_from_place_on_base(predicates_ok, object_dims)
+            relative_probe = dict(poses)
+            relative_pose = apply_relative_position(relative_probe, "spoon_0", "bowl_0", "left-of", distance=0.12)
+            collision_probe = {
+                "bowl_0": {"x": 0.45, "y": 0.00, "z": object_dims["bowl_0"][2] / 2.0, "yaw": 0.0},
+                "plate_large": {"x": 0.52, "y": 0.00, "z": object_dims["plate_large"][2] / 2.0, "yaw": 0.0},
+            }
+            collision_before = circle_collides("bowl_0", "plate_large", collision_probe, object_dims)
+            collision_resolved = resolve_collision_pair("bowl_0", "plate_large", collision_probe, object_dims)
             occupied_by_support = {}
             physical_messages = []
             for pred in predicates_ok:
@@ -2513,10 +2582,14 @@ def main() -> None:
             crowded_pred = {"type": "place-in", "objects": ["large_box", "storage_bin", "banana"], "container": "bowl_0"}
             crowded_ok, crowded_msg = solve_place_in(crowded_pred, dict(poses), object_dims)
             feedback = compact_scene_feedback(crowded_msg, collisions=[("large_box", "bowl_0")])
+            expected_edge_dx, expected_edge_dy = rotate_offset(poses["plate_large"]["yaw"], 0.0, 0.06)
 
             spatial_physical_tests = [
                 ("base_anchors_have_2d_and_z_pose", all(name in poses and poses[name]["z"] > 0 for name in ["bowl_0", "plate_large"])),
+                ("relative_left_of_uses_positive_y", relative_pose["y"] > relative_probe["bowl_0"]["y"] and abs(relative_pose["x"] - relative_probe["bowl_0"]["x"]) < 1e-9),
+                ("collision_resolution_pushes_objects_apart", collision_before and collision_resolved),
                 ("place_on_sets_banana_above_plate", poses["banana"]["z"] > poses["plate_large"]["z"]),
+                ("place_on_rotates_support_local_offset", abs((poses["banana"]["x"] - poses["plate_large"]["x"]) - expected_edge_dx) < 1e-9 and abs((poses["banana"]["y"] - poses["plate_large"]["y"]) - expected_edge_dy) < 1e-9),
                 ("place_in_sets_fruit_above_bowl", poses["apple_01"]["z"] > poses["bowl_0"]["z"] and poses["orange_01"]["z"] > poses["bowl_0"]["z"]),
                 ("container_objects_have_distinct_xy", (poses["apple_01"]["x"], poses["apple_01"]["y"]) != (poses["orange_01"]["x"], poses["orange_01"]["y"])),
                 ("physical_messages_successful", all(ok for _kind, ok, _msg in physical_messages)),
@@ -2530,6 +2603,10 @@ def main() -> None:
             print(json.dumps(poses, ensure_ascii=False, indent=2))
             print("Physical messages:")
             print(json.dumps(physical_messages, ensure_ascii=False, indent=2))
+            print("Relative probe:")
+            print(json.dumps(relative_probe, ensure_ascii=False, indent=2))
+            print("Collision probe after resolution:")
+            print(json.dumps(collision_probe, ensure_ascii=False, indent=2))
             print("Crowded failure message:", crowded_msg)
             print("Feedback block:")
             print(feedback)
@@ -2543,6 +2620,8 @@ def main() -> None:
                     "all_passed": all(ok for _, ok in spatial_physical_tests),
                     "poses": poses,
                     "physical_messages": physical_messages,
+                    "relative_probe": relative_probe,
+                    "collision_probe": collision_probe,
                     "crowded_ok": crowded_ok,
                     "crowded_message": crowded_msg,
                     "feedback": feedback,
@@ -5020,6 +5099,7 @@ def main() -> None:
                     "Appendix D Details on Task Generation Evaluation: LLM-as-judge dimensions, Table IX metrics, object coverage, and predicate coverage",
                     "Appendix C Stage I Semantic Planning prompts: system prompt, JSON-only output contract, user prompt template, feedback block, and scene generation prompt rationale",
                     "Appendix C Stage II geometric and physical solving: Algorithm 1 spatial constraint solver, Figure 17 feedback block, and Algorithm 2 physical placement solver",
+                    "EXPLAIN_11 deepened Spatial/Physical solver reading: typed predicate intermediate representation, adaptive dense-scene margin retry, relative-coordinate convention, local collision repair, support-frame slot packing, container packing, stability threshold, and feedback-to-prompt diagnostics",
                     "Figure 13 Gaussian Splat + Mesh scene, collision mesh, mesh foreground, VoMP mass/density, 3DGRT/3DGUT references, and MNPE Gaussian KDE distinction",
                     "EXPLAIN_12 frontier source table: NuRec, 3DGUT, Isaac Sim 6.0 EDR, Lyra, Physically Embodied Gaussians, and Marble+Isaac Sim links with read-focus notes",
                     "remaining core evaluation topics: IV-A experiment setup, success-vs-score interpretation, language variations, complexity sweeps, event-driven failure analysis, RoboArena real-world verification, statistical confidence, and limitations",
@@ -5292,6 +5372,9 @@ def main() -> None:
                     "robolab/scene_gen/llm_scene_gen/feedback_system.py solver and physics feedback messages that feed prompt repair",
                     "robolab/scene_gen/llm_scene_gen/physical_solver.py place-on grouping, support slot search, place-in container packing, and z-height assignment",
                     "robolab/scene_gen/llm_scene_gen/spatial_solver.py base-pose solving before physical placement",
+                    "robolab/scene_gen/llm_scene_gen/spatial_solver.py adaptive scene modes, margins_to_try retries, relative position coordinate convention, collision push-apart, fixed-object handling, and physical-predicate skip behavior",
+                    "robolab/scene_gen/llm_scene_gen/physical_solver.py support-frame local offset packing, sibling placement, container-area/ellipse/layer intuition, object metadata/object paths, and stability threshold boundary",
+                    "robolab/scene_gen/llm_scene_gen/feedback_system.py converting spatial/physical/grammar/intersection failures into LLM prompt repair hints",
                     "EXPLAIN_14 source-code runtime chain: robolab/eval/runner.py task selection, resume, adaptive sampling, output directory, and call into run_episode/summarize_run",
                     "EXPLAIN_14 source-code runtime chain: robolab/eval/episode.py policy-controlled step loop, active env filtering, HDF5 run file selection, video writers, timing, and client reset",
                     "EXPLAIN_14 source-code runtime chain: robolab/eval/base_client.py InferenceClient hook contract and per-env action chunk cache",
@@ -5412,7 +5495,7 @@ def main() -> None:
 - `EXPLAIN_08_paper_experiments.md`：论文实验体系与 Algorithm 1 Spatial Constraint Solver 精讲，已内嵌进 notebook，并配有 2D 空间约束求解轻量测试用例。
 - `EXPLAIN_09_dtge.md`：论文 Appendix D “Details on Task Generation Evaluation / DTGE”的精讲，已内嵌进 notebook，并配有 AST 静态抽取与简化 judge 轻量测试用例。
 - `EXPLAIN_10_prompt_design.md`：论文 Appendix C Stage I scene generation prompt 精讲，已内嵌进 notebook，并配有 prompt 输出格式/依赖/对象目录/尺寸限制轻量测试用例。
-- `EXPLAIN_11_spatial_physical_solver_feedback.md`：论文 Appendix C 空间求解器、物理放置求解器和失败反馈块精讲，已内嵌进 notebook，并配有支撑/容器/反馈轻量测试用例。
+- `EXPLAIN_11_spatial_physical_solver_feedback.md`：论文 Appendix C 空间求解器、物理放置求解器和失败反馈块精讲，已加深 Spatial/Physical 的 typed predicate 中间表示、dense scene margin retry、相对坐标、碰撞推开、support 局部坐标、container packing、stability threshold 和反馈诊断压缩，已内嵌进 notebook，并配有增强版支撑/容器/反馈轻量测试用例。
 - `EXPLAIN_12_gaussian_sim_methods.md`：论文中 Gaussian Splat + Mesh、collision mesh、VoMP、MNPE Gaussian KDE 与 NVIDIA 2026 NuRec/3DGUT/Lyra 等前沿路线精讲，已补前沿来源链接速查表，已内嵌进 notebook，并配有分层职责和链接覆盖轻量测试用例。
 - `EXPLAIN_13_remaining_core_topics.md`：对照论文后补充的剩余核心内容精讲，覆盖实验协议、success/score gap、语言变体、复杂度 sweep、事件追踪、真实世界相关性、统计置信和限制边界，已内嵌进 notebook，并配有覆盖差分轻量测试用例。
 - `EXPLAIN_13_deep_evaluation_evidence_chain.md`：精讲13补充深挖版，把单条 rollout 到论文结论的证据链讲透，覆盖 episode 样本单位、score/success 数学直觉、event tracking、置信区间、dashboard、RoboArena 相关性、limitations 和 4090 小矩阵实验设计，已内嵌进 notebook，并配有深挖轻量测试用例。
@@ -5443,7 +5526,7 @@ def main() -> None:
 - 已新增“论文实验总览与 Algorithm 1”精讲，覆盖 RoboLab-120 策略评测、细粒度能力分析、扰动敏感性、真实世界相关性、场景/任务生成质量实验，并在 notebook 里加入 Spatial Constraint Solver 三阶段轻量测试。
 - 已新增“DTGE 任务生成质量评估”精讲，覆盖 Appendix D 的 LLM-as-judge、instruction-code alignment、relation/target/object/quantifier/clarity/feasibility 六维评分、object/predicate coverage，并在 notebook 里加入 AST 静态抽取轻量测试。
 - 已新增“Scene Generation Prompt 设计”精讲，覆盖 Appendix C 三段 prompt 的系统约束、JSON-only 合约、对象目录注入、medium scene strategy、失败反馈思路，并在 notebook 里加入 6 类 prompt 输出校验用例。
-- 已新增“空间求解器、物理放置求解器与失败反馈”精讲，覆盖 Algorithm 1、Figure 17 和 Algorithm 2，解释 `place-on-base`、`place-on`、`place-in` 如何从谓词变成 2D/3D 位姿，并在 notebook 里加入 toy physical placement 与 feedback block 测试。
+- 已增强“空间求解器、物理放置求解器与失败反馈”精讲，覆盖 Algorithm 1、Figure 17 和 Algorithm 2，并进一步补充 Spatial 的 dense scene/margin retry/relative coordinate/collision repair，以及 Physical 的 support-frame packing/container packing/stability threshold/feedback diagnostics；notebook 里也加入相对关系、碰撞推开、support yaw 旋转和容器拥挤测试。
 - 已增强“Gaussian 方法与 NVIDIA 2026 前沿路线”精讲，区分 RoboLab 本文里的 Gaussian Splat + Mesh、collision mesh、mesh foreground、VoMP、MNPE Gaussian KDE，并补充 NuRec、3DGUT/3DGRT、Isaac Sim 6、Lyra 2.0、Physically Embodied Gaussians、Marble+Isaac Sim 工作流的来源链接和重点阅读项。
 - 已新增“剩余核心内容与评测证据链”精讲，补齐实验协议、`success` 与 `score` 的差异、语言变体、复杂度 sweep、事件追踪、RoboArena 真实世界相关性、统计置信区间和论文限制边界。
 - 已新增“精讲13补充：评测证据链深挖”，把原先偏目录式的剩余内容扩展成论文级评测逻辑：episode identity、视频/HDF5/event/result/dashboard 证据分工、score/success gap、event failure taxonomy、CI 解释、真实世界 rank correlation 边界和 4090 小规模实验矩阵。

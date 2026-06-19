@@ -212,6 +212,188 @@ for all p where p.type == place-in:
 
 `place-in` 的本质是 packing，不是简单把所有对象坐标都设成容器中心。否则多个水果会完全重叠。
 
+## 深挖 A：这两个 solver 共同操作的“中间表示”是什么
+
+Spatial 和 Physical 不是直接操作自然语言，也不是直接操作 USD 场景。它们操作的是 LLM 生成后的 typed predicates 和对象状态。
+
+可以把数据结构理解成四张表：
+
+| 数据 | 说人话解释 | 主要由谁用 |
+|---|---|---|
+| `object_states` | 每个对象当前解到哪里了：`x/y/z/yaw`、是否已放置、挂了哪些 predicates | Spatial + Physical |
+| `object_dims` | 每个对象的宽、深、高 | 碰撞、边界、支撑、容器 packing |
+| `predicates` | `place-on-base`、`left-of`、`place-on`、`place-in` 等结构化约束 | 两个 solver 分阶段消费 |
+| `object_metadata/object_paths` | USD 路径、类别、容器/支撑能力、物理属性等 | Physical/后续场景实例化 |
+
+**【绿色标识｜核心结论】**
+
+这一步的关键不是“LLM 直接生成坐标”，而是“LLM 生成可检查的约束”。坐标由 solver 根据约束、尺寸和桌面边界解出来。
+
+一个典型对象会经历这样的状态变化：
+
+```text
+初始：ObjectState(name="apple_01", x=None, y=None, z=None, yaw=None)
+LLM：给它 place-in(container="bowl_0") predicate
+Spatial：发现它有 physical predicate，所以暂时不强行解桌面 2D pose
+Physical：等 bowl_0 的 base pose 解好后，再把 apple_01 放进 bowl_0 内部
+输出：ObjectState(x=..., y=..., z=..., yaw=..., is_placed=True)
+```
+
+**【橙色标识｜容易误解】**
+
+`place-in` / `place-on` 对象通常不是 Algorithm 1 的主要求解对象。Algorithm 1 主要先把 container/support/loose base objects 放好；Algorithm 2 再处理依附在它们上面的对象。
+
+## 深挖 B：Spatial Solver 不是“随机撒点”，而是带回退的约束满足
+
+Algorithm 1 看起来短，但源码里有几层工程保护。
+
+### B1. 它会根据场景密度调整模式
+
+源码里会根据对象数量、平均 footprint、大对象数量进入不同模式：
+
+| 模式 | 触发直觉 | 策略 |
+|---|---|---|
+| normal | 对象少，尺寸普通 | 使用默认 collision margin |
+| hard/container | 对象较多，或大容器/大支撑多 | 缩小 margin、增加迭代数 |
+| ultra-dense | 18 个以上对象 | 更小 margin、更高迭代次数 |
+
+这件事很重要，因为桌面任务不是数学竞赛里的干净约束。真实 benchmark 场景会有 bowl、plate、bin、mug、tool、food 混在一起，大对象多时，默认 5cm 间距可能直接无解。
+
+### B2. `margins_to_try` 不是“越放越松”，而是多次重启搜索
+
+源码里的 `margins_to_try` 会在失败时调整 collision margin 并重新随机化未固定对象。它的目的不是保证一定变好，而是避免卡在某个坏初始化。
+
+可以把它理解成：
+
+```text
+attempt 0: 用当前 margin 初始化并优化
+失败 -> 换 margin + 重新随机未固定对象
+attempt 1: 再解一次
+失败 -> 再换 margin + 再随机
+...
+```
+
+**【绿色标识｜核心直觉】**
+
+这是 sampling + local repair，不是一次解析式求解。RoboLab 追求的是几分钟内批量生成“足够好、可评测”的场景，而不是求全局最优布局。
+
+### B3. 相对关系在 RoboLab 坐标系里有明确方向
+
+源码注释里有一个非常关键的约定：
+
+```text
+Front = +X
+Back  = -X
+Left  = +Y
+Right = -Y
+```
+
+所以：
+
+| 语言关系 | 坐标变化 |
+|---|---|
+| `left-of(A, B)` | `A.y = B.y + distance` |
+| `right-of(A, B)` | `A.y = B.y - distance` |
+| `front-of(A, B)` | `A.x = B.x + distance` |
+| `back-of(A, B)` | `A.x = B.x - distance` |
+
+这和很多人直觉里的屏幕坐标不同。看视频时“左/右”还会受到相机视角影响，所以 debug spatial relation 时应该优先看世界坐标，而不是只看截图。
+
+### B4. collision resolution 是局部推开，不是全局重排
+
+源码里的 `_check_collisions` 用 footprint 半径近似检测重叠，`_resolve_collision` 根据两物体中心连线把它们推开，再 clamp 回桌面边界。
+
+这类方法的优点是快，缺点是可能局部卡住。于是又加了两个机制：
+
+- 如果 collision 数量长期不下降，就随机扰动位置打破僵局。
+- 如果碰到 fixed object，例如 rack fixture，只移动非固定对象。
+
+### B5. 为什么 physical predicate 要被跳过
+
+Spatial Solver 检查“未完全求解对象”时，会跳过带 `place-on` / `place-in` / `place-anywhere` 等 physical predicate 的对象。否则 apple/orange 这类要放进 bowl 的对象会被误认为“还没有桌面坐标，所以 spatial solve 失败”。
+
+**【橙色标识｜常见错误】**
+
+如果你自己写任务生成器，把所有物体都强行 `place-on-base`，再额外给 `place-in`，会造成语义冲突：对象既被要求在桌面固定位置，又被要求在容器内部。更合理的做法是让 container/support 有 base pose，让内部对象只带 physical predicate。
+
+## 深挖 C：Physical Solver 的核心是“局部坐标系里的 packing”
+
+Algorithm 2 解决的不是“z 加一下”这么简单。真正麻烦的是：支撑物有 yaw，容器有口径，多个 sibling 会互相重叠，对象本身也有 yaw。
+
+### C1. `place-on` 为什么要按 support 分组
+
+如果有三个对象都放在同一个 tray 上，不能逐个独立求解：
+
+```text
+place-on(spoon, tray)
+place-on(fork, tray)
+place-on(mug, tray)
+```
+
+如果每个对象都单独“优先放 center”，它们都会抢 tray 中心。源码会把同一 support 上的 `place-on` predicate 分组，再联合找多个 slot。
+
+说人话：
+
+> `place-on` 的难点不是把一个对象放上去，而是把同一层 sibling 放得下、分得开、还落在支撑物 footprint 内。
+
+### C2. 支撑物局部坐标要随 yaw 旋转回世界坐标
+
+`_candidate_support_offsets` 这类函数生成的是 support 局部坐标里的候选点，例如 center、边缘、环形点。真正写回对象 pose 时，要把局部 offset 按 support yaw 旋转到世界坐标。
+
+否则会出现：
+
+- plate 旋转了，但 banana 仍按世界 x/y 放，看起来偏到 plate 外。
+- tray 斜着放，但上面的 spoon/fork 仍按未旋转矩形判断，实际渲染会穿出边界。
+
+### C3. `place-in` 不是矩形网格就够，容器经常更像椭圆口径
+
+bowl、cup、round bin 这类容器不能只用矩形 bounding box 判断。源码里会用类似 `_fits_container_ellipse` 的检查：对象 footprint 要落在容器口径的有效椭圆区域内。
+
+这解释了为什么有时从 top view 看对象似乎在 bowl 的 bounding box 里，但仍被判定为不合格：它可能落在矩形角落，而那个角落实际上在圆形/椭圆口径之外。
+
+### C4. 多层 packing 是最后手段，不是默认堆叠
+
+当容器一层放不下时，solver 可以考虑 layers。这个设计的意义是：优先让容器内部对象在同一层分开；只有实在放不下时才向上分层。
+
+但是 layers 也会引入风险：
+
+- 上层对象更容易物理 settle 后滚动。
+- 容器浅时，z 太高会导致对象看起来像浮在外面。
+- 对于任务评测来说，层数过多会让抓取和可见性变差。
+
+所以 prompt 里才会建议：如果碰撞持续，优先选更小对象或减少内部对象，而不是盲目把所有东西塞进容器。
+
+### C5. stability threshold 是从“看起来放上去了”到“物理上稳定”的边界
+
+`physical_solver.py` 的初始化参数里有 `stability_threshold`。这代表一个思想：场景初始位姿写出来后，还需要物理 settle。对象最大位移超过阈值，就说明这个放置不稳定。
+
+**【绿色标识｜核心结论】**
+
+RoboLab 的 physical placement 不是只做几何 packing。几何 packing 只是初始条件；最终还要考虑物理 settle 后对象是否还在合理位置。
+
+## 深挖 D：失败反馈其实是“诊断信息压缩器”
+
+Figure 17 的 feedback block 看起来简单，但它背后做了一个重要转译：把 solver 看得懂的失败，翻译成 LLM 能改的语言。
+
+| solver 失败 | 原始含义 | 给 LLM 的修复策略 |
+|---|---|---|
+| collision unresolved | footprint 放不下或局部优化卡死 | 换小物体、减少 base objects、增加 `place-in` / `place-on` |
+| out of bounds | 对象中心或 footprint 超出桌面 | 调整 anchor 坐标，减少边缘放置 |
+| support slot not found | 支撑物太小或 sibling 太多 | 换更大 support，减少 `place-on` 数量 |
+| container crowding | 容器口径/面积不足 | 换更大 container，减少内部对象，选小物体 |
+| unstable after settle | 初始几何可行但物理不稳定 | 降低堆叠高度、换平面支撑、减少层数 |
+| invalid object name | 不在 catalog | 只能回到对象目录重选 |
+
+这也是为什么反馈里出现的建议是“MORE containment / MORE stacking / clustering / smaller objects”。它们不是随口建议，而是在压缩几类最常见失败：
+
+- 桌面面积不够：用 containment/stacking 节省 base footprint。
+- 对象太分散：用 clustering 生成局部自然组合。
+- 物体过大：选 smaller objects 降低碰撞、容器和支撑失败概率。
+
+**【橙色标识｜边界】**
+
+反馈不能保证下一轮一定成功。它只是把失败信号加入 prompt，提高下一轮 LLM 生成可解 predicates 的概率。真正的成功仍然要经过 grammar check、spatial solve、physical solve、intersection validation 和物理 settle。
+
 ## Algorithm 1 和 Algorithm 2 如何串起来
 
 用一个 bowl + plate + fruit 例子：

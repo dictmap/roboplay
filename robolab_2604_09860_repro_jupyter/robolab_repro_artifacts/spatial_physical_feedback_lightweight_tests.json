@@ -30,8 +30,8 @@
       "source": "physical/place-in/bowl_0"
     },
     "banana": {
-      "x": 0.65,
-      "y": -0.1,
+      "x": 0.625595801415452,
+      "y": -0.15481272745855607,
       "z": 0.043500000000000004,
       "yaw": 156.0,
       "source": "physical/place-on/plate_large"
@@ -49,6 +49,43 @@
       "placed on support"
     ]
   ],
+  "relative_probe": {
+    "bowl_0": {
+      "x": 0.4,
+      "y": 0.15,
+      "z": 0.04,
+      "yaw": 23.0,
+      "source": "spatial/place-on-base"
+    },
+    "plate_large": {
+      "x": 0.65,
+      "y": -0.1,
+      "z": 0.0125,
+      "yaw": 156.0,
+      "source": "spatial/place-on-base"
+    },
+    "spoon_0": {
+      "x": 0.4,
+      "y": 0.27,
+      "z": 0.0,
+      "yaw": 0.0,
+      "source": "spatial/left-of/bowl_0"
+    }
+  },
+  "collision_probe": {
+    "bowl_0": {
+      "x": 0.36,
+      "y": 0.0,
+      "z": 0.04,
+      "yaw": 0.0
+    },
+    "plate_large": {
+      "x": 0.62,
+      "y": 0.0,
+      "z": 0.0125,
+      "yaw": 0.0
+    }
+  },
   "crowded_ok": false,
   "crowded_message": "container crowding: total object area 0.126 > 0.8 * container area 0.032",
   "feedback": "PREVIOUS ATTEMPT FAILED:\ncontainer crowding: total object area 0.126 > 0.8 * container area 0.032\nCollisions: large_box/bowl_0\n\nPlease fix the issues. Common fixes:\n- Use MORE containment (place-in) to reduce table crowding\n- Use MORE stacking (place-on) to utilize vertical space\n- Use clustering (cluster-around) instead of individual placements\n- Select SMALLER objects if collisions persist",
@@ -58,7 +95,19 @@
       "passed": true
     },
     {
+      "name": "relative_left_of_uses_positive_y",
+      "passed": true
+    },
+    {
+      "name": "collision_resolution_pushes_objects_apart",
+      "passed": true
+    },
+    {
       "name": "place_on_sets_banana_above_plate",
+      "passed": true
+    },
+    {
+      "name": "place_on_rotates_support_local_offset",
       "passed": true
     },
     {
