@@ -365,10 +365,61 @@ def main() -> None:
             """
             ## 0.0 论文精讲 0：RoboLab 全局总览
 
-            下面这节来自本目录的 [EXPLAIN_00_global_overview.md](./EXPLAIN_00_global_overview.md)。它把之前从精讲 1 里轻量化掉的“全局观”补回来：先从论文动机、系统架构、任务标注、策略接入、证据口径、4090 边界和后续对比路线讲清楚，再进入后面 1-6 的专项深挖。
+            下面这节来自本目录的 [EXPLAIN_00_global_overview.md](./EXPLAIN_00_global_overview.md)。它现在是所有精讲的全局入口：先说明如何配合 `EXPLAIN_SOURCE_QUESTION_INDEX.md` 阅读，再把论文动机、系统架构、四条主线、任务标注、策略接入、证据口径、4090 边界、全精讲路线图和后续对比路线讲清楚。
             """
         ),
         md_file("EXPLAIN_00_global_overview.md"),
+        code(
+            r"""
+            # ===== 精讲0：全局总览结构轻量验证 =====
+            # 这个 cell 验证精讲0是否承担“全局入口”职责：
+            # 需要覆盖来源索引、四条主线、复现层级、证据文件和后续阅读路线。
+
+            global_overview_map = {
+                "entry_points": ["EXPLAIN_SOURCE_QUESTION_INDEX.md", "EXPLAIN_00_global_overview.md"],
+                "main_threads": {
+                    "generation": ["scene prompt", "predicates", "spatial/physical solve", "valid scene"],
+                    "task": ["task template", "Python task", "conditionals/subtasks", "score/success"],
+                    "runtime": ["env", "observation", "policy client/server", "action chunk", "env.step"],
+                    "evidence": ["recorder", "HDF5", "video", "event log", "episode_results", "dashboard"],
+                    "review": ["reviewer synthesis", "recommended reading", "future route"],
+                },
+                "reproduction_levels": ["L0_install", "L1_environment", "L2_policy", "L3_single_task", "L4_subset", "L5_paper_level"],
+                "artifact_contract": ["episode_results.jsonl", "log_0_env0.json", "run_0.hdf5", "mp4", "remote_outputs", "robolab_repro_artifacts"],
+                "lecture_groups": {
+                    "scene_task_generation": ["01", "02", "03", "07", "10", "11", "12"],
+                    "benchmark_design": ["04", "08", "09"],
+                    "metrics_evidence": ["05", "06", "13", "13b"],
+                    "runtime_code": ["14", "14b"],
+                    "review_extension": ["15", "16"],
+                },
+            }
+
+            overview_text = (NOTEBOOK_ROOT / "EXPLAIN_00_global_overview.md").read_text(encoding="utf-8")
+            tests = [
+                ("mentions_source_question_index", "EXPLAIN_SOURCE_QUESTION_INDEX" in overview_text),
+                ("mentions_four_main_threads", all(term in overview_text for term in ["生成线", "任务线", "运行线", "证据线"])),
+                ("mentions_runtime_policy_chain", "policy client/server" in json.dumps(global_overview_map, ensure_ascii=False)),
+                ("mentions_artifact_contract", all(term in overview_text for term in ["episode_results.jsonl", "HDF5", "event log"])),
+                ("mentions_reproduction_levels", all(level in overview_text for level in ["L0", "L1", "L2", "L3", "L4", "L5"])),
+                ("lecture_groups_cover_all_later_lectures", sum(len(v) for v in global_overview_map["lecture_groups"].values()) >= 18),
+                ("entry_points_include_source_index_and_overview", set(global_overview_map["entry_points"]) == {"EXPLAIN_SOURCE_QUESTION_INDEX.md", "EXPLAIN_00_global_overview.md"}),
+            ]
+
+            report = {
+                "global_overview_map": global_overview_map,
+                "tests": [{"name": name, "passed": bool(ok)} for name, ok in tests],
+                "all_passed": all(ok for _, ok in tests),
+                "boundary": "This validates the overview structure only; it does not execute RoboLab or verify paper claims.",
+            }
+
+            print(json.dumps(report, ensure_ascii=False, indent=2))
+            for name, ok in tests:
+                print(f"{name}: {'PASS' if ok else 'FAIL'}")
+            assert report["all_passed"], tests
+            write_status("global_overview_structure_tests", report)
+            """
+        ),
         md(
             """
             ## 0.1 2026-06-19 远端 RTX 4090 实测进展
@@ -5155,6 +5206,9 @@ def main() -> None:
                 "G25_global_overview_explain_saved": (
                     NOTEBOOK_ROOT / "EXPLAIN_00_global_overview.md"
                 ).exists(),
+                "G25a_global_overview_structure_tests_passed": (
+                    ARTIFACT_DIR / "global_overview_structure_tests.json"
+                ).exists(),
                 "G26_baseline_method_explain_saved": (
                     NOTEBOOK_ROOT / "EXPLAIN_07_baseline_method.md"
                 ).exists(),
@@ -5263,6 +5317,7 @@ def main() -> None:
                     "trajectory metrics: SPARC smoothness, speed, path length, and ISJ",
                     "MNPE sensitivity analysis and posterior interpretation",
                     "global RoboLab architecture, evaluation intent, and reproduction boundary framing",
+                    "EXPLAIN_00 optimized overview: source-index-first reading order, four main threads, lecture group roadmap, artifact contract, reproduction levels, and post-lecture navigation",
                     "Appendix C-C baseline scene generation method and Appendix C-D scene generation comparison metrics",
                     "paper experiments: RoboLab-120 policy benchmark, granular analysis, sensitivity analysis, real-world verification, scene generation evaluation, task generation evaluation, and Algorithm 1 spatial solver",
                     "EXPLAIN_08 deepened experiment map: evidence chain from scene/task generation to rollout artifacts, success-score-event-trajectory contract, capability-profile reading of main tables, scene generation evaluation schema, task generation judge dimensions, and 4090 mini-paper reproduction matrix",
@@ -5656,7 +5711,7 @@ def main() -> None:
 - `{MANIFEST_NAME}`：准备 notebook 时核对过的官方来源。
 - `build_robolab_notebook.py`：生成 notebook 和来源清单的脚本。
 - `EXPLAIN_SOURCE_QUESTION_INDEX.md`：所有精讲的问题来源与核心内容索引，把每个精讲对应的原问题、论文/代码来源、来源核心内容和复现/代码落点并排展示，已内嵌进 notebook，并配有来源覆盖轻量测试用例。
-- `EXPLAIN_00_global_overview.md`：论文与复现全局总览精讲，补回系统架构、任务标注、策略接入、证据口径和后续路线，已内嵌进 notebook。
+- `EXPLAIN_00_global_overview.md`：论文与复现全局总览精讲，已优化为全精讲入口，补齐来源索引阅读顺序、四条主线、全精讲路线图、复现证据层级、任务标注、策略接入、4090 边界和后续路线，已内嵌进 notebook，并配有全局结构轻量测试用例。
 - `EXPLAIN_01_real_to_sim_eval.md`：论文“真实场景到模拟场景评估”的代码实现精讲，已内嵌进 notebook。
 - `EXPLAIN_02_scene_task_env_generation.md`：论文“场景、任务和环境生成”的代码实现精讲，已内嵌进 notebook。
 - `EXPLAIN_03_task_generation_validation.md`：论文“扩展任务生成、验证和自动修复”的代码实现精讲，已内嵌进 notebook，并配有轻量测试用例。
@@ -5688,7 +5743,7 @@ def main() -> None:
 - 已扩展到累计 21 个 no-policy 初始化 smoke，覆盖语义、颜色、空间关系、顺序组合、重定向、堆叠等任务属性；额外候选任务失败原因已记录，证据包为 `remote_logs/robolab_remote_policy_subset21_evidence_20260619_223200.tar.gz`。
 - 已新增论文与核心源码讲解章节，并生成 `robolab_repro_artifacts/core_code_reading_map.json`，用于追踪论文概念到源码文件的映射。
 - 已新增“精讲问题来源与核心内容索引”，集中展示每个精讲回答的问题、问题来自论文哪一节/appendix/图/源码、来源核心内容和复现代码落点，避免只看解释而看不到出处。
-- 已新增“精讲0：RoboLab 全局总览”，把论文动机、系统架构、任务标注、策略接入、4090 复现边界、RoboChallenge/OpenPI/ReKep 对比前提和完整复现分级串成一张总图。
+- 已优化“精讲0：RoboLab 全局总览”，把它从早期背景概览升级为全精讲入口：先连接来源索引，再用生成线、任务线、运行线、证据线、评价线串起 1-16 全部精讲，并保留 4090 复现边界、RoboChallenge/OpenPI/ReKep 对比前提和完整复现分级。
 - 已新增“场景、任务和环境生成”精讲，覆盖 `scene_gen` 谓词求解、`Task` 语言/成功条件、registration/runtime 环境装配，并包含场景 JSON、任务类、背景随机化等示例。
 - 已新增“扩展任务生成、验证和自动修复”精讲，覆盖 taskgen skill、谓词库、`load_task_from_file`、场景对象验证、容器尺寸检查和失败修复提示，并在 notebook 里加入 6 个轻量测试用例。
 - 已轻量化三篇精讲之间的重复内容：精讲1聚焦 real-to-sim 评估闭环，精讲2深讲 scene/task/env 装配，精讲3深讲 TaskGen 验证与修复。

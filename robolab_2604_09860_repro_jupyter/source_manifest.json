@@ -17,6 +17,7 @@
         "trajectory metrics: SPARC smoothness, speed, path length, and ISJ",
         "MNPE sensitivity analysis and posterior interpretation",
         "global RoboLab architecture, evaluation intent, and reproduction boundary framing",
+        "EXPLAIN_00 optimized overview: source-index-first reading order, four main threads, lecture group roadmap, artifact contract, reproduction levels, and post-lecture navigation",
         "Appendix C-C baseline scene generation method and Appendix C-D scene generation comparison metrics",
         "paper experiments: RoboLab-120 policy benchmark, granular analysis, sensitivity analysis, real-world verification, scene generation evaluation, task generation evaluation, and Algorithm 1 spatial solver",
         "EXPLAIN_08 deepened experiment map: evidence chain from scene/task generation to rollout artifacts, success-score-event-trajectory contract, capability-profile reading of main tables, scene generation evaluation schema, task generation judge dimensions, and 4090 mini-paper reproduction matrix",

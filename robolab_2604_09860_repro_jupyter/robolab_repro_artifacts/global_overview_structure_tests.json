@@ -1,0 +1,120 @@
+{
+  "global_overview_map": {
+    "entry_points": [
+      "EXPLAIN_SOURCE_QUESTION_INDEX.md",
+      "EXPLAIN_00_global_overview.md"
+    ],
+    "main_threads": {
+      "generation": [
+        "scene prompt",
+        "predicates",
+        "spatial/physical solve",
+        "valid scene"
+      ],
+      "task": [
+        "task template",
+        "Python task",
+        "conditionals/subtasks",
+        "score/success"
+      ],
+      "runtime": [
+        "env",
+        "observation",
+        "policy client/server",
+        "action chunk",
+        "env.step"
+      ],
+      "evidence": [
+        "recorder",
+        "HDF5",
+        "video",
+        "event log",
+        "episode_results",
+        "dashboard"
+      ],
+      "review": [
+        "reviewer synthesis",
+        "recommended reading",
+        "future route"
+      ]
+    },
+    "reproduction_levels": [
+      "L0_install",
+      "L1_environment",
+      "L2_policy",
+      "L3_single_task",
+      "L4_subset",
+      "L5_paper_level"
+    ],
+    "artifact_contract": [
+      "episode_results.jsonl",
+      "log_0_env0.json",
+      "run_0.hdf5",
+      "mp4",
+      "remote_outputs",
+      "robolab_repro_artifacts"
+    ],
+    "lecture_groups": {
+      "scene_task_generation": [
+        "01",
+        "02",
+        "03",
+        "07",
+        "10",
+        "11",
+        "12"
+      ],
+      "benchmark_design": [
+        "04",
+        "08",
+        "09"
+      ],
+      "metrics_evidence": [
+        "05",
+        "06",
+        "13",
+        "13b"
+      ],
+      "runtime_code": [
+        "14",
+        "14b"
+      ],
+      "review_extension": [
+        "15",
+        "16"
+      ]
+    }
+  },
+  "tests": [
+    {
+      "name": "mentions_source_question_index",
+      "passed": true
+    },
+    {
+      "name": "mentions_four_main_threads",
+      "passed": true
+    },
+    {
+      "name": "mentions_runtime_policy_chain",
+      "passed": true
+    },
+    {
+      "name": "mentions_artifact_contract",
+      "passed": true
+    },
+    {
+      "name": "mentions_reproduction_levels",
+      "passed": true
+    },
+    {
+      "name": "lecture_groups_cover_all_later_lectures",
+      "passed": true
+    },
+    {
+      "name": "entry_points_include_source_index_and_overview",
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "boundary": "This validates the overview structure only; it does not execute RoboLab or verify paper claims."
+}

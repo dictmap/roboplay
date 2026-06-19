@@ -26,6 +26,7 @@
   "G23_mnpe_explain_saved": true,
   "G24_mnpe_lightweight_tests_passed": true,
   "G25_global_overview_explain_saved": true,
+  "G25a_global_overview_structure_tests_passed": true,
   "G26_baseline_method_explain_saved": true,
   "G27_baseline_method_lightweight_tests_passed": true,
   "G28_paper_experiments_explain_saved": true,
