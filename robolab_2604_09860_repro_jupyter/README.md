@@ -21,6 +21,7 @@
 - `EXPLAIN_11_spatial_physical_solver_feedback.md`：论文 Appendix C 空间求解器、物理放置求解器和失败反馈块精讲，已内嵌进 notebook，并配有支撑/容器/反馈轻量测试用例。
 - `EXPLAIN_12_gaussian_sim_methods.md`：论文中 Gaussian Splat + Mesh、collision mesh、VoMP、MNPE Gaussian KDE 与 NVIDIA 2026 NuRec/3DGUT/Lyra 等前沿路线精讲，已补前沿来源链接速查表，已内嵌进 notebook，并配有分层职责和链接覆盖轻量测试用例。
 - `EXPLAIN_13_remaining_core_topics.md`：对照论文后补充的剩余核心内容精讲，覆盖实验协议、success/score gap、语言变体、复杂度 sweep、事件追踪、真实世界相关性、统计置信和限制边界，已内嵌进 notebook，并配有覆盖差分轻量测试用例。
+- `EXPLAIN_13_deep_evaluation_evidence_chain.md`：精讲13补充深挖版，把单条 rollout 到论文结论的证据链讲透，覆盖 episode 样本单位、score/success 数学直觉、event tracking、置信区间、dashboard、RoboArena 相关性、limitations 和 4090 小矩阵实验设计，已内嵌进 notebook，并配有深挖轻量测试用例。
 - `EXPLAIN_14_core_code_runtime_chain.md`：RoboLab policy rollout 到证据链的核心代码精讲，覆盖 `runner.py`、`episode.py`、`InferenceClient`、Pi05 client、`WorldState`、`EventTracker`、HDF5 recorder、`summarize_run`、results 和 dashboard loader，已内嵌进 notebook，并配有源码链路轻量测试用例。
 - `EXPLAIN_15_reviewer_synthesis.md`：全文总梳理与审稿人视角精讲，覆盖贡献、优点、主要问题、优化点和未来创新方向，已内嵌进 notebook，并配有 reviewer rubric 轻量测试用例。
 - `EXPLAIN_16_recommended_reading.md`：基于 RoboLab 的推荐阅读与开源学习路线，已改成 2026-first：优先补 RoboLab、RoboCasa365、RDT2、GR00T N1.7、Isaac Lab-Arena、Lightwheel LW-BenchHub、Lyra 和 NVIDIA 2026 Physical AI stack；BEHAVIOR/DROID/OpenVLA/Octo/ReKep 等降级为基础背景，已内嵌进 notebook，并配有 reading map 轻量测试用例。
@@ -50,6 +51,7 @@
 - 已新增“空间求解器、物理放置求解器与失败反馈”精讲，覆盖 Algorithm 1、Figure 17 和 Algorithm 2，解释 `place-on-base`、`place-on`、`place-in` 如何从谓词变成 2D/3D 位姿，并在 notebook 里加入 toy physical placement 与 feedback block 测试。
 - 已增强“Gaussian 方法与 NVIDIA 2026 前沿路线”精讲，区分 RoboLab 本文里的 Gaussian Splat + Mesh、collision mesh、mesh foreground、VoMP、MNPE Gaussian KDE，并补充 NuRec、3DGUT/3DGRT、Isaac Sim 6、Lyra 2.0、Physically Embodied Gaussians、Marble+Isaac Sim 工作流的来源链接和重点阅读项。
 - 已新增“剩余核心内容与评测证据链”精讲，补齐实验协议、`success` 与 `score` 的差异、语言变体、复杂度 sweep、事件追踪、RoboArena 真实世界相关性、统计置信区间和论文限制边界。
+- 已新增“精讲13补充：评测证据链深挖”，把原先偏目录式的剩余内容扩展成论文级评测逻辑：episode identity、视频/HDF5/event/result/dashboard 证据分工、score/success gap、event failure taxonomy、CI 解释、真实世界 rank correlation 边界和 4090 小规模实验矩阵。
 - 已新增“policy rollout 到证据链”代码精讲，补齐真实策略评测时 `runner -> episode -> client -> env/world -> event -> recorder -> summarize -> dashboard` 的源码主干和故障定位路径。
 - 已新增“全文总梳理与审稿人视角”精讲，补齐论文贡献评价、审稿式 strengths/weaknesses/questions、复现侧优化点和未来创新方向。
 - 已增强“推荐阅读与开源学习路线”精讲，补上每个推荐来源背后的核心问题、原始内容要点、和 RoboLab 的关系；本次又新增 2026-first 阅读层，把 RoboLab、RoboCasa365、RDT2、GR00T N1.7、Isaac Lab-Arena、Lightwheel LW-BenchHub、Lyra 和 NVIDIA 2026 Physical AI stack 放到最前，并把 2025 及更早材料明确标成基础背景。

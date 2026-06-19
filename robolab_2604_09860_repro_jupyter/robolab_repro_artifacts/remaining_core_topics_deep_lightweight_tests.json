@@ -1,0 +1,125 @@
+{
+  "episode_identity_fields": [
+    "task_id",
+    "scene_id",
+    "instruction_variant",
+    "policy_id",
+    "robot_id",
+    "camera_config",
+    "action_space_config",
+    "variation_seed",
+    "run_seed"
+  ],
+  "evidence_chain": {
+    "video": "human_inspection",
+    "episode_results_jsonl": "aggregate_success_score",
+    "hdf5": "state_action_image_replay",
+    "event_log": "failure_taxonomy",
+    "dashboard": "policy_task_axis_comparison"
+  },
+  "score_case": {
+    "progress_by_object": {
+      "banana": [
+        4,
+        4
+      ],
+      "cube": [
+        1,
+        4
+      ]
+    },
+    "normalized_score": 0.625,
+    "interpretation": "success=False can still have meaningful partial score."
+  },
+  "ci_half_width_demo": {
+    "n10_at_p05": 0.3099032106965012,
+    "n100_at_p05": 0.098,
+    "interpretation": "single-task N=10 is coarse; N=100 is materially tighter."
+  },
+  "long_horizon_curve_demo": {
+    "1": 0.8,
+    "3": 0.5120000000000001,
+    "5": 0.3276800000000001,
+    "7": 0.20971520000000007
+  },
+  "failure_routing": {
+    "wrong_object": "visual_language_binding",
+    "dropped_target": "grasp_or_release_control",
+    "deformable": "benchmark_boundary"
+  },
+  "reproduction_matrices": {
+    "subset_12_tasks": {
+      "tasks": 12,
+      "episodes_per_task": 3,
+      "purpose": "balanced visual/procedural/relational smoke beyond a single video"
+    },
+    "language_variation": {
+      "tasks": 3,
+      "variants": [
+        "default",
+        "vague",
+        "specific"
+      ],
+      "episodes_per_variant": 3,
+      "purpose": "separate language binding failure from motion failure"
+    },
+    "small_sensitivity": {
+      "tasks": 2,
+      "axes": [
+        "camera_pose",
+        "lighting",
+        "object_pose"
+      ],
+      "levels": [
+        "baseline",
+        "mild",
+        "strong"
+      ],
+      "purpose": "prepare structured data for MNPE/sensitivity analysis"
+    }
+  },
+  "tests": [
+    {
+      "name": "episode_identity_has_full_context",
+      "passed": true
+    },
+    {
+      "name": "evidence_chain_has_video_hdf5_event_dashboard",
+      "passed": true
+    },
+    {
+      "name": "score_can_capture_partial_progress",
+      "passed": true
+    },
+    {
+      "name": "ci_gets_tighter_with_more_episodes",
+      "passed": true
+    },
+    {
+      "name": "long_horizon_success_decays_with_subtasks",
+      "passed": true
+    },
+    {
+      "name": "wrong_object_routes_to_visual_language_binding",
+      "passed": true
+    },
+    {
+      "name": "dropped_target_routes_to_control",
+      "passed": true
+    },
+    {
+      "name": "deformable_routes_to_benchmark_boundary",
+      "passed": true
+    },
+    {
+      "name": "language_matrix_has_three_variants",
+      "passed": true
+    },
+    {
+      "name": "sensitivity_matrix_has_three_axes",
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "boundary": "Conceptual validation only. It does not rerun RoboLab-120, RoboArena, or MNPE."
+}

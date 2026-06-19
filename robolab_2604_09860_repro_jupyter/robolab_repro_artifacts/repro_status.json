@@ -40,6 +40,8 @@
   "G37_gaussian_sim_methods_tests_passed": true,
   "G38_remaining_core_topics_explain_saved": true,
   "G39_remaining_core_topics_tests_passed": true,
+  "G39a_remaining_core_topics_deep_explain_saved": true,
+  "G39b_remaining_core_topics_deep_tests_passed": true,
   "G40_core_code_runtime_chain_explain_saved": true,
   "G41_core_code_runtime_chain_tests_passed": true,
   "G42_reviewer_synthesis_explain_saved": true,

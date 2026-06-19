@@ -2938,6 +2938,140 @@ def main() -> None:
         ),
         md(
             """
+            ## 0.19b 论文精讲：精讲13补充，评测证据链深挖
+
+            下面这节来自本目录的 [EXPLAIN_13_deep_evaluation_evidence_chain.md](./EXPLAIN_13_deep_evaluation_evidence_chain.md)。它把精讲13从“覆盖目录”补成“证据链深挖”：论文级 episode 样本单位、`success`/`score` 的数学直觉、event tracking 的输入输出、语言变体与复杂度 sweep 的交叉诊断、统计置信、dashboard、RoboArena 真实世界相关性，以及 4090 上更接近论文口径的小矩阵应该怎么设计。
+            """
+        ),
+        md_file("EXPLAIN_13_deep_evaluation_evidence_chain.md"),
+        code(
+            r"""
+            # ===== 精讲13补充：评测证据链深挖轻量验证 =====
+            # 这个 cell 不跑 RoboLab，只把补充章里的关键概念做成可检查 schema。
+
+            import json
+            from math import sqrt
+
+            episode_identity_fields = [
+                "task_id",
+                "scene_id",
+                "instruction_variant",
+                "policy_id",
+                "robot_id",
+                "camera_config",
+                "action_space_config",
+                "variation_seed",
+                "run_seed",
+            ]
+
+            evidence_chain = {
+                "video": "human_inspection",
+                "episode_results_jsonl": "aggregate_success_score",
+                "hdf5": "state_action_image_replay",
+                "event_log": "failure_taxonomy",
+                "dashboard": "policy_task_axis_comparison",
+            }
+
+            def normalized_score(progress_by_object):
+                return sum(done / total for done, total in progress_by_object.values()) / len(progress_by_object)
+
+            def binomial_ci_half_width(p, n):
+                # 教学用近似：1.96 * sqrt(p(1-p)/n)。论文里强调 N=10 单任务 CI 仍很宽。
+                return 1.96 * sqrt(p * (1 - p) / n)
+
+            def full_success_from_step_success(p_step, n_subtasks):
+                return p_step ** n_subtasks
+
+            def classify_failure_signal(events, task_meta):
+                if task_meta.get("asset_missing") or task_meta.get("env_crash"):
+                    return "repro_environment"
+                if task_meta.get("deformable") or task_meta.get("force_control"):
+                    return "benchmark_boundary"
+                if events.get("wrong_object", 0) > 0:
+                    return "visual_language_binding"
+                if events.get("dropped_target", 0) > 0:
+                    return "grasp_or_release_control"
+                if events.get("hit_table", 0) > 0:
+                    return "trajectory_or_action_scale"
+                return "needs_video_hdf5_review"
+
+            reproduction_matrices = {
+                "subset_12_tasks": {
+                    "tasks": 12,
+                    "episodes_per_task": 3,
+                    "purpose": "balanced visual/procedural/relational smoke beyond a single video",
+                },
+                "language_variation": {
+                    "tasks": 3,
+                    "variants": ["default", "vague", "specific"],
+                    "episodes_per_variant": 3,
+                    "purpose": "separate language binding failure from motion failure",
+                },
+                "small_sensitivity": {
+                    "tasks": 2,
+                    "axes": ["camera_pose", "lighting", "object_pose"],
+                    "levels": ["baseline", "mild", "strong"],
+                    "purpose": "prepare structured data for MNPE/sensitivity analysis",
+                },
+            }
+
+            score_case = {"banana": (4, 4), "cube": (1, 4)}
+            score_value = normalized_score(score_case)
+            ci_n10 = binomial_ci_half_width(0.5, 10)
+            ci_n100 = binomial_ci_half_width(0.5, 100)
+            long_horizon_curve = {
+                n: full_success_from_step_success(0.8, n)
+                for n in [1, 3, 5, 7]
+            }
+
+            deep_tests = [
+                ("episode_identity_has_full_context", len(episode_identity_fields) >= 9 and "instruction_variant" in episode_identity_fields),
+                ("evidence_chain_has_video_hdf5_event_dashboard", {"video", "hdf5", "event_log", "dashboard"}.issubset(evidence_chain)),
+                ("score_can_capture_partial_progress", 0 < score_value < 1),
+                ("ci_gets_tighter_with_more_episodes", ci_n100 < ci_n10),
+                ("long_horizon_success_decays_with_subtasks", long_horizon_curve[7] < long_horizon_curve[3] < long_horizon_curve[1]),
+                ("wrong_object_routes_to_visual_language_binding", classify_failure_signal({"wrong_object": 2}, {}) == "visual_language_binding"),
+                ("dropped_target_routes_to_control", classify_failure_signal({"dropped_target": 1}, {}) == "grasp_or_release_control"),
+                ("deformable_routes_to_benchmark_boundary", classify_failure_signal({}, {"deformable": True}) == "benchmark_boundary"),
+                ("language_matrix_has_three_variants", set(reproduction_matrices["language_variation"]["variants"]) == {"default", "vague", "specific"}),
+                ("sensitivity_matrix_has_three_axes", set(reproduction_matrices["small_sensitivity"]["axes"]) == {"camera_pose", "lighting", "object_pose"}),
+            ]
+
+            report = {
+                "episode_identity_fields": episode_identity_fields,
+                "evidence_chain": evidence_chain,
+                "score_case": {
+                    "progress_by_object": score_case,
+                    "normalized_score": score_value,
+                    "interpretation": "success=False can still have meaningful partial score.",
+                },
+                "ci_half_width_demo": {
+                    "n10_at_p05": ci_n10,
+                    "n100_at_p05": ci_n100,
+                    "interpretation": "single-task N=10 is coarse; N=100 is materially tighter.",
+                },
+                "long_horizon_curve_demo": long_horizon_curve,
+                "failure_routing": {
+                    "wrong_object": classify_failure_signal({"wrong_object": 2}, {}),
+                    "dropped_target": classify_failure_signal({"dropped_target": 1}, {}),
+                    "deformable": classify_failure_signal({}, {"deformable": True}),
+                },
+                "reproduction_matrices": reproduction_matrices,
+                "tests": [{"name": name, "passed": bool(ok)} for name, ok in deep_tests],
+                "all_passed": all(ok for _, ok in deep_tests),
+                "boundary": "Conceptual validation only. It does not rerun RoboLab-120, RoboArena, or MNPE.",
+            }
+
+            print(json.dumps(report, ensure_ascii=False, indent=2))
+            for name, ok in deep_tests:
+                print(f"{name}: {'PASS' if ok else 'FAIL'}")
+
+            assert report["all_passed"], deep_tests
+            write_status("remaining_core_topics_deep_lightweight_tests", report)
+            """
+        ),
+        md(
+            """
             ## 0.20 代码精讲：policy rollout 到证据链
 
             下面这节来自本目录的 [EXPLAIN_14_core_code_runtime_chain.md](./EXPLAIN_14_core_code_runtime_chain.md)。它补的是前面还没系统讲透的源码主干：`runner.py` 如何调度任务，`episode.py` 如何逐步执行 policy，`InferenceClient` / `Pi0DroidJointposClient` 如何把观测转成模型请求，`WorldState` / `EventTracker` / `RecorderManager` / `summarize_run` / `dashboard loader` 如何把 rollout 变成可分析证据。
@@ -4545,6 +4679,12 @@ def main() -> None:
                 "G39_remaining_core_topics_tests_passed": (
                     ARTIFACT_DIR / "remaining_core_topics_lightweight_tests.json"
                 ).exists(),
+                "G39a_remaining_core_topics_deep_explain_saved": (
+                    NOTEBOOK_ROOT / "EXPLAIN_13_deep_evaluation_evidence_chain.md"
+                ).exists(),
+                "G39b_remaining_core_topics_deep_tests_passed": (
+                    ARTIFACT_DIR / "remaining_core_topics_deep_lightweight_tests.json"
+                ).exists(),
                 "G40_core_code_runtime_chain_explain_saved": (
                     NOTEBOOK_ROOT / "EXPLAIN_14_core_code_runtime_chain.md"
                 ).exists(),
@@ -4601,6 +4741,7 @@ def main() -> None:
                     "Figure 13 Gaussian Splat + Mesh scene, collision mesh, mesh foreground, VoMP mass/density, 3DGRT/3DGUT references, and MNPE Gaussian KDE distinction",
                     "EXPLAIN_12 frontier source table: NuRec, 3DGUT, Isaac Sim 6.0 EDR, Lyra, Physically Embodied Gaussians, and Marble+Isaac Sim links with read-focus notes",
                     "remaining core evaluation topics: IV-A experiment setup, success-vs-score interpretation, language variations, complexity sweeps, event-driven failure analysis, RoboArena real-world verification, statistical confidence, and limitations",
+                    "EXPLAIN_13 deep supplement: III-C normalized score and language variations, IV-B complexity sweeps, IV-D real-world rank-correlation interpretation, Appendix A-A confidence interval caveat, Appendix A-C score-vs-success gap, Appendix A-D anomalous horizon caveat, and V limitations",
                     "EXPLAIN_15 whole-paper reviewer synthesis: contributions, strengths, weaknesses, limitations, real-world verification, optimization directions, and future innovation routes",
                     "EXPLAIN_16 source-linked reading map: what to read after RoboLab for simulation benchmarks, real-world data, VLA policies, SimReady assets, and sim-to-real evaluation",
                     "EXPLAIN_16 core source-and-content evidence table: the originating problem, source content, and reading question behind each recommendation",
@@ -4916,6 +5057,7 @@ def main() -> None:
                     "confidence interval caveat",
                     "paper experiment result parsing by attributes, difficulty, instruction type, scene, wrong objects, and beta credible interval",
                     "EXPLAIN_13 analysis commands for score/success, instruction type, wrong objects, and episode aggregation",
+                    "EXPLAIN_13 deep supplement: episode-level evidence chain, dashboard aggregation questions, and paper-style result interpretation",
                 ],
             },
             {
@@ -4925,6 +5067,7 @@ def main() -> None:
                     "episode_results.jsonl fields",
                     "HDF5/video output structure",
                     "EXPLAIN_13 evidence chain: videos for human inspection and JSON/HDF5/event logs for paper-style statistics",
+                    "EXPLAIN_13 deep supplement: evidence role split across video, HDF5, episode_results, event logs, and dashboard",
                 ],
             },
             {
@@ -4932,6 +5075,7 @@ def main() -> None:
                 "url": "https://raw.githubusercontent.com/NVlabs/RoboLab/main/docs/event_tracking.md",
                 "used_for": [
                     "EXPLAIN_13 failure taxonomy: wrong object, gripper hit table, dropped target, object moved, tipped, and out-of-scene events",
+                    "EXPLAIN_13 deep supplement: diagnosing wrong-object, dropped-target, table-hit, moved-object, and out-of-scene failure modes",
                 ],
             },
             {
@@ -4939,6 +5083,7 @@ def main() -> None:
                 "url": "https://raw.githubusercontent.com/NVlabs/RoboLab/main/docs/subtask.md",
                 "used_for": [
                     "EXPLAIN_13 success-vs-score explanation and hierarchical subtask/condition state machine interpretation",
+                    "EXPLAIN_13 deep supplement: partial milestone score as process evidence when strict task success is false",
                 ],
             },
             {
@@ -4946,6 +5091,7 @@ def main() -> None:
                 "url": "https://raw.githubusercontent.com/NVlabs/RoboLab/main/docs/dashboard.md",
                 "used_for": [
                     "EXPLAIN_13 dashboard evidence and confidence interval explanation: SR Beta credible interval and Score Student-t interval",
+                    "EXPLAIN_13 deep supplement: treating dashboard as a database view over task, policy, instruction, event, and trajectory metrics",
                 ],
             },
             {
@@ -4980,6 +5126,7 @@ def main() -> None:
 - `EXPLAIN_11_spatial_physical_solver_feedback.md`：论文 Appendix C 空间求解器、物理放置求解器和失败反馈块精讲，已内嵌进 notebook，并配有支撑/容器/反馈轻量测试用例。
 - `EXPLAIN_12_gaussian_sim_methods.md`：论文中 Gaussian Splat + Mesh、collision mesh、VoMP、MNPE Gaussian KDE 与 NVIDIA 2026 NuRec/3DGUT/Lyra 等前沿路线精讲，已补前沿来源链接速查表，已内嵌进 notebook，并配有分层职责和链接覆盖轻量测试用例。
 - `EXPLAIN_13_remaining_core_topics.md`：对照论文后补充的剩余核心内容精讲，覆盖实验协议、success/score gap、语言变体、复杂度 sweep、事件追踪、真实世界相关性、统计置信和限制边界，已内嵌进 notebook，并配有覆盖差分轻量测试用例。
+- `EXPLAIN_13_deep_evaluation_evidence_chain.md`：精讲13补充深挖版，把单条 rollout 到论文结论的证据链讲透，覆盖 episode 样本单位、score/success 数学直觉、event tracking、置信区间、dashboard、RoboArena 相关性、limitations 和 4090 小矩阵实验设计，已内嵌进 notebook，并配有深挖轻量测试用例。
 - `EXPLAIN_14_core_code_runtime_chain.md`：RoboLab policy rollout 到证据链的核心代码精讲，覆盖 `runner.py`、`episode.py`、`InferenceClient`、Pi05 client、`WorldState`、`EventTracker`、HDF5 recorder、`summarize_run`、results 和 dashboard loader，已内嵌进 notebook，并配有源码链路轻量测试用例。
 - `EXPLAIN_15_reviewer_synthesis.md`：全文总梳理与审稿人视角精讲，覆盖贡献、优点、主要问题、优化点和未来创新方向，已内嵌进 notebook，并配有 reviewer rubric 轻量测试用例。
 - `EXPLAIN_16_recommended_reading.md`：基于 RoboLab 的推荐阅读与开源学习路线，已改成 2026-first：优先补 RoboLab、RoboCasa365、RDT2、GR00T N1.7、Isaac Lab-Arena、Lightwheel LW-BenchHub、Lyra 和 NVIDIA 2026 Physical AI stack；BEHAVIOR/DROID/OpenVLA/Octo/ReKep 等降级为基础背景，已内嵌进 notebook，并配有 reading map 轻量测试用例。
@@ -5009,6 +5156,7 @@ def main() -> None:
 - 已新增“空间求解器、物理放置求解器与失败反馈”精讲，覆盖 Algorithm 1、Figure 17 和 Algorithm 2，解释 `place-on-base`、`place-on`、`place-in` 如何从谓词变成 2D/3D 位姿，并在 notebook 里加入 toy physical placement 与 feedback block 测试。
 - 已增强“Gaussian 方法与 NVIDIA 2026 前沿路线”精讲，区分 RoboLab 本文里的 Gaussian Splat + Mesh、collision mesh、mesh foreground、VoMP、MNPE Gaussian KDE，并补充 NuRec、3DGUT/3DGRT、Isaac Sim 6、Lyra 2.0、Physically Embodied Gaussians、Marble+Isaac Sim 工作流的来源链接和重点阅读项。
 - 已新增“剩余核心内容与评测证据链”精讲，补齐实验协议、`success` 与 `score` 的差异、语言变体、复杂度 sweep、事件追踪、RoboArena 真实世界相关性、统计置信区间和论文限制边界。
+- 已新增“精讲13补充：评测证据链深挖”，把原先偏目录式的剩余内容扩展成论文级评测逻辑：episode identity、视频/HDF5/event/result/dashboard 证据分工、score/success gap、event failure taxonomy、CI 解释、真实世界 rank correlation 边界和 4090 小规模实验矩阵。
 - 已新增“policy rollout 到证据链”代码精讲，补齐真实策略评测时 `runner -> episode -> client -> env/world -> event -> recorder -> summarize -> dashboard` 的源码主干和故障定位路径。
 - 已新增“全文总梳理与审稿人视角”精讲，补齐论文贡献评价、审稿式 strengths/weaknesses/questions、复现侧优化点和未来创新方向。
 - 已增强“推荐阅读与开源学习路线”精讲，补上每个推荐来源背后的核心问题、原始内容要点、和 RoboLab 的关系；本次又新增 2026-first 阅读层，把 RoboLab、RoboCasa365、RDT2、GR00T N1.7、Isaac Lab-Arena、Lightwheel LW-BenchHub、Lyra 和 NVIDIA 2026 Physical AI stack 放到最前，并把 2025 及更早材料明确标成基础背景。

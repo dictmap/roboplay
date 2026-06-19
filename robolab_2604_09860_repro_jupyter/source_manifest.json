@@ -25,6 +25,7 @@
         "Figure 13 Gaussian Splat + Mesh scene, collision mesh, mesh foreground, VoMP mass/density, 3DGRT/3DGUT references, and MNPE Gaussian KDE distinction",
         "EXPLAIN_12 frontier source table: NuRec, 3DGUT, Isaac Sim 6.0 EDR, Lyra, Physically Embodied Gaussians, and Marble+Isaac Sim links with read-focus notes",
         "remaining core evaluation topics: IV-A experiment setup, success-vs-score interpretation, language variations, complexity sweeps, event-driven failure analysis, RoboArena real-world verification, statistical confidence, and limitations",
+        "EXPLAIN_13 deep supplement: III-C normalized score and language variations, IV-B complexity sweeps, IV-D real-world rank-correlation interpretation, Appendix A-A confidence interval caveat, Appendix A-C score-vs-success gap, Appendix A-D anomalous horizon caveat, and V limitations",
         "EXPLAIN_15 whole-paper reviewer synthesis: contributions, strengths, weaknesses, limitations, real-world verification, optimization directions, and future innovation routes",
         "EXPLAIN_16 source-linked reading map: what to read after RoboLab for simulation benchmarks, real-world data, VLA policies, SimReady assets, and sim-to-real evaluation",
         "EXPLAIN_16 core source-and-content evidence table: the originating problem, source content, and reading question behind each recommendation"
@@ -339,7 +340,8 @@
         "summary dimensions",
         "confidence interval caveat",
         "paper experiment result parsing by attributes, difficulty, instruction type, scene, wrong objects, and beta credible interval",
-        "EXPLAIN_13 analysis commands for score/success, instruction type, wrong objects, and episode aggregation"
+        "EXPLAIN_13 analysis commands for score/success, instruction type, wrong objects, and episode aggregation",
+        "EXPLAIN_13 deep supplement: episode-level evidence chain, dashboard aggregation questions, and paper-style result interpretation"
       ]
     },
     {
@@ -348,28 +350,32 @@
       "used_for": [
         "episode_results.jsonl fields",
         "HDF5/video output structure",
-        "EXPLAIN_13 evidence chain: videos for human inspection and JSON/HDF5/event logs for paper-style statistics"
+        "EXPLAIN_13 evidence chain: videos for human inspection and JSON/HDF5/event logs for paper-style statistics",
+        "EXPLAIN_13 deep supplement: evidence role split across video, HDF5, episode_results, event logs, and dashboard"
       ]
     },
     {
       "title": "RoboLab docs: Event Tracking",
       "url": "https://raw.githubusercontent.com/NVlabs/RoboLab/main/docs/event_tracking.md",
       "used_for": [
-        "EXPLAIN_13 failure taxonomy: wrong object, gripper hit table, dropped target, object moved, tipped, and out-of-scene events"
+        "EXPLAIN_13 failure taxonomy: wrong object, gripper hit table, dropped target, object moved, tipped, and out-of-scene events",
+        "EXPLAIN_13 deep supplement: diagnosing wrong-object, dropped-target, table-hit, moved-object, and out-of-scene failure modes"
       ]
     },
     {
       "title": "RoboLab docs: Subtask Checking",
       "url": "https://raw.githubusercontent.com/NVlabs/RoboLab/main/docs/subtask.md",
       "used_for": [
-        "EXPLAIN_13 success-vs-score explanation and hierarchical subtask/condition state machine interpretation"
+        "EXPLAIN_13 success-vs-score explanation and hierarchical subtask/condition state machine interpretation",
+        "EXPLAIN_13 deep supplement: partial milestone score as process evidence when strict task success is false"
       ]
     },
     {
       "title": "RoboLab docs: Dashboard",
       "url": "https://raw.githubusercontent.com/NVlabs/RoboLab/main/docs/dashboard.md",
       "used_for": [
-        "EXPLAIN_13 dashboard evidence and confidence interval explanation: SR Beta credible interval and Score Student-t interval"
+        "EXPLAIN_13 dashboard evidence and confidence interval explanation: SR Beta credible interval and Score Student-t interval",
+        "EXPLAIN_13 deep supplement: treating dashboard as a database view over task, policy, instruction, event, and trajectory metrics"
       ]
     },
     {
