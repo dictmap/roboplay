@@ -63,12 +63,6 @@ export RUN_PREFIX="${RUN_PREFIX}"
 echo ROBOLAB120_SMOKE5_START \$(date -Is) | tee "${LOG}"
 bash scripts/run_pi05_robolab120_4090.sh 2>&1 | tee -a "${LOG}"
 rc=\${PIPESTATUS[0]}
-"${PYTHON_BIN}" scripts/diagnose_robolab120_smoke_log.py \
-  --log "${LOG}" \
-  --manifest "${PACK_ROOT}/robolab_repro_artifacts/${RUN_PREFIX}_task_run_manifest.jsonl" \
-  --artifact-check-glob "${PACK_ROOT}/robolab_repro_artifacts/${RUN_PREFIX}_*Task_artifact_check.json" \
-  --out "${PACK_ROOT}/robolab_repro_artifacts/${RUN_PREFIX}_failure_diagnosis.json" \
-  2>&1 | tee -a "${LOG}" || true
 echo ROBOLAB120_SMOKE5_EXIT \${rc} \$(date -Is) | tee -a "${LOG}"
 echo "\${rc}" > "${STATUS}"
 exit "\${rc}"

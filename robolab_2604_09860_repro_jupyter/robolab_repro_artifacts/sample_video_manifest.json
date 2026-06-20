@@ -1,0 +1,32 @@
+[
+  {
+    "id": "robolab120_animals_in_bin_viewport",
+    "title": "RoboLab-120 Pi05 full run sample: AnimalsInBinTask viewport",
+    "task": "AnimalsInBinTask",
+    "file": "sample_videos/robolab120_animals_in_bin_viewport.mp4",
+    "size_bytes": 7240555,
+    "size_mb": 6.91,
+    "note": "Viewport sample from the clean Pi05 full-120 run. Small enough for GitHub preview.",
+    "source_path_4090": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_AnimalsInBinTask/AnimalsInBinTask/Put_the_lizards_in_the_bin_0_viewport.mp4"
+  },
+  {
+    "id": "robolab120_fruits_on_plate3_viewport",
+    "title": "RoboLab-120 Pi05 full run sample: FruitsOnPlate3Task viewport",
+    "task": "FruitsOnPlate3Task",
+    "file": "sample_videos/robolab120_fruits_on_plate3_viewport.mp4",
+    "size_bytes": 7672539,
+    "size_mb": 7.32,
+    "note": "Viewport sample from the clean Pi05 full-120 run for a multi-object counting task.",
+    "source_path_4090": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsOnPlate3Task/FruitsOnPlate3Task/Put_three_3_fruits_on_the_plate_0_viewport.mp4"
+  },
+  {
+    "id": "pi05_complex_stack3_rubiks_cube",
+    "title": "Pi05 complex sample: Stack3RubiksCubeTask",
+    "task": "Stack3RubiksCubeTask",
+    "file": "sample_videos/pi05_complex_stack3_rubiks_cube.mp4",
+    "size_bytes": 7984388,
+    "size_mb": 7.61,
+    "note": "Complex stacking sample from the earlier Pi05 complex-task probe.",
+    "source_path_4090": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_complex_assets_ok_20260620_020721/Stack3RubiksCubeTask/Stack_the_rubiks_cubes_in_a_tower_0.mp4"
+  }
+]

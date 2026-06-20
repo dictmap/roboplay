@@ -1,0 +1,243 @@
+{
+  "episode_files": [
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_assetsfixed_test10_20260620_162403_AnimalsInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_assetsfixed_test10_20260620_162403_AppleAndYogurtInBowlTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_assetsfixed_test10_20260620_162403_BagelsOnPlateTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_assetsfixed_test10_20260620_162403_BananaInBowlTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_assetsfixed_test10_20260620_162403_BananaOnPlateTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_assetsfixed_test10_20260620_162403_BananaThenRubiksCubeTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_assetsfixed_test10_20260620_162403_BananasInBinOneMoreTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_assetsfixed_test10_20260620_162403_BananasInBinThreeTotalTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_assetsfixed_test10_20260620_162403_BananasInCrateTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_assetsfixed_test10_20260620_162403_BananasOutOfBinTask/episode_results.jsonl"
+  ],
+  "num_episode_rows": 10,
+  "groups": [
+    {
+      "task_name": "AnimalsInBinTask",
+      "env_name": "AnimalsInBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 1350.0,
+      "duration_mean": 90.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 282.3,
+      "events": {
+        "GRIPPER_FULLY_CLOSED": 6,
+        "WRONG_OBJECT_GRABBED": 4,
+        "GRIPPER_HIT_OBJECT": 2,
+        "OBJECT_BUMPED": 4,
+        "TARGET_OBJECT_DROPPED": 20,
+        "MULTIPLE_OBJECTS_GRABBED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_assetsfixed_test10_20260620_162403_AnimalsInBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "AppleAndYogurtInBowlTask",
+      "env_name": "AppleAndYogurtInBowlTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 763.0,
+      "duration_mean": 50.86666666666667,
+      "policy_inference_avg_ms_mean": 12.0,
+      "env_step_avg_ms_mean": 325.1,
+      "events": {
+        "GRIPPER_HIT_OBJECT": 2,
+        "TARGET_OBJECT_DROPPED": 5,
+        "GRIPPER_FULLY_CLOSED": 3,
+        "OBJECT_BUMPED": 2
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_assetsfixed_test10_20260620_162403_AppleAndYogurtInBowlTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BagelsOnPlateTask",
+      "env_name": "BagelsOnPlateTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 12.0,
+      "env_step_avg_ms_mean": 214.4,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 11,
+        "GRIPPER_HIT_TABLE": 7,
+        "WRONG_OBJECT_GRABBED": 1,
+        "GRIPPER_HIT_OBJECT": 1,
+        "OBJECT_BUMPED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_assetsfixed_test10_20260620_162403_BagelsOnPlateTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BananaInBowlTask",
+      "env_name": "BananaInBowlTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 152.0,
+      "duration_mean": 10.133333333333333,
+      "policy_inference_avg_ms_mean": 12.4,
+      "env_step_avg_ms_mean": 191.9,
+      "events": {
+        "GRIPPER_HIT_TABLE": 2,
+        "TARGET_OBJECT_DROPPED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_assetsfixed_test10_20260620_162403_BananaInBowlTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BananaOnPlateTask",
+      "env_name": "BananaOnPlateTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 136.0,
+      "duration_mean": 9.066666666666666,
+      "policy_inference_avg_ms_mean": 12.7,
+      "env_step_avg_ms_mean": 212.8,
+      "events": {
+        "GRIPPER_HIT_TABLE": 1,
+        "TARGET_OBJECT_DROPPED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_assetsfixed_test10_20260620_162403_BananaOnPlateTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BananaThenRubiksCubeTask",
+      "env_name": "BananaThenRubiksCubeTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 377.0,
+      "duration_mean": 25.133333333333333,
+      "policy_inference_avg_ms_mean": 12.1,
+      "env_step_avg_ms_mean": 192.5,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 2,
+        "GRIPPER_HIT_OBJECT": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_assetsfixed_test10_20260620_162403_BananaThenRubiksCubeTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BananasInBinOneMoreTask",
+      "env_name": "BananasInBinOneMoreTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 179.0,
+      "duration_mean": 11.933333333333334,
+      "policy_inference_avg_ms_mean": 12.1,
+      "env_step_avg_ms_mean": 223.9,
+      "events": {
+        "GRIPPER_FULLY_CLOSED": 2,
+        "TARGET_OBJECT_DROPPED": 4
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_assetsfixed_test10_20260620_162403_BananasInBinOneMoreTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BananasInBinThreeTotalTask",
+      "env_name": "BananasInBinThreeTotalTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 214.0,
+      "duration_mean": 14.266666666666666,
+      "policy_inference_avg_ms_mean": 12.2,
+      "env_step_avg_ms_mean": 221.8,
+      "events": {
+        "MULTIPLE_OBJECTS_GRABBED": 1,
+        "GRIPPER_FULLY_CLOSED": 1,
+        "TARGET_OBJECT_DROPPED": 2
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_assetsfixed_test10_20260620_162403_BananasInBinThreeTotalTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BananasInCrateTask",
+      "env_name": "BananasInCrateTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 228.4,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 14,
+        "GRIPPER_FULLY_CLOSED": 2,
+        "GRIPPER_HIT_OBJECT": 1,
+        "MULTIPLE_OBJECTS_GRABBED": 1,
+        "GRIPPER_HIT_TABLE": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_assetsfixed_test10_20260620_162403_BananasInCrateTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BananasOutOfBinTask",
+      "env_name": "BananasOutOfBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 1089.0,
+      "duration_mean": 72.6,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 228.3,
+      "events": {
+        "WRONG_OBJECT_GRABBED": 22,
+        "GRIPPER_HIT_OBJECT": 4,
+        "MULTIPLE_OBJECTS_GRABBED": 1,
+        "OBJECT_BUMPED": 13,
+        "GRIPPER_FULLY_CLOSED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_assetsfixed_test10_20260620_162403_BananasOutOfBinTask/episode_results.jsonl"
+      ]
+    }
+  ]
+}

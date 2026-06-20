@@ -32,8 +32,7 @@
         "EXPLAIN_13 deep supplement: III-C normalized score and language variations, IV-B complexity sweeps, IV-D real-world rank-correlation interpretation, Appendix A-A confidence interval caveat, Appendix A-C score-vs-success gap, Appendix A-D anomalous horizon caveat, and V limitations",
         "EXPLAIN_15 whole-paper reviewer synthesis: contributions, strengths, weaknesses, limitations, real-world verification, optimization directions, and future innovation routes",
         "EXPLAIN_16 source-linked reading map: what to read after RoboLab for simulation benchmarks, real-world data, VLA policies, SimReady assets, and sim-to-real evaluation",
-        "EXPLAIN_16 core source-and-content evidence table: the originating problem, source content, and reading question behind each recommendation",
-        "EXPLAIN_17 deep mechanism playbook: RoboLab as an evaluation compiler across task contracts, predicate scene generation, environment binding, policy rollout, event evidence, perturbation probes, baseline boundaries, and staged 4090 reproduction"
+        "EXPLAIN_16 core source-and-content evidence table: the originating problem, source content, and reading question behind each recommendation"
       ],
       "observed": "arXiv:2604.09860v3, 14 May 2026"
     },
@@ -119,8 +118,7 @@
         "sensitivity analysis framing",
         "EXPLAIN_15 overview framing for benchmark/system-paper reviewer interpretation",
         "EXPLAIN_16 reading-route anchor for RoboLab's benchmark, dashboard, agentic generation, and evaluation ecosystem",
-        "EXPLAIN_16 source evidence table anchor for the central problem: simulation evaluation of real-world task-generalist policies",
-        "EXPLAIN_17 project-level mechanism anchor: agentic scene/task workflows, controlled perturbations, benchmark axes, and dashboard evidence roles"
+        "EXPLAIN_16 source evidence table anchor for the central problem: simulation evaluation of real-world task-generalist policies"
       ]
     },
     {
@@ -135,8 +133,7 @@
         "source tree orientation for task/env/policy/eval modules",
         "EXPLAIN_15 engineering and reproducibility reviewer perspective: install, policy server-client, multi-env, dashboard, hardware cost, and subset protocol recommendations",
         "EXPLAIN_16 practical reading order for continuing from RoboLab install/repro into policies, assets, and benchmark extensions",
-        "EXPLAIN_16 source content map for README-to-learning-route traceability",
-        "EXPLAIN_17 source-tree grounding for runtime, policy clients, analysis, dashboard, and staged reproduction boundaries"
+        "EXPLAIN_16 source content map for README-to-learning-route traceability"
       ]
     },
     {
