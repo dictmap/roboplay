@@ -1,0 +1,9 @@
+{
+  "output_root": "robolab_repro_artifacts\\robolab120_rekep_adapter_pending_sample",
+  "episode_results_jsonl": "robolab_repro_artifacts\\robolab120_rekep_adapter_pending_sample\\episode_results.jsonl",
+  "policy": "rekep",
+  "status": "planner_adapter_required",
+  "reason": "ReKep planner adapter not implemented yet.",
+  "num_tasks": 120,
+  "boundary": "These rows are placeholders for comparison bookkeeping. They are not simulation rollouts."
+}

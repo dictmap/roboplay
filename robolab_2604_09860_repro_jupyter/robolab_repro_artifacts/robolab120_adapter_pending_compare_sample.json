@@ -1,0 +1,2556 @@
+{
+  "matrix": "robolab_repro_artifacts\\robolab120_task_matrix.json",
+  "roots": [
+    "robolab_repro_artifacts\\robolab120_robochallenge_pi_adapter_pending_sample",
+    "robolab_repro_artifacts\\robolab120_rekep_adapter_pending_sample"
+  ],
+  "num_episode_rows": 240,
+  "aggregates": {
+    "by_task": [
+      {
+        "policy": "rekep",
+        "task_name": "AnimalsInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "AppleAndYogurtInBowlTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "BBQSauceInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "BagelsOnPlateTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "BananaInBowlTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "BananaOnPlateTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "BananaThenRubiksCubeTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "BananasInBinOneMoreTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "BananasInBinThreeTotalTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "BananasInCrateTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "BananasOutOfBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "BigPumpkinInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "BlackItemsInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "BlockStackingOrderAgnosticTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "BlockStackingSpecifiedOrderTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "BlocksInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "BowlInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "BowlStackingLeftOnRightTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "BowlStackingRightOnLeftTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "ButterAboveRaisinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "CannedFoodInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "ClampInRightBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "CleanUpToysTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "ClearOrganicObjectsTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "ClutterPlasticTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "ClutterPumpkinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "CoffeePotInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "CondimentsInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "CookingClearPlateTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "CookingPickPastaToolTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "CubesAndBlocksInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "DishesInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "ElectronicsInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "FoodPacking1BoxesTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "FoodPacking1CansTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "FoodPacking2BoxesTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "FoodPacking2CansTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "FoodPacking3BoxesTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "FoodPacking3CansTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "FoodPackingByColorTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "FruitsGreenLimesOnPlateTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "FruitsMovingOrangeOrLimeTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "FruitsMovingTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "FruitsOnPlate3Task",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "FruitsOnPlateTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "FruitsOnionTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "FruitsOnionToPlateTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "FruitsOrangesOnPlateTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "GrabABagelTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "GrabAFruitTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "GreenSpoonsInPotTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "HammersInLeftBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "JugsOnShelfTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "KeyboardOutOfBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "LargerObjectRaisinBoxInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "MarkerInMugTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "MouseOnKeyboardTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "MoveBananaToBagelPlateTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "MustardAboveRaisinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "MustardInLeftBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "MustardInRightBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "NonHammerToolsInRightBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "OneBottleInSquarePailTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "OneBottleOnShelfTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "PhoneOrRemoteInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "PickDrillTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "PickGlassesTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "PickOrangeObjectTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "PickUpBluePitcherTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "PickUpGreenObjectTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "PinkSpoonInPotTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "PlasticBottlesInSquarePailTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "PutBowlOnShelfTopTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "PutMugsOnShelfTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "PutTwoMugsOnShelfTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "RecycleCartonTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "RecycleCartonsOnBoxTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "RecycleCartonsVerticalCrateTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "RedDishesInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "RedItemsInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "ReorientAllMugsTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "ReorientJugTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "ReorientRedMugTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "ReorientWhiteMugsTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "RubiksCubeAndBananaTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "RubiksCubeBehindBowlTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "RubiksCubeInFrontOfBowlTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "RubiksCubeLeftOfBowlTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "RubiksCubeOrBananaTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "RubiksCubeRightOfBowlTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "RubiksCubeTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "RubiksCubeThenBananaTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "RubiksCubesInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "SauceBottlesCrateTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "SmallPumpkinInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "SmallerObjectButterInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "SmartphoneInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "SpoonInMugTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "SpoonsInPotTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "Stack3RubiksCubeTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "StackWhiteMugsTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "StackYellowOnRedTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "TakeMeasuringSpoonOutTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "TakeMugsOffOfShelfTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "TakeSpatulaOffShelfTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "ThrowAwayAppleTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "ThrowAwaySnacksTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "ToolOrganizationBothTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "ToolOrganizationTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "ToolsPickingAllHammersTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "ToolsPickingDrillTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "ToolsPickingHammerTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "ToyInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "UnstackRubiksCubeTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "UtensilsInMugTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "WhiteMugInCenterOfTableTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "WhiteMugsInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "WoodSpatulaToBowlTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "YellowAndWhiteObjectsInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "task_name": "YogurtInBowlTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "AnimalsInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "AppleAndYogurtInBowlTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "BBQSauceInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "BagelsOnPlateTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "BananaInBowlTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "BananaOnPlateTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "BananaThenRubiksCubeTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "BananasInBinOneMoreTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "BananasInBinThreeTotalTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "BananasInCrateTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "BananasOutOfBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "BigPumpkinInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "BlackItemsInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "BlockStackingOrderAgnosticTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "BlockStackingSpecifiedOrderTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "BlocksInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "BowlInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "BowlStackingLeftOnRightTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "BowlStackingRightOnLeftTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "ButterAboveRaisinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "CannedFoodInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "ClampInRightBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "CleanUpToysTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "ClearOrganicObjectsTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "ClutterPlasticTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "ClutterPumpkinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "CoffeePotInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "CondimentsInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "CookingClearPlateTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "CookingPickPastaToolTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "CubesAndBlocksInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "DishesInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "ElectronicsInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "FoodPacking1BoxesTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "FoodPacking1CansTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "FoodPacking2BoxesTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "FoodPacking2CansTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "FoodPacking3BoxesTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "FoodPacking3CansTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "FoodPackingByColorTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "FruitsGreenLimesOnPlateTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "FruitsMovingOrangeOrLimeTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "FruitsMovingTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "FruitsOnPlate3Task",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "FruitsOnPlateTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "FruitsOnionTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "FruitsOnionToPlateTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "FruitsOrangesOnPlateTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "GrabABagelTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "GrabAFruitTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "GreenSpoonsInPotTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "HammersInLeftBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "JugsOnShelfTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "KeyboardOutOfBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "LargerObjectRaisinBoxInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "MarkerInMugTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "MouseOnKeyboardTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "MoveBananaToBagelPlateTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "MustardAboveRaisinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "MustardInLeftBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "MustardInRightBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "NonHammerToolsInRightBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "OneBottleInSquarePailTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "OneBottleOnShelfTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "PhoneOrRemoteInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "PickDrillTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "PickGlassesTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "PickOrangeObjectTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "PickUpBluePitcherTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "PickUpGreenObjectTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "PinkSpoonInPotTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "PlasticBottlesInSquarePailTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "PutBowlOnShelfTopTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "PutMugsOnShelfTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "PutTwoMugsOnShelfTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "RecycleCartonTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "RecycleCartonsOnBoxTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "RecycleCartonsVerticalCrateTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "RedDishesInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "RedItemsInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "ReorientAllMugsTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "ReorientJugTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "ReorientRedMugTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "ReorientWhiteMugsTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "RubiksCubeAndBananaTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "RubiksCubeBehindBowlTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "RubiksCubeInFrontOfBowlTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "RubiksCubeLeftOfBowlTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "RubiksCubeOrBananaTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "RubiksCubeRightOfBowlTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "RubiksCubeTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "RubiksCubeThenBananaTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "RubiksCubesInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "SauceBottlesCrateTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "SmallPumpkinInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "SmallerObjectButterInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "SmartphoneInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "SpoonInMugTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "SpoonsInPotTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "Stack3RubiksCubeTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "StackWhiteMugsTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "StackYellowOnRedTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "TakeMeasuringSpoonOutTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "TakeMugsOffOfShelfTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "TakeSpatulaOffShelfTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "ThrowAwayAppleTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "ThrowAwaySnacksTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "ToolOrganizationBothTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "ToolOrganizationTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "ToolsPickingAllHammersTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "ToolsPickingDrillTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "ToolsPickingHammerTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "ToyInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "UnstackRubiksCubeTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "UtensilsInMugTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "WhiteMugInCenterOfTableTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "WhiteMugsInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "WoodSpatulaToBowlTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "YellowAndWhiteObjectsInBinTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "task_name": "YogurtInBowlTask",
+        "episodes": 1,
+        "scored_episodes": 0,
+        "pending_episodes": 1,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      }
+    ],
+    "by_axis": [
+      {
+        "policy": "rekep",
+        "axis": "procedural",
+        "episodes": 34,
+        "scored_episodes": 0,
+        "pending_episodes": 34,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "axis": "relational",
+        "episodes": 42,
+        "scored_episodes": 0,
+        "pending_episodes": 42,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "axis": "unknown_axis",
+        "episodes": 3,
+        "scored_episodes": 0,
+        "pending_episodes": 3,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "axis": "visual",
+        "episodes": 84,
+        "scored_episodes": 0,
+        "pending_episodes": 84,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "axis": "procedural",
+        "episodes": 34,
+        "scored_episodes": 0,
+        "pending_episodes": 34,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "axis": "relational",
+        "episodes": 42,
+        "scored_episodes": 0,
+        "pending_episodes": 42,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "axis": "unknown_axis",
+        "episodes": 3,
+        "scored_episodes": 0,
+        "pending_episodes": 3,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "axis": "visual",
+        "episodes": 84,
+        "scored_episodes": 0,
+        "pending_episodes": 84,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      }
+    ],
+    "by_difficulty": [
+      {
+        "policy": "rekep",
+        "difficulty_label": "complex",
+        "episodes": 17,
+        "scored_episodes": 0,
+        "pending_episodes": 17,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "difficulty_label": "moderate",
+        "episodes": 39,
+        "scored_episodes": 0,
+        "pending_episodes": 39,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "rekep",
+        "difficulty_label": "simple",
+        "episodes": 64,
+        "scored_episodes": 0,
+        "pending_episodes": 64,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "difficulty_label": "complex",
+        "episodes": 17,
+        "scored_episodes": 0,
+        "pending_episodes": 17,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "difficulty_label": "moderate",
+        "episodes": 39,
+        "scored_episodes": 0,
+        "pending_episodes": 39,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      },
+      {
+        "policy": "robochallenge_pi",
+        "difficulty_label": "simple",
+        "episodes": 64,
+        "scored_episodes": 0,
+        "pending_episodes": 64,
+        "success_rate": null,
+        "score_mean": null,
+        "episode_step_mean": null
+      }
+    ]
+  }
+}

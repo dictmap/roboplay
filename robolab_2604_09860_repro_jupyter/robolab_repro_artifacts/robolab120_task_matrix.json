@@ -1,0 +1,4291 @@
+{
+  "metadata_url": "https://raw.githubusercontent.com/NVlabs/RoboLab/main/robolab/tasks/_metadata/task_metadata.json",
+  "selection_rule": "All official RoboLab task_metadata rows, preserving metadata order.",
+  "num_tasks": 120,
+  "axis_counts": {
+    "procedural": 34,
+    "relational": 42,
+    "unknown_axis": 3,
+    "visual": 84
+  },
+  "difficulty_counts": {
+    "complex": 17,
+    "moderate": 39,
+    "simple": 64
+  },
+  "attribute_counts": {
+    "affordance": 12,
+    "color": 26,
+    "conjunction": 8,
+    "counting": 7,
+    "reorientation": 6,
+    "semantics": 60,
+    "size": 6,
+    "sorting": 12,
+    "spatial": 29,
+    "stacking": 6,
+    "vague": 7
+  },
+  "execution_contract": {
+    "per_task_required_artifacts": [
+      "episode_results.jsonl",
+      "run_*.hdf5",
+      "*.mp4",
+      "log_*_env*.json",
+      "env_cfg.json"
+    ],
+    "recommended_4090_defaults": {
+      "num_envs": 1,
+      "num_runs_first_pass": 1,
+      "video_mode": "all",
+      "record_image_data": false
+    }
+  },
+  "tasks": [
+    {
+      "index": 0,
+      "task_name": "AnimalsInBinTask",
+      "instruction": "Put the lizards in the bin",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "90",
+      "scene": "toys_cleanup.usda",
+      "filename": "benchmark/animals_in_bin.py",
+      "contact_objects": [
+        "table",
+        "rubiks_cube",
+        "rubiks_cube_1",
+        "rubiks_cube_2",
+        "grey_bin",
+        "lizard_figurine",
+        "birdhouse",
+        "yellow_block",
+        "red_block",
+        "green_block",
+        "blue_block",
+        "lizard_figurine_01"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "lizard_figurine",
+        "lizard_figurine_01"
+      ]
+    },
+    {
+      "index": 1,
+      "task_name": "AppleAndYogurtInBowlTask",
+      "instruction": "Put the apple and yogurt in the bowl",
+      "axes": [
+        "procedural"
+      ],
+      "attributes": [
+        "affordance"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 4,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "120",
+      "scene": "workdesk_snacks.usda",
+      "filename": "benchmark/apple_and_yogurt_in_bowl_task.py",
+      "contact_objects": [
+        "ceramic_mug",
+        "glasses",
+        "keyboard",
+        "marker",
+        "remote_control",
+        "smartphone",
+        "wooden_bowl",
+        "spoon_big",
+        "computer_mouse",
+        "yogurt_cup",
+        "pitcher",
+        "plasticpail_a02",
+        "apple_01",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "apple_01",
+        "yogurt_cup"
+      ]
+    },
+    {
+      "index": 2,
+      "task_name": "BagelsOnPlateTask",
+      "instruction": "Put the bagels on the plate",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "60",
+      "scene": "bagel_plate_banana_bowl.usda",
+      "filename": "benchmark/bagel_on_plate_task.py",
+      "contact_objects": [
+        "bagel_00",
+        "bagel_06",
+        "banana",
+        "bowl",
+        "plate_large",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "bagel_00",
+        "bagel_06"
+      ]
+    },
+    {
+      "index": 3,
+      "task_name": "BananaInBowlTask",
+      "instruction": "Pick up the banana and place it in the bowl",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "50",
+      "scene": "banana_bowl.usda",
+      "filename": "benchmark/banana_in_bowl_task.py",
+      "contact_objects": [
+        "banana",
+        "bowl",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "banana"
+      ]
+    },
+    {
+      "index": 4,
+      "task_name": "BananaOnPlateTask",
+      "instruction": "Pick up the banana and put it on the plate",
+      "axes": [],
+      "attributes": [],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "40",
+      "scene": "bagel_plate_banana_bowl.usda",
+      "filename": "benchmark/banana_on_plate_task.py",
+      "contact_objects": [
+        "bagel_00",
+        "bagel_06",
+        "banana",
+        "bowl",
+        "plate_large",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "banana"
+      ]
+    },
+    {
+      "index": 5,
+      "task_name": "BananasInBinOneMoreTask",
+      "instruction": "Put one (1) more bananas in the grey bin.",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "counting"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 3,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "bananas_5_grey_bin.usda",
+      "filename": "benchmark/bananas_in_bin_one_more.py",
+      "contact_objects": [
+        "banana",
+        "banana_01",
+        "banana_02",
+        "banana_03",
+        "banana_04",
+        "grey_bin",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "banana",
+        "banana_01",
+        "banana_03"
+      ]
+    },
+    {
+      "index": 6,
+      "task_name": "BananasInBinThreeTotalTask",
+      "instruction": "Make sure there are 3 (three) bananas in the grey bin.",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "counting"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 3,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "bananas_5_grey_bin.usda",
+      "filename": "benchmark/bananas_in_bin_three.py",
+      "contact_objects": [
+        "banana",
+        "banana_01",
+        "banana_02",
+        "banana_03",
+        "banana_04",
+        "grey_bin",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "banana",
+        "banana_01",
+        "banana_03"
+      ]
+    },
+    {
+      "index": 7,
+      "task_name": "BananasInCrateTask",
+      "instruction": "Put 2 bananas in the crate",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "counting"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 3,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "bananas_5_in_crate.usda",
+      "filename": "benchmark/bananas_in_crate.py",
+      "contact_objects": [
+        "banana",
+        "banana_01",
+        "banana_02",
+        "banana_03",
+        "banana_04",
+        "purple_crate",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "banana",
+        "banana_02",
+        "banana_03",
+        "banana_04"
+      ]
+    },
+    {
+      "index": 8,
+      "task_name": "BananasOutOfBinTask",
+      "instruction": "Take the bananas out",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "spatial"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 3,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 6,
+      "episode_s": "90",
+      "scene": "bananas_5_grey_bin.usda",
+      "filename": "benchmark/bananas_out_of_bin.py",
+      "contact_objects": [
+        "banana",
+        "banana_01",
+        "banana_02",
+        "banana_03",
+        "banana_04",
+        "grey_bin",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "banana_02",
+        "banana_04"
+      ]
+    },
+    {
+      "index": 9,
+      "task_name": "BananaThenRubiksCubeTask",
+      "instruction": "put the banana then the cube in the bowl",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "conjunction"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "60",
+      "scene": "rubiks_cube_banana_bowl.usda",
+      "filename": "benchmark/banana_then_rubiks_cube.py",
+      "contact_objects": [
+        "rubiks_cube",
+        "banana",
+        "bowl",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "banana",
+        "rubiks_cube"
+      ]
+    },
+    {
+      "index": 10,
+      "task_name": "BBQSauceInBinTask",
+      "instruction": "Put the red BBQ sauce bottles in the grey bin",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "color",
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "90",
+      "scene": "bin_condiments.usda",
+      "filename": "benchmark/bbq_sauce_in_bin_task.py",
+      "contact_objects": [
+        "grey_bin",
+        "mug",
+        "mustard",
+        "bowl",
+        "ranch_dressing",
+        "bbq_sauce_bottle",
+        "oatmeal_raisin_cookies",
+        "canned_tuna",
+        "soft_scrub",
+        "wood_block",
+        "coffee_pot",
+        "bbq_sauce_bottle_01",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "bbq_sauce_bottle",
+        "bbq_sauce_bottle_01"
+      ]
+    },
+    {
+      "index": 11,
+      "task_name": "BigPumpkinInBinTask",
+      "instruction": "Put the bigger pumpkin in the bin",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "size"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "clutter_fruit_bottle_bluebin.usda",
+      "filename": "benchmark/clutter_big_pumpkin_task.py",
+      "contact_objects": [
+        "lemon_01",
+        "lemon_02",
+        "lime01",
+        "lime01_01",
+        "orange_01",
+        "orange_02",
+        "pomegranate01",
+        "pumpkinlarge",
+        "pumpkinsmall",
+        "red_onion",
+        "whitepackerbottle_a01",
+        "avocado01",
+        "crabbypenholder",
+        "milkjug_a01",
+        "serving_bowl",
+        "utilityjug_a03",
+        "right_bin",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "pumpkinlarge"
+      ]
+    },
+    {
+      "index": 12,
+      "task_name": "BlackItemsInBinTask",
+      "instruction": "Put the black items in the grey bin",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "color",
+        "sorting"
+      ],
+      "difficulty_label": "complex",
+      "difficulty_score": 7,
+      "num_subtasks": 5,
+      "num_atomic_conditions": 10,
+      "episode_s": "120",
+      "scene": "workdesk_bin.usda",
+      "filename": "benchmark/black_items_in_bin.py",
+      "contact_objects": [
+        "ceramic_mug",
+        "glasses",
+        "keyboard",
+        "lizard_figurine",
+        "marker",
+        "remote_control",
+        "smartphone",
+        "wooden_bowl",
+        "spoon_big",
+        "computer_mouse",
+        "yogurt_cup",
+        "granola_bars",
+        "grey_bin",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "keyboard",
+        "remote_control",
+        "computer_mouse",
+        "smartphone",
+        "glasses"
+      ]
+    },
+    {
+      "index": 13,
+      "task_name": "BlocksInBinTask",
+      "instruction": "Sort all colored blocks into the bin",
+      "axes": [
+        "procedural"
+      ],
+      "attributes": [
+        "sorting"
+      ],
+      "difficulty_label": "complex",
+      "difficulty_score": 6,
+      "num_subtasks": 4,
+      "num_atomic_conditions": 8,
+      "episode_s": "150",
+      "scene": "toys_cleanup.usda",
+      "filename": "benchmark/blocks_in_bin.py",
+      "contact_objects": [
+        "table",
+        "rubiks_cube",
+        "rubiks_cube_1",
+        "rubiks_cube_2",
+        "grey_bin",
+        "lizard_figurine",
+        "birdhouse",
+        "yellow_block",
+        "red_block",
+        "green_block",
+        "blue_block",
+        "lizard_figurine_01"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "yellow_block",
+        "red_block",
+        "green_block",
+        "blue_block"
+      ]
+    },
+    {
+      "index": 14,
+      "task_name": "BlockStackingOrderAgnosticTask",
+      "instruction": "Stack the blocks into a tower",
+      "axes": [
+        "procedural"
+      ],
+      "attributes": [
+        "stacking"
+      ],
+      "difficulty_label": "complex",
+      "difficulty_score": 5,
+      "num_subtasks": 3,
+      "num_atomic_conditions": 3,
+      "episode_s": "90",
+      "scene": "colored_blocks.usda",
+      "filename": "benchmark/block_stacking_order_agnostic_task.py",
+      "contact_objects": [
+        "red_block",
+        "blue_block",
+        "green_block",
+        "yellow_block",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "red_blue",
+        "red_green",
+        "red_yellow",
+        "blue_green",
+        "blue_yellow",
+        "green_yellow",
+        "red_blue_green",
+        "red_blue_yellow",
+        "red_green_yellow",
+        "blue_green_yellow"
+      ]
+    },
+    {
+      "index": 15,
+      "task_name": "BlockStackingSpecifiedOrderTask",
+      "instruction": "Stack the blocks in the order from bottom to top: red, blue, green, yellow",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "stacking",
+        "color"
+      ],
+      "difficulty_label": "complex",
+      "difficulty_score": 5,
+      "num_subtasks": 3,
+      "num_atomic_conditions": 3,
+      "episode_s": "90",
+      "scene": "colored_blocks.usda",
+      "filename": "benchmark/block_stacking_specified_order_task.py",
+      "contact_objects": [
+        "red_block",
+        "blue_block",
+        "green_block",
+        "yellow_block",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "red_block",
+        "blue_block",
+        "green_block",
+        "yellow_block"
+      ]
+    },
+    {
+      "index": 16,
+      "task_name": "BowlInBinTask",
+      "instruction": "put the bowl in the grey bin",
+      "axes": [],
+      "attributes": [],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "bin_mug_mustard_marker_bowl.usda",
+      "filename": "benchmark/bowl_in_bin_task.py",
+      "contact_objects": [
+        "mustard",
+        "bowl",
+        "dry_erase_marker",
+        "mug",
+        "grey_bin",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "bowl"
+      ]
+    },
+    {
+      "index": 17,
+      "task_name": "BowlStackingLeftOnRightTask",
+      "instruction": "Stack the left bowl on the right bowl",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "spatial"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 1,
+      "episode_s": "20",
+      "scene": "bowls_2_table.usda",
+      "filename": "benchmark/bowl_stacking_left_on_right.py",
+      "contact_objects": [
+        "bowl_1",
+        "bowl_2",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "bowl_1",
+        "bowl_2"
+      ]
+    },
+    {
+      "index": 18,
+      "task_name": "BowlStackingRightOnLeftTask",
+      "instruction": "Stack the right bowl on the left bowl",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "spatial"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 1,
+      "episode_s": "20",
+      "scene": "bowls_2_table.usda",
+      "filename": "benchmark/bowl_stacking_right_on_left.py",
+      "contact_objects": [
+        "bowl_1",
+        "bowl_2",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "bowl_1",
+        "bowl_2"
+      ]
+    },
+    {
+      "index": 19,
+      "task_name": "ButterAboveRaisinTask",
+      "instruction": "Pick up the butter box and place it on top of the raisin box",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "spatial"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "40",
+      "scene": "butter_raisin_box.usda",
+      "filename": "benchmark/butter_above_raisin_task.py",
+      "contact_objects": [
+        "butter",
+        "raisin_box",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "butter"
+      ]
+    },
+    {
+      "index": 20,
+      "task_name": "CannedFoodInBinTask",
+      "instruction": "Put the canned food in the grey bin",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "bin_condiments.usda",
+      "filename": "benchmark/canned_food_in_bin_task.py",
+      "contact_objects": [
+        "grey_bin",
+        "mug",
+        "mustard",
+        "bowl",
+        "ranch_dressing",
+        "bbq_sauce_bottle",
+        "oatmeal_raisin_cookies",
+        "canned_tuna",
+        "soft_scrub",
+        "wood_block",
+        "coffee_pot",
+        "bbq_sauce_bottle_01",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "canned_tuna"
+      ]
+    },
+    {
+      "index": 21,
+      "task_name": "ClampInRightBinTask",
+      "instruction": "Put the spring clamp in the right bin",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "spatial"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "tools_container.usda",
+      "filename": "benchmark/clamp_in_right_bin.py",
+      "contact_objects": [
+        "left_bin",
+        "right_bin",
+        "red_hammer",
+        "husky_hammer",
+        "cordless_drill",
+        "spring_clamp",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "spring_clamp"
+      ]
+    },
+    {
+      "index": 22,
+      "task_name": "CleanUpToysTask",
+      "instruction": "Clean up all the smaller toys and leave the birdhouse on the table",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "sorting",
+        "semantics"
+      ],
+      "difficulty_label": "complex",
+      "difficulty_score": 11,
+      "num_subtasks": 9,
+      "num_atomic_conditions": 18,
+      "episode_s": "300",
+      "scene": "toys_cleanup.usda",
+      "filename": "benchmark/clean_up_toys.py",
+      "contact_objects": [
+        "table",
+        "rubiks_cube",
+        "rubiks_cube_1",
+        "rubiks_cube_2",
+        "grey_bin",
+        "lizard_figurine",
+        "birdhouse",
+        "yellow_block",
+        "red_block",
+        "green_block",
+        "blue_block",
+        "lizard_figurine_01"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube",
+        "rubiks_cube_1",
+        "rubiks_cube_2",
+        "lizard_figurine",
+        "yellow_block",
+        "red_block",
+        "green_block",
+        "blue_block",
+        "lizard_figurine_01"
+      ]
+    },
+    {
+      "index": 23,
+      "task_name": "ClearOrganicObjectsTask",
+      "instruction": "Clear away the organic objects",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "complex",
+      "difficulty_score": 11,
+      "num_subtasks": 11,
+      "num_atomic_conditions": 22,
+      "episode_s": "240",
+      "scene": "clutter_fruit_bottle_bluebin.usda",
+      "filename": "benchmark/clutter_organic_objects_task.py",
+      "contact_objects": [
+        "lemon_01",
+        "lemon_02",
+        "lime01",
+        "lime01_01",
+        "orange_01",
+        "orange_02",
+        "pomegranate01",
+        "pumpkinlarge",
+        "pumpkinsmall",
+        "red_onion",
+        "whitepackerbottle_a01",
+        "avocado01",
+        "crabbypenholder",
+        "milkjug_a01",
+        "serving_bowl",
+        "utilityjug_a03",
+        "right_bin",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "lemon_01",
+        "lemon_02",
+        "lime01",
+        "lime01_01",
+        "orange_01",
+        "orange_02",
+        "pomegranate01",
+        "pumpkinlarge",
+        "pumpkinsmall",
+        "red_onion",
+        "avocado01"
+      ]
+    },
+    {
+      "index": 24,
+      "task_name": "ClutterPlasticTask",
+      "instruction": "Put all plastic bottles away in the bin",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 3,
+      "num_subtasks": 3,
+      "num_atomic_conditions": 6,
+      "episode_s": "180",
+      "scene": "clutter_fruit_bottle_bluebin.usda",
+      "filename": "benchmark/clutter_plastic_task.py",
+      "contact_objects": [
+        "lemon_01",
+        "lemon_02",
+        "lime01",
+        "lime01_01",
+        "orange_01",
+        "orange_02",
+        "pomegranate01",
+        "pumpkinlarge",
+        "pumpkinsmall",
+        "red_onion",
+        "whitepackerbottle_a01",
+        "avocado01",
+        "crabbypenholder",
+        "milkjug_a01",
+        "serving_bowl",
+        "utilityjug_a03",
+        "right_bin",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "whitepackerbottle_a01",
+        "milkjug_a01",
+        "utilityjug_a03"
+      ]
+    },
+    {
+      "index": 25,
+      "task_name": "ClutterPumpkinTask",
+      "instruction": "Put all the pumpkins away in the bin",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "90",
+      "scene": "clutter_fruit_bottle_bluebin.usda",
+      "filename": "benchmark/clutter_pumpkin_task.py",
+      "contact_objects": [
+        "lemon_01",
+        "lemon_02",
+        "lime01",
+        "lime01_01",
+        "orange_01",
+        "orange_02",
+        "pomegranate01",
+        "pumpkinlarge",
+        "pumpkinsmall",
+        "red_onion",
+        "whitepackerbottle_a01",
+        "avocado01",
+        "crabbypenholder",
+        "milkjug_a01",
+        "serving_bowl",
+        "utilityjug_a03",
+        "right_bin",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "pumpkinlarge",
+        "pumpkinsmall"
+      ]
+    },
+    {
+      "index": 26,
+      "task_name": "CoffeePotInBinTask",
+      "instruction": "Put the coffee pot in the grey bin",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "bin_condiments.usda",
+      "filename": "benchmark/coffee_pot_in_bin.py",
+      "contact_objects": [
+        "grey_bin",
+        "mug",
+        "mustard",
+        "bowl",
+        "ranch_dressing",
+        "bbq_sauce_bottle",
+        "oatmeal_raisin_cookies",
+        "canned_tuna",
+        "soft_scrub",
+        "wood_block",
+        "coffee_pot",
+        "bbq_sauce_bottle_01",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "coffee_pot"
+      ]
+    },
+    {
+      "index": 27,
+      "task_name": "CondimentsInBinTask",
+      "instruction": "Sort the sauce condiments into the grey bin",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "sorting"
+      ],
+      "difficulty_label": "complex",
+      "difficulty_score": 6,
+      "num_subtasks": 4,
+      "num_atomic_conditions": 8,
+      "episode_s": "180",
+      "scene": "bin_condiments.usda",
+      "filename": "benchmark/condiments_in_bin_task.py",
+      "contact_objects": [
+        "grey_bin",
+        "mug",
+        "mustard",
+        "bowl",
+        "ranch_dressing",
+        "bbq_sauce_bottle",
+        "oatmeal_raisin_cookies",
+        "canned_tuna",
+        "soft_scrub",
+        "wood_block",
+        "coffee_pot",
+        "bbq_sauce_bottle_01",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "mustard",
+        "ranch_dressing",
+        "bbq_sauce_bottle",
+        "bbq_sauce_bottle_01"
+      ]
+    },
+    {
+      "index": 28,
+      "task_name": "CookingClearPlateTask",
+      "instruction": "Put the two measuring cups outside of the plate",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "color",
+        "sorting"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 4,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "180",
+      "scene": "cooking_table.usda",
+      "filename": "benchmark/cooking_clear_plate_specific.py",
+      "contact_objects": [
+        "table",
+        "redonion",
+        "serving_bowl",
+        "clay_plates",
+        "wooden_spoons",
+        "spatula",
+        "storage_box",
+        "tomato_sauce_can",
+        "measuring_cups_1",
+        "pink_spaghetti_spoon",
+        "spoon_1",
+        "green_serving_spoon",
+        "storage_box_01",
+        "ladle",
+        "wooden_bowl",
+        "potato_masher"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "spoon_1",
+        "measuring_cups_1"
+      ]
+    },
+    {
+      "index": 29,
+      "task_name": "CookingPickPastaToolTask",
+      "instruction": "Move the pink tool from this utensil container to the other utensil holder",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "spatial",
+        "vague",
+        "color"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "cooking_table.usda",
+      "filename": "benchmark/cooking_pick_pasta_tool.py",
+      "contact_objects": [
+        "table",
+        "redonion",
+        "serving_bowl",
+        "clay_plates",
+        "wooden_spoons",
+        "spatula",
+        "storage_box",
+        "tomato_sauce_can",
+        "measuring_cups_1",
+        "pink_spaghetti_spoon",
+        "spoon_1",
+        "green_serving_spoon",
+        "storage_box_01",
+        "ladle",
+        "wooden_bowl",
+        "potato_masher"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "pink_spaghetti_spoon"
+      ]
+    },
+    {
+      "index": 30,
+      "task_name": "CubesAndBlocksInBinTask",
+      "instruction": "Put all the cubes and blocks in the bin",
+      "axes": [
+        "procedural",
+        "relational"
+      ],
+      "attributes": [
+        "sorting",
+        "conjunction"
+      ],
+      "difficulty_label": "complex",
+      "difficulty_score": 9,
+      "num_subtasks": 7,
+      "num_atomic_conditions": 14,
+      "episode_s": "240",
+      "scene": "toys_cleanup.usda",
+      "filename": "benchmark/cubes_and_blocks_in_bin.py",
+      "contact_objects": [
+        "table",
+        "rubiks_cube",
+        "rubiks_cube_1",
+        "rubiks_cube_2",
+        "grey_bin",
+        "lizard_figurine",
+        "birdhouse",
+        "yellow_block",
+        "red_block",
+        "green_block",
+        "blue_block",
+        "lizard_figurine_01"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube",
+        "rubiks_cube_1",
+        "rubiks_cube_2",
+        "yellow_block",
+        "red_block",
+        "green_block",
+        "blue_block"
+      ]
+    },
+    {
+      "index": 31,
+      "task_name": "DishesInBinTask",
+      "instruction": "Put the dishware in the grey bin",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "vague",
+        "semantics"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 3,
+      "num_subtasks": 3,
+      "num_atomic_conditions": 6,
+      "episode_s": "180",
+      "scene": "mugs2_bananas2_ketchup_rubiks3_bin.usda",
+      "filename": "benchmark/dishes_in_bin.py",
+      "contact_objects": [
+        "mug",
+        "mug_01",
+        "bowl",
+        "grey_bin",
+        "table",
+        "banana_near",
+        "banana_far",
+        "rubiks_cube_top",
+        "rubiks_cube_middle",
+        "rubiks_cube_bottom",
+        "ketchup_bottle"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "mug",
+        "mug_01",
+        "bowl"
+      ]
+    },
+    {
+      "index": 32,
+      "task_name": "ElectronicsInBinTask",
+      "instruction": "Put the electronic devices in the grey bin",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "sorting"
+      ],
+      "difficulty_label": "complex",
+      "difficulty_score": 6,
+      "num_subtasks": 4,
+      "num_atomic_conditions": 8,
+      "episode_s": "180",
+      "scene": "workdesk_bin.usda",
+      "filename": "benchmark/electronics_in_bin_task.py",
+      "contact_objects": [
+        "ceramic_mug",
+        "glasses",
+        "keyboard",
+        "lizard_figurine",
+        "marker",
+        "remote_control",
+        "smartphone",
+        "wooden_bowl",
+        "spoon_big",
+        "computer_mouse",
+        "yogurt_cup",
+        "granola_bars",
+        "grey_bin",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "smartphone",
+        "remote_control",
+        "computer_mouse",
+        "keyboard"
+      ]
+    },
+    {
+      "index": 33,
+      "task_name": "FoodPacking1BoxesTask",
+      "instruction": "Pack boxed foods into the bin",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "foodpacking_1bin_1box_1can.usda",
+      "filename": "benchmark/foodpacking_1bin_1box.py",
+      "contact_objects": [
+        "bin_a06",
+        "cheez_it",
+        "mustard",
+        "tomato_soup_can",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "cheez_it"
+      ]
+    },
+    {
+      "index": 34,
+      "task_name": "FoodPacking1CansTask",
+      "instruction": "Pack canned foods into the bin",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "foodpacking_1bin_1box_1can.usda",
+      "filename": "benchmark/foodpacking_1bin_1can.py",
+      "contact_objects": [
+        "bin_a06",
+        "cheez_it",
+        "mustard",
+        "tomato_soup_can",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "tomato_soup_can"
+      ]
+    },
+    {
+      "index": 35,
+      "task_name": "FoodPacking2BoxesTask",
+      "instruction": "Pack boxed foods into the bin",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "180",
+      "scene": "foodpacking_1bin_2box_2can.usda",
+      "filename": "benchmark/foodpacking_1bin_2box.py",
+      "contact_objects": [
+        "bin_a06",
+        "cheez_it",
+        "mustard",
+        "sugar_box",
+        "tomato_soup_can",
+        "tuna_can",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "cheez_it",
+        "sugar_box"
+      ]
+    },
+    {
+      "index": 36,
+      "task_name": "FoodPacking2CansTask",
+      "instruction": "Pack canned foods into the bin",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "180",
+      "scene": "foodpacking_1bin_2box_2can.usda",
+      "filename": "benchmark/foodpacking_1bin_2can.py",
+      "contact_objects": [
+        "bin_a06",
+        "cheez_it",
+        "mustard",
+        "sugar_box",
+        "tomato_soup_can",
+        "tuna_can",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "tomato_soup_can",
+        "tuna_can"
+      ]
+    },
+    {
+      "index": 37,
+      "task_name": "FoodPacking3BoxesTask",
+      "instruction": "Pack boxed foods into the bin",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 3,
+      "num_subtasks": 3,
+      "num_atomic_conditions": 6,
+      "episode_s": "240",
+      "scene": "foodpacking_1bin_3box_3can.usda",
+      "filename": "benchmark/foodpacking_1bin_3box.py",
+      "contact_objects": [
+        "bin_a06",
+        "cheez_it",
+        "chocolate_pudding",
+        "mustard",
+        "spam_can",
+        "sugar_box",
+        "tomato_soup_can",
+        "tuna_can",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "cheez_it",
+        "chocolate_pudding",
+        "sugar_box"
+      ]
+    },
+    {
+      "index": 38,
+      "task_name": "FoodPacking3CansTask",
+      "instruction": "Pack canned foods into the bin",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 3,
+      "num_subtasks": 3,
+      "num_atomic_conditions": 6,
+      "episode_s": "240",
+      "scene": "foodpacking_1bin_3box_3can.usda",
+      "filename": "benchmark/foodpacking_1bin_3can.py",
+      "contact_objects": [
+        "bin_a06",
+        "cheez_it",
+        "chocolate_pudding",
+        "mustard",
+        "spam_can",
+        "sugar_box",
+        "tomato_soup_can",
+        "tuna_can",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "spam_can",
+        "tomato_soup_can",
+        "tuna_can"
+      ]
+    },
+    {
+      "index": 39,
+      "task_name": "FoodPackingByColorTask",
+      "instruction": "Pack yellow objects in right container and blue object in the left container",
+      "axes": [
+        "procedural",
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "spatial",
+        "sorting",
+        "color"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 4,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "120",
+      "scene": "food_packing.usda",
+      "filename": "benchmark/food_packing_by_color_task.py",
+      "contact_objects": [
+        "bin_a06",
+        "cheez_it",
+        "chocolate_pudding",
+        "coffee_can",
+        "mustard",
+        "spam_can",
+        "sugar_box",
+        "tomato_soup_can",
+        "bin_b03",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "mustard",
+        "coffee_can"
+      ]
+    },
+    {
+      "index": 40,
+      "task_name": "FruitsGreenLimesOnPlateTask",
+      "instruction": "Put all the green fruit on the plate",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "color"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "90",
+      "scene": "fruits_out_of_basket.usda",
+      "filename": "benchmark/fruits_green_limes_on_plate.py",
+      "contact_objects": [
+        "table",
+        "lemon_01",
+        "lemon_02",
+        "lime01",
+        "lime01_01",
+        "orange_01",
+        "orange_02",
+        "pomegranate01",
+        "pumpkinlarge",
+        "pumpkinsmall",
+        "redonion",
+        "serving_bowl",
+        "clay_plates",
+        "wooden_spoons",
+        "spatula",
+        "storage_box"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "lime01",
+        "lime01_01"
+      ]
+    },
+    {
+      "index": 41,
+      "task_name": "FruitsMovingOrangeOrLimeTask",
+      "instruction": "Move an orange or a lime to the wood bowl",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "conjunction"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "fruits_in_basket.usda",
+      "filename": "benchmark/fruits_move_orange_or_lime.py",
+      "contact_objects": [
+        "table",
+        "lemon_01",
+        "lemon_02",
+        "lime01",
+        "lime01_01",
+        "orange_01",
+        "orange_02",
+        "pomegranate01",
+        "pumpkinlarge",
+        "pumpkinsmall",
+        "redonion",
+        "serving_bowl",
+        "clay_plates",
+        "wooden_bowl",
+        "wooden_spoons",
+        "spatula",
+        "storage_box"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "orange_01",
+        "lime01",
+        "orange_02",
+        "lime01_01"
+      ]
+    },
+    {
+      "index": 42,
+      "task_name": "FruitsMovingTask",
+      "instruction": "Move an orange to the white bowl",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "color"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "fruits_in_basket.usda",
+      "filename": "benchmark/fruits_move_orange.py",
+      "contact_objects": [
+        "table",
+        "lemon_01",
+        "lemon_02",
+        "lime01",
+        "lime01_01",
+        "orange_01",
+        "orange_02",
+        "pomegranate01",
+        "pumpkinlarge",
+        "pumpkinsmall",
+        "redonion",
+        "serving_bowl",
+        "clay_plates",
+        "wooden_bowl",
+        "wooden_spoons",
+        "spatula",
+        "storage_box"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "orange_01",
+        "orange_02"
+      ]
+    },
+    {
+      "index": 43,
+      "task_name": "FruitsOnionTask",
+      "instruction": "Put the onion in the wood bowl",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "fruits_in_basket.usda",
+      "filename": "benchmark/fruits_onion_to_bowl.py",
+      "contact_objects": [
+        "table",
+        "lemon_01",
+        "lemon_02",
+        "lime01",
+        "lime01_01",
+        "orange_01",
+        "orange_02",
+        "pomegranate01",
+        "pumpkinlarge",
+        "pumpkinsmall",
+        "redonion",
+        "serving_bowl",
+        "clay_plates",
+        "wooden_bowl",
+        "wooden_spoons",
+        "spatula",
+        "storage_box"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "redonion"
+      ]
+    },
+    {
+      "index": 44,
+      "task_name": "FruitsOnionToPlateTask",
+      "instruction": "Put the onion on the plate",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "vague"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "fruits_in_basket.usda",
+      "filename": "benchmark/fruits_onion_to_plate.py",
+      "contact_objects": [
+        "table",
+        "lemon_01",
+        "lemon_02",
+        "lime01",
+        "lime01_01",
+        "orange_01",
+        "orange_02",
+        "pomegranate01",
+        "pumpkinlarge",
+        "pumpkinsmall",
+        "redonion",
+        "serving_bowl",
+        "clay_plates",
+        "wooden_bowl",
+        "wooden_spoons",
+        "spatula",
+        "storage_box"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "redonion"
+      ]
+    },
+    {
+      "index": 45,
+      "task_name": "FruitsOnPlate3Task",
+      "instruction": "Put three (3) fruits on the plate",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "vague",
+        "counting"
+      ],
+      "difficulty_label": "complex",
+      "difficulty_score": 5,
+      "num_subtasks": 3,
+      "num_atomic_conditions": 6,
+      "episode_s": "200",
+      "scene": "fruits_out_of_basket.usda",
+      "filename": "benchmark/fruits_to_plate_3.py",
+      "contact_objects": [
+        "table",
+        "lemon_01",
+        "lemon_02",
+        "lime01",
+        "lime01_01",
+        "orange_01",
+        "orange_02",
+        "pomegranate01",
+        "pumpkinlarge",
+        "pumpkinsmall",
+        "redonion",
+        "serving_bowl",
+        "clay_plates",
+        "wooden_spoons",
+        "spatula",
+        "storage_box"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "lemon_01",
+        "lemon_02",
+        "lime01",
+        "lime01_01",
+        "orange_01",
+        "orange_02",
+        "pomegranate01"
+      ]
+    },
+    {
+      "index": 46,
+      "task_name": "FruitsOnPlateTask",
+      "instruction": "Put all the fruits on the plate",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "vague"
+      ],
+      "difficulty_label": "complex",
+      "difficulty_score": 7,
+      "num_subtasks": 7,
+      "num_atomic_conditions": 14,
+      "episode_s": "300",
+      "scene": "fruits_out_of_basket.usda",
+      "filename": "benchmark/fruits_to_plate.py",
+      "contact_objects": [
+        "table",
+        "lemon_01",
+        "lemon_02",
+        "lime01",
+        "lime01_01",
+        "orange_01",
+        "orange_02",
+        "pomegranate01",
+        "pumpkinlarge",
+        "pumpkinsmall",
+        "redonion",
+        "serving_bowl",
+        "clay_plates",
+        "wooden_spoons",
+        "spatula",
+        "storage_box"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "lemon_01",
+        "lemon_02",
+        "lime01",
+        "lime01_01",
+        "orange_01",
+        "orange_02",
+        "pomegranate01"
+      ]
+    },
+    {
+      "index": 47,
+      "task_name": "FruitsOrangesOnPlateTask",
+      "instruction": "Put all the oranges on the plate",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "counting",
+        "vague",
+        "semantics"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 4,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "90",
+      "scene": "fruits_out_of_basket.usda",
+      "filename": "benchmark/fruits_oranges_on_plate.py",
+      "contact_objects": [
+        "table",
+        "lemon_01",
+        "lemon_02",
+        "lime01",
+        "lime01_01",
+        "orange_01",
+        "orange_02",
+        "pomegranate01",
+        "pumpkinlarge",
+        "pumpkinsmall",
+        "redonion",
+        "serving_bowl",
+        "clay_plates",
+        "wooden_spoons",
+        "spatula",
+        "storage_box"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "orange_01",
+        "orange_02"
+      ]
+    },
+    {
+      "index": 48,
+      "task_name": "GrabABagelTask",
+      "instruction": "Grab a bagel",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 1,
+      "episode_s": "30",
+      "scene": "breakfast_table.usda",
+      "filename": "benchmark/grab_a_bagel.py",
+      "contact_objects": [
+        "table",
+        "bowl",
+        "banana",
+        "bagel_07",
+        "coffee_can",
+        "banana_01",
+        "yogurt_cup",
+        "coffee_pot",
+        "ceramic_mug",
+        "pitcher",
+        "fork_big",
+        "spoon_big",
+        "apple_01",
+        "orange2",
+        "milk_carton",
+        "orange_juice_carton",
+        "bagel_01",
+        "bagel_02",
+        "plate_small",
+        "plate_large"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "banana",
+        "bagel_07",
+        "coffee_can",
+        "banana_01"
+      ]
+    },
+    {
+      "index": 49,
+      "task_name": "GrabAFruitTask",
+      "instruction": "Pick up a fruit",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 1,
+      "episode_s": "30",
+      "scene": "breakfast_table.usda",
+      "filename": "benchmark/grab_a_fruit.py",
+      "contact_objects": [
+        "table",
+        "bowl",
+        "banana",
+        "bagel_07",
+        "coffee_can",
+        "banana_01",
+        "yogurt_cup",
+        "coffee_pot",
+        "ceramic_mug",
+        "pitcher",
+        "fork_big",
+        "spoon_big",
+        "apple_01",
+        "orange2",
+        "milk_carton",
+        "orange_juice_carton",
+        "bagel_01",
+        "bagel_02",
+        "plate_small",
+        "plate_large"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "banana",
+        "bagel_07",
+        "coffee_can",
+        "banana_01"
+      ]
+    },
+    {
+      "index": 50,
+      "task_name": "GreenSpoonsInPotTask",
+      "instruction": "Put the green spoons in the pot",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "reorientation",
+        "color"
+      ],
+      "difficulty_label": "complex",
+      "difficulty_score": 6,
+      "num_subtasks": 3,
+      "num_atomic_conditions": 6,
+      "episode_s": "180",
+      "scene": "ladle_pot.usda",
+      "filename": "benchmark/green_spoons_in_pot.py",
+      "contact_objects": [
+        "table",
+        "anza_medium",
+        "ladle",
+        "plate_large",
+        "plate_small",
+        "fork_big",
+        "fork_small",
+        "spatula_13",
+        "spatula_14",
+        "spatula_15",
+        "pink_spaghetti_spoon",
+        "ladle_01",
+        "red_serving_spoon",
+        "green_serving_spoon"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "ladle",
+        "ladle_01",
+        "green_serving_spoon"
+      ]
+    },
+    {
+      "index": 51,
+      "task_name": "HammersInLeftBinTask",
+      "instruction": "Put the red hammer and black hammer in the left bin",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "spatial",
+        "color"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 3,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "180",
+      "scene": "tools_container.usda",
+      "filename": "benchmark/tool_organization_left_task.py",
+      "contact_objects": [
+        "left_bin",
+        "right_bin",
+        "red_hammer",
+        "husky_hammer",
+        "cordless_drill",
+        "spring_clamp",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "red_hammer",
+        "husky_hammer"
+      ]
+    },
+    {
+      "index": 52,
+      "task_name": "JugsOnShelfTask",
+      "instruction": "Put all the jugs on the shelf",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "120",
+      "scene": "shelf_with_cleaning_products.usda",
+      "filename": "benchmark/jugs_on_shelf_task.py",
+      "contact_objects": [
+        "large_storage_rack",
+        "whitepackerbottle_a01",
+        "whitepackerbottle_a02",
+        "utilityjug_a01",
+        "utilityjug_a02",
+        "squarepail_a01",
+        "plasticpail_a02",
+        "whitepackerbottle_a03",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "utilityjug_a01",
+        "utilityjug_a02"
+      ]
+    },
+    {
+      "index": 53,
+      "task_name": "KeyboardOutOfBinTask",
+      "instruction": "Take the keyboard out of the bin and put it on the table",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "spatial"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "workdesk_bin.usda",
+      "filename": "benchmark/keyboard_out_of_bin_task.py",
+      "contact_objects": [
+        "ceramic_mug",
+        "glasses",
+        "keyboard",
+        "lizard_figurine",
+        "marker",
+        "remote_control",
+        "smartphone",
+        "wooden_bowl",
+        "spoon_big",
+        "computer_mouse",
+        "yogurt_cup",
+        "granola_bars",
+        "grey_bin",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "keyboard"
+      ]
+    },
+    {
+      "index": 54,
+      "task_name": "LargerObjectRaisinBoxInBinTask",
+      "instruction": "Place the larger object in the grey bin.",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "size"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "30",
+      "scene": "butter_raisin_box_grey_bin.usda",
+      "filename": "benchmark/bigger_object.py",
+      "contact_objects": [
+        "butter",
+        "grey_bin",
+        "raisin_box",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "raisin_box"
+      ]
+    },
+    {
+      "index": 55,
+      "task_name": "MarkerInMugTask",
+      "instruction": "Put the whiteboard marker in the mug",
+      "axes": [
+        "procedural"
+      ],
+      "attributes": [
+        "affordance"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 3,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "40",
+      "scene": "workdesk.usda",
+      "filename": "benchmark/marker_in_mug_task.py",
+      "contact_objects": [
+        "ceramic_mug",
+        "glasses",
+        "keyboard",
+        "lizard_figurine",
+        "marker",
+        "remote_control",
+        "rubiks_cube",
+        "smartphone",
+        "wooden_bowl",
+        "spoon_big",
+        "computer_mouse",
+        "yogurt_cup",
+        "oatmeal_raisin_cookies",
+        "granola_bars",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "marker"
+      ]
+    },
+    {
+      "index": 56,
+      "task_name": "MouseOnKeyboardTask",
+      "instruction": "Put the computer mouse on the keyboard",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "workdesk.usda",
+      "filename": "benchmark/mouse_on_keyboard.py",
+      "contact_objects": [
+        "ceramic_mug",
+        "glasses",
+        "keyboard",
+        "lizard_figurine",
+        "marker",
+        "remote_control",
+        "rubiks_cube",
+        "smartphone",
+        "wooden_bowl",
+        "spoon_big",
+        "computer_mouse",
+        "yogurt_cup",
+        "oatmeal_raisin_cookies",
+        "granola_bars",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "computer_mouse"
+      ]
+    },
+    {
+      "index": 57,
+      "task_name": "MoveBananaToBagelPlateTask",
+      "instruction": "Move the bananas to the bagel plate",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "90",
+      "scene": "breakfast_table.usda",
+      "filename": "benchmark/move_banana_to_bagel_plate.py",
+      "contact_objects": [
+        "table",
+        "bowl",
+        "banana",
+        "bagel_07",
+        "coffee_can",
+        "banana_01",
+        "yogurt_cup",
+        "coffee_pot",
+        "ceramic_mug",
+        "pitcher",
+        "fork_big",
+        "spoon_big",
+        "apple_01",
+        "orange2",
+        "milk_carton",
+        "orange_juice_carton",
+        "bagel_01",
+        "bagel_02",
+        "plate_small",
+        "plate_large"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "banana",
+        "banana_01"
+      ]
+    },
+    {
+      "index": 58,
+      "task_name": "MustardAboveRaisinTask",
+      "instruction": "Place the mustard on the raisin box. ",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "spatial"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "40",
+      "scene": "mustard_raisin_box.usda",
+      "filename": "benchmark/mustard_above_raisin_task.py",
+      "contact_objects": [
+        "mustard_bottle",
+        "raisin_box",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "mustard_bottle"
+      ]
+    },
+    {
+      "index": 59,
+      "task_name": "MustardInLeftBinTask",
+      "instruction": "Put the mustard in the left bin",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "spatial"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "30",
+      "scene": "two_bin.usda",
+      "filename": "benchmark/mustard_in_left_bin.py",
+      "contact_objects": [
+        "table",
+        "mustard",
+        "grey_bin_right",
+        "grey_bin_left"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "mustard"
+      ]
+    },
+    {
+      "index": 60,
+      "task_name": "MustardInRightBinTask",
+      "instruction": "Put the mustard in the right bin",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "spatial"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "30",
+      "scene": "two_bin.usda",
+      "filename": "benchmark/mustard_in_right_bin.py",
+      "contact_objects": [
+        "table",
+        "mustard",
+        "grey_bin_right",
+        "grey_bin_left"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "mustard"
+      ]
+    },
+    {
+      "index": 61,
+      "task_name": "NonHammerToolsInRightBinTask",
+      "instruction": "Put the non-hammer tools in the right bin",
+      "axes": [
+        "procedural",
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "spatial",
+        "sorting"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 4,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "180",
+      "scene": "tools_container.usda",
+      "filename": "benchmark/non_hammer_tools_in_right_bin.py",
+      "contact_objects": [
+        "left_bin",
+        "right_bin",
+        "red_hammer",
+        "husky_hammer",
+        "cordless_drill",
+        "spring_clamp",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "cordless_drill",
+        "spring_clamp"
+      ]
+    },
+    {
+      "index": 62,
+      "task_name": "OneBottleInSquarePailTask",
+      "instruction": "Put any white plastic bottle in the square pail",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "shelf_with_cleaning_products.usda",
+      "filename": "benchmark/one_bottle_in_square_pail.py",
+      "contact_objects": [
+        "squarepail_a01",
+        "whitepackerbottle_a01",
+        "whitepackerbottle_a02",
+        "utilityjug_a01",
+        "utilityjug_a02",
+        "plasticpail_a02",
+        "whitepackerbottle_a03",
+        "table",
+        "large_storage_rack"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "whitepackerbottle_a01",
+        "whitepackerbottle_a02",
+        "whitepackerbottle_a03"
+      ]
+    },
+    {
+      "index": 63,
+      "task_name": "OneBottleOnShelfTask",
+      "instruction": "Put any white plastic bottle on the shelf",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "shelf_with_cleaning_products.usda",
+      "filename": "benchmark/one_bottle_on_shelf_task.py",
+      "contact_objects": [
+        "large_storage_rack",
+        "whitepackerbottle_a01",
+        "whitepackerbottle_a02",
+        "utilityjug_a01",
+        "utilityjug_a02",
+        "squarepail_a01",
+        "plasticpail_a02",
+        "whitepackerbottle_a03",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "whitepackerbottle_a01",
+        "whitepackerbottle_a02",
+        "whitepackerbottle_a03"
+      ]
+    },
+    {
+      "index": 64,
+      "task_name": "PhoneOrRemoteInBinTask",
+      "instruction": "Put the phone or the remote in the grey bin",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "conjunction"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "workdesk_bin.usda",
+      "filename": "benchmark/phone_or_remote_in_bin_task.py",
+      "contact_objects": [
+        "ceramic_mug",
+        "glasses",
+        "keyboard",
+        "lizard_figurine",
+        "marker",
+        "remote_control",
+        "smartphone",
+        "wooden_bowl",
+        "spoon_big",
+        "computer_mouse",
+        "yogurt_cup",
+        "granola_bars",
+        "grey_bin",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "smartphone",
+        "remote_control"
+      ]
+    },
+    {
+      "index": 65,
+      "task_name": "PickDrillTask",
+      "instruction": "Pick up the cordless drill.",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 1,
+      "episode_s": "40",
+      "scene": "mugs4_measuringcup_drill_bowl.usda",
+      "filename": "benchmark/pick_drill.py",
+      "contact_objects": [
+        "red_mug",
+        "bowl",
+        "ceramic_mug",
+        "upright_white_mug",
+        "sideways_white_mug",
+        "cordless_drill",
+        "measuring_cup",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "red_mug",
+        "ceramic_mug",
+        "upright_white_mug",
+        "sideways_white_mug"
+      ]
+    },
+    {
+      "index": 66,
+      "task_name": "PickGlassesTask",
+      "instruction": "Pick up the eye glasses",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 2,
+      "episode_s": "30",
+      "scene": "workdesk.usda",
+      "filename": "benchmark/pick_glasses_task.py",
+      "contact_objects": [
+        "ceramic_mug",
+        "glasses",
+        "keyboard",
+        "lizard_figurine",
+        "marker",
+        "remote_control",
+        "rubiks_cube",
+        "smartphone",
+        "wooden_bowl",
+        "spoon_big",
+        "computer_mouse",
+        "yogurt_cup",
+        "oatmeal_raisin_cookies",
+        "granola_bars",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "ceramic_mug",
+        "glasses",
+        "keyboard",
+        "lizard_figurine"
+      ]
+    },
+    {
+      "index": 67,
+      "task_name": "PickOrangeObjectTask",
+      "instruction": "Pick up the orange measuring cup",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "color"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "cooking_table.usda",
+      "filename": "benchmark/cooking_orange_object.py",
+      "contact_objects": [
+        "table",
+        "redonion",
+        "serving_bowl",
+        "clay_plates",
+        "wooden_spoons",
+        "spatula",
+        "storage_box",
+        "tomato_sauce_can",
+        "measuring_cups_1",
+        "pink_spaghetti_spoon",
+        "spoon_1",
+        "green_serving_spoon",
+        "storage_box_01",
+        "ladle",
+        "wooden_bowl",
+        "potato_masher"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "redonion",
+        "serving_bowl",
+        "clay_plates",
+        "wooden_spoons"
+      ]
+    },
+    {
+      "index": 68,
+      "task_name": "PickUpBluePitcherTask",
+      "instruction": "Pick up the large blue pitcher",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "color",
+        "affordance"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 4,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 2,
+      "episode_s": "30",
+      "scene": "blue.usda",
+      "filename": "benchmark/pick_up_blue_pitcher.py",
+      "contact_objects": [
+        "plasticjerrican_a02",
+        "plasticpail_a02",
+        "pitcher",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "plasticjerrican_a02",
+        "plasticpail_a02",
+        "pitcher"
+      ]
+    },
+    {
+      "index": 69,
+      "task_name": "PickUpGreenObjectTask",
+      "instruction": "Pick up the green vegetable block",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "color"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 2,
+      "episode_s": "30",
+      "scene": "green.usda",
+      "filename": "benchmark/pick_up_green_object.py",
+      "contact_objects": [
+        "frozen_vegetable_block",
+        "blackandbrassbowl_large",
+        "screwtoppail_a01",
+        "utilityjug_a02",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "frozen_vegetable_block",
+        "blackandbrassbowl_large",
+        "screwtoppail_a01",
+        "utilityjug_a02"
+      ]
+    },
+    {
+      "index": 70,
+      "task_name": "PinkSpoonInPotTask",
+      "instruction": "Put the pink spaghetti spoon in the pot",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "color",
+        "affordance"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 3,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "ladle_pot.usda",
+      "filename": "benchmark/pink_spoon_in_pot.py",
+      "contact_objects": [
+        "table",
+        "anza_medium",
+        "ladle",
+        "plate_large",
+        "plate_small",
+        "fork_big",
+        "fork_small",
+        "spatula_13",
+        "spatula_14",
+        "spatula_15",
+        "pink_spaghetti_spoon",
+        "ladle_01",
+        "red_serving_spoon",
+        "green_serving_spoon"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "pink_spaghetti_spoon"
+      ]
+    },
+    {
+      "index": 71,
+      "task_name": "PlasticBottlesInSquarePailTask",
+      "instruction": "Put all the small plastic bottles in the square pail",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "sorting",
+        "size"
+      ],
+      "difficulty_label": "complex",
+      "difficulty_score": 5,
+      "num_subtasks": 3,
+      "num_atomic_conditions": 6,
+      "episode_s": "180",
+      "scene": "shelf_with_cleaning_products.usda",
+      "filename": "benchmark/bottles_on_shelf_task.py",
+      "contact_objects": [
+        "large_storage_rack",
+        "whitepackerbottle_a01",
+        "whitepackerbottle_a02",
+        "utilityjug_a01",
+        "utilityjug_a02",
+        "squarepail_a01",
+        "plasticpail_a02",
+        "whitepackerbottle_a03",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "whitepackerbottle_a01",
+        "whitepackerbottle_a02",
+        "whitepackerbottle_a03"
+      ]
+    },
+    {
+      "index": 72,
+      "task_name": "PutBowlOnShelfTopTask",
+      "instruction": "Put the serving bowl anywhere on the shelf in front of you",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "spatial"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "shelf_mugs_jug_bowl.usda",
+      "filename": "benchmark/put_bowl_on_shelf.py",
+      "contact_objects": [
+        "ceramic_mug",
+        "mug",
+        "rack_l04",
+        "serving_bowl",
+        "utilityjug_a01",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "serving_bowl"
+      ]
+    },
+    {
+      "index": 73,
+      "task_name": "PutMugsOnShelfTask",
+      "instruction": "Put the two mugs on the shelf",
+      "axes": [
+        "procedural",
+        "relational"
+      ],
+      "attributes": [
+        "affordance",
+        "spatial",
+        "counting"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 4,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "180",
+      "scene": "shelf_mugs_jug_bowl.usda",
+      "filename": "benchmark/put_mugs_on_shelf.py",
+      "contact_objects": [
+        "ceramic_mug",
+        "mug",
+        "rack_l04",
+        "serving_bowl",
+        "utilityjug_a01",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "ceramic_mug",
+        "mug"
+      ]
+    },
+    {
+      "index": 74,
+      "task_name": "PutTwoMugsOnShelfTask",
+      "instruction": "Put two (2) mugs on the wire shelf",
+      "axes": [
+        "procedural",
+        "relational"
+      ],
+      "attributes": [
+        "affordance",
+        "spatial",
+        "counting"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 4,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "180",
+      "scene": "wire_shelf_mugs_plate_spatula.usda",
+      "filename": "benchmark/put_two_mugs_on_shelf.py",
+      "contact_objects": [
+        "table",
+        "wireshelving_a01",
+        "spatula_01",
+        "plate_small",
+        "fork_big",
+        "fork_small",
+        "ceramic_mug",
+        "mug",
+        "mug_01"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "ceramic_mug",
+        "mug",
+        "mug_01"
+      ]
+    },
+    {
+      "index": 75,
+      "task_name": "RecycleCartonsOnBoxTask",
+      "instruction": "Put the cartons that can be recycled on the box",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "90",
+      "scene": "cartons_on_box.usda",
+      "filename": "benchmark/recycle_cartons_on_box.py",
+      "contact_objects": [
+        "cubebox_a02",
+        "milk_carton",
+        "orange_juice_carton",
+        "alphabet_soup_can",
+        "smartphone",
+        "mayonnaise_bottle",
+        "ketchup_bottle",
+        "mug",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "milk_carton",
+        "orange_juice_carton"
+      ]
+    },
+    {
+      "index": 76,
+      "task_name": "RecycleCartonsVerticalCrateTask",
+      "instruction": "Put the cartons that can be recycled in the vertical crate",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "spatial"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 3,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "90",
+      "scene": "cartons_in_vertical_crate.usda",
+      "filename": "benchmark/recycle_cartons_vertical_crate.py",
+      "contact_objects": [
+        "container_a01",
+        "milk_carton",
+        "orange_juice_carton",
+        "alphabet_soup_can",
+        "smartphone",
+        "mayonnaise_bottle",
+        "ketchup_bottle",
+        "mug",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "milk_carton",
+        "orange_juice_carton"
+      ]
+    },
+    {
+      "index": 77,
+      "task_name": "RecycleCartonTask",
+      "instruction": "Put the recyclable cartons in the grey bin",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "vague"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "90",
+      "scene": "cartons_in_crate.usda",
+      "filename": "benchmark/recycle_cartons.py",
+      "contact_objects": [
+        "container_a01",
+        "milk_carton",
+        "orange_juice_carton",
+        "alphabet_soup_can",
+        "smartphone",
+        "mayonnaise_bottle",
+        "ketchup_bottle",
+        "mug",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "milk_carton",
+        "orange_juice_carton"
+      ]
+    },
+    {
+      "index": 78,
+      "task_name": "RedDishesInBinTask",
+      "instruction": "Put the red dishware in the grey bin",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "color",
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "60",
+      "scene": "rubiks_cube_banana_bowl_mug_bin.usda",
+      "filename": "benchmark/red_dishes_in_bin.py",
+      "contact_objects": [
+        "mug",
+        "bowl",
+        "grey_bin",
+        "table",
+        "banana",
+        "rubiks_cube"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "mug",
+        "bowl"
+      ]
+    },
+    {
+      "index": 79,
+      "task_name": "RedItemsInBinTask",
+      "instruction": "Put all the red things in the grey bin",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "color",
+        "sorting"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 4,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "60",
+      "scene": "rubiks_cube_banana_bowl_mug_bin.usda",
+      "filename": "benchmark/red_items_in_bin.py",
+      "contact_objects": [
+        "mug",
+        "bowl",
+        "grey_bin",
+        "table",
+        "banana",
+        "rubiks_cube"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "mug",
+        "bowl"
+      ]
+    },
+    {
+      "index": 80,
+      "task_name": "ReorientAllMugsTask",
+      "instruction": "Reorient all the mugs upright so that the opening is facing upwards.",
+      "axes": [
+        "procedural"
+      ],
+      "attributes": [
+        "reorientation"
+      ],
+      "difficulty_label": "complex",
+      "difficulty_score": 6,
+      "num_subtasks": 3,
+      "num_atomic_conditions": 6,
+      "episode_s": "90",
+      "scene": "mugs4_measuringcup_drill_bowl.usda",
+      "filename": "benchmark/reorient_all_mugs_task.py",
+      "contact_objects": [
+        "red_mug",
+        "bowl",
+        "ceramic_mug",
+        "upright_white_mug",
+        "sideways_white_mug",
+        "cordless_drill",
+        "measuring_cup",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "reorienting_red_mug",
+        "reorienting_ceramic_mug",
+        "reorienting_sideways_white_mug"
+      ]
+    },
+    {
+      "index": 81,
+      "task_name": "ReorientJugTask",
+      "instruction": "Stand the jug upright",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "reorientation",
+        "affordance"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 4,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "shelf_with_cleaning_products.usda",
+      "filename": "benchmark/reorient_jug.py",
+      "contact_objects": [
+        "large_storage_rack",
+        "whitepackerbottle_a01",
+        "whitepackerbottle_a02",
+        "utilityjug_a01",
+        "utilityjug_a02",
+        "squarepail_a01",
+        "plasticpail_a02",
+        "whitepackerbottle_a03",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "reorienting_jug"
+      ]
+    },
+    {
+      "index": 82,
+      "task_name": "ReorientRedMugTask",
+      "instruction": "Put the red mug upright so that the opening is facing upwards.",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "reorientation",
+        "color"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 4,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "mugs4_measuringcup_drill_bowl.usda",
+      "filename": "benchmark/reorient_red_mugs_task.py",
+      "contact_objects": [
+        "red_mug",
+        "bowl",
+        "ceramic_mug",
+        "upright_white_mug",
+        "sideways_white_mug",
+        "cordless_drill",
+        "measuring_cup",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "reorienting_red_mug"
+      ]
+    },
+    {
+      "index": 83,
+      "task_name": "ReorientWhiteMugsTask",
+      "instruction": "Make sure all the white mugs are upright so that the opening is facing upwards.",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "reorientation",
+        "color"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 4,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "mugs4_measuringcup_drill_bowl_v2.usda",
+      "filename": "benchmark/reorient_white_mugs.py",
+      "contact_objects": [
+        "red_mug",
+        "bowl",
+        "ceramic_mug",
+        "upright_white_mug",
+        "sideways_white_mug",
+        "cordless_drill",
+        "measuring_cup",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "reorienting_sideways_white_mug"
+      ]
+    },
+    {
+      "index": 84,
+      "task_name": "RubiksCubeAndBananaTask",
+      "instruction": "Put the cube and the banana in the bowl",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "conjunction"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "60",
+      "scene": "rubiks_cube_banana_bowl.usda",
+      "filename": "benchmark/rubiks_cube_and_banana_task.py",
+      "contact_objects": [
+        "rubiks_cube",
+        "banana",
+        "bowl",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube",
+        "banana"
+      ]
+    },
+    {
+      "index": 85,
+      "task_name": "RubiksCubeBehindBowlTask",
+      "instruction": "Put the rubiks cube behind the bowl",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "spatial"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 4,
+      "num_subtasks": 3,
+      "num_atomic_conditions": 3,
+      "episode_s": "30",
+      "scene": "rubiks_cube_banana_bowl.usda",
+      "filename": "benchmark/rubiks_cube_behind_bowl.py",
+      "contact_objects": [
+        "rubiks_cube",
+        "banana",
+        "bowl",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube",
+        "banana"
+      ]
+    },
+    {
+      "index": 86,
+      "task_name": "RubiksCubeInFrontOfBowlTask",
+      "instruction": "Put the rubiks cube in front of the bowl",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "spatial"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 4,
+      "num_subtasks": 3,
+      "num_atomic_conditions": 3,
+      "episode_s": "30",
+      "scene": "rubiks_cube_banana_bowl.usda",
+      "filename": "benchmark/rubiks_cube_in_front_of_bowl.py",
+      "contact_objects": [
+        "rubiks_cube",
+        "banana",
+        "bowl",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube",
+        "banana"
+      ]
+    },
+    {
+      "index": 87,
+      "task_name": "RubiksCubeLeftOfBowlTask",
+      "instruction": "Put the rubiks cube to the left of the bowl",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "spatial"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 4,
+      "num_subtasks": 3,
+      "num_atomic_conditions": 3,
+      "episode_s": "30",
+      "scene": "rubiks_cube_banana_bowl.usda",
+      "filename": "benchmark/rubiks_cube_left_of_bowl.py",
+      "contact_objects": [
+        "rubiks_cube",
+        "banana",
+        "bowl",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube",
+        "banana"
+      ]
+    },
+    {
+      "index": 88,
+      "task_name": "RubiksCubeOrBananaTask",
+      "instruction": "Put the cube or the banana in the bowl",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "conjunction"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "30",
+      "scene": "rubiks_cube_banana_bowl.usda",
+      "filename": "benchmark/rubiks_cube_or_banana_task.py",
+      "contact_objects": [
+        "rubiks_cube",
+        "banana",
+        "bowl",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube",
+        "banana"
+      ]
+    },
+    {
+      "index": 89,
+      "task_name": "RubiksCubeRightOfBowlTask",
+      "instruction": "Put the rubiks cube to the right of the bowl",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "spatial"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 4,
+      "num_subtasks": 3,
+      "num_atomic_conditions": 3,
+      "episode_s": "30",
+      "scene": "rubiks_cube_banana_bowl_mug_bin.usda",
+      "filename": "benchmark/rubiks_cube_right_of_bowl.py",
+      "contact_objects": [
+        "rubiks_cube",
+        "banana",
+        "bowl",
+        "mug",
+        "grey_bin",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube",
+        "banana",
+        "mug"
+      ]
+    },
+    {
+      "index": 90,
+      "task_name": "RubiksCubesInBinTask",
+      "instruction": "Sort all rubiks cubes into the bin",
+      "axes": [
+        "procedural"
+      ],
+      "attributes": [
+        "sorting"
+      ],
+      "difficulty_label": "complex",
+      "difficulty_score": 5,
+      "num_subtasks": 3,
+      "num_atomic_conditions": 6,
+      "episode_s": "120",
+      "scene": "toys_cleanup.usda",
+      "filename": "benchmark/rubiks_cubes_in_bin.py",
+      "contact_objects": [
+        "table",
+        "rubiks_cube",
+        "rubiks_cube_1",
+        "rubiks_cube_2",
+        "grey_bin",
+        "lizard_figurine",
+        "birdhouse",
+        "yellow_block",
+        "red_block",
+        "green_block",
+        "blue_block",
+        "lizard_figurine_01"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube",
+        "rubiks_cube_1",
+        "rubiks_cube_2"
+      ]
+    },
+    {
+      "index": 91,
+      "task_name": "RubiksCubeTask",
+      "instruction": "Put the cube in the bowl",
+      "axes": [],
+      "attributes": [],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "40",
+      "scene": "rubiks_cube_bowl.usda",
+      "filename": "benchmark/rubiks_cube_task.py",
+      "contact_objects": [
+        "rubiks_cube",
+        "bowl",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube"
+      ]
+    },
+    {
+      "index": 92,
+      "task_name": "RubiksCubeThenBananaTask",
+      "instruction": "Put the cube then the banana in the bowl",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "conjunction"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "60",
+      "scene": "rubiks_cube_banana_bowl.usda",
+      "filename": "benchmark/rubiks_cube_then_banana.py",
+      "contact_objects": [
+        "rubiks_cube",
+        "banana",
+        "bowl",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube",
+        "banana"
+      ]
+    },
+    {
+      "index": 93,
+      "task_name": "SauceBottlesCrateTask",
+      "instruction": "Put the red bbq sauce bottle in the crate",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "color",
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "40",
+      "scene": "bottles_crate.usda",
+      "filename": "benchmark/sauce_bottles_crate_task.py",
+      "contact_objects": [
+        "bbq_sauce_bottle",
+        "purple_crate",
+        "table",
+        "ceramic_mug",
+        "salad_dressing_bottle"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "bbq_sauce_bottle"
+      ]
+    },
+    {
+      "index": 94,
+      "task_name": "SmallerObjectButterInBinTask",
+      "instruction": "Place the smaller object in the grey bin.",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "size"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "30",
+      "scene": "butter_raisin_box_grey_bin.usda",
+      "filename": "benchmark/smaller_object.py",
+      "contact_objects": [
+        "butter",
+        "grey_bin",
+        "raisin_box",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "butter"
+      ]
+    },
+    {
+      "index": 95,
+      "task_name": "SmallPumpkinInBinTask",
+      "instruction": "Put the small pumpkin in the bin",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "size"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "clutter_fruit_bottle_bluebin.usda",
+      "filename": "benchmark/clutter_small_pumpkin_task.py",
+      "contact_objects": [
+        "lemon_01",
+        "lemon_02",
+        "lime01",
+        "lime01_01",
+        "orange_01",
+        "orange_02",
+        "pomegranate01",
+        "pumpkinlarge",
+        "pumpkinsmall",
+        "red_onion",
+        "whitepackerbottle_a01",
+        "avocado01",
+        "crabbypenholder",
+        "milkjug_a01",
+        "serving_bowl",
+        "utilityjug_a03",
+        "right_bin",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "pumpkinsmall"
+      ]
+    },
+    {
+      "index": 96,
+      "task_name": "SmartphoneInBinTask",
+      "instruction": "Put the smartphone in the grey bin",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "workdesk_bin.usda",
+      "filename": "benchmark/smartphone_in_bin_task.py",
+      "contact_objects": [
+        "ceramic_mug",
+        "glasses",
+        "keyboard",
+        "lizard_figurine",
+        "marker",
+        "remote_control",
+        "smartphone",
+        "wooden_bowl",
+        "spoon_big",
+        "computer_mouse",
+        "yogurt_cup",
+        "granola_bars",
+        "grey_bin",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "smartphone"
+      ]
+    },
+    {
+      "index": 97,
+      "task_name": "SpoonInMugTask",
+      "instruction": "Put the metal spoon that's in the wooden bowl in the mug",
+      "axes": [
+        "procedural",
+        "relational"
+      ],
+      "attributes": [
+        "affordance",
+        "spatial"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 3,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "workdesk_bin.usda",
+      "filename": "benchmark/spoon_in_mug_task.py",
+      "contact_objects": [
+        "ceramic_mug",
+        "glasses",
+        "keyboard",
+        "lizard_figurine",
+        "marker",
+        "remote_control",
+        "smartphone",
+        "wooden_bowl",
+        "spoon_big",
+        "computer_mouse",
+        "yogurt_cup",
+        "granola_bars",
+        "grey_bin",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "spoon_big"
+      ]
+    },
+    {
+      "index": 98,
+      "task_name": "SpoonsInPotTask",
+      "instruction": "Put all of the serving spoons with no holes in the pot",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "reorientation",
+        "semantics",
+        "affordance"
+      ],
+      "difficulty_label": "complex",
+      "difficulty_score": 6,
+      "num_subtasks": 3,
+      "num_atomic_conditions": 6,
+      "episode_s": "180",
+      "scene": "ladle_pot.usda",
+      "filename": "benchmark/spoons_in_pot.py",
+      "contact_objects": [
+        "table",
+        "anza_medium",
+        "ladle",
+        "plate_large",
+        "plate_small",
+        "fork_big",
+        "fork_small",
+        "spatula_13",
+        "spatula_14",
+        "spatula_15",
+        "pink_spaghetti_spoon",
+        "ladle_01",
+        "red_serving_spoon",
+        "green_serving_spoon"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "ladle",
+        "ladle_01",
+        "red_serving_spoon"
+      ]
+    },
+    {
+      "index": 99,
+      "task_name": "Stack3RubiksCubeTask",
+      "instruction": "Stack the rubiks cubes in a tower",
+      "axes": [
+        "procedural"
+      ],
+      "attributes": [
+        "stacking"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 4,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "rubiks_cube_3.usda",
+      "filename": "benchmark/rubiks_cube_stacking_task.py",
+      "contact_objects": [
+        "rubiks_cube",
+        "rubiks_cube_1",
+        "rubiks_cube_2",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube",
+        "rubiks_cube_1",
+        "rubiks_cube_2"
+      ]
+    },
+    {
+      "index": 100,
+      "task_name": "StackWhiteMugsTask",
+      "instruction": "Stack the white mugs on top of each other.",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "stacking",
+        "color"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 4,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "mugs4_measuringcup_drill_bowl.usda",
+      "filename": "benchmark/stack_white_mugs_task.py",
+      "contact_objects": [
+        "red_mug",
+        "bowl",
+        "ceramic_mug",
+        "upright_white_mug",
+        "sideways_white_mug",
+        "cordless_drill",
+        "measuring_cup",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "red_mug",
+        "ceramic_mug",
+        "upright_white_mug",
+        "sideways_white_mug"
+      ]
+    },
+    {
+      "index": 101,
+      "task_name": "StackYellowOnRedTask",
+      "instruction": "Stack the yellow block on the red block",
+      "axes": [
+        "procedural"
+      ],
+      "attributes": [
+        "stacking"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 4,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "toys_cleanup.usda",
+      "filename": "benchmark/stack_yellow_on_red.py",
+      "contact_objects": [
+        "table",
+        "rubiks_cube",
+        "rubiks_cube_1",
+        "rubiks_cube_2",
+        "grey_bin",
+        "lizard_figurine",
+        "birdhouse",
+        "yellow_block",
+        "red_block",
+        "green_block",
+        "blue_block",
+        "lizard_figurine_01"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube",
+        "rubiks_cube_1",
+        "rubiks_cube_2",
+        "lizard_figurine"
+      ]
+    },
+    {
+      "index": 102,
+      "task_name": "TakeMeasuringSpoonOutTask",
+      "instruction": "Take the white colored measuring spoon out of the red bowl and put it on the table.",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "40",
+      "scene": "mugs4_measuringcup_drill_bowl_v2.usda",
+      "filename": "benchmark/take_measuring_spoon_out.py",
+      "contact_objects": [
+        "red_mug",
+        "bowl",
+        "ceramic_mug",
+        "upright_white_mug",
+        "sideways_white_mug",
+        "cordless_drill",
+        "measuring_cup",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "taking_measuring_cup_out"
+      ]
+    },
+    {
+      "index": 103,
+      "task_name": "TakeMugsOffOfShelfTask",
+      "instruction": "Take the mugs off the shelf",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "affordance"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 4,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "180",
+      "scene": "mugs_on_shelf.usda",
+      "filename": "benchmark/take_mugs_off_of_shelf.py",
+      "contact_objects": [
+        "ceramic_mug",
+        "mug",
+        "rack_l04",
+        "serving_bowl",
+        "utilityjug_a01",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "ceramic_mug",
+        "mug"
+      ]
+    },
+    {
+      "index": 104,
+      "task_name": "TakeSpatulaOffShelfTask",
+      "instruction": "Take the spatula off the shelf and put it on the table",
+      "axes": [
+        "procedural",
+        "relational"
+      ],
+      "attributes": [
+        "affordance",
+        "spatial"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 3,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "wire_shelf_mugs_plate_spatula.usda",
+      "filename": "benchmark/take_spatula_off_shelf.py",
+      "contact_objects": [
+        "table",
+        "wireshelving_a01",
+        "spatula_01",
+        "plate_small",
+        "fork_big",
+        "fork_small",
+        "ceramic_mug",
+        "mug",
+        "mug_01"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "spatula_01"
+      ]
+    },
+    {
+      "index": 105,
+      "task_name": "ThrowAwayAppleTask",
+      "instruction": "Throw away the apple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "workdesk_snacks.usda",
+      "filename": "benchmark/throw_away_apple_task.py",
+      "contact_objects": [
+        "ceramic_mug",
+        "glasses",
+        "keyboard",
+        "marker",
+        "remote_control",
+        "smartphone",
+        "wooden_bowl",
+        "spoon_big",
+        "computer_mouse",
+        "yogurt_cup",
+        "pitcher",
+        "plasticpail_a02",
+        "apple_01",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "apple_01"
+      ]
+    },
+    {
+      "index": 106,
+      "task_name": "ThrowAwaySnacksTask",
+      "instruction": "Put away the snacks in the bin",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "120",
+      "scene": "workdesk_snacks.usda",
+      "filename": "benchmark/throw_away_snacks_task.py",
+      "contact_objects": [
+        "ceramic_mug",
+        "glasses",
+        "keyboard",
+        "marker",
+        "remote_control",
+        "smartphone",
+        "wooden_bowl",
+        "spoon_big",
+        "computer_mouse",
+        "yogurt_cup",
+        "pitcher",
+        "plasticpail_a02",
+        "apple_01",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "apple_01",
+        "yogurt_cup"
+      ]
+    },
+    {
+      "index": 107,
+      "task_name": "ToolOrganizationBothTask",
+      "instruction": "Put hammers in the right bin and do not touch anything else",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "spatial"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 3,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "180",
+      "scene": "tools_container.usda",
+      "filename": "benchmark/tool_organization_both_task.py",
+      "contact_objects": [
+        "left_bin",
+        "right_bin",
+        "red_hammer",
+        "husky_hammer",
+        "cordless_drill",
+        "spring_clamp",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "red_hammer",
+        "husky_hammer"
+      ]
+    },
+    {
+      "index": 108,
+      "task_name": "ToolOrganizationTask",
+      "instruction": "Put the red hammer and black hammer in the left bin",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "spatial",
+        "color"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 3,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "180",
+      "scene": "tools_container.usda",
+      "filename": "benchmark/tool_organization_task.py",
+      "contact_objects": [
+        "left_bin",
+        "right_bin",
+        "red_hammer",
+        "husky_hammer",
+        "cordless_drill",
+        "spring_clamp",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "red_hammer",
+        "husky_hammer"
+      ]
+    },
+    {
+      "index": 109,
+      "task_name": "ToolsPickingAllHammersTask",
+      "instruction": "Take out all the hammers and put them on the table",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "spatial"
+      ],
+      "difficulty_label": "complex",
+      "difficulty_score": 5,
+      "num_subtasks": 4,
+      "num_atomic_conditions": 8,
+      "episode_s": "240",
+      "scene": "tools_picking.usda",
+      "filename": "benchmark/tools_picking_all_hammers.py",
+      "contact_objects": [
+        "table",
+        "clamp",
+        "cordless_drill",
+        "spring_clamp",
+        "husky_hammer",
+        "blue_hammer",
+        "red_hammer",
+        "wood_hammer",
+        "left_bin",
+        "center_bin",
+        "right_bin",
+        "clamp_01"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "husky_hammer",
+        "blue_hammer",
+        "red_hammer",
+        "wood_hammer"
+      ]
+    },
+    {
+      "index": 110,
+      "task_name": "ToolsPickingDrillTask",
+      "instruction": "Select the cordless drill and put it on the table",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "spatial",
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "tools_picking.usda",
+      "filename": "benchmark/tools_picking_drill.py",
+      "contact_objects": [
+        "table",
+        "clamp",
+        "cordless_drill",
+        "spring_clamp",
+        "husky_hammer",
+        "blue_hammer",
+        "red_hammer",
+        "wood_hammer",
+        "left_bin",
+        "center_bin",
+        "right_bin",
+        "clamp_01"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "cordless_drill"
+      ]
+    },
+    {
+      "index": 111,
+      "task_name": "ToolsPickingHammerTask",
+      "instruction": "Select the blue hammer and put it on the table",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "spatial",
+        "color"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "tools_picking.usda",
+      "filename": "benchmark/tools_picking_hammer.py",
+      "contact_objects": [
+        "table",
+        "clamp",
+        "cordless_drill",
+        "spring_clamp",
+        "husky_hammer",
+        "blue_hammer",
+        "red_hammer",
+        "wood_hammer",
+        "left_bin",
+        "center_bin",
+        "right_bin",
+        "clamp_01"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "blue_hammer"
+      ]
+    },
+    {
+      "index": 112,
+      "task_name": "ToyInBinTask",
+      "instruction": "Put the lizard away in the bin",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "workdesk_bin.usda",
+      "filename": "benchmark/lizard_in_bin_task.py",
+      "contact_objects": [
+        "ceramic_mug",
+        "glasses",
+        "keyboard",
+        "lizard_figurine",
+        "marker",
+        "remote_control",
+        "smartphone",
+        "wooden_bowl",
+        "spoon_big",
+        "computer_mouse",
+        "yogurt_cup",
+        "granola_bars",
+        "grey_bin",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "lizard_figurine"
+      ]
+    },
+    {
+      "index": 113,
+      "task_name": "UnstackRubiksCubeTask",
+      "instruction": "Unstack the rubiks cube tower",
+      "axes": [
+        "procedural"
+      ],
+      "attributes": [
+        "stacking"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 4,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "90",
+      "scene": "mug_banana_ketchup_bowl_rubiks3_bin.usda",
+      "filename": "benchmark/unstack_rubiks_cube.py",
+      "contact_objects": [
+        "mug",
+        "banana",
+        "ketchup_bottle",
+        "rubiks_cube_middle",
+        "rubiks_cube_top",
+        "rubiks_cube_bottom",
+        "bowl",
+        "grey_bin",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube_middle",
+        "rubiks_cube_top"
+      ]
+    },
+    {
+      "index": 114,
+      "task_name": "UtensilsInMugTask",
+      "instruction": "Put the fork and spoon in the ceramicmug",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "affordance"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 4,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "90",
+      "scene": "breakfast_table.usda",
+      "filename": "benchmark/utensils_in_mug.py",
+      "contact_objects": [
+        "table",
+        "bowl",
+        "banana",
+        "bagel_07",
+        "coffee_can",
+        "banana_01",
+        "yogurt_cup",
+        "coffee_pot",
+        "ceramic_mug",
+        "pitcher",
+        "fork_big",
+        "spoon_big",
+        "apple_01",
+        "orange2",
+        "milk_carton",
+        "orange_juice_carton",
+        "bagel_01",
+        "bagel_02",
+        "plate_small",
+        "plate_large"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "fork_big",
+        "spoon_big"
+      ]
+    },
+    {
+      "index": 115,
+      "task_name": "WhiteMugInCenterOfTableTask",
+      "instruction": "Put the white mug in the center of the table.",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "color",
+        "spatial"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 4,
+      "num_subtasks": 3,
+      "num_atomic_conditions": 3,
+      "episode_s": "30",
+      "scene": "objects_around_table.usda",
+      "filename": "benchmark/white_mug_in_center_of_table.py",
+      "contact_objects": [
+        "mug",
+        "bowl",
+        "table",
+        "alphabet_soup_can",
+        "orange_juice_carton",
+        "smartphone",
+        "milk_carton",
+        "banana",
+        "rubiks_cube"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "mug",
+        "alphabet_soup_can",
+        "orange_juice_carton",
+        "smartphone"
+      ]
+    },
+    {
+      "index": 116,
+      "task_name": "WhiteMugsInBinTask",
+      "instruction": "Clean up the white mugs",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "color"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "60",
+      "scene": "mugs2_bananas2_ketchup_rubiks3_bin.usda",
+      "filename": "benchmark/white_mugs_in_bin.py",
+      "contact_objects": [
+        "mug",
+        "mug_01",
+        "grey_bin",
+        "banana_near",
+        "banana_far",
+        "rubiks_cube_middle",
+        "rubiks_cube_top",
+        "rubiks_cube_bottom",
+        "ketchup_bottle",
+        "table",
+        "bowl"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "mug",
+        "mug_01"
+      ]
+    },
+    {
+      "index": 117,
+      "task_name": "WoodSpatulaToBowlTask",
+      "instruction": "Put the wooden spatula in the bowl",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "fruits_in_basket.usda",
+      "filename": "benchmark/wood_spatula_to_bowl.py",
+      "contact_objects": [
+        "table",
+        "lemon_01",
+        "lemon_02",
+        "lime01",
+        "lime01_01",
+        "orange_01",
+        "orange_02",
+        "pomegranate01",
+        "pumpkinlarge",
+        "pumpkinsmall",
+        "redonion",
+        "serving_bowl",
+        "clay_plates",
+        "wooden_bowl",
+        "wooden_spoons",
+        "spatula",
+        "storage_box"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "wooden_spoons"
+      ]
+    },
+    {
+      "index": 118,
+      "task_name": "YellowAndWhiteObjectsInBinTask",
+      "instruction": "Put all white objects and yellow objects in the grey bin",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "color",
+        "conjunction"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "60",
+      "scene": "mug_banana_ketchup_bowl_rubiks3_bin.usda",
+      "filename": "benchmark/yellow_and_white_objects_in_bin.py",
+      "contact_objects": [
+        "mug",
+        "banana",
+        "grey_bin",
+        "table",
+        "bowl",
+        "ketchup_bottle",
+        "rubiks_cube_top",
+        "rubiks_cube_middle",
+        "rubiks_cube_bottom"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "mug",
+        "banana"
+      ]
+    },
+    {
+      "index": 119,
+      "task_name": "YogurtInBowlTask",
+      "instruction": "Put the small red yogurt in the red bowl",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "color",
+        "size"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "40",
+      "scene": "breakfast_table.usda",
+      "filename": "benchmark/yogurt_in_bowl.py",
+      "contact_objects": [
+        "table",
+        "bowl",
+        "banana",
+        "bagel_07",
+        "coffee_can",
+        "banana_01",
+        "yogurt_cup",
+        "coffee_pot",
+        "ceramic_mug",
+        "pitcher",
+        "fork_big",
+        "spoon_big",
+        "apple_01",
+        "orange2",
+        "milk_carton",
+        "orange_juice_carton",
+        "bagel_01",
+        "bagel_02",
+        "plate_small",
+        "plate_large"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "yogurt_cup"
+      ]
+    }
+  ]
+}

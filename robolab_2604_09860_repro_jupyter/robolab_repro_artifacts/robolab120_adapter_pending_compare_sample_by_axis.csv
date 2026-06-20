@@ -1,0 +1,9 @@
+axis,episode_step_mean,episodes,pending_episodes,policy,score_mean,scored_episodes,success_rate
+procedural,,34,34,rekep,,0,
+relational,,42,42,rekep,,0,
+unknown_axis,,3,3,rekep,,0,
+visual,,84,84,rekep,,0,
+procedural,,34,34,robochallenge_pi,,0,
+relational,,42,42,robochallenge_pi,,0,
+unknown_axis,,3,3,robochallenge_pi,,0,
+visual,,84,84,robochallenge_pi,,0,

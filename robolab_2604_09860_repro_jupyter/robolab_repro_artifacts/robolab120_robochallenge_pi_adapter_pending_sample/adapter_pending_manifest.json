@@ -1,0 +1,9 @@
+{
+  "output_root": "robolab_repro_artifacts\\robolab120_robochallenge_pi_adapter_pending_sample",
+  "episode_results_jsonl": "robolab_repro_artifacts\\robolab120_robochallenge_pi_adapter_pending_sample\\episode_results.jsonl",
+  "policy": "robochallenge_pi",
+  "status": "adapter_required",
+  "reason": "RoboChallenge adapter not implemented yet.",
+  "num_tasks": 120,
+  "boundary": "These rows are placeholders for comparison bookkeeping. They are not simulation rollouts."
+}

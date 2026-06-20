@@ -46,6 +46,16 @@ def safe_mean(values: list[float]) -> float | None:
     return float(mean(values)) if values else None
 
 
+def success_values(group_rows: list[dict[str, Any]]) -> list[float]:
+    """Use only real boolean success values; adapter placeholders stay pending."""
+    values: list[float] = []
+    for row in group_rows:
+        success = row.get("success")
+        if isinstance(success, bool):
+            values.append(1.0 if success else 0.0)
+    return values
+
+
 def aggregate(rows: list[dict[str, Any]], matrix: dict[str, dict[str, Any]]) -> dict[str, list[dict[str, Any]]]:
     by_task_policy: dict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
     by_axis_policy: dict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
@@ -62,13 +72,16 @@ def aggregate(rows: list[dict[str, Any]], matrix: dict[str, dict[str, Any]]) -> 
         by_difficulty_policy[(policy, meta.get("difficulty_label") or "unknown")].append(row)
 
     def summarize_group(key: tuple[str, str], group_rows: list[dict[str, Any]], label_name: str) -> dict[str, Any]:
-        successes = [1.0 if row.get("success") else 0.0 for row in group_rows]
+        successes = success_values(group_rows)
         scores = [float(row["score"]) for row in group_rows if isinstance(row.get("score"), (int, float))]
         steps = [float(row["episode_step"]) for row in group_rows if isinstance(row.get("episode_step"), (int, float))]
+        pending = [row for row in group_rows if row.get("adapter_required") or row.get("status") in {"adapter_required", "planner_adapter_required"}]
         return {
             "policy": key[0],
             label_name: key[1],
             "episodes": len(group_rows),
+            "scored_episodes": len(successes),
+            "pending_episodes": len(pending),
             "success_rate": safe_mean(successes),
             "score_mean": safe_mean(scores),
             "episode_step_mean": safe_mean(steps),

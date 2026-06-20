@@ -250,6 +250,24 @@
       "observed": "checked 2026-06-20"
     },
     {
+      "title": "RoboLab Pi0-family README and variation runners",
+      "url": "https://github.com/NVlabs/RoboLab/tree/main/policies/pi0_family",
+      "used_for": [
+        "EXPERIMENT_17 camera ablation execution pack: official run_camera_pose_variation.py exists and shares common eval flags with run.py",
+        "4090 execution script chooses official camera pose variation runner before custom pose patching"
+      ],
+      "observed": "checked 2026-06-20"
+    },
+    {
+      "title": "RoboLab Pi05 client observation schema",
+      "url": "https://raw.githubusercontent.com/NVlabs/RoboLab/main/policies/pi0_family/client.py",
+      "used_for": [
+        "EXPERIMENT_17 wrist camera ablation: Pi05 client extracts over_shoulder_left_camera and wrist_cam and packs them as exterior and wrist images",
+        "soft wrist blackout runner preserves the observation key while zeroing only policy input pixels"
+      ],
+      "observed": "checked 2026-06-20"
+    },
+    {
       "title": "RoboLab source files inspected on remote RTX 4090 checkout",
       "url": "https://github.com/NVlabs/RoboLab/tree/7d45d74904eade3b578a8eb1f2f9f89bc3d40326",
       "used_for": [
@@ -400,20 +418,12 @@
       ]
     },
     {
-      "title": "RoboLab Pi0-family README and variation runners",
-      "url": "https://github.com/NVlabs/RoboLab/tree/main/policies/pi0_family",
+      "title": "RoboLab official task metadata",
+      "url": "https://raw.githubusercontent.com/NVlabs/RoboLab/main/robolab/tasks/_metadata/task_metadata.json",
       "used_for": [
-        "EXPERIMENT_17 camera ablation execution pack: official run_camera_pose_variation.py exists and shares common eval flags with run.py",
-        "4090 execution script chooses official camera pose variation runner before custom pose patching"
-      ],
-      "observed": "checked 2026-06-20"
-    },
-    {
-      "title": "RoboLab Pi05 client observation schema",
-      "url": "https://raw.githubusercontent.com/NVlabs/RoboLab/main/policies/pi0_family/client.py",
-      "used_for": [
-        "EXPERIMENT_17 wrist camera ablation: Pi05 client extracts over_shoulder_left_camera and wrist_cam and packs them as exterior and wrist images",
-        "soft wrist blackout runner preserves the observation key while zeroing only policy input pixels"
+        "EXPERIMENT_20 full RoboLab-120 task matrix generation",
+        "robolab_repro_artifacts/robolab120_task_matrix.json",
+        "ability-axis, difficulty, subtask-count, episode-duration, and perturbation-object metadata"
       ],
       "observed": "checked 2026-06-20"
     },
@@ -422,7 +432,8 @@
       "url": "https://github.com/NVlabs/RoboLab/blob/main/policies/pi0_family/README.md",
       "used_for": [
         "EXPERIMENT_19 direct baseline support for pi0, pi0_fast, pi05, paligemma, and paligemma_fast",
-        "run_direct_openpi_policy_matrix_4090.sh policy list and direct-run boundary"
+        "run_direct_openpi_policy_matrix_4090.sh policy list and direct-run boundary",
+        "EXPERIMENT_20 direct full-120 comparison policy list before adapter-required baselines"
       ],
       "observed": "checked 2026-06-20"
     },
@@ -430,7 +441,8 @@
       "title": "NVIDIA Cosmos repository",
       "url": "https://github.com/nvidia/cosmos",
       "used_for": [
-        "EXPERIMENT_19 classifies Cosmos as world-model/data/simulation component rather than direct Franka action policy"
+        "EXPERIMENT_19 classifies Cosmos as world-model/data/simulation component rather than direct Franka action policy",
+        "EXPERIMENT_20 keeps Cosmos out of direct success-rate tables unless an action-policy adapter exists"
       ],
       "observed": "checked 2026-06-20"
     },
@@ -438,7 +450,8 @@
       "title": "Qwen-VLA announcement",
       "url": "https://qwen.ai/blog?id=qwenvla",
       "used_for": [
-        "EXPERIMENT_19 classifies Qwen-VLA as Alibaba/Qwen VLA candidate requiring action/embodiment adapter"
+        "EXPERIMENT_19 classifies Qwen-VLA as Alibaba/Qwen VLA candidate requiring action/embodiment adapter",
+        "EXPERIMENT_20 adapter-required policy comparison boundary"
       ],
       "observed": "checked 2026-06-20"
     },
@@ -446,7 +459,8 @@
       "title": "Qwen RobotSuite announcement",
       "url": "https://qwen.ai/blog?id=qwen-robotsuite",
       "used_for": [
-        "EXPERIMENT_19 distinguishes Qwen-RobotManip, RobotNav, and RobotWorld for RoboLab manipulation relevance"
+        "EXPERIMENT_19 distinguishes Qwen-RobotManip, RobotNav, and RobotWorld for RoboLab manipulation relevance",
+        "EXPERIMENT_20 adapter-required manipulation baseline boundary"
       ],
       "observed": "checked 2026-06-20"
     }

@@ -7,7 +7,6 @@
 - `RoboLab_4090_repro_learning_record.ipynb`：主 notebook，按阶段记录环境检查、安装、验证、smoke run、4090 小子集评测、论文机制、核心源码讲解、结果解析和学习日志。
 - `source_manifest.json`：准备 notebook 时核对过的官方来源。
 - `build_robolab_notebook.py`：生成 notebook 和来源清单的脚本。
-- `REMOTE_EVIDENCE_MANIFEST.md`：解释 GitHub 已提交资料与本地原始远端证据之间的边界，列出 `remote_outputs/`、`remote_logs/`、HTML 渲染版未直接提交的原因和本地证据概览。
 - `EXPLAIN_SOURCE_QUESTION_INDEX.md`：所有精讲的问题来源与核心内容索引，把每个精讲对应的原问题、论文/代码来源、来源核心内容和复现/代码落点并排展示，已内嵌进 notebook，并配有来源覆盖轻量测试用例。
 - `EXPLAIN_00_global_overview.md`：论文与复现全局总览精讲，已优化为全精讲入口，补齐来源索引阅读顺序、四条主线、全精讲路线图、复现证据层级、任务标注、策略接入、4090 边界和后续路线，已内嵌进 notebook，并配有全局结构轻量测试用例。
 - `EXPLAIN_01_real_to_sim_eval.md`：论文“真实场景到模拟场景评估”的代码实现精讲，已内嵌进 notebook。
@@ -31,10 +30,15 @@
 - `EXPERIMENT_17_camera_robot_ablation.md`：实验拓展，分析外部相机角度、取消/遮蔽腕部相机、替换机器人三类消融的原理、可运行边界、真实 4090 测试矩阵和风险。
 - `EXPERIMENT_18_pi05_axis5_then_perturb_compare.md`：固定 Pi05 的能力轴 5×任务矩阵评测路线，包含每任务证据要求、`analysis/read_results.py` 出表、成功率中等任务选择、光照/背景/物体位置扰动和后续 RoboChallenge/ReKep 对照顺序。
 - `EXPERIMENT_19_policy_baseline_models.md`：多模型对照路线，把 Pi05/PaliGemma/GR00T/Cosmos/Qwen/阿里模型/RoboChallenge/ReKep 分成直接可跑、需 adapter、非直接动作策略三类，并给出直接 OpenPI 系列的 4090 脚本。
+- `EXPERIMENT_20_robolab120_robochallenge_rekep_compare.md`：RoboLab-120 全量复现实验入口，固定 Pi05 逐任务跑 full-120，生成同一任务矩阵下的 direct OpenPI 对照，并把 RoboChallenge/ReKep 明确标为 adapter-pending 而不是误算成 0 分。
 - `robolab_repro_artifacts/camera_robot_ablation_config_tests.json`：基于真实 Pi05 `env_cfg.json` 的配置级测试结果；验证 baseline 相机/机器人合约、硬删腕部相机的 schema 风险、只换机器人 USD 的无效性。
 - `robolab_repro_artifacts/pi05_axis5_task_matrix.json`：Pi05 第一批 16 任务矩阵，覆盖 visual/procedural/relational 三个能力轴，每轴不少于 5 个任务。
+- `robolab_repro_artifacts/robolab120_task_matrix.json`：官方 `task_metadata.json` 解析得到的 120 任务矩阵，保留能力轴、难度、子任务数、episode 时长和扰动候选对象。
+- `robolab_repro_artifacts/adapter_baseline_plan.json`：RoboChallenge pi 与 ReKep 接入 RoboLab 前必须满足的 observation/action/planner adapter 合约。
 - `robolab_repro_artifacts/policy_baseline_model_matrix.json`：多模型 baseline/readiness 矩阵，列出 Pi0-family、PaliGemma、GR00T、Cosmos、Qwen/阿里、RoboChallenge pi 和 ReKep 的接入状态。
 - `scripts/run_pi05_axis5_4090.sh`：4090 端固定 Pi05 的 16 任务主评测入口，自动保存视频/HDF5/日志并调用 `analysis/read_results.py` 出表。
+- `scripts/run_pi05_robolab120_4090.sh`：4090 端固定 Pi05 的 full-120 主评测入口，默认逐任务运行、失败不中断、最后合并 `episode_results.jsonl` 并出聚合表。
+- `scripts/run_policy_robolab120_compare_4090.sh`：4090 端 full-120 policy 对照入口，direct OpenPI policy 可实跑，RoboChallenge/ReKep 在 adapter 未完成时生成 pending 对照行。
 - `scripts/run_selected_perturbations_4090.sh`：读取主评测结果后选择成功率中等任务，并运行光照、背景、物体位置扰动。
 - `scripts/create_object_position_variation_runner.py`：在远端 RoboLab repo 内生成 object-position perturbation runner。
 - `scripts/run_direct_openpi_policy_matrix_4090.sh`：对 `pi05`、`paligemma`、`paligemma_fast`、`pi0`、`pi0_fast` 等 RoboLab 直接支持的 OpenPI policy 跑同一 axis5 矩阵。
@@ -44,7 +48,7 @@
 - `scripts/summarize_ablation_outputs.py`：离线汇总 RoboLab output 目录中的 `episode_results.jsonl`，输出 JSON/CSV。
 - `COMPLETE_REPRO_pi05_banana_20260620.md`：Pi05 / BananaInBowlTask 成功闭环记录，已内嵌进 notebook。
 - `COMPLEX_TASKS_pi05_20260620.md`：Pi05 三个复杂任务抽样复现记录，已内嵌进 notebook。
-- `REMOTE_EVIDENCE_MANIFEST.md`：远端原始证据清单。`remote_logs/`、`remote_outputs/` 和 HTML 渲染版目前保留在本地，未进入普通 Git 提交；如需完整原始视频/HDF5，可后续走 Git LFS 或 GitHub Release artifact。
+- `remote_logs/`：2026-06-19 远端 RTX 4090 实测证据，包含安装日志、依赖版本、资产下载日志、no-policy smoke 日志和 episode 输出。
 
 ## 当前状态
 
@@ -80,6 +84,7 @@
 - 已完成一条更完整的 Pi05 / `BananaInBowlTask` 闭环复现：`success=True`，`episode_step=198`，生成主视频、viewport 视频、HDF5、event log 和 `episode_results.jsonl`。
 - 已完成三个复杂任务抽样：`ReorientAllMugsTask` 失败、`Stack3RubiksCubeTask` 成功、`RedItemsInBinTask` 失败；3 个任务中成功 1 个，失败 2 个，视频和 JSON 结果已同步到 `remote_outputs/`。
 - 已把交流中的核心判断记录进 notebook：4090 显存边界、下载慢的原因、OpenPI pi05 与 RoboChallenge pi 的区别、视频位置、环境失败和策略失败的区别、为什么不先盲跑 RoboLab-120。
+- 已新增 RoboLab-120 全量复现执行包：`robolab120_task_matrix.json` 已确认 120 任务；Pi05 full-120、direct OpenPI full-120 对照、RoboChallenge/ReKep adapter-pending 对照和 adapter skeleton 均已准备。
 - 完整 RoboLab-120 仍未执行；仓库还有大量 object/material LFS 资产未下载，需要按任务继续补齐或全量拉取。
 
 ## 使用方式

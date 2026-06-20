@@ -4529,6 +4529,10 @@ def main() -> None:
             write_status("recommended_reading_lightweight_tests", report)
             """
         ),
+        md_file("EXPERIMENT_17_camera_robot_ablation.md"),
+        md_file("EXPERIMENT_18_pi05_axis5_then_perturb_compare.md"),
+        md_file("EXPERIMENT_19_policy_baseline_models.md"),
+        md_file("EXPERIMENT_20_robolab120_robochallenge_rekep_compare.md"),
         md(
             """
             ## 0.23 已完成复现：简单任务闭环与复杂任务抽样
@@ -5715,6 +5719,53 @@ def main() -> None:
                 "url": "https://raw.githubusercontent.com/NVlabs/RoboLab/main/docs/env_vram_size_guide.md",
                 "used_for": ["task names and VRAM caution; L40 48GB values treated only as upper-bound orientation"],
             },
+            {
+                "title": "RoboLab official task metadata",
+                "url": "https://raw.githubusercontent.com/NVlabs/RoboLab/main/robolab/tasks/_metadata/task_metadata.json",
+                "used_for": [
+                    "EXPERIMENT_20 full RoboLab-120 task matrix generation",
+                    "robolab_repro_artifacts/robolab120_task_matrix.json",
+                    "ability-axis, difficulty, subtask-count, episode-duration, and perturbation-object metadata",
+                ],
+                "observed": "checked 2026-06-20",
+            },
+            {
+                "title": "RoboLab Pi0-family OpenPI policies",
+                "url": "https://github.com/NVlabs/RoboLab/blob/main/policies/pi0_family/README.md",
+                "used_for": [
+                    "EXPERIMENT_19 direct baseline support for pi0, pi0_fast, pi05, paligemma, and paligemma_fast",
+                    "run_direct_openpi_policy_matrix_4090.sh policy list and direct-run boundary",
+                    "EXPERIMENT_20 direct full-120 comparison policy list before adapter-required baselines",
+                ],
+                "observed": "checked 2026-06-20",
+            },
+            {
+                "title": "NVIDIA Cosmos repository",
+                "url": "https://github.com/nvidia/cosmos",
+                "used_for": [
+                    "EXPERIMENT_19 classifies Cosmos as world-model/data/simulation component rather than direct Franka action policy",
+                    "EXPERIMENT_20 keeps Cosmos out of direct success-rate tables unless an action-policy adapter exists",
+                ],
+                "observed": "checked 2026-06-20",
+            },
+            {
+                "title": "Qwen-VLA announcement",
+                "url": "https://qwen.ai/blog?id=qwenvla",
+                "used_for": [
+                    "EXPERIMENT_19 classifies Qwen-VLA as Alibaba/Qwen VLA candidate requiring action/embodiment adapter",
+                    "EXPERIMENT_20 adapter-required policy comparison boundary",
+                ],
+                "observed": "checked 2026-06-20",
+            },
+            {
+                "title": "Qwen RobotSuite announcement",
+                "url": "https://qwen.ai/blog?id=qwen-robotsuite",
+                "used_for": [
+                    "EXPERIMENT_19 distinguishes Qwen-RobotManip, RobotNav, and RobotWorld for RoboLab manipulation relevance",
+                    "EXPERIMENT_20 adapter-required manipulation baseline boundary",
+                ],
+                "observed": "checked 2026-06-20",
+            },
         ],
     }
     (OUT_DIR / MANIFEST_NAME).write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -5751,10 +5802,15 @@ def main() -> None:
 - `EXPERIMENT_17_camera_robot_ablation.md`：实验拓展，分析外部相机角度、取消/遮蔽腕部相机、替换机器人三类消融的原理、可运行边界、真实 4090 测试矩阵和风险。
 - `EXPERIMENT_18_pi05_axis5_then_perturb_compare.md`：固定 Pi05 的能力轴 5×任务矩阵评测路线，包含每任务证据要求、`analysis/read_results.py` 出表、成功率中等任务选择、光照/背景/物体位置扰动和后续 RoboChallenge/ReKep 对照顺序。
 - `EXPERIMENT_19_policy_baseline_models.md`：多模型对照路线，把 Pi05/PaliGemma/GR00T/Cosmos/Qwen/阿里模型/RoboChallenge/ReKep 分成直接可跑、需 adapter、非直接动作策略三类，并给出直接 OpenPI 系列的 4090 脚本。
+- `EXPERIMENT_20_robolab120_robochallenge_rekep_compare.md`：RoboLab-120 全量复现实验入口，固定 Pi05 逐任务跑 full-120，生成同一任务矩阵下的 direct OpenPI 对照，并把 RoboChallenge/ReKep 明确标为 adapter-pending 而不是误算成 0 分。
 - `robolab_repro_artifacts/camera_robot_ablation_config_tests.json`：基于真实 Pi05 `env_cfg.json` 的配置级测试结果；验证 baseline 相机/机器人合约、硬删腕部相机的 schema 风险、只换机器人 USD 的无效性。
 - `robolab_repro_artifacts/pi05_axis5_task_matrix.json`：Pi05 第一批 16 任务矩阵，覆盖 visual/procedural/relational 三个能力轴，每轴不少于 5 个任务。
+- `robolab_repro_artifacts/robolab120_task_matrix.json`：官方 `task_metadata.json` 解析得到的 120 任务矩阵，保留能力轴、难度、子任务数、episode 时长和扰动候选对象。
+- `robolab_repro_artifacts/adapter_baseline_plan.json`：RoboChallenge pi 与 ReKep 接入 RoboLab 前必须满足的 observation/action/planner adapter 合约。
 - `robolab_repro_artifacts/policy_baseline_model_matrix.json`：多模型 baseline/readiness 矩阵，列出 Pi0-family、PaliGemma、GR00T、Cosmos、Qwen/阿里、RoboChallenge pi 和 ReKep 的接入状态。
 - `scripts/run_pi05_axis5_4090.sh`：4090 端固定 Pi05 的 16 任务主评测入口，自动保存视频/HDF5/日志并调用 `analysis/read_results.py` 出表。
+- `scripts/run_pi05_robolab120_4090.sh`：4090 端固定 Pi05 的 full-120 主评测入口，默认逐任务运行、失败不中断、最后合并 `episode_results.jsonl` 并出聚合表。
+- `scripts/run_policy_robolab120_compare_4090.sh`：4090 端 full-120 policy 对照入口，direct OpenPI policy 可实跑，RoboChallenge/ReKep 在 adapter 未完成时生成 pending 对照行。
 - `scripts/run_selected_perturbations_4090.sh`：读取主评测结果后选择成功率中等任务，并运行光照、背景、物体位置扰动。
 - `scripts/create_object_position_variation_runner.py`：在远端 RoboLab repo 内生成 object-position perturbation runner。
 - `scripts/run_direct_openpi_policy_matrix_4090.sh`：对 `pi05`、`paligemma`、`paligemma_fast`、`pi0`、`pi0_fast` 等 RoboLab 直接支持的 OpenPI policy 跑同一 axis5 矩阵。
@@ -5800,6 +5856,7 @@ def main() -> None:
 - 已完成一条更完整的 Pi05 / `BananaInBowlTask` 闭环复现：`success=True`，`episode_step=198`，生成主视频、viewport 视频、HDF5、event log 和 `episode_results.jsonl`。
 - 已完成三个复杂任务抽样：`ReorientAllMugsTask` 失败、`Stack3RubiksCubeTask` 成功、`RedItemsInBinTask` 失败；3 个任务中成功 1 个，失败 2 个，视频和 JSON 结果已同步到 `remote_outputs/`。
 - 已把交流中的核心判断记录进 notebook：4090 显存边界、下载慢的原因、OpenPI pi05 与 RoboChallenge pi 的区别、视频位置、环境失败和策略失败的区别、为什么不先盲跑 RoboLab-120。
+- 已新增 RoboLab-120 全量复现执行包：`robolab120_task_matrix.json` 已确认 120 任务；Pi05 full-120、direct OpenPI full-120 对照、RoboChallenge/ReKep adapter-pending 对照和 adapter skeleton 均已准备。
 - 完整 RoboLab-120 仍未执行；仓库还有大量 object/material LFS 资产未下载，需要按任务继续补齐或全量拉取。
 
 ## 使用方式

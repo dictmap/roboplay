@@ -1,0 +1,60 @@
+{
+  "purpose": "Document why RoboChallenge pi and ReKep cannot be fairly scored on RoboLab-120 until adapters exist.",
+  "comparison_rule": "Only policies that emit RoboLab-compatible Franka/Robotiq actions from RoboLab observations can enter success-rate tables as real results. Others are marked adapter_required.",
+  "baselines": [
+    {
+      "id": "robochallenge_pi",
+      "display_name": "RoboChallenge pi / Table30v2 ALOHA baseline",
+      "status": "adapter_required",
+      "local_candidate_root": "/home/yjl/yjl/RoboChallenge/baseline_pi05_multitask",
+      "local_candidate_checkpoint": "/home/yjl/yjl/RoboChallenge/checkpoints/table30v2_multitask_baseline_aloha",
+      "main_mismatch": [
+        "RoboChallenge baseline is built around its own task/data interface.",
+        "Existing checkpoint path is a Table30v2/ALOHA style candidate, not a RoboLab Pi0-family policy arg.",
+        "RoboLab expects per-step observations with over-shoulder camera, wrist camera, proprio, prompt, and Franka/Robotiq action chunks."
+      ],
+      "adapter_contract": {
+        "input": [
+          "RoboLab observation dict",
+          "language instruction",
+          "robot joint positions and gripper state",
+          "camera calibration/image tensors"
+        ],
+        "output": [
+          "RoboLab action vector or action chunk compatible with policies/pi0_family/run.py control loop",
+          "timing statistics",
+          "policy metadata for episode_results.jsonl"
+        ],
+        "first_smoke": "BananaInBowlTask with NUM_RUNS=1, NUM_ENVS=1",
+        "promotion_gate": "Only after one full episode writes video, HDF5, event log, and episode_results.jsonl."
+      }
+    },
+    {
+      "id": "rekep",
+      "display_name": "ReKep keypoint-constraint planner",
+      "status": "planner_adapter_required",
+      "local_candidate_root": "/home/yjl/yjl/ReKep",
+      "main_mismatch": [
+        "ReKep is a perception/planning/control route, not a direct learned VLA action policy.",
+        "It needs keypoint extraction, constraint generation, subgoal optimization, and a RoboLab low-level controller.",
+        "Its result should be reported as planner baseline, not mixed silently with Pi05/PaliGemma policy baselines."
+      ],
+      "adapter_contract": {
+        "input": [
+          "RoboLab RGB-D or RGB observation",
+          "language instruction",
+          "scene object/keypoint candidates",
+          "current robot state"
+        ],
+        "output": [
+          "subgoal sequence",
+          "constraint satisfaction diagnostics",
+          "low-level Franka/Robotiq actions",
+          "same episode_results.jsonl/HDF5/video evidence contract as VLA policies"
+        ],
+        "first_smoke": "A single pick-place task with visible target object and container.",
+        "promotion_gate": "Only after planner actions are executed in Isaac, not merely generated offline."
+      }
+    }
+  ]
+}
