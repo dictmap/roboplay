@@ -1,0 +1,506 @@
+{
+  "source_matrix": "robolab_2604_09860_repro_jupyter\\robolab_repro_artifacts\\robolab120_task_matrix.json",
+  "source_preflight": "robolab_2604_09860_repro_jupyter\\robolab_repro_artifacts\\robolab120_asset_preflight_20260620_091852.json",
+  "selection_rule": "From static asset-preflight-passed tasks, choose low-difficulty candidates per axis; task names are unique, but multi-label tasks can count for multiple axes.",
+  "per_axis": 5,
+  "axes": [
+    "visual",
+    "procedural",
+    "relational"
+  ],
+  "num_tasks": 15,
+  "axis_counts": {
+    "visual": 9,
+    "procedural": 5,
+    "relational": 6
+  },
+  "tasks": [
+    {
+      "index": 3,
+      "task_name": "BananaInBowlTask",
+      "instruction": "Pick up the banana and place it in the bowl",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "50",
+      "scene": "banana_bowl.usda",
+      "filename": "benchmark/banana_in_bowl_task.py",
+      "contact_objects": [
+        "banana",
+        "bowl",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "banana"
+      ],
+      "selection_axis": "visual",
+      "selection_reason": "asset_preflight_passed_and_axis_candidate"
+    },
+    {
+      "index": 65,
+      "task_name": "PickDrillTask",
+      "instruction": "Pick up the cordless drill.",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 1,
+      "episode_s": "40",
+      "scene": "mugs4_measuringcup_drill_bowl.usda",
+      "filename": "benchmark/pick_drill.py",
+      "contact_objects": [
+        "red_mug",
+        "bowl",
+        "ceramic_mug",
+        "upright_white_mug",
+        "sideways_white_mug",
+        "cordless_drill",
+        "measuring_cup",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "red_mug",
+        "ceramic_mug",
+        "upright_white_mug",
+        "sideways_white_mug"
+      ],
+      "selection_axis": "visual",
+      "selection_reason": "asset_preflight_passed_and_axis_candidate"
+    },
+    {
+      "index": 102,
+      "task_name": "TakeMeasuringSpoonOutTask",
+      "instruction": "Take the white colored measuring spoon out of the red bowl and put it on the table.",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "40",
+      "scene": "mugs4_measuringcup_drill_bowl_v2.usda",
+      "filename": "benchmark/take_measuring_spoon_out.py",
+      "contact_objects": [
+        "red_mug",
+        "bowl",
+        "ceramic_mug",
+        "upright_white_mug",
+        "sideways_white_mug",
+        "cordless_drill",
+        "measuring_cup",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "taking_measuring_cup_out"
+      ],
+      "selection_axis": "visual",
+      "selection_reason": "asset_preflight_passed_and_axis_candidate"
+    },
+    {
+      "index": 78,
+      "task_name": "RedDishesInBinTask",
+      "instruction": "Put the red dishware in the grey bin",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "color",
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "60",
+      "scene": "rubiks_cube_banana_bowl_mug_bin.usda",
+      "filename": "benchmark/red_dishes_in_bin.py",
+      "contact_objects": [
+        "mug",
+        "bowl",
+        "grey_bin",
+        "table",
+        "banana",
+        "rubiks_cube"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "mug",
+        "bowl"
+      ],
+      "selection_axis": "visual",
+      "selection_reason": "asset_preflight_passed_and_axis_candidate"
+    },
+    {
+      "index": 5,
+      "task_name": "BananasInBinOneMoreTask",
+      "instruction": "Put one (1) more bananas in the grey bin.",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "counting"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 3,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "bananas_5_grey_bin.usda",
+      "filename": "benchmark/bananas_in_bin_one_more.py",
+      "contact_objects": [
+        "banana",
+        "banana_01",
+        "banana_02",
+        "banana_03",
+        "banana_04",
+        "grey_bin",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "banana",
+        "banana_01",
+        "banana_03"
+      ],
+      "selection_axis": "visual",
+      "selection_reason": "asset_preflight_passed_and_axis_candidate"
+    },
+    {
+      "index": 79,
+      "task_name": "RedItemsInBinTask",
+      "instruction": "Put all the red things in the grey bin",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "color",
+        "sorting"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 4,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "60",
+      "scene": "rubiks_cube_banana_bowl_mug_bin.usda",
+      "filename": "benchmark/red_items_in_bin.py",
+      "contact_objects": [
+        "mug",
+        "bowl",
+        "grey_bin",
+        "table",
+        "banana",
+        "rubiks_cube"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "mug",
+        "bowl"
+      ],
+      "selection_axis": "procedural",
+      "selection_reason": "asset_preflight_passed_and_axis_candidate"
+    },
+    {
+      "index": 82,
+      "task_name": "ReorientRedMugTask",
+      "instruction": "Put the red mug upright so that the opening is facing upwards.",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "reorientation",
+        "color"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 4,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "mugs4_measuringcup_drill_bowl.usda",
+      "filename": "benchmark/reorient_red_mugs_task.py",
+      "contact_objects": [
+        "red_mug",
+        "bowl",
+        "ceramic_mug",
+        "upright_white_mug",
+        "sideways_white_mug",
+        "cordless_drill",
+        "measuring_cup",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "reorienting_red_mug"
+      ],
+      "selection_axis": "procedural",
+      "selection_reason": "asset_preflight_passed_and_axis_candidate"
+    },
+    {
+      "index": 83,
+      "task_name": "ReorientWhiteMugsTask",
+      "instruction": "Make sure all the white mugs are upright so that the opening is facing upwards.",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "reorientation",
+        "color"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 4,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "mugs4_measuringcup_drill_bowl_v2.usda",
+      "filename": "benchmark/reorient_white_mugs.py",
+      "contact_objects": [
+        "red_mug",
+        "bowl",
+        "ceramic_mug",
+        "upright_white_mug",
+        "sideways_white_mug",
+        "cordless_drill",
+        "measuring_cup",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "reorienting_sideways_white_mug"
+      ],
+      "selection_axis": "procedural",
+      "selection_reason": "asset_preflight_passed_and_axis_candidate"
+    },
+    {
+      "index": 99,
+      "task_name": "Stack3RubiksCubeTask",
+      "instruction": "Stack the rubiks cubes in a tower",
+      "axes": [
+        "procedural"
+      ],
+      "attributes": [
+        "stacking"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 4,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "rubiks_cube_3.usda",
+      "filename": "benchmark/rubiks_cube_stacking_task.py",
+      "contact_objects": [
+        "rubiks_cube",
+        "rubiks_cube_1",
+        "rubiks_cube_2",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube",
+        "rubiks_cube_1",
+        "rubiks_cube_2"
+      ],
+      "selection_axis": "procedural",
+      "selection_reason": "asset_preflight_passed_and_axis_candidate"
+    },
+    {
+      "index": 100,
+      "task_name": "StackWhiteMugsTask",
+      "instruction": "Stack the white mugs on top of each other.",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "stacking",
+        "color"
+      ],
+      "difficulty_label": "moderate",
+      "difficulty_score": 4,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 2,
+      "episode_s": "60",
+      "scene": "mugs4_measuringcup_drill_bowl.usda",
+      "filename": "benchmark/stack_white_mugs_task.py",
+      "contact_objects": [
+        "red_mug",
+        "bowl",
+        "ceramic_mug",
+        "upright_white_mug",
+        "sideways_white_mug",
+        "cordless_drill",
+        "measuring_cup",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "red_mug",
+        "ceramic_mug",
+        "upright_white_mug",
+        "sideways_white_mug"
+      ],
+      "selection_axis": "procedural",
+      "selection_reason": "asset_preflight_passed_and_axis_candidate"
+    },
+    {
+      "index": 88,
+      "task_name": "RubiksCubeOrBananaTask",
+      "instruction": "Put the cube or the banana in the bowl",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "conjunction"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "30",
+      "scene": "rubiks_cube_banana_bowl.usda",
+      "filename": "benchmark/rubiks_cube_or_banana_task.py",
+      "contact_objects": [
+        "rubiks_cube",
+        "banana",
+        "bowl",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube",
+        "banana"
+      ],
+      "selection_axis": "relational",
+      "selection_reason": "asset_preflight_passed_and_axis_candidate"
+    },
+    {
+      "index": 9,
+      "task_name": "BananaThenRubiksCubeTask",
+      "instruction": "put the banana then the cube in the bowl",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "conjunction"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "60",
+      "scene": "rubiks_cube_banana_bowl.usda",
+      "filename": "benchmark/banana_then_rubiks_cube.py",
+      "contact_objects": [
+        "rubiks_cube",
+        "banana",
+        "bowl",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "banana",
+        "rubiks_cube"
+      ],
+      "selection_axis": "relational",
+      "selection_reason": "asset_preflight_passed_and_axis_candidate"
+    },
+    {
+      "index": 17,
+      "task_name": "BowlStackingLeftOnRightTask",
+      "instruction": "Stack the left bowl on the right bowl",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "spatial"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 1,
+      "episode_s": "20",
+      "scene": "bowls_2_table.usda",
+      "filename": "benchmark/bowl_stacking_left_on_right.py",
+      "contact_objects": [
+        "bowl_1",
+        "bowl_2",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "bowl_1",
+        "bowl_2"
+      ],
+      "selection_axis": "relational",
+      "selection_reason": "asset_preflight_passed_and_axis_candidate"
+    },
+    {
+      "index": 18,
+      "task_name": "BowlStackingRightOnLeftTask",
+      "instruction": "Stack the right bowl on the left bowl",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "spatial"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 1,
+      "episode_s": "20",
+      "scene": "bowls_2_table.usda",
+      "filename": "benchmark/bowl_stacking_right_on_left.py",
+      "contact_objects": [
+        "bowl_1",
+        "bowl_2",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "bowl_1",
+        "bowl_2"
+      ],
+      "selection_axis": "relational",
+      "selection_reason": "asset_preflight_passed_and_axis_candidate"
+    },
+    {
+      "index": 84,
+      "task_name": "RubiksCubeAndBananaTask",
+      "instruction": "Put the cube and the banana in the bowl",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "conjunction"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "60",
+      "scene": "rubiks_cube_banana_bowl.usda",
+      "filename": "benchmark/rubiks_cube_and_banana_task.py",
+      "contact_objects": [
+        "rubiks_cube",
+        "banana",
+        "bowl",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube",
+        "banana"
+      ],
+      "selection_axis": "relational",
+      "selection_reason": "asset_preflight_passed_and_axis_candidate"
+    }
+  ]
+}

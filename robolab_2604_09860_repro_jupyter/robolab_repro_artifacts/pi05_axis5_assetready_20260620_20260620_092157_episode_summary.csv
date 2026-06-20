@@ -1,0 +1,16 @@
+task_name,env_name,policy,variant,episodes,successes,success_rate,score_mean,episode_step_mean,duration_mean,policy_inference_avg_ms_mean,env_step_avg_ms_mean
+BananaInBowlTask,BananaInBowlTask,pi05,unlabeled,1,1,1.0,1.0,197.0,13.133333333333333,12.3,195.7
+BananaThenRubiksCubeTask,BananaThenRubiksCubeTask,pi05,unlabeled,1,1,1.0,1.0,764.0,50.93333333333333,11.8,193.7
+BananasInBinOneMoreTask,BananasInBinOneMoreTask,pi05,unlabeled,1,1,1.0,1.0,196.0,13.066666666666666,12.3,222.5
+BowlStackingLeftOnRightTask,BowlStackingLeftOnRightTask,pi05,unlabeled,1,1,1.0,1.0,161.0,10.733333333333333,12.1,201.8
+BowlStackingRightOnLeftTask,BowlStackingRightOnLeftTask,pi05,unlabeled,1,1,1.0,1.0,161.0,10.733333333333333,12.0,202.8
+PickDrillTask,PickDrillTask,pi05,unlabeled,1,0,0.0,1.0,600.0,40.0,11.9,214.9
+RedDishesInBinTask,RedDishesInBinTask,pi05,unlabeled,1,0,0.0,0.5,900.0,60.0,11.9,208.4
+RedItemsInBinTask,RedItemsInBinTask,pi05,unlabeled,1,0,0.0,0.0,900.0,60.0,12.0,202.3
+ReorientRedMugTask,ReorientRedMugTask,pi05,unlabeled,1,0,0.0,0.0,900.0,60.0,11.9,220.8
+ReorientWhiteMugsTask,ReorientWhiteMugsTask,pi05,unlabeled,1,1,1.0,1.0,137.0,9.133333333333333,12.5,235.6
+RubiksCubeAndBananaTask,RubiksCubeAndBananaTask,pi05,unlabeled,1,1,1.0,1.0,418.0,27.866666666666667,12.0,192.4
+RubiksCubeOrBananaTask,RubiksCubeOrBananaTask,pi05,unlabeled,1,1,1.0,1.0,104.0,6.933333333333334,11.9,197.2
+Stack3RubiksCubeTask,Stack3RubiksCubeTask,pi05,unlabeled,1,1,1.0,1.0,273.0,18.2,12.1,198.7
+StackWhiteMugsTask,StackWhiteMugsTask,pi05,unlabeled,1,0,0.0,0.0,900.0,60.0,11.8,235.1
+TakeMeasuringSpoonOutTask,TakeMeasuringSpoonOutTask,pi05,unlabeled,1,0,0.0,0.5,600.0,40.0,11.9,232.2

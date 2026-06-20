@@ -23,6 +23,7 @@ VIDEO_MODE="${VIDEO_MODE:-all}"
 RECORD_IMAGE_DATA="${RECORD_IMAGE_DATA:-0}"
 STOP_ON_FAILURE="${STOP_ON_FAILURE:-0}"
 TASK_LIMIT="${TASK_LIMIT:-0}"
+GENERATE_MATRIX="${GENERATE_MATRIX:-1}"
 STAMP="${STAMP:-$(date +%Y%m%d_%H%M%S)}"
 RUN_PREFIX="${RUN_PREFIX:-robolab120_${POLICY}_${STAMP}}"
 MATRIX_PATH="${MATRIX_PATH:-${PACK_ROOT}/robolab_repro_artifacts/robolab120_task_matrix.json}"
@@ -36,7 +37,14 @@ if [[ ! -d "${ROBO_ROOT}" ]]; then
 fi
 
 cd "${PACK_ROOT}"
-"${PYTHON_BIN}" scripts/generate_robolab120_task_matrix.py --out "${MATRIX_PATH}"
+if [[ "${GENERATE_MATRIX}" == "1" ]]; then
+  "${PYTHON_BIN}" scripts/generate_robolab120_task_matrix.py --out "${MATRIX_PATH}"
+else
+  if [[ ! -f "${MATRIX_PATH}" ]]; then
+    echo "[robolab120] MATRIX_PATH not found while GENERATE_MATRIX=0: ${MATRIX_PATH}" >&2
+    exit 2
+  fi
+fi
 mkdir -p "${REPORT_DIR}"
 
 mapfile -t TASKS < <("${PYTHON_BIN}" - "${MATRIX_PATH}" "${TASK_LIMIT}" <<'PY'

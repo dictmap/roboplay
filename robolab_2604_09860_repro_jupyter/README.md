@@ -32,9 +32,12 @@
 - `EXPERIMENT_19_policy_baseline_models.md`：多模型对照路线，把 Pi05/PaliGemma/GR00T/Cosmos/Qwen/阿里模型/RoboChallenge/ReKep 分成直接可跑、需 adapter、非直接动作策略三类，并给出直接 OpenPI 系列的 4090 脚本。
 - `EXPERIMENT_20_robolab120_robochallenge_rekep_compare.md`：RoboLab-120 全量复现实验入口，固定 Pi05 逐任务跑 full-120，生成同一任务矩阵下的 direct OpenPI 对照，并把 RoboChallenge/ReKep 明确标为 adapter-pending 而不是误算成 0 分。
 - `EXPERIMENT_21_robolab120_smoke5_result.md`：Pi05 在 4090 上跑 RoboLab-120 前 5 个任务的真实 smoke 结果；5 个任务均被调起，只有 `BananaInBowlTask` 完整产出 episode/HDF5/video/event log 并成功，另外 4 个任务诊断为资产/contact sensor 层失败，不能计入策略成功率。
+- `EXPERIMENT_22_pi05_axis5_assetready_result.md`：Pi05 在 4090 上跑完 15 个 asset-ready 能力轴任务；15/15 产出完整可计分 episode，整体 success rate 为 9/15，按能力轴、难度和任务事件做了汇总，并明确 full-120 仍需先补齐资产。
 - `robolab_repro_artifacts/camera_robot_ablation_config_tests.json`：基于真实 Pi05 `env_cfg.json` 的配置级测试结果；验证 baseline 相机/机器人合约、硬删腕部相机的 schema 风险、只换机器人 USD 的无效性。
 - `robolab_repro_artifacts/pi05_axis5_task_matrix.json`：Pi05 第一批 16 任务矩阵，覆盖 visual/procedural/relational 三个能力轴，每轴不少于 5 个任务。
 - `robolab_repro_artifacts/robolab120_task_matrix.json`：官方 `task_metadata.json` 解析得到的 120 任务矩阵，保留能力轴、难度、子任务数、episode 时长和扰动候选对象。
+- `robolab_repro_artifacts/robolab120_asset_preflight_20260620_091852.json`：RoboLab-120 静态资产 preflight 结果，用于区分资产缺失和策略失败。
+- `robolab_repro_artifacts/pi05_axis5_asset_ready_task_matrix_20260620.json`：从 asset-ready 任务中选择的 15 任务能力轴矩阵，每个能力轴至少 5 个任务。
 - `robolab_repro_artifacts/adapter_baseline_plan.json`：RoboChallenge pi 与 ReKep 接入 RoboLab 前必须满足的 observation/action/planner adapter 合约。
 - `robolab_repro_artifacts/policy_baseline_model_matrix.json`：多模型 baseline/readiness 矩阵，列出 Pi0-family、PaliGemma、GR00T、Cosmos、Qwen/阿里、RoboChallenge pi 和 ReKep 的接入状态。
 - `scripts/run_pi05_axis5_4090.sh`：4090 端固定 Pi05 的 16 任务主评测入口，自动保存视频/HDF5/日志并调用 `analysis/read_results.py` 出表。
@@ -48,6 +51,8 @@
 - `scripts/create_pi05_wrist_blackout_runner.py`：在远端 RoboLab repo 内生成 Pi05 腕部相机置黑 client 和 runner。
 - `scripts/summarize_ablation_outputs.py`：离线汇总 RoboLab output 目录中的 `episode_results.jsonl`，输出 JSON/CSV。
 - `scripts/diagnose_robolab120_smoke_log.py`：离线读取 RoboLab run log、task manifest 和 artifact check，聚合缺失资产、contact reporter/API 初始化失败、traceback 和证据缺失，避免把环境失败误算成策略失败。
+- `scripts/preflight_robolab_task_assets.py`：静态扫描任务场景 USD 及其引用资产，先筛掉明显资产缺失的任务。
+- `scripts/select_asset_ready_axis_tasks.py`：从 asset-ready 任务中按能力轴覆盖选择 4090 可承受的小矩阵。
 - `COMPLETE_REPRO_pi05_banana_20260620.md`：Pi05 / BananaInBowlTask 成功闭环记录，已内嵌进 notebook。
 - `COMPLEX_TASKS_pi05_20260620.md`：Pi05 三个复杂任务抽样复现记录，已内嵌进 notebook。
 - `remote_logs/`：2026-06-19 远端 RTX 4090 实测证据，包含安装日志、依赖版本、资产下载日志、no-policy smoke 日志和 episode 输出。
@@ -86,6 +91,7 @@
 - 已完成一条更完整的 Pi05 / `BananaInBowlTask` 闭环复现：`success=True`，`episode_step=198`，生成主视频、viewport 视频、HDF5、event log 和 `episode_results.jsonl`。
 - 已完成三个复杂任务抽样：`ReorientAllMugsTask` 失败、`Stack3RubiksCubeTask` 成功、`RedItemsInBinTask` 失败；3 个任务中成功 1 个，失败 2 个，视频和 JSON 结果已同步到 `remote_outputs/`。
 - 已完成 Pi05 / RoboLab-120 前 5 任务 smoke：5 个任务均被调起，`BananaInBowlTask` 产出完整证据并成功；另外 4 个任务没有 episode/HDF5/video，诊断为缺失资产与 contact sensor 初始化失败。当前不能把这 4 个任务记为 Pi05 策略失败，full-120 前需要先做 asset/contact preflight。
+- 已完成 Pi05 / asset-ready 15 任务能力轴子集：15 个任务全部完成 artifact gate，整体 9/15 成功；关系轴 6/6，程序轴 2/5，视觉轴 3/9。由于每任务只跑 1 次，扰动实验前还需要补重复运行来选真正“中等成功率”任务。
 - 已把交流中的核心判断记录进 notebook：4090 显存边界、下载慢的原因、OpenPI pi05 与 RoboChallenge pi 的区别、视频位置、环境失败和策略失败的区别、为什么不先盲跑 RoboLab-120。
 - 已新增 RoboLab-120 全量复现执行包：`robolab120_task_matrix.json` 已确认 120 任务；Pi05 full-120、direct OpenPI full-120 对照、RoboChallenge/ReKep adapter-pending 对照和 adapter skeleton 均已准备。
 - 完整 RoboLab-120 仍未执行；仓库还有大量 object/material LFS 资产未下载，需要按任务继续补齐或全量拉取。

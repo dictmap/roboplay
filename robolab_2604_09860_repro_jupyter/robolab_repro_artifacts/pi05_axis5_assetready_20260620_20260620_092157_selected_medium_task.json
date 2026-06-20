@@ -1,0 +1,307 @@
+{
+  "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_axis5_assetready_20260620_20260620_092157_merged",
+  "target_rate": 0.5,
+  "selected": {
+    "task_name": "BananaInBowlTask",
+    "episodes": 1,
+    "success_rate": 1.0,
+    "score_mean": 1.0,
+    "distance_to_target": 0.5,
+    "difficulty_label": "simple",
+    "axes": [
+      "visual"
+    ],
+    "attributes": [
+      "semantics"
+    ],
+    "primary_objects_for_object_pose_variation": [
+      "banana"
+    ]
+  },
+  "candidates": [
+    {
+      "task_name": "BananaInBowlTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "banana"
+      ]
+    },
+    {
+      "task_name": "BananaThenRubiksCubeTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "conjunction"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "banana",
+        "rubiks_cube"
+      ]
+    },
+    {
+      "task_name": "BananasInBinOneMoreTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "counting"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "banana",
+        "banana_01",
+        "banana_03"
+      ]
+    },
+    {
+      "task_name": "BowlStackingLeftOnRightTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "spatial"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "bowl_1",
+        "bowl_2"
+      ]
+    },
+    {
+      "task_name": "BowlStackingRightOnLeftTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "spatial"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "bowl_1",
+        "bowl_2"
+      ]
+    },
+    {
+      "task_name": "PickDrillTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "red_mug",
+        "ceramic_mug",
+        "upright_white_mug",
+        "sideways_white_mug"
+      ]
+    },
+    {
+      "task_name": "RedDishesInBinTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.5,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "color",
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "mug",
+        "bowl"
+      ]
+    },
+    {
+      "task_name": "RedItemsInBinTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "color",
+        "sorting"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "mug",
+        "bowl"
+      ]
+    },
+    {
+      "task_name": "ReorientRedMugTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "reorientation",
+        "color"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "reorienting_red_mug"
+      ]
+    },
+    {
+      "task_name": "ReorientWhiteMugsTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "reorientation",
+        "color"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "reorienting_sideways_white_mug"
+      ]
+    },
+    {
+      "task_name": "RubiksCubeAndBananaTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "conjunction"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube",
+        "banana"
+      ]
+    },
+    {
+      "task_name": "RubiksCubeOrBananaTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "conjunction"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube",
+        "banana"
+      ]
+    },
+    {
+      "task_name": "Stack3RubiksCubeTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural"
+      ],
+      "attributes": [
+        "stacking"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube",
+        "rubiks_cube_1",
+        "rubiks_cube_2"
+      ]
+    },
+    {
+      "task_name": "StackWhiteMugsTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "stacking",
+        "color"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "red_mug",
+        "ceramic_mug",
+        "upright_white_mug",
+        "sideways_white_mug"
+      ]
+    },
+    {
+      "task_name": "TakeMeasuringSpoonOutTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.5,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "taking_measuring_cup_out"
+      ]
+    }
+  ],
+  "note": "If no task has 0<success_rate<1, this selects the closest task to target_rate as a fallback."
+}

@@ -1,0 +1,28 @@
+{
+  "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_axis5_assetready_20260620_20260620_092157_TakeMeasuringSpoonOutTask",
+  "episode_results_jsonl": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_axis5_assetready_20260620_20260620_092157_TakeMeasuringSpoonOutTask/episode_results.jsonl",
+  "episode_results_jsonl_nonempty": true,
+  "tasks": [
+    {
+      "task": "TakeMeasuringSpoonOutTask",
+      "task_dirs": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_axis5_assetready_20260620_20260620_092157_TakeMeasuringSpoonOutTask/TakeMeasuringSpoonOutTask"
+      ],
+      "hdf5": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_axis5_assetready_20260620_20260620_092157_TakeMeasuringSpoonOutTask/TakeMeasuringSpoonOutTask/run_0.hdf5"
+      ],
+      "videos": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_axis5_assetready_20260620_20260620_092157_TakeMeasuringSpoonOutTask/TakeMeasuringSpoonOutTask/Take_the_white_colored_measuring_spoon_out_of_the_red_bowl_and_put_it_on_the_table_0_viewport.mp4",
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_axis5_assetready_20260620_20260620_092157_TakeMeasuringSpoonOutTask/TakeMeasuringSpoonOutTask/Take_the_white_colored_measuring_spoon_out_of_the_red_bowl_and_put_it_on_the_table_0.mp4"
+      ],
+      "subtask_or_event_logs": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_axis5_assetready_20260620_20260620_092157_TakeMeasuringSpoonOutTask/TakeMeasuringSpoonOutTask/log_0_env0.json"
+      ],
+      "env_cfg": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_axis5_assetready_20260620_20260620_092157_TakeMeasuringSpoonOutTask/TakeMeasuringSpoonOutTask/env_cfg.json"
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true
+}

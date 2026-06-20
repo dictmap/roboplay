@@ -1,0 +1,229 @@
+{
+  "matrix": "/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/robolab_repro_artifacts/pi05_axis5_asset_ready_task_matrix_20260620.json",
+  "roots": [
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_axis5_assetready_20260620_20260620_092157_BananaInBowlTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_axis5_assetready_20260620_20260620_092157_PickDrillTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_axis5_assetready_20260620_20260620_092157_TakeMeasuringSpoonOutTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_axis5_assetready_20260620_20260620_092157_RedDishesInBinTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_axis5_assetready_20260620_20260620_092157_BananasInBinOneMoreTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_axis5_assetready_20260620_20260620_092157_RedItemsInBinTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_axis5_assetready_20260620_20260620_092157_ReorientRedMugTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_axis5_assetready_20260620_20260620_092157_ReorientWhiteMugsTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_axis5_assetready_20260620_20260620_092157_Stack3RubiksCubeTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_axis5_assetready_20260620_20260620_092157_StackWhiteMugsTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_axis5_assetready_20260620_20260620_092157_RubiksCubeOrBananaTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_axis5_assetready_20260620_20260620_092157_BananaThenRubiksCubeTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_axis5_assetready_20260620_20260620_092157_BowlStackingLeftOnRightTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_axis5_assetready_20260620_20260620_092157_BowlStackingRightOnLeftTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_axis5_assetready_20260620_20260620_092157_RubiksCubeAndBananaTask"
+  ],
+  "num_episode_rows": 15,
+  "aggregates": {
+    "by_task": [
+      {
+        "policy": "pi05",
+        "task_name": "BananaInBowlTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 1.0,
+        "score_mean": 1.0,
+        "episode_step_mean": 197.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "BananaThenRubiksCubeTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 1.0,
+        "score_mean": 1.0,
+        "episode_step_mean": 764.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "BananasInBinOneMoreTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 1.0,
+        "score_mean": 1.0,
+        "episode_step_mean": 196.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "BowlStackingLeftOnRightTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 1.0,
+        "score_mean": 1.0,
+        "episode_step_mean": 161.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "BowlStackingRightOnLeftTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 1.0,
+        "score_mean": 1.0,
+        "episode_step_mean": 161.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "PickDrillTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 0.0,
+        "score_mean": 1.0,
+        "episode_step_mean": 600.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "RedDishesInBinTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 0.0,
+        "score_mean": 0.5,
+        "episode_step_mean": 900.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "RedItemsInBinTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 0.0,
+        "score_mean": 0.0,
+        "episode_step_mean": 900.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "ReorientRedMugTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 0.0,
+        "score_mean": 0.0,
+        "episode_step_mean": 900.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "ReorientWhiteMugsTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 1.0,
+        "score_mean": 1.0,
+        "episode_step_mean": 137.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "RubiksCubeAndBananaTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 1.0,
+        "score_mean": 1.0,
+        "episode_step_mean": 418.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "RubiksCubeOrBananaTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 1.0,
+        "score_mean": 1.0,
+        "episode_step_mean": 104.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "Stack3RubiksCubeTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 1.0,
+        "score_mean": 1.0,
+        "episode_step_mean": 273.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "StackWhiteMugsTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 0.0,
+        "score_mean": 0.0,
+        "episode_step_mean": 900.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "TakeMeasuringSpoonOutTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 0.0,
+        "score_mean": 0.5,
+        "episode_step_mean": 600.0
+      }
+    ],
+    "by_axis": [
+      {
+        "policy": "pi05",
+        "axis": "procedural",
+        "episodes": 5,
+        "scored_episodes": 5,
+        "pending_episodes": 0,
+        "success_rate": 0.4,
+        "score_mean": 0.4,
+        "episode_step_mean": 622.0
+      },
+      {
+        "policy": "pi05",
+        "axis": "relational",
+        "episodes": 6,
+        "scored_episodes": 6,
+        "pending_episodes": 0,
+        "success_rate": 1.0,
+        "score_mean": 1.0,
+        "episode_step_mean": 300.6666666666667
+      },
+      {
+        "policy": "pi05",
+        "axis": "visual",
+        "episodes": 9,
+        "scored_episodes": 9,
+        "pending_episodes": 0,
+        "success_rate": 0.3333333333333333,
+        "score_mean": 0.5555555555555556,
+        "episode_step_mean": 592.2222222222222
+      }
+    ],
+    "by_difficulty": [
+      {
+        "policy": "pi05",
+        "difficulty_label": "moderate",
+        "episodes": 6,
+        "scored_episodes": 6,
+        "pending_episodes": 0,
+        "success_rate": 0.5,
+        "score_mean": 0.5,
+        "episode_step_mean": 551.0
+      },
+      {
+        "policy": "pi05",
+        "difficulty_label": "simple",
+        "episodes": 9,
+        "scored_episodes": 9,
+        "pending_episodes": 0,
+        "success_rate": 0.6666666666666666,
+        "score_mean": 0.8888888888888888,
+        "episode_step_mean": 433.8888888888889
+      }
+    ]
+  }
+}
