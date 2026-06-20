@@ -334,12 +334,13 @@ def main() -> None:
                 {"id": "14b", "file": "EXPLAIN_14_deep_runtime_code_chain.md", "question": "多 env/action chunk/WorldState/EventTracker 状态边界是什么？", "source": "GitHub eval/world/logging/dashboard source files", "source_content": "env_id isolation, action chunk cache, predicate state, sparse failure events, artifact loading", "implementation_anchor": ["WorldState", "EventTracker", "RecorderManager", "dashboard"]},
                 {"id": "15", "file": "EXPLAIN_15_reviewer_synthesis.md", "question": "审稿人视角怎么看这篇论文？", "source": "Paper full text + Limitations + reproduction evidence", "source_content": "strengths, weaknesses, reproducibility risk, future innovation routes", "implementation_anchor": ["review rubric", "subset protocol", "hardware boundary"]},
                 {"id": "16", "file": "EXPLAIN_16_recommended_reading.md", "question": "读完 RoboLab 后该补哪些来源？", "source": "RoboLab related work + official project/source links", "source_content": "2026-first reading map across policies, benchmarks, assets, real data, world models", "implementation_anchor": ["source-linked reading map"]},
+                {"id": "17", "file": "EXPLAIN_17_deep_mechanism_playbook.md", "question": "怎样把所有精讲从章节覆盖推进到源码状态机级深读？", "source": "Paper III/IV/Appendix B-C-D + official GitHub runtime/scene/eval/dashboard tree + local 4090 artifacts", "source_content": "RoboLab as an evaluation compiler: task contract, predicate scene generation, env binding, policy rollout, event evidence, perturbation, baseline separation", "implementation_anchor": ["TaskContract", "typed predicates", "policy client", "WorldState/EventTracker", "episode_results/HDF5/video", "4090 artifact gates"]},
             ]
 
             required_keys = {"id", "file", "question", "source", "source_content", "implementation_anchor"}
             tests = [
                 ("index_markdown_exists", (NOTEBOOK_ROOT / "EXPLAIN_SOURCE_QUESTION_INDEX.md").exists()),
-                ("covers_all_explain_files", len(source_question_index) >= 19),
+                ("covers_all_explain_files", len(source_question_index) >= 20),
                 ("every_entry_has_required_keys", all(required_keys.issubset(entry) for entry in source_question_index)),
                 ("every_entry_file_exists", all((NOTEBOOK_ROOT / entry["file"]).exists() for entry in source_question_index)),
                 ("every_entry_has_nonempty_source_content", all(entry["source_content"] for entry in source_question_index)),
@@ -390,7 +391,7 @@ def main() -> None:
                     "scene_task_generation": ["01", "02", "03", "07", "10", "11", "12"],
                     "benchmark_design": ["04", "08", "09"],
                     "metrics_evidence": ["05", "06", "13", "13b"],
-                    "runtime_code": ["14", "14b"],
+                    "runtime_code": ["14", "14b", "17"],
                     "review_extension": ["15", "16"],
                 },
             }
@@ -4529,6 +4530,147 @@ def main() -> None:
             write_status("recommended_reading_lightweight_tests", report)
             """
         ),
+        md(
+            """
+            ## 0.22b 深度精讲：RoboLab 机制手册与源码状态机
+
+            下面这节来自本目录的 [EXPLAIN_17_deep_mechanism_playbook.md](./EXPLAIN_17_deep_mechanism_playbook.md)。它回应“精讲不够细、不够深”的问题：不再按论文章节继续平铺，而是把 RoboLab 当成一条评测编译链，逐层拆成 task contract、typed predicates、environment binding、policy rollout、WorldState/EventTracker、evidence artifacts、perturbation probe 和 baseline adapter boundary。
+            """
+        ),
+        md_file("EXPLAIN_17_deep_mechanism_playbook.md"),
+        code(
+            r"""
+            # ===== 精讲17：深水区机制手册轻量验证 =====
+            # 这个 cell 不跑仿真，只把“是否讲深”变成可检查结构：
+            # 每个机制必须有原问题、输入、中间状态、输出、失败边界和 4090 证据落点。
+
+            import json
+
+            deep_mechanisms = [
+                {
+                    "id": "task_contract",
+                    "question": "为什么 task 不是一句话，而是自动评测合约？",
+                    "inputs": ["scene", "instruction variants", "contact_object_list", "subtasks", "predicates", "episode length"],
+                    "state": ["TaskContract", "success_condition", "subtask scoring", "termination rules"],
+                    "outputs": ["env_cfg", "predicate checks", "subtask score schema"],
+                    "failure_boundary": ["video_success_but_predicate_false", "import_failure", "score_success_gap"],
+                    "evidence": ["episode_results.jsonl", "run_0.hdf5", "log_0_env0.json", "env_cfg.json"],
+                },
+                {
+                    "id": "scene_constraint_compiler",
+                    "question": "scene generation 为什么是约束编译，而不是 LLM 直接写坐标？",
+                    "inputs": ["theme", "object catalog", "table bounds", "placement types", "physical constraints"],
+                    "state": ["typed predicates", "dependency order", "spatial 2D solve", "physical 3D placement", "settle simulation"],
+                    "outputs": ["USD scene", "object poses", "validation report", "optional screenshot"],
+                    "failure_boundary": ["schema_error", "asset_validation_error", "collision", "container_fit_error", "unstable_settle"],
+                    "evidence": ["asset preflight report", "scene generation validation notes", "spatial/physical solver explain"],
+                },
+                {
+                    "id": "environment_binding",
+                    "question": "同一任务为什么能换机器人、policy、相机和扰动？",
+                    "inputs": ["task config", "robot config", "policy config", "camera config", "variation config"],
+                    "state": ["Isaac Lab env", "observation space", "action space", "sensor schema", "robot articulation"],
+                    "outputs": ["env", "recorder hooks", "policy IO adapter"],
+                    "failure_boundary": ["workspace_mismatch", "camera_schema_break", "action_scale_mismatch", "robot_usd_only_swap_is_invalid"],
+                    "evidence": ["camera_robot_ablation_config_tests.json", "env_cfg.json"],
+                },
+                {
+                    "id": "policy_rollout_state_machine",
+                    "question": "Pi05 server 在线为什么不等于 episode 成功？",
+                    "inputs": ["RGB", "wrist camera", "robot state", "language", "previous action chunk"],
+                    "state": ["client preprocess", "server inference", "action chunk cache", "env.step", "new world state"],
+                    "outputs": ["next observation", "actions", "timing", "video frame", "recorder frame"],
+                    "failure_boundary": ["slow_inference", "wrong_action_frame", "chunk_cache_leak", "gripper_convention_mismatch"],
+                    "evidence": ["pi05_policy_smoke_summary.json", "remote_outputs/pi05_banana_full_20260620_015206"],
+                },
+                {
+                    "id": "worldstate_event_evidence",
+                    "question": "success=False 如何拆成可解释失败原因？",
+                    "inputs": ["object poses", "contacts", "gripper state", "target predicates", "previous event states"],
+                    "state": ["WorldState", "predicate truth", "EventTracker", "sparse failure events"],
+                    "outputs": ["success", "score", "event log", "HDF5", "dashboard rows"],
+                    "failure_boundary": ["wrong_object", "drop", "collision", "relation_not_satisfied", "summary_parser_gap"],
+                    "evidence": ["log_0_env0.json", "episode_results.jsonl", "dashboard loader outputs"],
+                },
+                {
+                    "id": "metric_roles",
+                    "question": "success、score、SPARC、MNPE 为什么不能混用？",
+                    "inputs": ["episode outcomes", "subtask events", "EEF trajectory", "variation parameters"],
+                    "state": ["binary outcome", "normalized score", "trajectory spectrum", "posterior distribution"],
+                    "outputs": ["success rate", "score table", "smoothness metrics", "sensitivity posterior"],
+                    "failure_boundary": ["single_episode_overclaim", "video_only_claim", "invalid_perturb_group"],
+                    "evidence": ["read_results.py output", "trajectory metrics", "MNPE reports"],
+                },
+                {
+                    "id": "perturbation_causal_probe",
+                    "question": "相机、腕部相机、背景、物体位置扰动怎样才是有效因果探针？",
+                    "inputs": ["fixed policy", "fixed task", "fixed seed", "single changed variable", "valid episode rows"],
+                    "state": ["baseline group", "perturb group", "controlled comparison", "invalid group filter"],
+                    "outputs": ["per-perturb success/score", "failure shift", "validity label"],
+                    "failure_boundary": ["multiple_variables_changed", "groups_zero", "schema_broken_by_deleting_wrist_camera"],
+                    "evidence": ["pi05_medium_probe_and_perturb_manifest_20260620.json", "pi05_perturb_medium_*_summary.json"],
+                },
+                {
+                    "id": "baseline_adapter_boundary",
+                    "question": "Pi05、GR00T、PaliGemma、Cosmos、ReKep 为什么不能直接放进同一列？",
+                    "inputs": ["policy family", "observation schema", "action schema", "controller or planner boundary"],
+                    "state": ["direct OpenPI policy", "adapter-required VLA", "planner/world-model pipeline"],
+                    "outputs": ["fair comparison matrix", "adapter pending label", "non-direct-policy label"],
+                    "failure_boundary": ["adapter_failure_counted_as_policy_failure", "world_model_misreported_as_action_policy"],
+                    "evidence": ["policy_baseline_model_matrix.json", "adapter_baseline_plan.json"],
+                },
+                {
+                    "id": "4090_staged_reproduction",
+                    "question": "4090 复现为什么要从 L0-L6 分层推进？",
+                    "inputs": ["assets", "Isaac env", "policy server", "num_envs", "task subset", "episode repeat"],
+                    "state": ["install", "env smoke", "policy smoke", "asset-ready subset", "perturb probe", "baseline compare", "paper-level"],
+                    "outputs": ["truthful status", "计分子集", "engineering failure split", "paper-level gap list"],
+                    "failure_boundary": ["engineering_failure_mixed_with_policy_failure", "smoke_overclaimed_as_full120"],
+                    "evidence": ["robolab120_asset_preflight_20260620_091852.json", "pi05_axis5_assetready_20260620_20260620_092157_episode_summary.json"],
+                },
+            ]
+
+            required_fields = {"id", "question", "inputs", "state", "outputs", "failure_boundary", "evidence"}
+            required_mechanisms = {
+                "task_contract",
+                "scene_constraint_compiler",
+                "environment_binding",
+                "policy_rollout_state_machine",
+                "worldstate_event_evidence",
+                "metric_roles",
+                "perturbation_causal_probe",
+                "baseline_adapter_boundary",
+                "4090_staged_reproduction",
+            }
+            text = (NOTEBOOK_ROOT / "EXPLAIN_17_deep_mechanism_playbook.md").read_text(encoding="utf-8")
+
+            deep_tests = [
+                ("has_nine_mechanisms", len(deep_mechanisms) >= 9),
+                ("covers_required_mechanisms", required_mechanisms.issubset({item["id"] for item in deep_mechanisms})),
+                ("every_mechanism_has_required_fields", all(required_fields.issubset(item) for item in deep_mechanisms)),
+                ("every_mechanism_has_failure_boundary", all(item["failure_boundary"] for item in deep_mechanisms)),
+                ("every_mechanism_has_evidence_anchor", all(item["evidence"] for item in deep_mechanisms)),
+                ("markdown_mentions_evaluation_compiler", "评测编译" in text),
+                ("markdown_mentions_task_scene_env_policy_event", all(term in text for term in ["Task", "Scene", "Policy", "WorldState", "EventTracker"])),
+                ("markdown_mentions_4090_boundaries", all(term in text for term in ["4090", "资产", "policy", "adapter"])),
+                ("separates_rekep_cosmos_from_direct_policy", all(term in text for term in ["ReKep", "Cosmos", "不是拿到 RoboLab observation 后直接输出 robot action"])),
+            ]
+
+            report = {
+                "deep_mechanisms": deep_mechanisms,
+                "tests": [{"name": name, "passed": bool(ok)} for name, ok in deep_tests],
+                "all_passed": all(ok for _, ok in deep_tests),
+                "boundary": "This validates the lecture structure and evidence anchors; it does not execute Isaac Sim or re-score episodes.",
+            }
+
+            print(json.dumps(report, ensure_ascii=False, indent=2))
+            for name, ok in deep_tests:
+                print(f"{name}: {'PASS' if ok else 'FAIL'}")
+
+            assert report["all_passed"], deep_tests
+            write_status("deep_mechanism_playbook_tests", report)
+            """
+        ),
         md_file("EXPERIMENT_17_camera_robot_ablation.md"),
         md_file("EXPERIMENT_18_pi05_axis5_then_perturb_compare.md"),
         md_file("EXPERIMENT_19_policy_baseline_models.md"),
@@ -5294,6 +5436,12 @@ def main() -> None:
                 "G47_explain_source_question_index_tests_passed": (
                     ARTIFACT_DIR / "explain_source_question_index_tests.json"
                 ).exists(),
+                "G48_deep_mechanism_playbook_saved": (
+                    NOTEBOOK_ROOT / "EXPLAIN_17_deep_mechanism_playbook.md"
+                ).exists(),
+                "G49_deep_mechanism_playbook_tests_passed": (
+                    ARTIFACT_DIR / "deep_mechanism_playbook_tests.json"
+                ).exists(),
                 "note": "Local install gates depend on EXECUTE_INSTALL. Remote 4090 evidence is read from remote_logs/. G12 is a single-task Pi05 policy smoke, not a full RoboLab-120 benchmark.",
             }
             write_status("repro_status", final_checklist)
@@ -5340,6 +5488,7 @@ def main() -> None:
                     "EXPLAIN_15 whole-paper reviewer synthesis: contributions, strengths, weaknesses, limitations, real-world verification, optimization directions, and future innovation routes",
                     "EXPLAIN_16 source-linked reading map: what to read after RoboLab for simulation benchmarks, real-world data, VLA policies, SimReady assets, and sim-to-real evaluation",
                     "EXPLAIN_16 core source-and-content evidence table: the originating problem, source content, and reading question behind each recommendation",
+                    "EXPLAIN_17 deep mechanism playbook: RoboLab as an evaluation compiler across task contracts, predicate scene generation, environment binding, policy rollout, event evidence, perturbation probes, baseline boundaries, and staged 4090 reproduction",
                 ],
                 "observed": "arXiv:2604.09860v3, 14 May 2026",
             },
@@ -5426,6 +5575,7 @@ def main() -> None:
                     "EXPLAIN_15 overview framing for benchmark/system-paper reviewer interpretation",
                     "EXPLAIN_16 reading-route anchor for RoboLab's benchmark, dashboard, agentic generation, and evaluation ecosystem",
                     "EXPLAIN_16 source evidence table anchor for the central problem: simulation evaluation of real-world task-generalist policies",
+                    "EXPLAIN_17 project-level mechanism anchor: agentic scene/task workflows, controlled perturbations, benchmark axes, and dashboard evidence roles",
                 ],
             },
             {
@@ -5441,6 +5591,7 @@ def main() -> None:
                     "EXPLAIN_15 engineering and reproducibility reviewer perspective: install, policy server-client, multi-env, dashboard, hardware cost, and subset protocol recommendations",
                     "EXPLAIN_16 practical reading order for continuing from RoboLab install/repro into policies, assets, and benchmark extensions",
                     "EXPLAIN_16 source content map for README-to-learning-route traceability",
+                    "EXPLAIN_17 source-tree grounding for runtime, policy clients, analysis, dashboard, and staged reproduction boundaries",
                 ],
             },
             {
@@ -5802,6 +5953,7 @@ def main() -> None:
 - `EXPLAIN_14_deep_runtime_code_chain.md`：精讲14补充深挖版，把源码主干继续拆成输入、处理、输出、状态边界、故障路由和证据归档，重点讲透 `runner -> episode -> client -> Pi05 server -> env/world -> event -> HDF5 -> summarize -> dashboard`，已内嵌进 notebook，并配有运行链路覆盖轻量测试用例。
 - `EXPLAIN_15_reviewer_synthesis.md`：全文总梳理与审稿人视角精讲，覆盖贡献、优点、主要问题、优化点和未来创新方向，已内嵌进 notebook，并配有 reviewer rubric 轻量测试用例。
 - `EXPLAIN_16_recommended_reading.md`：基于 RoboLab 的推荐阅读与开源学习路线，已改成 2026-first：优先补 RoboLab、RoboCasa365、RDT2、GR00T N1.7、Isaac Lab-Arena、Lightwheel LW-BenchHub、Lyra 和 NVIDIA 2026 Physical AI stack；BEHAVIOR/DROID/OpenVLA/Octo/ReKep 等降级为基础背景，已内嵌进 notebook，并配有 reading map 轻量测试用例。
+- `EXPLAIN_17_deep_mechanism_playbook.md`：深水区机制手册，把所有精讲从“章节覆盖”推进到“源码状态机级深读”，按 task contract、typed predicates、environment binding、policy rollout、WorldState/EventTracker、evidence artifacts、perturbation probe、baseline adapter boundary 和 4090 staged reproduction 拆输入、状态、输出、失败边界和证据落点，已内嵌进 notebook，并配有深水机制覆盖轻量测试用例。
 - `EXPERIMENT_17_camera_robot_ablation.md`：实验拓展，分析外部相机角度、取消/遮蔽腕部相机、替换机器人三类消融的原理、可运行边界、真实 4090 测试矩阵和风险。
 - `EXPERIMENT_18_pi05_axis5_then_perturb_compare.md`：固定 Pi05 的能力轴 5×任务矩阵评测路线，包含每任务证据要求、`analysis/read_results.py` 出表、成功率中等任务选择、光照/背景/物体位置扰动和后续 RoboChallenge/ReKep 对照顺序。
 - `EXPERIMENT_19_policy_baseline_models.md`：多模型对照路线，把 Pi05/PaliGemma/GR00T/Cosmos/Qwen/阿里模型/RoboChallenge/ReKep 分成直接可跑、需 adapter、非直接动作策略三类，并给出直接 OpenPI 系列的 4090 脚本。

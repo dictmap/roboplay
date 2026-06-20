@@ -27,6 +27,7 @@
 - `EXPLAIN_14_deep_runtime_code_chain.md`：精讲14补充深挖版，把源码主干继续拆成输入、处理、输出、状态边界、故障路由和证据归档，重点讲透 `runner -> episode -> client -> Pi05 server -> env/world -> event -> HDF5 -> summarize -> dashboard`，已内嵌进 notebook，并配有运行链路覆盖轻量测试用例。
 - `EXPLAIN_15_reviewer_synthesis.md`：全文总梳理与审稿人视角精讲，覆盖贡献、优点、主要问题、优化点和未来创新方向，已内嵌进 notebook，并配有 reviewer rubric 轻量测试用例。
 - `EXPLAIN_16_recommended_reading.md`：基于 RoboLab 的推荐阅读与开源学习路线，已改成 2026-first：优先补 RoboLab、RoboCasa365、RDT2、GR00T N1.7、Isaac Lab-Arena、Lightwheel LW-BenchHub、Lyra 和 NVIDIA 2026 Physical AI stack；BEHAVIOR/DROID/OpenVLA/Octo/ReKep 等降级为基础背景，已内嵌进 notebook，并配有 reading map 轻量测试用例。
+- `EXPLAIN_17_deep_mechanism_playbook.md`：深水区机制手册，把所有精讲从“章节覆盖”推进到“源码状态机级深读”，按 task contract、typed predicates、environment binding、policy rollout、WorldState/EventTracker、evidence artifacts、perturbation probe、baseline adapter boundary 和 4090 staged reproduction 拆输入、状态、输出、失败边界和证据落点，已内嵌进 notebook，并配有深水机制覆盖轻量测试用例。
 - `EXPERIMENT_17_camera_robot_ablation.md`：实验拓展，分析外部相机角度、取消/遮蔽腕部相机、替换机器人三类消融的原理、可运行边界、真实 4090 测试矩阵和风险。
 - `EXPERIMENT_18_pi05_axis5_then_perturb_compare.md`：固定 Pi05 的能力轴 5×任务矩阵评测路线，包含每任务证据要求、`analysis/read_results.py` 出表、成功率中等任务选择、光照/背景/物体位置扰动和后续 RoboChallenge/ReKep 对照顺序。
 - `EXPERIMENT_19_policy_baseline_models.md`：多模型对照路线，把 Pi05/PaliGemma/GR00T/Cosmos/Qwen/阿里模型/RoboChallenge/ReKep 分成直接可跑、需 adapter、非直接动作策略三类，并给出直接 OpenPI 系列的 4090 脚本。

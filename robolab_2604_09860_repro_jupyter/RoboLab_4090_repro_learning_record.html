@@ -5,7 +5,7 @@
 
 <title>RoboLab_4090_repro_learning_record</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script type="module">
   import mermaid from '';
-
+  
   mermaid.initialize({ startOnLoad: true });
 </script>
 
@@ -9209,15 +9209,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box
+/* This file is a compatability layer.  It allows the usage of flexible box 
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this
+`Modern browsers` comments below).  Browsers that are known to implement this 
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+
+    Internet Explorer 11+ 
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -12599,7 +12599,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for
+  /* This injects handle bars (a short, wide = symbol) for 
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -13093,7 +13093,7 @@ div#notebook {
     <div tabindex="-1" id="notebook" class="border-box-sizing">
       <div class="container" id="notebook-container">
 
-<div id="cell-id=f77e029d" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=b392fc18" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="RoboLab-%E5%A4%8D%E7%8E%B0%E4%B8%8E%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88RTX-4090%EF%BC%89">RoboLab &#22797;&#29616;&#19982;&#23398;&#20064;&#35760;&#24405;&#65288;RTX 4090&#65289;<a class="anchor-link" href="#RoboLab-%E5%A4%8D%E7%8E%B0%E4%B8%8E%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88RTX-4090%EF%BC%89">&#182;</a></h1><p><strong>目标</strong>：在高保真仿真中复现 NVIDIA RoboLab，重点观察通用机器人策略在视觉识别、空间关系推理、多步骤/过程化操作三个维度上的泛化能力。</p>
@@ -13110,7 +13110,7 @@ div#notebook {
 </div>
 </div>
 </div>
-<div id="cell-id=baaf5fba" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=505fc24f" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="0.-%E5%AE%98%E6%96%B9%E6%9D%A5%E6%BA%90%E4%B8%8E%E5%BD%93%E5%89%8D%E4%BA%8B%E5%AE%9E%E6%A0%B8%E5%AF%B9">0. &#23448;&#26041;&#26469;&#28304;&#19982;&#24403;&#21069;&#20107;&#23454;&#26680;&#23545;<a class="anchor-link" href="#0.-%E5%AE%98%E6%96%B9%E6%9D%A5%E6%BA%90%E4%B8%8E%E5%BD%93%E5%89%8D%E4%BA%8B%E5%AE%9E%E6%A0%B8%E5%AF%B9">&#182;</a></h2><p>复现前先固定来源，避免照着旧命令走偏。</p>
@@ -13126,7 +13126,7 @@ div#notebook {
 </div>
 </div>
 </div>
-<div id="cell-id=34b02c2b" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=deb20244" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -13211,7 +13211,7 @@ div#notebook {
 </div>
 
 </div>
-<div id="cell-id=cf4818ae" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=e9f08013" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -13296,7 +13296,7 @@ div#notebook {
 </div>
 
 </div>
-<div id="cell-id=b4001a1e" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=d53b1a59" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="0.00-%E7%B2%BE%E8%AE%B2%E9%97%AE%E9%A2%98%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9%E7%B4%A2%E5%BC%95">0.00 &#31934;&#35762;&#38382;&#39064;&#26469;&#28304;&#19982;&#26680;&#24515;&#20869;&#23481;&#32034;&#24341;<a class="anchor-link" href="#0.00-%E7%B2%BE%E8%AE%B2%E9%97%AE%E9%A2%98%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9%E7%B4%A2%E5%BC%95">&#182;</a></h2><p>下面这节来自本目录的 <a href="./EXPLAIN_SOURCE_QUESTION_INDEX.md">EXPLAIN_SOURCE_QUESTION_INDEX.md</a>。它补的是所有精讲共同缺的一层：每个精讲到底回答哪个问题，问题来自论文哪一节、哪张图、哪个 appendix 或哪段源码，来源里的核心内容是什么，以及复现时应该落到哪些代码/证据文件。</p>
@@ -13304,7 +13304,7 @@ div#notebook {
 </div>
 </div>
 </div>
-<div id="cell-id=566a6c64" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=e65caded" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="%E7%B2%BE%E8%AE%B2%E9%97%AE%E9%A2%98%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9%E7%B4%A2%E5%BC%95">&#31934;&#35762;&#38382;&#39064;&#26469;&#28304;&#19982;&#26680;&#24515;&#20869;&#23481;&#32034;&#24341;<a class="anchor-link" href="#%E7%B2%BE%E8%AE%B2%E9%97%AE%E9%A2%98%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9%E7%B4%A2%E5%BC%95">&#182;</a></h1><blockquote><p><strong>【绿色标识｜核心结论】</strong> 这张索引不是新的论文精讲，而是所有精讲的“出处地图”。它回答：每个精讲为什么要讲、问题来自论文哪一节/哪张图/哪个 appendix/哪段代码、原始内容的核心是什么、我们在复现里应该怎么用。<br>
@@ -13454,6 +13454,13 @@ div#notebook {
 <td>把后续阅读按 policy、benchmark、asset、sim-to-real、world model、real data 等路线组织</td>
 <td>source-linked reading map</td>
 </tr>
+<tr>
+<td>17 深水机制手册</td>
+<td>怎样把所有精讲从章节覆盖推进到源码状态机级深读？</td>
+<td>Paper III/IV/Appendix B-C-D；NVIDIA 项目页；GitHub runtime/scene/eval/dashboard tree；本地 4090 artifacts</td>
+<td>把 RoboLab 视为评测编译器：task contract、typed predicates、env binding、policy rollout、WorldState/EventTracker、证据产物、扰动探针、baseline adapter 边界和 4090 分层复现</td>
+<td><code>TaskContract</code>、typed predicates、policy client、WorldState/EventTracker、<code>episode_results.jsonl</code>、HDF5、video、artifact gates</td>
+</tr>
 </tbody>
 </table>
 <h2 id="%E6%8C%89%E8%AE%BA%E6%96%87%E7%BB%93%E6%9E%84%E5%8F%8D%E6%9F%A5%E7%B2%BE%E8%AE%B2">&#25353;&#35770;&#25991;&#32467;&#26500;&#21453;&#26597;&#31934;&#35762;<a class="anchor-link" href="#%E6%8C%89%E8%AE%BA%E6%96%87%E7%BB%93%E6%9E%84%E5%8F%8D%E6%9F%A5%E7%B2%BE%E8%AE%B2">&#182;</a></h2><table>
@@ -13529,6 +13536,11 @@ div#notebook {
 <td>策略评测代码怎么运行，结果怎么保存？</td>
 <td>14、14b</td>
 </tr>
+<tr>
+<td>Cross-cutting mechanism</td>
+<td>论文概念、源码状态、复现证据如何连成一条调试路径？</td>
+<td>17</td>
+</tr>
 </tbody>
 </table>
 <h2 id="%E6%8C%89%E5%A4%8D%E7%8E%B0%E9%97%AE%E9%A2%98%E5%8F%8D%E6%9F%A5%E6%9D%A5%E6%BA%90">&#25353;&#22797;&#29616;&#38382;&#39064;&#21453;&#26597;&#26469;&#28304;<a class="anchor-link" href="#%E6%8C%89%E5%A4%8D%E7%8E%B0%E9%97%AE%E9%A2%98%E5%8F%8D%E6%9F%A5%E6%9D%A5%E6%BA%90">&#182;</a></h2><table>
@@ -13574,6 +13586,11 @@ div#notebook {
 <td>01、12、16</td>
 <td>它们不是本文主流程，但决定未来 real-to-sim 和高保真资产路线</td>
 </tr>
+<tr>
+<td>“为什么感觉精讲还是不够深？”</td>
+<td>17</td>
+<td>需要从章节式知识点切换成输入、状态、输出、失败边界和证据落点的机制式读法</td>
+</tr>
 </tbody>
 </table>
 <h2 id="%E6%9C%AC%E7%B4%A2%E5%BC%95%E5%A6%82%E4%BD%95%E7%BB%B4%E6%8A%A4">&#26412;&#32034;&#24341;&#22914;&#20309;&#32500;&#25252;<a class="anchor-link" href="#%E6%9C%AC%E7%B4%A2%E5%BC%95%E5%A6%82%E4%BD%95%E7%BB%B4%E6%8A%A4">&#182;</a></h2><p>新增或修改精讲时，应同步补三件事：</p>
@@ -13587,7 +13604,7 @@ div#notebook {
 </div>
 </div>
 </div>
-<div id="cell-id=8daafd0c" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=3fe1d0f2" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -13616,12 +13633,13 @@ div#notebook {
     <span class="p">{</span><span class="s2">"id"</span><span class="p">:</span> <span class="s2">"14b"</span><span class="p">,</span> <span class="s2">"file"</span><span class="p">:</span> <span class="s2">"EXPLAIN_14_deep_runtime_code_chain.md"</span><span class="p">,</span> <span class="s2">"question"</span><span class="p">:</span> <span class="s2">"多 env/action chunk/WorldState/EventTracker 状态边界是什么？"</span><span class="p">,</span> <span class="s2">"source"</span><span class="p">:</span> <span class="s2">"GitHub eval/world/logging/dashboard source files"</span><span class="p">,</span> <span class="s2">"source_content"</span><span class="p">:</span> <span class="s2">"env_id isolation, action chunk cache, predicate state, sparse failure events, artifact loading"</span><span class="p">,</span> <span class="s2">"implementation_anchor"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"WorldState"</span><span class="p">,</span> <span class="s2">"EventTracker"</span><span class="p">,</span> <span class="s2">"RecorderManager"</span><span class="p">,</span> <span class="s2">"dashboard"</span><span class="p">]},</span>
     <span class="p">{</span><span class="s2">"id"</span><span class="p">:</span> <span class="s2">"15"</span><span class="p">,</span> <span class="s2">"file"</span><span class="p">:</span> <span class="s2">"EXPLAIN_15_reviewer_synthesis.md"</span><span class="p">,</span> <span class="s2">"question"</span><span class="p">:</span> <span class="s2">"审稿人视角怎么看这篇论文？"</span><span class="p">,</span> <span class="s2">"source"</span><span class="p">:</span> <span class="s2">"Paper full text + Limitations + reproduction evidence"</span><span class="p">,</span> <span class="s2">"source_content"</span><span class="p">:</span> <span class="s2">"strengths, weaknesses, reproducibility risk, future innovation routes"</span><span class="p">,</span> <span class="s2">"implementation_anchor"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"review rubric"</span><span class="p">,</span> <span class="s2">"subset protocol"</span><span class="p">,</span> <span class="s2">"hardware boundary"</span><span class="p">]},</span>
     <span class="p">{</span><span class="s2">"id"</span><span class="p">:</span> <span class="s2">"16"</span><span class="p">,</span> <span class="s2">"file"</span><span class="p">:</span> <span class="s2">"EXPLAIN_16_recommended_reading.md"</span><span class="p">,</span> <span class="s2">"question"</span><span class="p">:</span> <span class="s2">"读完 RoboLab 后该补哪些来源？"</span><span class="p">,</span> <span class="s2">"source"</span><span class="p">:</span> <span class="s2">"RoboLab related work + official project/source links"</span><span class="p">,</span> <span class="s2">"source_content"</span><span class="p">:</span> <span class="s2">"2026-first reading map across policies, benchmarks, assets, real data, world models"</span><span class="p">,</span> <span class="s2">"implementation_anchor"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"source-linked reading map"</span><span class="p">]},</span>
+    <span class="p">{</span><span class="s2">"id"</span><span class="p">:</span> <span class="s2">"17"</span><span class="p">,</span> <span class="s2">"file"</span><span class="p">:</span> <span class="s2">"EXPLAIN_17_deep_mechanism_playbook.md"</span><span class="p">,</span> <span class="s2">"question"</span><span class="p">:</span> <span class="s2">"怎样把所有精讲从章节覆盖推进到源码状态机级深读？"</span><span class="p">,</span> <span class="s2">"source"</span><span class="p">:</span> <span class="s2">"Paper III/IV/Appendix B-C-D + official GitHub runtime/scene/eval/dashboard tree + local 4090 artifacts"</span><span class="p">,</span> <span class="s2">"source_content"</span><span class="p">:</span> <span class="s2">"RoboLab as an evaluation compiler: task contract, predicate scene generation, env binding, policy rollout, event evidence, perturbation, baseline separation"</span><span class="p">,</span> <span class="s2">"implementation_anchor"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"TaskContract"</span><span class="p">,</span> <span class="s2">"typed predicates"</span><span class="p">,</span> <span class="s2">"policy client"</span><span class="p">,</span> <span class="s2">"WorldState/EventTracker"</span><span class="p">,</span> <span class="s2">"episode_results/HDF5/video"</span><span class="p">,</span> <span class="s2">"4090 artifact gates"</span><span class="p">]},</span>
 <span class="p">]</span>
 
 <span class="n">required_keys</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"id"</span><span class="p">,</span> <span class="s2">"file"</span><span class="p">,</span> <span class="s2">"question"</span><span class="p">,</span> <span class="s2">"source"</span><span class="p">,</span> <span class="s2">"source_content"</span><span class="p">,</span> <span class="s2">"implementation_anchor"</span><span class="p">}</span>
 <span class="n">tests</span> <span class="o">=</span> <span class="p">[</span>
     <span class="p">(</span><span class="s2">"index_markdown_exists"</span><span class="p">,</span> <span class="p">(</span><span class="n">NOTEBOOK_ROOT</span> <span class="o">/</span> <span class="s2">"EXPLAIN_SOURCE_QUESTION_INDEX.md"</span><span class="p">)</span><span class="o">.</span><span class="n">exists</span><span class="p">()),</span>
-    <span class="p">(</span><span class="s2">"covers_all_explain_files"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">source_question_index</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">19</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">"covers_all_explain_files"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">source_question_index</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">20</span><span class="p">),</span>
     <span class="p">(</span><span class="s2">"every_entry_has_required_keys"</span><span class="p">,</span> <span class="nb">all</span><span class="p">(</span><span class="n">required_keys</span><span class="o">.</span><span class="n">issubset</span><span class="p">(</span><span class="n">entry</span><span class="p">)</span> <span class="k">for</span> <span class="n">entry</span> <span class="ow">in</span> <span class="n">source_question_index</span><span class="p">)),</span>
     <span class="p">(</span><span class="s2">"every_entry_file_exists"</span><span class="p">,</span> <span class="nb">all</span><span class="p">((</span><span class="n">NOTEBOOK_ROOT</span> <span class="o">/</span> <span class="n">entry</span><span class="p">[</span><span class="s2">"file"</span><span class="p">])</span><span class="o">.</span><span class="n">exists</span><span class="p">()</span> <span class="k">for</span> <span class="n">entry</span> <span class="ow">in</span> <span class="n">source_question_index</span><span class="p">)),</span>
     <span class="p">(</span><span class="s2">"every_entry_has_nonempty_source_content"</span><span class="p">,</span> <span class="nb">all</span><span class="p">(</span><span class="n">entry</span><span class="p">[</span><span class="s2">"source_content"</span><span class="p">]</span> <span class="k">for</span> <span class="n">entry</span> <span class="ow">in</span> <span class="n">source_question_index</span><span class="p">)),</span>
@@ -13648,7 +13666,7 @@ div#notebook {
 </div>
 
 </div>
-<div id="cell-id=e68cd055" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=cdce0a6a" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="0.0-%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AE%B2-0%EF%BC%9ARoboLab-%E5%85%A8%E5%B1%80%E6%80%BB%E8%A7%88">0.0 &#35770;&#25991;&#31934;&#35762; 0&#65306;RoboLab &#20840;&#23616;&#24635;&#35272;<a class="anchor-link" href="#0.0-%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AE%B2-0%EF%BC%9ARoboLab-%E5%85%A8%E5%B1%80%E6%80%BB%E8%A7%88">&#182;</a></h2><p>下面这节来自本目录的 <a href="./EXPLAIN_00_global_overview.md">EXPLAIN_00_global_overview.md</a>。它现在是所有精讲的全局入口：先说明如何配合 <code>EXPLAIN_SOURCE_QUESTION_INDEX.md</code> 阅读，再把论文动机、系统架构、四条主线、任务标注、策略接入、证据口径、4090 边界、全精讲路线图和后续对比路线讲清楚。</p>
@@ -13656,7 +13674,7 @@ div#notebook {
 </div>
 </div>
 </div>
-<div id="cell-id=cefe191b" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=d9c83f2c" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="%E7%B2%BE%E8%AE%B2-0%EF%BC%9ARoboLab-%E5%85%A8%E5%B1%80%E6%80%BB%E8%A7%88%EF%BC%8C%E5%85%88%E6%8A%8A%E6%95%B4%E4%BB%B6%E4%BA%8B%E8%AE%B2%E9%80%8F">&#31934;&#35762; 0&#65306;RoboLab &#20840;&#23616;&#24635;&#35272;&#65292;&#20808;&#25226;&#25972;&#20214;&#20107;&#35762;&#36879;<a class="anchor-link" href="#%E7%B2%BE%E8%AE%B2-0%EF%BC%9ARoboLab-%E5%85%A8%E5%B1%80%E6%80%BB%E8%A7%88%EF%BC%8C%E5%85%88%E6%8A%8A%E6%95%B4%E4%BB%B6%E4%BA%8B%E8%AE%B2%E9%80%8F">&#182;</a></h1><div style="border:1px solid #bfdbfe; border-left:6px solid #2563eb; background:#eff6ff; padding:10px 12px; border-radius:6px; margin:12px 0;">
@@ -13719,6 +13737,11 @@ div#notebook {
 <td>想做后续对比或创新</td>
 <td>精讲 15 / 16</td>
 <td>审稿视角和 2026-first 推荐阅读</td>
+</tr>
+<tr>
+<td>感觉精讲还是不够深</td>
+<td>精讲 17</td>
+<td>它把 RoboLab 当成评测编译链，按输入、状态、输出、失败边界和证据落点重读 task/scene/env/policy/event</td>
 </tr>
 </tbody>
 </table>
@@ -13864,6 +13887,11 @@ div#notebook {
 <td>评价线</td>
 <td>从论文贡献、风险和未来路线重新看整个系统</td>
 <td>15、16</td>
+</tr>
+<tr>
+<td>深水机制线</td>
+<td>把所有模块按状态机和调试路径串起来</td>
+<td>17</td>
 </tr>
 </tbody>
 </table>
@@ -14202,6 +14230,12 @@ div#notebook {
 <td>论文贡献/风险/未来路线，以及后续推荐阅读</td>
 <td>判断价值和下一步</td>
 </tr>
+<tr>
+<td>深水机制</td>
+<td>17</td>
+<td>task contract、typed predicates、env binding、policy rollout、WorldState/EventTracker、扰动和 baseline 边界如何串成状态机</td>
+<td>形成可调试心智模型</td>
+</tr>
 </tbody>
 </table>
 <p>如果只看其中一个，会容易误解：</p>
@@ -14358,7 +14392,7 @@ div#notebook {
 </div>
 </div>
 </div>
-<div id="cell-id=fd043184" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=4b144f31" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -14382,7 +14416,7 @@ div#notebook {
         <span class="s2">"scene_task_generation"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"01"</span><span class="p">,</span> <span class="s2">"02"</span><span class="p">,</span> <span class="s2">"03"</span><span class="p">,</span> <span class="s2">"07"</span><span class="p">,</span> <span class="s2">"10"</span><span class="p">,</span> <span class="s2">"11"</span><span class="p">,</span> <span class="s2">"12"</span><span class="p">],</span>
         <span class="s2">"benchmark_design"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"04"</span><span class="p">,</span> <span class="s2">"08"</span><span class="p">,</span> <span class="s2">"09"</span><span class="p">],</span>
         <span class="s2">"metrics_evidence"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"05"</span><span class="p">,</span> <span class="s2">"06"</span><span class="p">,</span> <span class="s2">"13"</span><span class="p">,</span> <span class="s2">"13b"</span><span class="p">],</span>
-        <span class="s2">"runtime_code"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"14"</span><span class="p">,</span> <span class="s2">"14b"</span><span class="p">],</span>
+        <span class="s2">"runtime_code"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"14"</span><span class="p">,</span> <span class="s2">"14b"</span><span class="p">,</span> <span class="s2">"17"</span><span class="p">],</span>
         <span class="s2">"review_extension"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"15"</span><span class="p">,</span> <span class="s2">"16"</span><span class="p">],</span>
     <span class="p">},</span>
 <span class="p">}</span>
@@ -14417,7 +14451,7 @@ div#notebook {
 </div>
 
 </div>
-<div id="cell-id=546029c2" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=ce7bc3e9" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="0.1-2026-06-19-%E8%BF%9C%E7%AB%AF-RTX-4090-%E5%AE%9E%E6%B5%8B%E8%BF%9B%E5%B1%95">0.1 2026-06-19 &#36828;&#31471; RTX 4090 &#23454;&#27979;&#36827;&#23637;<a class="anchor-link" href="#0.1-2026-06-19-%E8%BF%9C%E7%AB%AF-RTX-4090-%E5%AE%9E%E6%B5%8B%E8%BF%9B%E5%B1%95">&#182;</a></h2><p>本节记录一次已完成的远端 4090 复现推进，证据已同步到本目录的 <code>remote_logs/</code>。</p>
@@ -14437,7 +14471,7 @@ div#notebook {
 </div>
 </div>
 </div>
-<div id="cell-id=2c69b318" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=185d94ab" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -14615,7 +14649,7 @@ div#notebook {
 </div>
 
 </div>
-<div id="cell-id=2617a9a2" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=3ce989fa" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -14729,7 +14763,7 @@ div#notebook {
 </div>
 
 </div>
-<div id="cell-id=0f8c269d" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=a101c44c" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="0.2-%E8%AE%BA%E6%96%87%E6%A0%B8%E5%BF%83%E6%9C%BA%E5%88%B6%EF%BC%9A%E8%BF%99%E7%AF%87%E8%AE%BA%E6%96%87%E5%88%B0%E5%BA%95%E8%A6%81%E6%B5%8B%E4%BB%80%E4%B9%88">0.2 &#35770;&#25991;&#26680;&#24515;&#26426;&#21046;&#65306;&#36825;&#31687;&#35770;&#25991;&#21040;&#24213;&#35201;&#27979;&#20160;&#20040;<a class="anchor-link" href="#0.2-%E8%AE%BA%E6%96%87%E6%A0%B8%E5%BF%83%E6%9C%BA%E5%88%B6%EF%BC%9A%E8%BF%99%E7%AF%87%E8%AE%BA%E6%96%87%E5%88%B0%E5%BA%95%E8%A6%81%E6%B5%8B%E4%BB%80%E4%B9%88">&#182;</a></h2><p>论文不是只提出一个“能跑仿真”的项目，而是提出一个用高保真仿真分析通用机器人策略的 benchmark。
@@ -14776,7 +14810,7 @@ div#notebook {
 </div>
 </div>
 </div>
-<div id="cell-id=3b671621" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=0b75236c" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="0.3-%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81%E5%9C%B0%E5%9B%BE%EF%BC%9A%E8%AE%BA%E6%96%87%E6%A6%82%E5%BF%B5%E5%A6%82%E4%BD%95%E8%90%BD%E5%88%B0%E4%BB%A3%E7%A0%81">0.3 &#26680;&#24515;&#28304;&#30721;&#22320;&#22270;&#65306;&#35770;&#25991;&#27010;&#24565;&#22914;&#20309;&#33853;&#21040;&#20195;&#30721;<a class="anchor-link" href="#0.3-%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81%E5%9C%B0%E5%9B%BE%EF%BC%9A%E8%AE%BA%E6%96%87%E6%A6%82%E5%BF%B5%E5%A6%82%E4%BD%95%E8%90%BD%E5%88%B0%E4%BB%A3%E7%A0%81">&#182;</a></h2><p>下面这一节是读 RoboLab 源码的主线。不要从 100 多个 task 文件平铺看起，先按“入口 -&gt; 环境 -&gt; 任务定义 -&gt; 条件/评分 -&gt; 导出 -&gt; policy”这条链路读。</p>
@@ -14784,7 +14818,7 @@ div#notebook {
 </div>
 </div>
 </div>
-<div id="cell-id=3ab967ad" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=4ea5e0fd" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -14870,7 +14904,7 @@ div#notebook {
 </div>
 
 </div>
-<div id="cell-id=3d930a80" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=a0cfc4d1" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="0.4-%E4%B8%80%E6%AC%A1-no-policy-smoke-%E7%9A%84%E7%9C%9F%E5%AE%9E%E8%B0%83%E7%94%A8%E9%93%BE">0.4 &#19968;&#27425; no-policy smoke &#30340;&#30495;&#23454;&#35843;&#29992;&#38142;<a class="anchor-link" href="#0.4-%E4%B8%80%E6%AC%A1-no-policy-smoke-%E7%9A%84%E7%9C%9F%E5%AE%9E%E8%B0%83%E7%94%A8%E9%93%BE">&#182;</a></h2><p>当前已经在 4090 上跑通的 21 个任务，走的是下面这条链路：</p>
@@ -14900,7 +14934,7 @@ div#notebook {
 </div>
 </div>
 </div>
-<div id="cell-id=7d92feee" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=198fc984" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="0.5-%E6%A0%B8%E5%BF%83%E4%BB%A3%E7%A0%81%E9%80%90%E6%AE%B5%E8%AE%B2%E8%A7%A3">0.5 &#26680;&#24515;&#20195;&#30721;&#36880;&#27573;&#35762;&#35299;<a class="anchor-link" href="#0.5-%E6%A0%B8%E5%BF%83%E4%BB%A3%E7%A0%81%E9%80%90%E6%AE%B5%E8%AE%B2%E8%A7%A3">&#182;</a></h2><h3 id="%E5%85%A5%E5%8F%A3%E5%B1%82%EF%BC%9Aexamples/run_empty.py">&#20837;&#21475;&#23618;&#65306;<code>examples/run_empty.py</code><a class="anchor-link" href="#%E5%85%A5%E5%8F%A3%E5%B1%82%EF%BC%9Aexamples/run_empty.py">&#182;</a></h3><p>这个文件是环境烟测入口。它先用 <code>AppLauncher</code> 启动 Isaac Sim/Isaac Lab，再调用 <code>auto_register_droid_envs()</code> 注册任务。
@@ -14947,7 +14981,7 @@ server 返回 action chunk 后，client 按 <code>open_loop_horizon</code> 执�
 </div>
 </div>
 </div>
-<div id="cell-id=b69f00b7" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=608aad0c" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="0.6-%E4%BA%A4%E6%B5%81%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E6%A0%B8%E5%BF%83%E9%97%AE%E9%A2%98%E4%B8%8E%E5%86%B3%E7%AD%96%E8%AE%B0%E5%BD%95">0.6 &#20132;&#27969;&#36807;&#31243;&#20013;&#30340;&#26680;&#24515;&#38382;&#39064;&#19982;&#20915;&#31574;&#35760;&#24405;<a class="anchor-link" href="#0.6-%E4%BA%A4%E6%B5%81%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E6%A0%B8%E5%BF%83%E9%97%AE%E9%A2%98%E4%B8%8E%E5%86%B3%E7%AD%96%E8%AE%B0%E5%BD%95">&#182;</a></h2><p>这一节不是聊天流水账，而是复现过程中反复校准过的“判断口径”。后面看结果时要按这些边界理解。</p>
@@ -15016,7 +15050,7 @@ server 返回 action chunk 后，client 按 <code>open_loop_horizon</code> 执�
 </div>
 </div>
 </div>
-<div id="cell-id=c608eade" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=e97e161d" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="0.7-%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AE%B2%EF%BC%9A%E7%9C%9F%E5%AE%9E%E5%9C%BA%E6%99%AF%E5%88%B0%E6%A8%A1%E6%8B%9F%E5%9C%BA%E6%99%AF%E7%9A%84%E8%AF%84%E4%BC%B0">0.7 &#35770;&#25991;&#31934;&#35762;&#65306;&#30495;&#23454;&#22330;&#26223;&#21040;&#27169;&#25311;&#22330;&#26223;&#30340;&#35780;&#20272;<a class="anchor-link" href="#0.7-%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AE%B2%EF%BC%9A%E7%9C%9F%E5%AE%9E%E5%9C%BA%E6%99%AF%E5%88%B0%E6%A8%A1%E6%8B%9F%E5%9C%BA%E6%99%AF%E7%9A%84%E8%AF%84%E4%BC%B0">&#182;</a></h2><p>下面这节来自本目录的 <a href="./EXPLAIN_01_real_to_sim_eval.md">EXPLAIN_01_real_to_sim_eval.md</a>，已经把论文里“真实场景到模拟场景评估”的说法翻译成代码实现链路。重点看输入、输出和边界：RoboLab 主流程不是逐场景重建真实视频，而是用资产库、USD 场景、程序化布局、任务谓词和扰动矩阵快速生成可交互、可评分的仿真评估场景。</p>
@@ -15024,7 +15058,7 @@ server 返回 action chunk 后，client 按 <code>open_loop_horizon</code> 执�
 </div>
 </div>
 </div>
-<div id="cell-id=1ccf586c" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=c7407070" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="%E7%B2%BE%E8%AE%B2-1%EF%BC%9A%E7%9C%9F%E5%AE%9E%E5%9C%BA%E6%99%AF%E5%88%B0%E6%A8%A1%E6%8B%9F%E5%9C%BA%E6%99%AF%E7%9A%84%E8%AF%84%E4%BC%B0%EF%BC%8C%E4%BB%A3%E7%A0%81%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0">&#31934;&#35762; 1&#65306;&#30495;&#23454;&#22330;&#26223;&#21040;&#27169;&#25311;&#22330;&#26223;&#30340;&#35780;&#20272;&#65292;&#20195;&#30721;&#24590;&#20040;&#23454;&#29616;<a class="anchor-link" href="#%E7%B2%BE%E8%AE%B2-1%EF%BC%9A%E7%9C%9F%E5%AE%9E%E5%9C%BA%E6%99%AF%E5%88%B0%E6%A8%A1%E6%8B%9F%E5%9C%BA%E6%99%AF%E7%9A%84%E8%AF%84%E4%BC%B0%EF%BC%8C%E4%BB%A3%E7%A0%81%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0">&#182;</a></h1><div style="border:1px solid #bfdbfe; border-left:6px solid #2563eb; background:#eff6ff; padding:10px 12px; border-radius:6px; margin:12px 0;">
@@ -15270,7 +15304,7 @@ viewport video = Pick_up_the_banana_and_place_it_in_the_bowl_0_viewport.mp4
 </div>
 </div>
 </div>
-<div id="cell-id=cd0d663b" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=0eb2cd12" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="0.8-%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AE%B2%EF%BC%9A%E5%9C%BA%E6%99%AF%E3%80%81%E4%BB%BB%E5%8A%A1%E5%92%8C%E7%8E%AF%E5%A2%83%E7%94%9F%E6%88%90">0.8 &#35770;&#25991;&#31934;&#35762;&#65306;&#22330;&#26223;&#12289;&#20219;&#21153;&#21644;&#29615;&#22659;&#29983;&#25104;<a class="anchor-link" href="#0.8-%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AE%B2%EF%BC%9A%E5%9C%BA%E6%99%AF%E3%80%81%E4%BB%BB%E5%8A%A1%E5%92%8C%E7%8E%AF%E5%A2%83%E7%94%9F%E6%88%90">&#182;</a></h2><p>下面这节来自本目录的 <a href="./EXPLAIN_02_scene_task_env_generation.md">EXPLAIN_02_scene_task_env_generation.md</a>，对应论文里的三步：先定位/定向物体生成场景，再把目标状态写成语言任务，最后选择机器人、策略、摄像头、光照、背景来实例化环境。</p>
@@ -15278,7 +15312,7 @@ viewport video = Pick_up_the_banana_and_place_it_in_the_bowl_0_viewport.mp4
 </div>
 </div>
 </div>
-<div id="cell-id=5daeafab" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=e9b6264a" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="%E7%B2%BE%E8%AE%B2-2%EF%BC%9A%E5%9C%BA%E6%99%AF%E3%80%81%E4%BB%BB%E5%8A%A1%E5%92%8C%E7%8E%AF%E5%A2%83%E7%94%9F%E6%88%90%EF%BC%8C%E4%BB%A3%E7%A0%81%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0">&#31934;&#35762; 2&#65306;&#22330;&#26223;&#12289;&#20219;&#21153;&#21644;&#29615;&#22659;&#29983;&#25104;&#65292;&#20195;&#30721;&#24590;&#20040;&#23454;&#29616;<a class="anchor-link" href="#%E7%B2%BE%E8%AE%B2-2%EF%BC%9A%E5%9C%BA%E6%99%AF%E3%80%81%E4%BB%BB%E5%8A%A1%E5%92%8C%E7%8E%AF%E5%A2%83%E7%94%9F%E6%88%90%EF%BC%8C%E4%BB%A3%E7%A0%81%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0">&#182;</a></h1><div style="border:1px solid #bfdbfe; border-left:6px solid #2563eb; background:#eff6ff; padding:10px 12px; border-radius:6px; margin:12px 0;">
@@ -15885,7 +15919,7 @@ Env = task + robot + observations + actions + cameras + light + background + pol
 </div>
 </div>
 </div>
-<div id="cell-id=508ce8d3" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=d7d05531" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="0.9-%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AE%B2%EF%BC%9A%E6%89%A9%E5%B1%95%E4%BB%BB%E5%8A%A1%E7%94%9F%E6%88%90%E3%80%81%E9%AA%8C%E8%AF%81%E5%92%8C%E8%87%AA%E5%8A%A8%E4%BF%AE%E5%A4%8D">0.9 &#35770;&#25991;&#31934;&#35762;&#65306;&#25193;&#23637;&#20219;&#21153;&#29983;&#25104;&#12289;&#39564;&#35777;&#21644;&#33258;&#21160;&#20462;&#22797;<a class="anchor-link" href="#0.9-%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AE%B2%EF%BC%9A%E6%89%A9%E5%B1%95%E4%BB%BB%E5%8A%A1%E7%94%9F%E6%88%90%E3%80%81%E9%AA%8C%E8%AF%81%E5%92%8C%E8%87%AA%E5%8A%A8%E4%BF%AE%E5%A4%8D">&#182;</a></h2><p>下面这节来自本目录的 <a href="./EXPLAIN_03_task_generation_validation.md">EXPLAIN_03_task_generation_validation.md</a>，对应论文里的 TaskGen 闭环：先给 LLM 场景对象、能力轴、任务示例和谓词库，让它生成 Task Python 代码；再做语法、资产、容器尺寸等验证；失败后把原始提示、无效输出和错误信息重新打包给 LLM 修复。</p>
@@ -15893,7 +15927,7 @@ Env = task + robot + observations + actions + cameras + light + background + pol
 </div>
 </div>
 </div>
-<div id="cell-id=2b628aab" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=cab11f8c" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="%E7%B2%BE%E8%AE%B2-3%EF%BC%9A%E6%89%A9%E5%B1%95%E4%BB%BB%E5%8A%A1%E7%94%9F%E6%88%90%E3%80%81%E9%AA%8C%E8%AF%81%E5%92%8C%E8%87%AA%E5%8A%A8%E4%BF%AE%E5%A4%8D%EF%BC%8C%E4%BB%A3%E7%A0%81%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0">&#31934;&#35762; 3&#65306;&#25193;&#23637;&#20219;&#21153;&#29983;&#25104;&#12289;&#39564;&#35777;&#21644;&#33258;&#21160;&#20462;&#22797;&#65292;&#20195;&#30721;&#24590;&#20040;&#23454;&#29616;<a class="anchor-link" href="#%E7%B2%BE%E8%AE%B2-3%EF%BC%9A%E6%89%A9%E5%B1%95%E4%BB%BB%E5%8A%A1%E7%94%9F%E6%88%90%E3%80%81%E9%AA%8C%E8%AF%81%E5%92%8C%E8%87%AA%E5%8A%A8%E4%BF%AE%E5%A4%8D%EF%BC%8C%E4%BB%A3%E7%A0%81%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0">&#182;</a></h1><div style="border:1px solid #bfdbfe; border-left:6px solid #2563eb; background:#eff6ff; padding:10px 12px; border-radius:6px; margin:12px 0;">
@@ -16335,7 +16369,7 @@ Please revise the RoboLab task. Requirements:
 </div>
 </div>
 </div>
-<div id="cell-id=e19c8485" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=e408c38b" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -16491,7 +16525,7 @@ Please revise the RoboLab task. Requirements:
 </div>
 
 </div>
-<div id="cell-id=bcf4c49f" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=6478c82e" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="0.10-%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AE%B2%EF%BC%9A%E8%83%BD%E5%8A%9B%E8%BD%B4%E3%80%81%E4%BB%BB%E5%8A%A1%E5%B1%9E%E6%80%A7%E3%80%81%E5%AD%90%E4%BB%BB%E5%8A%A1%E5%92%8C%E9%9A%BE%E5%BA%A6%E5%88%86%E6%95%B0">0.10 &#35770;&#25991;&#31934;&#35762;&#65306;&#33021;&#21147;&#36724;&#12289;&#20219;&#21153;&#23646;&#24615;&#12289;&#23376;&#20219;&#21153;&#21644;&#38590;&#24230;&#20998;&#25968;<a class="anchor-link" href="#0.10-%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AE%B2%EF%BC%9A%E8%83%BD%E5%8A%9B%E8%BD%B4%E3%80%81%E4%BB%BB%E5%8A%A1%E5%B1%9E%E6%80%A7%E3%80%81%E5%AD%90%E4%BB%BB%E5%8A%A1%E5%92%8C%E9%9A%BE%E5%BA%A6%E5%88%86%E6%95%B0">&#182;</a></h2><p>下面这节来自本目录的 <a href="./EXPLAIN_04_competency_axes_difficulty.md">EXPLAIN_04_competency_axes_difficulty.md</a>，对应论文 III-B Benchmark Design：visual / procedural / relational 三条能力轴、多标签任务属性、subtask 并行事件，以及 <code>difficulty_score = num_subtasks + max(w)</code> 的难度分数。</p>
@@ -16499,7 +16533,7 @@ Please revise the RoboLab task. Requirements:
 </div>
 </div>
 </div>
-<div id="cell-id=7d2f5424" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=a2a36665" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="%E7%B2%BE%E8%AE%B2-4%EF%BC%9A%E8%83%BD%E5%8A%9B%E8%BD%B4%E3%80%81%E4%BB%BB%E5%8A%A1%E5%B1%9E%E6%80%A7%E3%80%81%E5%AD%90%E4%BB%BB%E5%8A%A1%E5%92%8C%E9%9A%BE%E5%BA%A6%E5%88%86%E6%95%B0%EF%BC%8C%E4%BB%A3%E7%A0%81%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0">&#31934;&#35762; 4&#65306;&#33021;&#21147;&#36724;&#12289;&#20219;&#21153;&#23646;&#24615;&#12289;&#23376;&#20219;&#21153;&#21644;&#38590;&#24230;&#20998;&#25968;&#65292;&#20195;&#30721;&#24590;&#20040;&#23454;&#29616;<a class="anchor-link" href="#%E7%B2%BE%E8%AE%B2-4%EF%BC%9A%E8%83%BD%E5%8A%9B%E8%BD%B4%E3%80%81%E4%BB%BB%E5%8A%A1%E5%B1%9E%E6%80%A7%E3%80%81%E5%AD%90%E4%BB%BB%E5%8A%A1%E5%92%8C%E9%9A%BE%E5%BA%A6%E5%88%86%E6%95%B0%EF%BC%8C%E4%BB%A3%E7%A0%81%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0">&#182;</a></h1><div style="border:1px solid #bfdbfe; border-left:6px solid #2563eb; background:#eff6ff; padding:10px 12px; border-radius:6px; margin:12px 0;">
@@ -16900,7 +16934,7 @@ robolab/tasks/README.md
 </div>
 </div>
 </div>
-<div id="cell-id=01321ee3" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=e76f90c9" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -17042,7 +17076,7 @@ robolab/tasks/README.md
 </div>
 
 </div>
-<div id="cell-id=9face90a" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=bf5b7461" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="0.11-%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AE%B2%EF%BC%9ASPARC-%E8%BD%A8%E8%BF%B9%E5%B9%B3%E6%BB%91%E5%BA%A6%E6%8C%87%E6%A0%87">0.11 &#35770;&#25991;&#31934;&#35762;&#65306;SPARC &#36712;&#36857;&#24179;&#28369;&#24230;&#25351;&#26631;<a class="anchor-link" href="#0.11-%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AE%B2%EF%BC%9ASPARC-%E8%BD%A8%E8%BF%B9%E5%B9%B3%E6%BB%91%E5%BA%A6%E6%8C%87%E6%A0%87">&#182;</a></h2><p>下面这节来自本目录的 <a href="./EXPLAIN_05_sparc_trajectory_metric.md">EXPLAIN_05_sparc_trajectory_metric.md</a>，对应论文 III-C Trajectory Metrics：SPARC 用末端执行器速度谱的弧长衡量动作平滑度，值越接近 0 越平滑，越负表示速度频谱越复杂、动作越抖。</p>
@@ -17050,7 +17084,7 @@ robolab/tasks/README.md
 </div>
 </div>
 </div>
-<div id="cell-id=1c809144" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=85ea218d" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="%E7%B2%BE%E8%AE%B2-5%EF%BC%9ASPARC-%E8%BD%A8%E8%BF%B9%E5%B9%B3%E6%BB%91%E5%BA%A6%E6%8C%87%E6%A0%87%EF%BC%8C%E4%BB%A3%E7%A0%81%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0">&#31934;&#35762; 5&#65306;SPARC &#36712;&#36857;&#24179;&#28369;&#24230;&#25351;&#26631;&#65292;&#20195;&#30721;&#24590;&#20040;&#23454;&#29616;<a class="anchor-link" href="#%E7%B2%BE%E8%AE%B2-5%EF%BC%9ASPARC-%E8%BD%A8%E8%BF%B9%E5%B9%B3%E6%BB%91%E5%BA%A6%E6%8C%87%E6%A0%87%EF%BC%8C%E4%BB%A3%E7%A0%81%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0">&#182;</a></h1><div style="border:1px solid #bfdbfe; border-left:6px solid #2563eb; background:#eff6ff; padding:10px 12px; border-radius:6px; margin:12px 0;">
@@ -17310,7 +17344,7 @@ sensor / viewport mp4
 </div>
 </div>
 </div>
-<div id="cell-id=ac85364f" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=8627fda1" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -17412,7 +17446,7 @@ sensor / viewport mp4
 </div>
 
 </div>
-<div id="cell-id=78c54614" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=c75fdc68" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="0.12-%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AE%B2%EF%BC%9AMNPE-%E6%95%8F%E6%84%9F%E6%80%A7%E5%88%86%E6%9E%90">0.12 &#35770;&#25991;&#31934;&#35762;&#65306;MNPE &#25935;&#24863;&#24615;&#20998;&#26512;<a class="anchor-link" href="#0.12-%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AE%B2%EF%BC%9AMNPE-%E6%95%8F%E6%84%9F%E6%80%A7%E5%88%86%E6%9E%90">&#182;</a></h2><p>下面这节来自本目录的 <a href="./EXPLAIN_06_mnpe_sensitivity_analysis.md">EXPLAIN_06_mnpe_sensitivity_analysis.md</a>，对应论文 III-D Sensitivity Analysis 和 Appendix B：MNPE 用 rollout 后的扰动评测数据学习 <code>p(theta | x)</code>，也就是“给定成功/失败结果，哪些相机、光照、材质、物体位姿参数最可能导致这个结果”。</p>
@@ -17420,7 +17454,7 @@ sensor / viewport mp4
 </div>
 </div>
 </div>
-<div id="cell-id=299626b3" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=bed5b9e6" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="%E7%B2%BE%E8%AE%B2-6%EF%BC%9AMNPE-%E6%95%8F%E6%84%9F%E6%80%A7%E5%88%86%E6%9E%90%EF%BC%8C%E4%BB%A3%E7%A0%81%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0">&#31934;&#35762; 6&#65306;MNPE &#25935;&#24863;&#24615;&#20998;&#26512;&#65292;&#20195;&#30721;&#24590;&#20040;&#23454;&#29616;<a class="anchor-link" href="#%E7%B2%BE%E8%AE%B2-6%EF%BC%9AMNPE-%E6%95%8F%E6%84%9F%E6%80%A7%E5%88%86%E6%9E%90%EF%BC%8C%E4%BB%A3%E7%A0%81%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0">&#182;</a></h1><div style="border:1px solid #bfdbfe; border-left:6px solid #2563eb; background:#eff6ff; padding:10px 12px; border-radius:6px; margin:12px 0;">
@@ -17731,7 +17765,7 @@ good_lighting posterior probability &gt; prior probability
 </div>
 </div>
 </div>
-<div id="cell-id=b55cc8cb" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=6c9f14ab" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -17840,7 +17874,7 @@ good_lighting posterior probability &gt; prior probability
 </div>
 
 </div>
-<div id="cell-id=24b8506e" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=b8bc6bf6" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="0.13-%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AE%B2%EF%BC%9ABaseline-%E5%9C%BA%E6%99%AF%E7%94%9F%E6%88%90%E6%96%B9%E6%B3%95">0.13 &#35770;&#25991;&#31934;&#35762;&#65306;Baseline &#22330;&#26223;&#29983;&#25104;&#26041;&#27861;<a class="anchor-link" href="#0.13-%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AE%B2%EF%BC%9ABaseline-%E5%9C%BA%E6%99%AF%E7%94%9F%E6%88%90%E6%96%B9%E6%B3%95">&#182;</a></h2><p>下面这节来自本目录的 <a href="./EXPLAIN_07_baseline_method.md">EXPLAIN_07_baseline_method.md</a>，对应论文 Appendix C-C Baseline Method：baseline 是 scene generation 对照方法，不是策略 baseline。它用 LLM 选物体和网格布局，再把对象按 cell 顺序摆放并 jitter，一次 pass 后做物理 settle；它能保证基本分散，但缺少 <code>place-in</code>、<code>place-on</code>、<code>cluster-around</code> 和失败反馈修复。</p>
@@ -17848,7 +17882,7 @@ good_lighting posterior probability &gt; prior probability
 </div>
 </div>
 </div>
-<div id="cell-id=d39de9ae" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=cd5deee2" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="%E7%B2%BE%E8%AE%B2-7%EF%BC%9ABaseline-%E6%96%B9%E6%B3%95%EF%BC%8C%E8%AE%BA%E6%96%87%E9%87%8C%E7%9A%84%E5%AF%B9%E7%85%A7%E5%9C%BA%E6%99%AF%E7%94%9F%E6%88%90%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0">&#31934;&#35762; 7&#65306;Baseline &#26041;&#27861;&#65292;&#35770;&#25991;&#37324;&#30340;&#23545;&#29031;&#22330;&#26223;&#29983;&#25104;&#24590;&#20040;&#23454;&#29616;<a class="anchor-link" href="#%E7%B2%BE%E8%AE%B2-7%EF%BC%9ABaseline-%E6%96%B9%E6%B3%95%EF%BC%8C%E8%AE%BA%E6%96%87%E9%87%8C%E7%9A%84%E5%AF%B9%E7%85%A7%E5%9C%BA%E6%99%AF%E7%94%9F%E6%88%90%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0">&#182;</a></h1><div style="border:1px solid #bfdbfe; border-left:6px solid #2563eb; background:#eff6ff; padding:10px 12px; border-radius:6px; margin:12px 0;">
@@ -18219,7 +18253,7 @@ baseline_top_level_slots &gt; hierarchical_top_level_slots
 </div>
 </div>
 </div>
-<div id="cell-id=8cdfc01f" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=2028140e" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -18332,7 +18366,7 @@ baseline_top_level_slots &gt; hierarchical_top_level_slots
 </div>
 
 </div>
-<div id="cell-id=aef3b4bd" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=5ccd3529" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="0.14-%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AE%B2%EF%BC%9A%E8%AE%BA%E6%96%87%E5%AE%9E%E9%AA%8C%E6%80%BB%E8%A7%88%E4%B8%8E-Algorithm-1">0.14 &#35770;&#25991;&#31934;&#35762;&#65306;&#35770;&#25991;&#23454;&#39564;&#24635;&#35272;&#19982; Algorithm 1<a class="anchor-link" href="#0.14-%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AE%B2%EF%BC%9A%E8%AE%BA%E6%96%87%E5%AE%9E%E9%AA%8C%E6%80%BB%E8%A7%88%E4%B8%8E-Algorithm-1">&#182;</a></h2><p>下面这节来自本目录的 <a href="./EXPLAIN_08_paper_experiments.md">EXPLAIN_08_paper_experiments.md</a>，对应论文中的实验体系：RoboLab-120 策略评测、细粒度能力分析、扰动敏感性、真实世界相关性、场景生成质量、任务生成质量，以及你截图里的 Algorithm 1 Spatial Constraint Solver。本次已加深为“实验地图 + 证据链”：补充 success/score/event/trajectory 的职责差异、主表能力画像读法、场景生成质量表和 task generation judge 六维、以及 4090 上可承受的小论文矩阵。</p>
@@ -18340,7 +18374,7 @@ baseline_top_level_slots &gt; hierarchical_top_level_slots
 </div>
 </div>
 </div>
-<div id="cell-id=8f83dcc0" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=b5009883" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="%E7%B2%BE%E8%AE%B2-8%EF%BC%9A%E8%AE%BA%E6%96%87%E5%AE%9E%E9%AA%8C%E6%80%BB%E8%A7%88%E4%B8%8E-Algorithm-1-%E7%A9%BA%E9%97%B4%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3%E5%99%A8">&#31934;&#35762; 8&#65306;&#35770;&#25991;&#23454;&#39564;&#24635;&#35272;&#19982; Algorithm 1 &#31354;&#38388;&#32422;&#26463;&#27714;&#35299;&#22120;<a class="anchor-link" href="#%E7%B2%BE%E8%AE%B2-8%EF%BC%9A%E8%AE%BA%E6%96%87%E5%AE%9E%E9%AA%8C%E6%80%BB%E8%A7%88%E4%B8%8E-Algorithm-1-%E7%A9%BA%E9%97%B4%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3%E5%99%A8">&#182;</a></h1><blockquote><p><strong>【绿色标识｜核心结论】</strong> 论文里的“实验”不是单一跑分，而是一组互相支撑的验证：策略评测、细粒度分析、扰动敏感性、真实世界相关性、场景生成质量、任务生成质量。<br>
@@ -19318,7 +19352,7 @@ return Failure
 </div>
 </div>
 </div>
-<div id="cell-id=d11ab340" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=9a3c7ba0" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -19716,7 +19750,7 @@ return Failure
 </div>
 
 </div>
-<div id="cell-id=44d26064" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=6d7853ba" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="0.15-%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AE%B2%EF%BC%9ADTGE---%E4%BB%BB%E5%8A%A1%E7%94%9F%E6%88%90%E8%B4%A8%E9%87%8F%E8%AF%84%E4%BC%B0">0.15 &#35770;&#25991;&#31934;&#35762;&#65306;DTGE - &#20219;&#21153;&#29983;&#25104;&#36136;&#37327;&#35780;&#20272;<a class="anchor-link" href="#0.15-%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AE%B2%EF%BC%9ADTGE---%E4%BB%BB%E5%8A%A1%E7%94%9F%E6%88%90%E8%B4%A8%E9%87%8F%E8%AF%84%E4%BC%B0">&#182;</a></h2><p>下面这节来自本目录的 <a href="./EXPLAIN_09_dtge.md">EXPLAIN_09_dtge.md</a>。这里的 DTGE 指论文 Appendix D 的 Details on Task Generation Evaluation：它不是策略跑分，而是评估 LLM 自动生成的任务代码是否“指令清楚、成功条件匹配、物理可行、对象/谓词覆盖合理”。</p>
@@ -19724,7 +19758,7 @@ return Failure
 </div>
 </div>
 </div>
-<div id="cell-id=e0c0439a" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=b6427be1" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="%E7%B2%BE%E8%AE%B2-9%EF%BC%9ADTGE---Details-on-Task-Generation-Evaluation">&#31934;&#35762; 9&#65306;DTGE - Details on Task Generation Evaluation<a class="anchor-link" href="#%E7%B2%BE%E8%AE%B2-9%EF%BC%9ADTGE---Details-on-Task-Generation-Evaluation">&#182;</a></h1><blockquote><p><strong>【绿色标识｜核心结论】</strong> DTGE 不是一个新模型，也不是策略执行评测；它是论文 Appendix D 的 “Details on Task Generation Evaluation”，核心问题是：自动生成出来的 RoboLab task，语言指令和程序化成功条件是否真的一致。<br>
@@ -20177,7 +20211,7 @@ Policy benchmark 负责“做题”
 </div>
 </div>
 </div>
-<div id="cell-id=6e569c6b" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=5aee3e81" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -20490,7 +20524,7 @@ Policy benchmark 负责“做题”
 </div>
 
 </div>
-<div id="cell-id=f09fd9bf" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=b04a2511" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="0.16-%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AE%B2%EF%BC%9AScene-Generation-Prompt-%E8%AE%BE%E8%AE%A1">0.16 &#35770;&#25991;&#31934;&#35762;&#65306;Scene Generation Prompt &#35774;&#35745;<a class="anchor-link" href="#0.16-%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AE%B2%EF%BC%9AScene-Generation-Prompt-%E8%AE%BE%E8%AE%A1">&#182;</a></h2><p>下面这节来自本目录的 <a href="./EXPLAIN_10_prompt_design.md">EXPLAIN_10_prompt_design.md</a>，对应论文 Appendix C 的 Stage I Semantic Planning prompt：为什么要写现实场景原则、坐标系统、placement types、JSON only、对象目录、尺寸限制和 medium scene strategy，以及这些约束如何对接 <code>predicates.py</code>、<code>spatial_solver.py</code>、<code>physical_solver.py</code> 和 <code>feedback_system.py</code>。</p>
@@ -20498,7 +20532,7 @@ Policy benchmark 负责“做题”
 </div>
 </div>
 </div>
-<div id="cell-id=b01231e3" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=2d47fdb6" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="%E7%B2%BE%E8%AE%B2-10%EF%BC%9AScene-Generation-Prompt-%E8%AE%BE%E8%AE%A1%E5%88%86%E6%9E%90">&#31934;&#35762; 10&#65306;Scene Generation Prompt &#35774;&#35745;&#20998;&#26512;<a class="anchor-link" href="#%E7%B2%BE%E8%AE%B2-10%EF%BC%9AScene-Generation-Prompt-%E8%AE%BE%E8%AE%A1%E5%88%86%E6%9E%90">&#182;</a></h1><blockquote><p><strong>【绿色标识｜核心结论】</strong> 这几段 prompt 不是为了“写得像提示词工程”，而是在把 LLM 输出压成 RoboLab 可解析、可求解、可验证的中间表示：对象列表 + typed predicates。<br>
@@ -20944,7 +20978,7 @@ OTHER
 </div>
 </div>
 </div>
-<div id="cell-id=ddc5f693" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=265008df" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -21215,7 +21249,7 @@ OTHER
 </div>
 
 </div>
-<div id="cell-id=effdf366" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=4a8ad3cf" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="0.17-%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AE%B2%EF%BC%9A%E7%A9%BA%E9%97%B4%E6%B1%82%E8%A7%A3%E5%99%A8%E3%80%81%E7%89%A9%E7%90%86%E6%94%BE%E7%BD%AE%E6%B1%82%E8%A7%A3%E5%99%A8%E4%B8%8E%E5%A4%B1%E8%B4%A5%E5%8F%8D%E9%A6%88">0.17 &#35770;&#25991;&#31934;&#35762;&#65306;&#31354;&#38388;&#27714;&#35299;&#22120;&#12289;&#29289;&#29702;&#25918;&#32622;&#27714;&#35299;&#22120;&#19982;&#22833;&#36133;&#21453;&#39304;<a class="anchor-link" href="#0.17-%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AE%B2%EF%BC%9A%E7%A9%BA%E9%97%B4%E6%B1%82%E8%A7%A3%E5%99%A8%E3%80%81%E7%89%A9%E7%90%86%E6%94%BE%E7%BD%AE%E6%B1%82%E8%A7%A3%E5%99%A8%E4%B8%8E%E5%A4%B1%E8%B4%A5%E5%8F%8D%E9%A6%88">&#182;</a></h2><p>下面这节来自本目录的 <a href="./EXPLAIN_11_spatial_physical_solver_feedback.md">EXPLAIN_11_spatial_physical_solver_feedback.md</a>，对应论文 Appendix C 的 Algorithm 1 Spatial Constraint Solver、你截图里的 Figure 17 feedback block，以及 Algorithm 2 Physical Placement Solver。重点是理解：空间求解器先解基础对象 2D 位姿，物理放置求解器再解 <code>place-on</code> / <code>place-in</code> 的 3D 坐标，失败反馈再回到下一轮 prompt。本次已加深 Spatial/Physical 部分：补充 typed predicate 中间表示、dense scene margin retry、相对关系坐标系、collision local repair、support 局部坐标旋转、container ellipse/layer packing、stability threshold 和反馈诊断压缩。</p>
@@ -21223,7 +21257,7 @@ OTHER
 </div>
 </div>
 </div>
-<div id="cell-id=db953570" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=b519e40a" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="%E7%B2%BE%E8%AE%B2-11%EF%BC%9A%E7%A9%BA%E9%97%B4%E6%B1%82%E8%A7%A3%E5%99%A8%E3%80%81%E7%89%A9%E7%90%86%E6%94%BE%E7%BD%AE%E6%B1%82%E8%A7%A3%E5%99%A8%E4%B8%8E%E5%A4%B1%E8%B4%A5%E5%8F%8D%E9%A6%88">&#31934;&#35762; 11&#65306;&#31354;&#38388;&#27714;&#35299;&#22120;&#12289;&#29289;&#29702;&#25918;&#32622;&#27714;&#35299;&#22120;&#19982;&#22833;&#36133;&#21453;&#39304;<a class="anchor-link" href="#%E7%B2%BE%E8%AE%B2-11%EF%BC%9A%E7%A9%BA%E9%97%B4%E6%B1%82%E8%A7%A3%E5%99%A8%E3%80%81%E7%89%A9%E7%90%86%E6%94%BE%E7%BD%AE%E6%B1%82%E8%A7%A3%E5%99%A8%E4%B8%8E%E5%A4%B1%E8%B4%A5%E5%8F%8D%E9%A6%88">&#182;</a></h1><blockquote><p><strong>【绿色标识｜核心结论】</strong> 这两张图讲的是 RoboLab 场景生成的“自动修复闭环”：LLM 先产出语义谓词，空间求解器解 2D 基础布局，物理放置求解器解 3D 支撑/容器关系；如果任一步失败，就把诊断反馈追加回下一轮 prompt。<br>
@@ -21831,7 +21865,7 @@ place-on(mug, tray)
 </div>
 </div>
 </div>
-<div id="cell-id=0e3f8a49" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=99fa4b54" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -22109,7 +22143,7 @@ place-on(mug, tray)
 </div>
 
 </div>
-<div id="cell-id=0386a186" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=98229c2c" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="0.18-%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AE%B2%EF%BC%9AGaussian-%E6%96%B9%E6%B3%95%E4%B8%8E-NVIDIA-2026-%E5%89%8D%E6%B2%BF%E8%B7%AF%E7%BA%BF">0.18 &#35770;&#25991;&#31934;&#35762;&#65306;Gaussian &#26041;&#27861;&#19982; NVIDIA 2026 &#21069;&#27839;&#36335;&#32447;<a class="anchor-link" href="#0.18-%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AE%B2%EF%BC%9AGaussian-%E6%96%B9%E6%B3%95%E4%B8%8E-NVIDIA-2026-%E5%89%8D%E6%B2%BF%E8%B7%AF%E7%BA%BF">&#182;</a></h2><p>下面这节来自本目录的 <a href="./EXPLAIN_12_gaussian_sim_methods.md">EXPLAIN_12_gaussian_sim_methods.md</a>，回答两个问题：</p>
@@ -22121,7 +22155,7 @@ place-on(mug, tray)
 </div>
 </div>
 </div>
-<div id="cell-id=a8adcba9" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=35fbe5e9" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="%E7%B2%BE%E8%AE%B2-12%EF%BC%9ARoboLab-%E9%87%8C%E7%9A%84-Gaussian-%E6%96%B9%E6%B3%95%E4%B8%8E-NVIDIA-2026-%E5%89%8D%E6%B2%BF%E8%B7%AF%E7%BA%BF">&#31934;&#35762; 12&#65306;RoboLab &#37324;&#30340; Gaussian &#26041;&#27861;&#19982; NVIDIA 2026 &#21069;&#27839;&#36335;&#32447;<a class="anchor-link" href="#%E7%B2%BE%E8%AE%B2-12%EF%BC%9ARoboLab-%E9%87%8C%E7%9A%84-Gaussian-%E6%96%B9%E6%B3%95%E4%B8%8E-NVIDIA-2026-%E5%89%8D%E6%B2%BF%E8%B7%AF%E7%BA%BF">&#182;</a></h1><blockquote><p><strong>【绿色标识｜核心结论】</strong> RoboLab 本文不是“只靠高斯 splat 保证仿真”。它采用的是混合路线：Gaussian Splat 提供高保真视觉背景，collision mesh 提供物理碰撞，mesh foreground/SimReady 资产提供可交互对象，VoMP/质量摩擦等属性补足物理参数。<br>
@@ -22559,7 +22593,7 @@ Embodied Gaussians: 视觉高斯 + 物理粒子实时闭环
 </div>
 </div>
 </div>
-<div id="cell-id=a540da17" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=6e5e396a" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -22773,7 +22807,7 @@ Embodied Gaussians: 视觉高斯 + 物理粒子实时闭环
 </div>
 
 </div>
-<div id="cell-id=f2bfe3e8" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=69118915" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="0.19-%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AE%B2%EF%BC%9A%E5%89%A9%E4%BD%99%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9%E4%B8%8E%E8%AF%84%E6%B5%8B%E8%AF%81%E6%8D%AE%E9%93%BE">0.19 &#35770;&#25991;&#31934;&#35762;&#65306;&#21097;&#20313;&#26680;&#24515;&#20869;&#23481;&#19982;&#35780;&#27979;&#35777;&#25454;&#38142;<a class="anchor-link" href="#0.19-%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AE%B2%EF%BC%9A%E5%89%A9%E4%BD%99%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9%E4%B8%8E%E8%AF%84%E6%B5%8B%E8%AF%81%E6%8D%AE%E9%93%BE">&#182;</a></h2><p>下面这节来自本目录的 <a href="./EXPLAIN_13_remaining_core_topics.md">EXPLAIN_13_remaining_core_topics.md</a>。它不是重复前面的 scene/task/solver/MNPE/Gaussian，而是补论文里还没系统讲透的评测侧核心：实验协议、<code>success</code> 与 <code>score</code> 的区别、语言变体、复杂度 sweep、事件追踪、真实世界相关性、统计置信和限制边界。</p>
@@ -22781,7 +22815,7 @@ Embodied Gaussians: 视觉高斯 + 物理粒子实时闭环
 </div>
 </div>
 </div>
-<div id="cell-id=d674bb85" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=140c9697" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="%E7%B2%BE%E8%AE%B2-13%EF%BC%9A%E5%AF%B9%E7%85%A7%E8%AE%BA%E6%96%87%E5%90%8E%E8%BF%98%E6%B2%A1%E8%AE%B2%E9%80%8F%E7%9A%84%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9">&#31934;&#35762; 13&#65306;&#23545;&#29031;&#35770;&#25991;&#21518;&#36824;&#27809;&#35762;&#36879;&#30340;&#26680;&#24515;&#20869;&#23481;<a class="anchor-link" href="#%E7%B2%BE%E8%AE%B2-13%EF%BC%9A%E5%AF%B9%E7%85%A7%E8%AE%BA%E6%96%87%E5%90%8E%E8%BF%98%E6%B2%A1%E8%AE%B2%E9%80%8F%E7%9A%84%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9">&#182;</a></h1><blockquote><p><strong>【绿色标识｜核心结论】</strong> 前 12 讲已经覆盖了 RoboLab 的生成链路、任务结构、能力轴、SPARC、MNPE、baseline、DTGE、prompt、solver、Gaussian 路线。剩下最值得补的一块不是“再讲一个算法”，而是论文如何把一次机器人 rollout 变成可信评测证据：实验协议、严格成功率与部分分数、语言变体、错误事件、真实世界相关性、统计置信和限制边界。</p>
@@ -23183,7 +23217,7 @@ limitations: 哪些问题不是这个 benchmark 当前擅长回答的
 </div>
 </div>
 </div>
-<div id="cell-id=b2afa0c1" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=780b7ae8" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -23350,7 +23384,7 @@ limitations: 哪些问题不是这个 benchmark 当前擅长回答的
 </div>
 
 </div>
-<div id="cell-id=f8222160" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=061a49d1" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="0.19b-%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AE%B2%EF%BC%9A%E7%B2%BE%E8%AE%B213%E8%A1%A5%E5%85%85%EF%BC%8C%E8%AF%84%E6%B5%8B%E8%AF%81%E6%8D%AE%E9%93%BE%E6%B7%B1%E6%8C%96">0.19b &#35770;&#25991;&#31934;&#35762;&#65306;&#31934;&#35762;13&#34917;&#20805;&#65292;&#35780;&#27979;&#35777;&#25454;&#38142;&#28145;&#25366;<a class="anchor-link" href="#0.19b-%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AE%B2%EF%BC%9A%E7%B2%BE%E8%AE%B213%E8%A1%A5%E5%85%85%EF%BC%8C%E8%AF%84%E6%B5%8B%E8%AF%81%E6%8D%AE%E9%93%BE%E6%B7%B1%E6%8C%96">&#182;</a></h2><p>下面这节来自本目录的 <a href="./EXPLAIN_13_deep_evaluation_evidence_chain.md">EXPLAIN_13_deep_evaluation_evidence_chain.md</a>。它把精讲13从“覆盖目录”补成“证据链深挖”：论文级 episode 样本单位、<code>success</code>/<code>score</code> 的数学直觉、event tracking 的输入输出、语言变体与复杂度 sweep 的交叉诊断、统计置信、dashboard、RoboArena 真实世界相关性，以及 4090 上更接近论文口径的小矩阵应该怎么设计。</p>
@@ -23358,7 +23392,7 @@ limitations: 哪些问题不是这个 benchmark 当前擅长回答的
 </div>
 </div>
 </div>
-<div id="cell-id=ebb02cac" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=88992bb5" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="%E7%B2%BE%E8%AE%B2-13-%E8%A1%A5%E5%85%85%EF%BC%9A%E8%AF%84%E6%B5%8B%E8%AF%81%E6%8D%AE%E9%93%BE%E6%B7%B1%E6%8C%96%EF%BC%8C%E4%BB%8E%E5%8D%95%E6%9D%A1-rollout-%E5%88%B0%E8%AE%BA%E6%96%87%E7%BB%93%E8%AE%BA">&#31934;&#35762; 13-&#34917;&#20805;&#65306;&#35780;&#27979;&#35777;&#25454;&#38142;&#28145;&#25366;&#65292;&#20174;&#21333;&#26465; rollout &#21040;&#35770;&#25991;&#32467;&#35770;<a class="anchor-link" href="#%E7%B2%BE%E8%AE%B2-13-%E8%A1%A5%E5%85%85%EF%BC%9A%E8%AF%84%E6%B5%8B%E8%AF%81%E6%8D%AE%E9%93%BE%E6%B7%B1%E6%8C%96%EF%BC%8C%E4%BB%8E%E5%8D%95%E6%9D%A1-rollout-%E5%88%B0%E8%AE%BA%E6%96%87%E7%BB%93%E8%AE%BA">&#182;</a></h1><blockquote><p><strong>【绿色标识｜核心结论】</strong> 原来的精讲 13 讲到了“论文还剩哪些评测侧内容”，但讲得像目录。真正需要讲深的是：RoboLab 不是用一条视频证明模型会做任务，而是用一套证据链把 <code>task/policy/episode/event/HDF5/dashboard/statistics</code> 连起来，回答“策略到底会什么、错在哪里、结论有多稳、和真实世界排序有没有关系”。</p>
@@ -24101,7 +24135,7 @@ success / score
 </div>
 </div>
 </div>
-<div id="cell-id=5e9f3eae" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=2050c396" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -24235,7 +24269,7 @@ success / score
 </div>
 
 </div>
-<div id="cell-id=a02e15dc" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=dc591de1" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="0.20-%E4%BB%A3%E7%A0%81%E7%B2%BE%E8%AE%B2%EF%BC%9Apolicy-rollout-%E5%88%B0%E8%AF%81%E6%8D%AE%E9%93%BE">0.20 &#20195;&#30721;&#31934;&#35762;&#65306;policy rollout &#21040;&#35777;&#25454;&#38142;<a class="anchor-link" href="#0.20-%E4%BB%A3%E7%A0%81%E7%B2%BE%E8%AE%B2%EF%BC%9Apolicy-rollout-%E5%88%B0%E8%AF%81%E6%8D%AE%E9%93%BE">&#182;</a></h2><p>下面这节来自本目录的 <a href="./EXPLAIN_14_core_code_runtime_chain.md">EXPLAIN_14_core_code_runtime_chain.md</a>。它补的是前面还没系统讲透的源码主干：<code>runner.py</code> 如何调度任务，<code>episode.py</code> 如何逐步执行 policy，<code>InferenceClient</code> / <code>Pi0DroidJointposClient</code> 如何把观测转成模型请求，<code>WorldState</code> / <code>EventTracker</code> / <code>RecorderManager</code> / <code>summarize_run</code> / <code>dashboard loader</code> 如何把 rollout 变成可分析证据。</p>
@@ -24243,7 +24277,7 @@ success / score
 </div>
 </div>
 </div>
-<div id="cell-id=5cf846f1" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=46b70900" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="%E7%B2%BE%E8%AE%B2-14%EF%BC%9A%E8%BF%98%E6%B2%A1%E8%AE%B2%E9%80%8F%E7%9A%84%E6%A0%B8%E5%BF%83%E4%BB%A3%E7%A0%81---policy-rollout-%E5%88%B0%E8%AF%81%E6%8D%AE%E9%93%BE">&#31934;&#35762; 14&#65306;&#36824;&#27809;&#35762;&#36879;&#30340;&#26680;&#24515;&#20195;&#30721; - policy rollout &#21040;&#35777;&#25454;&#38142;<a class="anchor-link" href="#%E7%B2%BE%E8%AE%B2-14%EF%BC%9A%E8%BF%98%E6%B2%A1%E8%AE%B2%E9%80%8F%E7%9A%84%E6%A0%B8%E5%BF%83%E4%BB%A3%E7%A0%81---policy-rollout-%E5%88%B0%E8%AF%81%E6%8D%AE%E9%93%BE">&#182;</a></h1><blockquote><p><strong>【绿色标识｜核心结论】</strong> 前面讲了很多“任务怎么生成、成功怎么定义、论文怎么评测”。但真正复现时最常出问题的是另一条链路：<code>runner.py</code> 选任务和创建输出目录，<code>episode.py</code> 每一步调用 policy，再 <code>env.step</code>，<code>InferenceClient</code> 把观测转成模型请求，<code>WorldState/conditionals/EventTracker</code> 判断发生了什么，<code>RecorderManager/summarize/results/dashboard</code> 把过程写成 HDF5、JSON、视频和表格。</p>
@@ -24689,7 +24723,7 @@ dashboard:     离线读取证据并展示统计
 </div>
 </div>
 </div>
-<div id="cell-id=cfc23229" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=51f1e4e3" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -24848,7 +24882,7 @@ dashboard:     离线读取证据并展示统计
 </div>
 
 </div>
-<div id="cell-id=4620548e" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=fb287aaf" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="0.20b-%E4%BB%A3%E7%A0%81%E7%B2%BE%E8%AE%B2%EF%BC%9A%E7%B2%BE%E8%AE%B214%E8%A1%A5%E5%85%85%EF%BC%8C%E6%A0%B8%E5%BF%83%E8%BF%90%E8%A1%8C%E6%97%B6%E4%BB%A3%E7%A0%81%E6%B7%B1%E6%8C%96">0.20b &#20195;&#30721;&#31934;&#35762;&#65306;&#31934;&#35762;14&#34917;&#20805;&#65292;&#26680;&#24515;&#36816;&#34892;&#26102;&#20195;&#30721;&#28145;&#25366;<a class="anchor-link" href="#0.20b-%E4%BB%A3%E7%A0%81%E7%B2%BE%E8%AE%B2%EF%BC%9A%E7%B2%BE%E8%AE%B214%E8%A1%A5%E5%85%85%EF%BC%8C%E6%A0%B8%E5%BF%83%E8%BF%90%E8%A1%8C%E6%97%B6%E4%BB%A3%E7%A0%81%E6%B7%B1%E6%8C%96">&#182;</a></h2><p>下面这节来自本目录的 <a href="./EXPLAIN_14_deep_runtime_code_chain.md">EXPLAIN_14_deep_runtime_code_chain.md</a>。它把精讲 14 从“文件导览”继续推进到“输入、处理、输出、故障路由和复现证据链”：为什么 <code>runner.py</code> 要延迟导入 Isaac 相关模块，<code>episode.py</code> 怎样处理 active/frozen env，<code>InferenceClient</code> 为什么按 <code>env_id</code> 缓存 action chunk，Pi05 client 如何把 RoboLab 观测转成 OpenPI/Pi05 请求，<code>WorldState/EventTracker</code> 如何支撑谓词与失败事件，HDF5、event log、<code>episode_results.jsonl</code> 和 dashboard 分别承担什么证据角色。</p>
@@ -24856,7 +24890,7 @@ dashboard:     离线读取证据并展示统计
 </div>
 </div>
 </div>
-<div id="cell-id=640b60be" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=0a630d17" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="%E7%B2%BE%E8%AE%B2-14-%E8%A1%A5%E5%85%85%EF%BC%9A%E6%A0%B8%E5%BF%83%E8%BF%90%E8%A1%8C%E6%97%B6%E4%BB%A3%E7%A0%81%E6%B7%B1%E6%8C%96%EF%BC%8Cpolicy-rollout-%E5%A6%82%E4%BD%95%E5%8F%98%E6%88%90%E8%AF%81%E6%8D%AE">&#31934;&#35762; 14-&#34917;&#20805;&#65306;&#26680;&#24515;&#36816;&#34892;&#26102;&#20195;&#30721;&#28145;&#25366;&#65292;policy rollout &#22914;&#20309;&#21464;&#25104;&#35777;&#25454;<a class="anchor-link" href="#%E7%B2%BE%E8%AE%B2-14-%E8%A1%A5%E5%85%85%EF%BC%9A%E6%A0%B8%E5%BF%83%E8%BF%90%E8%A1%8C%E6%97%B6%E4%BB%A3%E7%A0%81%E6%B7%B1%E6%8C%96%EF%BC%8Cpolicy-rollout-%E5%A6%82%E4%BD%95%E5%8F%98%E6%88%90%E8%AF%81%E6%8D%AE">&#182;</a></h1><blockquote><p><span style="color:#166534"><strong>[绿色 核心结论]</strong></span>：RoboLab 的核心代码不是一个“跑模型”的脚本，而是一条可审计的评测流水线。<code>runner.py</code> 负责选择任务和组织实验，<code>episode.py</code> 负责把策略放进仿真闭环，<code>InferenceClient</code> 和 Pi05 client 负责把观测转成模型请求，<code>WorldState</code> 和 <code>EventTracker</code> 负责解释场景中发生了什么，<code>RecorderManager</code>、<code>summarize.py</code>、<code>results.py</code> 和 dashboard 负责把过程落成 HDF5、JSONL、事件日志、视频和统计表。</p>
@@ -25579,7 +25613,7 @@ sequenceDiagram
 </div>
 </div>
 </div>
-<div id="cell-id=f2115633" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=bc5c05ef" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -25855,7 +25889,7 @@ sequenceDiagram
 </div>
 
 </div>
-<div id="cell-id=cdac02aa" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=c95134d7" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="0.21-%E5%85%A8%E6%96%87%E7%B2%BE%E8%AE%B2%EF%BC%9A%E5%AE%A1%E7%A8%BF%E4%BA%BA%E8%A7%86%E8%A7%92%E8%AF%84%E4%BB%B7%E4%B8%8E%E6%9C%AA%E6%9D%A5%E5%88%9B%E6%96%B0%E6%96%B9%E5%90%91">0.21 &#20840;&#25991;&#31934;&#35762;&#65306;&#23457;&#31295;&#20154;&#35270;&#35282;&#35780;&#20215;&#19982;&#26410;&#26469;&#21019;&#26032;&#26041;&#21521;<a class="anchor-link" href="#0.21-%E5%85%A8%E6%96%87%E7%B2%BE%E8%AE%B2%EF%BC%9A%E5%AE%A1%E7%A8%BF%E4%BA%BA%E8%A7%86%E8%A7%92%E8%AF%84%E4%BB%B7%E4%B8%8E%E6%9C%AA%E6%9D%A5%E5%88%9B%E6%96%B0%E6%96%B9%E5%90%91">&#182;</a></h2><p>下面这节来自本目录的 <a href="./EXPLAIN_15_reviewer_synthesis.md">EXPLAIN_15_reviewer_synthesis.md</a>。它把论文从头到尾重新串起来，并换成“审稿人视角”看它到底强在哪里、主要风险在哪里、复现侧应该优先优化什么，以及未来可以往哪些创新方向继续做。</p>
@@ -25863,7 +25897,7 @@ sequenceDiagram
 </div>
 </div>
 </div>
-<div id="cell-id=b08c70cb" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=e4e9ece4" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="%E7%B2%BE%E8%AE%B2-15%EF%BC%9A%E5%85%A8%E6%96%87%E6%80%BB%E6%A2%B3%E7%90%86-+-%E5%AE%A1%E7%A8%BF%E4%BA%BA%E8%A7%86%E8%A7%92%E8%AF%84%E4%BB%B7-+-%E6%9C%AA%E6%9D%A5%E4%BC%98%E5%8C%96%E5%88%9B%E6%96%B0%E6%96%B9%E5%90%91">&#31934;&#35762; 15&#65306;&#20840;&#25991;&#24635;&#26803;&#29702; + &#23457;&#31295;&#20154;&#35270;&#35282;&#35780;&#20215; + &#26410;&#26469;&#20248;&#21270;&#21019;&#26032;&#26041;&#21521;<a class="anchor-link" href="#%E7%B2%BE%E8%AE%B2-15%EF%BC%9A%E5%85%A8%E6%96%87%E6%80%BB%E6%A2%B3%E7%90%86-+-%E5%AE%A1%E7%A8%BF%E4%BA%BA%E8%A7%86%E8%A7%92%E8%AF%84%E4%BB%B7-+-%E6%9C%AA%E6%9D%A5%E4%BC%98%E5%8C%96%E5%88%9B%E6%96%B0%E6%96%B9%E5%90%91">&#182;</a></h1><blockquote><p><strong>【绿色标识｜核心结论】</strong> 如果以审稿人的身份看，RoboLab 的主要价值不在于提出一个单点算法，而在于把“高保真仿真、任务生成、策略接入、细粒度诊断、扰动敏感性、真实世界相关性”打成一个可运行的评测框架。它更像一篇 benchmark/system paper，而不是纯算法 paper。</p>
@@ -26352,7 +26386,7 @@ NuRec/Gaussian 真实场景接入
 </div>
 </div>
 </div>
-<div id="cell-id=e1685102" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=2a76f711" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -26506,7 +26540,7 @@ NuRec/Gaussian 真实场景接入
 </div>
 
 </div>
-<div id="cell-id=38012df8" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=76e75e81" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="0.22-%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB%EF%BC%9A%E8%AE%BA%E6%96%87%E3%80%81%E5%BC%80%E6%BA%90%E4%BB%93%E5%BA%93%E4%B8%8E%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF">0.22 &#25512;&#33616;&#38405;&#35835;&#65306;&#35770;&#25991;&#12289;&#24320;&#28304;&#20179;&#24211;&#19982;&#23398;&#20064;&#36335;&#32447;<a class="anchor-link" href="#0.22-%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB%EF%BC%9A%E8%AE%BA%E6%96%87%E3%80%81%E5%BC%80%E6%BA%90%E4%BB%93%E5%BA%93%E4%B8%8E%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF">&#182;</a></h2><p>下面这节来自本目录的 <a href="./EXPLAIN_16_recommended_reading.md">EXPLAIN_16_recommended_reading.md</a>。它不是泛泛书单，而是基于 RoboLab 的模块来推荐下一步该读的论文和开源项目，并新增 2026-first 阅读层：先看 RoboLab、RoboCasa365、RDT2、GR00T N1.7、Isaac Lab-Arena、Lightwheel LW-BenchHub、Lyra 和 NVIDIA 2026 Physical AI stack，再把 Stanford/Fei-Fei/OmniGibson、DROID、OpenVLA/Octo、ReKep 等作为基础背景。</p>
@@ -26514,7 +26548,7 @@ NuRec/Gaussian 真实场景接入
 </div>
 </div>
 </div>
-<div id="cell-id=7452056b" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=eba88d54" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="%E7%B2%BE%E8%AE%B2-16%EF%BC%9A%E5%9F%BA%E4%BA%8E-RoboLab-%E7%9A%84%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB%E4%B8%8E%E5%BC%80%E6%BA%90%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF">&#31934;&#35762; 16&#65306;&#22522;&#20110; RoboLab &#30340;&#25512;&#33616;&#38405;&#35835;&#19982;&#24320;&#28304;&#23398;&#20064;&#36335;&#32447;<a class="anchor-link" href="#%E7%B2%BE%E8%AE%B2-16%EF%BC%9A%E5%9F%BA%E4%BA%8E-RoboLab-%E7%9A%84%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB%E4%B8%8E%E5%BC%80%E6%BA%90%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF">&#182;</a></h1><blockquote><p><strong>【绿色标识｜核心结论】</strong> 这一版精讲 16 改成“2026 优先”。最值得先追的是：RoboLab、RoboCasa365、RDT2、NVIDIA Isaac GR00T N1.7、NVIDIA 2026 Physical AI stack、Isaac Lab-Arena、Lightwheel LW-BenchHub、Lyra。BEHAVIOR-1K/OmniGibson、DROID、RoboArena/SIMPLER、OpenVLA/Octo、ReKep、RoboTwin/RoboMIND 仍然重要，但这里降级为基础背景或对照参照。</p>
@@ -27365,7 +27399,7 @@ flowchart LR
 </div>
 </div>
 </div>
-<div id="cell-id=fd7132dd" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=516329cf" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -27942,7 +27976,985 @@ flowchart LR
 </div>
 
 </div>
-<div id="cell-id=b216ce4c" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=e1a90ae2" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="0.22b-%E6%B7%B1%E5%BA%A6%E7%B2%BE%E8%AE%B2%EF%BC%9ARoboLab-%E6%9C%BA%E5%88%B6%E6%89%8B%E5%86%8C%E4%B8%8E%E6%BA%90%E7%A0%81%E7%8A%B6%E6%80%81%E6%9C%BA">0.22b &#28145;&#24230;&#31934;&#35762;&#65306;RoboLab &#26426;&#21046;&#25163;&#20876;&#19982;&#28304;&#30721;&#29366;&#24577;&#26426;<a class="anchor-link" href="#0.22b-%E6%B7%B1%E5%BA%A6%E7%B2%BE%E8%AE%B2%EF%BC%9ARoboLab-%E6%9C%BA%E5%88%B6%E6%89%8B%E5%86%8C%E4%B8%8E%E6%BA%90%E7%A0%81%E7%8A%B6%E6%80%81%E6%9C%BA">&#182;</a></h2><p>下面这节来自本目录的 <a href="./EXPLAIN_17_deep_mechanism_playbook.md">EXPLAIN_17_deep_mechanism_playbook.md</a>。它回应“精讲不够细、不够深”的问题：不再按论文章节继续平铺，而是把 RoboLab 当成一条评测编译链，逐层拆成 task contract、typed predicates、environment binding、policy rollout、WorldState/EventTracker、evidence artifacts、perturbation probe 和 baseline adapter boundary。</p>
+
+</div>
+</div>
+</div>
+<div id="cell-id=21f11987" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="%E7%B2%BE%E8%AE%B217%EF%BC%9ARoboLab-%E6%B7%B1%E6%B0%B4%E5%8C%BA%E6%9C%BA%E5%88%B6%E6%89%8B%E5%86%8C%EF%BC%8C%E4%BB%8E%E8%AE%BA%E6%96%87%E6%A6%82%E5%BF%B5%E5%88%B0%E6%BA%90%E7%A0%81%E7%8A%B6%E6%80%81%E6%9C%BA">&#31934;&#35762;17&#65306;RoboLab &#28145;&#27700;&#21306;&#26426;&#21046;&#25163;&#20876;&#65292;&#20174;&#35770;&#25991;&#27010;&#24565;&#21040;&#28304;&#30721;&#29366;&#24577;&#26426;<a class="anchor-link" href="#%E7%B2%BE%E8%AE%B217%EF%BC%9ARoboLab-%E6%B7%B1%E6%B0%B4%E5%8C%BA%E6%9C%BA%E5%88%B6%E6%89%8B%E5%86%8C%EF%BC%8C%E4%BB%8E%E8%AE%BA%E6%96%87%E6%A6%82%E5%BF%B5%E5%88%B0%E6%BA%90%E7%A0%81%E7%8A%B6%E6%80%81%E6%9C%BA">&#182;</a></h1><blockquote><p><strong>【绿色标识｜核心结论】</strong> 前面的精讲已经覆盖了论文各章节，但真正要“讲深”，不能只按论文目录继续展开。RoboLab 的本质是一条可审计的评测编译链：把自然语言任务和真实感场景，编译成 Isaac Lab 中可执行的环境，再把策略行为编译成 <code>success / score / event / HDF5 / video / dashboard</code> 这些证据。<br>
+<strong>【蓝色标识｜主要来源】</strong> 论文 <code>arXiv:2604.09860v3</code> 的 Introduction、III-A、III-B、III-C、III-D、IV、Appendix B/C/D；NVIDIA 项目页；官方 GitHub 的 <code>robolab/</code>、<code>policies/</code>、<code>analysis/</code>、<code>dashboard/</code> 目录；本地 4090 复现证据 <code>remote_outputs/</code> 与 <code>robolab_repro_artifacts/</code>。<br>
+<strong>【橙色标识｜边界】</strong> 这一章不是新增实跑结果，也不是替代源码阅读。它是“深读路线图”：告诉你每个机制该看什么输入、状态、输出和失败边界，避免把视频、跑分、资产检查、策略能力混在一起。</p>
+</blockquote>
+<hr>
+<h2 id="0.-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%98%E9%9C%80%E8%A6%81%E8%BF%99%E4%B8%80%E7%AB%A0">0. &#20026;&#20160;&#20040;&#36824;&#38656;&#35201;&#36825;&#19968;&#31456;<a class="anchor-link" href="#0.-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%98%E9%9C%80%E8%A6%81%E8%BF%99%E4%B8%80%E7%AB%A0">&#182;</a></h2><p>你说“很多精讲不够细致、不够精深”，问题不在于缺少更多段落，而在于缺一套穿透式读法。</p>
+<p>前面的章节更像纵向切片：</p>
+<table>
+<thead><tr>
+<th>已有精讲</th>
+<th>主要讲什么</th>
+<th>容易停在哪里</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>精讲 1/2/3/10/11</td>
+<td>场景、任务、prompt、solver</td>
+<td>知道模块名，但不知道数据怎么变形</td>
+</tr>
+<tr>
+<td>精讲 4/8/13/13b</td>
+<td>能力轴、实验、证据链</td>
+<td>知道指标，但不知道它们如何从 rollout 产生</td>
+</tr>
+<tr>
+<td>精讲 14/14b</td>
+<td>runtime 和源码链</td>
+<td>知道文件职责，但不一定能形成调试路径</td>
+</tr>
+<tr>
+<td>精讲 15/16</td>
+<td>审稿视角和推荐阅读</td>
+<td>知道未来方向，但不一定知道当前系统的可改点</td>
+</tr>
+</tbody>
+</table>
+<p>这章换一种方式：按“机制”讲。每个机制都拆成：</p>
+<div class="highlight"><pre><span></span>原问题
+  -&gt; 输入是什么
+  -&gt; 中间状态是什么
+  -&gt; 关键源码对象是什么
+  -&gt; 输出是什么
+  -&gt; 失败时怎么判断
+  -&gt; 4090 复现里看哪个证据
+</pre></div>
+<p>这比“某文件负责什么”更接近真实复现和调试。</p>
+<hr>
+<h2 id="1.-%E5%85%88%E7%AB%8B%E4%B8%80%E4%B8%AA%E6%80%BB%E5%BF%83%E6%99%BA%EF%BC%9ARoboLab-%E6%98%AF%E8%AF%84%E6%B5%8B%E7%BC%96%E8%AF%91%E5%99%A8">1. &#20808;&#31435;&#19968;&#20010;&#24635;&#24515;&#26234;&#65306;RoboLab &#26159;&#35780;&#27979;&#32534;&#35793;&#22120;<a class="anchor-link" href="#1.-%E5%85%88%E7%AB%8B%E4%B8%80%E4%B8%AA%E6%80%BB%E5%BF%83%E6%99%BA%EF%BC%9ARoboLab-%E6%98%AF%E8%AF%84%E6%B5%8B%E7%BC%96%E8%AF%91%E5%99%A8">&#182;</a></h2><p>可以把 RoboLab 看成一个五阶段编译器。</p>
+
+<pre><code>mermaid
+flowchart TD
+    A["语言和场景意图&lt;br/&gt;theme, instruction, competency axes"] --&gt; B["中间表示&lt;br/&gt;objects, predicates, task class, subtasks"]
+    B --&gt; C["可执行环境&lt;br/&gt;USD scene, Isaac Lab env, robot, cameras, policy client"]
+    C --&gt; D["运行轨迹&lt;br/&gt;observations, action chunks, object states, contacts"]
+    D --&gt; E["证据产物&lt;br/&gt;success, score, events, HDF5, video, JSONL, dashboard"]</code></pre>
+<p>说人话：</p>
+<ol>
+<li>论文不是只问“模型会不会拿香蕉”。它问的是：面对不同视觉属性、空间关系、多步骤过程、扰动和语言说法，策略到底稳定不稳定。</li>
+<li>因此 RoboLab 必须把任务写成机器能检查的结构，而不是只保存一句自然语言。</li>
+<li>它必须把场景写成物理可执行的 USD/Isaac 环境，而不是只保存一张好看的渲染图。</li>
+<li>它必须把策略行为保存成可聚合的证据，而不是只保存一个 mp4。</li>
+<li>它必须能按能力轴、难度、任务长度、扰动维度重新切表，否则 120 个任务只是一堆独立 demo。</li>
+</ol>
+<hr>
+<h2 id="2.-%E6%9C%BA%E5%88%B6%E4%B8%80%EF%BC%9ATask-%E4%B8%8D%E6%98%AF-Python-%E6%96%87%E4%BB%B6%EF%BC%8C%E8%80%8C%E6%98%AF%E8%AF%84%E6%B5%8B%E5%90%88%E7%BA%A6">2. &#26426;&#21046;&#19968;&#65306;Task &#19981;&#26159; Python &#25991;&#20214;&#65292;&#32780;&#26159;&#35780;&#27979;&#21512;&#32422;<a class="anchor-link" href="#2.-%E6%9C%BA%E5%88%B6%E4%B8%80%EF%BC%9ATask-%E4%B8%8D%E6%98%AF-Python-%E6%96%87%E4%BB%B6%EF%BC%8C%E8%80%8C%E6%98%AF%E8%AF%84%E6%B5%8B%E5%90%88%E7%BA%A6">&#182;</a></h2><h3 id="%E5%8E%9F%E9%97%AE%E9%A2%98">&#21407;&#38382;&#39064;<a class="anchor-link" href="#%E5%8E%9F%E9%97%AE%E9%A2%98">&#182;</a></h3><p>为什么 RoboLab 的任务不能只写成一句话，例如“把香蕉放进碗里”？</p>
+<p>因为一句话只能给人看，不能自动评分。论文要的是规模化评测，所以任务必须变成一个可执行合约。</p>
+<h3 id="%E8%BE%93%E5%85%A5">&#36755;&#20837;<a class="anchor-link" href="#%E8%BE%93%E5%85%A5">&#182;</a></h3><p>任务合约至少需要这些输入：</p>
+<table>
+<thead><tr>
+<th>输入</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>scene</code></td>
+<td>使用哪个 USD 场景，里面有哪些对象</td>
+</tr>
+<tr>
+<td><code>instruction</code> / variants</td>
+<td>默认、模糊、具体等语言版本</td>
+</tr>
+<tr>
+<td><code>contact_object_list</code></td>
+<td>哪些对象参与接触、碰撞、事件判定</td>
+</tr>
+<tr>
+<td><code>subtasks</code></td>
+<td>任务被拆成哪些阶段</td>
+</tr>
+<tr>
+<td><code>conditionals</code> / predicates</td>
+<td>什么叫成功、失败、终止</td>
+</tr>
+<tr>
+<td><code>episode length</code></td>
+<td>给策略多少时间完成</td>
+</tr>
+<tr>
+<td><code>attributes</code></td>
+<td>视觉、关系、程序能力标签和难度</td>
+</tr>
+</tbody>
+</table>
+<h3 id="%E4%B8%AD%E9%97%B4%E7%8A%B6%E6%80%81">&#20013;&#38388;&#29366;&#24577;<a class="anchor-link" href="#%E4%B8%AD%E9%97%B4%E7%8A%B6%E6%80%81">&#182;</a></h3><p>任务文件把自然语言目标转成结构化条件。例如教学上可以这样理解：</p>
+<div class="highlight"><pre><span></span><span class="n">TaskContract</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;instruction&quot;</span><span class="p">:</span> <span class="s2">&quot;Pick up the banana and place it in the bowl&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;scene&quot;</span><span class="p">:</span> <span class="s2">&quot;banana_bowl.usda&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;objects_to_track&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;bowl&quot;</span><span class="p">,</span> <span class="s2">&quot;table&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;success_condition&quot;</span><span class="p">:</span> <span class="s2">&quot;object_in_container(banana, bowl)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;subtasks&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;pick_and_place(object=banana, container=bowl)&quot;</span>
+    <span class="p">],</span>
+<span class="p">}</span>
+</pre></div>
+<p>这不是官方完整代码，只是把任务文件的语义合约说清楚。</p>
+<h3 id="%E8%BE%93%E5%87%BA">&#36755;&#20986;<a class="anchor-link" href="#%E8%BE%93%E5%87%BA">&#182;</a></h3><p>任务合约最终输出给 runtime 的不是一句话，而是一组可检查对象：</p>
+<div class="highlight"><pre><span></span>env_cfg
+  + task instruction
+  + scene import config
+  + success predicates
+  + subtask scoring rules
+  + termination rules
+  + episode metadata
+</pre></div>
+<h3 id="%E5%A4%B1%E8%B4%A5%E8%BE%B9%E7%95%8C">&#22833;&#36133;&#36793;&#30028;<a class="anchor-link" href="#%E5%A4%B1%E8%B4%A5%E8%BE%B9%E7%95%8C">&#182;</a></h3><table>
+<thead><tr>
+<th>现象</th>
+<th>不能直接下的结论</th>
+<th>应该查什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>视频里像是成功了，但 <code>success=False</code></td>
+<td>不一定是策略错，也可能是 predicate 边界或容器接触判定没满足</td>
+<td>event log、object pose、subtask score</td>
+</tr>
+<tr>
+<td>模型抓了正确物体，但没得分</td>
+<td>可能只完成了 grasp，没有完成 final relation</td>
+<td>HDF5 里的阶段状态和 event</td>
+</tr>
+<tr>
+<td>任务 import 失败</td>
+<td>不一定是 Python 语法问题，也可能是资产、scene path、contact object 名称不一致</td>
+<td>task file、asset preflight、Isaac log</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4090-%E9%AA%8C%E8%AF%81%E5%85%A5%E5%8F%A3">4090 &#39564;&#35777;&#20837;&#21475;<a class="anchor-link" href="#4090-%E9%AA%8C%E8%AF%81%E5%85%A5%E5%8F%A3">&#182;</a></h3><p>本地材料里可以看：</p>
+<div class="highlight"><pre><span></span>robolab_repro_artifacts/pi05_policy_smoke_summary.json
+robolab_repro_artifacts/pi05_axis5_assetready_20260620_20260620_092157_episode_summary.json
+remote_outputs/pi05_banana_full_20260620_015206/
+</pre></div>
+<p>关键不是“文件存在”，而是看同一个 episode 是否同时有：</p>
+<div class="highlight"><pre><span></span>episode_results.jsonl
+run_0.hdf5
+log_0_env0.json
+mp4 / viewport mp4
+env_cfg.json
+</pre></div>
+<p>缺一个，证据链就少一层。</p>
+<hr>
+<h2 id="3.-%E6%9C%BA%E5%88%B6%E4%BA%8C%EF%BC%9AScene-generation-%E7%9A%84%E6%A0%B8%E5%BF%83%E4%B8%8D%E6%98%AF%E2%80%9C%E8%AE%A9-LLM-%E6%91%86%E7%89%A9%E4%BD%93%E2%80%9D%EF%BC%8C%E8%80%8C%E6%98%AF%E7%BA%A6%E6%9D%9F%E7%BC%96%E8%AF%91">3. &#26426;&#21046;&#20108;&#65306;Scene generation &#30340;&#26680;&#24515;&#19981;&#26159;&#8220;&#35753; LLM &#25670;&#29289;&#20307;&#8221;&#65292;&#32780;&#26159;&#32422;&#26463;&#32534;&#35793;<a class="anchor-link" href="#3.-%E6%9C%BA%E5%88%B6%E4%BA%8C%EF%BC%9AScene-generation-%E7%9A%84%E6%A0%B8%E5%BF%83%E4%B8%8D%E6%98%AF%E2%80%9C%E8%AE%A9-LLM-%E6%91%86%E7%89%A9%E4%BD%93%E2%80%9D%EF%BC%8C%E8%80%8C%E6%98%AF%E7%BA%A6%E6%9D%9F%E7%BC%96%E8%AF%91">&#182;</a></h2><h3 id="%E5%8E%9F%E9%97%AE%E9%A2%98">&#21407;&#38382;&#39064;<a class="anchor-link" href="#%E5%8E%9F%E9%97%AE%E9%A2%98">&#182;</a></h3><p>论文说几分钟生成大规模逼真场景，听起来像“LLM 写坐标”。但如果只是让 LLM 给所有物体写 <code>(x, y, yaw)</code>，很快会出现碰撞、放不下、支撑关系错、容器内部不合理。</p>
+<p>RoboLab 的关键是让 LLM 生成 typed predicates，再由 solver 把谓词解成可执行几何。</p>
+<h3 id="%E8%BE%93%E5%85%A5">&#36755;&#20837;<a class="anchor-link" href="#%E8%BE%93%E5%85%A5">&#182;</a></h3><table>
+<thead><tr>
+<th>输入</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>theme</td>
+<td>例如 messy counter、tool sorting、breakfast table</td>
+</tr>
+<tr>
+<td>object catalog</td>
+<td>对象名称、类别、尺寸、是否容器、是否支撑</td>
+</tr>
+<tr>
+<td>table bounds</td>
+<td>可放置区域</td>
+</tr>
+<tr>
+<td>placement types</td>
+<td><code>place-on-base</code>、<code>place-in</code>、<code>place-on</code>、<code>cluster-around</code></td>
+</tr>
+<tr>
+<td>constraints</td>
+<td>容器尺寸、堆叠稳定性、间距、yaw 多样性</td>
+</tr>
+</tbody>
+</table>
+<h3 id="%E4%B8%AD%E9%97%B4%E8%A1%A8%E7%A4%BA">&#20013;&#38388;&#34920;&#31034;<a class="anchor-link" href="#%E4%B8%AD%E9%97%B4%E8%A1%A8%E7%A4%BA">&#182;</a></h3><p>LLM 不应该直接输出“最终世界”，而应该输出类似：</p>
+<div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;objects&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;bowl_0&quot;</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;plate_large&quot;</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;banana&quot;</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mug&quot;</span><span class="p">}</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;predicates&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;place-on-base&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;object&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;bowl_0&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;x&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.40</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;y&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.15</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;yaw&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">23</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;place-on&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;object&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;banana&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;support&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;plate_large&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;position&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;center&quot;</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cluster-around&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;objects&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;mug&quot;</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;anchor&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;bowl_0&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;radius&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.12</span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+<p>这个结构的好处是：</p>
+<ol>
+<li>对象名可以和 catalog 做精确校验。</li>
+<li><code>place-on</code> / <code>place-in</code> 自动形成依赖顺序。</li>
+<li>spatial solver 可以先解 base 物体位置。</li>
+<li>physical solver 可以再解支撑、容器、z 高度。</li>
+<li>失败信息可以回写给 LLM 修复，而不是只说“生成失败”。</li>
+</ol>
+<h3 id="%E7%8A%B6%E6%80%81%E8%BD%AC%E7%A7%BB">&#29366;&#24577;&#36716;&#31227;<a class="anchor-link" href="#%E7%8A%B6%E6%80%81%E8%BD%AC%E7%A7%BB">&#182;</a></h3><div class="highlight"><pre><span></span>LLM JSON predicates
+  -&gt; grammar/schema validation
+  -&gt; asset catalog validation
+  -&gt; dependency order
+  -&gt; spatial 2D solve
+  -&gt; physical 3D placement
+  -&gt; collision/stability check
+  -&gt; USD scene
+</pre></div>
+<h3 id="%E8%BE%93%E5%87%BA">&#36755;&#20986;<a class="anchor-link" href="#%E8%BE%93%E5%87%BA">&#182;</a></h3><p>输出不是一张图，而是：</p>
+<div class="highlight"><pre><span></span>generated scene USD
+  + object poses
+  + asset references
+  + physics-compatible placement
+  + optional screenshot
+  + validation report
+</pre></div>
+<h3 id="%E5%A4%B1%E8%B4%A5%E8%BE%B9%E7%95%8C">&#22833;&#36133;&#36793;&#30028;<a class="anchor-link" href="#%E5%A4%B1%E8%B4%A5%E8%BE%B9%E7%95%8C">&#182;</a></h3><table>
+<thead><tr>
+<th>失败位置</th>
+<th>典型原因</th>
+<th>修复方向</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JSON/schema</td>
+<td>LLM 输出 markdown、漏字段、对象名不合法</td>
+<td>强化 JSON-only、字段 schema、对象名精确匹配</td>
+</tr>
+<tr>
+<td>asset validation</td>
+<td>选了 catalog 没有的物体，或禁用集合对象</td>
+<td>替换对象或更新 catalog</td>
+</tr>
+<tr>
+<td>spatial solve</td>
+<td>base 物体太多、桌面太挤、相对关系矛盾</td>
+<td>减少 anchors、增加 containment/stacking、缩小对象</td>
+</tr>
+<tr>
+<td>physical placement</td>
+<td>容器放不下、支撑面不够、z 高度错</td>
+<td>检查 bounding box、support local frame、container clearance</td>
+</tr>
+<tr>
+<td>settle simulation</td>
+<td>物体掉落、穿插、抖动</td>
+<td>调整碰撞体、质量、初始高度、间距和 physics material</td>
+</tr>
+</tbody>
+</table>
+<h3 id="%E6%B7%B1%E5%B1%82%E7%90%86%E8%A7%A3">&#28145;&#23618;&#29702;&#35299;<a class="anchor-link" href="#%E6%B7%B1%E5%B1%82%E7%90%86%E8%A7%A3">&#182;</a></h3><p>这里最重要的不是“LLM 很聪明”，而是把 LLM 限制在它擅长的层：语义规划。几何、碰撞、稳定性不让 LLM 口算，而是交给 solver 和物理仿真。</p>
+<p>这也是 RoboLab 与逐场景 3DGS/NeRF real-to-sim 的不同：RoboLab 更像“高质量资产库 + 结构化程序化组合 + 物理检查”，不是每个真实视频都重建一次完整数字孪生。</p>
+<hr>
+<h2 id="4.-%E6%9C%BA%E5%88%B6%E4%B8%89%EF%BC%9AEnvironment-%E5%AE%9E%E4%BE%8B%E5%8C%96%E6%98%AF%E6%8A%8A%E2%80%9C%E8%80%83%E9%A2%98%E2%80%9D%E6%8E%A5%E5%88%B0%E2%80%9C%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%BA%AB%E4%BD%93%E2%80%9D%E5%92%8C%E2%80%9C%E7%AD%96%E7%95%A5%E6%8E%A5%E5%8F%A3%E2%80%9D">4. &#26426;&#21046;&#19977;&#65306;Environment &#23454;&#20363;&#21270;&#26159;&#25226;&#8220;&#32771;&#39064;&#8221;&#25509;&#21040;&#8220;&#26426;&#22120;&#20154;&#36523;&#20307;&#8221;&#21644;&#8220;&#31574;&#30053;&#25509;&#21475;&#8221;<a class="anchor-link" href="#4.-%E6%9C%BA%E5%88%B6%E4%B8%89%EF%BC%9AEnvironment-%E5%AE%9E%E4%BE%8B%E5%8C%96%E6%98%AF%E6%8A%8A%E2%80%9C%E8%80%83%E9%A2%98%E2%80%9D%E6%8E%A5%E5%88%B0%E2%80%9C%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%BA%AB%E4%BD%93%E2%80%9D%E5%92%8C%E2%80%9C%E7%AD%96%E7%95%A5%E6%8E%A5%E5%8F%A3%E2%80%9D">&#182;</a></h2><h3 id="%E5%8E%9F%E9%97%AE%E9%A2%98">&#21407;&#38382;&#39064;<a class="anchor-link" href="#%E5%8E%9F%E9%97%AE%E9%A2%98">&#182;</a></h3><p>同一个任务为什么能换机器人、换 policy、换相机、换背景？</p>
+<p>因为论文设计里 task 是 robot-agnostic / policy-agnostic 的。任务只描述目标状态，真正的机器人 embodiment、policy observation/action schema、camera 和 variation 在 runtime 绑定。</p>
+<h3 id="%E8%BE%93%E5%85%A5">&#36755;&#20837;<a class="anchor-link" href="#%E8%BE%93%E5%85%A5">&#182;</a></h3><table>
+<thead><tr>
+<th>输入</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>task config</td>
+<td>任务、场景、成功条件</td>
+</tr>
+<tr>
+<td>robot config</td>
+<td>Franka、GR1、或其他 Isaac Lab compatible robot</td>
+</tr>
+<tr>
+<td>policy config</td>
+<td>Pi05、PaliGemma、GR00T adapter、ReKep adapter 等</td>
+</tr>
+<tr>
+<td>camera config</td>
+<td>外部相机、腕部相机、分辨率、视角</td>
+</tr>
+<tr>
+<td>action config</td>
+<td>关节位置、EEF delta、gripper、chunk horizon</td>
+</tr>
+<tr>
+<td>variation config</td>
+<td>lighting、camera pose、background、texture、object pose</td>
+</tr>
+</tbody>
+</table>
+<h3 id="%E4%B8%AD%E9%97%B4%E7%8A%B6%E6%80%81">&#20013;&#38388;&#29366;&#24577;<a class="anchor-link" href="#%E4%B8%AD%E9%97%B4%E7%8A%B6%E6%80%81">&#182;</a></h3><div class="highlight"><pre><span></span>TaskContract
+  + RobotEmbodiment
+  + PolicyIOAdapter
+  + SensorConfig
+  + VariationConfig
+  -&gt; Isaac Lab Env
+</pre></div>
+<p>这个绑定阶段最容易被低估。很多“模型对比”并不公平，问题不是模型强弱，而是 adapter 没把 observation/action 对齐。</p>
+<h3 id="%E8%BE%93%E5%87%BA">&#36755;&#20986;<a class="anchor-link" href="#%E8%BE%93%E5%87%BA">&#182;</a></h3><div class="highlight"><pre><span></span>env
+  + observation space
+  + action space
+  + cameras
+  + robot articulation
+  + task predicates
+  + recorder hooks
+</pre></div>
+<h3 id="%E5%A4%B1%E8%B4%A5%E8%BE%B9%E7%95%8C">&#22833;&#36133;&#36793;&#30028;<a class="anchor-link" href="#%E5%A4%B1%E8%B4%A5%E8%BE%B9%E7%95%8C">&#182;</a></h3><table>
+<thead><tr>
+<th>现象</th>
+<th>深层原因</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>换机器人后任务跑不动</td>
+<td>workspace、gripper、action scale、IK/control mode 不兼容</td>
+</tr>
+<tr>
+<td>取消腕部相机后性能突降</td>
+<td>policy 训练时依赖 wrist view，输入分布改变</td>
+</tr>
+<tr>
+<td>改相机角度后模型抓错</td>
+<td>object visibility、occlusion、pixel-to-action prior 改变</td>
+</tr>
+<tr>
+<td>背景扰动后失败</td>
+<td>VLA 视觉 backbone 对纹理/语义 distractor 敏感</td>
+</tr>
+<tr>
+<td>ReKep 不能直接当 VLA 跑</td>
+<td>ReKep 输出的是约束/优化轨迹，不是同样的 action chunk client</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4090-%E5%A4%8D%E7%8E%B0%E5%90%AF%E5%8F%91">4090 &#22797;&#29616;&#21551;&#21457;<a class="anchor-link" href="#4090-%E5%A4%8D%E7%8E%B0%E5%90%AF%E5%8F%91">&#182;</a></h3><p>所以实验顺序应该是：</p>
+<div class="highlight"><pre><span></span>先固定 Pi05 + 官方任务 + num_envs=1
+  -&gt; 确认可完整产出证据
+  -&gt; 再扩到每轴任务子集
+  -&gt; 再做扰动
+  -&gt; 最后换 policy 或 robot
+</pre></div>
+<p>这不是保守，而是在控制变量。</p>
+<hr>
+<h2 id="5.-%E6%9C%BA%E5%88%B6%E5%9B%9B%EF%BC%9APolicy-rollout-%E6%98%AF%E4%B8%80%E4%B8%AA%E5%A4%9A%E7%8A%B6%E6%80%81%E9%97%AD%E7%8E%AF%EF%BC%8C%E4%B8%8D%E6%98%AF%E4%B8%80%E6%AC%A1%E6%A8%A1%E5%9E%8B%E8%B0%83%E7%94%A8">5. &#26426;&#21046;&#22235;&#65306;Policy rollout &#26159;&#19968;&#20010;&#22810;&#29366;&#24577;&#38381;&#29615;&#65292;&#19981;&#26159;&#19968;&#27425;&#27169;&#22411;&#35843;&#29992;<a class="anchor-link" href="#5.-%E6%9C%BA%E5%88%B6%E5%9B%9B%EF%BC%9APolicy-rollout-%E6%98%AF%E4%B8%80%E4%B8%AA%E5%A4%9A%E7%8A%B6%E6%80%81%E9%97%AD%E7%8E%AF%EF%BC%8C%E4%B8%8D%E6%98%AF%E4%B8%80%E6%AC%A1%E6%A8%A1%E5%9E%8B%E8%B0%83%E7%94%A8">&#182;</a></h2><h3 id="%E5%8E%9F%E9%97%AE%E9%A2%98">&#21407;&#38382;&#39064;<a class="anchor-link" href="#%E5%8E%9F%E9%97%AE%E9%A2%98">&#182;</a></h3><p>为什么 <code>Pi05 server</code> 在线还不代表任务能完成？</p>
+<p>因为策略评测不是 <code>obs -&gt; action</code> 一次调用，而是跨数百个 simulation steps 的闭环。</p>
+<h3 id="%E8%BE%93%E5%85%A5">&#36755;&#20837;<a class="anchor-link" href="#%E8%BE%93%E5%85%A5">&#182;</a></h3><p>每个 step 或 action chunk 需要：</p>
+<table>
+<thead><tr>
+<th>输入</th>
+<th>可能来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RGB 图像</td>
+<td>external camera、wrist camera</td>
+</tr>
+<tr>
+<td>robot proprioception</td>
+<td>joints、EEF pose、gripper state</td>
+</tr>
+<tr>
+<td>language instruction</td>
+<td>task variant</td>
+</tr>
+<tr>
+<td>previous action / chunk state</td>
+<td>client cache</td>
+</tr>
+<tr>
+<td>environment time</td>
+<td>episode step、dt、decimation</td>
+</tr>
+</tbody>
+</table>
+<h3 id="%E4%B8%AD%E9%97%B4%E7%8A%B6%E6%80%81">&#20013;&#38388;&#29366;&#24577;<a class="anchor-link" href="#%E4%B8%AD%E9%97%B4%E7%8A%B6%E6%80%81">&#182;</a></h3><div class="highlight"><pre><span></span>observation dict
+  -&gt; policy client preprocess
+  -&gt; server request
+  -&gt; model inference
+  -&gt; action chunk
+  -&gt; local chunk cache
+  -&gt; env.step(action)
+  -&gt; new world state
+</pre></div>
+<p>对于 chunked action policy，模型可能不是每一步都重新推理。它会生成一段动作，然后 runtime 分步消费。</p>
+<h3 id="%E8%BE%93%E5%87%BA">&#36755;&#20986;<a class="anchor-link" href="#%E8%BE%93%E5%87%BA">&#182;</a></h3><p>每个 step 最终会贡献：</p>
+<div class="highlight"><pre><span></span>next observation
+object poses
+contacts
+subtask states
+events
+recorder frame
+video frame
+timing
+</pre></div>
+<h3 id="%E5%A4%B1%E8%B4%A5%E8%BE%B9%E7%95%8C">&#22833;&#36133;&#36793;&#30028;<a class="anchor-link" href="#%E5%A4%B1%E8%B4%A5%E8%BE%B9%E7%95%8C">&#182;</a></h3><table>
+<thead><tr>
+<th>失败类型</th>
+<th>应该怎么区分</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>policy server 慢</td>
+<td>看 inference latency，不先怪 Isaac</td>
+</tr>
+<tr>
+<td>action 方向错</td>
+<td>看 action coordinate frame / scaling / gripper convention</td>
+</tr>
+<tr>
+<td>轨迹平滑但没完成</td>
+<td>看 semantic/relational reasoning，而不是低层控制</td>
+</tr>
+<tr>
+<td>轨迹抖动</td>
+<td>看 controller、chunk stitching、simulation dt、SPARC</td>
+</tr>
+<tr>
+<td>多 env 串数据</td>
+<td>看 env_id 隔离、chunk cache、recorder path</td>
+</tr>
+</tbody>
+</table>
+<h3 id="%E8%AF%B4%E4%BA%BA%E8%AF%9D%E4%BE%8B%E5%AD%90">&#35828;&#20154;&#35805;&#20363;&#23376;<a class="anchor-link" href="#%E8%AF%B4%E4%BA%BA%E8%AF%9D%E4%BE%8B%E5%AD%90">&#182;</a></h3><p>如果模型在 <code>RedDishesInBinTask</code> 抓了一个红色盘子但没放进 bin，不能简单写“视觉失败”。更合理的拆法是：</p>
+<div class="highlight"><pre><span></span>视觉识别：可能成功，因为它选到了红色盘子
+空间/目标关系：可能部分失败，因为没有进入 bin
+程序执行：可能失败，因为 release、trajectory、gripper timing 不对
+事件证据：需要看 wrong object / drop / collision / object moved
+</pre></div>
+<p>这就是为什么 <code>score</code>、event log 和 video 必须一起看。</p>
+<hr>
+<h2 id="6.-%E6%9C%BA%E5%88%B6%E4%BA%94%EF%BC%9AWorldState-%E5%92%8C-EventTracker-%E6%98%AF%E6%8A%8A%E7%89%A9%E7%90%86%E8%BD%A8%E8%BF%B9%E7%BF%BB%E8%AF%91%E6%88%90%E4%BA%BA%E8%83%BD%E8%AF%BB%E7%9A%84%E5%A4%B1%E8%B4%A5%E5%8E%9F%E5%9B%A0">6. &#26426;&#21046;&#20116;&#65306;WorldState &#21644; EventTracker &#26159;&#25226;&#29289;&#29702;&#36712;&#36857;&#32763;&#35793;&#25104;&#20154;&#33021;&#35835;&#30340;&#22833;&#36133;&#21407;&#22240;<a class="anchor-link" href="#6.-%E6%9C%BA%E5%88%B6%E4%BA%94%EF%BC%9AWorldState-%E5%92%8C-EventTracker-%E6%98%AF%E6%8A%8A%E7%89%A9%E7%90%86%E8%BD%A8%E8%BF%B9%E7%BF%BB%E8%AF%91%E6%88%90%E4%BA%BA%E8%83%BD%E8%AF%BB%E7%9A%84%E5%A4%B1%E8%B4%A5%E5%8E%9F%E5%9B%A0">&#182;</a></h2><h3 id="%E5%8E%9F%E9%97%AE%E9%A2%98">&#21407;&#38382;&#39064;<a class="anchor-link" href="#%E5%8E%9F%E9%97%AE%E9%A2%98">&#182;</a></h3><p>为什么论文强调不只看 success rate？</p>
+<p>因为 success rate 只有一位信息。<code>success=False</code> 不能告诉你模型错在看不懂颜色、搞错空间关系、抓取失败、重定向失败，还是撞飞了无关物体。</p>
+<h3 id="%E8%BE%93%E5%85%A5">&#36755;&#20837;<a class="anchor-link" href="#%E8%BE%93%E5%85%A5">&#182;</a></h3><div class="highlight"><pre><span></span>object poses
+robot contacts
+gripper state
+subtask predicates
+previous event states
+task target objects
+</pre></div>
+<h3 id="%E4%B8%AD%E9%97%B4%E7%8A%B6%E6%80%81">&#20013;&#38388;&#29366;&#24577;<a class="anchor-link" href="#%E4%B8%AD%E9%97%B4%E7%8A%B6%E6%80%81">&#182;</a></h3><p>WorldState 把 Isaac 里的低层状态整理成 predicate 可消费的形式：</p>
+<div class="highlight"><pre><span></span>banana pose
+bowl pose
+banana in bowl?
+robot grasping banana?
+wrong object moved?
+object fell?
+target object near goal?
+</pre></div>
+<p>EventTracker 再把连续状态压缩成稀疏事件：</p>
+<div class="highlight"><pre><span></span>grasp target
+drop target
+wrong object grasped
+object collision
+target relation satisfied
+subtask completed
+</pre></div>
+<h3 id="%E8%BE%93%E5%87%BA">&#36755;&#20986;<a class="anchor-link" href="#%E8%BE%93%E5%87%BA">&#182;</a></h3><table>
+<thead><tr>
+<th>输出</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>success</code></td>
+<td>最终是否满足任务成功条件</td>
+</tr>
+<tr>
+<td><code>score</code></td>
+<td>子任务/事件完成比例</td>
+</tr>
+<tr>
+<td>event log</td>
+<td>失败诊断</td>
+</tr>
+<tr>
+<td>HDF5</td>
+<td>逐步复盘</td>
+</tr>
+<tr>
+<td>dashboard table</td>
+<td>聚合分析</td>
+</tr>
+</tbody>
+</table>
+<h3 id="%E6%B7%B1%E5%B1%82%E7%90%86%E8%A7%A3">&#28145;&#23618;&#29702;&#35299;<a class="anchor-link" href="#%E6%B7%B1%E5%B1%82%E7%90%86%E8%A7%A3">&#182;</a></h3><p>这一步是 RoboLab 的科学价值所在。没有事件层，论文只能说“模型成功率低”。有了事件层，才能进一步问：</p>
+<div class="highlight"><pre><span></span>模型是不是常拿错物体？
+是不是能拿对但放不准？
+是不是长程任务前半段能做、后半段崩？
+是不是对模糊语言更敏感？
+是不是相机扰动比背景扰动更致命？
+</pre></div>
+<hr>
+<h2 id="7.-%E6%9C%BA%E5%88%B6%E5%85%AD%EF%BC%9Asuccess%E3%80%81score%E3%80%81SPARC%E3%80%81MNPE-%E5%9B%9E%E7%AD%94%E7%9A%84%E6%98%AF%E5%9B%9B%E7%B1%BB%E4%B8%8D%E5%90%8C%E9%97%AE%E9%A2%98">7. &#26426;&#21046;&#20845;&#65306;<code>success</code>&#12289;<code>score</code>&#12289;<code>SPARC</code>&#12289;<code>MNPE</code> &#22238;&#31572;&#30340;&#26159;&#22235;&#31867;&#19981;&#21516;&#38382;&#39064;<a class="anchor-link" href="#7.-%E6%9C%BA%E5%88%B6%E5%85%AD%EF%BC%9Asuccess%E3%80%81score%E3%80%81SPARC%E3%80%81MNPE-%E5%9B%9E%E7%AD%94%E7%9A%84%E6%98%AF%E5%9B%9B%E7%B1%BB%E4%B8%8D%E5%90%8C%E9%97%AE%E9%A2%98">&#182;</a></h2><table>
+<thead><tr>
+<th>指标/方法</th>
+<th>回答的问题</th>
+<th>不能回答的问题</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>success</code></td>
+<td>最终目标是否完成</td>
+<td>为什么失败、过程是否接近成功</td>
+</tr>
+<tr>
+<td>normalized <code>score</code></td>
+<td>子任务和事件完成了多少</td>
+<td>动作是否平滑、是否高效</td>
+</tr>
+<tr>
+<td>SPARC / speed / path length</td>
+<td>轨迹质量、平滑度、效率</td>
+<td>语义是否理解正确</td>
+</tr>
+<tr>
+<td>MNPE</td>
+<td>哪些扰动参数最影响成功</td>
+<td>单个 episode 的详细失败原因</td>
+</tr>
+</tbody>
+</table>
+<p>不要把它们混用。</p>
+<h3 id="%E4%B8%80%E4%B8%AA%E5%85%B7%E4%BD%93%E5%88%A4%E6%96%AD%E6%A8%A1%E6%9D%BF">&#19968;&#20010;&#20855;&#20307;&#21028;&#26029;&#27169;&#26495;<a class="anchor-link" href="#%E4%B8%80%E4%B8%AA%E5%85%B7%E4%BD%93%E5%88%A4%E6%96%AD%E6%A8%A1%E6%9D%BF">&#182;</a></h3><div class="highlight"><pre><span></span>如果 success=0, score=0.75:
+  说明任务未完全完成，但大部分子目标可能完成。
+
+如果 success=1, SPARC 很差:
+  说明完成了任务，但动作可能不平滑或绕远。
+
+如果 success 均值高，但 MNPE 显示某相机角度 posterior 高风险:
+  说明平均表现不错，但有特定视觉条件脆弱。
+
+如果 video 看起来成功，score/success 不一致:
+  先查 predicate 坐标、container boundary、object pose、event log。
+</pre></div>
+<h3 id="%E5%AF%B9%E6%88%91%E4%BB%AC%E5%B7%B2%E6%9C%89-4090-%E7%BB%93%E6%9E%9C%E6%80%8E%E4%B9%88%E8%AF%BB">&#23545;&#25105;&#20204;&#24050;&#26377; 4090 &#32467;&#26524;&#24590;&#20040;&#35835;<a class="anchor-link" href="#%E5%AF%B9%E6%88%91%E4%BB%AC%E5%B7%B2%E6%9C%89-4090-%E7%BB%93%E6%9E%9C%E6%80%8E%E4%B9%88%E8%AF%BB">&#182;</a></h3><p>已有 Pi05 结果里，<code>BananaInBowlTask</code> 单任务成功说明闭环可跑；15 个 asset-ready 任务里 9/15 成功说明可以开始按能力轴读差异；但这仍不是 full RoboLab-120 论文级复现，因为：</p>
+<ol>
+<li>任务规模不够。</li>
+<li>episode 重复数不够。</li>
+<li>full-120 里仍有资产/contact 层失败需要先分流。</li>
+<li>扰动实验只有部分形成有效 episode。</li>
+<li>RoboChallenge/ReKep/GR00T 等对照仍需要 adapter 或统一 action schema。</li>
+</ol>
+<p>这叫“可计分子集复现”，不是“论文全量复现完成”。</p>
+<hr>
+<h2 id="8.-%E6%9C%BA%E5%88%B6%E4%B8%83%EF%BC%9APerturbation-%E4%B8%8D%E6%98%AF%E9%9A%8F%E4%BE%BF%E6%94%B9%E5%8F%82%E6%95%B0%EF%BC%8C%E8%80%8C%E6%98%AF%E5%9B%A0%E6%9E%9C%E6%8E%A2%E9%92%88">8. &#26426;&#21046;&#19971;&#65306;Perturbation &#19981;&#26159;&#38543;&#20415;&#25913;&#21442;&#25968;&#65292;&#32780;&#26159;&#22240;&#26524;&#25506;&#38024;<a class="anchor-link" href="#8.-%E6%9C%BA%E5%88%B6%E4%B8%83%EF%BC%9APerturbation-%E4%B8%8D%E6%98%AF%E9%9A%8F%E4%BE%BF%E6%94%B9%E5%8F%82%E6%95%B0%EF%BC%8C%E8%80%8C%E6%98%AF%E5%9B%A0%E6%9E%9C%E6%8E%A2%E9%92%88">&#182;</a></h2><h3 id="%E5%8E%9F%E9%97%AE%E9%A2%98">&#21407;&#38382;&#39064;<a class="anchor-link" href="#%E5%8E%9F%E9%97%AE%E9%A2%98">&#182;</a></h3><p>“调整相机角度会怎样？”、“取消腕部相机会怎样？”、“换机器人会怎样？”这些问题不是普通 ablation，而是因果探针。</p>
+<p>要让结论可信，必须固定：</p>
+<div class="highlight"><pre><span></span>policy
+task
+episode count
+seed / initial object set
+instruction variant
+robot embodiment
+output schema
+</pre></div>
+<p>然后只改一个变量。</p>
+<h3 id="%E5%90%88%E6%A0%BC%E6%89%B0%E5%8A%A8%E7%9F%A9%E9%98%B5">&#21512;&#26684;&#25200;&#21160;&#30697;&#38453;<a class="anchor-link" href="#%E5%90%88%E6%A0%BC%E6%89%B0%E5%8A%A8%E7%9F%A9%E9%98%B5">&#182;</a></h3><table>
+<thead><tr>
+<th>变量</th>
+<th>合格改法</th>
+<th>不合格改法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>camera pose</td>
+<td>同任务同 policy，改 pitch/yaw/distance，保留输出 schema</td>
+<td>顺手换任务、换语言、换模型</td>
+</tr>
+<tr>
+<td>wrist camera</td>
+<td>保留字段但遮蔽或置空，并明确 policy 输入变化</td>
+<td>直接删字段导致 client schema 崩</td>
+</tr>
+<tr>
+<td>background</td>
+<td>同 object pose 和 camera，换背景材质/图片</td>
+<td>同时换 lighting 和 object pose</td>
+</tr>
+<tr>
+<td>object pose</td>
+<td>小范围可达扰动，记录 seed 和 pose delta</td>
+<td>随机到不可达区域</td>
+</tr>
+<tr>
+<td>robot</td>
+<td>保持任务和目标，单独换 embodiment 并对齐 action adapter</td>
+<td>只换 USD，不改 control/action/workspace</td>
+</tr>
+</tbody>
+</table>
+<h3 id="%E5%A4%B1%E8%B4%A5%E8%BE%B9%E7%95%8C">&#22833;&#36133;&#36793;&#30028;<a class="anchor-link" href="#%E5%A4%B1%E8%B4%A5%E8%BE%B9%E7%95%8C">&#182;</a></h3><p>扰动实验最常见的错误是把“配置跑通”误读成“策略评测有效”。</p>
+<p>例如 lighting runner 如果只产生 summary groups=0，这说明它没有形成有效策略 episode，不能拿它当成功率统计。正确记录应该是：</p>
+<div class="highlight"><pre><span></span>lighting perturbation: runner invoked, but no valid scored episode groups
+status: invalid_for_policy_success_comparison
+next step: inspect runner output selection and result parser assumptions
+</pre></div>
+<hr>
+<h2 id="9.-%E6%9C%BA%E5%88%B6%E5%85%AB%EF%BC%9ABaseline-%E5%AF%B9%E6%AF%94%E8%A6%81%E5%85%88%E5%88%86%E4%B8%89%E7%B1%BB%EF%BC%8C%E4%B8%8D%E8%83%BD%E4%B8%80%E8%82%A1%E8%84%91%E6%8B%89%E6%A8%A1%E5%9E%8B">9. &#26426;&#21046;&#20843;&#65306;Baseline &#23545;&#27604;&#35201;&#20808;&#20998;&#19977;&#31867;&#65292;&#19981;&#33021;&#19968;&#32929;&#33041;&#25289;&#27169;&#22411;<a class="anchor-link" href="#9.-%E6%9C%BA%E5%88%B6%E5%85%AB%EF%BC%9ABaseline-%E5%AF%B9%E6%AF%94%E8%A6%81%E5%85%88%E5%88%86%E4%B8%89%E7%B1%BB%EF%BC%8C%E4%B8%8D%E8%83%BD%E4%B8%80%E8%82%A1%E8%84%91%E6%8B%89%E6%A8%A1%E5%9E%8B">&#182;</a></h2><p>你提到 Pi05、GR00T、PaliGemma、Cosmos、阿里的模型、RoboChallenge Pi、ReKep。这里要先分层。</p>
+<table>
+<thead><tr>
+<th>类别</th>
+<th>例子</th>
+<th>是否可直接进 RoboLab success rate 表</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>直接动作策略</td>
+<td>Pi05、pi0、pi0-FAST、PaliGemma OpenPI family</td>
+<td>相对容易，前提是官方 client 支持</td>
+</tr>
+<tr>
+<td>需要 adapter 的 VLA/robot policy</td>
+<td>GR00T、RDT、Qwen/阿里具身模型</td>
+<td>需要 observation/action schema 对齐</td>
+</tr>
+<tr>
+<td>非同类方法或世界模型</td>
+<td>ReKep、Cosmos</td>
+<td>需要转成 planner/controller 或生成数据流程，不能直接当同口径 policy</td>
+</tr>
+</tbody>
+</table>
+<h3 id="%E4%B8%BA%E4%BB%80%E4%B9%88-ReKep-%E4%B8%8D%E8%83%BD%E7%9B%B4%E6%8E%A5%E5%92%8C-Pi05-%E5%90%8C%E8%A1%A8">&#20026;&#20160;&#20040; ReKep &#19981;&#33021;&#30452;&#25509;&#21644; Pi05 &#21516;&#34920;<a class="anchor-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88-ReKep-%E4%B8%8D%E8%83%BD%E7%9B%B4%E6%8E%A5%E5%92%8C-Pi05-%E5%90%8C%E8%A1%A8">&#182;</a></h3><p>Pi05 通常是：</p>
+<div class="highlight"><pre><span></span>RGB + language + robot state -&gt; action chunk
+</pre></div>
+<p>ReKep 更像：</p>
+<div class="highlight"><pre><span></span>RGBD / 3D scene + language -&gt; keypoint constraints -&gt; optimization/controller -&gt; actions
+</pre></div>
+<p>它可以做对照，但对照口径应是“显式约束规划 baseline”，不是“同接口 VLA policy”。否则失败可能来自 adapter，而不是方法本身。</p>
+<h3 id="%E4%B8%BA%E4%BB%80%E4%B9%88-Cosmos-%E4%B9%9F%E4%B8%8D%E8%83%BD%E7%9B%B4%E6%8E%A5%E5%90%8C%E8%A1%A8">&#20026;&#20160;&#20040; Cosmos &#20063;&#19981;&#33021;&#30452;&#25509;&#21516;&#34920;<a class="anchor-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88-Cosmos-%E4%B9%9F%E4%B8%8D%E8%83%BD%E7%9B%B4%E6%8E%A5%E5%90%8C%E8%A1%A8">&#182;</a></h3><p>Cosmos 更偏 world model / physical AI stack，它可以用于：</p>
+<ol>
+<li>生成扰动视频或合成数据。</li>
+<li>做未来状态预测。</li>
+<li>作为训练/预演工具。</li>
+</ol>
+<p>但它不是拿到 RoboLab observation 后直接输出 robot action 的 policy。要比较，需要定义新的 pipeline。</p>
+<hr>
+<h2 id="10.-%E6%9C%BA%E5%88%B6%E4%B9%9D%EF%BC%9A4090-%E4%B8%8A%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%88%86%E5%B1%82%E6%8E%A8%E8%BF%9B%EF%BC%8C%E6%89%8D%E7%AC%A6%E5%90%88%E8%AE%BA%E6%96%87%E6%80%9D%E8%B7%AF">10. &#26426;&#21046;&#20061;&#65306;4090 &#19978;&#24212;&#35813;&#24590;&#20040;&#20998;&#23618;&#25512;&#36827;&#65292;&#25165;&#31526;&#21512;&#35770;&#25991;&#24605;&#36335;<a class="anchor-link" href="#10.-%E6%9C%BA%E5%88%B6%E4%B9%9D%EF%BC%9A4090-%E4%B8%8A%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%88%86%E5%B1%82%E6%8E%A8%E8%BF%9B%EF%BC%8C%E6%89%8D%E7%AC%A6%E5%90%88%E8%AE%BA%E6%96%87%E6%80%9D%E8%B7%AF">&#182;</a></h2><p>4090 不是不能跑，但 24GB VRAM 决定了推进方式要分层。</p>
+<h3 id="%E6%AD%A3%E7%A1%AE%E5%B1%82%E7%BA%A7">&#27491;&#30830;&#23618;&#32423;<a class="anchor-link" href="#%E6%AD%A3%E7%A1%AE%E5%B1%82%E7%BA%A7">&#182;</a></h3><table>
+<thead><tr>
+<th>层级</th>
+<th>目标</th>
+<th>成功标志</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>L0 install</td>
+<td>依赖、Isaac、assets、policy server 可用</td>
+<td>能 import、server 启动</td>
+</tr>
+<tr>
+<td>L1 env smoke</td>
+<td>单任务空动作/短步初始化</td>
+<td>env 能 reset/step，日志落盘</td>
+</tr>
+<tr>
+<td>L2 policy smoke</td>
+<td>Pi05 单任务闭环</td>
+<td>有 <code>success/score/video/HDF5/event</code></td>
+</tr>
+<tr>
+<td>L3 asset-ready subset</td>
+<td>每能力轴至少 5 个任务</td>
+<td>每任务完整 episode_results/HDF5/video/log</td>
+</tr>
+<tr>
+<td>L4 perturb probe</td>
+<td>中等成功率任务做扰动</td>
+<td>baseline 与 perturb 同口径可比</td>
+</tr>
+<tr>
+<td>L5 baseline compare</td>
+<td>换 policy/method</td>
+<td>adapter 对齐后才统计</td>
+</tr>
+<tr>
+<td>L6 paper-level</td>
+<td>full-120 多 episode</td>
+<td>统计置信、按轴/难度/长度出表</td>
+</tr>
+</tbody>
+</table>
+<h3 id="%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E8%83%BD%E8%B7%B3%E5%88%B0-L6">&#20026;&#20160;&#20040;&#19981;&#33021;&#36339;&#21040; L6<a class="anchor-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E8%83%BD%E8%B7%B3%E5%88%B0-L6">&#182;</a></h3><p>因为 full-120 的失败有三种：</p>
+<div class="highlight"><pre><span></span>资产/接触/scene 失败
+runtime/config/parser 失败
+policy 能力失败
+</pre></div>
+<p>如果不先分流，最终 0 分表会把工程失败和模型失败混在一起。</p>
+<hr>
+<h2 id="11.-%E6%9C%BA%E5%88%B6%E5%8D%81%EF%BC%9A%E7%9C%9F%E6%AD%A3%E7%9A%84%E2%80%9C%E6%B7%B1%E5%BA%A6%E9%98%85%E8%AF%BB%E2%80%9D%E5%BA%94%E8%AF%A5%E6%B2%BF%E8%BF%99%E6%9D%A1%E8%B0%83%E8%AF%95%E8%B7%AF%E5%BE%84%E8%B5%B0">11. &#26426;&#21046;&#21313;&#65306;&#30495;&#27491;&#30340;&#8220;&#28145;&#24230;&#38405;&#35835;&#8221;&#24212;&#35813;&#27839;&#36825;&#26465;&#35843;&#35797;&#36335;&#24452;&#36208;<a class="anchor-link" href="#11.-%E6%9C%BA%E5%88%B6%E5%8D%81%EF%BC%9A%E7%9C%9F%E6%AD%A3%E7%9A%84%E2%80%9C%E6%B7%B1%E5%BA%A6%E9%98%85%E8%AF%BB%E2%80%9D%E5%BA%94%E8%AF%A5%E6%B2%BF%E8%BF%99%E6%9D%A1%E8%B0%83%E8%AF%95%E8%B7%AF%E5%BE%84%E8%B5%B0">&#182;</a></h2><p>当一个 episode 失败时，不要先写结论。按下面顺序走。</p>
+<div class="highlight"><pre><span></span>1. task 是否调起
+   -&gt; task name / registry / task metadata
+
+2. scene 是否可加载
+   -&gt; USD asset path / LFS / collision / contact sensor
+
+3. env 是否能 reset/step
+   -&gt; Isaac log / env_cfg / robot articulation
+
+4. policy 是否收到正确 observation
+   -&gt; RGB key / wrist camera / proprioception / instruction
+
+5. action 是否合理
+   -&gt; action scale / gripper / coordinate frame / chunk cache
+
+6. world state 是否正确解释
+   -&gt; object pose / contact / container relation / support relation
+
+7. event 是否记录到
+   -&gt; wrong object / drop / collision / subtask done
+
+8. summary 是否聚合正确
+   -&gt; episode_results.jsonl / read_results.py / dashboard loader
+</pre></div>
+<p>如果跳过前 7 步只看最终表，很容易把 bug 写成论文结论。</p>
+<hr>
+<h2 id="12.-%E4%B8%A4%E4%B8%AA%E2%80%9C%E8%AF%B4%E4%BA%BA%E8%AF%9D%E2%80%9D%E7%9A%84%E5%AE%8C%E6%95%B4%E4%BE%8B%E5%AD%90">12. &#20004;&#20010;&#8220;&#35828;&#20154;&#35805;&#8221;&#30340;&#23436;&#25972;&#20363;&#23376;<a class="anchor-link" href="#12.-%E4%B8%A4%E4%B8%AA%E2%80%9C%E8%AF%B4%E4%BA%BA%E8%AF%9D%E2%80%9D%E7%9A%84%E5%AE%8C%E6%95%B4%E4%BE%8B%E5%AD%90">&#182;</a></h2><h3 id="%E4%BE%8B%E5%AD%90-A%EF%BC%9ABananaInBowlTask-%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E5%A5%BD-smoke">&#20363;&#23376; A&#65306;<code>BananaInBowlTask</code> &#20026;&#20160;&#20040;&#26159;&#22909; smoke<a class="anchor-link" href="#%E4%BE%8B%E5%AD%90-A%EF%BC%9ABananaInBowlTask-%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E5%A5%BD-smoke">&#182;</a></h3><p>它好，不是因为简单，而是因为它覆盖了完整闭环：</p>
+<div class="highlight"><pre><span></span>language: pick banana and place in bowl
+visual: identify banana/bowl
+spatial: bowl is target container
+procedural: grasp -&gt; move -&gt; release
+predicate: banana in bowl
+evidence: video + HDF5 + event log + JSONL
+</pre></div>
+<p>所以它适合作为 L2 policy smoke。它不能代表 full RoboLab-120，但能证明：</p>
+<div class="highlight"><pre><span></span>Pi05 server-client path works
+camera observation is usable
+action chunk can drive robot
+recorder and summary can write evidence
+predicate can produce success=True
+</pre></div>
+<h3 id="%E4%BE%8B%E5%AD%90-B%EF%BC%9ARedDishesInBinTask-%E8%BF%99%E7%B1%BB%E4%BB%BB%E5%8A%A1%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9B%B4%E8%83%BD%E6%9A%B4%E9%9C%B2%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C">&#20363;&#23376; B&#65306;<code>RedDishesInBinTask</code> &#36825;&#31867;&#20219;&#21153;&#20026;&#20160;&#20040;&#26356;&#33021;&#26292;&#38706;&#33021;&#21147;&#36793;&#30028;<a class="anchor-link" href="#%E4%BE%8B%E5%AD%90-B%EF%BC%9ARedDishesInBinTask-%E8%BF%99%E7%B1%BB%E4%BB%BB%E5%8A%A1%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9B%B4%E8%83%BD%E6%9A%B4%E9%9C%B2%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C">&#182;</a></h3><p>它比香蕉任务更难，因为它不只是一个对象和一个容器：</p>
+<div class="highlight"><pre><span></span>visual: red + dish semantics
+relational: target relation is in-bin
+procedural: grasp/release multiple possible targets
+failure ambiguity: wrong red object, wrong dish, correct object wrong container, drop/collision
+</pre></div>
+<p>因此失败要拆：</p>
+<div class="highlight"><pre><span></span>拿了非红色物体 -&gt; 视觉属性失败
+拿了红色但不是 dish -&gt; 语义类别失败
+拿了正确 dish 但没进 bin -&gt; 空间/执行失败
+撞飞其他物体 -&gt; 程序稳定性失败
+</pre></div>
+<p>这就是为什么复杂任务必须要 event log。</p>
+<hr>
+<h2 id="13.-%E6%B7%B1%E6%B0%B4%E5%8C%BA%E6%A3%80%E6%9F%A5%E8%A1%A8">13. &#28145;&#27700;&#21306;&#26816;&#26597;&#34920;<a class="anchor-link" href="#13.-%E6%B7%B1%E6%B0%B4%E5%8C%BA%E6%A3%80%E6%9F%A5%E8%A1%A8">&#182;</a></h2><p>以后每补一条精讲或每跑一组实验，都按这张表自查。</p>
+<table>
+<thead><tr>
+<th>检查项</th>
+<th>合格标准</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>是否说明原问题</td>
+<td>不是只说“代码在哪里”，而是说为什么需要这个机制</td>
+</tr>
+<tr>
+<td>是否说明输入</td>
+<td>包括 language、scene、policy、robot、variation、episode 参数</td>
+</tr>
+<tr>
+<td>是否说明中间状态</td>
+<td>task contract、predicate、world state、action chunk、event 等</td>
+</tr>
+<tr>
+<td>是否说明输出</td>
+<td>JSONL、HDF5、video、event、dashboard 各自用途</td>
+</tr>
+<tr>
+<td>是否说明失败边界</td>
+<td>区分资产失败、runtime 失败、adapter 失败、policy 失败</td>
+</tr>
+<tr>
+<td>是否有 4090 证据落点</td>
+<td>指向本地 artifact，而不是只引用论文</td>
+</tr>
+<tr>
+<td>是否避免过度结论</td>
+<td>小样本 smoke 不说成 full benchmark</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="14.-%E8%BF%99%E7%AB%A0%E8%A1%A5%E4%B8%8A%E4%B9%8B%E5%90%8E%EF%BC%8C%E5%90%8E%E7%BB%AD%E7%B2%BE%E8%AE%B2%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%8D%87%E7%BA%A7">14. &#36825;&#31456;&#34917;&#19978;&#20043;&#21518;&#65292;&#21518;&#32493;&#31934;&#35762;&#24212;&#35813;&#24590;&#20040;&#21319;&#32423;<a class="anchor-link" href="#14.-%E8%BF%99%E7%AB%A0%E8%A1%A5%E4%B8%8A%E4%B9%8B%E5%90%8E%EF%BC%8C%E5%90%8E%E7%BB%AD%E7%B2%BE%E8%AE%B2%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%8D%87%E7%BA%A7">&#182;</a></h2><p>下一轮如果继续深化，建议不是继续写“精讲18、19、20”堆编号，而是按三个深水专题补：</p>
+<ol>
+<li><strong>源码逐函数导读</strong>：挑 <code>runner.py</code>、<code>episode.py</code>、Pi05 client、WorldState、EventTracker 做逐函数中文讲解，配伪代码和真实输出字段。</li>
+<li><strong>任务文件逐例解剖</strong>：选 5 个任务，逐个讲 instruction、scene、objects、subtasks、conditionals、difficulty、failure mode。</li>
+<li><strong>实验统计专题</strong>：把 15-task asset-ready、medium probe、perturbation、full-120 preflight 全部变成一个统计 notebook，明确哪些能计入策略成功率，哪些只能计入工程诊断。</li>
+</ol>
+<p>这三个比继续泛泛扩写更有价值。</p>
+<hr>
+<h2 id="15.-%E6%9C%80%E5%90%8E%E4%B8%80%E5%8F%A5%E8%AF%9D">15. &#26368;&#21518;&#19968;&#21477;&#35805;<a class="anchor-link" href="#15.-%E6%9C%80%E5%90%8E%E4%B8%80%E5%8F%A5%E8%AF%9D">&#182;</a></h2><p>RoboLab 最容易被误解成“下载一个 benchmark 跑模型”。更准确的理解是：</p>
+<div class="highlight"><pre><span></span>RoboLab = 任务语义合约 + 高保真可执行场景 + 策略接口适配 + 事件化证据链 + 统计/扰动分析
+</pre></div>
+<p>如果一条复现只拿到了视频，它只证明“画面跑起来了”；如果一条复现拿到了任务合约、HDF5、event log、JSONL、score、success、dashboard 汇总，并且能区分资产/runtime/policy 三类失败，它才开始接近论文想要的评测口径。</p>
+
+</div>
+</div>
+</div>
+<div id="cell-id=572c0fdf" class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># ===== 精讲17：深水区机制手册轻量验证 =====</span>
+<span class="c1"># 这个 cell 不跑仿真，只把“是否讲深”变成可检查结构：</span>
+<span class="c1"># 每个机制必须有原问题、输入、中间状态、输出、失败边界和 4090 证据落点。</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+
+<span class="n">deep_mechanisms</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">"id"</span><span class="p">:</span> <span class="s2">"task_contract"</span><span class="p">,</span>
+        <span class="s2">"question"</span><span class="p">:</span> <span class="s2">"为什么 task 不是一句话，而是自动评测合约？"</span><span class="p">,</span>
+        <span class="s2">"inputs"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"scene"</span><span class="p">,</span> <span class="s2">"instruction variants"</span><span class="p">,</span> <span class="s2">"contact_object_list"</span><span class="p">,</span> <span class="s2">"subtasks"</span><span class="p">,</span> <span class="s2">"predicates"</span><span class="p">,</span> <span class="s2">"episode length"</span><span class="p">],</span>
+        <span class="s2">"state"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"TaskContract"</span><span class="p">,</span> <span class="s2">"success_condition"</span><span class="p">,</span> <span class="s2">"subtask scoring"</span><span class="p">,</span> <span class="s2">"termination rules"</span><span class="p">],</span>
+        <span class="s2">"outputs"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"env_cfg"</span><span class="p">,</span> <span class="s2">"predicate checks"</span><span class="p">,</span> <span class="s2">"subtask score schema"</span><span class="p">],</span>
+        <span class="s2">"failure_boundary"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"video_success_but_predicate_false"</span><span class="p">,</span> <span class="s2">"import_failure"</span><span class="p">,</span> <span class="s2">"score_success_gap"</span><span class="p">],</span>
+        <span class="s2">"evidence"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"episode_results.jsonl"</span><span class="p">,</span> <span class="s2">"run_0.hdf5"</span><span class="p">,</span> <span class="s2">"log_0_env0.json"</span><span class="p">,</span> <span class="s2">"env_cfg.json"</span><span class="p">],</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">"id"</span><span class="p">:</span> <span class="s2">"scene_constraint_compiler"</span><span class="p">,</span>
+        <span class="s2">"question"</span><span class="p">:</span> <span class="s2">"scene generation 为什么是约束编译，而不是 LLM 直接写坐标？"</span><span class="p">,</span>
+        <span class="s2">"inputs"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"theme"</span><span class="p">,</span> <span class="s2">"object catalog"</span><span class="p">,</span> <span class="s2">"table bounds"</span><span class="p">,</span> <span class="s2">"placement types"</span><span class="p">,</span> <span class="s2">"physical constraints"</span><span class="p">],</span>
+        <span class="s2">"state"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"typed predicates"</span><span class="p">,</span> <span class="s2">"dependency order"</span><span class="p">,</span> <span class="s2">"spatial 2D solve"</span><span class="p">,</span> <span class="s2">"physical 3D placement"</span><span class="p">,</span> <span class="s2">"settle simulation"</span><span class="p">],</span>
+        <span class="s2">"outputs"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"USD scene"</span><span class="p">,</span> <span class="s2">"object poses"</span><span class="p">,</span> <span class="s2">"validation report"</span><span class="p">,</span> <span class="s2">"optional screenshot"</span><span class="p">],</span>
+        <span class="s2">"failure_boundary"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"schema_error"</span><span class="p">,</span> <span class="s2">"asset_validation_error"</span><span class="p">,</span> <span class="s2">"collision"</span><span class="p">,</span> <span class="s2">"container_fit_error"</span><span class="p">,</span> <span class="s2">"unstable_settle"</span><span class="p">],</span>
+        <span class="s2">"evidence"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"asset preflight report"</span><span class="p">,</span> <span class="s2">"scene generation validation notes"</span><span class="p">,</span> <span class="s2">"spatial/physical solver explain"</span><span class="p">],</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">"id"</span><span class="p">:</span> <span class="s2">"environment_binding"</span><span class="p">,</span>
+        <span class="s2">"question"</span><span class="p">:</span> <span class="s2">"同一任务为什么能换机器人、policy、相机和扰动？"</span><span class="p">,</span>
+        <span class="s2">"inputs"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"task config"</span><span class="p">,</span> <span class="s2">"robot config"</span><span class="p">,</span> <span class="s2">"policy config"</span><span class="p">,</span> <span class="s2">"camera config"</span><span class="p">,</span> <span class="s2">"variation config"</span><span class="p">],</span>
+        <span class="s2">"state"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Isaac Lab env"</span><span class="p">,</span> <span class="s2">"observation space"</span><span class="p">,</span> <span class="s2">"action space"</span><span class="p">,</span> <span class="s2">"sensor schema"</span><span class="p">,</span> <span class="s2">"robot articulation"</span><span class="p">],</span>
+        <span class="s2">"outputs"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"env"</span><span class="p">,</span> <span class="s2">"recorder hooks"</span><span class="p">,</span> <span class="s2">"policy IO adapter"</span><span class="p">],</span>
+        <span class="s2">"failure_boundary"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"workspace_mismatch"</span><span class="p">,</span> <span class="s2">"camera_schema_break"</span><span class="p">,</span> <span class="s2">"action_scale_mismatch"</span><span class="p">,</span> <span class="s2">"robot_usd_only_swap_is_invalid"</span><span class="p">],</span>
+        <span class="s2">"evidence"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"camera_robot_ablation_config_tests.json"</span><span class="p">,</span> <span class="s2">"env_cfg.json"</span><span class="p">],</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">"id"</span><span class="p">:</span> <span class="s2">"policy_rollout_state_machine"</span><span class="p">,</span>
+        <span class="s2">"question"</span><span class="p">:</span> <span class="s2">"Pi05 server 在线为什么不等于 episode 成功？"</span><span class="p">,</span>
+        <span class="s2">"inputs"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"RGB"</span><span class="p">,</span> <span class="s2">"wrist camera"</span><span class="p">,</span> <span class="s2">"robot state"</span><span class="p">,</span> <span class="s2">"language"</span><span class="p">,</span> <span class="s2">"previous action chunk"</span><span class="p">],</span>
+        <span class="s2">"state"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"client preprocess"</span><span class="p">,</span> <span class="s2">"server inference"</span><span class="p">,</span> <span class="s2">"action chunk cache"</span><span class="p">,</span> <span class="s2">"env.step"</span><span class="p">,</span> <span class="s2">"new world state"</span><span class="p">],</span>
+        <span class="s2">"outputs"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"next observation"</span><span class="p">,</span> <span class="s2">"actions"</span><span class="p">,</span> <span class="s2">"timing"</span><span class="p">,</span> <span class="s2">"video frame"</span><span class="p">,</span> <span class="s2">"recorder frame"</span><span class="p">],</span>
+        <span class="s2">"failure_boundary"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"slow_inference"</span><span class="p">,</span> <span class="s2">"wrong_action_frame"</span><span class="p">,</span> <span class="s2">"chunk_cache_leak"</span><span class="p">,</span> <span class="s2">"gripper_convention_mismatch"</span><span class="p">],</span>
+        <span class="s2">"evidence"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"pi05_policy_smoke_summary.json"</span><span class="p">,</span> <span class="s2">"remote_outputs/pi05_banana_full_20260620_015206"</span><span class="p">],</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">"id"</span><span class="p">:</span> <span class="s2">"worldstate_event_evidence"</span><span class="p">,</span>
+        <span class="s2">"question"</span><span class="p">:</span> <span class="s2">"success=False 如何拆成可解释失败原因？"</span><span class="p">,</span>
+        <span class="s2">"inputs"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"object poses"</span><span class="p">,</span> <span class="s2">"contacts"</span><span class="p">,</span> <span class="s2">"gripper state"</span><span class="p">,</span> <span class="s2">"target predicates"</span><span class="p">,</span> <span class="s2">"previous event states"</span><span class="p">],</span>
+        <span class="s2">"state"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"WorldState"</span><span class="p">,</span> <span class="s2">"predicate truth"</span><span class="p">,</span> <span class="s2">"EventTracker"</span><span class="p">,</span> <span class="s2">"sparse failure events"</span><span class="p">],</span>
+        <span class="s2">"outputs"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"success"</span><span class="p">,</span> <span class="s2">"score"</span><span class="p">,</span> <span class="s2">"event log"</span><span class="p">,</span> <span class="s2">"HDF5"</span><span class="p">,</span> <span class="s2">"dashboard rows"</span><span class="p">],</span>
+        <span class="s2">"failure_boundary"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"wrong_object"</span><span class="p">,</span> <span class="s2">"drop"</span><span class="p">,</span> <span class="s2">"collision"</span><span class="p">,</span> <span class="s2">"relation_not_satisfied"</span><span class="p">,</span> <span class="s2">"summary_parser_gap"</span><span class="p">],</span>
+        <span class="s2">"evidence"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"log_0_env0.json"</span><span class="p">,</span> <span class="s2">"episode_results.jsonl"</span><span class="p">,</span> <span class="s2">"dashboard loader outputs"</span><span class="p">],</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">"id"</span><span class="p">:</span> <span class="s2">"metric_roles"</span><span class="p">,</span>
+        <span class="s2">"question"</span><span class="p">:</span> <span class="s2">"success、score、SPARC、MNPE 为什么不能混用？"</span><span class="p">,</span>
+        <span class="s2">"inputs"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"episode outcomes"</span><span class="p">,</span> <span class="s2">"subtask events"</span><span class="p">,</span> <span class="s2">"EEF trajectory"</span><span class="p">,</span> <span class="s2">"variation parameters"</span><span class="p">],</span>
+        <span class="s2">"state"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"binary outcome"</span><span class="p">,</span> <span class="s2">"normalized score"</span><span class="p">,</span> <span class="s2">"trajectory spectrum"</span><span class="p">,</span> <span class="s2">"posterior distribution"</span><span class="p">],</span>
+        <span class="s2">"outputs"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"success rate"</span><span class="p">,</span> <span class="s2">"score table"</span><span class="p">,</span> <span class="s2">"smoothness metrics"</span><span class="p">,</span> <span class="s2">"sensitivity posterior"</span><span class="p">],</span>
+        <span class="s2">"failure_boundary"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"single_episode_overclaim"</span><span class="p">,</span> <span class="s2">"video_only_claim"</span><span class="p">,</span> <span class="s2">"invalid_perturb_group"</span><span class="p">],</span>
+        <span class="s2">"evidence"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"read_results.py output"</span><span class="p">,</span> <span class="s2">"trajectory metrics"</span><span class="p">,</span> <span class="s2">"MNPE reports"</span><span class="p">],</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">"id"</span><span class="p">:</span> <span class="s2">"perturbation_causal_probe"</span><span class="p">,</span>
+        <span class="s2">"question"</span><span class="p">:</span> <span class="s2">"相机、腕部相机、背景、物体位置扰动怎样才是有效因果探针？"</span><span class="p">,</span>
+        <span class="s2">"inputs"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"fixed policy"</span><span class="p">,</span> <span class="s2">"fixed task"</span><span class="p">,</span> <span class="s2">"fixed seed"</span><span class="p">,</span> <span class="s2">"single changed variable"</span><span class="p">,</span> <span class="s2">"valid episode rows"</span><span class="p">],</span>
+        <span class="s2">"state"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"baseline group"</span><span class="p">,</span> <span class="s2">"perturb group"</span><span class="p">,</span> <span class="s2">"controlled comparison"</span><span class="p">,</span> <span class="s2">"invalid group filter"</span><span class="p">],</span>
+        <span class="s2">"outputs"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"per-perturb success/score"</span><span class="p">,</span> <span class="s2">"failure shift"</span><span class="p">,</span> <span class="s2">"validity label"</span><span class="p">],</span>
+        <span class="s2">"failure_boundary"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"multiple_variables_changed"</span><span class="p">,</span> <span class="s2">"groups_zero"</span><span class="p">,</span> <span class="s2">"schema_broken_by_deleting_wrist_camera"</span><span class="p">],</span>
+        <span class="s2">"evidence"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"pi05_medium_probe_and_perturb_manifest_20260620.json"</span><span class="p">,</span> <span class="s2">"pi05_perturb_medium_*_summary.json"</span><span class="p">],</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">"id"</span><span class="p">:</span> <span class="s2">"baseline_adapter_boundary"</span><span class="p">,</span>
+        <span class="s2">"question"</span><span class="p">:</span> <span class="s2">"Pi05、GR00T、PaliGemma、Cosmos、ReKep 为什么不能直接放进同一列？"</span><span class="p">,</span>
+        <span class="s2">"inputs"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"policy family"</span><span class="p">,</span> <span class="s2">"observation schema"</span><span class="p">,</span> <span class="s2">"action schema"</span><span class="p">,</span> <span class="s2">"controller or planner boundary"</span><span class="p">],</span>
+        <span class="s2">"state"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"direct OpenPI policy"</span><span class="p">,</span> <span class="s2">"adapter-required VLA"</span><span class="p">,</span> <span class="s2">"planner/world-model pipeline"</span><span class="p">],</span>
+        <span class="s2">"outputs"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"fair comparison matrix"</span><span class="p">,</span> <span class="s2">"adapter pending label"</span><span class="p">,</span> <span class="s2">"non-direct-policy label"</span><span class="p">],</span>
+        <span class="s2">"failure_boundary"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"adapter_failure_counted_as_policy_failure"</span><span class="p">,</span> <span class="s2">"world_model_misreported_as_action_policy"</span><span class="p">],</span>
+        <span class="s2">"evidence"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"policy_baseline_model_matrix.json"</span><span class="p">,</span> <span class="s2">"adapter_baseline_plan.json"</span><span class="p">],</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">"id"</span><span class="p">:</span> <span class="s2">"4090_staged_reproduction"</span><span class="p">,</span>
+        <span class="s2">"question"</span><span class="p">:</span> <span class="s2">"4090 复现为什么要从 L0-L6 分层推进？"</span><span class="p">,</span>
+        <span class="s2">"inputs"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"assets"</span><span class="p">,</span> <span class="s2">"Isaac env"</span><span class="p">,</span> <span class="s2">"policy server"</span><span class="p">,</span> <span class="s2">"num_envs"</span><span class="p">,</span> <span class="s2">"task subset"</span><span class="p">,</span> <span class="s2">"episode repeat"</span><span class="p">],</span>
+        <span class="s2">"state"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"install"</span><span class="p">,</span> <span class="s2">"env smoke"</span><span class="p">,</span> <span class="s2">"policy smoke"</span><span class="p">,</span> <span class="s2">"asset-ready subset"</span><span class="p">,</span> <span class="s2">"perturb probe"</span><span class="p">,</span> <span class="s2">"baseline compare"</span><span class="p">,</span> <span class="s2">"paper-level"</span><span class="p">],</span>
+        <span class="s2">"outputs"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"truthful status"</span><span class="p">,</span> <span class="s2">"计分子集"</span><span class="p">,</span> <span class="s2">"engineering failure split"</span><span class="p">,</span> <span class="s2">"paper-level gap list"</span><span class="p">],</span>
+        <span class="s2">"failure_boundary"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"engineering_failure_mixed_with_policy_failure"</span><span class="p">,</span> <span class="s2">"smoke_overclaimed_as_full120"</span><span class="p">],</span>
+        <span class="s2">"evidence"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"robolab120_asset_preflight_20260620_091852.json"</span><span class="p">,</span> <span class="s2">"pi05_axis5_assetready_20260620_20260620_092157_episode_summary.json"</span><span class="p">],</span>
+    <span class="p">},</span>
+<span class="p">]</span>
+
+<span class="n">required_fields</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"id"</span><span class="p">,</span> <span class="s2">"question"</span><span class="p">,</span> <span class="s2">"inputs"</span><span class="p">,</span> <span class="s2">"state"</span><span class="p">,</span> <span class="s2">"outputs"</span><span class="p">,</span> <span class="s2">"failure_boundary"</span><span class="p">,</span> <span class="s2">"evidence"</span><span class="p">}</span>
+<span class="n">required_mechanisms</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"task_contract"</span><span class="p">,</span>
+    <span class="s2">"scene_constraint_compiler"</span><span class="p">,</span>
+    <span class="s2">"environment_binding"</span><span class="p">,</span>
+    <span class="s2">"policy_rollout_state_machine"</span><span class="p">,</span>
+    <span class="s2">"worldstate_event_evidence"</span><span class="p">,</span>
+    <span class="s2">"metric_roles"</span><span class="p">,</span>
+    <span class="s2">"perturbation_causal_probe"</span><span class="p">,</span>
+    <span class="s2">"baseline_adapter_boundary"</span><span class="p">,</span>
+    <span class="s2">"4090_staged_reproduction"</span><span class="p">,</span>
+<span class="p">}</span>
+<span class="n">text</span> <span class="o">=</span> <span class="p">(</span><span class="n">NOTEBOOK_ROOT</span> <span class="o">/</span> <span class="s2">"EXPLAIN_17_deep_mechanism_playbook.md"</span><span class="p">)</span><span class="o">.</span><span class="n">read_text</span><span class="p">(</span><span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="p">)</span>
+
+<span class="n">deep_tests</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s2">"has_nine_mechanisms"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">deep_mechanisms</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">9</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">"covers_required_mechanisms"</span><span class="p">,</span> <span class="n">required_mechanisms</span><span class="o">.</span><span class="n">issubset</span><span class="p">({</span><span class="n">item</span><span class="p">[</span><span class="s2">"id"</span><span class="p">]</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">deep_mechanisms</span><span class="p">})),</span>
+    <span class="p">(</span><span class="s2">"every_mechanism_has_required_fields"</span><span class="p">,</span> <span class="nb">all</span><span class="p">(</span><span class="n">required_fields</span><span class="o">.</span><span class="n">issubset</span><span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">deep_mechanisms</span><span class="p">)),</span>
+    <span class="p">(</span><span class="s2">"every_mechanism_has_failure_boundary"</span><span class="p">,</span> <span class="nb">all</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s2">"failure_boundary"</span><span class="p">]</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">deep_mechanisms</span><span class="p">)),</span>
+    <span class="p">(</span><span class="s2">"every_mechanism_has_evidence_anchor"</span><span class="p">,</span> <span class="nb">all</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s2">"evidence"</span><span class="p">]</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">deep_mechanisms</span><span class="p">)),</span>
+    <span class="p">(</span><span class="s2">"markdown_mentions_evaluation_compiler"</span><span class="p">,</span> <span class="s2">"评测编译"</span> <span class="ow">in</span> <span class="n">text</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">"markdown_mentions_task_scene_env_policy_event"</span><span class="p">,</span> <span class="nb">all</span><span class="p">(</span><span class="n">term</span> <span class="ow">in</span> <span class="n">text</span> <span class="k">for</span> <span class="n">term</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">"Task"</span><span class="p">,</span> <span class="s2">"Scene"</span><span class="p">,</span> <span class="s2">"Policy"</span><span class="p">,</span> <span class="s2">"WorldState"</span><span class="p">,</span> <span class="s2">"EventTracker"</span><span class="p">])),</span>
+    <span class="p">(</span><span class="s2">"markdown_mentions_4090_boundaries"</span><span class="p">,</span> <span class="nb">all</span><span class="p">(</span><span class="n">term</span> <span class="ow">in</span> <span class="n">text</span> <span class="k">for</span> <span class="n">term</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">"4090"</span><span class="p">,</span> <span class="s2">"资产"</span><span class="p">,</span> <span class="s2">"policy"</span><span class="p">,</span> <span class="s2">"adapter"</span><span class="p">])),</span>
+    <span class="p">(</span><span class="s2">"separates_rekep_cosmos_from_direct_policy"</span><span class="p">,</span> <span class="nb">all</span><span class="p">(</span><span class="n">term</span> <span class="ow">in</span> <span class="n">text</span> <span class="k">for</span> <span class="n">term</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">"ReKep"</span><span class="p">,</span> <span class="s2">"Cosmos"</span><span class="p">,</span> <span class="s2">"不是拿到 RoboLab observation 后直接输出 robot action"</span><span class="p">])),</span>
+<span class="p">]</span>
+
+<span class="n">report</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"deep_mechanisms"</span><span class="p">:</span> <span class="n">deep_mechanisms</span><span class="p">,</span>
+    <span class="s2">"tests"</span><span class="p">:</span> <span class="p">[{</span><span class="s2">"name"</span><span class="p">:</span> <span class="n">name</span><span class="p">,</span> <span class="s2">"passed"</span><span class="p">:</span> <span class="nb">bool</span><span class="p">(</span><span class="n">ok</span><span class="p">)}</span> <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">ok</span> <span class="ow">in</span> <span class="n">deep_tests</span><span class="p">],</span>
+    <span class="s2">"all_passed"</span><span class="p">:</span> <span class="nb">all</span><span class="p">(</span><span class="n">ok</span> <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">ok</span> <span class="ow">in</span> <span class="n">deep_tests</span><span class="p">),</span>
+    <span class="s2">"boundary"</span><span class="p">:</span> <span class="s2">"This validates the lecture structure and evidence anchors; it does not execute Isaac Sim or re-score episodes."</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">report</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">ok</span> <span class="ow">in</span> <span class="n">deep_tests</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="s1">'PASS'</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">ok</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">'FAIL'</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="k">assert</span> <span class="n">report</span><span class="p">[</span><span class="s2">"all_passed"</span><span class="p">],</span> <span class="n">deep_tests</span>
+<span class="n">write_status</span><span class="p">(</span><span class="s2">"deep_mechanism_playbook_tests"</span><span class="p">,</span> <span class="n">report</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div id="cell-id=8dadac08" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="%E5%AE%9E%E9%AA%8C%E6%8B%93%E5%B1%95-17%EF%BC%9A%E7%9B%B8%E6%9C%BA%E8%A7%92%E5%BA%A6%E3%80%81%E8%85%95%E9%83%A8%E7%9B%B8%E6%9C%BA%E5%92%8C%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%9B%BF%E6%8D%A2%E6%B6%88%E8%9E%8D">&#23454;&#39564;&#25299;&#23637; 17&#65306;&#30456;&#26426;&#35282;&#24230;&#12289;&#33109;&#37096;&#30456;&#26426;&#21644;&#26426;&#22120;&#20154;&#26367;&#25442;&#28040;&#34701;<a class="anchor-link" href="#%E5%AE%9E%E9%AA%8C%E6%8B%93%E5%B1%95-17%EF%BC%9A%E7%9B%B8%E6%9C%BA%E8%A7%92%E5%BA%A6%E3%80%81%E8%85%95%E9%83%A8%E7%9B%B8%E6%9C%BA%E5%92%8C%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%9B%BF%E6%8D%A2%E6%B6%88%E8%9E%8D">&#182;</a></h1><h2 id="%E5%85%88%E8%AF%B4%E7%BB%93%E8%AE%BA">&#20808;&#35828;&#32467;&#35770;<a class="anchor-link" href="#%E5%85%88%E8%AF%B4%E7%BB%93%E8%AE%BA">&#182;</a></h2><p>这三个实验不是同一个难度层级：</p>
@@ -28284,7 +29296,7 @@ robolab_repro_artifacts/camera_robot_ablation_parser_smoke_summary.csv
 </div>
 </div>
 </div>
-<div id="cell-id=3368bfd6" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=53ac82b2" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="%E5%AE%9E%E9%AA%8C%E6%8B%93%E5%B1%95-18%EF%BC%9A%E5%9B%BA%E5%AE%9A-Pi05-%E7%9A%84%E8%83%BD%E5%8A%9B%E8%BD%B4-5%C3%97%E4%BB%BB%E5%8A%A1%E8%AF%84%E6%B5%8B%EF%BC%8C%E5%86%8D%E5%81%9A%E6%89%B0%E5%8A%A8%E4%B8%8E%E5%90%8E%E7%BB%AD%E5%AF%B9%E7%85%A7">&#23454;&#39564;&#25299;&#23637; 18&#65306;&#22266;&#23450; Pi05 &#30340;&#33021;&#21147;&#36724; 5&#215;&#20219;&#21153;&#35780;&#27979;&#65292;&#20877;&#20570;&#25200;&#21160;&#19982;&#21518;&#32493;&#23545;&#29031;<a class="anchor-link" href="#%E5%AE%9E%E9%AA%8C%E6%8B%93%E5%B1%95-18%EF%BC%9A%E5%9B%BA%E5%AE%9A-Pi05-%E7%9A%84%E8%83%BD%E5%8A%9B%E8%BD%B4-5%C3%97%E4%BB%BB%E5%8A%A1%E8%AF%84%E6%B5%8B%EF%BC%8C%E5%86%8D%E5%81%9A%E6%89%B0%E5%8A%A8%E4%B8%8E%E5%90%8E%E7%BB%AD%E5%AF%B9%E7%85%A7">&#182;</a></h1><h2 id="%E7%9B%AE%E6%A0%87">&#30446;&#26631;<a class="anchor-link" href="#%E7%9B%AE%E6%A0%87">&#182;</a></h2><p>这一步把实验路线从“单任务/少量复杂任务 smoke”推进到更接近论文评测的最小矩阵：</p>
@@ -28627,7 +29639,7 @@ bash<span class="w"> </span>scripts/run_selected_perturbations_4090.sh
 </div>
 </div>
 </div>
-<div id="cell-id=ec97d85f" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=c42f2cd9" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="%E5%AE%9E%E9%AA%8C%E6%8B%93%E5%B1%95-19%EF%BC%9APi05%E3%80%81PaliGemma%E3%80%81GR00T%E3%80%81Cosmos%E3%80%81%E9%98%BF%E9%87%8C%E6%A8%A1%E5%9E%8B%E7%AD%89%E5%A4%9A%E6%A8%A1%E5%9E%8B%E5%AF%B9%E7%85%A7">&#23454;&#39564;&#25299;&#23637; 19&#65306;Pi05&#12289;PaliGemma&#12289;GR00T&#12289;Cosmos&#12289;&#38463;&#37324;&#27169;&#22411;&#31561;&#22810;&#27169;&#22411;&#23545;&#29031;<a class="anchor-link" href="#%E5%AE%9E%E9%AA%8C%E6%8B%93%E5%B1%95-19%EF%BC%9APi05%E3%80%81PaliGemma%E3%80%81GR00T%E3%80%81Cosmos%E3%80%81%E9%98%BF%E9%87%8C%E6%A8%A1%E5%9E%8B%E7%AD%89%E5%A4%9A%E6%A8%A1%E5%9E%8B%E5%AF%B9%E7%85%A7">&#182;</a></h1><h2 id="%E5%85%88%E5%88%86%E6%B8%85%E6%A8%A1%E5%9E%8B%E7%B1%BB%E5%9E%8B">&#20808;&#20998;&#28165;&#27169;&#22411;&#31867;&#22411;<a class="anchor-link" href="#%E5%85%88%E5%88%86%E6%B8%85%E6%A8%A1%E5%9E%8B%E7%B1%BB%E5%9E%8B">&#182;</a></h2><p>不能把所有名字都放进同一列直接比 success rate。RoboLab 评测需要 policy 在每一步输出机器人动作；不同模型的成熟度和接口不一样：</p>
@@ -28793,7 +29805,7 @@ bash<span class="w"> </span>scripts/run_direct_openpi_policy_matrix_4090.sh
 </div>
 </div>
 </div>
-<div id="cell-id=188eaa1f" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=7f03ec4a" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="%E5%AE%9E%E9%AA%8C%E6%8B%93%E5%B1%95-20%EF%BC%9ARoboLab-120-%E5%85%A8%E9%87%8F%E5%A4%8D%E7%8E%B0%E4%B8%8E-RoboChallenge/ReKep-%E5%AF%B9%E7%85%A7">&#23454;&#39564;&#25299;&#23637; 20&#65306;RoboLab-120 &#20840;&#37327;&#22797;&#29616;&#19982; RoboChallenge/ReKep &#23545;&#29031;<a class="anchor-link" href="#%E5%AE%9E%E9%AA%8C%E6%8B%93%E5%B1%95-20%EF%BC%9ARoboLab-120-%E5%85%A8%E9%87%8F%E5%A4%8D%E7%8E%B0%E4%B8%8E-RoboChallenge/ReKep-%E5%AF%B9%E7%85%A7">&#182;</a></h1><h2 id="%E5%85%88%E8%AF%B4%E7%BB%93%E8%AE%BA">&#20808;&#35828;&#32467;&#35770;<a class="anchor-link" href="#%E5%85%88%E8%AF%B4%E7%BB%93%E8%AE%BA">&#182;</a></h2><p>可以做完整 RoboLab-120，但它不是“点一下就出表”的短任务。正确顺序是：</p>
@@ -29085,7 +30097,7 @@ bash<span class="w"> </span>scripts/run_pi05_robolab120_4090.sh
 </div>
 </div>
 </div>
-<div id="cell-id=25ab0ec1" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=a585d6c6" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="%E5%AE%9E%E9%AA%8C-21%EF%BC%9APi05-%E8%B7%91-RoboLab-120-%E5%89%8D-5-%E4%B8%AA%E4%BB%BB%E5%8A%A1%E7%9A%84%E7%9C%9F%E5%AE%9E-smoke-%E7%BB%93%E6%9E%9C">&#23454;&#39564; 21&#65306;Pi05 &#36305; RoboLab-120 &#21069; 5 &#20010;&#20219;&#21153;&#30340;&#30495;&#23454; smoke &#32467;&#26524;<a class="anchor-link" href="#%E5%AE%9E%E9%AA%8C-21%EF%BC%9APi05-%E8%B7%91-RoboLab-120-%E5%89%8D-5-%E4%B8%AA%E4%BB%BB%E5%8A%A1%E7%9A%84%E7%9C%9F%E5%AE%9E-smoke-%E7%BB%93%E6%9E%9C">&#182;</a></h1><h2 id="%E6%A0%B8%E5%BF%83%E7%BB%93%E8%AE%BA">&#26680;&#24515;&#32467;&#35770;<a class="anchor-link" href="#%E6%A0%B8%E5%BF%83%E7%BB%93%E8%AE%BA">&#182;</a></h2><p>这次不是完整 RoboLab-120，而是一次 <code>TASK_LIMIT=5</code> 的端到端 smoke：在 4090 机器 <code>y12</code> 上固定 Pi05 policy server，按官方 <code>task_metadata.json</code> 的前 5 个任务逐个启动，保存 manifest、artifact check、episode 汇总和日志诊断。</p>
@@ -29440,7 +30452,7 @@ Could not open asset @.../RoboLab/assets/objects/hot3d/glasses.usd@
 </div>
 </div>
 </div>
-<div id="cell-id=07d92e2f" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=7b7c20ea" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="%E5%AE%9E%E9%AA%8C-22%EF%BC%9APi05-/-asset-ready-15-%E4%BB%BB%E5%8A%A1%E8%83%BD%E5%8A%9B%E8%BD%B4%E5%AD%90%E9%9B%86%E7%9C%9F%E5%AE%9E%E7%BB%93%E6%9E%9C">&#23454;&#39564; 22&#65306;Pi05 / asset-ready 15 &#20219;&#21153;&#33021;&#21147;&#36724;&#23376;&#38598;&#30495;&#23454;&#32467;&#26524;<a class="anchor-link" href="#%E5%AE%9E%E9%AA%8C-22%EF%BC%9APi05-/-asset-ready-15-%E4%BB%BB%E5%8A%A1%E8%83%BD%E5%8A%9B%E8%BD%B4%E5%AD%90%E9%9B%86%E7%9C%9F%E5%AE%9E%E7%BB%93%E6%9E%9C">&#182;</a></h1><div style="border:1px solid #bfdbfe; border-left:6px solid #2563eb; background:#eff6ff; padding:10px 12px; border-radius:6px; margin:12px 0;">
@@ -30057,7 +31069,7 @@ GitHub 仓库里提交的是轻量化证据：summary JSON/CSV、artifact check�
 </div>
 </div>
 </div>
-<div id="cell-id=7d1c36ae" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=99ee1b56" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="%E5%AE%9E%E9%AA%8C-23%EF%BC%9APi05-%E4%B8%AD%E7%AD%89%E6%88%90%E5%8A%9F%E7%8E%87%E4%BB%BB%E5%8A%A1%E9%80%89%E6%8B%A9%E4%B8%8E%E6%89%B0%E5%8A%A8%E5%AE%9E%E9%AA%8C%E7%BB%93%E6%9E%9C">&#23454;&#39564; 23&#65306;Pi05 &#20013;&#31561;&#25104;&#21151;&#29575;&#20219;&#21153;&#36873;&#25321;&#19982;&#25200;&#21160;&#23454;&#39564;&#32467;&#26524;<a class="anchor-link" href="#%E5%AE%9E%E9%AA%8C-23%EF%BC%9APi05-%E4%B8%AD%E7%AD%89%E6%88%90%E5%8A%9F%E7%8E%87%E4%BB%BB%E5%8A%A1%E9%80%89%E6%8B%A9%E4%B8%8E%E6%89%B0%E5%8A%A8%E5%AE%9E%E9%AA%8C%E7%BB%93%E6%9E%9C">&#182;</a></h1><div style="border:1px solid #bfdbfe; border-left:6px solid #2563eb; background:#eff6ff; padding:10px 12px; border-radius:6px; margin:12px 0;">
@@ -30357,7 +31369,7 @@ GitHub 仓库里提交的是轻量化证据：summary JSON/CSV、artifact check�
 </div>
 </div>
 </div>
-<div id="cell-id=3c1a89a2" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=8eb944b4" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="0.23-%E5%B7%B2%E5%AE%8C%E6%88%90%E5%A4%8D%E7%8E%B0%EF%BC%9A%E7%AE%80%E5%8D%95%E4%BB%BB%E5%8A%A1%E9%97%AD%E7%8E%AF%E4%B8%8E%E5%A4%8D%E6%9D%82%E4%BB%BB%E5%8A%A1%E6%8A%BD%E6%A0%B7">0.23 &#24050;&#23436;&#25104;&#22797;&#29616;&#65306;&#31616;&#21333;&#20219;&#21153;&#38381;&#29615;&#19982;&#22797;&#26434;&#20219;&#21153;&#25277;&#26679;<a class="anchor-link" href="#0.23-%E5%B7%B2%E5%AE%8C%E6%88%90%E5%A4%8D%E7%8E%B0%EF%BC%9A%E7%AE%80%E5%8D%95%E4%BB%BB%E5%8A%A1%E9%97%AD%E7%8E%AF%E4%B8%8E%E5%A4%8D%E6%9D%82%E4%BB%BB%E5%8A%A1%E6%8A%BD%E6%A0%B7">&#182;</a></h2><p>下面两份记录是当前最重要的实测证据：</p>
@@ -30370,7 +31382,7 @@ GitHub 仓库里提交的是轻量化证据：summary JSON/CSV、artifact check�
 </div>
 </div>
 </div>
-<div id="cell-id=6dddf148" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=54cc4f22" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="RoboLab-%E5%8D%95%E4%BB%BB%E5%8A%A1%E5%AE%8C%E6%95%B4%E5%A4%8D%E7%8E%B0%E8%AE%B0%E5%BD%95%EF%BC%9APi0.5-/-BananaInBowlTask">RoboLab &#21333;&#20219;&#21153;&#23436;&#25972;&#22797;&#29616;&#35760;&#24405;&#65306;Pi0.5 / BananaInBowlTask<a class="anchor-link" href="#RoboLab-%E5%8D%95%E4%BB%BB%E5%8A%A1%E5%AE%8C%E6%95%B4%E5%A4%8D%E7%8E%B0%E8%AE%B0%E5%BD%95%EF%BC%9APi0.5-/-BananaInBowlTask">&#182;</a></h1><h2 id="%E7%BB%93%E8%AE%BA">&#32467;&#35770;<a class="anchor-link" href="#%E7%BB%93%E8%AE%BA">&#182;</a></h2><p>本次在 4090 远程主机上完成一条可交付的 RoboLab 复现闭环：使用 OpenPI <code>pi05_droid_jointpos</code> 策略，在 Isaac Sim / RoboLab 中运行 <code>BananaInBowlTask</code>，任务成功，并产出视频、HDF5 轨迹、事件日志和汇总结果。</p>
@@ -30535,7 +31547,7 @@ GitHub 仓库里提交的是轻量化证据：summary JSON/CSV、artifact check�
 </div>
 </div>
 </div>
-<div id="cell-id=e0cc6585" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=fc8cd621" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="RoboLab-%E5%A4%8D%E6%9D%82%E4%BB%BB%E5%8A%A1%E5%A4%8D%E7%8E%B0%E5%AE%9E%E6%B5%8B%E8%AE%B0%E5%BD%95---OpenPI-pi05-/-RTX-4090">RoboLab &#22797;&#26434;&#20219;&#21153;&#22797;&#29616;&#23454;&#27979;&#35760;&#24405; - OpenPI pi05 / RTX 4090<a class="anchor-link" href="#RoboLab-%E5%A4%8D%E6%9D%82%E4%BB%BB%E5%8A%A1%E5%A4%8D%E7%8E%B0%E5%AE%9E%E6%B5%8B%E8%AE%B0%E5%BD%95---OpenPI-pi05-/-RTX-4090">&#182;</a></h1><p>时间：2026-06-20<br>
@@ -30668,7 +31680,7 @@ C:\Users\robot\Documents\成长学习库\robolab_2604_09860_repro_jupyter\remote
 </div>
 </div>
 </div>
-<div id="cell-id=7b43231f" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=908e4193" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="1.-%E9%98%B6%E6%AE%B5%E4%B8%80%EF%BC%9A4090-%E6%9C%BA%E5%99%A8%E5%89%8D%E7%BD%AE%E6%A3%80%E6%9F%A5">1. &#38454;&#27573;&#19968;&#65306;4090 &#26426;&#22120;&#21069;&#32622;&#26816;&#26597;<a class="anchor-link" href="#1.-%E9%98%B6%E6%AE%B5%E4%B8%80%EF%BC%9A4090-%E6%9C%BA%E5%99%A8%E5%89%8D%E7%BD%AE%E6%A3%80%E6%9F%A5">&#182;</a></h2><p>目标不是一次性证明能跑完整 benchmark，而是先确认系统符合 RoboLab 当前 README 的基础条件。</p>
@@ -30683,7 +31695,7 @@ C:\Users\robot\Documents\成长学习库\robolab_2604_09860_repro_jupyter\remote
 </div>
 </div>
 </div>
-<div id="cell-id=fb6599a4" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=32f64e39" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -30728,7 +31740,7 @@ C:\Users\robot\Documents\成长学习库\robolab_2604_09860_repro_jupyter\remote
 </div>
 
 </div>
-<div id="cell-id=64f1ab9b" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=c183d258" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="2.-%E9%98%B6%E6%AE%B5%E4%BA%8C%EF%BC%9A%E5%AE%89%E8%A3%85-RoboLab">2. &#38454;&#27573;&#20108;&#65306;&#23433;&#35013; RoboLab<a class="anchor-link" href="#2.-%E9%98%B6%E6%AE%B5%E4%BA%8C%EF%BC%9A%E5%AE%89%E8%A3%85-RoboLab">&#182;</a></h2><p>当前推荐路线：</p>
@@ -30750,7 +31762,7 @@ uv<span class="w"> </span>run<span class="w"> </span>pytest<span class="w"> </sp
 </div>
 </div>
 </div>
-<div id="cell-id=705948aa" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=c1e54e4f" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -30805,7 +31817,7 @@ uv<span class="w"> </span>run<span class="w"> </span>pytest<span class="w"> </sp
 </div>
 
 </div>
-<div id="cell-id=b746cbb9" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=16ed524e" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="3.-%E9%98%B6%E6%AE%B5%E4%B8%89%EF%BC%9A%E5%AE%89%E8%A3%85%E9%AA%8C%E8%AF%81">3. &#38454;&#27573;&#19977;&#65306;&#23433;&#35013;&#39564;&#35777;<a class="anchor-link" href="#3.-%E9%98%B6%E6%AE%B5%E4%B8%89%EF%BC%9A%E5%AE%89%E8%A3%85%E9%AA%8C%E8%AF%81">&#182;</a></h2><p>验证目标：</p>
@@ -30820,7 +31832,7 @@ uv<span class="w"> </span>run<span class="w"> </span>pytest<span class="w"> </sp
 </div>
 </div>
 </div>
-<div id="cell-id=6f389a9d" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=64930353" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -30842,7 +31854,7 @@ uv<span class="w"> </span>run<span class="w"> </span>pytest<span class="w"> </sp
 </div>
 
 </div>
-<div id="cell-id=16ff4ca6" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=74c9ea55" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="4.-%E9%98%B6%E6%AE%B5%E5%9B%9B%EF%BC%9A%E6%97%A0%E7%AD%96%E7%95%A5-smoke-run">4. &#38454;&#27573;&#22235;&#65306;&#26080;&#31574;&#30053; smoke run<a class="anchor-link" href="#4.-%E9%98%B6%E6%AE%B5%E5%9B%9B%EF%BC%9A%E6%97%A0%E7%AD%96%E7%95%A5-smoke-run">&#182;</a></h2><p>在接入 VLA / Pi0.5 / 自定义策略之前，先跑不依赖策略服务端的 sanity check。</p>
@@ -30856,7 +31868,7 @@ uv<span class="w"> </span>run<span class="w"> </span>pytest<span class="w"> </sp
 </div>
 </div>
 </div>
-<div id="cell-id=665dbf87" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=b8fb6c40" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -30886,7 +31898,7 @@ uv<span class="w"> </span>run<span class="w"> </span>pytest<span class="w"> </sp
 </div>
 
 </div>
-<div id="cell-id=aaae70e3" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=ad8d921d" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="5.-%E9%98%B6%E6%AE%B5%E4%BA%94%EF%BC%9A%E6%8E%A5%E5%85%A5%E7%AD%96%E7%95%A5%E5%B9%B6%E8%BF%90%E8%A1%8C%E5%8D%95%E4%BB%BB%E5%8A%A1">5. &#38454;&#27573;&#20116;&#65306;&#25509;&#20837;&#31574;&#30053;&#24182;&#36816;&#34892;&#21333;&#20219;&#21153;<a class="anchor-link" href="#5.-%E9%98%B6%E6%AE%B5%E4%BA%94%EF%BC%9A%E6%8E%A5%E5%85%A5%E7%AD%96%E7%95%A5%E5%B9%B6%E8%BF%90%E8%A1%8C%E5%8D%95%E4%BB%BB%E5%8A%A1">&#182;</a></h2><p>RoboLab 使用 server-client 架构：模型/策略作为独立服务运行，RoboLab 通过轻量 inference client 调用它。</p>
@@ -30901,7 +31913,7 @@ uv<span class="w"> </span>run<span class="w"> </span>pytest<span class="w"> </sp
 </div>
 </div>
 </div>
-<div id="cell-id=ab5e57b8" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=4d1c07b5" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -30934,7 +31946,7 @@ uv<span class="w"> </span>run<span class="w"> </span>pytest<span class="w"> </sp
 </div>
 
 </div>
-<div id="cell-id=b9e852f0" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=ac366d30" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="6.-%E9%98%B6%E6%AE%B5%E5%85%AD%EF%BC%9A4090-%E5%B0%8F%E5%AD%90%E9%9B%86%E8%AF%84%E6%B5%8B%E8%AE%A1%E5%88%92">6. &#38454;&#27573;&#20845;&#65306;4090 &#23567;&#23376;&#38598;&#35780;&#27979;&#35745;&#21010;<a class="anchor-link" href="#6.-%E9%98%B6%E6%AE%B5%E5%85%AD%EF%BC%9A4090-%E5%B0%8F%E5%AD%90%E9%9B%86%E8%AF%84%E6%B5%8B%E8%AE%A1%E5%88%92">&#182;</a></h2><p>不要把完整 RoboLab-120 当成第一天目标。建议先做 5 个任务，覆盖三个能力轴：</p>
@@ -30984,7 +31996,7 @@ uv<span class="w"> </span>run<span class="w"> </span>pytest<span class="w"> </sp
 </div>
 </div>
 </div>
-<div id="cell-id=e6158627" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=fcc3ac61" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -31020,7 +32032,7 @@ uv<span class="w"> </span>run<span class="w"> </span>pytest<span class="w"> </sp
 </div>
 
 </div>
-<div id="cell-id=cdf6976d" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=957270ad" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="7.-%E7%BB%93%E6%9E%9C%E8%AF%BB%E5%8F%96%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96">7. &#32467;&#26524;&#35835;&#21462;&#19982;&#21487;&#35270;&#21270;<a class="anchor-link" href="#7.-%E7%BB%93%E6%9E%9C%E8%AF%BB%E5%8F%96%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96">&#182;</a></h2><p>RoboLab 主要结果文件是 <code>episode_results.jsonl</code>。每行对应一个 episode，包含任务、策略、instruction、成功状态、score、耗时、轨迹指标和事件计数。</p>
@@ -31034,7 +32046,7 @@ uv<span class="w"> </span>run<span class="w"> </span>pytest<span class="w"> </sp
 </div>
 </div>
 </div>
-<div id="cell-id=a34c959e" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=e1ddebff" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -31167,7 +32179,7 @@ uv<span class="w"> </span>run<span class="w"> </span>pytest<span class="w"> </sp
 </div>
 
 </div>
-<div id="cell-id=fc4fefc8" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=71d09901" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -31196,7 +32208,7 @@ uv<span class="w"> </span>run<span class="w"> </span>pytest<span class="w"> </sp
 </div>
 
 </div>
-<div id="cell-id=d0a84ecd" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=8ee161eb" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="8.-%E4%B8%8E%E8%AE%BA%E6%96%87%E7%BB%93%E6%9E%9C%E5%AF%B9%E7%85%A7">8. &#19982;&#35770;&#25991;&#32467;&#26524;&#23545;&#29031;<a class="anchor-link" href="#8.-%E4%B8%8E%E8%AE%BA%E6%96%87%E7%BB%93%E6%9E%9C%E5%AF%B9%E7%85%A7">&#182;</a></h2><p>对照时不要只看一个总成功率。建议至少拆成四层：</p>
@@ -31211,7 +32223,7 @@ uv<span class="w"> </span>run<span class="w"> </span>pytest<span class="w"> </sp
 </div>
 </div>
 </div>
-<div id="cell-id=b33729af" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=8fc3940e" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -31254,7 +32266,7 @@ uv<span class="w"> </span>run<span class="w"> </span>pytest<span class="w"> </sp
 </div>
 
 </div>
-<div id="cell-id=92f775e4" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=e5e0ba69" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="9.-%E6%AF%8F%E6%97%A5%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%E6%A8%A1%E6%9D%BF">9. &#27599;&#26085;&#23398;&#20064;&#35760;&#24405;&#27169;&#26495;<a class="anchor-link" href="#9.-%E6%AF%8F%E6%97%A5%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%E6%A8%A1%E6%9D%BF">&#182;</a></h2><p>每次执行后，把真实命令、报错、截图、指标写下来。复现类任务的关键不是“跑过”，而是能回放证据链。</p>
@@ -31262,7 +32274,7 @@ uv<span class="w"> </span>run<span class="w"> </span>pytest<span class="w"> </sp
 </div>
 </div>
 </div>
-<div id="cell-id=3f0f2972" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=ec729f45" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -31321,7 +32333,7 @@ uv<span class="w"> </span>run<span class="w"> </span>pytest<span class="w"> </sp
 </div>
 
 </div>
-<div id="cell-id=860323f3" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="cell-id=b818ef35" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="10.-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E9%A2%84%E6%A1%88">10. &#24120;&#35265;&#38382;&#39064;&#39044;&#26696;<a class="anchor-link" href="#10.-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E9%A2%84%E6%A1%88">&#182;</a></h2><table>
@@ -31368,7 +32380,7 @@ uv<span class="w"> </span>run<span class="w"> </span>pytest<span class="w"> </sp
 </div>
 </div>
 </div>
-<div id="cell-id=8c07acd6" class="cell border-box-sizing code_cell rendered">
+<div id="cell-id=70c5da15" class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
@@ -31560,6 +32572,12 @@ uv<span class="w"> </span>run<span class="w"> </span>pytest<span class="w"> </sp
     <span class="p">)</span><span class="o">.</span><span class="n">exists</span><span class="p">(),</span>
     <span class="s2">"G47_explain_source_question_index_tests_passed"</span><span class="p">:</span> <span class="p">(</span>
         <span class="n">ARTIFACT_DIR</span> <span class="o">/</span> <span class="s2">"explain_source_question_index_tests.json"</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">exists</span><span class="p">(),</span>
+    <span class="s2">"G48_deep_mechanism_playbook_saved"</span><span class="p">:</span> <span class="p">(</span>
+        <span class="n">NOTEBOOK_ROOT</span> <span class="o">/</span> <span class="s2">"EXPLAIN_17_deep_mechanism_playbook.md"</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">exists</span><span class="p">(),</span>
+    <span class="s2">"G49_deep_mechanism_playbook_tests_passed"</span><span class="p">:</span> <span class="p">(</span>
+        <span class="n">ARTIFACT_DIR</span> <span class="o">/</span> <span class="s2">"deep_mechanism_playbook_tests.json"</span>
     <span class="p">)</span><span class="o">.</span><span class="n">exists</span><span class="p">(),</span>
     <span class="s2">"note"</span><span class="p">:</span> <span class="s2">"Local install gates depend on EXECUTE_INSTALL. Remote 4090 evidence is read from remote_logs/. G12 is a single-task Pi05 policy smoke, not a full RoboLab-120 benchmark."</span><span class="p">,</span>
 <span class="p">}</span>
