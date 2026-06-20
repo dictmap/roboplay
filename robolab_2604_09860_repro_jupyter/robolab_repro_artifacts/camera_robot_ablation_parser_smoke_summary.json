@@ -1,0 +1,81 @@
+{
+  "episode_files": [
+    "robolab_2604_09860_repro_jupyter\\remote_outputs\\pi05_banana_full_20260620_015206\\episode_results.jsonl",
+    "robolab_2604_09860_repro_jupyter\\remote_outputs\\pi05_complex_assets_ok_20260620_020721\\episode_results.jsonl"
+  ],
+  "num_episode_rows": 4,
+  "groups": [
+    {
+      "task_name": "BananaInBowlTask",
+      "env_name": "BananaInBowlTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": null,
+      "episode_step_mean": 198.0,
+      "duration_mean": 13.2,
+      "policy_inference_avg_ms_mean": 13.6,
+      "env_step_avg_ms_mean": 214.2,
+      "events": {},
+      "source_files": [
+        "robolab_2604_09860_repro_jupyter\\remote_outputs\\pi05_banana_full_20260620_015206\\episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "RedItemsInBinTask",
+      "env_name": "RedItemsInBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 13.3,
+      "env_step_avg_ms_mean": 228.0,
+      "events": {},
+      "source_files": [
+        "robolab_2604_09860_repro_jupyter\\remote_outputs\\pi05_complex_assets_ok_20260620_020721\\episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ReorientAllMugsTask",
+      "env_name": "ReorientAllMugsTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 1350.0,
+      "duration_mean": 90.0,
+      "policy_inference_avg_ms_mean": 13.3,
+      "env_step_avg_ms_mean": 255.2,
+      "events": {},
+      "source_files": [
+        "robolab_2604_09860_repro_jupyter\\remote_outputs\\pi05_complex_assets_ok_20260620_020721\\episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "Stack3RubiksCubeTask",
+      "env_name": "Stack3RubiksCubeTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": null,
+      "episode_step_mean": 353.0,
+      "duration_mean": 23.53333333333333,
+      "policy_inference_avg_ms_mean": 13.4,
+      "env_step_avg_ms_mean": 220.3,
+      "events": {},
+      "source_files": [
+        "robolab_2604_09860_repro_jupyter\\remote_outputs\\pi05_complex_assets_ok_20260620_020721\\episode_results.jsonl"
+      ]
+    }
+  ]
+}

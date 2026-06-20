@@ -217,3 +217,72 @@ cd /home/yjl/codex_robolab_4090_20260619/RoboLab
 ```
 
 然后再跑相机扰动脚本或补一个小 wrapper，把 `over_shoulder_left_camera.offset` 按 variant 改掉后逐个运行。腕部相机实验不要先硬删，应该先做 zero-image adapter。
+
+## 6. 已准备好的 4090 执行包
+
+为了后续 4090 SSH 恢复后不用临时拼命令，我补了三个脚本：
+
+| 脚本 | 作用 |
+|---|---|
+| `scripts/run_camera_ablation_4090.sh` | 在 4090 RoboLab checkout 中运行 baseline、官方 camera pose variation、可选 wrist blackout。 |
+| `scripts/create_pi05_wrist_blackout_runner.py` | 在 RoboLab repo 内生成 `policies/pi0_family/client_wrist_blackout.py` 和 `run_wrist_blackout.py`，实现“保留 wrist_cam key 但把图像置黑”的 soft ablation。 |
+| `scripts/summarize_ablation_outputs.py` | 离线解析一个或多个 RoboLab output 目录里的 `episode_results.jsonl`，按 task/policy/variant 聚合 success rate、步数、耗时和事件。 |
+
+官方 RoboLab 当前已经提供 `policies/pi0_family/run_camera_pose_variation.py`，其内部会在 reset 时对：
+
+- `over_shoulder_left_camera`
+- `wrist_cam`
+- `over_shoulder_left_camera + wrist_cam`
+
+做随机位姿扰动。因此第一版相机角度实验先用官方脚本，而不是自己手写相机 pose patch。
+
+### 4090 上的推荐执行方式
+
+先把本目录的脚本同步到 4090，然后运行：
+
+```bash
+export ROBO_ROOT=/home/yjl/codex_robolab_4090_20260619/RoboLab
+export TASKS="BananaInBowlTask Stack3RubiksCubeTask RedItemsInBinTask"
+export NUM_ENVS=1
+export NUM_RUNS=3
+export RUN_BASELINE=1
+export RUN_CAMERA_VARIATION=1
+export RUN_WRIST_BLACKOUT=0
+
+bash scripts/run_camera_ablation_4090.sh
+```
+
+如果要做腕部相机 soft ablation：
+
+```bash
+python scripts/create_pi05_wrist_blackout_runner.py --robolab-root "$ROBO_ROOT" --force
+
+export RUN_BASELINE=0
+export RUN_CAMERA_VARIATION=0
+export RUN_WRIST_BLACKOUT=1
+export WRIST_BLACKOUT_INSTALLER="$PWD/scripts/create_pi05_wrist_blackout_runner.py"
+
+bash scripts/run_camera_ablation_4090.sh
+```
+
+注意：`RUN_WRIST_BLACKOUT=1` 会新建一个 Pi05 client 子类，只把进入 OpenPI/Pi05 server 的 wrist image 置零；环境仍会渲染腕部相机，因此视频和 env_cfg 仍可用于人工检查。
+
+### 本地汇总方式
+
+把远端 output 同步回来后：
+
+```bash
+python scripts/summarize_ablation_outputs.py \
+  --roots remote_outputs/pi05_camera_robot_ablation_YYYYMMDD_* \
+  --out-json robolab_repro_artifacts/camera_robot_ablation_summary.json \
+  --out-csv robolab_repro_artifacts/camera_robot_ablation_summary.csv
+```
+
+我已经用现有 baseline 和复杂任务输出做了冒烟测试：
+
+```text
+robolab_repro_artifacts/camera_robot_ablation_parser_smoke_summary.json
+robolab_repro_artifacts/camera_robot_ablation_parser_smoke_summary.csv
+```
+
+这两个文件只证明解析器可用，不代表已经完成新的相机/腕部相机消融重跑。

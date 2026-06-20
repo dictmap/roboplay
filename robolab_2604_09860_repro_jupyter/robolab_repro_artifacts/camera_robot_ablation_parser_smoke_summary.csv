@@ -1,0 +1,5 @@
+task_name,env_name,policy,variant,episodes,successes,success_rate,score_mean,episode_step_mean,duration_mean,policy_inference_avg_ms_mean,env_step_avg_ms_mean
+BananaInBowlTask,BananaInBowlTask,pi05,unlabeled,1,1,1.0,,198.0,13.2,13.6,214.2
+RedItemsInBinTask,RedItemsInBinTask,pi05,unlabeled,1,0,0.0,,900.0,60.0,13.3,228.0
+ReorientAllMugsTask,ReorientAllMugsTask,pi05,unlabeled,1,0,0.0,,1350.0,90.0,13.3,255.2
+Stack3RubiksCubeTask,Stack3RubiksCubeTask,pi05,unlabeled,1,1,1.0,,353.0,23.53333333333333,13.4,220.3

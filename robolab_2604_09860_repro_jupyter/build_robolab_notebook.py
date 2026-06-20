@@ -5550,6 +5550,24 @@ def main() -> None:
                 "observed": "checked 2026-06-20",
             },
             {
+                "title": "RoboLab Pi0-family README and variation runners",
+                "url": "https://github.com/NVlabs/RoboLab/tree/main/policies/pi0_family",
+                "used_for": [
+                    "EXPERIMENT_17 camera ablation execution pack: official run_camera_pose_variation.py exists and shares common eval flags with run.py",
+                    "4090 execution script chooses official camera pose variation runner before custom pose patching",
+                ],
+                "observed": "checked 2026-06-20",
+            },
+            {
+                "title": "RoboLab Pi05 client observation schema",
+                "url": "https://raw.githubusercontent.com/NVlabs/RoboLab/main/policies/pi0_family/client.py",
+                "used_for": [
+                    "EXPERIMENT_17 wrist camera ablation: Pi05 client extracts over_shoulder_left_camera and wrist_cam and packs them as exterior and wrist images",
+                    "soft wrist blackout runner preserves the observation key while zeroing only policy input pixels",
+                ],
+                "observed": "checked 2026-06-20",
+            },
+            {
                 "title": "RoboLab source files inspected on remote RTX 4090 checkout",
                 "url": "https://github.com/NVlabs/RoboLab/tree/7d45d74904eade3b578a8eb1f2f9f89bc3d40326",
                 "used_for": [
@@ -5732,6 +5750,9 @@ def main() -> None:
 - `EXPLAIN_16_recommended_reading.md`：基于 RoboLab 的推荐阅读与开源学习路线，已改成 2026-first：优先补 RoboLab、RoboCasa365、RDT2、GR00T N1.7、Isaac Lab-Arena、Lightwheel LW-BenchHub、Lyra 和 NVIDIA 2026 Physical AI stack；BEHAVIOR/DROID/OpenVLA/Octo/ReKep 等降级为基础背景，已内嵌进 notebook，并配有 reading map 轻量测试用例。
 - `EXPERIMENT_17_camera_robot_ablation.md`：实验拓展，分析外部相机角度、取消/遮蔽腕部相机、替换机器人三类消融的原理、可运行边界、真实 4090 测试矩阵和风险。
 - `robolab_repro_artifacts/camera_robot_ablation_config_tests.json`：基于真实 Pi05 `env_cfg.json` 的配置级测试结果；验证 baseline 相机/机器人合约、硬删腕部相机的 schema 风险、只换机器人 USD 的无效性。
+- `scripts/run_camera_ablation_4090.sh`：4090 端相机/腕部相机消融执行入口，调用官方 `run.py` 和 `run_camera_pose_variation.py`，可选运行 wrist blackout。
+- `scripts/create_pi05_wrist_blackout_runner.py`：在远端 RoboLab repo 内生成 Pi05 腕部相机置黑 client 和 runner。
+- `scripts/summarize_ablation_outputs.py`：离线汇总 RoboLab output 目录中的 `episode_results.jsonl`，输出 JSON/CSV。
 - `COMPLETE_REPRO_pi05_banana_20260620.md`：Pi05 / BananaInBowlTask 成功闭环记录，已内嵌进 notebook。
 - `COMPLEX_TASKS_pi05_20260620.md`：Pi05 三个复杂任务抽样复现记录，已内嵌进 notebook。
 - `remote_logs/`：2026-06-19 远端 RTX 4090 实测证据，包含安装日志、依赖版本、资产下载日志、no-policy smoke 日志和 episode 输出。

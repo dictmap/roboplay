@@ -398,6 +398,24 @@
       "used_for": [
         "task names and VRAM caution; L40 48GB values treated only as upper-bound orientation"
       ]
+    },
+    {
+      "title": "RoboLab Pi0-family README and variation runners",
+      "url": "https://github.com/NVlabs/RoboLab/tree/main/policies/pi0_family",
+      "used_for": [
+        "EXPERIMENT_17 camera ablation execution pack: official run_camera_pose_variation.py exists and shares common eval flags with run.py",
+        "4090 execution script chooses official camera pose variation runner before custom pose patching"
+      ],
+      "observed": "checked 2026-06-20"
+    },
+    {
+      "title": "RoboLab Pi05 client observation schema",
+      "url": "https://raw.githubusercontent.com/NVlabs/RoboLab/main/policies/pi0_family/client.py",
+      "used_for": [
+        "EXPERIMENT_17 wrist camera ablation: Pi05 client extracts over_shoulder_left_camera and wrist_cam and packs them as exterior and wrist images",
+        "soft wrist blackout runner preserves the observation key while zeroing only policy input pixels"
+      ],
+      "observed": "checked 2026-06-20"
     }
   ]
 }
