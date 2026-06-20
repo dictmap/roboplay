@@ -1,80 +1,80 @@
 {
-  "updated_at": "2026-06-21T05:22:16+08:00",
+  "updated_at": "2026-06-21T06:27:40+08:00",
   "host": "y12",
   "policy": "Pi05 / OpenPI pi05_droid_jointpos",
   "run_prefix": "robolab120_pi05_full_assetsfixed_20260620_170411",
   "manifest": "/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/robolab_repro_artifacts/robolab120_pi05_full_assetsfixed_20260620_170411_task_run_manifest.jsonl",
   "output_prefix": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411",
-  "state": "running",
-  "completed_manifest_rows": 110,
+  "state": "not_running_or_finished",
+  "completed_manifest_rows": 120,
   "target_tasks": 120,
-  "successfully_verified_rows_so_far": 110,
+  "successfully_verified_rows_so_far": 120,
   "failed_rows_so_far": 0,
-  "latest_log_line": " 22%|██▏       | 199/900 [00:56<03:18,  3.53it/s]",
-  "gpu_memory_used_total_util": "18894, 24564, 56",
+  "latest_log_line": "100%|█████████▉| 599/600 [04:29<00:00,  2.22it/s]",
+  "gpu_memory_used_total_util": "10912, 24564, 0",
   "test10_prefix": "robolab120_pi05_assetsfixed_test10_20260620_162403",
   "test10_rows": 10,
   "test10_successfully_verified_rows": 10,
   "last_manifest_rows": [
     {
-      "created_at": "2026-06-20T20:09:08+00:00",
-      "task_name": "TakeMeasuringSpoonOutTask",
-      "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_TakeMeasuringSpoonOutTask",
+      "created_at": "2026-06-20T21:35:20+00:00",
+      "task_name": "ToyInBinTask",
+      "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ToyInBinTask",
       "run_returncode": 0,
       "verify_returncode": 0
     },
     {
-      "created_at": "2026-06-20T20:19:41+00:00",
-      "task_name": "TakeMugsOffOfShelfTask",
-      "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_TakeMugsOffOfShelfTask",
+      "created_at": "2026-06-20T21:41:07+00:00",
+      "task_name": "UnstackRubiksCubeTask",
+      "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_UnstackRubiksCubeTask",
       "run_returncode": 0,
       "verify_returncode": 0
     },
     {
-      "created_at": "2026-06-20T20:23:46+00:00",
-      "task_name": "TakeSpatulaOffShelfTask",
-      "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_TakeSpatulaOffShelfTask",
+      "created_at": "2026-06-20T21:52:15+00:00",
+      "task_name": "UtensilsInMugTask",
+      "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_UtensilsInMugTask",
       "run_returncode": 0,
       "verify_returncode": 0
     },
     {
-      "created_at": "2026-06-20T20:29:14+00:00",
-      "task_name": "ThrowAwayAppleTask",
-      "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ThrowAwayAppleTask",
+      "created_at": "2026-06-20T21:53:31+00:00",
+      "task_name": "WhiteMugInCenterOfTableTask",
+      "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_WhiteMugInCenterOfTableTask",
       "run_returncode": 0,
       "verify_returncode": 0
     },
     {
-      "created_at": "2026-06-20T20:39:46+00:00",
-      "task_name": "ThrowAwaySnacksTask",
-      "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ThrowAwaySnacksTask",
+      "created_at": "2026-06-20T21:58:01+00:00",
+      "task_name": "WhiteMugsInBinTask",
+      "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_WhiteMugsInBinTask",
       "run_returncode": 0,
       "verify_returncode": 0
     },
     {
-      "created_at": "2026-06-20T20:51:02+00:00",
-      "task_name": "ToolOrganizationBothTask",
-      "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ToolOrganizationBothTask",
+      "created_at": "2026-06-20T22:00:33+00:00",
+      "task_name": "WoodSpatulaToBowlTask",
+      "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_WoodSpatulaToBowlTask",
       "run_returncode": 0,
       "verify_returncode": 0
     },
     {
-      "created_at": "2026-06-20T21:02:26+00:00",
-      "task_name": "ToolOrganizationTask",
-      "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ToolOrganizationTask",
+      "created_at": "2026-06-20T22:04:31+00:00",
+      "task_name": "YellowAndWhiteObjectsInBinTask",
+      "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_YellowAndWhiteObjectsInBinTask",
       "run_returncode": 0,
       "verify_returncode": 0
     },
     {
-      "created_at": "2026-06-20T21:20:35+00:00",
-      "task_name": "ToolsPickingAllHammersTask",
-      "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ToolsPickingAllHammersTask",
+      "created_at": "2026-06-20T22:09:31+00:00",
+      "task_name": "YogurtInBowlTask",
+      "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_YogurtInBowlTask",
       "run_returncode": 0,
       "verify_returncode": 0
     }
   ],
   "failed_rows": [],
-  "processes": "356076 bash /home/yjl/codex_robolab_4090_20260619/robolab120_pi05_full_assetsfixed_20260620_170411_runner.sh\n1926936 /home/yjl/.local/bin/uv run python policies/pi0_family/run.py --policy pi05 --remote-host localhost --remote-port 8000 --task ToolsPickingDrillTask --num-envs 1 --num-runs 1 --video-mode all --output-folder-name robolab120_pi05_full_assetsfixed_20260620_170411_ToolsPickingDrillTask --enable-subtask --headless --device cuda:0\n1926939 /home/yjl/codex_robolab_4090_20260619/RoboLab/.venv/bin/python3 policies/pi0_family/run.py --policy pi05 --remote-host localhost --remote-port 8000 --task ToolsPickingDrillTask --num-envs 1 --num-runs 1 --video-mode all --output-folder-name robolab120_pi05_full_assetsfixed_20260620_170411_ToolsPickingDrillTask --enable-subtask --headless --device cuda:0\n1928359 /home/yjl/codex_robolab_4090_20260619/RoboLab/.venv/lib/python3.11/site-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2 -y -f rawvideo -vcodec rawvideo -s 1280x360 -pix_fmt rgb24 -r 15.00 -i - -an -vcodec libx264 -pix_fmt yuv420p -v warning -preset ultrafast -threads 1 -crf 23 -movflags +faststart /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ToolsPickingDrillTask/ToolsPickingDrillTask/Select_the_cordless_drill_and_put_it_on_the_table_0.mp4\n1928365 /home/yjl/codex_robolab_4090_20260619/RoboLab/.venv/lib/python3.11/site-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2 -y -f rawvideo -vcodec rawvideo -s 864x480 -pix_fmt rgb24 -r 15.00 -i - -an -vcodec libx264 -pix_fmt yuv420p -v warning -preset ultrafast -threads 1 -crf 23 -movflags +faststart /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ToolsPickingDrillTask/ToolsPickingDrillTask/Select_the_cordless_drill_and_put_it_on_the_table_0_viewport.mp4\n1929645 bash -lc pgrep -af \"serve_policy|policies/pi0_family/run.py|robolab120_pi05_full_assetsfixed\" | sed -n \"1,20p\"\n3477272 bash -lc set -euo pipefail; BASE=/home/yjl/codex_robolab_4090_20260619; FINAL=$BASE/openpi_cache/openpi-assets-simeval/pi05_droid_jointpos; export FFMPEG_PREFIX=$BASE/conda_ffmpeg7; export PATH=$HOME/.local/bin:$FFMPEG_PREFIX/bin:$PATH; export LD_LIBRARY_PATH=$FFMPEG_PREFIX/lib:${LD_LIBRARY_PATH:-}; export OPENPI_DATA_HOME=$BASE/openpi_cache; export XLA_PYTHON_CLIENT_MEM_FRACTION=0.42; export CUDA_VISIBLE_DEVICES=0; cd $BASE/openpi; echo OPENPI_PI05_ROBOLAB120_SERVER_START $(date -Is); uv run scripts/serve_policy.py --port 8000 policy:checkpoint --policy.config=pi05_droid_jointpos --policy.dir=$FINAL 2>&1 | tee $BASE/openpi_pi05_server_robolab120.log; rc=${PIPESTATUS[0]}; echo OPENPI_PI05_ROBOLAB120_SERVER_EXIT $rc $(date -Is); exec bash\n3477279 uv run scripts/serve_policy.py --port 8000 policy:checkpoint --policy.config=pi05_droid_jointpos --policy.dir=/home/yjl/codex_robolab_4090_20260619/openpi_cache/openpi-assets-simeval/pi05_droid_jointpos\n3477284 /home/yjl/codex_robolab_4090_20260619/openpi/.venv/bin/python3 scripts/serve_policy.py --port 8000 policy:checkpoint --policy.config=pi05_droid_jointpos --policy.dir=/home/yjl/codex_robolab_4090_20260619/openpi_cache/openpi-assets-simeval/pi05_droid_jointpos",
+  "processes": "2052306 bash -lc pgrep -af \"serve_policy|policies/pi0_family/run.py|robolab120_pi05_full_assetsfixed\" | sed -n \"1,20p\"\n3477272 bash -lc set -euo pipefail; BASE=/home/yjl/codex_robolab_4090_20260619; FINAL=$BASE/openpi_cache/openpi-assets-simeval/pi05_droid_jointpos; export FFMPEG_PREFIX=$BASE/conda_ffmpeg7; export PATH=$HOME/.local/bin:$FFMPEG_PREFIX/bin:$PATH; export LD_LIBRARY_PATH=$FFMPEG_PREFIX/lib:${LD_LIBRARY_PATH:-}; export OPENPI_DATA_HOME=$BASE/openpi_cache; export XLA_PYTHON_CLIENT_MEM_FRACTION=0.42; export CUDA_VISIBLE_DEVICES=0; cd $BASE/openpi; echo OPENPI_PI05_ROBOLAB120_SERVER_START $(date -Is); uv run scripts/serve_policy.py --port 8000 policy:checkpoint --policy.config=pi05_droid_jointpos --policy.dir=$FINAL 2>&1 | tee $BASE/openpi_pi05_server_robolab120.log; rc=${PIPESTATUS[0]}; echo OPENPI_PI05_ROBOLAB120_SERVER_EXIT $rc $(date -Is); exec bash\n3477279 uv run scripts/serve_policy.py --port 8000 policy:checkpoint --policy.config=pi05_droid_jointpos --policy.dir=/home/yjl/codex_robolab_4090_20260619/openpi_cache/openpi-assets-simeval/pi05_droid_jointpos\n3477284 /home/yjl/codex_robolab_4090_20260619/openpi/.venv/bin/python3 scripts/serve_policy.py --port 8000 policy:checkpoint --policy.config=pi05_droid_jointpos --policy.dir=/home/yjl/codex_robolab_4090_20260619/openpi_cache/openpi-assets-simeval/pi05_droid_jointpos",
   "asset_status": "Required LFS assets/backgrounds for the 120-task run were checked out before this clean full run; missing_count was verified as 0.",
   "boundary": "In-progress checkpoint only. Regenerate final tables after the manifest reaches 120/120."
 }

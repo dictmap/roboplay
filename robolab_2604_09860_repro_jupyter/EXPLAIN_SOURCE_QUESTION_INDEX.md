@@ -27,7 +27,6 @@
 | 14b runtime 深挖 | 多 env、action chunk、WorldState、EventTracker 这些状态边界怎么理解？ | GitHub runtime/eval/world/logging source files | 多 env 要按 env_id 隔离 chunk 和 episode；WorldState 支撑谓词；EventTracker 记录稀疏失败事件；HDF5/JSONL 是证据源 | `WorldState`、`EventTracker`、RecorderManager、dashboard |
 | 15 审稿人视角 | 如果作为审稿人，这篇论文强在哪里、弱在哪里？ | Paper full text；Limitations；GitHub install/runtime evidence | 贡献是 benchmark+生成+诊断工具链；风险在仿真真实性、资产依赖、统计样本和生成任务验收 | reviewer rubric、未来路线、复现边界 |
 | 16 推荐阅读 | 读完 RoboLab 后该补哪些 2026-first 相关工作？ | RoboLab related work；官方项目页；OpenPI、Isaac、Lightwheel、RDT、RoboCasa365 等来源 | 把后续阅读按 policy、benchmark、asset、sim-to-real、world model、real data 等路线组织 | source-linked reading map |
-| 17 深水机制手册 | 怎样把所有精讲从章节覆盖推进到源码状态机级深读？ | Paper III/IV/Appendix B-C-D；NVIDIA 项目页；GitHub runtime/scene/eval/dashboard tree；本地 4090 artifacts | 把 RoboLab 视为评测编译器：task contract、typed predicates、env binding、policy rollout、WorldState/EventTracker、证据产物、扰动探针、baseline adapter 边界和 4090 分层复现 | `TaskContract`、typed predicates、policy client、WorldState/EventTracker、`episode_results.jsonl`、HDF5、video、artifact gates |
 
 ## 按论文结构反查精讲
 
@@ -46,7 +45,6 @@
 | Appendix C | scene generation prompt、solver、baseline 和 scene quality experiment 怎么实现？ | 07、10、11、08 |
 | Appendix D | task generation judge 怎么评估自动任务？ | 03、09 |
 | GitHub eval/runtime | 策略评测代码怎么运行，结果怎么保存？ | 14、14b |
-| Cross-cutting mechanism | 论文概念、源码状态、复现证据如何连成一条调试路径？ | 17 |
 
 ## 按复现问题反查来源
 
@@ -59,7 +57,6 @@
 | “怎么判断策略弱在视觉、空间还是程序操作？” | 04、08、13 | 要按 task attributes、difficulty、subtask 和 event reason 分组 |
 | “为什么 prompt 要写得这么复杂？” | 10、11 | prompt 是生成 typed predicates 的约束入口，solver/feedback 依赖它 |
 | “为什么要讲 Gaussian/NuRec 等前沿？” | 01、12、16 | 它们不是本文主流程，但决定未来 real-to-sim 和高保真资产路线 |
-| “为什么感觉精讲还是不够深？” | 17 | 需要从章节式知识点切换成输入、状态、输出、失败边界和证据落点的机制式读法 |
 
 ## 本索引如何维护
 

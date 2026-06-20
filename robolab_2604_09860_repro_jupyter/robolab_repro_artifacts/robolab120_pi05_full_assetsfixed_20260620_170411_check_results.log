@@ -1,0 +1,1680 @@
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_AnimalsInBinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_AnimalsInBinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_AppleAndYogurtInBowlTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_AppleAndYogurtInBowlTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BagelsOnPlateTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BagelsOnPlateTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BananaInBowlTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BananaInBowlTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BananaOnPlateTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BananaOnPlateTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BananasInBinOneMoreTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BananasInBinOneMoreTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BananasInBinThreeTotalTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BananasInBinThreeTotalTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BananasInCrateTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BananasInCrateTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BananasOutOfBinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BananasOutOfBinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BananaThenRubiksCubeTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BananaThenRubiksCubeTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BBQSauceInBinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BBQSauceInBinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BigPumpkinInBinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BigPumpkinInBinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BlackItemsInBinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BlackItemsInBinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BlocksInBinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BlocksInBinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BlockStackingOrderAgnosticTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BlockStackingOrderAgnosticTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BlockStackingSpecifiedOrderTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BlockStackingSpecifiedOrderTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BowlInBinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BowlInBinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BowlStackingLeftOnRightTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BowlStackingLeftOnRightTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BowlStackingRightOnLeftTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BowlStackingRightOnLeftTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ButterAboveRaisinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ButterAboveRaisinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_CannedFoodInBinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_CannedFoodInBinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ClampInRightBinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ClampInRightBinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_CleanUpToysTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_CleanUpToysTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ClearOrganicObjectsTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ClearOrganicObjectsTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ClutterPlasticTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ClutterPlasticTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ClutterPumpkinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ClutterPumpkinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_CoffeePotInBinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_CoffeePotInBinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_CondimentsInBinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_CondimentsInBinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_CookingClearPlateTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_CookingClearPlateTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_CookingPickPastaToolTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_CookingPickPastaToolTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_CubesAndBlocksInBinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_CubesAndBlocksInBinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_DishesInBinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_DishesInBinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ElectronicsInBinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ElectronicsInBinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FoodPacking1BoxesTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FoodPacking1BoxesTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FoodPacking1CansTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FoodPacking1CansTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FoodPacking2BoxesTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FoodPacking2BoxesTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FoodPacking2CansTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FoodPacking2CansTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FoodPacking3BoxesTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FoodPacking3BoxesTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FoodPacking3CansTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FoodPacking3CansTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FoodPackingByColorTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FoodPackingByColorTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsGreenLimesOnPlateTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsGreenLimesOnPlateTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsMovingOrangeOrLimeTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsMovingOrangeOrLimeTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsMovingTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsMovingTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsOnionTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsOnionTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsOnionToPlateTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsOnionToPlateTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsOnPlate3Task
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsOnPlate3Task[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsOnPlateTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsOnPlateTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsOrangesOnPlateTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsOrangesOnPlateTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_GrabABagelTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_GrabABagelTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_GrabAFruitTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_GrabAFruitTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_GreenSpoonsInPotTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_GreenSpoonsInPotTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_HammersInLeftBinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_HammersInLeftBinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_JugsOnShelfTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_JugsOnShelfTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_KeyboardOutOfBinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_KeyboardOutOfBinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_LargerObjectRaisinBoxInBinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_LargerObjectRaisinBoxInBinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_MarkerInMugTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_MarkerInMugTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_MouseOnKeyboardTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_MouseOnKeyboardTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_MoveBananaToBagelPlateTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_MoveBananaToBagelPlateTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_MustardAboveRaisinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_MustardAboveRaisinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_MustardInLeftBinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_MustardInLeftBinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_MustardInRightBinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_MustardInRightBinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_NonHammerToolsInRightBinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_NonHammerToolsInRightBinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_OneBottleInSquarePailTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_OneBottleInSquarePailTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_OneBottleOnShelfTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_OneBottleOnShelfTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PhoneOrRemoteInBinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PhoneOrRemoteInBinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PickDrillTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PickDrillTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PickGlassesTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PickGlassesTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PickOrangeObjectTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PickOrangeObjectTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PickUpBluePitcherTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PickUpBluePitcherTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PickUpGreenObjectTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PickUpGreenObjectTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PinkSpoonInPotTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PinkSpoonInPotTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PlasticBottlesInSquarePailTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PlasticBottlesInSquarePailTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PutBowlOnShelfTopTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PutBowlOnShelfTopTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PutMugsOnShelfTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PutMugsOnShelfTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PutTwoMugsOnShelfTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PutTwoMugsOnShelfTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RecycleCartonsOnBoxTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RecycleCartonsOnBoxTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RecycleCartonsVerticalCrateTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RecycleCartonsVerticalCrateTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RecycleCartonTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RecycleCartonTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RedDishesInBinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RedDishesInBinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RedItemsInBinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RedItemsInBinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ReorientAllMugsTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ReorientAllMugsTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ReorientJugTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ReorientJugTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ReorientRedMugTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ReorientRedMugTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ReorientWhiteMugsTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ReorientWhiteMugsTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeAndBananaTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeAndBananaTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeBehindBowlTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeBehindBowlTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeInFrontOfBowlTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeInFrontOfBowlTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeLeftOfBowlTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeLeftOfBowlTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeOrBananaTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeOrBananaTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeRightOfBowlTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeRightOfBowlTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubesInBinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubesInBinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeThenBananaTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeThenBananaTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_SauceBottlesCrateTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_SauceBottlesCrateTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_SmallerObjectButterInBinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_SmallerObjectButterInBinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_SmallPumpkinInBinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_SmallPumpkinInBinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_SmartphoneInBinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_SmartphoneInBinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_SpoonInMugTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_SpoonInMugTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_SpoonsInPotTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_SpoonsInPotTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_Stack3RubiksCubeTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_Stack3RubiksCubeTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_StackWhiteMugsTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_StackWhiteMugsTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_StackYellowOnRedTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_StackYellowOnRedTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_TakeMeasuringSpoonOutTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_TakeMeasuringSpoonOutTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_TakeMugsOffOfShelfTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_TakeMugsOffOfShelfTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_TakeSpatulaOffShelfTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_TakeSpatulaOffShelfTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ThrowAwayAppleTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ThrowAwayAppleTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ThrowAwaySnacksTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ThrowAwaySnacksTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ToolOrganizationBothTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ToolOrganizationBothTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ToolOrganizationTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ToolOrganizationTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ToolsPickingAllHammersTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ToolsPickingAllHammersTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ToolsPickingDrillTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ToolsPickingDrillTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ToolsPickingHammerTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ToolsPickingHammerTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ToyInBinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ToyInBinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_UnstackRubiksCubeTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_UnstackRubiksCubeTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_UtensilsInMugTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_UtensilsInMugTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_WhiteMugInCenterOfTableTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_WhiteMugInCenterOfTableTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_WhiteMugsInBinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_WhiteMugsInBinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_WoodSpatulaToBowlTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_WoodSpatulaToBowlTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_YellowAndWhiteObjectsInBinTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_YellowAndWhiteObjectsInBinTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m
+
+Checking: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_YogurtInBowlTask
+
+[1m================================================================================[0m
+[1mIntegrity Check Results: /home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_YogurtInBowlTask[0m
+[1m================================================================================[0m
+
+[1mSummary:[0m
+  Total episodes:     1
+  [92mValid:              1[0m
+
+[92mAll episodes have valid HDF5 data![0m
+
+[1m============================================================[0m

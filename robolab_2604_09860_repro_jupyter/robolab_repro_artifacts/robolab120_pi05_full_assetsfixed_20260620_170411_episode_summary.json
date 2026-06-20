@@ -1,0 +1,2867 @@
+{
+  "episode_files": [
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_AnimalsInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_AppleAndYogurtInBowlTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BBQSauceInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BagelsOnPlateTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BananaInBowlTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BananaOnPlateTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BananaThenRubiksCubeTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BananasInBinOneMoreTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BananasInBinThreeTotalTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BananasInCrateTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BananasOutOfBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BigPumpkinInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BlackItemsInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BlockStackingOrderAgnosticTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BlockStackingSpecifiedOrderTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BlocksInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BowlInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BowlStackingLeftOnRightTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BowlStackingRightOnLeftTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ButterAboveRaisinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_CannedFoodInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ClampInRightBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_CleanUpToysTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ClearOrganicObjectsTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ClutterPlasticTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ClutterPumpkinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_CoffeePotInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_CondimentsInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_CookingClearPlateTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_CookingPickPastaToolTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_CubesAndBlocksInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_DishesInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ElectronicsInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FoodPacking1BoxesTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FoodPacking1CansTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FoodPacking2BoxesTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FoodPacking2CansTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FoodPacking3BoxesTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FoodPacking3CansTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FoodPackingByColorTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsGreenLimesOnPlateTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsMovingOrangeOrLimeTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsMovingTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsOnPlate3Task/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsOnPlateTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsOnionTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsOnionToPlateTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsOrangesOnPlateTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_GrabABagelTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_GrabAFruitTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_GreenSpoonsInPotTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_HammersInLeftBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_JugsOnShelfTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_KeyboardOutOfBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_LargerObjectRaisinBoxInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_MarkerInMugTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_MouseOnKeyboardTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_MoveBananaToBagelPlateTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_MustardAboveRaisinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_MustardInLeftBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_MustardInRightBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_NonHammerToolsInRightBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_OneBottleInSquarePailTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_OneBottleOnShelfTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PhoneOrRemoteInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PickDrillTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PickGlassesTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PickOrangeObjectTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PickUpBluePitcherTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PickUpGreenObjectTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PinkSpoonInPotTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PlasticBottlesInSquarePailTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PutBowlOnShelfTopTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PutMugsOnShelfTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PutTwoMugsOnShelfTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RecycleCartonTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RecycleCartonsOnBoxTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RecycleCartonsVerticalCrateTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RedDishesInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RedItemsInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ReorientAllMugsTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ReorientJugTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ReorientRedMugTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ReorientWhiteMugsTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeAndBananaTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeBehindBowlTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeInFrontOfBowlTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeLeftOfBowlTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeOrBananaTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeRightOfBowlTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeThenBananaTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubesInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_SauceBottlesCrateTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_SmallPumpkinInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_SmallerObjectButterInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_SmartphoneInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_SpoonInMugTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_SpoonsInPotTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_Stack3RubiksCubeTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_StackWhiteMugsTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_StackYellowOnRedTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_TakeMeasuringSpoonOutTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_TakeMugsOffOfShelfTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_TakeSpatulaOffShelfTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ThrowAwayAppleTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ThrowAwaySnacksTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ToolOrganizationBothTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ToolOrganizationTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ToolsPickingAllHammersTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ToolsPickingDrillTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ToolsPickingHammerTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ToyInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_UnstackRubiksCubeTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_UtensilsInMugTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_WhiteMugInCenterOfTableTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_WhiteMugsInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_WoodSpatulaToBowlTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_YellowAndWhiteObjectsInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_YogurtInBowlTask/episode_results.jsonl"
+  ],
+  "num_episode_rows": 120,
+  "groups": [
+    {
+      "task_name": "AnimalsInBinTask",
+      "env_name": "AnimalsInBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 1350.0,
+      "duration_mean": 90.0,
+      "policy_inference_avg_ms_mean": 12.0,
+      "env_step_avg_ms_mean": 275.9,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 10,
+        "GRIPPER_HIT_OBJECT": 4,
+        "WRONG_OBJECT_GRABBED": 8,
+        "OBJECT_BUMPED": 6,
+        "GRIPPER_FULLY_CLOSED": 3
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_AnimalsInBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "AppleAndYogurtInBowlTask",
+      "env_name": "AppleAndYogurtInBowlTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 1800.0,
+      "duration_mean": 120.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 302.7,
+      "events": {
+        "GRIPPER_HIT_OBJECT": 1,
+        "TARGET_OBJECT_DROPPED": 27,
+        "OBJECT_BUMPED": 1,
+        "GRIPPER_FULLY_CLOSED": 11,
+        "GRIPPER_HIT_TABLE": 9
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_AppleAndYogurtInBowlTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BBQSauceInBinTask",
+      "env_name": "BBQSauceInBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 1350.0,
+      "duration_mean": 90.0,
+      "policy_inference_avg_ms_mean": 12.0,
+      "env_step_avg_ms_mean": 296.1,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 4,
+        "GRIPPER_FULLY_CLOSED": 5,
+        "OBJECT_BUMPED": 4,
+        "WRONG_OBJECT_GRABBED": 2,
+        "GRIPPER_HIT_OBJECT": 2
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BBQSauceInBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BagelsOnPlateTask",
+      "env_name": "BagelsOnPlateTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 229.1,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 34
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BagelsOnPlateTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BananaInBowlTask",
+      "env_name": "BananaInBowlTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 750.0,
+      "duration_mean": 50.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 179.6,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 1,
+        "GRIPPER_FULLY_CLOSED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BananaInBowlTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BananaOnPlateTask",
+      "env_name": "BananaOnPlateTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 147.0,
+      "duration_mean": 9.8,
+      "policy_inference_avg_ms_mean": 12.1,
+      "env_step_avg_ms_mean": 216.2,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BananaOnPlateTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BananaThenRubiksCubeTask",
+      "env_name": "BananaThenRubiksCubeTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.5,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 191.3,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 15,
+        "GRIPPER_HIT_OBJECT": 1,
+        "MULTIPLE_OBJECTS_GRABBED": 1,
+        "GRIPPER_FULLY_CLOSED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BananaThenRubiksCubeTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BananasInBinOneMoreTask",
+      "env_name": "BananasInBinOneMoreTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 302.0,
+      "duration_mean": 20.133333333333333,
+      "policy_inference_avg_ms_mean": 12.4,
+      "env_step_avg_ms_mean": 229.6,
+      "events": {
+        "GRIPPER_HIT_TABLE": 6,
+        "TARGET_OBJECT_DROPPED": 2
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BananasInBinOneMoreTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BananasInBinThreeTotalTask",
+      "env_name": "BananasInBinThreeTotalTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 106.0,
+      "duration_mean": 7.066666666666666,
+      "policy_inference_avg_ms_mean": 12.9,
+      "env_step_avg_ms_mean": 220.3,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BananasInBinThreeTotalTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BananasInCrateTask",
+      "env_name": "BananasInCrateTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 358.0,
+      "duration_mean": 23.866666666666667,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 238.0,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 7,
+        "MULTIPLE_OBJECTS_GRABBED": 1,
+        "GRIPPER_HIT_TABLE": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BananasInCrateTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BananasOutOfBinTask",
+      "env_name": "BananasOutOfBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 691.0,
+      "duration_mean": 46.06666666666666,
+      "policy_inference_avg_ms_mean": 12.0,
+      "env_step_avg_ms_mean": 218.2,
+      "events": {
+        "WRONG_OBJECT_GRABBED": 5,
+        "GRIPPER_HIT_OBJECT": 3,
+        "MULTIPLE_OBJECTS_GRABBED": 1,
+        "OBJECT_BUMPED": 3,
+        "GRIPPER_FULLY_CLOSED": 2
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BananasOutOfBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BigPumpkinInBinTask",
+      "env_name": "BigPumpkinInBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 575.0,
+      "duration_mean": 38.333333333333336,
+      "policy_inference_avg_ms_mean": 12.1,
+      "env_step_avg_ms_mean": 413.8,
+      "events": {
+        "OBJECT_BUMPED": 1,
+        "TARGET_OBJECT_DROPPED": 14,
+        "GRIPPER_FULLY_CLOSED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BigPumpkinInBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BlackItemsInBinTask",
+      "env_name": "BlackItemsInBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.800000011920929,
+      "episode_step_mean": 1800.0,
+      "duration_mean": 120.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 337.8,
+      "events": {
+        "GRIPPER_HIT_OBJECT": 2,
+        "GRIPPER_FULLY_CLOSED": 3,
+        "TARGET_OBJECT_DROPPED": 4,
+        "GRIPPER_HIT_TABLE": 15,
+        "OBJECT_BUMPED": 5,
+        "WRONG_OBJECT_GRABBED": 4,
+        "MULTIPLE_OBJECTS_GRABBED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BlackItemsInBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BlockStackingOrderAgnosticTask",
+      "env_name": "BlockStackingOrderAgnosticTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.33000001311302185,
+      "episode_step_mean": 1350.0,
+      "duration_mean": 90.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 192.1,
+      "events": {
+        "WRONG_OBJECT_GRABBED": 9,
+        "GRIPPER_HIT_OBJECT": 3,
+        "GRIPPER_HIT_TABLE": 2,
+        "GRIPPER_FULLY_CLOSED": 6,
+        "OBJECT_BUMPED": 3
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BlockStackingOrderAgnosticTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BlockStackingSpecifiedOrderTask",
+      "env_name": "BlockStackingSpecifiedOrderTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 1350.0,
+      "duration_mean": 90.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 184.8,
+      "events": {
+        "WRONG_OBJECT_GRABBED": 4,
+        "GRIPPER_HIT_OBJECT": 2,
+        "OBJECT_BUMPED": 3,
+        "GRIPPER_FULLY_CLOSED": 7,
+        "GRIPPER_HIT_TABLE": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BlockStackingSpecifiedOrderTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BlocksInBinTask",
+      "env_name": "BlocksInBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.75,
+      "episode_step_mean": 2250.0,
+      "duration_mean": 150.0,
+      "policy_inference_avg_ms_mean": 12.0,
+      "env_step_avg_ms_mean": 277.0,
+      "events": {
+        "WRONG_OBJECT_GRABBED": 8,
+        "GRIPPER_HIT_OBJECT": 5,
+        "OBJECT_BUMPED": 5,
+        "TARGET_OBJECT_DROPPED": 3,
+        "GRIPPER_FULLY_CLOSED": 3
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BlocksInBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BowlInBinTask",
+      "env_name": "BowlInBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 185.0,
+      "duration_mean": 12.333333333333334,
+      "policy_inference_avg_ms_mean": 12.3,
+      "env_step_avg_ms_mean": 218.9,
+      "events": {
+        "GRIPPER_FULLY_CLOSED": 1,
+        "TARGET_OBJECT_DROPPED": 2
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BowlInBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BowlStackingLeftOnRightTask",
+      "env_name": "BowlStackingLeftOnRightTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 300.0,
+      "duration_mean": 20.0,
+      "policy_inference_avg_ms_mean": 12.0,
+      "env_step_avg_ms_mean": 183.9,
+      "events": {
+        "WRONG_OBJECT_GRABBED": 1,
+        "GRIPPER_HIT_OBJECT": 1,
+        "GRIPPER_FULLY_CLOSED": 1,
+        "GRIPPER_HIT_TABLE": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BowlStackingLeftOnRightTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BowlStackingRightOnLeftTask",
+      "env_name": "BowlStackingRightOnLeftTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 300.0,
+      "duration_mean": 20.0,
+      "policy_inference_avg_ms_mean": 12.0,
+      "env_step_avg_ms_mean": 190.6,
+      "events": {
+        "WRONG_OBJECT_GRABBED": 3,
+        "GRIPPER_HIT_OBJECT": 1,
+        "GRIPPER_FULLY_CLOSED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_BowlStackingRightOnLeftTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ButterAboveRaisinTask",
+      "env_name": "ButterAboveRaisinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 233.0,
+      "duration_mean": 15.533333333333333,
+      "policy_inference_avg_ms_mean": 12.1,
+      "env_step_avg_ms_mean": 201.8,
+      "events": {
+        "GRIPPER_HIT_TABLE": 3,
+        "TARGET_OBJECT_DROPPED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ButterAboveRaisinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "CannedFoodInBinTask",
+      "env_name": "CannedFoodInBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 639.0,
+      "duration_mean": 42.6,
+      "policy_inference_avg_ms_mean": 12.2,
+      "env_step_avg_ms_mean": 302.3,
+      "events": {
+        "GRIPPER_HIT_OBJECT": 2,
+        "WRONG_OBJECT_GRABBED": 1,
+        "OBJECT_BUMPED": 2,
+        "GRIPPER_FULLY_CLOSED": 1,
+        "GRIPPER_HIT_TABLE": 3,
+        "TARGET_OBJECT_DROPPED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_CannedFoodInBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ClampInRightBinTask",
+      "env_name": "ClampInRightBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 12.0,
+      "env_step_avg_ms_mean": 211.6,
+      "events": {
+        "WRONG_OBJECT_GRABBED": 11,
+        "GRIPPER_HIT_OBJECT": 1,
+        "GRIPPER_FULLY_CLOSED": 8
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ClampInRightBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "CleanUpToysTask",
+      "env_name": "CleanUpToysTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 4500.0,
+      "duration_mean": 300.0,
+      "policy_inference_avg_ms_mean": 12.0,
+      "env_step_avg_ms_mean": 271.6,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 36,
+        "GRIPPER_FULLY_CLOSED": 9,
+        "GRIPPER_HIT_TABLE": 6
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_CleanUpToysTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ClearOrganicObjectsTask",
+      "env_name": "ClearOrganicObjectsTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 3600.0,
+      "duration_mean": 240.0,
+      "policy_inference_avg_ms_mean": 12.0,
+      "env_step_avg_ms_mean": 383.2,
+      "events": {
+        "GRIPPER_FULLY_CLOSED": 7,
+        "GRIPPER_HIT_OBJECT": 1,
+        "WRONG_OBJECT_GRABBED": 1,
+        "TARGET_OBJECT_DROPPED": 15,
+        "MULTIPLE_OBJECTS_GRABBED": 1,
+        "GRIPPER_HIT_TABLE": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ClearOrganicObjectsTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ClutterPlasticTask",
+      "env_name": "ClutterPlasticTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 2700.0,
+      "duration_mean": 180.0,
+      "policy_inference_avg_ms_mean": 12.0,
+      "env_step_avg_ms_mean": 463.4,
+      "events": {
+        "OBJECT_BUMPED": 21,
+        "GRIPPER_FULLY_CLOSED": 9,
+        "GRIPPER_HIT_OBJECT": 6,
+        "TARGET_OBJECT_DROPPED": 5,
+        "WRONG_OBJECT_GRABBED": 10,
+        "OBJECT_MOVED": 3
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ClutterPlasticTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ClutterPumpkinTask",
+      "env_name": "ClutterPumpkinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 1156.0,
+      "duration_mean": 77.06666666666666,
+      "policy_inference_avg_ms_mean": 12.1,
+      "env_step_avg_ms_mean": 391.1,
+      "events": {
+        "OBJECT_BUMPED": 7,
+        "GRIPPER_HIT_OBJECT": 5,
+        "WRONG_OBJECT_GRABBED": 5,
+        "GRIPPER_FULLY_CLOSED": 4,
+        "GRIPPER_HIT_TABLE": 1,
+        "TARGET_OBJECT_DROPPED": 13
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ClutterPumpkinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "CoffeePotInBinTask",
+      "env_name": "CoffeePotInBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 297.1,
+      "events": {
+        "GRIPPER_FULLY_CLOSED": 4,
+        "TARGET_OBJECT_DROPPED": 3,
+        "GRIPPER_HIT_OBJECT": 1,
+        "WRONG_OBJECT_GRABBED": 1,
+        "OBJECT_BUMPED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_CoffeePotInBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "CondimentsInBinTask",
+      "env_name": "CondimentsInBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.25,
+      "episode_step_mean": 2700.0,
+      "duration_mean": 180.0,
+      "policy_inference_avg_ms_mean": 12.0,
+      "env_step_avg_ms_mean": 303.7,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 5,
+        "GRIPPER_HIT_OBJECT": 1,
+        "WRONG_OBJECT_GRABBED": 11,
+        "GRIPPER_FULLY_CLOSED": 8,
+        "GRIPPER_HIT_TABLE": 1,
+        "OBJECT_BUMPED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_CondimentsInBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "CookingClearPlateTask",
+      "env_name": "CookingClearPlateTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 0.5,
+      "episode_step_mean": 482.0,
+      "duration_mean": 32.13333333333333,
+      "policy_inference_avg_ms_mean": 12.1,
+      "env_step_avg_ms_mean": 350.9,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 7,
+        "GRIPPER_FULLY_CLOSED": 2,
+        "GRIPPER_HIT_OBJECT": 2,
+        "WRONG_OBJECT_GRABBED": 1,
+        "MULTIPLE_OBJECTS_GRABBED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_CookingClearPlateTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "CookingPickPastaToolTask",
+      "env_name": "CookingPickPastaToolTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 12.0,
+      "env_step_avg_ms_mean": 343.7,
+      "events": {
+        "WRONG_OBJECT_GRABBED": 1,
+        "GRIPPER_HIT_OBJECT": 1,
+        "GRIPPER_FULLY_CLOSED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_CookingPickPastaToolTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "CubesAndBlocksInBinTask",
+      "env_name": "CubesAndBlocksInBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.75,
+      "episode_step_mean": 3600.0,
+      "duration_mean": 240.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 270.9,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 11,
+        "GRIPPER_FULLY_CLOSED": 8,
+        "GRIPPER_HIT_OBJECT": 5,
+        "WRONG_OBJECT_GRABBED": 6,
+        "OBJECT_BUMPED": 4
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_CubesAndBlocksInBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "DishesInBinTask",
+      "env_name": "DishesInBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.3333333432674408,
+      "episode_step_mean": 2700.0,
+      "duration_mean": 180.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 255.1,
+      "events": {
+        "WRONG_OBJECT_GRABBED": 10,
+        "GRIPPER_HIT_OBJECT": 4,
+        "GRIPPER_FULLY_CLOSED": 3,
+        "OBJECT_BUMPED": 8,
+        "TARGET_OBJECT_DROPPED": 7,
+        "GRIPPER_HIT_TABLE": 4
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_DishesInBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ElectronicsInBinTask",
+      "env_name": "ElectronicsInBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.25,
+      "episode_step_mean": 2700.0,
+      "duration_mean": 180.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 332.6,
+      "events": {
+        "GRIPPER_HIT_OBJECT": 1,
+        "GRIPPER_HIT_TABLE": 30,
+        "TARGET_OBJECT_DROPPED": 6,
+        "GRIPPER_FULLY_CLOSED": 4,
+        "WRONG_OBJECT_GRABBED": 5,
+        "OBJECT_BUMPED": 2
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ElectronicsInBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "FoodPacking1BoxesTask",
+      "env_name": "FoodPacking1BoxesTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 211.9,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 9,
+        "GRIPPER_FULLY_CLOSED": 2
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FoodPacking1BoxesTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "FoodPacking1CansTask",
+      "env_name": "FoodPacking1CansTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 117.0,
+      "duration_mean": 7.8,
+      "policy_inference_avg_ms_mean": 12.2,
+      "env_step_avg_ms_mean": 215.7,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 2,
+        "GRIPPER_FULLY_CLOSED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FoodPacking1CansTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "FoodPacking2BoxesTask",
+      "env_name": "FoodPacking2BoxesTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 2700.0,
+      "duration_mean": 180.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 216.4,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 46,
+        "GRIPPER_FULLY_CLOSED": 15,
+        "GRIPPER_HIT_TABLE": 3
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FoodPacking2BoxesTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "FoodPacking2CansTask",
+      "env_name": "FoodPacking2CansTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.5,
+      "episode_step_mean": 2700.0,
+      "duration_mean": 180.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 218.8,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 25,
+        "GRIPPER_FULLY_CLOSED": 17
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FoodPacking2CansTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "FoodPacking3BoxesTask",
+      "env_name": "FoodPacking3BoxesTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 3600.0,
+      "duration_mean": 240.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 240.5,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 98,
+        "GRIPPER_HIT_OBJECT": 1,
+        "WRONG_OBJECT_GRABBED": 3,
+        "GRIPPER_FULLY_CLOSED": 22,
+        "GRIPPER_HIT_TABLE": 5
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FoodPacking3BoxesTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "FoodPacking3CansTask",
+      "env_name": "FoodPacking3CansTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.6666666865348816,
+      "episode_step_mean": 3600.0,
+      "duration_mean": 240.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 247.5,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 60,
+        "GRIPPER_FULLY_CLOSED": 13,
+        "GRIPPER_HIT_TABLE": 1,
+        "GRIPPER_HIT_OBJECT": 2,
+        "MULTIPLE_OBJECTS_GRABBED": 1,
+        "OBJECT_BUMPED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FoodPacking3CansTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "FoodPackingByColorTask",
+      "env_name": "FoodPackingByColorTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 1800.0,
+      "duration_mean": 120.0,
+      "policy_inference_avg_ms_mean": 11.8,
+      "env_step_avg_ms_mean": 255.7,
+      "events": {
+        "GRIPPER_HIT_OBJECT": 2,
+        "OBJECT_BUMPED": 1,
+        "GRIPPER_FULLY_CLOSED": 6,
+        "TARGET_OBJECT_DROPPED": 10
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FoodPackingByColorTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "FruitsGreenLimesOnPlateTask",
+      "env_name": "FruitsGreenLimesOnPlateTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.5,
+      "episode_step_mean": 1350.0,
+      "duration_mean": 90.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 354.0,
+      "events": {
+        "GRIPPER_FULLY_CLOSED": 6,
+        "TARGET_OBJECT_DROPPED": 10,
+        "GRIPPER_HIT_OBJECT": 1,
+        "OBJECT_BUMPED": 2,
+        "GRIPPER_HIT_TABLE": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsGreenLimesOnPlateTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "FruitsMovingOrangeOrLimeTask",
+      "env_name": "FruitsMovingOrangeOrLimeTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 12.0,
+      "env_step_avg_ms_mean": 384.9,
+      "events": {
+        "OBJECT_BUMPED": 3,
+        "TARGET_OBJECT_DROPPED": 11,
+        "OBJECT_OUT_OF_SCENE": 12,
+        "GRIPPER_FULLY_CLOSED": 34,
+        "OBJECT_MOVED": 5
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsMovingOrangeOrLimeTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "FruitsMovingTask",
+      "env_name": "FruitsMovingTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 383.4,
+      "events": {
+        "OBJECT_BUMPED": 4,
+        "GRIPPER_HIT_OBJECT": 4,
+        "WRONG_OBJECT_GRABBED": 3,
+        "OBJECT_OUT_OF_SCENE": 1,
+        "OBJECT_MOVED": 1,
+        "TARGET_OBJECT_DROPPED": 5,
+        "GRIPPER_FULLY_CLOSED": 2,
+        "MULTIPLE_OBJECTS_GRABBED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsMovingTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "FruitsOnPlate3Task",
+      "env_name": "FruitsOnPlate3Task",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 1414.0,
+      "duration_mean": 94.26666666666667,
+      "policy_inference_avg_ms_mean": 12.0,
+      "env_step_avg_ms_mean": 356.5,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 10,
+        "GRIPPER_HIT_TABLE": 10,
+        "GRIPPER_FULLY_CLOSED": 3,
+        "GRIPPER_HIT_OBJECT": 2,
+        "WRONG_OBJECT_GRABBED": 2
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsOnPlate3Task/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "FruitsOnPlateTask",
+      "env_name": "FruitsOnPlateTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.4285714328289032,
+      "episode_step_mean": 4500.0,
+      "duration_mean": 300.0,
+      "policy_inference_avg_ms_mean": 12.0,
+      "env_step_avg_ms_mean": 350.0,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 126,
+        "GRIPPER_HIT_OBJECT": 2,
+        "WRONG_OBJECT_GRABBED": 9,
+        "OBJECT_BUMPED": 3,
+        "GRIPPER_HIT_TABLE": 3,
+        "GRIPPER_FULLY_CLOSED": 11
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsOnPlateTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "FruitsOnionTask",
+      "env_name": "FruitsOnionTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 428.0,
+      "duration_mean": 28.53333333333333,
+      "policy_inference_avg_ms_mean": 12.2,
+      "env_step_avg_ms_mean": 374.1,
+      "events": {
+        "OBJECT_BUMPED": 4,
+        "WRONG_OBJECT_GRABBED": 1,
+        "GRIPPER_FULLY_CLOSED": 1,
+        "GRIPPER_HIT_OBJECT": 1,
+        "TARGET_OBJECT_DROPPED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsOnionTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "FruitsOnionToPlateTask",
+      "env_name": "FruitsOnionToPlateTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 452.0,
+      "duration_mean": 30.133333333333333,
+      "policy_inference_avg_ms_mean": 12.2,
+      "env_step_avg_ms_mean": 367.1,
+      "events": {
+        "OBJECT_BUMPED": 2,
+        "WRONG_OBJECT_GRABBED": 1,
+        "GRIPPER_FULLY_CLOSED": 2,
+        "GRIPPER_HIT_OBJECT": 1,
+        "OBJECT_MOVED": 1,
+        "TARGET_OBJECT_DROPPED": 3
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsOnionToPlateTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "FruitsOrangesOnPlateTask",
+      "env_name": "FruitsOrangesOnPlateTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 1350.0,
+      "duration_mean": 90.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 349.3,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 9,
+        "GRIPPER_FULLY_CLOSED": 5,
+        "WRONG_OBJECT_GRABBED": 6,
+        "GRIPPER_HIT_OBJECT": 6,
+        "OBJECT_BUMPED": 5,
+        "GRIPPER_HIT_TABLE": 14,
+        "MULTIPLE_OBJECTS_GRABBED": 1,
+        "OBJECT_OUT_OF_SCENE": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsOrangesOnPlateTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "GrabABagelTask",
+      "env_name": "GrabABagelTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 450.0,
+      "duration_mean": 30.0,
+      "policy_inference_avg_ms_mean": 12.1,
+      "env_step_avg_ms_mean": 431.3,
+      "events": {
+        "GRIPPER_HIT_OBJECT": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_GrabABagelTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "GrabAFruitTask",
+      "env_name": "GrabAFruitTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 450.0,
+      "duration_mean": 30.0,
+      "policy_inference_avg_ms_mean": 12.0,
+      "env_step_avg_ms_mean": 420.3,
+      "events": {
+        "GRIPPER_FULLY_CLOSED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_GrabAFruitTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "GreenSpoonsInPotTask",
+      "env_name": "GreenSpoonsInPotTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.6666666865348816,
+      "episode_step_mean": 2700.0,
+      "duration_mean": 180.0,
+      "policy_inference_avg_ms_mean": 11.8,
+      "env_step_avg_ms_mean": 326.8,
+      "events": {
+        "GRIPPER_FULLY_CLOSED": 11,
+        "TARGET_OBJECT_DROPPED": 6,
+        "GRIPPER_HIT_TABLE": 5,
+        "WRONG_OBJECT_GRABBED": 23,
+        "GRIPPER_HIT_OBJECT": 6,
+        "OBJECT_BUMPED": 11,
+        "MULTIPLE_OBJECTS_GRABBED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_GreenSpoonsInPotTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "HammersInLeftBinTask",
+      "env_name": "HammersInLeftBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 2700.0,
+      "duration_mean": 180.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 220.2,
+      "events": {
+        "GRIPPER_HIT_TABLE": 2,
+        "TARGET_OBJECT_DROPPED": 44,
+        "GRIPPER_FULLY_CLOSED": 18,
+        "MULTIPLE_OBJECTS_GRABBED": 1,
+        "WRONG_OBJECT_GRABBED": 2,
+        "GRIPPER_HIT_OBJECT": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_HammersInLeftBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "JugsOnShelfTask",
+      "env_name": "JugsOnShelfTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 1800.0,
+      "duration_mean": 120.0,
+      "policy_inference_avg_ms_mean": 11.8,
+      "env_step_avg_ms_mean": 229.2,
+      "events": {
+        "WRONG_OBJECT_GRABBED": 6,
+        "GRIPPER_HIT_OBJECT": 3,
+        "GRIPPER_HIT_TABLE": 2,
+        "GRIPPER_FULLY_CLOSED": 6,
+        "TARGET_OBJECT_DROPPED": 2
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_JugsOnShelfTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "KeyboardOutOfBinTask",
+      "env_name": "KeyboardOutOfBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 317.6,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 44,
+        "GRIPPER_FULLY_CLOSED": 5
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_KeyboardOutOfBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "LargerObjectRaisinBoxInBinTask",
+      "env_name": "LargerObjectRaisinBoxInBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 450.0,
+      "duration_mean": 30.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 204.5,
+      "events": {
+        "GRIPPER_HIT_TABLE": 1,
+        "WRONG_OBJECT_GRABBED": 1,
+        "GRIPPER_HIT_OBJECT": 1,
+        "OBJECT_BUMPED": 1,
+        "TARGET_OBJECT_DROPPED": 10,
+        "GRIPPER_FULLY_CLOSED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_LargerObjectRaisinBoxInBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "MarkerInMugTask",
+      "env_name": "MarkerInMugTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 600.0,
+      "duration_mean": 40.0,
+      "policy_inference_avg_ms_mean": 12.0,
+      "env_step_avg_ms_mean": 340.3,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_MarkerInMugTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "MouseOnKeyboardTask",
+      "env_name": "MouseOnKeyboardTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 354.0,
+      "events": {
+        "GRIPPER_HIT_OBJECT": 1,
+        "OBJECT_BUMPED": 7,
+        "GRIPPER_HIT_TABLE": 6,
+        "TARGET_OBJECT_DROPPED": 10,
+        "MULTIPLE_OBJECTS_GRABBED": 1,
+        "WRONG_OBJECT_GRABBED": 3,
+        "GRIPPER_FULLY_CLOSED": 3
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_MouseOnKeyboardTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "MoveBananaToBagelPlateTask",
+      "env_name": "MoveBananaToBagelPlateTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 1350.0,
+      "duration_mean": 90.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 409.7,
+      "events": {
+        "GRIPPER_FULLY_CLOSED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_MoveBananaToBagelPlateTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "MustardAboveRaisinTask",
+      "env_name": "MustardAboveRaisinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 136.0,
+      "duration_mean": 9.066666666666666,
+      "policy_inference_avg_ms_mean": 12.5,
+      "env_step_avg_ms_mean": 200.0,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_MustardAboveRaisinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "MustardInLeftBinTask",
+      "env_name": "MustardInLeftBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 450.0,
+      "duration_mean": 30.0,
+      "policy_inference_avg_ms_mean": 12.0,
+      "env_step_avg_ms_mean": 191.1,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 6,
+        "GRIPPER_FULLY_CLOSED": 4
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_MustardInLeftBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "MustardInRightBinTask",
+      "env_name": "MustardInRightBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 139.0,
+      "duration_mean": 9.266666666666666,
+      "policy_inference_avg_ms_mean": 12.2,
+      "env_step_avg_ms_mean": 202.5,
+      "events": {
+        "GRIPPER_FULLY_CLOSED": 1,
+        "TARGET_OBJECT_DROPPED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_MustardInRightBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "NonHammerToolsInRightBinTask",
+      "env_name": "NonHammerToolsInRightBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 2700.0,
+      "duration_mean": 180.0,
+      "policy_inference_avg_ms_mean": 12.0,
+      "env_step_avg_ms_mean": 223.6,
+      "events": {
+        "WRONG_OBJECT_GRABBED": 15,
+        "GRIPPER_HIT_OBJECT": 2,
+        "GRIPPER_FULLY_CLOSED": 14,
+        "OBJECT_BUMPED": 13,
+        "GRIPPER_HIT_TABLE": 14,
+        "MULTIPLE_OBJECTS_GRABBED": 1,
+        "TARGET_OBJECT_DROPPED": 20
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_NonHammerToolsInRightBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "OneBottleInSquarePailTask",
+      "env_name": "OneBottleInSquarePailTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 514.0,
+      "duration_mean": 34.266666666666666,
+      "policy_inference_avg_ms_mean": 12.0,
+      "env_step_avg_ms_mean": 244.4,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 6,
+        "GRIPPER_FULLY_CLOSED": 1,
+        "OBJECT_BUMPED": 1,
+        "GRIPPER_HIT_TABLE": 4
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_OneBottleInSquarePailTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "OneBottleOnShelfTask",
+      "env_name": "OneBottleOnShelfTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 11.8,
+      "env_step_avg_ms_mean": 230.7,
+      "events": {
+        "GRIPPER_HIT_OBJECT": 1,
+        "OBJECT_BUMPED": 1,
+        "TARGET_OBJECT_DROPPED": 6,
+        "GRIPPER_HIT_TABLE": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_OneBottleOnShelfTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "PhoneOrRemoteInBinTask",
+      "env_name": "PhoneOrRemoteInBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 467.0,
+      "duration_mean": 31.133333333333333,
+      "policy_inference_avg_ms_mean": 12.1,
+      "env_step_avg_ms_mean": 326.6,
+      "events": {
+        "GRIPPER_HIT_TABLE": 13,
+        "GRIPPER_HIT_OBJECT": 1,
+        "MULTIPLE_OBJECTS_GRABBED": 1,
+        "TARGET_OBJECT_DROPPED": 5
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PhoneOrRemoteInBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "PickDrillTask",
+      "env_name": "PickDrillTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 600.0,
+      "duration_mean": 40.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 220.6,
+      "events": {
+        "GRIPPER_HIT_OBJECT": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PickDrillTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "PickGlassesTask",
+      "env_name": "PickGlassesTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 240.0,
+      "duration_mean": 16.0,
+      "policy_inference_avg_ms_mean": 12.1,
+      "env_step_avg_ms_mean": 318.1,
+      "events": {
+        "GRIPPER_FULLY_CLOSED": 3,
+        "WRONG_OBJECT_GRABBED": 1,
+        "GRIPPER_HIT_OBJECT": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PickGlassesTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "PickOrangeObjectTask",
+      "env_name": "PickOrangeObjectTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.5,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 12.0,
+      "env_step_avg_ms_mean": 337.8,
+      "events": {
+        "GRIPPER_FULLY_CLOSED": 4,
+        "WRONG_OBJECT_GRABBED": 6,
+        "GRIPPER_HIT_OBJECT": 2
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PickOrangeObjectTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "PickUpBluePitcherTask",
+      "env_name": "PickUpBluePitcherTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 184.0,
+      "duration_mean": 12.266666666666666,
+      "policy_inference_avg_ms_mean": 12.3,
+      "env_step_avg_ms_mean": 202.9,
+      "events": {
+        "GRIPPER_FULLY_CLOSED": 3,
+        "GRIPPER_HIT_OBJECT": 1,
+        "WRONG_OBJECT_GRABBED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PickUpBluePitcherTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "PickUpGreenObjectTask",
+      "env_name": "PickUpGreenObjectTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.5,
+      "episode_step_mean": 450.0,
+      "duration_mean": 30.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 198.6,
+      "events": {
+        "GRIPPER_FULLY_CLOSED": 2,
+        "WRONG_OBJECT_GRABBED": 1,
+        "GRIPPER_HIT_OBJECT": 1,
+        "GRIPPER_HIT_TABLE": 3
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PickUpGreenObjectTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "PinkSpoonInPotTask",
+      "env_name": "PinkSpoonInPotTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 323.9,
+      "events": {
+        "GRIPPER_HIT_TABLE": 16
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PinkSpoonInPotTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "PlasticBottlesInSquarePailTask",
+      "env_name": "PlasticBottlesInSquarePailTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 2631.0,
+      "duration_mean": 175.4,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 246.9,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 24,
+        "GRIPPER_HIT_OBJECT": 3,
+        "GRIPPER_HIT_TABLE": 3,
+        "OBJECT_BUMPED": 2,
+        "GRIPPER_FULLY_CLOSED": 8,
+        "MULTIPLE_OBJECTS_GRABBED": 1,
+        "OBJECT_OUT_OF_SCENE": 1,
+        "OBJECT_MOVED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PlasticBottlesInSquarePailTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "PutBowlOnShelfTopTask",
+      "env_name": "PutBowlOnShelfTopTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 210.4,
+      "events": {
+        "OBJECT_OUT_OF_SCENE": 1,
+        "OBJECT_MOVED": 1,
+        "GRIPPER_FULLY_CLOSED": 11
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PutBowlOnShelfTopTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "PutMugsOnShelfTask",
+      "env_name": "PutMugsOnShelfTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 2700.0,
+      "duration_mean": 180.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 213.4,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 9,
+        "GRIPPER_FULLY_CLOSED": 23,
+        "OBJECT_OUT_OF_SCENE": 1,
+        "OBJECT_MOVED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PutMugsOnShelfTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "PutTwoMugsOnShelfTask",
+      "env_name": "PutTwoMugsOnShelfTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 2700.0,
+      "duration_mean": 180.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 252.2,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 17,
+        "GRIPPER_FULLY_CLOSED": 8
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PutTwoMugsOnShelfTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "RecycleCartonTask",
+      "env_name": "RecycleCartonTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.5,
+      "episode_step_mean": 1350.0,
+      "duration_mean": 90.0,
+      "policy_inference_avg_ms_mean": 12.0,
+      "env_step_avg_ms_mean": 232.5,
+      "events": {
+        "OBJECT_BUMPED": 2,
+        "TARGET_OBJECT_DROPPED": 8,
+        "GRIPPER_FULLY_CLOSED": 9,
+        "GRIPPER_HIT_OBJECT": 1,
+        "WRONG_OBJECT_GRABBED": 10
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RecycleCartonTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "RecycleCartonsOnBoxTask",
+      "env_name": "RecycleCartonsOnBoxTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 1350.0,
+      "duration_mean": 90.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 231.1,
+      "events": {
+        "OBJECT_BUMPED": 1,
+        "TARGET_OBJECT_DROPPED": 4,
+        "GRIPPER_FULLY_CLOSED": 4,
+        "GRIPPER_HIT_OBJECT": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RecycleCartonsOnBoxTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "RecycleCartonsVerticalCrateTask",
+      "env_name": "RecycleCartonsVerticalCrateTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.5,
+      "episode_step_mean": 1350.0,
+      "duration_mean": 90.0,
+      "policy_inference_avg_ms_mean": 12.0,
+      "env_step_avg_ms_mean": 244.0,
+      "events": {
+        "OBJECT_BUMPED": 9,
+        "TARGET_OBJECT_DROPPED": 8,
+        "GRIPPER_FULLY_CLOSED": 5,
+        "GRIPPER_HIT_OBJECT": 2,
+        "WRONG_OBJECT_GRABBED": 2
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RecycleCartonsVerticalCrateTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "RedDishesInBinTask",
+      "env_name": "RedDishesInBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.5,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 11.8,
+      "env_step_avg_ms_mean": 203.0,
+      "events": {
+        "GRIPPER_FULLY_CLOSED": 6,
+        "TARGET_OBJECT_DROPPED": 4,
+        "GRIPPER_HIT_TABLE": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RedDishesInBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "RedItemsInBinTask",
+      "env_name": "RedItemsInBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.5,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 210.1,
+      "events": {
+        "GRIPPER_FULLY_CLOSED": 6,
+        "GRIPPER_HIT_OBJECT": 3,
+        "WRONG_OBJECT_GRABBED": 2,
+        "OBJECT_BUMPED": 3,
+        "TARGET_OBJECT_DROPPED": 3,
+        "GRIPPER_HIT_TABLE": 2
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RedItemsInBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ReorientAllMugsTask",
+      "env_name": "ReorientAllMugsTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.3333333432674408,
+      "episode_step_mean": 1350.0,
+      "duration_mean": 90.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 234.5,
+      "events": {
+        "GRIPPER_HIT_OBJECT": 3,
+        "WRONG_OBJECT_GRABBED": 4,
+        "GRIPPER_FULLY_CLOSED": 5,
+        "OBJECT_BUMPED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ReorientAllMugsTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ReorientJugTask",
+      "env_name": "ReorientJugTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 11.8,
+      "env_step_avg_ms_mean": 215.2,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ReorientJugTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ReorientRedMugTask",
+      "env_name": "ReorientRedMugTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 586.0,
+      "duration_mean": 39.06666666666666,
+      "policy_inference_avg_ms_mean": 12.1,
+      "env_step_avg_ms_mean": 242.6,
+      "events": {
+        "GRIPPER_HIT_OBJECT": 2,
+        "WRONG_OBJECT_GRABBED": 1,
+        "GRIPPER_FULLY_CLOSED": 2,
+        "OBJECT_BUMPED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ReorientRedMugTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ReorientWhiteMugsTask",
+      "env_name": "ReorientWhiteMugsTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 226.2,
+      "events": {
+        "WRONG_OBJECT_GRABBED": 6,
+        "GRIPPER_HIT_OBJECT": 2,
+        "GRIPPER_FULLY_CLOSED": 5,
+        "OBJECT_BUMPED": 4
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ReorientWhiteMugsTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "RubiksCubeAndBananaTask",
+      "env_name": "RubiksCubeAndBananaTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 361.0,
+      "duration_mean": 24.066666666666666,
+      "policy_inference_avg_ms_mean": 12.1,
+      "env_step_avg_ms_mean": 195.5,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 3
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeAndBananaTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "RubiksCubeBehindBowlTask",
+      "env_name": "RubiksCubeBehindBowlTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 112.0,
+      "duration_mean": 7.466666666666667,
+      "policy_inference_avg_ms_mean": 12.3,
+      "env_step_avg_ms_mean": 202.6,
+      "events": {
+        "WRONG_OBJECT_GRABBED": 1,
+        "GRIPPER_HIT_OBJECT": 1,
+        "OBJECT_BUMPED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeBehindBowlTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "RubiksCubeInFrontOfBowlTask",
+      "env_name": "RubiksCubeInFrontOfBowlTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.3333333432674408,
+      "episode_step_mean": 450.0,
+      "duration_mean": 30.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 182.7,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeInFrontOfBowlTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "RubiksCubeLeftOfBowlTask",
+      "env_name": "RubiksCubeLeftOfBowlTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.6666666865348816,
+      "episode_step_mean": 450.0,
+      "duration_mean": 30.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 186.3,
+      "events": {
+        "GRIPPER_HIT_OBJECT": 1,
+        "WRONG_OBJECT_GRABBED": 1,
+        "OBJECT_BUMPED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeLeftOfBowlTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "RubiksCubeOrBananaTask",
+      "env_name": "RubiksCubeOrBananaTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 196.0,
+      "duration_mean": 13.066666666666666,
+      "policy_inference_avg_ms_mean": 12.3,
+      "env_step_avg_ms_mean": 189.5,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 4
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeOrBananaTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "RubiksCubeRightOfBowlTask",
+      "env_name": "RubiksCubeRightOfBowlTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.6666666865348816,
+      "episode_step_mean": 450.0,
+      "duration_mean": 30.0,
+      "policy_inference_avg_ms_mean": 11.8,
+      "env_step_avg_ms_mean": 202.8,
+      "events": {
+        "GRIPPER_FULLY_CLOSED": 2,
+        "WRONG_OBJECT_GRABBED": 3,
+        "GRIPPER_HIT_OBJECT": 1,
+        "OBJECT_BUMPED": 2,
+        "GRIPPER_HIT_TABLE": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeRightOfBowlTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "RubiksCubeTask",
+      "env_name": "RubiksCubeTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 121.0,
+      "duration_mean": 8.066666666666666,
+      "policy_inference_avg_ms_mean": 12.6,
+      "env_step_avg_ms_mean": 195.5,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "RubiksCubeThenBananaTask",
+      "env_name": "RubiksCubeThenBananaTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 386.0,
+      "duration_mean": 25.733333333333334,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 197.2,
+      "events": {
+        "GRIPPER_HIT_TABLE": 1,
+        "WRONG_OBJECT_GRABBED": 1,
+        "GRIPPER_HIT_OBJECT": 1,
+        "OBJECT_BUMPED": 3,
+        "TARGET_OBJECT_DROPPED": 3
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeThenBananaTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "RubiksCubesInBinTask",
+      "env_name": "RubiksCubesInBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 955.0,
+      "duration_mean": 63.666666666666664,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 273.8,
+      "events": {
+        "GRIPPER_HIT_OBJECT": 3,
+        "OBJECT_BUMPED": 4,
+        "TARGET_OBJECT_DROPPED": 8,
+        "GRIPPER_FULLY_CLOSED": 3,
+        "WRONG_OBJECT_GRABBED": 1,
+        "MULTIPLE_OBJECTS_GRABBED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubesInBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "SauceBottlesCrateTask",
+      "env_name": "SauceBottlesCrateTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 564.0,
+      "duration_mean": 37.6,
+      "policy_inference_avg_ms_mean": 12.0,
+      "env_step_avg_ms_mean": 205.9,
+      "events": {
+        "OBJECT_BUMPED": 1,
+        "TARGET_OBJECT_DROPPED": 8,
+        "GRIPPER_FULLY_CLOSED": 3,
+        "WRONG_OBJECT_GRABBED": 1,
+        "GRIPPER_HIT_OBJECT": 1,
+        "MULTIPLE_OBJECTS_GRABBED": 1,
+        "GRIPPER_HIT_TABLE": 4
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_SauceBottlesCrateTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "SmallPumpkinInBinTask",
+      "env_name": "SmallPumpkinInBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 12.0,
+      "env_step_avg_ms_mean": 384.8,
+      "events": {
+        "OBJECT_BUMPED": 4,
+        "GRIPPER_HIT_OBJECT": 3,
+        "GRIPPER_FULLY_CLOSED": 2,
+        "WRONG_OBJECT_GRABBED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_SmallPumpkinInBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "SmallerObjectButterInBinTask",
+      "env_name": "SmallerObjectButterInBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 450.0,
+      "duration_mean": 30.0,
+      "policy_inference_avg_ms_mean": 12.0,
+      "env_step_avg_ms_mean": 206.4,
+      "events": {
+        "GRIPPER_HIT_TABLE": 6,
+        "GRIPPER_HIT_OBJECT": 1,
+        "TARGET_OBJECT_DROPPED": 1,
+        "GRIPPER_FULLY_CLOSED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_SmallerObjectButterInBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "SmartphoneInBinTask",
+      "env_name": "SmartphoneInBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 12.0,
+      "env_step_avg_ms_mean": 323.7,
+      "events": {
+        "GRIPPER_HIT_TABLE": 20,
+        "GRIPPER_HIT_OBJECT": 2,
+        "WRONG_OBJECT_GRABBED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_SmartphoneInBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "SpoonInMugTask",
+      "env_name": "SpoonInMugTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 12.0,
+      "env_step_avg_ms_mean": 305.4,
+      "events": {
+        "GRIPPER_HIT_OBJECT": 1,
+        "GRIPPER_FULLY_CLOSED": 5
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_SpoonInMugTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "SpoonsInPotTask",
+      "env_name": "SpoonsInPotTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.3333333432674408,
+      "episode_step_mean": 2700.0,
+      "duration_mean": 180.0,
+      "policy_inference_avg_ms_mean": 12.1,
+      "env_step_avg_ms_mean": 321.5,
+      "events": {
+        "GRIPPER_HIT_TABLE": 18,
+        "GRIPPER_FULLY_CLOSED": 23,
+        "TARGET_OBJECT_DROPPED": 21,
+        "GRIPPER_HIT_OBJECT": 3,
+        "WRONG_OBJECT_GRABBED": 6,
+        "OBJECT_BUMPED": 2
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_SpoonsInPotTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "Stack3RubiksCubeTask",
+      "env_name": "Stack3RubiksCubeTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.5,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 191.4,
+      "events": {
+        "WRONG_OBJECT_GRABBED": 3,
+        "GRIPPER_HIT_OBJECT": 2,
+        "OBJECT_BUMPED": 3,
+        "GRIPPER_FULLY_CLOSED": 7
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_Stack3RubiksCubeTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "StackWhiteMugsTask",
+      "env_name": "StackWhiteMugsTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.5,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 11.8,
+      "env_step_avg_ms_mean": 244.6,
+      "events": {
+        "WRONG_OBJECT_GRABBED": 14,
+        "GRIPPER_FULLY_CLOSED": 3,
+        "GRIPPER_HIT_OBJECT": 3,
+        "OBJECT_BUMPED": 5
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_StackWhiteMugsTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "StackYellowOnRedTask",
+      "env_name": "StackYellowOnRedTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 392.0,
+      "duration_mean": 26.133333333333333,
+      "policy_inference_avg_ms_mean": 12.2,
+      "env_step_avg_ms_mean": 280.0,
+      "events": {
+        "GRIPPER_HIT_OBJECT": 2,
+        "WRONG_OBJECT_GRABBED": 2,
+        "OBJECT_BUMPED": 4
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_StackYellowOnRedTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "TakeMeasuringSpoonOutTask",
+      "env_name": "TakeMeasuringSpoonOutTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 600.0,
+      "duration_mean": 40.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 240.4,
+      "events": {
+        "GRIPPER_FULLY_CLOSED": 1,
+        "WRONG_OBJECT_GRABBED": 6,
+        "GRIPPER_HIT_OBJECT": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_TakeMeasuringSpoonOutTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "TakeMugsOffOfShelfTask",
+      "env_name": "TakeMugsOffOfShelfTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 2700.0,
+      "duration_mean": 180.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 208.1,
+      "events": {
+        "OBJECT_OUT_OF_SCENE": 2,
+        "OBJECT_MOVED": 2,
+        "GRIPPER_FULLY_CLOSED": 20,
+        "GRIPPER_HIT_OBJECT": 1,
+        "OBJECT_BUMPED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_TakeMugsOffOfShelfTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "TakeSpatulaOffShelfTask",
+      "env_name": "TakeSpatulaOffShelfTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 11.8,
+      "env_step_avg_ms_mean": 222.0,
+      "events": {
+        "GRIPPER_FULLY_CLOSED": 2
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_TakeSpatulaOffShelfTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ThrowAwayAppleTask",
+      "env_name": "ThrowAwayAppleTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 12.0,
+      "env_step_avg_ms_mean": 317.8,
+      "events": {
+        "GRIPPER_FULLY_CLOSED": 1,
+        "GRIPPER_HIT_OBJECT": 1,
+        "TARGET_OBJECT_DROPPED": 10,
+        "GRIPPER_HIT_TABLE": 2
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ThrowAwayAppleTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ThrowAwaySnacksTask",
+      "env_name": "ThrowAwaySnacksTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 1800.0,
+      "duration_mean": 120.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 320.0,
+      "events": {
+        "GRIPPER_HIT_OBJECT": 3,
+        "TARGET_OBJECT_DROPPED": 1,
+        "WRONG_OBJECT_GRABBED": 1,
+        "GRIPPER_FULLY_CLOSED": 1,
+        "GRIPPER_HIT_TABLE": 7
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ThrowAwaySnacksTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ToolOrganizationBothTask",
+      "env_name": "ToolOrganizationBothTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 2700.0,
+      "duration_mean": 180.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 223.7,
+      "events": {
+        "GRIPPER_HIT_TABLE": 30,
+        "GRIPPER_FULLY_CLOSED": 13,
+        "TARGET_OBJECT_DROPPED": 29
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ToolOrganizationBothTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ToolOrganizationTask",
+      "env_name": "ToolOrganizationTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 2700.0,
+      "duration_mean": 180.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 226.1,
+      "events": {
+        "GRIPPER_FULLY_CLOSED": 5,
+        "TARGET_OBJECT_DROPPED": 19,
+        "GRIPPER_HIT_TABLE": 30,
+        "MULTIPLE_OBJECTS_GRABBED": 1,
+        "GRIPPER_HIT_OBJECT": 1,
+        "WRONG_OBJECT_GRABBED": 5,
+        "OBJECT_BUMPED": 4
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ToolOrganizationTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ToolsPickingAllHammersTask",
+      "env_name": "ToolsPickingAllHammersTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 3600.0,
+      "duration_mean": 240.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 277.9,
+      "events": {
+        "GRIPPER_FULLY_CLOSED": 31,
+        "TARGET_OBJECT_DROPPED": 7,
+        "GRIPPER_HIT_OBJECT": 5,
+        "WRONG_OBJECT_GRABBED": 22
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ToolsPickingAllHammersTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ToolsPickingDrillTask",
+      "env_name": "ToolsPickingDrillTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 264.5,
+      "events": {
+        "GRIPPER_HIT_OBJECT": 3,
+        "GRIPPER_FULLY_CLOSED": 7,
+        "WRONG_OBJECT_GRABBED": 5,
+        "MULTIPLE_OBJECTS_GRABBED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ToolsPickingDrillTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ToolsPickingHammerTask",
+      "env_name": "ToolsPickingHammerTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 262.4,
+      "events": {
+        "GRIPPER_FULLY_CLOSED": 2,
+        "GRIPPER_HIT_OBJECT": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ToolsPickingHammerTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ToyInBinTask",
+      "env_name": "ToyInBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 302.3,
+      "events": {
+        "GRIPPER_FULLY_CLOSED": 2,
+        "GRIPPER_HIT_OBJECT": 1,
+        "WRONG_OBJECT_GRABBED": 3
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ToyInBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "UnstackRubiksCubeTask",
+      "env_name": "UnstackRubiksCubeTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.5,
+      "episode_step_mean": 1350.0,
+      "duration_mean": 90.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 222.0,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 2
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_UnstackRubiksCubeTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "UtensilsInMugTask",
+      "env_name": "UtensilsInMugTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 1350.0,
+      "duration_mean": 90.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 454.5,
+      "events": {
+        "GRIPPER_FULLY_CLOSED": 2,
+        "TARGET_OBJECT_DROPPED": 2,
+        "GRIPPER_HIT_TABLE": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_UtensilsInMugTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "WhiteMugInCenterOfTableTask",
+      "env_name": "WhiteMugInCenterOfTableTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 166.0,
+      "duration_mean": 11.066666666666666,
+      "policy_inference_avg_ms_mean": 12.4,
+      "env_step_avg_ms_mean": 268.0,
+      "events": {
+        "OBJECT_OUT_OF_SCENE": 2,
+        "OBJECT_BUMPED": 2,
+        "GRIPPER_FULLY_CLOSED": 1,
+        "WRONG_OBJECT_GRABBED": 1,
+        "GRIPPER_HIT_OBJECT": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_WhiteMugInCenterOfTableTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "WhiteMugsInBinTask",
+      "env_name": "WhiteMugsInBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 255.9,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 6,
+        "GRIPPER_FULLY_CLOSED": 3
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_WhiteMugsInBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "WoodSpatulaToBowlTask",
+      "env_name": "WoodSpatulaToBowlTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 315.0,
+      "duration_mean": 21.0,
+      "policy_inference_avg_ms_mean": 12.1,
+      "env_step_avg_ms_mean": 387.5,
+      "events": {
+        "OBJECT_BUMPED": 2,
+        "GRIPPER_HIT_OBJECT": 1,
+        "GRIPPER_FULLY_CLOSED": 1,
+        "TARGET_OBJECT_DROPPED": 2
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_WoodSpatulaToBowlTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "YellowAndWhiteObjectsInBinTask",
+      "env_name": "YellowAndWhiteObjectsInBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 826.0,
+      "duration_mean": 55.06666666666666,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 239.8,
+      "events": {
+        "GRIPPER_FULLY_CLOSED": 2,
+        "TARGET_OBJECT_DROPPED": 3,
+        "GRIPPER_HIT_OBJECT": 4,
+        "WRONG_OBJECT_GRABBED": 5,
+        "OBJECT_BUMPED": 6
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_YellowAndWhiteObjectsInBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "YogurtInBowlTask",
+      "env_name": "YogurtInBowlTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 600.0,
+      "duration_mean": 40.0,
+      "policy_inference_avg_ms_mean": 12.0,
+      "env_step_avg_ms_mean": 432.2,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 14,
+        "GRIPPER_FULLY_CLOSED": 1,
+        "GRIPPER_HIT_OBJECT": 1,
+        "MULTIPLE_OBJECTS_GRABBED": 1,
+        "GRIPPER_HIT_TABLE": 2
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_YogurtInBowlTask/episode_results.jsonl"
+      ]
+    }
+  ]
+}
