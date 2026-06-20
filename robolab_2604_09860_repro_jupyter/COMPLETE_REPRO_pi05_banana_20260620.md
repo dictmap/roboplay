@@ -1,5 +1,13 @@
 # RoboLab 单任务完整复现记录：Pi0.5 / BananaInBowlTask
 
+<!-- FINAL-20260621-UPDATE:BEGIN -->
+
+> [!TIP]
+> **2026-06-21 更新**：这份文档现在是“单任务成功闭环样例”。Pi05 full RoboLab-120 已经完成，最终成功率为 `34/120 = 28.3%`，完整结果见 `FINAL_ROBOLAB120_RESULTS_20260621.md` 和 `CURRENT_ROBOLAB120_STATUS.md`。
+
+<!-- FINAL-20260621-UPDATE:END -->
+
+
 ## 结论
 
 本次在 4090 远程主机上完成一条可交付的 RoboLab 复现闭环：使用 OpenPI `pi05_droid_jointpos` 策略，在 Isaac Sim / RoboLab 中运行 `BananaInBowlTask`，任务成功，并产出视频、HDF5 轨迹、事件日志和汇总结果。
@@ -119,4 +127,3 @@ C:\Users\robot\Documents\成长学习库\robolab_2604_09860_repro_jupyter\remote
 - RoboLab-120 全任务或分批任务
 - RoboChallenge Pi baseline 的适配 smoke
 - ReKep 方法的可行 smoke
-

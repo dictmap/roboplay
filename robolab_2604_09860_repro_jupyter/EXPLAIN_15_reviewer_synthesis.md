@@ -1,5 +1,13 @@
 # 精讲 15：全文总梳理 + 审稿人视角评价 + 未来优化创新方向
 
+<!-- FINAL-20260621-UPDATE:BEGIN -->
+
+> [!TIP]
+> **2026-06-21 复现实证更新**：审稿式评价现在可以引用本轮 Pi05 结果：full-120 artifact 成功率为 120/120，但 policy task success 为 `34/120 = 28.3%`。这正好说明 RoboLab 能区分“系统跑通”和“策略泛化成功”。
+
+<!-- FINAL-20260621-UPDATE:END -->
+
+
 > **【绿色标识｜核心结论】** 如果以审稿人的身份看，RoboLab 的主要价值不在于提出一个单点算法，而在于把“高保真仿真、任务生成、策略接入、细粒度诊断、扰动敏感性、真实世界相关性”打成一个可运行的评测框架。它更像一篇 benchmark/system paper，而不是纯算法 paper。
 >
 > **【蓝色标识｜来源路径】** 本节综合论文 Abstract、Introduction、III RoboLab、IV Experiments、V Limitations、VI Conclusion，以及 GitHub README 里的 benchmark、server-client policy、multi-env evaluation、dashboard、installation 和 hardware 信息。
@@ -546,4 +554,3 @@ NuRec/Gaussian 真实场景接入
 统一 policy adapter
 自动 failure report
 ```
-

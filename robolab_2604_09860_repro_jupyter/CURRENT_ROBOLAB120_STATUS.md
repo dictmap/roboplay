@@ -116,6 +116,6 @@ Cosmos policy checkpoints were prefetched through `HF_ENDPOINT=https://hf-mirror
 ## Next Steps
 
 1. Choose a medium-success task from this final table for camera/light/background/object-position perturbation.
-2. Keep Cosmos and other baseline model downloads running in the background.
+2. Cosmos policy checkpoints are now downloaded; request Hugging Face access for Cosmos Reason2-2B/8B if those are needed.
 3. Implement adapters for RoboChallenge pi and ReKep before putting them into the same success-rate table.
 4. Add GR00T/Cosmos/Qwen/PaliGemma/Alibaba models only after the adapter can emit RoboLab-compatible continuous robot actions.

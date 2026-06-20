@@ -1,5 +1,13 @@
 # 精讲 16：基于 RoboLab 的推荐阅读与开源学习路线
 
+<!-- FINAL-20260621-UPDATE:BEGIN -->
+
+> [!TIP]
+> **2026-06-21 复现实证更新**：后续阅读/对照的优先级应结合本轮下载状态：Cosmos Policy LIBERO/ALOHA/ALOHA Planning/RoboCasa、GR00T N1.5 3B、Qwen2.5-VL 3B 已在 4090 上准备好；Cosmos Reason2 2B/8B 需要 HF gated access。
+
+<!-- FINAL-20260621-UPDATE:END -->
+
+
 > **【绿色标识｜核心结论】** 这一版精讲 16 改成“2026 优先”。最值得先追的是：RoboLab、RoboCasa365、RDT2、NVIDIA Isaac GR00T N1.7、NVIDIA 2026 Physical AI stack、Isaac Lab-Arena、Lightwheel LW-BenchHub、Lyra。BEHAVIOR-1K/OmniGibson、DROID、RoboArena/SIMPLER、OpenVLA/Octo、ReKep、RoboTwin/RoboMIND 仍然重要，但这里降级为基础背景或对照参照。
 
 > **【橙色标识｜阅读边界】** 下面不是“越多越好”的论文堆砌，而是按 RoboLab 复现最需要的能力来排：先读能解释当前复现的资料，再读能帮助扩展实验的资料，最后读能产生创新方向的资料。

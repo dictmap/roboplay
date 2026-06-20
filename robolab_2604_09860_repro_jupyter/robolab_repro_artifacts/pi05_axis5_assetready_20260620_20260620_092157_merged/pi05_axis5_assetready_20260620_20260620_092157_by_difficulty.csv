@@ -1,3 +1,0 @@
-Attribute,Success,Success %,LCB %,UCB %,Total,Score(total),Score(fail),Time(s),Time σ,EE SPARC,SPARC σ,PathLen(m),Path σ,Speed(cm/s),Speed σ
-simple,6,66.7,34.8,87.8,9,0.889,0.667,20.06,16.78,-4.98,1.58,1.52,1.04,5.6,1.7
-moderate,3,50.0,18.4,81.6,6,0.500,0.000,13.47,4.55,-5.55,2.01,2.42,1.66,7.0,2.7

@@ -1,5 +1,13 @@
 # 精讲 13-补充：评测证据链深挖，从单条 rollout 到论文结论
 
+<!-- FINAL-20260621-UPDATE:BEGIN -->
+
+> [!TIP]
+> **2026-06-21 复现实证更新**：证据链已经落到 120 个真实 rollout：每个任务都有 `episode_results.jsonl`、HDF5、MP4 和 event/subtask log；最终表见 `CURRENT_ROBOLAB120_STATUS.md`。
+
+<!-- FINAL-20260621-UPDATE:END -->
+
+
 > **【绿色标识｜核心结论】** 原来的精讲 13 讲到了“论文还剩哪些评测侧内容”，但讲得像目录。真正需要讲深的是：RoboLab 不是用一条视频证明模型会做任务，而是用一套证据链把 `task/policy/episode/event/HDF5/dashboard/statistics` 连起来，回答“策略到底会什么、错在哪里、结论有多稳、和真实世界排序有没有关系”。
 
 > **【蓝色标识｜源头范围】** 这章主要对应 RoboLab 论文 III-C Metrics、IV Experiments、IV-D Real-World Verification、V Limitations、Appendix A-A/A-C/A-D，以及项目文档 `docs/data.md`、`docs/event_tracking.md`、`docs/subtask.md`、`docs/dashboard.md`。论文 HTML 版本为 arXiv:2604.09860v3，日期 2026-05-14。
@@ -680,4 +688,3 @@ success / score
 ```
 
 这会把 RoboLab 从“跑出来了”推进到“可以分析策略能力”。
-

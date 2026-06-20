@@ -1,5 +1,13 @@
 # 精讲 14-补充：核心运行时代码深挖，policy rollout 如何变成证据
 
+<!-- FINAL-20260621-UPDATE:BEGIN -->
+
+> [!TIP]
+> **2026-06-21 复现实证更新**：运行时代码链路已由 120 个任务的输出验证；这意味着文中讲的 HDF5、event log、JSONL 和聚合 CSV 不再只是接口说明，而是本轮复现的真实证据层。
+
+<!-- FINAL-20260621-UPDATE:END -->
+
+
 > <span style="color:#166534"><strong>[绿色 核心结论]</strong></span>：RoboLab 的核心代码不是一个“跑模型”的脚本，而是一条可审计的评测流水线。`runner.py` 负责选择任务和组织实验，`episode.py` 负责把策略放进仿真闭环，`InferenceClient` 和 Pi05 client 负责把观测转成模型请求，`WorldState` 和 `EventTracker` 负责解释场景中发生了什么，`RecorderManager`、`summarize.py`、`results.py` 和 dashboard 负责把过程落成 HDF5、JSONL、事件日志、视频和统计表。
 
 > <span style="color:#1d4ed8"><strong>[蓝色 源码路径]</strong></span>：本节基于官方 RoboLab GitHub 主干源码讲解，重点对应 `robolab/eval/runner.py`、`robolab/eval/episode.py`、`robolab/eval/base_client.py`、`policies/pi0_family/client.py`、`robolab/core/world/world_state.py`、`robolab/core/task/event_tracker.py`、`robolab/eval/summarize.py`、`robolab/core/logging/results.py`、`robolab/core/logging/recorder_manager.py`、`dashboard/loaders/local.py`。

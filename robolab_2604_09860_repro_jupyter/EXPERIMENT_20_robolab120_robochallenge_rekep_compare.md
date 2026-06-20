@@ -1,5 +1,13 @@
 # 实验拓展 20：RoboLab-120 全量复现与 RoboChallenge/ReKep 对照
 
+<!-- FINAL-20260621-UPDATE:BEGIN -->
+
+> [!TIP]
+> **2026-06-21 更新**：Pi05 的 RoboLab-120 部分已经完成，不再是“只能交付脚本”的状态。最终：120/120 任务 artifact verified，Pi05 成功率 `34/120 = 28.3%`。RoboChallenge pi / ReKep 仍保持 adapter-required，不能把“未接入”当作 0 分。
+
+<!-- FINAL-20260621-UPDATE:END -->
+
+
 ## 先说结论
 
 可以做完整 RoboLab-120，但它不是“点一下就出表”的短任务。正确顺序是：

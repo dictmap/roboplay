@@ -1,0 +1,28 @@
+{
+  "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_TakeMugsOffOfShelfTask",
+  "episode_results_jsonl": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_TakeMugsOffOfShelfTask/episode_results.jsonl",
+  "episode_results_jsonl_nonempty": true,
+  "tasks": [
+    {
+      "task": "TakeMugsOffOfShelfTask",
+      "task_dirs": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_TakeMugsOffOfShelfTask/TakeMugsOffOfShelfTask"
+      ],
+      "hdf5": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_TakeMugsOffOfShelfTask/TakeMugsOffOfShelfTask/run_0.hdf5"
+      ],
+      "videos": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_TakeMugsOffOfShelfTask/TakeMugsOffOfShelfTask/Take_the_mugs_off_the_shelf_0.mp4",
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_TakeMugsOffOfShelfTask/TakeMugsOffOfShelfTask/Take_the_mugs_off_the_shelf_0_viewport.mp4"
+      ],
+      "subtask_or_event_logs": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_TakeMugsOffOfShelfTask/TakeMugsOffOfShelfTask/log_0_env0.json"
+      ],
+      "env_cfg": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_TakeMugsOffOfShelfTask/TakeMugsOffOfShelfTask/env_cfg.json"
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true
+}

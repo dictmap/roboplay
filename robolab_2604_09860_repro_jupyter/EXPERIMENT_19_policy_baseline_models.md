@@ -1,5 +1,13 @@
 # 实验拓展 19：Pi05、PaliGemma、GR00T、Cosmos、阿里模型等多模型对照
 
+<!-- FINAL-20260621-UPDATE:BEGIN -->
+
+> [!TIP]
+> **2026-06-21 更新**：Pi05 full-120 已完成；GR00T/Qwen/Cosmos/PaliGemma 等的权重或 metadata 状态已更新在 `MODEL_DOWNLOADS_STATUS.md`。注意：权重下载完成不等于能进入 RoboLab success-rate 表，仍需要 RoboLab observation/action adapter。
+
+<!-- FINAL-20260621-UPDATE:END -->
+
+
 ## 先分清模型类型
 
 不能把所有名字都放进同一列直接比 success rate。RoboLab 评测需要 policy 在每一步输出机器人动作；不同模型的成熟度和接口不一样：

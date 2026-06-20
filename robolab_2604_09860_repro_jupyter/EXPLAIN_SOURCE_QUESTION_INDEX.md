@@ -1,5 +1,13 @@
 # 精讲问题来源与核心内容索引
 
+<!-- FINAL-20260621-UPDATE:BEGIN -->
+
+> [!TIP]
+> **2026-06-21 更新**：新增最终复现收口文档 `FINAL_ROBOLAB120_RESULTS_20260621.md`。现在所有精讲的“复现证据锚点”应优先引用 full-120 结果，而不是早期 no-policy smoke 或单任务样例。
+
+<!-- FINAL-20260621-UPDATE:END -->
+
+
 > **【绿色标识｜核心结论】** 这张索引不是新的论文精讲，而是所有精讲的“出处地图”。它回答：每个精讲为什么要讲、问题来自论文哪一节/哪张图/哪个 appendix/哪段代码、原始内容的核心是什么、我们在复现里应该怎么用。  
 > **【蓝色标识｜主要来源】** 论文 [RoboLab arXiv HTML](https://arxiv.org/html/2604.09860v3)、项目页 [NVIDIA RoboLab](https://research.nvidia.com/labs/srl/projects/robolab/)、官方代码 [NVlabs/RoboLab](https://github.com/NVlabs/RoboLab)、本地远端 4090 复现证据 `remote_logs/` / `remote_outputs/`。  
 > **【橙色标识｜边界】** 下面的“来源核心内容”是可溯源摘要，不是论文或源码逐字摘录。要核查完整上下文，应点开对应论文节、appendix 或 GitHub 文件。

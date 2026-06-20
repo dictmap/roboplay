@@ -433,6 +433,8 @@ def main() -> None:
             - 当前 GitHub HEAD：`7d45d74904eade3b578a8eb1f2f9f89bc3d40326`。
 - Required RoboLab-120 LFS assets and backgrounds are checked out; `missing_count=0` was verified before the clean full run.
 - The test10 preflight run `robolab120_pi05_assetsfixed_test10_20260620_162403` completed 10/10 tasks with `run_returncode=0` and `verify_returncode=0`.
+- The clean Pi05 full run `robolab120_pi05_full_assetsfixed_20260620_170411` completed 120/120 task executions and artifact checks; final task success is 34/120 = 28.3%.
+- `FINAL_ROBOLAB120_RESULTS_20260621.md`: Pi05 full RoboLab-120 final recap and cross-document update guide. Embedded in the notebook.
 - `CURRENT_ROBOLAB120_STATUS.md`: final RTX 4090 / Pi05 / RoboLab-120 checkpoint, with 120/120 artifact verification, success tables, integrity-check note, and model prefetch status. Embedded in the notebook.
 - `MODEL_DOWNLOADS_STATUS.md`: baseline model download/prefetch matrix for Cosmos, GR00T, Qwen and PaliGemma.
             - `BananaInBowlTask` 的 headless smoke 已完成 2 step 并导出 episode log。这里的 `success: False` 是空动作/no-policy 运行的预期结果，不代表策略评测失败。
@@ -3964,8 +3966,10 @@ def main() -> None:
             Important boundary: 120/120 means every task produced verified artifacts; Pi05 policy task success is reported separately as the success-rate table.
             """
         ),
+        md_file("FINAL_ROBOLAB120_RESULTS_20260621.md"),
         md_file("CURRENT_ROBOLAB120_STATUS.md"),
         md_file("MODEL_DOWNLOADS_STATUS.md"),
+        md_file("REMOTE_EVIDENCE_MANIFEST.md"),
         md_file("SAMPLE_VIDEOS.md"),
         md(
             """
@@ -5237,8 +5241,10 @@ def main() -> None:
 - `EXPERIMENT_18_pi05_axis5_then_perturb_compare.md`：固定 Pi05 的能力轴 5×任务矩阵评测路线，包含每任务证据要求、`analysis/read_results.py` 出表、成功率中等任务选择、光照/背景/物体位置扰动和后续 RoboChallenge/ReKep 对照顺序。
 - `EXPERIMENT_19_policy_baseline_models.md`：多模型对照路线，把 Pi05/PaliGemma/GR00T/Cosmos/Qwen/阿里模型/RoboChallenge/ReKep 分成直接可跑、需 adapter、非直接动作策略三类，并给出直接 OpenPI 系列的 4090 脚本。
 - `EXPERIMENT_20_robolab120_robochallenge_rekep_compare.md`：RoboLab-120 全量复现实验入口，固定 Pi05 逐任务跑 full-120，生成同一任务矩阵下的 direct OpenPI 对照，并把 RoboChallenge/ReKep 明确标为 adapter-pending 而不是误算成 0 分。
+- `FINAL_ROBOLAB120_RESULTS_20260621.md`: Pi05 full RoboLab-120 final recap and cross-document update guide. Embedded in the notebook.
 - `CURRENT_ROBOLAB120_STATUS.md`: final RTX 4090 / Pi05 / RoboLab-120 checkpoint, with 120/120 artifact verification, success tables, integrity-check note, and model prefetch status. Embedded in the notebook.
 - `MODEL_DOWNLOADS_STATUS.md`: baseline model download/prefetch matrix for Cosmos, GR00T, Qwen and PaliGemma.
+- `REMOTE_EVIDENCE_MANIFEST.md`: final evidence-boundary manifest explaining which proof is committed to GitHub and which raw artifacts remain on the RTX 4090.
 - `robolab_repro_artifacts/current_robolab120_status.json`: machine-readable status for the current full-120 run.
 - `SAMPLE_VIDEOS.md`: small GitHub-browsable sample video index. MP4 files live under `sample_videos/`.
 - `robolab_repro_artifacts/sample_video_manifest.json`: machine-readable manifest for sample videos.
@@ -5298,6 +5304,8 @@ def main() -> None:
 - 已新增 RoboLab-120 全量复现执行包：`robolab120_task_matrix.json` 已确认 120 任务；Pi05 full-120、direct OpenPI full-120 对照、RoboChallenge/ReKep adapter-pending 对照和 adapter skeleton 均已准备。
 - Required RoboLab-120 LFS assets and backgrounds are checked out; `missing_count=0` was verified before the clean full run.
 - The test10 preflight run `robolab120_pi05_assetsfixed_test10_20260620_162403` completed 10/10 tasks with `run_returncode=0` and `verify_returncode=0`.
+- The clean Pi05 full run `robolab120_pi05_full_assetsfixed_20260620_170411` completed 120/120 task executions and artifact checks; final task success is 34/120 = 28.3%.
+- `FINAL_ROBOLAB120_RESULTS_20260621.md`: Pi05 full RoboLab-120 final recap and cross-document update guide. Embedded in the notebook.
 - `CURRENT_ROBOLAB120_STATUS.md`: final RTX 4090 / Pi05 / RoboLab-120 checkpoint, with 120/120 artifact verification, success tables, integrity-check note, and model prefetch status. Embedded in the notebook.
 - `MODEL_DOWNLOADS_STATUS.md`: baseline model download/prefetch matrix for Cosmos, GR00T, Qwen and PaliGemma.
 

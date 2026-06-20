@@ -1,5 +1,13 @@
 # 实验拓展 17：相机角度、腕部相机和机器人替换消融
 
+<!-- FINAL-20260621-UPDATE:BEGIN -->
+
+> [!TIP]
+> **2026-06-21 更新**：Pi05 full-120 已完成，因此相机/腕部相机/机器人消融不再只建议从 `BananaInBowlTask` 起步。下一阶段应从最终表里选一个成功率中等、视频和 HDF5 都完整的任务，先做 camera/light/background/object-position sweep；机器人替换仍需 adapter，不应只换 USD。
+
+<!-- FINAL-20260621-UPDATE:END -->
+
+
 ## 先说结论
 
 这三个实验不是同一个难度层级：

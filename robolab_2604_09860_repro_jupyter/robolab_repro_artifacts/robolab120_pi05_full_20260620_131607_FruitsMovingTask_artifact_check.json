@@ -1,0 +1,19 @@
+{
+  "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_20260620_131607_FruitsMovingTask",
+  "episode_results_jsonl": null,
+  "episode_results_jsonl_nonempty": false,
+  "tasks": [
+    {
+      "task": "FruitsMovingTask",
+      "task_dirs": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_20260620_131607_FruitsMovingTask/FruitsMovingTask"
+      ],
+      "hdf5": [],
+      "videos": [],
+      "subtask_or_event_logs": [],
+      "env_cfg": [],
+      "passed": false
+    }
+  ],
+  "passed": false
+}

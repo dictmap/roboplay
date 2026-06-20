@@ -11,6 +11,6 @@
 
 ## Evidence Boundary
 
-- These videos are visual samples from the reproduction workflow, not the final RoboLab-120 score table.
-- The final full-120 report should be based on `episode_results.jsonl`, artifact checks, HDF5 logs, and regenerated analysis tables after the manifest reaches 120/120.
-- Keep only a small number of videos in Git. Complete video archives should use release artifacts or object storage.
+- These videos are visual samples from the completed Pi05/OpenPI RoboLab-120 reproduction workflow, not the full raw evidence archive.
+- The final full-120 report is now in `FINAL_ROBOLAB120_RESULTS_20260621.md` and `CURRENT_ROBOLAB120_STATUS.md`; the submitted CSV/JSON/log artifacts are the score-table truth source.
+- The complete video archive remains on the RTX 4090 output disk: 120 main videos plus 120 viewport videos for the clean full run. Keep only a small number of videos in Git; complete archives should use release artifacts or object storage.

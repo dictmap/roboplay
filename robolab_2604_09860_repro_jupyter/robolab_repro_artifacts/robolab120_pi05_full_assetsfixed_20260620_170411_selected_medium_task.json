@@ -1,0 +1,2330 @@
+{
+  "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_merged",
+  "target_rate": 0.5,
+  "selected": {
+    "task_name": "AnimalsInBinTask",
+    "episodes": 1,
+    "success_rate": 0.0,
+    "score_mean": 0.0,
+    "distance_to_target": 0.5,
+    "difficulty_label": "simple",
+    "axes": [
+      "visual"
+    ],
+    "attributes": [
+      "semantics"
+    ],
+    "primary_objects_for_object_pose_variation": [
+      "lizard_figurine",
+      "lizard_figurine_01"
+    ]
+  },
+  "candidates": [
+    {
+      "task_name": "AnimalsInBinTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "lizard_figurine",
+        "lizard_figurine_01"
+      ]
+    },
+    {
+      "task_name": "AppleAndYogurtInBowlTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural"
+      ],
+      "attributes": [
+        "affordance"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "apple_01",
+        "yogurt_cup"
+      ]
+    },
+    {
+      "task_name": "BBQSauceInBinTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "color",
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "bbq_sauce_bottle",
+        "bbq_sauce_bottle_01"
+      ]
+    },
+    {
+      "task_name": "BagelsOnPlateTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "bagel_00",
+        "bagel_06"
+      ]
+    },
+    {
+      "task_name": "BananaInBowlTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "banana"
+      ]
+    },
+    {
+      "task_name": "BananaOnPlateTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [],
+      "attributes": [],
+      "primary_objects_for_object_pose_variation": [
+        "banana"
+      ]
+    },
+    {
+      "task_name": "BananaThenRubiksCubeTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.5,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "conjunction"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "banana",
+        "rubiks_cube"
+      ]
+    },
+    {
+      "task_name": "BananasInBinOneMoreTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "counting"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "banana",
+        "banana_01",
+        "banana_03"
+      ]
+    },
+    {
+      "task_name": "BananasInBinThreeTotalTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "counting"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "banana",
+        "banana_01",
+        "banana_03"
+      ]
+    },
+    {
+      "task_name": "BananasInCrateTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "counting"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "banana",
+        "banana_02",
+        "banana_03",
+        "banana_04"
+      ]
+    },
+    {
+      "task_name": "BananasOutOfBinTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "spatial"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "banana_02",
+        "banana_04"
+      ]
+    },
+    {
+      "task_name": "BigPumpkinInBinTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "size"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "pumpkinlarge"
+      ]
+    },
+    {
+      "task_name": "BlackItemsInBinTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.800000011920929,
+      "distance_to_target": 0.5,
+      "difficulty_label": "complex",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "color",
+        "sorting"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "keyboard",
+        "remote_control",
+        "computer_mouse",
+        "smartphone",
+        "glasses"
+      ]
+    },
+    {
+      "task_name": "BlockStackingOrderAgnosticTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.33000001311302185,
+      "distance_to_target": 0.5,
+      "difficulty_label": "complex",
+      "axes": [
+        "procedural"
+      ],
+      "attributes": [
+        "stacking"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "red_blue",
+        "red_green",
+        "red_yellow",
+        "blue_green",
+        "blue_yellow",
+        "green_yellow",
+        "red_blue_green",
+        "red_blue_yellow",
+        "red_green_yellow",
+        "blue_green_yellow"
+      ]
+    },
+    {
+      "task_name": "BlockStackingSpecifiedOrderTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "complex",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "stacking",
+        "color"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "red_block",
+        "blue_block",
+        "green_block",
+        "yellow_block"
+      ]
+    },
+    {
+      "task_name": "BlocksInBinTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.75,
+      "distance_to_target": 0.5,
+      "difficulty_label": "complex",
+      "axes": [
+        "procedural"
+      ],
+      "attributes": [
+        "sorting"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "yellow_block",
+        "red_block",
+        "green_block",
+        "blue_block"
+      ]
+    },
+    {
+      "task_name": "BowlInBinTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [],
+      "attributes": [],
+      "primary_objects_for_object_pose_variation": [
+        "bowl"
+      ]
+    },
+    {
+      "task_name": "BowlStackingLeftOnRightTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "spatial"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "bowl_1",
+        "bowl_2"
+      ]
+    },
+    {
+      "task_name": "BowlStackingRightOnLeftTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "spatial"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "bowl_1",
+        "bowl_2"
+      ]
+    },
+    {
+      "task_name": "ButterAboveRaisinTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "spatial"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "butter"
+      ]
+    },
+    {
+      "task_name": "CannedFoodInBinTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "canned_tuna"
+      ]
+    },
+    {
+      "task_name": "ClampInRightBinTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "spatial"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "spring_clamp"
+      ]
+    },
+    {
+      "task_name": "CleanUpToysTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "complex",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "sorting",
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube",
+        "rubiks_cube_1",
+        "rubiks_cube_2",
+        "lizard_figurine",
+        "yellow_block",
+        "red_block",
+        "green_block",
+        "blue_block",
+        "lizard_figurine_01"
+      ]
+    },
+    {
+      "task_name": "ClearOrganicObjectsTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "complex",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "lemon_01",
+        "lemon_02",
+        "lime01",
+        "lime01_01",
+        "orange_01",
+        "orange_02",
+        "pomegranate01",
+        "pumpkinlarge",
+        "pumpkinsmall",
+        "red_onion",
+        "avocado01"
+      ]
+    },
+    {
+      "task_name": "ClutterPlasticTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "whitepackerbottle_a01",
+        "milkjug_a01",
+        "utilityjug_a03"
+      ]
+    },
+    {
+      "task_name": "ClutterPumpkinTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "pumpkinlarge",
+        "pumpkinsmall"
+      ]
+    },
+    {
+      "task_name": "CoffeePotInBinTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "coffee_pot"
+      ]
+    },
+    {
+      "task_name": "CondimentsInBinTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.25,
+      "distance_to_target": 0.5,
+      "difficulty_label": "complex",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "sorting"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "mustard",
+        "ranch_dressing",
+        "bbq_sauce_bottle",
+        "bbq_sauce_bottle_01"
+      ]
+    },
+    {
+      "task_name": "CookingClearPlateTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 0.5,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "color",
+        "sorting"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "spoon_1",
+        "measuring_cups_1"
+      ]
+    },
+    {
+      "task_name": "CookingPickPastaToolTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "spatial",
+        "vague",
+        "color"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "pink_spaghetti_spoon"
+      ]
+    },
+    {
+      "task_name": "CubesAndBlocksInBinTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.75,
+      "distance_to_target": 0.5,
+      "difficulty_label": "complex",
+      "axes": [
+        "procedural",
+        "relational"
+      ],
+      "attributes": [
+        "sorting",
+        "conjunction"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube",
+        "rubiks_cube_1",
+        "rubiks_cube_2",
+        "yellow_block",
+        "red_block",
+        "green_block",
+        "blue_block"
+      ]
+    },
+    {
+      "task_name": "DishesInBinTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.3333333432674408,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "vague",
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "mug",
+        "mug_01",
+        "bowl"
+      ]
+    },
+    {
+      "task_name": "ElectronicsInBinTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.25,
+      "distance_to_target": 0.5,
+      "difficulty_label": "complex",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "sorting"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "smartphone",
+        "remote_control",
+        "computer_mouse",
+        "keyboard"
+      ]
+    },
+    {
+      "task_name": "FoodPacking1BoxesTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "cheez_it"
+      ]
+    },
+    {
+      "task_name": "FoodPacking1CansTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "tomato_soup_can"
+      ]
+    },
+    {
+      "task_name": "FoodPacking2BoxesTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "cheez_it",
+        "sugar_box"
+      ]
+    },
+    {
+      "task_name": "FoodPacking2CansTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.5,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "tomato_soup_can",
+        "tuna_can"
+      ]
+    },
+    {
+      "task_name": "FoodPacking3BoxesTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "cheez_it",
+        "chocolate_pudding",
+        "sugar_box"
+      ]
+    },
+    {
+      "task_name": "FoodPacking3CansTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.6666666865348816,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "spam_can",
+        "tomato_soup_can",
+        "tuna_can"
+      ]
+    },
+    {
+      "task_name": "FoodPackingByColorTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural",
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "spatial",
+        "sorting",
+        "color"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "mustard",
+        "coffee_can"
+      ]
+    },
+    {
+      "task_name": "FruitsGreenLimesOnPlateTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.5,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "color"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "lime01",
+        "lime01_01"
+      ]
+    },
+    {
+      "task_name": "FruitsMovingOrangeOrLimeTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "conjunction"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "orange_01",
+        "lime01",
+        "orange_02",
+        "lime01_01"
+      ]
+    },
+    {
+      "task_name": "FruitsMovingTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "color"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "orange_01",
+        "orange_02"
+      ]
+    },
+    {
+      "task_name": "FruitsOnPlate3Task",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "complex",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "vague",
+        "counting"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "lemon_01",
+        "lemon_02",
+        "lime01",
+        "lime01_01",
+        "orange_01",
+        "orange_02",
+        "pomegranate01"
+      ]
+    },
+    {
+      "task_name": "FruitsOnPlateTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.4285714328289032,
+      "distance_to_target": 0.5,
+      "difficulty_label": "complex",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "vague"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "lemon_01",
+        "lemon_02",
+        "lime01",
+        "lime01_01",
+        "orange_01",
+        "orange_02",
+        "pomegranate01"
+      ]
+    },
+    {
+      "task_name": "FruitsOnionTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "redonion"
+      ]
+    },
+    {
+      "task_name": "FruitsOnionToPlateTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "vague"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "redonion"
+      ]
+    },
+    {
+      "task_name": "FruitsOrangesOnPlateTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "counting",
+        "vague",
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "orange_01",
+        "orange_02"
+      ]
+    },
+    {
+      "task_name": "GrabABagelTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "banana",
+        "bagel_07",
+        "coffee_can",
+        "banana_01"
+      ]
+    },
+    {
+      "task_name": "GrabAFruitTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "banana",
+        "bagel_07",
+        "coffee_can",
+        "banana_01"
+      ]
+    },
+    {
+      "task_name": "GreenSpoonsInPotTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.6666666865348816,
+      "distance_to_target": 0.5,
+      "difficulty_label": "complex",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "reorientation",
+        "color"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "ladle",
+        "ladle_01",
+        "green_serving_spoon"
+      ]
+    },
+    {
+      "task_name": "HammersInLeftBinTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "spatial",
+        "color"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "red_hammer",
+        "husky_hammer"
+      ]
+    },
+    {
+      "task_name": "JugsOnShelfTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "utilityjug_a01",
+        "utilityjug_a02"
+      ]
+    },
+    {
+      "task_name": "KeyboardOutOfBinTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "spatial"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "keyboard"
+      ]
+    },
+    {
+      "task_name": "LargerObjectRaisinBoxInBinTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "size"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "raisin_box"
+      ]
+    },
+    {
+      "task_name": "MarkerInMugTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural"
+      ],
+      "attributes": [
+        "affordance"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "marker"
+      ]
+    },
+    {
+      "task_name": "MouseOnKeyboardTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "computer_mouse"
+      ]
+    },
+    {
+      "task_name": "MoveBananaToBagelPlateTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "banana",
+        "banana_01"
+      ]
+    },
+    {
+      "task_name": "MustardAboveRaisinTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "spatial"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "mustard_bottle"
+      ]
+    },
+    {
+      "task_name": "MustardInLeftBinTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "spatial"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "mustard"
+      ]
+    },
+    {
+      "task_name": "MustardInRightBinTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "spatial"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "mustard"
+      ]
+    },
+    {
+      "task_name": "NonHammerToolsInRightBinTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural",
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "spatial",
+        "sorting"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "cordless_drill",
+        "spring_clamp"
+      ]
+    },
+    {
+      "task_name": "OneBottleInSquarePailTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "whitepackerbottle_a01",
+        "whitepackerbottle_a02",
+        "whitepackerbottle_a03"
+      ]
+    },
+    {
+      "task_name": "OneBottleOnShelfTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "whitepackerbottle_a01",
+        "whitepackerbottle_a02",
+        "whitepackerbottle_a03"
+      ]
+    },
+    {
+      "task_name": "PhoneOrRemoteInBinTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "conjunction"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "smartphone",
+        "remote_control"
+      ]
+    },
+    {
+      "task_name": "PickDrillTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "red_mug",
+        "ceramic_mug",
+        "upright_white_mug",
+        "sideways_white_mug"
+      ]
+    },
+    {
+      "task_name": "PickGlassesTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "ceramic_mug",
+        "glasses",
+        "keyboard",
+        "lizard_figurine"
+      ]
+    },
+    {
+      "task_name": "PickOrangeObjectTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.5,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "color"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "redonion",
+        "serving_bowl",
+        "clay_plates",
+        "wooden_spoons"
+      ]
+    },
+    {
+      "task_name": "PickUpBluePitcherTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "color",
+        "affordance"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "plasticjerrican_a02",
+        "plasticpail_a02",
+        "pitcher"
+      ]
+    },
+    {
+      "task_name": "PickUpGreenObjectTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.5,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "color"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "frozen_vegetable_block",
+        "blackandbrassbowl_large",
+        "screwtoppail_a01",
+        "utilityjug_a02"
+      ]
+    },
+    {
+      "task_name": "PinkSpoonInPotTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "color",
+        "affordance"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "pink_spaghetti_spoon"
+      ]
+    },
+    {
+      "task_name": "PlasticBottlesInSquarePailTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "complex",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "sorting",
+        "size"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "whitepackerbottle_a01",
+        "whitepackerbottle_a02",
+        "whitepackerbottle_a03"
+      ]
+    },
+    {
+      "task_name": "PutBowlOnShelfTopTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "spatial"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "serving_bowl"
+      ]
+    },
+    {
+      "task_name": "PutMugsOnShelfTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural",
+        "relational"
+      ],
+      "attributes": [
+        "affordance",
+        "spatial",
+        "counting"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "ceramic_mug",
+        "mug"
+      ]
+    },
+    {
+      "task_name": "PutTwoMugsOnShelfTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural",
+        "relational"
+      ],
+      "attributes": [
+        "affordance",
+        "spatial",
+        "counting"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "ceramic_mug",
+        "mug",
+        "mug_01"
+      ]
+    },
+    {
+      "task_name": "RecycleCartonTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.5,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "vague"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "milk_carton",
+        "orange_juice_carton"
+      ]
+    },
+    {
+      "task_name": "RecycleCartonsOnBoxTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "milk_carton",
+        "orange_juice_carton"
+      ]
+    },
+    {
+      "task_name": "RecycleCartonsVerticalCrateTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.5,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "spatial"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "milk_carton",
+        "orange_juice_carton"
+      ]
+    },
+    {
+      "task_name": "RedDishesInBinTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.5,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "color",
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "mug",
+        "bowl"
+      ]
+    },
+    {
+      "task_name": "RedItemsInBinTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.5,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "color",
+        "sorting"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "mug",
+        "bowl"
+      ]
+    },
+    {
+      "task_name": "ReorientAllMugsTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.3333333432674408,
+      "distance_to_target": 0.5,
+      "difficulty_label": "complex",
+      "axes": [
+        "procedural"
+      ],
+      "attributes": [
+        "reorientation"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "reorienting_red_mug",
+        "reorienting_ceramic_mug",
+        "reorienting_sideways_white_mug"
+      ]
+    },
+    {
+      "task_name": "ReorientJugTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "reorientation",
+        "affordance"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "reorienting_jug"
+      ]
+    },
+    {
+      "task_name": "ReorientRedMugTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "reorientation",
+        "color"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "reorienting_red_mug"
+      ]
+    },
+    {
+      "task_name": "ReorientWhiteMugsTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "reorientation",
+        "color"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "reorienting_sideways_white_mug"
+      ]
+    },
+    {
+      "task_name": "RubiksCubeAndBananaTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "conjunction"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube",
+        "banana"
+      ]
+    },
+    {
+      "task_name": "RubiksCubeBehindBowlTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "spatial"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube",
+        "banana"
+      ]
+    },
+    {
+      "task_name": "RubiksCubeInFrontOfBowlTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.3333333432674408,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "spatial"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube",
+        "banana"
+      ]
+    },
+    {
+      "task_name": "RubiksCubeLeftOfBowlTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.6666666865348816,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "spatial"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube",
+        "banana"
+      ]
+    },
+    {
+      "task_name": "RubiksCubeOrBananaTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "conjunction"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube",
+        "banana"
+      ]
+    },
+    {
+      "task_name": "RubiksCubeRightOfBowlTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.6666666865348816,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "spatial"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube",
+        "banana",
+        "mug"
+      ]
+    },
+    {
+      "task_name": "RubiksCubeTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [],
+      "attributes": [],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube"
+      ]
+    },
+    {
+      "task_name": "RubiksCubeThenBananaTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "relational"
+      ],
+      "attributes": [
+        "conjunction"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube",
+        "banana"
+      ]
+    },
+    {
+      "task_name": "RubiksCubesInBinTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "complex",
+      "axes": [
+        "procedural"
+      ],
+      "attributes": [
+        "sorting"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube",
+        "rubiks_cube_1",
+        "rubiks_cube_2"
+      ]
+    },
+    {
+      "task_name": "SauceBottlesCrateTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "color",
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "bbq_sauce_bottle"
+      ]
+    },
+    {
+      "task_name": "SmallPumpkinInBinTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "size"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "pumpkinsmall"
+      ]
+    },
+    {
+      "task_name": "SmallerObjectButterInBinTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "size"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "butter"
+      ]
+    },
+    {
+      "task_name": "SmartphoneInBinTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "smartphone"
+      ]
+    },
+    {
+      "task_name": "SpoonInMugTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural",
+        "relational"
+      ],
+      "attributes": [
+        "affordance",
+        "spatial"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "spoon_big"
+      ]
+    },
+    {
+      "task_name": "SpoonsInPotTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.3333333432674408,
+      "distance_to_target": 0.5,
+      "difficulty_label": "complex",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "reorientation",
+        "semantics",
+        "affordance"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "ladle",
+        "ladle_01",
+        "red_serving_spoon"
+      ]
+    },
+    {
+      "task_name": "Stack3RubiksCubeTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.5,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural"
+      ],
+      "attributes": [
+        "stacking"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube",
+        "rubiks_cube_1",
+        "rubiks_cube_2"
+      ]
+    },
+    {
+      "task_name": "StackWhiteMugsTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.5,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "stacking",
+        "color"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "red_mug",
+        "ceramic_mug",
+        "upright_white_mug",
+        "sideways_white_mug"
+      ]
+    },
+    {
+      "task_name": "StackYellowOnRedTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural"
+      ],
+      "attributes": [
+        "stacking"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube",
+        "rubiks_cube_1",
+        "rubiks_cube_2",
+        "lizard_figurine"
+      ]
+    },
+    {
+      "task_name": "TakeMeasuringSpoonOutTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "taking_measuring_cup_out"
+      ]
+    },
+    {
+      "task_name": "TakeMugsOffOfShelfTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "affordance"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "ceramic_mug",
+        "mug"
+      ]
+    },
+    {
+      "task_name": "TakeSpatulaOffShelfTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural",
+        "relational"
+      ],
+      "attributes": [
+        "affordance",
+        "spatial"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "spatula_01"
+      ]
+    },
+    {
+      "task_name": "ThrowAwayAppleTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "apple_01"
+      ]
+    },
+    {
+      "task_name": "ThrowAwaySnacksTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "apple_01",
+        "yogurt_cup"
+      ]
+    },
+    {
+      "task_name": "ToolOrganizationBothTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "spatial"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "red_hammer",
+        "husky_hammer"
+      ]
+    },
+    {
+      "task_name": "ToolOrganizationTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "spatial",
+        "color"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "red_hammer",
+        "husky_hammer"
+      ]
+    },
+    {
+      "task_name": "ToolsPickingAllHammersTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "complex",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "spatial"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "husky_hammer",
+        "blue_hammer",
+        "red_hammer",
+        "wood_hammer"
+      ]
+    },
+    {
+      "task_name": "ToolsPickingDrillTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "spatial",
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "cordless_drill"
+      ]
+    },
+    {
+      "task_name": "ToolsPickingHammerTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "spatial",
+        "color"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "blue_hammer"
+      ]
+    },
+    {
+      "task_name": "ToyInBinTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "lizard_figurine"
+      ]
+    },
+    {
+      "task_name": "UnstackRubiksCubeTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.5,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural"
+      ],
+      "attributes": [
+        "stacking"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube_middle",
+        "rubiks_cube_top"
+      ]
+    },
+    {
+      "task_name": "UtensilsInMugTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "affordance"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "fork_big",
+        "spoon_big"
+      ]
+    },
+    {
+      "task_name": "WhiteMugInCenterOfTableTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "color",
+        "spatial"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "mug",
+        "alphabet_soup_can",
+        "orange_juice_carton",
+        "smartphone"
+      ]
+    },
+    {
+      "task_name": "WhiteMugsInBinTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "color"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "mug",
+        "mug_01"
+      ]
+    },
+    {
+      "task_name": "WoodSpatulaToBowlTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "wooden_spoons"
+      ]
+    },
+    {
+      "task_name": "YellowAndWhiteObjectsInBinTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "color",
+        "conjunction"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "mug",
+        "banana"
+      ]
+    },
+    {
+      "task_name": "YogurtInBowlTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "color",
+        "size"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "yogurt_cup"
+      ]
+    }
+  ],
+  "note": "If no task has 0<success_rate<1, this selects the closest task to target_rate as a fallback."
+}

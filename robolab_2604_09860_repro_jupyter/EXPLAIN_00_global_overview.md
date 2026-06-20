@@ -1,5 +1,13 @@
 # 精讲 0：RoboLab 全局总览，先把整件事讲透
 
+<!-- FINAL-20260621-UPDATE:BEGIN -->
+
+> [!TIP]
+> **2026-06-21 复现实证更新**：本学习包已经从“环境/单任务/小矩阵验证”推进到 Pi05 full RoboLab-120 完整闭环：120/120 任务 artifact verified，Pi05 成功率 `34/120 = 28.3%`。因此阅读精讲时，证据优先级应改为 `FINAL_ROBOLAB120_RESULTS_20260621.md` -> `CURRENT_ROBOLAB120_STATUS.md` -> 早期 smoke/抽样记录。
+
+<!-- FINAL-20260621-UPDATE:END -->
+
+
 > [!NOTE]
 > **颜色标识**：绿色表示核心结论，蓝色表示源码/输入输出路径，橙色表示边界、风险和容易误解的点。
 

@@ -1,5 +1,13 @@
 # RoboLab 复杂任务复现实测记录 - OpenPI pi05 / RTX 4090
 
+<!-- FINAL-20260621-UPDATE:BEGIN -->
+
+> [!TIP]
+> **2026-06-21 更新**：这份文档是 full-120 之前的复杂任务抽样。最终 120 任务聚合结果已经生成：Pi05 `34/120 = 28.3%`；复杂难度任务为 `3/17 = 17.6%`，以 `CURRENT_ROBOLAB120_STATUS.md` 为准。
+
+<!-- FINAL-20260621-UPDATE:END -->
+
+
 时间：2026-06-20  
 远端机器：`y12` / RTX 4090 24GB  
 RoboLab 路径：`/home/yjl/codex_robolab_4090_20260619/RoboLab`  

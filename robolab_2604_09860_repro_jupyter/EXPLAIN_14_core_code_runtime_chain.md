@@ -1,5 +1,13 @@
 # 精讲 14：还没讲透的核心代码 - policy rollout 到证据链
 
+<!-- FINAL-20260621-UPDATE:BEGIN -->
+
+> [!TIP]
+> **2026-06-21 复现实证更新**：`runner -> episode -> policy client -> recorder -> summarize -> analysis/read_results.py` 这条链已经在 Pi05 full-120 上跑通，并发现/修复了本地 `analysis/check_results.py` 的 `hdf5_path` 未定义问题。
+
+<!-- FINAL-20260621-UPDATE:END -->
+
+
 > **【绿色标识｜核心结论】** 前面讲了很多“任务怎么生成、成功怎么定义、论文怎么评测”。但真正复现时最常出问题的是另一条链路：`runner.py` 选任务和创建输出目录，`episode.py` 每一步调用 policy，再 `env.step`，`InferenceClient` 把观测转成模型请求，`WorldState/conditionals/EventTracker` 判断发生了什么，`RecorderManager/summarize/results/dashboard` 把过程写成 HDF5、JSON、视频和表格。
 >
 > **【蓝色标识｜源码路径】** 这节基于远端 4090 源码快照 `7d45d74904eade3b578a8eb1f2f9f89bc3d40326`：`robolab/eval/runner.py`、`robolab/eval/episode.py`、`robolab/eval/base_client.py`、`policies/pi0_family/client.py`、`robolab/eval/summarize.py`、`robolab/core/world/world_state.py`、`robolab/core/task/event_tracker.py`、`robolab/core/logging/recorder_manager.py`、`robolab/core/logging/results.py`、`dashboard/loaders/local.py`。
@@ -470,4 +478,3 @@ dashboard:     离线读取证据并展示统计
 ```
 
 这条链路比单个模型调用更重要。因为复现失败时，问题可能在模型、观测、动作、仿真、谓词、记录、汇总、展示任意一层。
-
