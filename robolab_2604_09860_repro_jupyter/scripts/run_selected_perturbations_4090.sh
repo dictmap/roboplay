@@ -9,6 +9,7 @@ PACK_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
 
 ROBO_ROOT="${ROBO_ROOT:-/home/yjl/codex_robolab_4090_20260619/RoboLab}"
 UV_BIN="${UV_BIN:-/home/yjl/.local/bin/uv}"
+PYTHON_BIN="${PYTHON_BIN:-python3}"
 POLICY="${POLICY:-pi05}"
 REMOTE_HOST="${REMOTE_HOST:-localhost}"
 REMOTE_PORT="${REMOTE_PORT:-8000}"
@@ -39,17 +40,17 @@ fi
 mkdir -p "${REPORT_DIR}"
 cd "${PACK_ROOT}"
 if [[ ! -f "${MATRIX_PATH}" ]]; then
-  python scripts/generate_axis5_task_matrix.py --out "${MATRIX_PATH}"
+  "${PYTHON_BIN}" scripts/generate_axis5_task_matrix.py --out "${MATRIX_PATH}"
 fi
 
 if [[ -z "${SELECTED_TASK:-}" ]]; then
   if [[ ! -f "${SELECTED_JSON}" ]]; then
-    python scripts/select_medium_success_task.py \
+    "${PYTHON_BIN}" scripts/select_medium_success_task.py \
       --output-root "${ROBO_ROOT}/output/${BASE_OUTPUT_FOLDER}" \
       --matrix "${MATRIX_PATH}" \
       --out "${SELECTED_JSON}"
   fi
-  SELECTED_TASK="$(python - "${SELECTED_JSON}" <<'PY'
+  SELECTED_TASK="$("${PYTHON_BIN}" - "${SELECTED_JSON}" <<'PY'
 import json, sys
 data=json.load(open(sys.argv[1], encoding="utf-8"))
 print(data["selected"]["task_name"])
@@ -57,7 +58,7 @@ PY
 )"
 fi
 
-OBJECT_NAMES="${OBJECT_NAMES:-$(python - "${MATRIX_PATH}" "${SELECTED_TASK}" <<'PY'
+OBJECT_NAMES="${OBJECT_NAMES:-$("${PYTHON_BIN}" - "${MATRIX_PATH}" "${SELECTED_TASK}" <<'PY'
 import json, sys
 matrix=json.load(open(sys.argv[1], encoding="utf-8"))
 task=sys.argv[2]
@@ -126,7 +127,7 @@ fi
 
 if [[ "${RUN_OBJECT_POSITION}" == "1" ]]; then
   echo "[perturb] Installing object position variation runner..."
-  python "${PACK_ROOT}/scripts/create_object_position_variation_runner.py" --robolab-root "${ROBO_ROOT}" --force
+  "${PYTHON_BIN}" "${PACK_ROOT}/scripts/create_object_position_variation_runner.py" --robolab-root "${ROBO_ROOT}" --force
   read -r -a OBJECT_ARRAY <<< "${OBJECT_NAMES}"
   echo "[perturb] Running object position variation..."
   "${UV_BIN}" run python policies/pi0_family/run_object_position_variation.py \
@@ -153,7 +154,7 @@ for path in "${ROBO_ROOT}/output/${OUTPUT_PREFIX}"_*; do
 done
 
 if [[ ${#ROOTS[@]} -gt 0 ]]; then
-  python "${PACK_ROOT}/scripts/summarize_ablation_outputs.py" \
+  "${PYTHON_BIN}" "${PACK_ROOT}/scripts/summarize_ablation_outputs.py" \
     --roots "${ROOTS[@]}" \
     --out-json "${REPORT_DIR}/${OUTPUT_PREFIX}_summary.json" \
     --out-csv "${REPORT_DIR}/${OUTPUT_PREFIX}_summary.csv"

@@ -1,0 +1,32 @@
+{
+  "episode_files": [
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_perturb_medium_fixed_20260620_105014_object_position/episode_results.jsonl"
+  ],
+  "num_episode_rows": 1,
+  "groups": [
+    {
+      "task_name": "TakeMeasuringSpoonOutTask",
+      "env_name": "TakeMeasuringSpoonOutTask_ObjectPosition",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 537.0,
+      "duration_mean": 35.8,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {
+        "WRONG_OBJECT_GRABBED": 7,
+        "GRIPPER_FULLY_CLOSED": 4,
+        "GRIPPER_HIT_OBJECT": 2,
+        "MULTIPLE_OBJECTS_GRABBED": 1,
+        "OBJECT_BUMPED": 2
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_perturb_medium_fixed_20260620_105014_object_position/episode_results.jsonl"
+      ]
+    }
+  ]
+}

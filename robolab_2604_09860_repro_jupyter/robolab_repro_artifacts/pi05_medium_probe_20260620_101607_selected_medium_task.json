@@ -1,0 +1,60 @@
+{
+  "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_medium_probe_20260620_101607_merged",
+  "target_rate": 0.5,
+  "selected": {
+    "task_name": "TakeMeasuringSpoonOutTask",
+    "episodes": 3,
+    "success_rate": 0.3333333333333333,
+    "score_mean": 0.3333333333333333,
+    "distance_to_target": 0.16666666666666669,
+    "difficulty_label": "simple",
+    "axes": [
+      "visual"
+    ],
+    "attributes": [
+      "semantics"
+    ],
+    "primary_objects_for_object_pose_variation": [
+      "measuring_cup"
+    ]
+  },
+  "candidates": [
+    {
+      "task_name": "TakeMeasuringSpoonOutTask",
+      "episodes": 3,
+      "success_rate": 0.3333333333333333,
+      "score_mean": 0.3333333333333333,
+      "distance_to_target": 0.16666666666666669,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "measuring_cup"
+      ]
+    },
+    {
+      "task_name": "RedDishesInBinTask",
+      "episodes": 3,
+      "success_rate": 0.0,
+      "score_mean": 0.3333333333333333,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "color",
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "mug",
+        "bowl"
+      ]
+    }
+  ],
+  "note": "If no task has 0<success_rate<1, this selects the closest task to target_rate as a fallback."
+}

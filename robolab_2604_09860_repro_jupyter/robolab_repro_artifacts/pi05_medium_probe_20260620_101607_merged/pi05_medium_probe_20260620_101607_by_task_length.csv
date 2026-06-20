@@ -1,0 +1,3 @@
+# Subtasks,Success,Success %,LCB %,UCB %,Total,Score(total),Score(fail),Time(s),Time σ,EE SPARC,SPARC σ,PathLen(m),Path σ,Speed(cm/s),Speed σ
+1,1,33.3,6.8,80.6,3,0.333,0.000,12.40,-,-6.33,2.51,1.42,0.48,4.9,1.9
+2,0,0.0,0.6,60.2,3,0.333,0.333,-,-,-7.18,0.92,3.48,0.20,5.5,0.3

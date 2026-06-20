@@ -1,0 +1,72 @@
+{
+  "created_from": "robolab_2604_09860_repro_jupyter\\robolab_repro_artifacts\\pi05_axis5_asset_ready_task_matrix_20260620.json",
+  "purpose": "3-repeat probe for medium-success task selection before perturbation",
+  "tasks": [
+    {
+      "index": 102,
+      "task_name": "TakeMeasuringSpoonOutTask",
+      "instruction": "Take the white colored measuring spoon out of the red bowl and put it on the table.",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 1,
+      "num_subtasks": 1,
+      "num_atomic_conditions": 2,
+      "episode_s": "40",
+      "scene": "mugs4_measuringcup_drill_bowl_v2.usda",
+      "filename": "benchmark/take_measuring_spoon_out.py",
+      "contact_objects": [
+        "red_mug",
+        "bowl",
+        "ceramic_mug",
+        "upright_white_mug",
+        "sideways_white_mug",
+        "cordless_drill",
+        "measuring_cup",
+        "table"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "measuring_cup"
+      ],
+      "selection_axis": "visual",
+      "selection_reason": "asset_preflight_passed_and_axis_candidate"
+    },
+    {
+      "index": 78,
+      "task_name": "RedDishesInBinTask",
+      "instruction": "Put the red dishware in the grey bin",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "color",
+        "semantics"
+      ],
+      "difficulty_label": "simple",
+      "difficulty_score": 2,
+      "num_subtasks": 2,
+      "num_atomic_conditions": 4,
+      "episode_s": "60",
+      "scene": "rubiks_cube_banana_bowl_mug_bin.usda",
+      "filename": "benchmark/red_dishes_in_bin.py",
+      "contact_objects": [
+        "mug",
+        "bowl",
+        "grey_bin",
+        "table",
+        "banana",
+        "rubiks_cube"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "mug",
+        "bowl"
+      ],
+      "selection_axis": "visual",
+      "selection_reason": "asset_preflight_passed_and_axis_candidate"
+    }
+  ]
+}

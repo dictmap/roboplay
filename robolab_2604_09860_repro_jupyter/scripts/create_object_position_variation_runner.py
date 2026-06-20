@@ -64,7 +64,6 @@ import traceback
 
 import cv2  # noqa: F401 -- must import this before isaaclab.
 from isaaclab.app import AppLauncher
-from isaaclab.managers import EventTermCfg as EventTerm
 from robolab.constants import DEFAULT_TASK_SUBFOLDERS, PACKAGE_DIR, get_timestamp, set_output_dir
 
 parser = argparse.ArgumentParser(description="Run Pi0-family evaluation with named object position perturbations.")
@@ -94,6 +93,7 @@ app_launcher = AppLauncher(args_cli)
 simulation_app = app_launcher.app
 
 import robolab.constants  # noqa: E402
+from isaaclab.managers import EventTermCfg as EventTerm  # noqa: E402
 from robolab.core.environments.factory import get_envs  # noqa: E402
 from robolab.core.environments.runtime import create_env  # noqa: E402
 from robolab.core.logging.results import check_all_episodes_complete, check_run_complete  # noqa: E402

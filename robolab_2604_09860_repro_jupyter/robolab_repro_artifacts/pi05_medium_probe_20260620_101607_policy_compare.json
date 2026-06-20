@@ -1,0 +1,56 @@
+{
+  "matrix": "/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/robolab_repro_artifacts/pi05_medium_probe_tasks_20260620.json",
+  "roots": [
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_medium_probe_20260620_101607_TakeMeasuringSpoonOutTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_medium_probe_20260620_101607_RedDishesInBinTask"
+  ],
+  "num_episode_rows": 6,
+  "aggregates": {
+    "by_task": [
+      {
+        "policy": "pi05",
+        "task_name": "RedDishesInBinTask",
+        "episodes": 3,
+        "scored_episodes": 3,
+        "pending_episodes": 0,
+        "success_rate": 0.0,
+        "score_mean": 0.3333333333333333,
+        "episode_step_mean": 900.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "TakeMeasuringSpoonOutTask",
+        "episodes": 3,
+        "scored_episodes": 3,
+        "pending_episodes": 0,
+        "success_rate": 0.3333333333333333,
+        "score_mean": 0.3333333333333333,
+        "episode_step_mean": 462.0
+      }
+    ],
+    "by_axis": [
+      {
+        "policy": "pi05",
+        "axis": "visual",
+        "episodes": 6,
+        "scored_episodes": 6,
+        "pending_episodes": 0,
+        "success_rate": 0.16666666666666666,
+        "score_mean": 0.3333333333333333,
+        "episode_step_mean": 681.0
+      }
+    ],
+    "by_difficulty": [
+      {
+        "policy": "pi05",
+        "difficulty_label": "simple",
+        "episodes": 6,
+        "scored_episodes": 6,
+        "pending_episodes": 0,
+        "success_rate": 0.16666666666666666,
+        "score_mean": 0.3333333333333333,
+        "episode_step_mean": 681.0
+      }
+    ]
+  }
+}

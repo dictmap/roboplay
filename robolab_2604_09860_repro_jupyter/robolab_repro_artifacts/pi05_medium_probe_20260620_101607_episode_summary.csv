@@ -1,0 +1,3 @@
+task_name,env_name,policy,variant,episodes,successes,success_rate,score_mean,episode_step_mean,duration_mean,policy_inference_avg_ms_mean,env_step_avg_ms_mean
+RedDishesInBinTask,RedDishesInBinTask,pi05,unlabeled,3,0,0.0,0.3333333333333333,900.0,60.0,11.9,207.06666666666666
+TakeMeasuringSpoonOutTask,TakeMeasuringSpoonOutTask,pi05,unlabeled,3,1,0.3333333333333333,0.3333333333333333,462.0,30.8,11.966666666666667,225.43333333333334

@@ -1,0 +1,56 @@
+{
+  "episode_files": [
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_perturb_medium_20260620_104243_background_seed0/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_perturb_medium_20260620_104243_object_position/episode_results.jsonl"
+  ],
+  "num_episode_rows": 2,
+  "groups": [
+    {
+      "task_name": "TakeMeasuringSpoonOutTask",
+      "env_name": "TakeMeasuringSpoonOutTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 600.0,
+      "duration_mean": 40.0,
+      "policy_inference_avg_ms_mean": 11.9,
+      "env_step_avg_ms_mean": 217.3,
+      "events": {
+        "GRIPPER_FULLY_CLOSED": 4,
+        "WRONG_OBJECT_GRABBED": 1,
+        "GRIPPER_HIT_OBJECT": 2,
+        "OBJECT_BUMPED": 1,
+        "MULTIPLE_OBJECTS_GRABBED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_perturb_medium_20260620_104243_background_seed0/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "TakeMeasuringSpoonOutTask",
+      "env_name": "TakeMeasuringSpoonOutTask_ObjectPosition",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 253.0,
+      "duration_mean": 16.866666666666667,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {
+        "WRONG_OBJECT_GRABBED": 2,
+        "GRIPPER_HIT_OBJECT": 2,
+        "GRIPPER_FULLY_CLOSED": 1,
+        "OBJECT_BUMPED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_perturb_medium_20260620_104243_object_position/episode_results.jsonl"
+      ]
+    }
+  ]
+}

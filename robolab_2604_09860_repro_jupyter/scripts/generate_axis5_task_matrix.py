@@ -72,18 +72,21 @@ def axes_for_attributes(attrs: list[str]) -> list[str]:
 
 
 def parse_primary_objects(subtasks: str | None, contact_objects: str | None) -> list[str]:
+    contact_names = [
+        item.strip() for item in (contact_objects or "").split(",") if item.strip()
+    ]
+    contact_set = set(contact_names)
     objects: list[str] = []
     for group in re.findall(r"groups=\[([^\]]+)\]", subtasks or ""):
         for item in re.findall(r"'([^']+)'", group):
-            if item != "conditions" and item not in objects:
+            if item != "conditions" and item in contact_set and item not in objects:
                 objects.append(item)
-    if objects and not any(item.startswith("group") or "_and_" in item for item in objects):
+    if objects:
         return objects
 
     objects = []
     fallback_skip = {"table", "grey_bin", "left_bin", "right_bin", "bin", "crate", "bowl"}
-    for item in (contact_objects or "").split(","):
-        name = item.strip()
+    for name in contact_names:
         if name and name not in fallback_skip and name not in objects:
             objects.append(name)
     return objects[:3]

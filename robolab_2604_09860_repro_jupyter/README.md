@@ -33,11 +33,13 @@
 - `EXPERIMENT_20_robolab120_robochallenge_rekep_compare.md`：RoboLab-120 全量复现实验入口，固定 Pi05 逐任务跑 full-120，生成同一任务矩阵下的 direct OpenPI 对照，并把 RoboChallenge/ReKep 明确标为 adapter-pending 而不是误算成 0 分。
 - `EXPERIMENT_21_robolab120_smoke5_result.md`：Pi05 在 4090 上跑 RoboLab-120 前 5 个任务的真实 smoke 结果；5 个任务均被调起，只有 `BananaInBowlTask` 完整产出 episode/HDF5/video/event log 并成功，另外 4 个任务诊断为资产/contact sensor 层失败，不能计入策略成功率。
 - `EXPERIMENT_22_pi05_axis5_assetready_result.md`：Pi05 在 4090 上跑完 15 个 asset-ready 能力轴任务；15/15 产出完整可计分 episode，整体 success rate 为 9/15，按能力轴、难度和任务事件做了汇总，并明确 full-120 仍需先补齐资产。
+- `EXPERIMENT_23_medium_probe_and_perturb_result.md`：Pi05 在 4090 上对中等成功率任务做 3 次 probe，并完成背景扰动与物体位置扰动 episode；lighting runner 当前只有 summary groups=0，已明确标为未形成有效策略评测。
 - `robolab_repro_artifacts/camera_robot_ablation_config_tests.json`：基于真实 Pi05 `env_cfg.json` 的配置级测试结果；验证 baseline 相机/机器人合约、硬删腕部相机的 schema 风险、只换机器人 USD 的无效性。
 - `robolab_repro_artifacts/pi05_axis5_task_matrix.json`：Pi05 第一批 16 任务矩阵，覆盖 visual/procedural/relational 三个能力轴，每轴不少于 5 个任务。
 - `robolab_repro_artifacts/robolab120_task_matrix.json`：官方 `task_metadata.json` 解析得到的 120 任务矩阵，保留能力轴、难度、子任务数、episode 时长和扰动候选对象。
 - `robolab_repro_artifacts/robolab120_asset_preflight_20260620_091852.json`：RoboLab-120 静态资产 preflight 结果，用于区分资产缺失和策略失败。
 - `robolab_repro_artifacts/pi05_axis5_asset_ready_task_matrix_20260620.json`：从 asset-ready 任务中选择的 15 任务能力轴矩阵，每个能力轴至少 5 个任务。
+- `robolab_repro_artifacts/pi05_medium_probe_and_perturb_manifest_20260620.json`：实验 23 的机器可读 manifest，记录中等任务 probe、background/object-position/lighting 扰动结果和远端视频/HDF5 路径。
 - `robolab_repro_artifacts/adapter_baseline_plan.json`：RoboChallenge pi 与 ReKep 接入 RoboLab 前必须满足的 observation/action/planner adapter 合约。
 - `robolab_repro_artifacts/policy_baseline_model_matrix.json`：多模型 baseline/readiness 矩阵，列出 Pi0-family、PaliGemma、GR00T、Cosmos、Qwen/阿里、RoboChallenge pi 和 ReKep 的接入状态。
 - `scripts/run_pi05_axis5_4090.sh`：4090 端固定 Pi05 的 16 任务主评测入口，自动保存视频/HDF5/日志并调用 `analysis/read_results.py` 出表。
