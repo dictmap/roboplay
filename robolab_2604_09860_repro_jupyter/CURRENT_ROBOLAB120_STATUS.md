@@ -7,16 +7,16 @@
 
 | Item | Value |
 |---|---|
-| Updated at | `2026-06-20T23:41:44+08:00` |
+| Updated at | `2026-06-21T01:23:14+08:00` |
 | Host | `y12` |
 | Policy | `Pi05 / OpenPI pi05_droid_jointpos` |
 | Run prefix | `robolab120_pi05_full_assetsfixed_20260620_170411` |
 | State | `running` |
-| Manifest progress | `48/120` |
-| Rows with run+verify returncode 0 | `48/48` |
+| Manifest progress | `67/120` |
+| Rows with run+verify returncode 0 | `67/67` |
 | Failed/error rows so far | `0` |
-| Latest log line | ` 36%|███▌      | 162/450 [01:13<02:12,  2.17it/s]` |
-| GPU used/total/util | `19235, 24564, 57` |
+| Latest log line | `  6%|▋         | 57/900 [00:20<04:49,  2.91it/s]` |
+| GPU used/total/util | `18879, 24564, 33` |
 
 ## Completed Preflight
 
@@ -28,14 +28,14 @@
 
 | Task | run_returncode | verify_returncode | output_root |
 |---|---:|---:|---|
-| `FruitsGreenLimesOnPlateTask` | `0` | `0` | `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsGreenLimesOnPlateTask` |
-| `FruitsMovingOrangeOrLimeTask` | `0` | `0` | `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsMovingOrangeOrLimeTask` |
-| `FruitsMovingTask` | `0` | `0` | `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsMovingTask` |
-| `FruitsOnionTask` | `0` | `0` | `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsOnionTask` |
-| `FruitsOnionToPlateTask` | `0` | `0` | `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsOnionToPlateTask` |
-| `FruitsOnPlate3Task` | `0` | `0` | `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsOnPlate3Task` |
-| `FruitsOnPlateTask` | `0` | `0` | `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsOnPlateTask` |
-| `FruitsOrangesOnPlateTask` | `0` | `0` | `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_FruitsOrangesOnPlateTask` |
+| `MustardInLeftBinTask` | `0` | `0` | `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_MustardInLeftBinTask` |
+| `MustardInRightBinTask` | `0` | `0` | `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_MustardInRightBinTask` |
+| `NonHammerToolsInRightBinTask` | `0` | `0` | `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_NonHammerToolsInRightBinTask` |
+| `OneBottleInSquarePailTask` | `0` | `0` | `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_OneBottleInSquarePailTask` |
+| `OneBottleOnShelfTask` | `0` | `0` | `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_OneBottleOnShelfTask` |
+| `PhoneOrRemoteInBinTask` | `0` | `0` | `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PhoneOrRemoteInBinTask` |
+| `PickDrillTask` | `0` | `0` | `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PickDrillTask` |
+| `PickGlassesTask` | `0` | `0` | `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PickGlassesTask` |
 
 ## Current Errors
 
