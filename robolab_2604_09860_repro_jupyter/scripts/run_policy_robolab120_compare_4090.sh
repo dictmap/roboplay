@@ -9,6 +9,7 @@ PACK_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
 
 ROBO_ROOT="${ROBO_ROOT:-/home/yjl/codex_robolab_4090_20260619/RoboLab}"
 UV_BIN="${UV_BIN:-/home/yjl/.local/bin/uv}"
+PYTHON_BIN="${PYTHON_BIN:-python3}"
 REMOTE_HOST="${REMOTE_HOST:-localhost}"
 REMOTE_PORT="${REMOTE_PORT:-8000}"
 NUM_ENVS="${NUM_ENVS:-1}"
@@ -32,11 +33,11 @@ fi
 
 cd "${PACK_ROOT}"
 mkdir -p "${REPORT_DIR}"
-python scripts/generate_robolab120_task_matrix.py --out "${MATRIX_PATH}"
-python scripts/generate_adapter_baseline_plan.py \
+"${PYTHON_BIN}" scripts/generate_robolab120_task_matrix.py --out "${MATRIX_PATH}"
+"${PYTHON_BIN}" scripts/generate_adapter_baseline_plan.py \
   --out "${REPORT_DIR}/adapter_baseline_plan.json"
-python scripts/create_robochallenge_robolab_adapter_stub.py
-python scripts/create_rekep_robolab_adapter_stub.py
+"${PYTHON_BIN}" scripts/create_robochallenge_robolab_adapter_stub.py
+"${PYTHON_BIN}" scripts/create_rekep_robolab_adapter_stub.py
 
 OUTPUT_ROOTS=()
 for policy in ${DIRECT_POLICIES}; do
@@ -51,6 +52,7 @@ for policy in ${DIRECT_POLICIES}; do
   REMOTE_PORT="${REMOTE_PORT}" \
   NUM_ENVS="${NUM_ENVS}" \
   NUM_RUNS="${NUM_RUNS}" \
+  PYTHON_BIN="${PYTHON_BIN}" \
   DEVICE="${DEVICE}" \
   VIDEO_MODE="${VIDEO_MODE}" \
   TASK_LIMIT="${TASK_LIMIT}" \
@@ -62,13 +64,13 @@ done
 if [[ "${INCLUDE_ADAPTER_PENDING}" == "1" ]]; then
   robochallenge_root="${REPORT_DIR}/robolab120_robochallenge_pi_adapter_pending_${STAMP}"
   rekep_root="${REPORT_DIR}/robolab120_rekep_adapter_pending_${STAMP}"
-  python scripts/write_adapter_pending_results.py \
+  "${PYTHON_BIN}" scripts/write_adapter_pending_results.py \
     --matrix "${MATRIX_PATH}" \
     --out-root "${robochallenge_root}" \
     --policy "robochallenge_pi" \
     --status "adapter_required" \
     --reason "RoboChallenge checkpoint exists as a local candidate, but RoboLab observation/action adapter has not been implemented."
-  python scripts/write_adapter_pending_results.py \
+  "${PYTHON_BIN}" scripts/write_adapter_pending_results.py \
     --matrix "${MATRIX_PATH}" \
     --out-root "${rekep_root}" \
     --policy "rekep" \
@@ -77,7 +79,7 @@ if [[ "${INCLUDE_ADAPTER_PENDING}" == "1" ]]; then
   OUTPUT_ROOTS+=("${robochallenge_root}" "${rekep_root}")
 fi
 
-python scripts/compare_policy_matrix_results.py \
+"${PYTHON_BIN}" scripts/compare_policy_matrix_results.py \
   --matrix "${MATRIX_PATH}" \
   --roots "${OUTPUT_ROOTS[@]}" \
   --out-json "${REPORT_DIR}/robolab120_policy_compare_${STAMP}.json" \

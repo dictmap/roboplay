@@ -12,6 +12,7 @@ PACK_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
 
 ROBO_ROOT="${ROBO_ROOT:-/home/yjl/codex_robolab_4090_20260619/RoboLab}"
 UV_BIN="${UV_BIN:-/home/yjl/.local/bin/uv}"
+PYTHON_BIN="${PYTHON_BIN:-python3}"
 POLICY="${POLICY:-pi05}"
 REMOTE_HOST="${REMOTE_HOST:-localhost}"
 REMOTE_PORT="${REMOTE_PORT:-8000}"
@@ -35,10 +36,10 @@ if [[ ! -d "${ROBO_ROOT}" ]]; then
 fi
 
 cd "${PACK_ROOT}"
-python scripts/generate_robolab120_task_matrix.py --out "${MATRIX_PATH}"
+"${PYTHON_BIN}" scripts/generate_robolab120_task_matrix.py --out "${MATRIX_PATH}"
 mkdir -p "${REPORT_DIR}"
 
-mapfile -t TASKS < <(python - "${MATRIX_PATH}" "${TASK_LIMIT}" <<'PY'
+mapfile -t TASKS < <("${PYTHON_BIN}" - "${MATRIX_PATH}" "${TASK_LIMIT}" <<'PY'
 import json
 import sys
 
@@ -96,7 +97,7 @@ for idx in "${!TASKS[@]}"; do
   run_rc="$?"
   verify_rc="NA"
   if [[ "${run_rc}" == "0" ]]; then
-    python "${PACK_ROOT}/scripts/verify_robolab_artifacts.py" \
+    "${PYTHON_BIN}" "${PACK_ROOT}/scripts/verify_robolab_artifacts.py" \
       --output-root "${output_root}" \
       --matrix "${MATRIX_PATH}" \
       --tasks "${task}" \
@@ -105,7 +106,7 @@ for idx in "${!TASKS[@]}"; do
   fi
   set -e
 
-  python - "${RUN_MANIFEST}" "${task}" "${output_root}" "${run_rc}" "${verify_rc}" <<'PY'
+  "${PYTHON_BIN}" - "${RUN_MANIFEST}" "${task}" "${output_root}" "${run_rc}" "${verify_rc}" <<'PY'
 import json
 import sys
 from datetime import datetime, timezone
@@ -128,7 +129,7 @@ PY
   fi
 done
 
-python - "${MERGED_OUTPUT_ROOT}" "${OUTPUT_ROOTS[@]}" <<'PY'
+"${PYTHON_BIN}" - "${MERGED_OUTPUT_ROOT}" "${OUTPUT_ROOTS[@]}" <<'PY'
 import json
 import shutil
 import sys
@@ -152,18 +153,18 @@ print(json.dumps(manifest, ensure_ascii=False))
 PY
 
 cd "${PACK_ROOT}"
-python scripts/summarize_ablation_outputs.py \
+"${PYTHON_BIN}" scripts/summarize_ablation_outputs.py \
   --roots "${OUTPUT_ROOTS[@]}" \
   --out-json "${REPORT_DIR}/${RUN_PREFIX}_episode_summary.json" \
   --out-csv "${REPORT_DIR}/${RUN_PREFIX}_episode_summary.csv"
 
-python scripts/compare_policy_matrix_results.py \
+"${PYTHON_BIN}" scripts/compare_policy_matrix_results.py \
   --matrix "${MATRIX_PATH}" \
   --roots "${OUTPUT_ROOTS[@]}" \
   --out-json "${REPORT_DIR}/${RUN_PREFIX}_policy_compare.json" \
   --out-csv "${REPORT_DIR}/${RUN_PREFIX}_policy_compare_by_axis.csv"
 
-python scripts/select_medium_success_task.py \
+"${PYTHON_BIN}" scripts/select_medium_success_task.py \
   --output-root "${MERGED_OUTPUT_ROOT}" \
   --matrix "${MATRIX_PATH}" \
   --out "${REPORT_DIR}/${RUN_PREFIX}_selected_medium_task.json" || true
