@@ -1,0 +1,3 @@
+axis,episode_step_mean,episodes,policy,score_mean,success_rate
+procedural,867.6666666666666,3,pi05,,0.3333333333333333
+visual,549.0,2,pi05,,0.5

@@ -1,0 +1,88 @@
+{
+  "matrix": "robolab_2604_09860_repro_jupyter\\robolab_repro_artifacts\\pi05_axis5_task_matrix.json",
+  "roots": [
+    "robolab_2604_09860_repro_jupyter\\remote_outputs\\pi05_banana_full_20260620_015206",
+    "robolab_2604_09860_repro_jupyter\\remote_outputs\\pi05_complex_assets_ok_20260620_020721"
+  ],
+  "num_episode_rows": 4,
+  "aggregates": {
+    "by_task": [
+      {
+        "policy": "pi05",
+        "task_name": "BananaInBowlTask",
+        "episodes": 1,
+        "success_rate": 1.0,
+        "score_mean": null,
+        "episode_step_mean": 198.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "RedItemsInBinTask",
+        "episodes": 1,
+        "success_rate": 0.0,
+        "score_mean": null,
+        "episode_step_mean": 900.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "ReorientAllMugsTask",
+        "episodes": 1,
+        "success_rate": 0.0,
+        "score_mean": null,
+        "episode_step_mean": 1350.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "Stack3RubiksCubeTask",
+        "episodes": 1,
+        "success_rate": 1.0,
+        "score_mean": null,
+        "episode_step_mean": 353.0
+      }
+    ],
+    "by_axis": [
+      {
+        "policy": "pi05",
+        "axis": "procedural",
+        "episodes": 3,
+        "success_rate": 0.3333333333333333,
+        "score_mean": null,
+        "episode_step_mean": 867.6666666666666
+      },
+      {
+        "policy": "pi05",
+        "axis": "visual",
+        "episodes": 2,
+        "success_rate": 0.5,
+        "score_mean": null,
+        "episode_step_mean": 549.0
+      }
+    ],
+    "by_difficulty": [
+      {
+        "policy": "pi05",
+        "difficulty_label": "complex",
+        "episodes": 1,
+        "success_rate": 0.0,
+        "score_mean": null,
+        "episode_step_mean": 1350.0
+      },
+      {
+        "policy": "pi05",
+        "difficulty_label": "moderate",
+        "episodes": 2,
+        "success_rate": 0.5,
+        "score_mean": null,
+        "episode_step_mean": 626.5
+      },
+      {
+        "policy": "pi05",
+        "difficulty_label": "simple",
+        "episodes": 1,
+        "success_rate": 1.0,
+        "score_mean": null,
+        "episode_step_mean": 198.0
+      }
+    ]
+  }
+}

@@ -416,6 +416,39 @@
         "soft wrist blackout runner preserves the observation key while zeroing only policy input pixels"
       ],
       "observed": "checked 2026-06-20"
+    },
+    {
+      "title": "RoboLab Pi0-family OpenPI policies",
+      "url": "https://github.com/NVlabs/RoboLab/blob/main/policies/pi0_family/README.md",
+      "used_for": [
+        "EXPERIMENT_19 direct baseline support for pi0, pi0_fast, pi05, paligemma, and paligemma_fast",
+        "run_direct_openpi_policy_matrix_4090.sh policy list and direct-run boundary"
+      ],
+      "observed": "checked 2026-06-20"
+    },
+    {
+      "title": "NVIDIA Cosmos repository",
+      "url": "https://github.com/nvidia/cosmos",
+      "used_for": [
+        "EXPERIMENT_19 classifies Cosmos as world-model/data/simulation component rather than direct Franka action policy"
+      ],
+      "observed": "checked 2026-06-20"
+    },
+    {
+      "title": "Qwen-VLA announcement",
+      "url": "https://qwen.ai/blog?id=qwenvla",
+      "used_for": [
+        "EXPERIMENT_19 classifies Qwen-VLA as Alibaba/Qwen VLA candidate requiring action/embodiment adapter"
+      ],
+      "observed": "checked 2026-06-20"
+    },
+    {
+      "title": "Qwen RobotSuite announcement",
+      "url": "https://qwen.ai/blog?id=qwen-robotsuite",
+      "used_for": [
+        "EXPERIMENT_19 distinguishes Qwen-RobotManip, RobotNav, and RobotWorld for RoboLab manipulation relevance"
+      ],
+      "observed": "checked 2026-06-20"
     }
   ]
 }
