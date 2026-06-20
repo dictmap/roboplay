@@ -9,6 +9,7 @@
 - [RoboLab 精讲 0-16](./robolab_2604_09860_repro_jupyter/)
 - [RoboLab 远端实测证据清单](./robolab_2604_09860_repro_jupyter/REMOTE_EVIDENCE_MANIFEST.md)
 - [实验拓展：相机/腕部相机/机器人消融](./robolab_2604_09860_repro_jupyter/EXPERIMENT_17_camera_robot_ablation.md)
+- [实验拓展：Pi05 能力轴 5×任务矩阵与扰动路线](./robolab_2604_09860_repro_jupyter/EXPERIMENT_18_pi05_axis5_then_perturb_compare.md)
 
 ## 提交策略
 

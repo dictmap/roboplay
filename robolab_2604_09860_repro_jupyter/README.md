@@ -29,7 +29,12 @@
 - `EXPLAIN_15_reviewer_synthesis.md`：全文总梳理与审稿人视角精讲，覆盖贡献、优点、主要问题、优化点和未来创新方向，已内嵌进 notebook，并配有 reviewer rubric 轻量测试用例。
 - `EXPLAIN_16_recommended_reading.md`：基于 RoboLab 的推荐阅读与开源学习路线，已改成 2026-first：优先补 RoboLab、RoboCasa365、RDT2、GR00T N1.7、Isaac Lab-Arena、Lightwheel LW-BenchHub、Lyra 和 NVIDIA 2026 Physical AI stack；BEHAVIOR/DROID/OpenVLA/Octo/ReKep 等降级为基础背景，已内嵌进 notebook，并配有 reading map 轻量测试用例。
 - `EXPERIMENT_17_camera_robot_ablation.md`：实验拓展，分析外部相机角度、取消/遮蔽腕部相机、替换机器人三类消融的原理、可运行边界、真实 4090 测试矩阵和风险。
+- `EXPERIMENT_18_pi05_axis5_then_perturb_compare.md`：固定 Pi05 的能力轴 5×任务矩阵评测路线，包含每任务证据要求、`analysis/read_results.py` 出表、成功率中等任务选择、光照/背景/物体位置扰动和后续 RoboChallenge/ReKep 对照顺序。
 - `robolab_repro_artifacts/camera_robot_ablation_config_tests.json`：基于真实 Pi05 `env_cfg.json` 的配置级测试结果；验证 baseline 相机/机器人合约、硬删腕部相机的 schema 风险、只换机器人 USD 的无效性。
+- `robolab_repro_artifacts/pi05_axis5_task_matrix.json`：Pi05 第一批 16 任务矩阵，覆盖 visual/procedural/relational 三个能力轴，每轴不少于 5 个任务。
+- `scripts/run_pi05_axis5_4090.sh`：4090 端固定 Pi05 的 16 任务主评测入口，自动保存视频/HDF5/日志并调用 `analysis/read_results.py` 出表。
+- `scripts/run_selected_perturbations_4090.sh`：读取主评测结果后选择成功率中等任务，并运行光照、背景、物体位置扰动。
+- `scripts/create_object_position_variation_runner.py`：在远端 RoboLab repo 内生成 object-position perturbation runner。
 - `scripts/run_camera_ablation_4090.sh`：4090 端相机/腕部相机消融执行入口，调用官方 `run.py` 和 `run_camera_pose_variation.py`，可选运行 wrist blackout。
 - `scripts/create_pi05_wrist_blackout_runner.py`：在远端 RoboLab repo 内生成 Pi05 腕部相机置黑 client 和 runner。
 - `scripts/summarize_ablation_outputs.py`：离线汇总 RoboLab output 目录中的 `episode_results.jsonl`，输出 JSON/CSV。

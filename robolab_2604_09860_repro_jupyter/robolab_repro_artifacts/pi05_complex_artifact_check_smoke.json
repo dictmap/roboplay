@@ -1,0 +1,68 @@
+{
+  "output_root": "robolab_2604_09860_repro_jupyter\\remote_outputs\\pi05_complex_assets_ok_20260620_020721",
+  "episode_results_jsonl": "robolab_2604_09860_repro_jupyter\\remote_outputs\\pi05_complex_assets_ok_20260620_020721\\episode_results.jsonl",
+  "episode_results_jsonl_nonempty": true,
+  "tasks": [
+    {
+      "task": "ReorientAllMugsTask",
+      "task_dirs": [
+        "robolab_2604_09860_repro_jupyter\\remote_outputs\\pi05_complex_assets_ok_20260620_020721\\ReorientAllMugsTask"
+      ],
+      "hdf5": [
+        "robolab_2604_09860_repro_jupyter\\remote_outputs\\pi05_complex_assets_ok_20260620_020721\\ReorientAllMugsTask\\run_0.hdf5"
+      ],
+      "videos": [
+        "robolab_2604_09860_repro_jupyter\\remote_outputs\\pi05_complex_assets_ok_20260620_020721\\ReorientAllMugsTask\\Reorient_all_the_mugs_upright_so_that_the_opening_is_facing_upwards_0.mp4",
+        "robolab_2604_09860_repro_jupyter\\remote_outputs\\pi05_complex_assets_ok_20260620_020721\\ReorientAllMugsTask\\Reorient_all_the_mugs_upright_so_that_the_opening_is_facing_upwards_0_viewport.mp4"
+      ],
+      "subtask_or_event_logs": [
+        "robolab_2604_09860_repro_jupyter\\remote_outputs\\pi05_complex_assets_ok_20260620_020721\\ReorientAllMugsTask\\log_0_env0.json"
+      ],
+      "env_cfg": [
+        "robolab_2604_09860_repro_jupyter\\remote_outputs\\pi05_complex_assets_ok_20260620_020721\\ReorientAllMugsTask\\env_cfg.json"
+      ],
+      "passed": true
+    },
+    {
+      "task": "Stack3RubiksCubeTask",
+      "task_dirs": [
+        "robolab_2604_09860_repro_jupyter\\remote_outputs\\pi05_complex_assets_ok_20260620_020721\\Stack3RubiksCubeTask"
+      ],
+      "hdf5": [
+        "robolab_2604_09860_repro_jupyter\\remote_outputs\\pi05_complex_assets_ok_20260620_020721\\Stack3RubiksCubeTask\\run_0.hdf5"
+      ],
+      "videos": [
+        "robolab_2604_09860_repro_jupyter\\remote_outputs\\pi05_complex_assets_ok_20260620_020721\\Stack3RubiksCubeTask\\Stack_the_rubiks_cubes_in_a_tower_0.mp4",
+        "robolab_2604_09860_repro_jupyter\\remote_outputs\\pi05_complex_assets_ok_20260620_020721\\Stack3RubiksCubeTask\\Stack_the_rubiks_cubes_in_a_tower_0_viewport.mp4"
+      ],
+      "subtask_or_event_logs": [
+        "robolab_2604_09860_repro_jupyter\\remote_outputs\\pi05_complex_assets_ok_20260620_020721\\Stack3RubiksCubeTask\\log_0_env0.json"
+      ],
+      "env_cfg": [
+        "robolab_2604_09860_repro_jupyter\\remote_outputs\\pi05_complex_assets_ok_20260620_020721\\Stack3RubiksCubeTask\\env_cfg.json"
+      ],
+      "passed": true
+    },
+    {
+      "task": "RedItemsInBinTask",
+      "task_dirs": [
+        "robolab_2604_09860_repro_jupyter\\remote_outputs\\pi05_complex_assets_ok_20260620_020721\\RedItemsInBinTask"
+      ],
+      "hdf5": [
+        "robolab_2604_09860_repro_jupyter\\remote_outputs\\pi05_complex_assets_ok_20260620_020721\\RedItemsInBinTask\\run_0.hdf5"
+      ],
+      "videos": [
+        "robolab_2604_09860_repro_jupyter\\remote_outputs\\pi05_complex_assets_ok_20260620_020721\\RedItemsInBinTask\\Put_all_the_red_things_in_the_grey_bin_0.mp4",
+        "robolab_2604_09860_repro_jupyter\\remote_outputs\\pi05_complex_assets_ok_20260620_020721\\RedItemsInBinTask\\Put_all_the_red_things_in_the_grey_bin_0_viewport.mp4"
+      ],
+      "subtask_or_event_logs": [
+        "robolab_2604_09860_repro_jupyter\\remote_outputs\\pi05_complex_assets_ok_20260620_020721\\RedItemsInBinTask\\log_0_env0.json"
+      ],
+      "env_cfg": [
+        "robolab_2604_09860_repro_jupyter\\remote_outputs\\pi05_complex_assets_ok_20260620_020721\\RedItemsInBinTask\\env_cfg.json"
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true
+}

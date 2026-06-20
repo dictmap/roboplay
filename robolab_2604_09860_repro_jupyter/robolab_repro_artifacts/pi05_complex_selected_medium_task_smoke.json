@@ -1,0 +1,85 @@
+{
+  "output_root": "robolab_2604_09860_repro_jupyter\\remote_outputs\\pi05_complex_assets_ok_20260620_020721",
+  "target_rate": 0.5,
+  "selected": {
+    "task_name": "RedItemsInBinTask",
+    "episodes": 1,
+    "success_rate": 0.0,
+    "score_mean": null,
+    "distance_to_target": 0.5,
+    "difficulty_label": "moderate",
+    "axes": [
+      "procedural",
+      "visual"
+    ],
+    "attributes": [
+      "color",
+      "sorting"
+    ],
+    "primary_objects_for_object_pose_variation": [
+      "mug",
+      "bowl"
+    ]
+  },
+  "candidates": [
+    {
+      "task_name": "RedItemsInBinTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "color",
+        "sorting"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "mug",
+        "bowl"
+      ]
+    },
+    {
+      "task_name": "ReorientAllMugsTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "distance_to_target": 0.5,
+      "difficulty_label": "complex",
+      "axes": [
+        "procedural"
+      ],
+      "attributes": [
+        "reorientation"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "reorienting_red_mug",
+        "reorienting_ceramic_mug",
+        "reorienting_sideways_white_mug"
+      ]
+    },
+    {
+      "task_name": "Stack3RubiksCubeTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": null,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural"
+      ],
+      "attributes": [
+        "stacking"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "cube_0_and_1",
+        "cube_0_and_2",
+        "cube_1_and_2"
+      ]
+    }
+  ],
+  "note": "If no task has 0<success_rate<1, this selects the closest task to target_rate as a fallback."
+}
