@@ -7,16 +7,16 @@
 
 | Item | Value |
 |---|---|
-| Updated at | `2026-06-21T02:47:46+08:00` |
+| Updated at | `2026-06-21T03:11:32+08:00` |
 | Host | `y12` |
 | Policy | `Pi05 / OpenPI pi05_droid_jointpos` |
 | Run prefix | `robolab120_pi05_full_assetsfixed_20260620_170411` |
 | State | `running` |
-| Manifest progress | `80/120` |
-| Rows with run+verify returncode 0 | `80/80` |
+| Manifest progress | `90/120` |
+| Rows with run+verify returncode 0 | `90/90` |
 | Failed/error rows so far | `0` |
-| Latest log line | ` 69%|██████▉   | 932/1350 [03:59<01:44,  4.01it/s]` |
-| GPU used/total/util | `18750, 24564, 75` |
+| Latest log line | `  8%|▊         | 150/1800 [00:44<08:15,  3.33it/s]` |
+| GPU used/total/util | `19102, 24564, 35` |
 
 ## Completed Preflight
 
@@ -28,14 +28,14 @@
 
 | Task | run_returncode | verify_returncode | output_root |
 |---|---:|---:|---|
-| `PutBowlOnShelfTopTask` | `0` | `0` | `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PutBowlOnShelfTopTask` |
-| `PutMugsOnShelfTask` | `0` | `0` | `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PutMugsOnShelfTask` |
-| `PutTwoMugsOnShelfTask` | `0` | `0` | `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_PutTwoMugsOnShelfTask` |
-| `RecycleCartonsOnBoxTask` | `0` | `0` | `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RecycleCartonsOnBoxTask` |
-| `RecycleCartonsVerticalCrateTask` | `0` | `0` | `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RecycleCartonsVerticalCrateTask` |
-| `RecycleCartonTask` | `0` | `0` | `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RecycleCartonTask` |
-| `RedDishesInBinTask` | `0` | `0` | `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RedDishesInBinTask` |
-| `RedItemsInBinTask` | `0` | `0` | `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RedItemsInBinTask` |
+| `ReorientRedMugTask` | `0` | `0` | `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ReorientRedMugTask` |
+| `ReorientWhiteMugsTask` | `0` | `0` | `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_ReorientWhiteMugsTask` |
+| `RubiksCubeAndBananaTask` | `0` | `0` | `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeAndBananaTask` |
+| `RubiksCubeBehindBowlTask` | `0` | `0` | `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeBehindBowlTask` |
+| `RubiksCubeInFrontOfBowlTask` | `0` | `0` | `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeInFrontOfBowlTask` |
+| `RubiksCubeLeftOfBowlTask` | `0` | `0` | `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeLeftOfBowlTask` |
+| `RubiksCubeOrBananaTask` | `0` | `0` | `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeOrBananaTask` |
+| `RubiksCubeRightOfBowlTask` | `0` | `0` | `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_full_assetsfixed_20260620_170411_RubiksCubeRightOfBowlTask` |
 
 ## Current Errors
 
