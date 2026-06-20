@@ -1,0 +1,28 @@
+{
+  "episode_files": [
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_smoke5_20260620_085451_BananaInBowlTask/episode_results.jsonl"
+  ],
+  "num_episode_rows": 1,
+  "groups": [
+    {
+      "task_name": "BananaInBowlTask",
+      "env_name": "BananaInBowlTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 177.0,
+      "duration_mean": 11.8,
+      "policy_inference_avg_ms_mean": 76.1,
+      "env_step_avg_ms_mean": 194.7,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_smoke5_20260620_085451_BananaInBowlTask/episode_results.jsonl"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_smoke5_20260620_085451_merged",
+  "target_rate": 0.5,
+  "selected": {
+    "task_name": "BananaInBowlTask",
+    "episodes": 1,
+    "success_rate": 1.0,
+    "score_mean": 1.0,
+    "distance_to_target": 0.5,
+    "difficulty_label": "simple",
+    "axes": [
+      "visual"
+    ],
+    "attributes": [
+      "semantics"
+    ],
+    "primary_objects_for_object_pose_variation": [
+      "banana"
+    ]
+  },
+  "candidates": [
+    {
+      "task_name": "BananaInBowlTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "banana"
+      ]
+    }
+  ],
+  "note": "If no task has 0<success_rate<1, this selects the closest task to target_rate as a fallback."
+}

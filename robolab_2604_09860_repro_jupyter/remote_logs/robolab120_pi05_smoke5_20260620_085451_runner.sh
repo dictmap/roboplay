@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "/home/yjl/roboplay/robolab_2604_09860_repro_jupyter"
+export ROBO_ROOT="/home/yjl/codex_robolab_4090_20260619/RoboLab"
+export UV_BIN="/home/yjl/.local/bin/uv"
+export PYTHON_BIN="python3"
+export POLICY="pi05"
+export REMOTE_HOST="localhost"
+export REMOTE_PORT="8000"
+export NUM_ENVS="1"
+export NUM_RUNS="1"
+export VIDEO_MODE="all"
+export TASK_LIMIT="5"
+export STOP_ON_FAILURE="0"
+export RUN_PREFIX="robolab120_pi05_smoke5_20260620_085451"
+echo ROBOLAB120_SMOKE5_START $(date -Is) | tee "/home/yjl/codex_robolab_4090_20260619/robolab120_pi05_smoke5_20260620_085451.log"
+bash scripts/run_pi05_robolab120_4090.sh 2>&1 | tee -a "/home/yjl/codex_robolab_4090_20260619/robolab120_pi05_smoke5_20260620_085451.log"
+rc=${PIPESTATUS[0]}
+echo ROBOLAB120_SMOKE5_EXIT ${rc} $(date -Is) | tee -a "/home/yjl/codex_robolab_4090_20260619/robolab120_pi05_smoke5_20260620_085451.log"
+echo "${rc}" > "/home/yjl/codex_robolab_4090_20260619/robolab120_pi05_smoke5_20260620_085451.status"
+exit "${rc}"
