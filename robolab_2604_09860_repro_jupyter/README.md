@@ -5,6 +5,7 @@
 ## 文件
 
 - `RoboLab_4090_repro_learning_record.ipynb`：主 notebook，按阶段记录环境检查、安装、验证、smoke run、4090 小子集评测、论文机制、核心源码讲解、结果解析和学习日志。
+- `RoboLab_4090_repro_learning_record.html`：由最新 notebook 导出的静态 HTML，适合在浏览器里直接查看渲染后的精讲内容。
 - `source_manifest.json`：准备 notebook 时核对过的官方来源。
 - `build_robolab_notebook.py`：生成 notebook 和来源清单的脚本。
 - `EXPLAIN_SOURCE_QUESTION_INDEX.md`：所有精讲的问题来源与核心内容索引，把每个精讲对应的原问题、论文/代码来源、来源核心内容和复现/代码落点并排展示，已内嵌进 notebook，并配有来源覆盖轻量测试用例。

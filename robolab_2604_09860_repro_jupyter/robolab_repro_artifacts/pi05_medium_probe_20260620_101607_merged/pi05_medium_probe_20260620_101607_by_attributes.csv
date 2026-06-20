@@ -1,0 +1,5 @@
+Category/Attribute,Success,Success %,Total,Score(total),Score(fail),Time(s),Time σ,EE SPARC,SPARC σ,PathLen(m),Path σ,Speed(cm/s),Speed σ
+TOTAL,1,16.7,6,0.333,0.200,12.40,-,-6.75,1.75,2.45,1.17,5.2,1.2
+VISUAL,1,16.7,6,0.333,0.200,12.40,-,-6.75,1.75,2.45,1.17,5.2,1.2
+  color,0,0.0,3,0.333,0.333,-,-,-7.18,0.92,3.48,0.20,5.5,0.3
+  semantics,1,16.7,6,0.333,0.200,12.40,-,-6.75,1.75,2.45,1.17,5.2,1.2

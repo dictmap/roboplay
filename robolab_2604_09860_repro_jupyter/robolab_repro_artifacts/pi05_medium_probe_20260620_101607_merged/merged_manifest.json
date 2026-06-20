@@ -1,0 +1,8 @@
+{
+  "merged_output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_medium_probe_20260620_101607_merged",
+  "source_roots": [
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_medium_probe_20260620_101607_TakeMeasuringSpoonOutTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/pi05_medium_probe_20260620_101607_RedDishesInBinTask"
+  ],
+  "episode_rows": 6
+}

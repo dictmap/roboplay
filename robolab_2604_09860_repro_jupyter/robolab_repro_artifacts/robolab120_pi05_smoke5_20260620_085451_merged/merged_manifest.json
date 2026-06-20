@@ -1,0 +1,11 @@
+{
+  "merged_output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_smoke5_20260620_085451_merged",
+  "source_roots": [
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_smoke5_20260620_085451_AnimalsInBinTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_smoke5_20260620_085451_AppleAndYogurtInBowlTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_smoke5_20260620_085451_BagelsOnPlateTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_smoke5_20260620_085451_BananaInBowlTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/robolab120_pi05_smoke5_20260620_085451_BananaOnPlateTask"
+  ],
+  "episode_rows": 1
+}

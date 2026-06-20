@@ -1,0 +1,4 @@
+Category/Attribute,Success,Success %,Total,Score(total),Score(fail),Time(s),Time σ,EE SPARC,SPARC σ,PathLen(m),Path σ,Speed(cm/s),Speed σ
+TOTAL,1,100.0,1,1.000,-,11.80,-,-3.45,-,0.83,-,6.7,-
+VISUAL,1,100.0,1,1.000,-,11.80,-,-3.45,-,0.83,-,6.7,-
+  semantics,1,100.0,1,1.000,-,11.80,-,-3.45,-,0.83,-,6.7,-
