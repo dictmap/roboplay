@@ -1029,3 +1029,9 @@
 
 结论：Cosmos3-Nano-Policy-DROID 的本地 policy server 在当前 4090 24GB + 保留 VNC/桌面可视化的条件下不能完整加载。后续如果要把 Cosmos3 纳入 20 任务对照，需要切到 48GB+ 显存机器，或使用官方/社区提供的更小或量化 checkpoint；否则不能把 Cosmos3 记成“20 任务已跑”。
 
+## 2026-06-22 06:17:15 CST - Pi/接口适配与结果深度分析补充
+
+已新增深度分析文档：`EXPERIMENT_23_policy_interface_and_result_analysis.md`。
+
+本补充专门回答：Pi05 tuned、Pi05 base-DROID、RoboChallenge pi、ReKep、GR00T、Cosmos、Qwen/阿里模型之间的接口差异；`step 571/900` 与 `395/2700` 的含义；adapter-required 模型如何优化成可跑 RoboLab 的 `[N,8]` Franka+Robotiq action chunk；以及当前结果为何如此、训练数据应该怎么改。
+
