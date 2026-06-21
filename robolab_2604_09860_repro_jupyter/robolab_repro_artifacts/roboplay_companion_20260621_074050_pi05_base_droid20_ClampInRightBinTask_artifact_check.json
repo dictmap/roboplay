@@ -1,0 +1,28 @@
+{
+  "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_ClampInRightBinTask",
+  "episode_results_jsonl": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_ClampInRightBinTask/episode_results.jsonl",
+  "episode_results_jsonl_nonempty": true,
+  "tasks": [
+    {
+      "task": "ClampInRightBinTask",
+      "task_dirs": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_ClampInRightBinTask/ClampInRightBinTask"
+      ],
+      "hdf5": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_ClampInRightBinTask/ClampInRightBinTask/run_0.hdf5"
+      ],
+      "videos": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_ClampInRightBinTask/ClampInRightBinTask/Put_the_spring_clamp_in_the_right_bin_0.mp4",
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_ClampInRightBinTask/ClampInRightBinTask/Put_the_spring_clamp_in_the_right_bin_0_viewport.mp4"
+      ],
+      "subtask_or_event_logs": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_ClampInRightBinTask/ClampInRightBinTask/log_0_env0.json"
+      ],
+      "env_cfg": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_ClampInRightBinTask/ClampInRightBinTask/env_cfg.json"
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true
+}

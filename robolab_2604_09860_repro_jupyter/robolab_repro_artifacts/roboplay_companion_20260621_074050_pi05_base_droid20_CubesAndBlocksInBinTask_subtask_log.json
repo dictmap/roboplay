@@ -1,0 +1,47 @@
+{
+  "task_name": "CubesAndBlocksInBinTask",
+  "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_CubesAndBlocksInBinTask",
+  "episode_results": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_CubesAndBlocksInBinTask/episode_results.jsonl",
+  "hdf5": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_CubesAndBlocksInBinTask/CubesAndBlocksInBinTask/run_0.hdf5",
+  "success": false,
+  "score": 0.0,
+  "reason": "Conditions not satisfied: object_grabbed(object=rubiks_cube) (step 1/2); object_grabbed(object=rubiks_cube_1) (step 1/2); object_grabbed(object=rubiks_cube_2) (step 1/2)",
+  "episode_step": 3600,
+  "events": {
+    "GRIPPER_HIT_OBJECT": 6,
+    "OBJECT_BUMPED": 19,
+    "GRIPPER_HIT_TABLE": 3,
+    "TARGET_OBJECT_DROPPED": 2,
+    "GRIPPER_FULLY_CLOSED": 1,
+    "MULTIPLE_OBJECTS_GRABBED": 1,
+    "OBJECT_OUT_OF_SCENE": 3,
+    "OBJECT_MOVED": 3
+  },
+  "subtask_source": "hdf5:data/demo_0/subtask/{completed,status,score}",
+  "subtask": {
+    "completed": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "status": [
+      139,
+      248,
+      139,
+      248,
+      248
+    ],
+    "score": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "final_completed": 0,
+    "final_status": 248,
+    "final_score": 0.0
+  }
+}

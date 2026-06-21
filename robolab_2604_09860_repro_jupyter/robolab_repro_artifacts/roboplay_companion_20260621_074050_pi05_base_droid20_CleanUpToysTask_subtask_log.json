@@ -1,0 +1,43 @@
+{
+  "task_name": "CleanUpToysTask",
+  "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_CleanUpToysTask",
+  "episode_results": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_CleanUpToysTask/episode_results.jsonl",
+  "hdf5": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_CleanUpToysTask/CleanUpToysTask/run_0.hdf5",
+  "success": false,
+  "score": 0.0,
+  "reason": "Conditions not satisfied: object_grabbed(object=rubiks_cube) (step 1/2); object_grabbed(object=rubiks_cube_1) (step 1/2); object_grabbed(object=rubiks_cube_2) (step 1/2); object_grabbed(object=lizard_figurine) (step 1/2); object_grabbed(object=yellow_block) (step 1/2); object_grabbed(object=red_block) (step 1/2); object_grabbed(object=green_block) (step 1/2); object_grabbed(object=blue_block) (step 1/2); object_grabbed(object=lizard_figurine_01) (step 1/2)",
+  "episode_step": 4500,
+  "events": {
+    "GRIPPER_HIT_TABLE": 6,
+    "OBJECT_BUMPED": 6,
+    "TARGET_OBJECT_DROPPED": 2,
+    "GRIPPER_HIT_OBJECT": 1
+  },
+  "subtask_source": "hdf5:data/demo_0/subtask/{completed,status,score}",
+  "subtask": {
+    "completed": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "status": [
+      139,
+      248,
+      139,
+      248,
+      248
+    ],
+    "score": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "final_completed": 0,
+    "final_status": 248,
+    "final_score": 0.0
+  }
+}

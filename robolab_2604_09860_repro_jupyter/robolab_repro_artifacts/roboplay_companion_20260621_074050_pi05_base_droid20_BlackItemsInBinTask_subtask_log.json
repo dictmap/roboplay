@@ -1,0 +1,46 @@
+{
+  "task_name": "BlackItemsInBinTask",
+  "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BlackItemsInBinTask",
+  "episode_results": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BlackItemsInBinTask/episode_results.jsonl",
+  "hdf5": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BlackItemsInBinTask/BlackItemsInBinTask/run_0.hdf5",
+  "success": false,
+  "score": 0.20000000298023224,
+  "reason": "Conditions not satisfied: object_grabbed(object=remote_control) (step 1/2); object_grabbed(object=computer_mouse) (step 1/2); object_grabbed(object=smartphone) (step 1/2); object_grabbed(object=glasses) (step 1/2)",
+  "episode_step": 1800,
+  "events": {
+    "GRIPPER_HIT_TABLE": 4,
+    "TARGET_OBJECT_DROPPED": 2,
+    "GRIPPER_HIT_OBJECT": 1,
+    "OBJECT_BUMPED": 3
+  },
+  "subtask_source": "hdf5:data/demo_0/subtask/{completed,status,score}",
+  "subtask": {
+    "completed": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "status": [
+      139,
+      139,
+      248,
+      139,
+      248,
+      248
+    ],
+    "score": [
+      0.20000000298023224,
+      0.20000000298023224,
+      0.20000000298023224,
+      0.20000000298023224,
+      0.20000000298023224,
+      0.20000000298023224
+    ],
+    "final_completed": 0,
+    "final_status": 248,
+    "final_score": 0.20000000298023224
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "total": {
+    "tasks": 20,
+    "episode_results": 20,
+    "hdf5": 20,
+    "mp4": 40,
+    "subtask_logs": 20,
+    "artifact_checks": 20,
+    "artifact_checks_passed": 20
+  },
+  "tasks": [
+    {
+      "task_name": "FoodPackingByColorTask",
+      "episode_results": true,
+      "hdf5": 1,
+      "mp4": 2,
+      "subtask_logs": 1,
+      "artifact_check_passed": true
+    },
+    {
+      "task_name": "NonHammerToolsInRightBinTask",
+      "episode_results": true,
+      "hdf5": 1,
+      "mp4": 2,
+      "subtask_logs": 1,
+      "artifact_check_passed": true
+    },
+    {
+      "task_name": "CookingPickPastaToolTask",
+      "episode_results": true,
+      "hdf5": 1,
+      "mp4": 2,
+      "subtask_logs": 1,
+      "artifact_check_passed": true
+    },
+    {
+      "task_name": "ReorientJugTask",
+      "episode_results": true,
+      "hdf5": 1,
+      "mp4": 2,
+      "subtask_logs": 1,
+      "artifact_check_passed": true
+    },
+    {
+      "task_name": "YellowAndWhiteObjectsInBinTask",
+      "episode_results": true,
+      "hdf5": 1,
+      "mp4": 2,
+      "subtask_logs": 1,
+      "artifact_check_passed": true
+    },
+    {
+      "task_name": "BlockStackingSpecifiedOrderTask",
+      "episode_results": true,
+      "hdf5": 1,
+      "mp4": 2,
+      "subtask_logs": 1,
+      "artifact_check_passed": true
+    },
+    {
+      "task_name": "ClampInRightBinTask",
+      "episode_results": true,
+      "hdf5": 1,
+      "mp4": 2,
+      "subtask_logs": 1,
+      "artifact_check_passed": true
+    },
+    {
+      "task_name": "PutMugsOnShelfTask",
+      "episode_results": true,
+      "hdf5": 1,
+      "mp4": 2,
+      "subtask_logs": 1,
+      "artifact_check_passed": true
+    },
+    {
+      "task_name": "PlasticBottlesInSquarePailTask",
+      "episode_results": true,
+      "hdf5": 1,
+      "mp4": 2,
+      "subtask_logs": 1,
+      "artifact_check_passed": true
+    },
+    {
+      "task_name": "ToolsPickingDrillTask",
+      "episode_results": true,
+      "hdf5": 1,
+      "mp4": 2,
+      "subtask_logs": 1,
+      "artifact_check_passed": true
+    },
+    {
+      "task_name": "CubesAndBlocksInBinTask",
+      "episode_results": true,
+      "hdf5": 1,
+      "mp4": 2,
+      "subtask_logs": 1,
+      "artifact_check_passed": true
+    },
+    {
+      "task_name": "CookingClearPlateTask",
+      "episode_results": true,
+      "hdf5": 1,
+      "mp4": 2,
+      "subtask_logs": 1,
+      "artifact_check_passed": true
+    },
+    {
+      "task_name": "ToolsPickingHammerTask",
+      "episode_results": true,
+      "hdf5": 1,
+      "mp4": 2,
+      "subtask_logs": 1,
+      "artifact_check_passed": true
+    },
+    {
+      "task_name": "AnimalsInBinTask",
+      "episode_results": true,
+      "hdf5": 1,
+      "mp4": 2,
+      "subtask_logs": 1,
+      "artifact_check_passed": true
+    },
+    {
+      "task_name": "BananasInBinOneMoreTask",
+      "episode_results": true,
+      "hdf5": 1,
+      "mp4": 2,
+      "subtask_logs": 1,
+      "artifact_check_passed": true
+    },
+    {
+      "task_name": "BlackItemsInBinTask",
+      "episode_results": true,
+      "hdf5": 1,
+      "mp4": 2,
+      "subtask_logs": 1,
+      "artifact_check_passed": true
+    },
+    {
+      "task_name": "BagelsOnPlateTask",
+      "episode_results": true,
+      "hdf5": 1,
+      "mp4": 2,
+      "subtask_logs": 1,
+      "artifact_check_passed": true
+    },
+    {
+      "task_name": "BananasInBinThreeTotalTask",
+      "episode_results": true,
+      "hdf5": 1,
+      "mp4": 2,
+      "subtask_logs": 1,
+      "artifact_check_passed": true
+    },
+    {
+      "task_name": "CleanUpToysTask",
+      "episode_results": true,
+      "hdf5": 1,
+      "mp4": 2,
+      "subtask_logs": 1,
+      "artifact_check_passed": true
+    },
+    {
+      "task_name": "BananaInBowlTask",
+      "episode_results": true,
+      "hdf5": 1,
+      "mp4": 2,
+      "subtask_logs": 1,
+      "artifact_check_passed": true
+    }
+  ]
+}

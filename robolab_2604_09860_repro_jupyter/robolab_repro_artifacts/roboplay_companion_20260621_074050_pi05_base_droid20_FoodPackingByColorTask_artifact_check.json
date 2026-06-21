@@ -1,0 +1,28 @@
+{
+  "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_FoodPackingByColorTask",
+  "episode_results_jsonl": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_FoodPackingByColorTask/episode_results.jsonl",
+  "episode_results_jsonl_nonempty": true,
+  "tasks": [
+    {
+      "task": "FoodPackingByColorTask",
+      "task_dirs": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_FoodPackingByColorTask/FoodPackingByColorTask"
+      ],
+      "hdf5": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_FoodPackingByColorTask/FoodPackingByColorTask/run_0.hdf5"
+      ],
+      "videos": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_FoodPackingByColorTask/FoodPackingByColorTask/Pack_yellow_objects_in_right_container_and_blue_object_in_the_left_container_0.mp4",
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_FoodPackingByColorTask/FoodPackingByColorTask/Pack_yellow_objects_in_right_container_and_blue_object_in_the_left_container_0_viewport.mp4"
+      ],
+      "subtask_or_event_logs": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_FoodPackingByColorTask/FoodPackingByColorTask/log_0_env0.json"
+      ],
+      "env_cfg": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_FoodPackingByColorTask/FoodPackingByColorTask/env_cfg.json"
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true
+}

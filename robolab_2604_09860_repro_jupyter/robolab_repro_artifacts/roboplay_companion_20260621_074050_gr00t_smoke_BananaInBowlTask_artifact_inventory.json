@@ -1,0 +1,72 @@
+{
+  "queue_id": "roboplay_companion_20260621_074050",
+  "created_at": "2026-06-22T02:44:19",
+  "label": "gr00t_smoke_eager_noflash_fallback",
+  "note": "GR00T 在本机 CUDA/flash-attn 不匹配时使用 eager/no-flash 补丁完成 smoke；该结果只作为管线连通性证据，不等同官方 GR00T 性能。",
+  "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_gr00t_smoke_BananaInBowlTask",
+  "tasks": 1,
+  "episode_results": 1,
+  "hdf5": 1,
+  "mp4": 2,
+  "env_logs": 1,
+  "subtask_logs": 1,
+  "artifact_checks": 1,
+  "artifact_checks_passed": 1,
+  "episode_summary": {
+    "env_name": "BananaInBowlTask",
+    "task_name": "BananaInBowlTask",
+    "run_name": "BananaInBowlTask_0",
+    "run": 0,
+    "episode": 0,
+    "env_id": 0,
+    "policy": "gr00t",
+    "instruction": "Pick up the banana and place it in the bowl",
+    "attributes": [
+      "semantics",
+      "simple"
+    ],
+    "success": false,
+    "episode_step": 750,
+    "duration": 50.0,
+    "dt": 0.06666666666666667,
+    "metrics": {
+      "ee_sparc": -9.036988555936516,
+      "joint_sparc_mean": -10.79565360525706,
+      "ee_isj": 126.93818359349973,
+      "joint_isj": 12140.72575203993,
+      "ee_path_length": 0.843440156585793,
+      "joint_rmse_mean": 0.014720355807846277,
+      "ee_speed_max": 0.16657835245132446,
+      "ee_speed_mean": 0.014958367682993412
+    },
+    "events": {
+      "GRIPPER_HIT_TABLE": 14
+    },
+    "instruction_type": "default",
+    "timing": {
+      "policy_inference_s": 14.071,
+      "policy_inference_avg_ms": 18.8,
+      "env_step_s": 152.513,
+      "env_step_avg_ms": 203.4,
+      "video_write_s": 3.17,
+      "video_write_avg_ms": 4.2,
+      "wall_total_s": 169.754,
+      "it_per_sec": 4.42
+    },
+    "score": 0.0,
+    "reason": "Condition not satisfied: object_grabbed(object=banana) (step 1/2)"
+  },
+  "files": {
+    "episode_results": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_gr00t_smoke_BananaInBowlTask/episode_results.jsonl",
+    "hdf5": [
+      "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_gr00t_smoke_BananaInBowlTask/BananaInBowlTask/run_0.hdf5"
+    ],
+    "mp4": [
+      "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_gr00t_smoke_BananaInBowlTask/BananaInBowlTask/Pick_up_the_banana_and_place_it_in_the_bowl_0.mp4",
+      "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_gr00t_smoke_BananaInBowlTask/BananaInBowlTask/Pick_up_the_banana_and_place_it_in_the_bowl_0_viewport.mp4"
+    ],
+    "env_logs": [
+      "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_gr00t_smoke_BananaInBowlTask/BananaInBowlTask/log_0_env0.json"
+    ]
+  }
+}

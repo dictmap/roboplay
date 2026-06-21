@@ -786,3 +786,246 @@
 - 以上边界已写入 `robolab_repro_artifacts/roboplay_companion_20260621_074050_other_models_probe_summary.json`，后续不能把 probe 结果当成功率对比。
 
 <!-- ROBOPLAY_COMPANION_FINAL_SUMMARY_END -->
+
+## 2026-06-21 22:59:44 - RoboChallenge/Pi05 base DROID 20 任务真实 rollout
+
+- 阶段 ID：`pi05_base_droid20`
+- 状态：running
+- 说明：使用 RoboChallenge 目录已缓存的 `pi05_base`，通过 OpenPI `pi05_full_droid_finetune` DROID 输入/8 维输出链路接入 RoboLab；这不是 Table30v2 ALOHA 成品策略硬映射。
+- 服务端口：`localhost:8002`
+- 任务矩阵：`/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/robolab_repro_artifacts/roboplay_companion_20260621_074050_robolab20_task_matrix.json`
+- 实时日志：`/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/remote_logs/roboplay_companion_20260621_074050_pi05_base_droid20/live.log`
+- 结果前缀：`roboplay_companion_20260621_074050_pi05_base_droid20`
+
+## 2026-06-22 01:56:15 CST - Pi05 base/DROID 20 任务完整闭环结果与模型下载进展
+
+### 结论
+
+- 队列：`roboplay_companion_20260621_074050_pi05_base_droid20`。
+- 状态：20/20 任务完整运行，队列 `EXIT_CODE=0`。
+- 成功率：`0/20 = 0.00%`。
+- 解释边界：这是 `pi05_base` checkpoint 通过 DROID/RoboLab adapter 的弱对照，不是 RoboLab 官方调优后的 Pi05 策略；结果证明闭环可执行和证据链完整，但策略能力与 RoboLab 任务不匹配。
+- 产物核验：episode_results `20`、HDF5 `20`、视频 `40`、子任务日志 `20`、artifact check `20/20`。
+
+### 关键文件
+
+- Manifest：`robolab_repro_artifacts/roboplay_companion_20260621_074050_pi05_base_droid20_task_run_manifest.jsonl`
+- Summary：`robolab_repro_artifacts/roboplay_companion_20260621_074050_pi05_base_droid20_read_results/roboplay_companion_20260621_074050_pi05_base_droid20_summary.json`
+- 按能力轴：`robolab_repro_artifacts/roboplay_companion_20260621_074050_pi05_base_droid20_read_results/roboplay_companion_20260621_074050_pi05_base_droid20_by_axis.csv`
+- 按难度：`robolab_repro_artifacts/roboplay_companion_20260621_074050_pi05_base_droid20_read_results/roboplay_companion_20260621_074050_pi05_base_droid20_by_difficulty.csv`
+- 按任务：`robolab_repro_artifacts/roboplay_companion_20260621_074050_pi05_base_droid20_read_results/roboplay_companion_20260621_074050_pi05_base_droid20_by_task.csv`
+- 产物清单：`robolab_repro_artifacts/roboplay_companion_20260621_074050_pi05_base_droid20_artifact_inventory.json`
+- 子任务日志索引：`robolab_repro_artifacts/roboplay_companion_20260621_074050_pi05_base_droid20_subtask_log_index.jsonl`
+
+### 按能力轴汇总
+
+|axis|episodes|successes|success_rate|score_mean|policy_inference_avg_ms_mean|
+|---|---|---|---|---|---|
+|procedural|10|0|0.0|0.020000000298023225|11.68|
+|relational|11|0|0.0|0.09090909090909091|11.681818181818182|
+|visual|18|0|0.0|0.06666666683223513|11.71111111111111|
+
+### 按难度汇总
+
+|difficulty|episodes|successes|success_rate|score_mean|episode_step_mean|
+|---|---|---|---|---|---|
+|complex|5|0|0.0|0.04000000059604645|2790.0|
+|moderate|7|0|0.0|0.0|1800.0|
+|simple|8|0|0.0|0.125|937.5|
+
+### 逐任务失败原因摘要
+
+|task_name|success_rate|score_mean|episode_step_mean|reason|
+|---|---|---|---|---|
+|AnimalsInBinTask|0.0|0.0|1350.0|Conditions not satisfied: object_grabbed(object=lizard_figurine) (step 1/2); object_grabbed(object=lizard_figurine_01) (step 1/2)|
+|BagelsOnPlateTask|0.0|0.0|900.0|Conditions not satisfied: object_grabbed(object=bagel_00) (step 1/2); object_grabbed(object=bagel_06) (step 1/2)|
+|BananaInBowlTask|0.0|0.0|750.0|Condition not satisfied: object_grabbed(object=banana) (step 1/2)|
+|BananasInBinOneMoreTask|0.0|0.0|900.0|Only 0/1 objects completed. Failed: object_grabbed(object=banana) (step 1/2)|
+|BananasInBinThreeTotalTask|0.0|0.0|900.0|Only 0/1 objects completed. Failed: object_grabbed(object=banana) (step 1/2)|
+|BlackItemsInBinTask|0.0|0.20000000298023224|1800.0|Conditions not satisfied: object_grabbed(object=remote_control) (step 1/2); object_grabbed(object=computer_mouse) (step 1/2); object_grab...|
+|BlockStackingSpecifiedOrderTask|0.0|0.0|1350.0|Condition not satisfied: stacked(objects=['red_block', 'blue_block'], order=bottom_to_top) (step 1/1)|
+|ClampInRightBinTask|0.0|0.0|900.0|Condition not satisfied: object_grabbed(object=spring_clamp) (step 1/2)|
+|CleanUpToysTask|0.0|0.0|4500.0|Conditions not satisfied: object_grabbed(object=rubiks_cube) (step 1/2); object_grabbed(object=rubiks_cube_1) (step 1/2); object_grabbed(...|
+|CookingClearPlateTask|0.0|0.0|2700.0|Conditions not satisfied: object_grabbed(object=spoon_1) (step 1/2); object_grabbed(object=measuring_cups_1) (step 1/2)|
+|CookingPickPastaToolTask|0.0|0.0|900.0|Condition not satisfied: object_grabbed(object=pink_spaghetti_spoon) (step 1/2)|
+|CubesAndBlocksInBinTask|0.0|0.0|3600.0|Conditions not satisfied: object_grabbed(object=rubiks_cube) (step 1/2); object_grabbed(object=rubiks_cube_1) (step 1/2); object_grabbed(...|
+|FoodPackingByColorTask|0.0|0.0|1800.0|Condition not satisfied: object_grabbed(object=mustard) (step 1/2)|
+|NonHammerToolsInRightBinTask|0.0|0.0|2700.0|Conditions not satisfied: object_grabbed(object=cordless_drill) (step 1/2); object_grabbed(object=spring_clamp) (step 1/2)|
+|PlasticBottlesInSquarePailTask|0.0|0.0|2700.0|Conditions not satisfied: object_grabbed(object=whitepackerbottle_a01) (step 1/2); object_grabbed(object=whitepackerbottle_a02) (step 1/2...|
+|PutMugsOnShelfTask|0.0|0.0|2700.0|Conditions not satisfied: object_grabbed(object=ceramic_mug) (step 1/2); object_grabbed(object=mug) (step 1/2)|
+|ReorientJugTask|0.0|0.0|900.0|Condition not satisfied: object_upright(object=utilityjug_a02, require_gripper_detached=True) (step 2/2)|
+|ToolsPickingDrillTask|0.0|0.0|900.0|Condition not satisfied: object_grabbed(object=cordless_drill) (step 1/2)|
+|ToolsPickingHammerTask|0.0|1.0|900.0|Condition not satisfied: object_grabbed(object=blue_hammer) (step 1/2)|
+|YellowAndWhiteObjectsInBinTask|0.0|0.0|900.0|Conditions not satisfied: object_grabbed(object=mug) (step 1/2); object_grabbed(object=banana) (step 1/2)|
+
+### GR00T / Cosmos3 准备进展
+
+- 4090 上已启动 `mihomo`，代理监听：`127.0.0.1:7897`。
+- Hugging Face 通过代理可访问；`nvidia/GR00T-N1.6-DROID` 与 `nvidia/Cosmos3-Nano-Policy-DROID` 均为 public、非 gated。
+- Cosmos 本地环境已补齐：`cosmos_framework`、`openpi_client`、`openpi_server`、`transformers_cosmos3` 都可导入。
+- 下载已后台启动：`tmux` session `hf_dl_gr00t_droid`、`hf_dl_cosmos3_droid`。当前阶段只下载 checkpoint，不启动模型 server，避免抢 Pi05 实验 GPU。
+
+## 2026-06-22 02:45:11 CST - GR00T DROID smoke 证据补齐
+
+> 结论标识：这是 **GR00T eager/no-flash fallback smoke**，用于确认 server、policy wrapper、RoboLab 环境、视频/HDF5/episode 记录链路能跑通；由于本机 CUDA 11.5 与 `flash-attn` 构建要求不匹配，本轮不是官方 GR00T 性能复现。
+
+| 项目 | 结果 |
+|---|---:|
+| 任务 | `BananaInBowlTask` |
+| policy | `gr00t` / `OXE_DROID` server |
+| success | `False` |
+| score | `0.0` |
+| episode_step | `750` |
+| policy inference avg | `18.8 ms` |
+| 失败原因 | `Condition not satisfied: object_grabbed(object=banana) (step 1/2)` |
+| 视频 | `2 个` |
+| HDF5 | `1 个` |
+| 子任务日志 | `1 个` |
+| artifact check | `1/1` |
+
+关键文件：
+
+- inventory: `/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/robolab_repro_artifacts/roboplay_companion_20260621_074050_gr00t_smoke_BananaInBowlTask_artifact_inventory.json`
+- output root: `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_gr00t_smoke_BananaInBowlTask`
+- episode_results: `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_gr00t_smoke_BananaInBowlTask/episode_results.jsonl`
+- subtask_log: `/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/robolab_repro_artifacts/roboplay_companion_20260621_074050_gr00t_smoke_BananaInBowlTask_subtask_log.json`
+
+下一步执行顺序保持为：Cosmos3 checkpoint 下载完成后再启动 Cosmos server；GR00T 若扩到 20 任务，必须在表格中单独标为 `eager/no-flash fallback`，不能和论文官方 baseline 混排。
+
+## 2026-06-22 04:10:05 CST - GR00T 20 半程状态与 Cosmos3 checkpoint 完成
+
+| 项目 | 当前状态 |
+|---|---:|
+| GR00T 20 已完成任务 | 10/20 |
+| GR00T 20 成功任务 | 0 |
+| 已完成任务 artifact 校验 | 10/10 |
+| 当前标签 | `gr00t_eager_noflash_fallback` |
+| Cosmos3 checkpoint | 42/42 文件完成，缺失 0，snapshot 约 30.68GB，cache 约 39GB |
+
+说明：GR00T 这组仍然标记为 **eager/no-flash fallback**。它解决的是本机 `flash-attn`/CUDA 版本不匹配时的可运行对照问题，不能作为论文官方 GR00T 分数直接引用。当前前 10 条全部完成闭环运行、视频/HDF5/episode/校验文件落盘，但成功率为 0/10，主要失败集中在第一阶段抓取条件未满足。
+
+关键路径：
+
+- GR00T 20 manifest: `/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/robolab_repro_artifacts/roboplay_companion_20260621_074050_gr00t20_eager_task_run_manifest.jsonl`
+- GR00T 20 log: `/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/remote_logs/roboplay_companion_20260621_074050_gr00t20_eager_retry_20260622_025039.log`
+- Cosmos3 snapshot: `/home/yjl/.cache/huggingface/hub/models--nvidia--Cosmos3-Nano-Policy-DROID/snapshots/93d045d11280f2f6ceff57d851f00dbfa236c851`
+
+已完成任务概览：
+
+| # | task | success | score | 失败摘要 |
+|---:|---|---:|---:|---|
+| 1 | `FoodPackingByColorTask` | False | 0.0 | Condition not satisfied: object_grabbed(object=mustard) (step 1/2) |
+| 2 | `NonHammerToolsInRightBinTask` | False | 0.0 | Conditions not satisfied: object_grabbed(object=cordless_drill) (step 1/2); object_grabbed(object=spring_clamp) (step 1/ |
+| 3 | `CookingPickPastaToolTask` | False | 0.0 | Condition not satisfied: object_grabbed(object=pink_spaghetti_spoon) (step 1/2) |
+| 4 | `ReorientJugTask` | False | 0.0 | Condition not satisfied: object_grabbed(object=utilityjug_a02) (step 1/2) |
+| 5 | `YellowAndWhiteObjectsInBinTask` | False | 0.0 | Conditions not satisfied: object_grabbed(object=mug) (step 1/2); object_grabbed(object=banana) (step 1/2) |
+| 6 | `BlockStackingSpecifiedOrderTask` | False | 0.0 | Condition not satisfied: stacked(objects=['red_block', 'blue_block'], order=bottom_to_top) (step 1/1) |
+| 7 | `ClampInRightBinTask` | False | 0.0 | Condition not satisfied: object_grabbed(object=spring_clamp) (step 1/2) |
+| 8 | `PutMugsOnShelfTask` | False | 0.0 | Conditions not satisfied: object_grabbed(object=ceramic_mug) (step 1/2); object_grabbed(object=mug) (step 1/2) |
+| 9 | `PlasticBottlesInSquarePailTask` | False | 0.0 | Conditions not satisfied: object_grabbed(object=whitepackerbottle_a01) (step 1/2); object_grabbed(object=whitepackerbott |
+| 10 | `ToolsPickingDrillTask` | False | 0.0 | Condition not satisfied: object_grabbed(object=cordless_drill) (step 1/2) |
+
+## 2026-06-22 05:49:55 CST - GR00T 20 完整运行结果
+
+> 结果标签：`gr00t_eager_noflash_fallback`。这是为绕过本机 CUDA 11.5 与 `flash-attn` 构建不匹配而做的 eager/no-flash 可运行对照；**不能等同论文官方 GR00T baseline 分数**。
+
+| 项目 | 结果 |
+|---|---:|
+| 任务数 | 20 |
+| episode rows | 20 |
+| success | 0/20 |
+| success rate | 0.00% |
+| mean score | 0.0600 |
+| HDF5 | 20 |
+| 视频 MP4 | 40 |
+| 子任务日志 | 20 |
+| artifact check | 20/20 |
+
+关键输出：
+
+- inventory: `/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/robolab_repro_artifacts/roboplay_companion_20260621_074050_gr00t20_eager_artifact_inventory.json`
+- manifest: `/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/robolab_repro_artifacts/roboplay_companion_20260621_074050_gr00t20_eager_task_run_manifest.jsonl`
+- merged output: `/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_gr00t20_eager_merged`
+- subtask index: `/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/robolab_repro_artifacts/roboplay_companion_20260621_074050_gr00t20_eager_subtask_log_index.jsonl`
+- read_results tables: `/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/robolab_repro_artifacts/roboplay_companion_20260621_074050_gr00t20_eager_read_results`
+- Cosmos3 checkpoint: `/home/yjl/.cache/huggingface/hub/models--nvidia--Cosmos3-Nano-Policy-DROID/snapshots/93d045d11280f2f6ceff57d851f00dbfa236c851`，42/42 文件，缺失 0
+
+### 按能力轴 / 属性
+
+| attribute | episodes | success_rate | score_mean |
+|---|---:|---:|---:|
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+
+### 按难度
+
+| difficulty | episodes | success_rate | score_mean |
+|---|---:|---:|---:|
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+
+### 任务级结果
+
+| # | task | success | score |
+|---:|---|---:|---:|
+| 1 | `FoodPackingByColorTask` | False | 0.0 |
+| 2 | `NonHammerToolsInRightBinTask` | False | 0.0 |
+| 3 | `CookingPickPastaToolTask` | False | 0.0 |
+| 4 | `ReorientJugTask` | False | 0.0 |
+| 5 | `YellowAndWhiteObjectsInBinTask` | False | 0.0 |
+| 6 | `BlockStackingSpecifiedOrderTask` | False | 0.0 |
+| 7 | `ClampInRightBinTask` | False | 0.0 |
+| 8 | `PutMugsOnShelfTask` | False | 0.0 |
+| 9 | `PlasticBottlesInSquarePailTask` | False | 0.0 |
+| 10 | `ToolsPickingDrillTask` | False | 0.0 |
+| 11 | `CubesAndBlocksInBinTask` | False | 0.0 |
+| 12 | `CookingClearPlateTask` | False | 0.0 |
+| 13 | `ToolsPickingHammerTask` | False | 1.0 |
+| 14 | `AnimalsInBinTask` | False | 0.0 |
+| 15 | `BananasInBinOneMoreTask` | False | 0.0 |
+| 16 | `BlackItemsInBinTask` | False | 0.20000000298023224 |
+| 17 | `BagelsOnPlateTask` | False | 0.0 |
+| 18 | `BananasInBinThreeTotalTask` | False | 0.0 |
+| 19 | `CleanUpToysTask` | False | 0.0 |
+| 20 | `BananaInBowlTask` | False | 0.0 |
+
+备注：`ToolsPickingHammerTask` 出现 `success=false` 但 `score=1.0`，说明 episode score/子条件进度与最终 success gate 并非完全同一指标；汇总时必须同时看 success、score 和 reason。
+
+## 2026-06-22 06:07:14 CST - Cosmos3 RoboLab server 启动验证结果
+
+> 结果标签：`cosmos3_nano_policy_droid_4090_oom_blocked`。这不是任务失败率；Cosmos3 在当前 RTX 4090 24GB 单卡环境中没有进入 RoboLab episode rollout，失败发生在 policy server 模型初始化阶段。
+
+| 检查项 | 结果 |
+|---|---|
+| Clash 代理 | `127.0.0.1:7897` 已验证可访问 Hugging Face |
+| Cosmos3 checkpoint | `/home/yjl/.cache/huggingface/hub/models--nvidia--Cosmos3-Nano-Policy-DROID/snapshots/93d045d11280f2f6ceff57d851f00dbfa236c851` |
+| checkpoint 完整性 | 42/42 文件已下载，缺失 0 |
+| openpi 依赖 | `openpi-client` / `openpi-server` 已安装 |
+| RoboLab client | `policies/cosmos3/run.py` 存在，协议为 OpenPI WebSocket |
+| server 初始 blocker | `nvidia/Cosmos-Guardrail1` gated；已用本地补丁关闭 guardrails |
+| 省显存尝试 | 关闭 `use_torch_compile/compile_dynamic`，加 `PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True`、`CUDA_MODULE_LOADING=LAZY`、`PYTORCH_NO_CUDA_MEMORY_CACHING=1`、`TORCH_CUDNN_V8_API_LRU_CACHE_LIMIT=0` |
+| 最终状态 | 仍在模型 `net.to_empty(device=CUDA)` 阶段 OOM；未生成 Cosmos episode/HDF5/video/subtask log |
+
+关键日志：
+
+- guardrail 权限失败：`/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/remote_logs/cosmos3_robolab_server_8000_20260622_055440.log`
+- 关闭 guardrails 后 OOM：`/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/remote_logs/cosmos3_robolab_server_8000_noguardpatch_20260622_055807.log`
+- 4090 省显存启动 OOM：`/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/remote_logs/cosmos3_robolab_server_8000_4090mem_20260622_060343.log`
+- 关闭 CUDA cache 后 OOM：`/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/remote_logs/cosmos3_robolab_server_8000_nocache_20260622_060450.log`
+- blocker JSON：`/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/robolab_repro_artifacts/roboplay_companion_20260621_074050_cosmos3_4090_startup_blocker.json`
+
+结论：Cosmos3-Nano-Policy-DROID 的本地 policy server 在当前 4090 24GB + 保留 VNC/桌面可视化的条件下不能完整加载。后续如果要把 Cosmos3 纳入 20 任务对照，需要切到 48GB+ 显存机器，或使用官方/社区提供的更小或量化 checkpoint；否则不能把 Cosmos3 记成“20 任务已跑”。
+

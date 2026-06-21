@@ -1,0 +1,59 @@
+{
+  "queue_id": "roboplay_companion_20260621_074050",
+  "policy": "Cosmos3-Nano-Policy-DROID",
+  "status": "blocked_before_episode_rollout",
+  "blocker": "RTX 4090 24GB single-GPU OOM during Cosmos3 policy server model initialization",
+  "completed_prerequisites": {
+    "clash_proxy": "127.0.0.1:7897 verified against Hugging Face",
+    "checkpoint": "/home/yjl/.cache/huggingface/hub/models--nvidia--Cosmos3-Nano-Policy-DROID/snapshots/93d045d11280f2f6ceff57d851f00dbfa236c851",
+    "checkpoint_files": "42/42 verified earlier, missing 0",
+    "cosmos_framework": "/home/yjl/cosmos_install/cosmos-framework",
+    "openpi_deps": "openpi-client/openpi-server installed via policy-server group",
+    "robolab_client": "/home/yjl/codex_robolab_4090_20260619/RoboLab/policies/cosmos3/run.py"
+  },
+  "local_runtime_patch": {
+    "file": "/home/yjl/cosmos_install/cosmos-framework/cosmos_framework/scripts/action_policy_server_robolab.py",
+    "backup": "/home/yjl/cosmos_install/cosmos-framework/cosmos_framework/scripts/action_policy_server_robolab.py.codex_guardrails_backup",
+    "changes": [
+      "set guardrails=False to avoid gated nvidia/Cosmos-Guardrail1 download",
+      "set use_torch_compile=False and compile_dynamic=False for 4090 memory-saving launch attempts"
+    ]
+  },
+  "attempts": [
+    {
+      "label": "local checkpoint default server",
+      "result": "blocked_by_gated_guardrail_checkpoint",
+      "log": "/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/remote_logs/cosmos3_robolab_server_8000_20260622_055440.log",
+      "evidence": "nvidia/Cosmos-Guardrail1 requires approval; server exited before model load"
+    },
+    {
+      "label": "guardrails disabled",
+      "result": "cuda_out_of_memory",
+      "log": "/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/remote_logs/cosmos3_robolab_server_8000_noguardpatch_20260622_055807.log",
+      "evidence": "CUDA OOM during net.to_empty; process used about 23.41 GiB and needed another 96 MiB"
+    },
+    {
+      "label": "guardrails disabled + compile disabled + expandable_segments + CUDA lazy loading",
+      "result": "cuda_out_of_memory",
+      "log": "/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/remote_logs/cosmos3_robolab_server_8000_4090mem_20260622_060343.log",
+      "evidence": "CUDA OOM during net.to_empty; 61 MiB free and 96 MiB allocation requested"
+    },
+    {
+      "label": "plus PYTORCH_NO_CUDA_MEMORY_CACHING and cuDNN plan cache disabled",
+      "result": "cuda_out_of_memory",
+      "log": "/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/remote_logs/cosmos3_robolab_server_8000_nocache_20260622_060450.log",
+      "evidence": "CUDA memory allocation still failed during model construction"
+    }
+  ],
+  "episode_artifacts": {
+    "episode_results_jsonl": 0,
+    "hdf5": 0,
+    "mp4": 0,
+    "subtask_logs": 0
+  },
+  "next_options": [
+    "Run Cosmos3-Nano-Policy-DROID on 48GB+ VRAM GPU, or multi-GPU/runtime with implemented sharding/offload.",
+    "Try a temporary fully headless/no-GUI run only if the user accepts losing VNC visibility; this may free roughly tens of MiB but is not guaranteed.",
+    "Use a smaller/quantized Cosmos policy if NVIDIA releases one with the same RoboLab protocol."
+  ]
+}

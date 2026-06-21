@@ -1,0 +1,233 @@
+{
+  "inputs": [
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_FoodPackingByColorTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_NonHammerToolsInRightBinTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_CookingPickPastaToolTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_ReorientJugTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_YellowAndWhiteObjectsInBinTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BlockStackingSpecifiedOrderTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_ClampInRightBinTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_PutMugsOnShelfTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_PlasticBottlesInSquarePailTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_ToolsPickingDrillTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_CubesAndBlocksInBinTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_CookingClearPlateTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_ToolsPickingHammerTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_AnimalsInBinTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BananasInBinOneMoreTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BlackItemsInBinTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BagelsOnPlateTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BananasInBinThreeTotalTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_CleanUpToysTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BananaInBowlTask"
+  ],
+  "task_matrix": "robolab_repro_artifacts/roboplay_companion_20260621_074050_robolab20_task_matrix.json",
+  "episode_files": [
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_AnimalsInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BagelsOnPlateTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BananaInBowlTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BananasInBinOneMoreTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BananasInBinThreeTotalTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BlackItemsInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BlockStackingSpecifiedOrderTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_ClampInRightBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_CleanUpToysTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_CookingClearPlateTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_CookingPickPastaToolTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_CubesAndBlocksInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_FoodPackingByColorTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_NonHammerToolsInRightBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_PlasticBottlesInSquarePailTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_PutMugsOnShelfTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_ReorientJugTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_ToolsPickingDrillTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_ToolsPickingHammerTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_YellowAndWhiteObjectsInBinTask/episode_results.jsonl"
+  ],
+  "episode_rows": 20,
+  "successes": 0,
+  "success_rate": 0.0,
+  "tables": {
+    "by_axis": "robolab_repro_artifacts/roboplay_companion_20260621_074050_pi05_base_droid20_read_results/roboplay_companion_20260621_074050_pi05_base_droid20_by_axis.csv",
+    "by_difficulty": "robolab_repro_artifacts/roboplay_companion_20260621_074050_pi05_base_droid20_read_results/roboplay_companion_20260621_074050_pi05_base_droid20_by_difficulty.csv",
+    "by_task_length": "robolab_repro_artifacts/roboplay_companion_20260621_074050_pi05_base_droid20_read_results/roboplay_companion_20260621_074050_pi05_base_droid20_by_task_length.csv",
+    "by_task": "robolab_repro_artifacts/roboplay_companion_20260621_074050_pi05_base_droid20_read_results/roboplay_companion_20260621_074050_pi05_base_droid20_by_task.csv"
+  },
+  "by_axis": [
+    {
+      "axis": "procedural",
+      "episodes": 10,
+      "successes": 0,
+      "success_rate": 0.0,
+      "episode_step_mean": 2475.0,
+      "score_mean": 0.020000000298023225,
+      "policy_inference_avg_ms_mean": 11.68
+    },
+    {
+      "axis": "relational",
+      "episodes": 11,
+      "successes": 0,
+      "success_rate": 0.0,
+      "episode_step_mean": 1554.5454545454545,
+      "score_mean": 0.09090909090909091,
+      "policy_inference_avg_ms_mean": 11.681818181818182
+    },
+    {
+      "axis": "visual",
+      "episodes": 18,
+      "successes": 0,
+      "success_rate": 0.0,
+      "episode_step_mean": 1541.6666666666667,
+      "score_mean": 0.06666666683223513,
+      "policy_inference_avg_ms_mean": 11.71111111111111
+    }
+  ],
+  "by_difficulty": [
+    {
+      "difficulty": "complex",
+      "episodes": 5,
+      "successes": 0,
+      "success_rate": 0.0,
+      "episode_step_mean": 2790.0,
+      "score_mean": 0.04000000059604645,
+      "policy_inference_avg_ms_mean": 11.7
+    },
+    {
+      "difficulty": "moderate",
+      "episodes": 7,
+      "successes": 0,
+      "success_rate": 0.0,
+      "episode_step_mean": 1800.0,
+      "score_mean": 0.0,
+      "policy_inference_avg_ms_mean": 11.685714285714285
+    },
+    {
+      "difficulty": "simple",
+      "episodes": 8,
+      "successes": 0,
+      "success_rate": 0.0,
+      "episode_step_mean": 937.5,
+      "score_mean": 0.125,
+      "policy_inference_avg_ms_mean": 11.7125
+    }
+  ],
+  "by_task_length": [
+    {
+      "task_length": "10_atomic_conditions",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "episode_step_mean": 1800.0,
+      "score_mean": 0.20000000298023224,
+      "policy_inference_avg_ms_mean": 11.8
+    },
+    {
+      "task_length": "14_atomic_conditions",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "episode_step_mean": 3600.0,
+      "score_mean": 0.0,
+      "policy_inference_avg_ms_mean": 11.6
+    },
+    {
+      "task_length": "18_atomic_conditions",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "episode_step_mean": 4500.0,
+      "score_mean": 0.0,
+      "policy_inference_avg_ms_mean": 11.7
+    },
+    {
+      "task_length": "1_subtasks",
+      "episodes": 8,
+      "successes": 0,
+      "success_rate": 0.0,
+      "episode_step_mean": 881.25,
+      "score_mean": 0.125,
+      "policy_inference_avg_ms_mean": 11.725
+    },
+    {
+      "task_length": "2_atomic_conditions",
+      "episodes": 8,
+      "successes": 0,
+      "success_rate": 0.0,
+      "episode_step_mean": 881.25,
+      "score_mean": 0.125,
+      "policy_inference_avg_ms_mean": 11.725
+    },
+    {
+      "task_length": "2_subtasks",
+      "episodes": 7,
+      "successes": 0,
+      "success_rate": 0.0,
+      "episode_step_mean": 1864.2857142857142,
+      "score_mean": 0.0,
+      "policy_inference_avg_ms_mean": 11.67142857142857
+    },
+    {
+      "task_length": "3_atomic_conditions",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "episode_step_mean": 1350.0,
+      "score_mean": 0.0,
+      "policy_inference_avg_ms_mean": 11.7
+    },
+    {
+      "task_length": "3_subtasks",
+      "episodes": 2,
+      "successes": 0,
+      "success_rate": 0.0,
+      "episode_step_mean": 2025.0,
+      "score_mean": 0.0,
+      "policy_inference_avg_ms_mean": 11.7
+    },
+    {
+      "task_length": "4_atomic_conditions",
+      "episodes": 7,
+      "successes": 0,
+      "success_rate": 0.0,
+      "episode_step_mean": 1864.2857142857142,
+      "score_mean": 0.0,
+      "policy_inference_avg_ms_mean": 11.67142857142857
+    },
+    {
+      "task_length": "5_subtasks",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "episode_step_mean": 1800.0,
+      "score_mean": 0.20000000298023224,
+      "policy_inference_avg_ms_mean": 11.8
+    },
+    {
+      "task_length": "6_atomic_conditions",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "episode_step_mean": 2700.0,
+      "score_mean": 0.0,
+      "policy_inference_avg_ms_mean": 11.7
+    },
+    {
+      "task_length": "7_subtasks",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "episode_step_mean": 3600.0,
+      "score_mean": 0.0,
+      "policy_inference_avg_ms_mean": 11.6
+    },
+    {
+      "task_length": "9_subtasks",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "episode_step_mean": 4500.0,
+      "score_mean": 0.0,
+      "policy_inference_avg_ms_mean": 11.7
+    }
+  ]
+}

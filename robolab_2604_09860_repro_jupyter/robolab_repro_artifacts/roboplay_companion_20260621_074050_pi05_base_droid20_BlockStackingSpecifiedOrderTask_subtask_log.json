@@ -1,0 +1,28 @@
+{
+  "task_name": "BlockStackingSpecifiedOrderTask",
+  "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BlockStackingSpecifiedOrderTask",
+  "episode_results": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BlockStackingSpecifiedOrderTask/episode_results.jsonl",
+  "hdf5": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BlockStackingSpecifiedOrderTask/BlockStackingSpecifiedOrderTask/run_0.hdf5",
+  "success": false,
+  "score": 0.0,
+  "reason": "Condition not satisfied: stacked(objects=['red_block', 'blue_block'], order=bottom_to_top) (step 1/1)",
+  "episode_step": 1350,
+  "events": {
+    "GRIPPER_HIT_TABLE": 2
+  },
+  "subtask_source": "hdf5:data/demo_0/subtask/{completed,status,score}",
+  "subtask": {
+    "completed": [
+      0
+    ],
+    "status": [
+      254
+    ],
+    "score": [
+      0.0
+    ],
+    "final_completed": 0,
+    "final_status": 254,
+    "final_score": 0.0
+  }
+}

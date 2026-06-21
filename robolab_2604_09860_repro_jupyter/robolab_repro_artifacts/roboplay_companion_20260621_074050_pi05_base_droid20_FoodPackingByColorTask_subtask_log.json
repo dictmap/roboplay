@@ -1,0 +1,42 @@
+{
+  "task_name": "FoodPackingByColorTask",
+  "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_FoodPackingByColorTask",
+  "episode_results": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_FoodPackingByColorTask/episode_results.jsonl",
+  "hdf5": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_FoodPackingByColorTask/FoodPackingByColorTask/run_0.hdf5",
+  "success": false,
+  "score": 0.0,
+  "reason": "Condition not satisfied: object_grabbed(object=mustard) (step 1/2)",
+  "episode_step": 1800,
+  "events": {
+    "OBJECT_BUMPED": 6,
+    "TARGET_OBJECT_DROPPED": 2,
+    "GRIPPER_FULLY_CLOSED": 1
+  },
+  "subtask_source": "hdf5:data/demo_0/subtask/{completed,status,score}",
+  "subtask": {
+    "completed": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "status": [
+      139,
+      248,
+      139,
+      248,
+      248
+    ],
+    "score": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "final_completed": 0,
+    "final_status": 248,
+    "final_score": 0.0
+  }
+}

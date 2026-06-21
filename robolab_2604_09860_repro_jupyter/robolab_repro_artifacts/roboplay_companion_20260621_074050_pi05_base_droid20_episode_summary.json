@@ -1,0 +1,477 @@
+{
+  "episode_files": [
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_AnimalsInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BagelsOnPlateTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BananaInBowlTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BananasInBinOneMoreTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BananasInBinThreeTotalTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BlackItemsInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BlockStackingSpecifiedOrderTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_ClampInRightBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_CleanUpToysTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_CookingClearPlateTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_CookingPickPastaToolTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_CubesAndBlocksInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_FoodPackingByColorTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_NonHammerToolsInRightBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_PlasticBottlesInSquarePailTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_PutMugsOnShelfTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_ReorientJugTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_ToolsPickingDrillTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_ToolsPickingHammerTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_YellowAndWhiteObjectsInBinTask/episode_results.jsonl"
+  ],
+  "num_episode_rows": 20,
+  "groups": [
+    {
+      "task_name": "AnimalsInBinTask",
+      "env_name": "AnimalsInBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 1350.0,
+      "duration_mean": 90.0,
+      "policy_inference_avg_ms_mean": 11.8,
+      "env_step_avg_ms_mean": 264.1,
+      "events": {
+        "GRIPPER_HIT_OBJECT": 2,
+        "MULTIPLE_OBJECTS_GRABBED": 1,
+        "TARGET_OBJECT_DROPPED": 1,
+        "GRIPPER_HIT_TABLE": 4,
+        "OBJECT_BUMPED": 3,
+        "OBJECT_OUT_OF_SCENE": 1,
+        "OBJECT_MOVED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_AnimalsInBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BagelsOnPlateTask",
+      "env_name": "BagelsOnPlateTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 11.7,
+      "env_step_avg_ms_mean": 239.2,
+      "events": {
+        "GRIPPER_HIT_OBJECT": 1,
+        "GRIPPER_HIT_TABLE": 7,
+        "OBJECT_BUMPED": 29,
+        "MULTIPLE_OBJECTS_GRABBED": 1,
+        "TARGET_OBJECT_DROPPED": 1,
+        "OBJECT_MOVED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BagelsOnPlateTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BananaInBowlTask",
+      "env_name": "BananaInBowlTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 750.0,
+      "duration_mean": 50.0,
+      "policy_inference_avg_ms_mean": 11.7,
+      "env_step_avg_ms_mean": 179.3,
+      "events": {
+        "GRIPPER_HIT_TABLE": 5,
+        "TARGET_OBJECT_DROPPED": 2,
+        "OBJECT_BUMPED": 2
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BananaInBowlTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BananasInBinOneMoreTask",
+      "env_name": "BananasInBinOneMoreTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 11.7,
+      "env_step_avg_ms_mean": 208.8,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 14,
+        "GRIPPER_HIT_TABLE": 2,
+        "OBJECT_BUMPED": 6
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BananasInBinOneMoreTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BananasInBinThreeTotalTask",
+      "env_name": "BananasInBinThreeTotalTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 11.8,
+      "env_step_avg_ms_mean": 208.7,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 4,
+        "GRIPPER_HIT_TABLE": 7,
+        "OBJECT_BUMPED": 12
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BananasInBinThreeTotalTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BlackItemsInBinTask",
+      "env_name": "BlackItemsInBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.20000000298023224,
+      "episode_step_mean": 1800.0,
+      "duration_mean": 120.0,
+      "policy_inference_avg_ms_mean": 11.8,
+      "env_step_avg_ms_mean": 296.3,
+      "events": {
+        "GRIPPER_HIT_TABLE": 4,
+        "TARGET_OBJECT_DROPPED": 2,
+        "GRIPPER_HIT_OBJECT": 1,
+        "OBJECT_BUMPED": 3
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BlackItemsInBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BlockStackingSpecifiedOrderTask",
+      "env_name": "BlockStackingSpecifiedOrderTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 1350.0,
+      "duration_mean": 90.0,
+      "policy_inference_avg_ms_mean": 11.7,
+      "env_step_avg_ms_mean": 180.5,
+      "events": {
+        "GRIPPER_HIT_TABLE": 2
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BlockStackingSpecifiedOrderTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ClampInRightBinTask",
+      "env_name": "ClampInRightBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 11.7,
+      "env_step_avg_ms_mean": 226.4,
+      "events": {
+        "GRIPPER_HIT_TABLE": 4
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_ClampInRightBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "CleanUpToysTask",
+      "env_name": "CleanUpToysTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 4500.0,
+      "duration_mean": 300.0,
+      "policy_inference_avg_ms_mean": 11.7,
+      "env_step_avg_ms_mean": 271.0,
+      "events": {
+        "GRIPPER_HIT_TABLE": 6,
+        "OBJECT_BUMPED": 6,
+        "TARGET_OBJECT_DROPPED": 2,
+        "GRIPPER_HIT_OBJECT": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_CleanUpToysTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "CookingClearPlateTask",
+      "env_name": "CookingClearPlateTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 2700.0,
+      "duration_mean": 180.0,
+      "policy_inference_avg_ms_mean": 11.7,
+      "env_step_avg_ms_mean": 329.0,
+      "events": {
+        "GRIPPER_HIT_OBJECT": 2,
+        "OBJECT_BUMPED": 18,
+        "GRIPPER_HIT_TABLE": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_CookingClearPlateTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "CookingPickPastaToolTask",
+      "env_name": "CookingPickPastaToolTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 11.7,
+      "env_step_avg_ms_mean": 318.4,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_CookingPickPastaToolTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "CubesAndBlocksInBinTask",
+      "env_name": "CubesAndBlocksInBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 3600.0,
+      "duration_mean": 240.0,
+      "policy_inference_avg_ms_mean": 11.6,
+      "env_step_avg_ms_mean": 268.7,
+      "events": {
+        "GRIPPER_HIT_OBJECT": 6,
+        "OBJECT_BUMPED": 19,
+        "GRIPPER_HIT_TABLE": 3,
+        "TARGET_OBJECT_DROPPED": 2,
+        "GRIPPER_FULLY_CLOSED": 1,
+        "MULTIPLE_OBJECTS_GRABBED": 1,
+        "OBJECT_OUT_OF_SCENE": 3,
+        "OBJECT_MOVED": 3
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_CubesAndBlocksInBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "FoodPackingByColorTask",
+      "env_name": "FoodPackingByColorTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 1800.0,
+      "duration_mean": 120.0,
+      "policy_inference_avg_ms_mean": 11.6,
+      "env_step_avg_ms_mean": 237.5,
+      "events": {
+        "OBJECT_BUMPED": 6,
+        "TARGET_OBJECT_DROPPED": 2,
+        "GRIPPER_FULLY_CLOSED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_FoodPackingByColorTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "NonHammerToolsInRightBinTask",
+      "env_name": "NonHammerToolsInRightBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 2700.0,
+      "duration_mean": 180.0,
+      "policy_inference_avg_ms_mean": 11.7,
+      "env_step_avg_ms_mean": 205.7,
+      "events": {
+        "GRIPPER_HIT_TABLE": 14,
+        "TARGET_OBJECT_DROPPED": 9,
+        "GRIPPER_HIT_OBJECT": 3,
+        "MULTIPLE_OBJECTS_GRABBED": 1,
+        "OBJECT_BUMPED": 1,
+        "GRIPPER_FULLY_CLOSED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_NonHammerToolsInRightBinTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "PlasticBottlesInSquarePailTask",
+      "env_name": "PlasticBottlesInSquarePailTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 2700.0,
+      "duration_mean": 180.0,
+      "policy_inference_avg_ms_mean": 11.7,
+      "env_step_avg_ms_mean": 241.7,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 3,
+        "OBJECT_BUMPED": 5,
+        "GRIPPER_HIT_TABLE": 6,
+        "GRIPPER_HIT_OBJECT": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_PlasticBottlesInSquarePailTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "PutMugsOnShelfTask",
+      "env_name": "PutMugsOnShelfTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 2700.0,
+      "duration_mean": 180.0,
+      "policy_inference_avg_ms_mean": 11.6,
+      "env_step_avg_ms_mean": 212.9,
+      "events": {
+        "TARGET_OBJECT_DROPPED": 8,
+        "GRIPPER_HIT_OBJECT": 2,
+        "OBJECT_OUT_OF_SCENE": 2,
+        "OBJECT_MOVED": 2,
+        "OBJECT_BUMPED": 4,
+        "GRIPPER_HIT_TABLE": 5
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_PutMugsOnShelfTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ReorientJugTask",
+      "env_name": "ReorientJugTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 11.7,
+      "env_step_avg_ms_mean": 222.4,
+      "events": {
+        "OBJECT_BUMPED": 4,
+        "GRIPPER_HIT_OBJECT": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_ReorientJugTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ToolsPickingDrillTask",
+      "env_name": "ToolsPickingDrillTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 11.7,
+      "env_step_avg_ms_mean": 260.8,
+      "events": {
+        "GRIPPER_HIT_OBJECT": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_ToolsPickingDrillTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ToolsPickingHammerTask",
+      "env_name": "ToolsPickingHammerTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 1.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 11.8,
+      "env_step_avg_ms_mean": 261.0,
+      "events": {
+        "GRIPPER_HIT_OBJECT": 3,
+        "MULTIPLE_OBJECTS_GRABBED": 1,
+        "GRIPPER_FULLY_CLOSED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_ToolsPickingHammerTask/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "YellowAndWhiteObjectsInBinTask",
+      "env_name": "YellowAndWhiteObjectsInBinTask",
+      "policy": "pi05",
+      "variant": "unlabeled",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": 11.6,
+      "env_step_avg_ms_mean": 229.5,
+      "events": {
+        "GRIPPER_HIT_TABLE": 4,
+        "TARGET_OBJECT_DROPPED": 3,
+        "OBJECT_BUMPED": 1
+      },
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_YellowAndWhiteObjectsInBinTask/episode_results.jsonl"
+      ]
+    }
+  ]
+}

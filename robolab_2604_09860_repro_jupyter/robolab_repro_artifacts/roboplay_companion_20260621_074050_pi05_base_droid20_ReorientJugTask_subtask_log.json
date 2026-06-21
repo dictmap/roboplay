@@ -1,0 +1,41 @@
+{
+  "task_name": "ReorientJugTask",
+  "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_ReorientJugTask",
+  "episode_results": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_ReorientJugTask/episode_results.jsonl",
+  "hdf5": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_ReorientJugTask/ReorientJugTask/run_0.hdf5",
+  "success": false,
+  "score": 0.0,
+  "reason": "Condition not satisfied: object_upright(object=utilityjug_a02, require_gripper_detached=True) (step 2/2)",
+  "episode_step": 900,
+  "events": {
+    "OBJECT_BUMPED": 4,
+    "GRIPPER_HIT_OBJECT": 1
+  },
+  "subtask_source": "hdf5:data/demo_0/subtask/{completed,status,score}",
+  "subtask": {
+    "completed": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "status": [
+      139,
+      248,
+      139,
+      248,
+      253
+    ],
+    "score": [
+      0.5,
+      0.0,
+      0.5,
+      0.0,
+      0.0
+    ],
+    "final_completed": 0,
+    "final_status": 253,
+    "final_score": 0.0
+  }
+}

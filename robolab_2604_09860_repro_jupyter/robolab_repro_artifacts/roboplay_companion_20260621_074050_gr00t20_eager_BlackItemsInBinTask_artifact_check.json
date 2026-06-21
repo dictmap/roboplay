@@ -1,0 +1,28 @@
+{
+  "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_gr00t20_eager_BlackItemsInBinTask",
+  "episode_results_jsonl": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_gr00t20_eager_BlackItemsInBinTask/episode_results.jsonl",
+  "episode_results_jsonl_nonempty": true,
+  "tasks": [
+    {
+      "task": "BlackItemsInBinTask",
+      "task_dirs": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_gr00t20_eager_BlackItemsInBinTask/BlackItemsInBinTask"
+      ],
+      "hdf5": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_gr00t20_eager_BlackItemsInBinTask/BlackItemsInBinTask/run_0.hdf5"
+      ],
+      "videos": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_gr00t20_eager_BlackItemsInBinTask/BlackItemsInBinTask/Put_the_black_items_in_the_grey_bin_0_viewport.mp4",
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_gr00t20_eager_BlackItemsInBinTask/BlackItemsInBinTask/Put_the_black_items_in_the_grey_bin_0.mp4"
+      ],
+      "subtask_or_event_logs": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_gr00t20_eager_BlackItemsInBinTask/BlackItemsInBinTask/log_0_env0.json"
+      ],
+      "env_cfg": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_gr00t20_eager_BlackItemsInBinTask/BlackItemsInBinTask/env_cfg.json"
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true
+}

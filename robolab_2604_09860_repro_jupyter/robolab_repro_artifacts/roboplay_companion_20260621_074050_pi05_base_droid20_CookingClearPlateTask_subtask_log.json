@@ -1,0 +1,30 @@
+{
+  "task_name": "CookingClearPlateTask",
+  "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_CookingClearPlateTask",
+  "episode_results": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_CookingClearPlateTask/episode_results.jsonl",
+  "hdf5": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_CookingClearPlateTask/CookingClearPlateTask/run_0.hdf5",
+  "success": false,
+  "score": 0.0,
+  "reason": "Conditions not satisfied: object_grabbed(object=spoon_1) (step 1/2); object_grabbed(object=measuring_cups_1) (step 1/2)",
+  "episode_step": 2700,
+  "events": {
+    "GRIPPER_HIT_OBJECT": 2,
+    "OBJECT_BUMPED": 18,
+    "GRIPPER_HIT_TABLE": 1
+  },
+  "subtask_source": "hdf5:data/demo_0/subtask/{completed,status,score}",
+  "subtask": {
+    "completed": [
+      0
+    ],
+    "status": [
+      248
+    ],
+    "score": [
+      0.0
+    ],
+    "final_completed": 0,
+    "final_status": 248,
+    "final_score": 0.0
+  }
+}

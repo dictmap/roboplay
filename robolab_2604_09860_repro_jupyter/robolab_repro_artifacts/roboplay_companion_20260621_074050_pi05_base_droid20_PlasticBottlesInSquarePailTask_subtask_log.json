@@ -1,0 +1,49 @@
+{
+  "task_name": "PlasticBottlesInSquarePailTask",
+  "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_PlasticBottlesInSquarePailTask",
+  "episode_results": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_PlasticBottlesInSquarePailTask/episode_results.jsonl",
+  "hdf5": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_PlasticBottlesInSquarePailTask/PlasticBottlesInSquarePailTask/run_0.hdf5",
+  "success": false,
+  "score": 0.0,
+  "reason": "Conditions not satisfied: object_grabbed(object=whitepackerbottle_a01) (step 1/2); object_grabbed(object=whitepackerbottle_a02) (step 1/2); object_grabbed(object=whitepackerbottle_a03) (step 1/2)",
+  "episode_step": 2700,
+  "events": {
+    "TARGET_OBJECT_DROPPED": 3,
+    "OBJECT_BUMPED": 5,
+    "GRIPPER_HIT_TABLE": 6,
+    "GRIPPER_HIT_OBJECT": 1
+  },
+  "subtask_source": "hdf5:data/demo_0/subtask/{completed,status,score}",
+  "subtask": {
+    "completed": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "status": [
+      139,
+      248,
+      139,
+      248,
+      139,
+      248,
+      248
+    ],
+    "score": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "final_completed": 0,
+    "final_status": 248,
+    "final_score": 0.0
+  }
+}

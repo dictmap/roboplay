@@ -1,0 +1,54 @@
+{
+  "task_name": "BananasInBinThreeTotalTask",
+  "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BananasInBinThreeTotalTask",
+  "episode_results": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BananasInBinThreeTotalTask/episode_results.jsonl",
+  "hdf5": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_pi05_base_droid20_BananasInBinThreeTotalTask/BananasInBinThreeTotalTask/run_0.hdf5",
+  "success": false,
+  "score": 0.0,
+  "reason": "Only 0/1 objects completed. Failed: object_grabbed(object=banana) (step 1/2)",
+  "episode_step": 900,
+  "events": {
+    "TARGET_OBJECT_DROPPED": 4,
+    "GRIPPER_HIT_TABLE": 7,
+    "OBJECT_BUMPED": 12
+  },
+  "subtask_source": "hdf5:data/demo_0/subtask/{completed,status,score}",
+  "subtask": {
+    "completed": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "status": [
+      139,
+      248,
+      139,
+      248,
+      139,
+      248,
+      139,
+      248,
+      248
+    ],
+    "score": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "final_completed": 0,
+    "final_status": 248,
+    "final_score": 0.0
+  }
+}
