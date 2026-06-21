@@ -1,0 +1,6 @@
+{
+  "candidate_root": "/home/yjl/light/Rekep",
+  "local_rekep_exists": true,
+  "robolab_rollout_started": false,
+  "blocking_reason": "ReKep is a planner/perception method, not a drop-in RoboLab policy server."
+}

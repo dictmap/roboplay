@@ -1,0 +1,4 @@
+difficulty,episodes,successes,success_rate,episode_step_mean,score_mean,policy_inference_avg_ms_mean
+complex,15,3,0.2,2420.4,,
+moderate,21,10,0.47619047619047616,1289.7619047619048,,
+simple,24,2,0.08333333333333333,889.5,,

@@ -1,0 +1,294 @@
+{
+  "matrix": "/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/robolab_repro_artifacts/roboplay_companion_20260621_074050_robolab20_task_matrix.json",
+  "roots": [
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_FoodPackingByColorTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_NonHammerToolsInRightBinTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_CookingPickPastaToolTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_ReorientJugTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_YellowAndWhiteObjectsInBinTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_BlockStackingSpecifiedOrderTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_ClampInRightBinTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_PutMugsOnShelfTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_PlasticBottlesInSquarePailTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_ToolsPickingDrillTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_CubesAndBlocksInBinTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_CookingClearPlateTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_ToolsPickingHammerTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_AnimalsInBinTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_BananasInBinOneMoreTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_BlackItemsInBinTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_BagelsOnPlateTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_BananasInBinThreeTotalTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_CleanUpToysTask",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_BananaInBowlTask"
+  ],
+  "num_episode_rows": 20,
+  "aggregates": {
+    "by_task": [
+      {
+        "policy": "pi05",
+        "task_name": "AnimalsInBinTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 0.0,
+        "score_mean": 0.0,
+        "episode_step_mean": 1350.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "BagelsOnPlateTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 0.0,
+        "score_mean": 0.0,
+        "episode_step_mean": 900.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "BananaInBowlTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 1.0,
+        "score_mean": 1.0,
+        "episode_step_mean": 160.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "BananasInBinOneMoreTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 1.0,
+        "score_mean": 1.0,
+        "episode_step_mean": 210.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "BananasInBinThreeTotalTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 1.0,
+        "score_mean": 1.0,
+        "episode_step_mean": 257.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "BlackItemsInBinTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 0.0,
+        "score_mean": 0.4000000059604645,
+        "episode_step_mean": 1800.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "BlockStackingSpecifiedOrderTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 0.0,
+        "score_mean": 0.0,
+        "episode_step_mean": 1350.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "ClampInRightBinTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 0.0,
+        "score_mean": 0.0,
+        "episode_step_mean": 900.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "CleanUpToysTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 0.0,
+        "score_mean": 0.0,
+        "episode_step_mean": 4500.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "CookingClearPlateTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 1.0,
+        "score_mean": 0.0,
+        "episode_step_mean": 826.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "CookingPickPastaToolTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 0.0,
+        "score_mean": 0.0,
+        "episode_step_mean": 900.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "CubesAndBlocksInBinTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 0.0,
+        "score_mean": 0.75,
+        "episode_step_mean": 3600.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "FoodPackingByColorTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 0.0,
+        "score_mean": 0.0,
+        "episode_step_mean": 1800.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "NonHammerToolsInRightBinTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 0.0,
+        "score_mean": 0.0,
+        "episode_step_mean": 2700.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "PlasticBottlesInSquarePailTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 1.0,
+        "score_mean": 1.0,
+        "episode_step_mean": 1553.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "PutMugsOnShelfTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 0.0,
+        "score_mean": 0.5,
+        "episode_step_mean": 2700.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "ReorientJugTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 0.0,
+        "score_mean": 0.0,
+        "episode_step_mean": 900.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "ToolsPickingDrillTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 0.0,
+        "score_mean": 0.0,
+        "episode_step_mean": 900.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "ToolsPickingHammerTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 0.0,
+        "score_mean": 0.0,
+        "episode_step_mean": 900.0
+      },
+      {
+        "policy": "pi05",
+        "task_name": "YellowAndWhiteObjectsInBinTask",
+        "episodes": 1,
+        "scored_episodes": 1,
+        "pending_episodes": 0,
+        "success_rate": 0.0,
+        "score_mean": 0.0,
+        "episode_step_mean": 900.0
+      }
+    ],
+    "by_axis": [
+      {
+        "policy": "pi05",
+        "axis": "procedural",
+        "episodes": 10,
+        "scored_episodes": 10,
+        "pending_episodes": 0,
+        "success_rate": 0.2,
+        "score_mean": 0.26500000059604645,
+        "episode_step_mean": 2172.9
+      },
+      {
+        "policy": "pi05",
+        "axis": "relational",
+        "episodes": 11,
+        "scored_episodes": 11,
+        "pending_episodes": 0,
+        "success_rate": 0.18181818181818182,
+        "score_mean": 0.29545454545454547,
+        "episode_step_mean": 1433.3636363636363
+      },
+      {
+        "policy": "pi05",
+        "axis": "visual",
+        "episodes": 18,
+        "scored_episodes": 18,
+        "pending_episodes": 0,
+        "success_rate": 0.2777777777777778,
+        "score_mean": 0.24444444477558136,
+        "episode_step_mean": 1267.0
+      }
+    ],
+    "by_difficulty": [
+      {
+        "policy": "pi05",
+        "difficulty_label": "complex",
+        "episodes": 5,
+        "scored_episodes": 5,
+        "pending_episodes": 0,
+        "success_rate": 0.2,
+        "score_mean": 0.4300000011920929,
+        "episode_step_mean": 2560.6
+      },
+      {
+        "policy": "pi05",
+        "difficulty_label": "moderate",
+        "episodes": 7,
+        "scored_episodes": 7,
+        "pending_episodes": 0,
+        "success_rate": 0.42857142857142855,
+        "score_mean": 0.35714285714285715,
+        "episode_step_mean": 1341.857142857143
+      },
+      {
+        "policy": "pi05",
+        "difficulty_label": "simple",
+        "episodes": 8,
+        "scored_episodes": 8,
+        "pending_episodes": 0,
+        "success_rate": 0.125,
+        "score_mean": 0.125,
+        "episode_step_mean": 863.75
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "output_root": "/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/robolab_repro_artifacts/roboplay_companion_20260621_074050_rekep_adapter_required",
+  "episode_results_jsonl": "/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/robolab_repro_artifacts/roboplay_companion_20260621_074050_rekep_adapter_required/episode_results.jsonl",
+  "policy": "rekep",
+  "status": "planner_adapter_required",
+  "reason": "ReKep local demos exist, but RoboLab needs a perception/keypoint extraction adapter plus a Franka+Robotiq execution controller before a 20-task RoboLab rollout can be scored.",
+  "num_tasks": 20,
+  "boundary": "These rows are placeholders for comparison bookkeeping. They are not simulation rollouts."
+}

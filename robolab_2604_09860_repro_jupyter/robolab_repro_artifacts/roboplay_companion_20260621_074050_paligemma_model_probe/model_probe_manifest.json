@@ -1,0 +1,6 @@
+{
+  "policy": "paligemma",
+  "status": "checkpoint_or_runner_missing",
+  "reason": "RoboLab runner supports PaliGemma only if the matching openpi-assets-simeval checkpoint and config are present.",
+  "rows": 20
+}

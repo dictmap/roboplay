@@ -1,0 +1,28 @@
+{
+  "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_ToolsPickingDrillTask",
+  "episode_results_jsonl": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_ToolsPickingDrillTask/episode_results.jsonl",
+  "episode_results_jsonl_nonempty": true,
+  "tasks": [
+    {
+      "task": "ToolsPickingDrillTask",
+      "task_dirs": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_ToolsPickingDrillTask/ToolsPickingDrillTask"
+      ],
+      "hdf5": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_ToolsPickingDrillTask/ToolsPickingDrillTask/run_0.hdf5"
+      ],
+      "videos": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_ToolsPickingDrillTask/ToolsPickingDrillTask/Select_the_cordless_drill_and_put_it_on_the_table_0_viewport.mp4",
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_ToolsPickingDrillTask/ToolsPickingDrillTask/Select_the_cordless_drill_and_put_it_on_the_table_0.mp4"
+      ],
+      "subtask_or_event_logs": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_ToolsPickingDrillTask/ToolsPickingDrillTask/log_0_env0.json"
+      ],
+      "env_cfg": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_ToolsPickingDrillTask/ToolsPickingDrillTask/env_cfg.json"
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true
+}

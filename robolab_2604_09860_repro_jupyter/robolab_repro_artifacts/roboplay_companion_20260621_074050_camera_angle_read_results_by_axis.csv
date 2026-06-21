@@ -1,0 +1,4 @@
+axis,episodes,successes,success_rate,episode_step_mean,score_mean,policy_inference_avg_ms_mean
+procedural,30,7,0.23333333333333334,2069.4666666666667,,
+relational,33,7,0.21212121212121213,1374.6363636363637,,
+visual,54,14,0.25925925925925924,1253.388888888889,,

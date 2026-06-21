@@ -1,0 +1,6 @@
+{
+  "policy": "groot_n1_5_3b",
+  "status": "adapter_required",
+  "reason": "GR00T checkpoints are not currently exposed as a RoboLab Pi0-family websocket action policy.",
+  "rows": 20
+}

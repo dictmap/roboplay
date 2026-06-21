@@ -1,0 +1,14 @@
+task_length,episodes,successes,success_rate,episode_step_mean,score_mean,policy_inference_avg_ms_mean
+10_atomic_conditions,1,0,0.0,1800.0,0.4000000059604645,12.0
+14_atomic_conditions,1,0,0.0,3600.0,0.75,12.0
+18_atomic_conditions,1,0,0.0,4500.0,0.0,12.0
+1_subtasks,8,3,0.375,640.875,0.375,12.0125
+2_atomic_conditions,8,3,0.375,640.875,0.375,12.0125
+2_subtasks,7,1,0.14285714285714285,1596.5714285714287,0.07142857142857142,12.014285714285714
+3_atomic_conditions,1,0,0.0,1350.0,0.0,12.0
+3_subtasks,2,1,0.5,1451.5,0.5,12.0
+4_atomic_conditions,7,1,0.14285714285714285,1596.5714285714287,0.07142857142857142,12.014285714285714
+5_subtasks,1,0,0.0,1800.0,0.4000000059604645,12.0
+6_atomic_conditions,1,1,1.0,1553.0,1.0,12.0
+7_subtasks,1,0,0.0,3600.0,0.75,12.0
+9_subtasks,1,0,0.0,4500.0,0.0,12.0

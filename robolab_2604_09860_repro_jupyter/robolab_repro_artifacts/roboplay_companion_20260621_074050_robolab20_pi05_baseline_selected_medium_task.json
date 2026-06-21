@@ -1,0 +1,442 @@
+{
+  "output_root": "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_merged",
+  "target_rate": 0.5,
+  "selected": {
+    "task_name": "AnimalsInBinTask",
+    "episodes": 1,
+    "success_rate": 0.0,
+    "score_mean": 0.0,
+    "distance_to_target": 0.5,
+    "difficulty_label": "simple",
+    "axes": [
+      "visual"
+    ],
+    "attributes": [
+      "semantics"
+    ],
+    "primary_objects_for_object_pose_variation": [
+      "lizard_figurine",
+      "lizard_figurine_01"
+    ]
+  },
+  "candidates": [
+    {
+      "task_name": "AnimalsInBinTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "lizard_figurine",
+        "lizard_figurine_01"
+      ]
+    },
+    {
+      "task_name": "BagelsOnPlateTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "bagel_00",
+        "bagel_06"
+      ]
+    },
+    {
+      "task_name": "BananaInBowlTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "visual"
+      ],
+      "attributes": [
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "banana"
+      ]
+    },
+    {
+      "task_name": "BananasInBinOneMoreTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "counting"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "banana",
+        "banana_01",
+        "banana_03"
+      ]
+    },
+    {
+      "task_name": "BananasInBinThreeTotalTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "counting"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "banana",
+        "banana_01",
+        "banana_03"
+      ]
+    },
+    {
+      "task_name": "BlackItemsInBinTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.4000000059604645,
+      "distance_to_target": 0.5,
+      "difficulty_label": "complex",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "color",
+        "sorting"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "keyboard",
+        "remote_control",
+        "computer_mouse",
+        "smartphone",
+        "glasses"
+      ]
+    },
+    {
+      "task_name": "BlockStackingSpecifiedOrderTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "complex",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "stacking",
+        "color"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "red_block",
+        "blue_block",
+        "green_block",
+        "yellow_block"
+      ]
+    },
+    {
+      "task_name": "ClampInRightBinTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "spatial"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "spring_clamp"
+      ]
+    },
+    {
+      "task_name": "CleanUpToysTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "complex",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "sorting",
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube",
+        "rubiks_cube_1",
+        "rubiks_cube_2",
+        "lizard_figurine",
+        "yellow_block",
+        "red_block",
+        "green_block",
+        "blue_block",
+        "lizard_figurine_01"
+      ]
+    },
+    {
+      "task_name": "CookingClearPlateTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "color",
+        "sorting"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "spoon_1",
+        "measuring_cups_1"
+      ]
+    },
+    {
+      "task_name": "CookingPickPastaToolTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "spatial",
+        "vague",
+        "color"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "pink_spaghetti_spoon"
+      ]
+    },
+    {
+      "task_name": "CubesAndBlocksInBinTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.75,
+      "distance_to_target": 0.5,
+      "difficulty_label": "complex",
+      "axes": [
+        "procedural",
+        "relational"
+      ],
+      "attributes": [
+        "sorting",
+        "conjunction"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "rubiks_cube",
+        "rubiks_cube_1",
+        "rubiks_cube_2",
+        "yellow_block",
+        "red_block",
+        "green_block",
+        "blue_block"
+      ]
+    },
+    {
+      "task_name": "FoodPackingByColorTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural",
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "spatial",
+        "sorting",
+        "color"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "mustard",
+        "coffee_can"
+      ]
+    },
+    {
+      "task_name": "NonHammerToolsInRightBinTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural",
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "spatial",
+        "sorting"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "cordless_drill",
+        "spring_clamp"
+      ]
+    },
+    {
+      "task_name": "PlasticBottlesInSquarePailTask",
+      "episodes": 1,
+      "success_rate": 1.0,
+      "score_mean": 1.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "complex",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "sorting",
+        "size"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "whitepackerbottle_a01",
+        "whitepackerbottle_a02",
+        "whitepackerbottle_a03"
+      ]
+    },
+    {
+      "task_name": "PutMugsOnShelfTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.5,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural",
+        "relational"
+      ],
+      "attributes": [
+        "affordance",
+        "spatial",
+        "counting"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "ceramic_mug",
+        "mug"
+      ]
+    },
+    {
+      "task_name": "ReorientJugTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "moderate",
+      "axes": [
+        "procedural",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "reorientation",
+        "affordance"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "reorienting_jug"
+      ]
+    },
+    {
+      "task_name": "ToolsPickingDrillTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "spatial",
+        "semantics"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "cordless_drill"
+      ]
+    },
+    {
+      "task_name": "ToolsPickingHammerTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "semantics",
+        "spatial",
+        "color"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "blue_hammer"
+      ]
+    },
+    {
+      "task_name": "YellowAndWhiteObjectsInBinTask",
+      "episodes": 1,
+      "success_rate": 0.0,
+      "score_mean": 0.0,
+      "distance_to_target": 0.5,
+      "difficulty_label": "simple",
+      "axes": [
+        "relational",
+        "visual"
+      ],
+      "attributes": [
+        "color",
+        "conjunction"
+      ],
+      "primary_objects_for_object_pose_variation": [
+        "mug",
+        "banana"
+      ]
+    }
+  ],
+  "note": "If no task has 0<success_rate<1, this selects the closest task to target_rate as a fallback."
+}

@@ -1,0 +1,6 @@
+{
+  "policy": "qwen_vl_alibaba",
+  "status": "not_action_policy",
+  "reason": "Qwen/Qwen-VL models are VLMs unless paired with a robot action head; not directly scoreable as RoboLab policy.",
+  "rows": 20
+}

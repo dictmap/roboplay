@@ -1,0 +1,4 @@
+axis,episode_step_mean,episodes,pending_episodes,policy,score_mean,scored_episodes,success_rate
+procedural,2172.9,10,0,pi05,0.26500000059604645,10,0.2
+relational,1433.3636363636363,11,0,pi05,0.29545454545454547,11,0.18181818181818182
+visual,1267.0,18,0,pi05,0.24444444477558136,18,0.2777777777777778

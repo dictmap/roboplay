@@ -1,0 +1,1088 @@
+{
+  "episode_files": [
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+  ],
+  "num_episode_rows": 60,
+  "groups": [
+    {
+      "task_name": "AnimalsInBinTask",
+      "env_name": "AnimalsInBinTask_randomize_external_camera",
+      "policy": "pi05",
+      "variant": "camera_external_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 1350.0,
+      "duration_mean": 90.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "AnimalsInBinTask",
+      "env_name": "AnimalsInBinTask_randomize_wrist_and_external_cam",
+      "policy": "pi05",
+      "variant": "camera_external_and_wrist_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 1350.0,
+      "duration_mean": 90.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "AnimalsInBinTask",
+      "env_name": "AnimalsInBinTask_randomize_wrist_cam",
+      "policy": "pi05",
+      "variant": "camera_wrist_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 1350.0,
+      "duration_mean": 90.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BagelsOnPlateTask",
+      "env_name": "BagelsOnPlateTask_randomize_external_camera",
+      "policy": "pi05",
+      "variant": "camera_external_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BagelsOnPlateTask",
+      "env_name": "BagelsOnPlateTask_randomize_wrist_and_external_cam",
+      "policy": "pi05",
+      "variant": "camera_external_and_wrist_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BagelsOnPlateTask",
+      "env_name": "BagelsOnPlateTask_randomize_wrist_cam",
+      "policy": "pi05",
+      "variant": "camera_wrist_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BananaInBowlTask",
+      "env_name": "BananaInBowlTask_randomize_external_camera",
+      "policy": "pi05",
+      "variant": "camera_external_randomized",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": null,
+      "episode_step_mean": 161.0,
+      "duration_mean": 10.733333333333333,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BananaInBowlTask",
+      "env_name": "BananaInBowlTask_randomize_wrist_and_external_cam",
+      "policy": "pi05",
+      "variant": "camera_external_and_wrist_randomized",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": null,
+      "episode_step_mean": 187.0,
+      "duration_mean": 12.466666666666667,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BananaInBowlTask",
+      "env_name": "BananaInBowlTask_randomize_wrist_cam",
+      "policy": "pi05",
+      "variant": "camera_wrist_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 750.0,
+      "duration_mean": 50.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BananasInBinOneMoreTask",
+      "env_name": "BananasInBinOneMoreTask_randomize_external_camera",
+      "policy": "pi05",
+      "variant": "camera_external_randomized",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": null,
+      "episode_step_mean": 235.0,
+      "duration_mean": 15.666666666666666,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BananasInBinOneMoreTask",
+      "env_name": "BananasInBinOneMoreTask_randomize_wrist_and_external_cam",
+      "policy": "pi05",
+      "variant": "camera_external_and_wrist_randomized",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": null,
+      "episode_step_mean": 123.0,
+      "duration_mean": 8.2,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BananasInBinOneMoreTask",
+      "env_name": "BananasInBinOneMoreTask_randomize_wrist_cam",
+      "policy": "pi05",
+      "variant": "camera_wrist_randomized",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": null,
+      "episode_step_mean": 287.0,
+      "duration_mean": 19.133333333333333,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BananasInBinThreeTotalTask",
+      "env_name": "BananasInBinThreeTotalTask_randomize_external_camera",
+      "policy": "pi05",
+      "variant": "camera_external_randomized",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": null,
+      "episode_step_mean": 286.0,
+      "duration_mean": 19.066666666666666,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BananasInBinThreeTotalTask",
+      "env_name": "BananasInBinThreeTotalTask_randomize_wrist_and_external_cam",
+      "policy": "pi05",
+      "variant": "camera_external_and_wrist_randomized",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": null,
+      "episode_step_mean": 212.0,
+      "duration_mean": 14.133333333333333,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BananasInBinThreeTotalTask",
+      "env_name": "BananasInBinThreeTotalTask_randomize_wrist_cam",
+      "policy": "pi05",
+      "variant": "camera_wrist_randomized",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": null,
+      "episode_step_mean": 164.0,
+      "duration_mean": 10.933333333333334,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BlackItemsInBinTask",
+      "env_name": "BlackItemsInBinTask_randomize_external_camera",
+      "policy": "pi05",
+      "variant": "camera_external_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 1800.0,
+      "duration_mean": 120.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BlackItemsInBinTask",
+      "env_name": "BlackItemsInBinTask_randomize_wrist_and_external_cam",
+      "policy": "pi05",
+      "variant": "camera_external_and_wrist_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 1800.0,
+      "duration_mean": 120.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BlackItemsInBinTask",
+      "env_name": "BlackItemsInBinTask_randomize_wrist_cam",
+      "policy": "pi05",
+      "variant": "camera_wrist_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 1800.0,
+      "duration_mean": 120.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BlockStackingSpecifiedOrderTask",
+      "env_name": "BlockStackingSpecifiedOrderTask_randomize_external_camera",
+      "policy": "pi05",
+      "variant": "camera_external_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 1350.0,
+      "duration_mean": 90.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BlockStackingSpecifiedOrderTask",
+      "env_name": "BlockStackingSpecifiedOrderTask_randomize_wrist_and_external_cam",
+      "policy": "pi05",
+      "variant": "camera_external_and_wrist_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 1350.0,
+      "duration_mean": 90.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "BlockStackingSpecifiedOrderTask",
+      "env_name": "BlockStackingSpecifiedOrderTask_randomize_wrist_cam",
+      "policy": "pi05",
+      "variant": "camera_wrist_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 1350.0,
+      "duration_mean": 90.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ClampInRightBinTask",
+      "env_name": "ClampInRightBinTask_randomize_external_camera",
+      "policy": "pi05",
+      "variant": "camera_external_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ClampInRightBinTask",
+      "env_name": "ClampInRightBinTask_randomize_wrist_and_external_cam",
+      "policy": "pi05",
+      "variant": "camera_external_and_wrist_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ClampInRightBinTask",
+      "env_name": "ClampInRightBinTask_randomize_wrist_cam",
+      "policy": "pi05",
+      "variant": "camera_wrist_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "CleanUpToysTask",
+      "env_name": "CleanUpToysTask_randomize_external_camera",
+      "policy": "pi05",
+      "variant": "camera_external_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 4500.0,
+      "duration_mean": 300.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "CleanUpToysTask",
+      "env_name": "CleanUpToysTask_randomize_wrist_and_external_cam",
+      "policy": "pi05",
+      "variant": "camera_external_and_wrist_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 4500.0,
+      "duration_mean": 300.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "CleanUpToysTask",
+      "env_name": "CleanUpToysTask_randomize_wrist_cam",
+      "policy": "pi05",
+      "variant": "camera_wrist_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 4500.0,
+      "duration_mean": 300.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "CookingClearPlateTask",
+      "env_name": "CookingClearPlateTask_randomize_external_camera",
+      "policy": "pi05",
+      "variant": "camera_external_randomized",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": null,
+      "episode_step_mean": 689.0,
+      "duration_mean": 45.93333333333333,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "CookingClearPlateTask",
+      "env_name": "CookingClearPlateTask_randomize_wrist_and_external_cam",
+      "policy": "pi05",
+      "variant": "camera_external_and_wrist_randomized",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": null,
+      "episode_step_mean": 391.0,
+      "duration_mean": 26.066666666666666,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "CookingClearPlateTask",
+      "env_name": "CookingClearPlateTask_randomize_wrist_cam",
+      "policy": "pi05",
+      "variant": "camera_wrist_randomized",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": null,
+      "episode_step_mean": 590.0,
+      "duration_mean": 39.333333333333336,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "CookingPickPastaToolTask",
+      "env_name": "CookingPickPastaToolTask_randomize_external_camera",
+      "policy": "pi05",
+      "variant": "camera_external_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "CookingPickPastaToolTask",
+      "env_name": "CookingPickPastaToolTask_randomize_wrist_and_external_cam",
+      "policy": "pi05",
+      "variant": "camera_external_and_wrist_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "CookingPickPastaToolTask",
+      "env_name": "CookingPickPastaToolTask_randomize_wrist_cam",
+      "policy": "pi05",
+      "variant": "camera_wrist_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "CubesAndBlocksInBinTask",
+      "env_name": "CubesAndBlocksInBinTask_randomize_external_camera",
+      "policy": "pi05",
+      "variant": "camera_external_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 3600.0,
+      "duration_mean": 240.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "CubesAndBlocksInBinTask",
+      "env_name": "CubesAndBlocksInBinTask_randomize_wrist_and_external_cam",
+      "policy": "pi05",
+      "variant": "camera_external_and_wrist_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 3600.0,
+      "duration_mean": 240.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "CubesAndBlocksInBinTask",
+      "env_name": "CubesAndBlocksInBinTask_randomize_wrist_cam",
+      "policy": "pi05",
+      "variant": "camera_wrist_randomized",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": null,
+      "episode_step_mean": 1756.0,
+      "duration_mean": 117.06666666666666,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "FoodPackingByColorTask",
+      "env_name": "FoodPackingByColorTask_randomize_external_camera",
+      "policy": "pi05",
+      "variant": "camera_external_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 1800.0,
+      "duration_mean": 120.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "FoodPackingByColorTask",
+      "env_name": "FoodPackingByColorTask_randomize_wrist_and_external_cam",
+      "policy": "pi05",
+      "variant": "camera_external_and_wrist_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 1800.0,
+      "duration_mean": 120.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "FoodPackingByColorTask",
+      "env_name": "FoodPackingByColorTask_randomize_wrist_cam",
+      "policy": "pi05",
+      "variant": "camera_wrist_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 1800.0,
+      "duration_mean": 120.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "NonHammerToolsInRightBinTask",
+      "env_name": "NonHammerToolsInRightBinTask_randomize_external_camera",
+      "policy": "pi05",
+      "variant": "camera_external_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 2700.0,
+      "duration_mean": 180.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "NonHammerToolsInRightBinTask",
+      "env_name": "NonHammerToolsInRightBinTask_randomize_wrist_and_external_cam",
+      "policy": "pi05",
+      "variant": "camera_external_and_wrist_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 2700.0,
+      "duration_mean": 180.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "NonHammerToolsInRightBinTask",
+      "env_name": "NonHammerToolsInRightBinTask_randomize_wrist_cam",
+      "policy": "pi05",
+      "variant": "camera_wrist_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 2700.0,
+      "duration_mean": 180.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "PlasticBottlesInSquarePailTask",
+      "env_name": "PlasticBottlesInSquarePailTask_randomize_external_camera",
+      "policy": "pi05",
+      "variant": "camera_external_randomized",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": null,
+      "episode_step_mean": 1261.0,
+      "duration_mean": 84.06666666666666,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "PlasticBottlesInSquarePailTask",
+      "env_name": "PlasticBottlesInSquarePailTask_randomize_wrist_and_external_cam",
+      "policy": "pi05",
+      "variant": "camera_external_and_wrist_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 2700.0,
+      "duration_mean": 180.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "PlasticBottlesInSquarePailTask",
+      "env_name": "PlasticBottlesInSquarePailTask_randomize_wrist_cam",
+      "policy": "pi05",
+      "variant": "camera_wrist_randomized",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": null,
+      "episode_step_mean": 439.0,
+      "duration_mean": 29.266666666666666,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "PutMugsOnShelfTask",
+      "env_name": "PutMugsOnShelfTask_randomize_external_camera",
+      "policy": "pi05",
+      "variant": "camera_external_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 2700.0,
+      "duration_mean": 180.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "PutMugsOnShelfTask",
+      "env_name": "PutMugsOnShelfTask_randomize_wrist_and_external_cam",
+      "policy": "pi05",
+      "variant": "camera_external_and_wrist_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 2700.0,
+      "duration_mean": 180.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "PutMugsOnShelfTask",
+      "env_name": "PutMugsOnShelfTask_randomize_wrist_cam",
+      "policy": "pi05",
+      "variant": "camera_wrist_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 2700.0,
+      "duration_mean": 180.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ReorientJugTask",
+      "env_name": "ReorientJugTask_randomize_external_camera",
+      "policy": "pi05",
+      "variant": "camera_external_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ReorientJugTask",
+      "env_name": "ReorientJugTask_randomize_wrist_and_external_cam",
+      "policy": "pi05",
+      "variant": "camera_external_and_wrist_randomized",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "score_mean": null,
+      "episode_step_mean": 708.0,
+      "duration_mean": 47.2,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ReorientJugTask",
+      "env_name": "ReorientJugTask_randomize_wrist_cam",
+      "policy": "pi05",
+      "variant": "camera_wrist_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ToolsPickingDrillTask",
+      "env_name": "ToolsPickingDrillTask_randomize_external_camera",
+      "policy": "pi05",
+      "variant": "camera_external_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ToolsPickingDrillTask",
+      "env_name": "ToolsPickingDrillTask_randomize_wrist_and_external_cam",
+      "policy": "pi05",
+      "variant": "camera_external_and_wrist_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ToolsPickingDrillTask",
+      "env_name": "ToolsPickingDrillTask_randomize_wrist_cam",
+      "policy": "pi05",
+      "variant": "camera_wrist_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ToolsPickingHammerTask",
+      "env_name": "ToolsPickingHammerTask_randomize_external_camera",
+      "policy": "pi05",
+      "variant": "camera_external_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ToolsPickingHammerTask",
+      "env_name": "ToolsPickingHammerTask_randomize_wrist_and_external_cam",
+      "policy": "pi05",
+      "variant": "camera_external_and_wrist_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "ToolsPickingHammerTask",
+      "env_name": "ToolsPickingHammerTask_randomize_wrist_cam",
+      "policy": "pi05",
+      "variant": "camera_wrist_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "YellowAndWhiteObjectsInBinTask",
+      "env_name": "YellowAndWhiteObjectsInBinTask_randomize_external_camera",
+      "policy": "pi05",
+      "variant": "camera_external_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "YellowAndWhiteObjectsInBinTask",
+      "env_name": "YellowAndWhiteObjectsInBinTask_randomize_wrist_and_external_cam",
+      "policy": "pi05",
+      "variant": "camera_external_and_wrist_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    },
+    {
+      "task_name": "YellowAndWhiteObjectsInBinTask",
+      "env_name": "YellowAndWhiteObjectsInBinTask_randomize_wrist_cam",
+      "policy": "pi05",
+      "variant": "camera_wrist_randomized",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "score_mean": null,
+      "episode_step_mean": 900.0,
+      "duration_mean": 60.0,
+      "policy_inference_avg_ms_mean": null,
+      "env_step_avg_ms_mean": null,
+      "events": {},
+      "source_files": [
+        "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+      ]
+    }
+  ]
+}

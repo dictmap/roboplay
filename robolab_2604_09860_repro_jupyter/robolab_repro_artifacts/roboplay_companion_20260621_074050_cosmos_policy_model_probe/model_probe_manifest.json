@@ -1,0 +1,6 @@
+{
+  "policy": "cosmos_policy",
+  "status": "adapter_required",
+  "reason": "Cosmos assets/checkpoints need task and action-schema adapter before Franka+Robotiq RoboLab rollout.",
+  "rows": 20
+}

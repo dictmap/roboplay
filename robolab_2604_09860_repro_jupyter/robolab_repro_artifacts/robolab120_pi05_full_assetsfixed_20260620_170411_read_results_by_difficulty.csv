@@ -1,4 +1,4 @@
-Attribute,Success,Success %,LCB %,UCB %,Total,Score(total),Score(fail),Time(s),Time σ,EE SPARC,SPARC σ,PathLen(m),Path σ,Speed(cm/s),Speed σ
-simple,21,32.8,22.6,45.1,64,0.414,0.128,26.02,17.62,-6.93,2.64,2.74,1.89,5.4,1.6
-moderate,10,25.6,14.6,41.2,39,0.466,0.282,22.53,13.51,-8.76,3.32,4.53,3.67,5.1,1.4
-complex,3,17.6,6.4,41.4,17,0.464,0.349,111.11,57.74,-10.80,2.68,8.31,4.30,4.8,1.2
+difficulty,episodes,successes,success_rate,episode_step_mean,score_mean,policy_inference_avg_ms_mean
+complex,17,3,0.17647058823529413,2570.5882352941176,0.46422969593721275,11.941176470588236
+moderate,39,10,0.2564102564102564,1359.7179487179487,0.4529914550292186,11.992307692307692
+simple,64,21,0.328125,781.984375,0.3828125,12.0078125

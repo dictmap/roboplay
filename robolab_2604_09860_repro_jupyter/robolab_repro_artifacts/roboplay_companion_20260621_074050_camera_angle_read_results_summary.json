@@ -1,0 +1,195 @@
+{
+  "inputs": [
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation"
+  ],
+  "task_matrix": "robolab_repro_artifacts/roboplay_companion_20260621_074050_robolab20_task_matrix.json",
+  "episode_files": [
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_camera_angle_camera_pose_variation/episode_results.jsonl"
+  ],
+  "episode_rows": 60,
+  "successes": 15,
+  "success_rate": 0.25,
+  "tables": {
+    "by_axis": "robolab_repro_artifacts/roboplay_companion_20260621_074050_camera_angle_read_results_by_axis.csv",
+    "by_difficulty": "robolab_repro_artifacts/roboplay_companion_20260621_074050_camera_angle_read_results_by_difficulty.csv",
+    "by_task_length": "robolab_repro_artifacts/roboplay_companion_20260621_074050_camera_angle_read_results_by_task_length.csv",
+    "by_task": "robolab_repro_artifacts/roboplay_companion_20260621_074050_camera_angle_read_results_by_task.csv"
+  },
+  "by_axis": [
+    {
+      "axis": "procedural",
+      "episodes": 30,
+      "successes": 7,
+      "success_rate": 0.23333333333333334,
+      "episode_step_mean": 2069.4666666666667,
+      "score_mean": null,
+      "policy_inference_avg_ms_mean": null
+    },
+    {
+      "axis": "relational",
+      "episodes": 33,
+      "successes": 7,
+      "success_rate": 0.21212121212121213,
+      "episode_step_mean": 1374.6363636363637,
+      "score_mean": null,
+      "policy_inference_avg_ms_mean": null
+    },
+    {
+      "axis": "visual",
+      "episodes": 54,
+      "successes": 14,
+      "success_rate": 0.25925925925925924,
+      "episode_step_mean": 1253.388888888889,
+      "score_mean": null,
+      "policy_inference_avg_ms_mean": null
+    }
+  ],
+  "by_difficulty": [
+    {
+      "difficulty": "complex",
+      "episodes": 15,
+      "successes": 3,
+      "success_rate": 0.2,
+      "episode_step_mean": 2420.4,
+      "score_mean": null,
+      "policy_inference_avg_ms_mean": null
+    },
+    {
+      "difficulty": "moderate",
+      "episodes": 21,
+      "successes": 10,
+      "success_rate": 0.47619047619047616,
+      "episode_step_mean": 1289.7619047619048,
+      "score_mean": null,
+      "policy_inference_avg_ms_mean": null
+    },
+    {
+      "difficulty": "simple",
+      "episodes": 24,
+      "successes": 2,
+      "success_rate": 0.08333333333333333,
+      "episode_step_mean": 889.5,
+      "score_mean": null,
+      "policy_inference_avg_ms_mean": null
+    }
+  ],
+  "by_task_length": [
+    {
+      "task_length": "10_atomic_conditions",
+      "episodes": 3,
+      "successes": 0,
+      "success_rate": 0.0,
+      "episode_step_mean": 1800.0,
+      "score_mean": null,
+      "policy_inference_avg_ms_mean": null
+    },
+    {
+      "task_length": "14_atomic_conditions",
+      "episodes": 3,
+      "successes": 1,
+      "success_rate": 0.3333333333333333,
+      "episode_step_mean": 2985.3333333333335,
+      "score_mean": null,
+      "policy_inference_avg_ms_mean": null
+    },
+    {
+      "task_length": "18_atomic_conditions",
+      "episodes": 3,
+      "successes": 0,
+      "success_rate": 0.0,
+      "episode_step_mean": 4500.0,
+      "score_mean": null,
+      "policy_inference_avg_ms_mean": null
+    },
+    {
+      "task_length": "1_subtasks",
+      "episodes": 24,
+      "successes": 9,
+      "success_rate": 0.375,
+      "episode_step_mean": 654.7083333333334,
+      "score_mean": null,
+      "policy_inference_avg_ms_mean": null
+    },
+    {
+      "task_length": "2_atomic_conditions",
+      "episodes": 24,
+      "successes": 9,
+      "success_rate": 0.375,
+      "episode_step_mean": 654.7083333333334,
+      "score_mean": null,
+      "policy_inference_avg_ms_mean": null
+    },
+    {
+      "task_length": "2_subtasks",
+      "episodes": 21,
+      "successes": 3,
+      "success_rate": 0.14285714285714285,
+      "episode_step_mean": 1558.095238095238,
+      "score_mean": null,
+      "policy_inference_avg_ms_mean": null
+    },
+    {
+      "task_length": "3_atomic_conditions",
+      "episodes": 3,
+      "successes": 0,
+      "success_rate": 0.0,
+      "episode_step_mean": 1350.0,
+      "score_mean": null,
+      "policy_inference_avg_ms_mean": null
+    },
+    {
+      "task_length": "3_subtasks",
+      "episodes": 6,
+      "successes": 2,
+      "success_rate": 0.3333333333333333,
+      "episode_step_mean": 1408.3333333333333,
+      "score_mean": null,
+      "policy_inference_avg_ms_mean": null
+    },
+    {
+      "task_length": "4_atomic_conditions",
+      "episodes": 21,
+      "successes": 3,
+      "success_rate": 0.14285714285714285,
+      "episode_step_mean": 1558.095238095238,
+      "score_mean": null,
+      "policy_inference_avg_ms_mean": null
+    },
+    {
+      "task_length": "5_subtasks",
+      "episodes": 3,
+      "successes": 0,
+      "success_rate": 0.0,
+      "episode_step_mean": 1800.0,
+      "score_mean": null,
+      "policy_inference_avg_ms_mean": null
+    },
+    {
+      "task_length": "6_atomic_conditions",
+      "episodes": 3,
+      "successes": 2,
+      "success_rate": 0.6666666666666666,
+      "episode_step_mean": 1466.6666666666667,
+      "score_mean": null,
+      "policy_inference_avg_ms_mean": null
+    },
+    {
+      "task_length": "7_subtasks",
+      "episodes": 3,
+      "successes": 1,
+      "success_rate": 0.3333333333333333,
+      "episode_step_mean": 2985.3333333333335,
+      "score_mean": null,
+      "policy_inference_avg_ms_mean": null
+    },
+    {
+      "task_length": "9_subtasks",
+      "episodes": 3,
+      "successes": 0,
+      "success_rate": 0.0,
+      "episode_step_mean": 4500.0,
+      "score_mean": null,
+      "policy_inference_avg_ms_mean": null
+    }
+  ]
+}

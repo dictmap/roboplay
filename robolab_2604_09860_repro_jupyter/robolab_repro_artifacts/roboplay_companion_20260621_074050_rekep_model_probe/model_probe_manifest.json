@@ -1,0 +1,6 @@
+{
+  "policy": "rekep",
+  "status": "planner_adapter_required",
+  "reason": "ReKep is a keypoint/planner method and needs perception plus low-level controller adapters before RoboLab scoring.",
+  "rows": 20
+}

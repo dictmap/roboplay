@@ -1,0 +1,214 @@
+{
+  "inputs": [
+    "robolab_repro_artifacts/roboplay_companion_20260621_074050_robolab20_pi05_baseline_task_run_manifest.jsonl"
+  ],
+  "task_matrix": "robolab_repro_artifacts/roboplay_companion_20260621_074050_robolab20_task_matrix.json",
+  "episode_files": [
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_AnimalsInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_BagelsOnPlateTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_BananaInBowlTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_BananasInBinOneMoreTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_BananasInBinThreeTotalTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_BlackItemsInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_BlockStackingSpecifiedOrderTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_ClampInRightBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_CleanUpToysTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_CookingClearPlateTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_CookingPickPastaToolTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_CubesAndBlocksInBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_FoodPackingByColorTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_NonHammerToolsInRightBinTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_PlasticBottlesInSquarePailTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_PutMugsOnShelfTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_ReorientJugTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_ToolsPickingDrillTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_ToolsPickingHammerTask/episode_results.jsonl",
+    "/home/yjl/codex_robolab_4090_20260619/RoboLab/output/roboplay_companion_20260621_074050_robolab20_pi05_baseline_YellowAndWhiteObjectsInBinTask/episode_results.jsonl"
+  ],
+  "episode_rows": 20,
+  "successes": 5,
+  "success_rate": 0.25,
+  "tables": {
+    "by_axis": "robolab_repro_artifacts/roboplay_companion_20260621_074050_pi05_baseline_read_results_by_axis.csv",
+    "by_difficulty": "robolab_repro_artifacts/roboplay_companion_20260621_074050_pi05_baseline_read_results_by_difficulty.csv",
+    "by_task_length": "robolab_repro_artifacts/roboplay_companion_20260621_074050_pi05_baseline_read_results_by_task_length.csv",
+    "by_task": "robolab_repro_artifacts/roboplay_companion_20260621_074050_pi05_baseline_read_results_by_task.csv"
+  },
+  "by_axis": [
+    {
+      "axis": "procedural",
+      "episodes": 10,
+      "successes": 2,
+      "success_rate": 0.2,
+      "episode_step_mean": 2172.9,
+      "score_mean": 0.26500000059604645,
+      "policy_inference_avg_ms_mean": 12.0
+    },
+    {
+      "axis": "relational",
+      "episodes": 11,
+      "successes": 2,
+      "success_rate": 0.18181818181818182,
+      "episode_step_mean": 1433.3636363636363,
+      "score_mean": 0.29545454545454547,
+      "policy_inference_avg_ms_mean": 11.99090909090909
+    },
+    {
+      "axis": "visual",
+      "episodes": 18,
+      "successes": 5,
+      "success_rate": 0.2777777777777778,
+      "episode_step_mean": 1267.0,
+      "score_mean": 0.24444444477558136,
+      "policy_inference_avg_ms_mean": 12.016666666666667
+    }
+  ],
+  "by_difficulty": [
+    {
+      "difficulty": "complex",
+      "episodes": 5,
+      "successes": 1,
+      "success_rate": 0.2,
+      "episode_step_mean": 2560.6,
+      "score_mean": 0.4300000011920929,
+      "policy_inference_avg_ms_mean": 12.0
+    },
+    {
+      "difficulty": "moderate",
+      "episodes": 7,
+      "successes": 3,
+      "success_rate": 0.42857142857142855,
+      "episode_step_mean": 1341.857142857143,
+      "score_mean": 0.35714285714285715,
+      "policy_inference_avg_ms_mean": 12.014285714285714
+    },
+    {
+      "difficulty": "simple",
+      "episodes": 8,
+      "successes": 1,
+      "success_rate": 0.125,
+      "episode_step_mean": 863.75,
+      "score_mean": 0.125,
+      "policy_inference_avg_ms_mean": 12.0125
+    }
+  ],
+  "by_task_length": [
+    {
+      "task_length": "10_atomic_conditions",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "episode_step_mean": 1800.0,
+      "score_mean": 0.4000000059604645,
+      "policy_inference_avg_ms_mean": 12.0
+    },
+    {
+      "task_length": "14_atomic_conditions",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "episode_step_mean": 3600.0,
+      "score_mean": 0.75,
+      "policy_inference_avg_ms_mean": 12.0
+    },
+    {
+      "task_length": "18_atomic_conditions",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "episode_step_mean": 4500.0,
+      "score_mean": 0.0,
+      "policy_inference_avg_ms_mean": 12.0
+    },
+    {
+      "task_length": "1_subtasks",
+      "episodes": 8,
+      "successes": 3,
+      "success_rate": 0.375,
+      "episode_step_mean": 640.875,
+      "score_mean": 0.375,
+      "policy_inference_avg_ms_mean": 12.0125
+    },
+    {
+      "task_length": "2_atomic_conditions",
+      "episodes": 8,
+      "successes": 3,
+      "success_rate": 0.375,
+      "episode_step_mean": 640.875,
+      "score_mean": 0.375,
+      "policy_inference_avg_ms_mean": 12.0125
+    },
+    {
+      "task_length": "2_subtasks",
+      "episodes": 7,
+      "successes": 1,
+      "success_rate": 0.14285714285714285,
+      "episode_step_mean": 1596.5714285714287,
+      "score_mean": 0.07142857142857142,
+      "policy_inference_avg_ms_mean": 12.014285714285714
+    },
+    {
+      "task_length": "3_atomic_conditions",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "episode_step_mean": 1350.0,
+      "score_mean": 0.0,
+      "policy_inference_avg_ms_mean": 12.0
+    },
+    {
+      "task_length": "3_subtasks",
+      "episodes": 2,
+      "successes": 1,
+      "success_rate": 0.5,
+      "episode_step_mean": 1451.5,
+      "score_mean": 0.5,
+      "policy_inference_avg_ms_mean": 12.0
+    },
+    {
+      "task_length": "4_atomic_conditions",
+      "episodes": 7,
+      "successes": 1,
+      "success_rate": 0.14285714285714285,
+      "episode_step_mean": 1596.5714285714287,
+      "score_mean": 0.07142857142857142,
+      "policy_inference_avg_ms_mean": 12.014285714285714
+    },
+    {
+      "task_length": "5_subtasks",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "episode_step_mean": 1800.0,
+      "score_mean": 0.4000000059604645,
+      "policy_inference_avg_ms_mean": 12.0
+    },
+    {
+      "task_length": "6_atomic_conditions",
+      "episodes": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "episode_step_mean": 1553.0,
+      "score_mean": 1.0,
+      "policy_inference_avg_ms_mean": 12.0
+    },
+    {
+      "task_length": "7_subtasks",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "episode_step_mean": 3600.0,
+      "score_mean": 0.75,
+      "policy_inference_avg_ms_mean": 12.0
+    },
+    {
+      "task_length": "9_subtasks",
+      "episodes": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "episode_step_mean": 4500.0,
+      "score_mean": 0.0,
+      "policy_inference_avg_ms_mean": 12.0
+    }
+  ]
+}

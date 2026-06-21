@@ -1,0 +1,9 @@
+{
+  "output_root": "/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/robolab_repro_artifacts/roboplay_companion_20260621_074050_robochallenge_pi_adapter_required",
+  "episode_results_jsonl": "/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/robolab_repro_artifacts/roboplay_companion_20260621_074050_robochallenge_pi_adapter_required/episode_results.jsonl",
+  "policy": "robochallenge_pi",
+  "status": "adapter_required",
+  "reason": "Local RoboChallenge pi05/Table30v2 ALOHA checkpoint exists, but it is not a RoboLab Franka+Robotiq joint-position websocket policy. A real RoboLab observation/action adapter is required before the 20-task rollout is meaningful.",
+  "num_tasks": 20,
+  "boundary": "These rows are placeholders for comparison bookkeeping. They are not simulation rollouts."
+}

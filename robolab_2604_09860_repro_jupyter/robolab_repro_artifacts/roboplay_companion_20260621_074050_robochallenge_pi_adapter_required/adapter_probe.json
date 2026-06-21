@@ -1,0 +1,10 @@
+{
+  "candidate_roots": [
+    "/home/yjl/robochallenge/repo",
+    "/home/yjl/robochallenge/openpi",
+    "/home/yjl/yjl/RoboChallenge/checkpoints/table30v2_multitask_baseline_aloha"
+  ],
+  "local_checkpoint_exists": true,
+  "robolab_rollout_started": false,
+  "blocking_reason": "Aloha/Table30v2 action and observation schema do not match RoboLab Pi0DroidJointposClient keys/actions."
+}

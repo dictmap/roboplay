@@ -1,0 +1,6 @@
+{
+  "policy": "pi05",
+  "status": "completed_in_phase_01",
+  "reason": "Pi05 direct RoboLab policy server; 20-task rollout completed in phase 01.",
+  "rows": 20
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "policy": "pi05",
+    "status": "completed_in_phase_01",
+    "reason": "Pi05 direct RoboLab policy server; 20-task rollout completed in phase 01.",
+    "out_root": "/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/robolab_repro_artifacts/roboplay_companion_20260621_074050_pi05_model_probe"
+  },
+  {
+    "policy": "robochallenge_pi",
+    "status": "adapter_required",
+    "reason": "Local RoboChallenge pi05/Table30v2 ALOHA checkpoint exists, but it is not a RoboLab Franka+Robotiq joint-position websocket policy.",
+    "out_root": "/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/robolab_repro_artifacts/roboplay_companion_20260621_074050_robochallenge_pi_model_probe"
+  },
+  {
+    "policy": "rekep",
+    "status": "planner_adapter_required",
+    "reason": "ReKep is a keypoint/planner method and needs perception plus low-level controller adapters before RoboLab scoring.",
+    "out_root": "/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/robolab_repro_artifacts/roboplay_companion_20260621_074050_rekep_model_probe"
+  },
+  {
+    "policy": "paligemma",
+    "status": "checkpoint_or_runner_missing",
+    "reason": "RoboLab runner supports PaliGemma only if the matching openpi-assets-simeval checkpoint and config are present.",
+    "out_root": "/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/robolab_repro_artifacts/roboplay_companion_20260621_074050_paligemma_model_probe"
+  },
+  {
+    "policy": "groot_n1_5_3b",
+    "status": "adapter_required",
+    "reason": "GR00T checkpoints are not currently exposed as a RoboLab Pi0-family websocket action policy.",
+    "out_root": "/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/robolab_repro_artifacts/roboplay_companion_20260621_074050_groot_n1_5_3b_model_probe"
+  },
+  {
+    "policy": "cosmos_policy",
+    "status": "adapter_required",
+    "reason": "Cosmos assets/checkpoints need task and action-schema adapter before Franka+Robotiq RoboLab rollout.",
+    "out_root": "/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/robolab_repro_artifacts/roboplay_companion_20260621_074050_cosmos_policy_model_probe"
+  },
+  {
+    "policy": "qwen_vl_alibaba",
+    "status": "not_action_policy",
+    "reason": "Qwen/Qwen-VL models are VLMs unless paired with a robot action head; not directly scoreable as RoboLab policy.",
+    "out_root": "/home/yjl/roboplay/robolab_2604_09860_repro_jupyter/robolab_repro_artifacts/roboplay_companion_20260621_074050_qwen_vl_alibaba_model_probe"
+  }
+]
