@@ -1,0 +1,528 @@
+{
+  "generated_at": "2026-06-22T13:17:58+08:00",
+  "root": "/home/yjl/roboplay/robolab_2604_09860_repro_jupyter",
+  "purpose": "adapter contract validation without Isaac Sim rollout",
+  "hard_action_contract": {
+    "shape": "[N,8]",
+    "columns": [
+      "panda_joint1",
+      "panda_joint2",
+      "panda_joint3",
+      "panda_joint4",
+      "panda_joint5",
+      "panda_joint6",
+      "panda_joint7",
+      "robotiq_gripper"
+    ]
+  },
+  "counts": {
+    "pass": 11,
+    "blocked_expected": 4,
+    "unexpected": 0
+  },
+  "cases": [
+    {
+      "case": "robolab_observation_minimal",
+      "status": "pass",
+      "detail": {
+        "image_shapes": {
+          "over_shoulder_left_camera": {
+            "shape": [
+              224,
+              224,
+              3
+            ],
+            "dtype": "uint8"
+          },
+          "over_shoulder_right_camera": {
+            "shape": [
+              224,
+              224,
+              3
+            ],
+            "dtype": "uint8"
+          },
+          "wrist_cam": {
+            "shape": [
+              224,
+              224,
+              3
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "proprio_shapes": {
+          "arm_joint_pos": [
+            7
+          ],
+          "gripper_pos": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "case": "franka_robotiq_Nx8_direct_contract",
+      "status": "pass",
+      "detail": {
+        "source": "pi05_or_gr00t_style",
+        "shape": [
+          4,
+          8
+        ],
+        "columns": [
+          "panda_joint1",
+          "panda_joint2",
+          "panda_joint3",
+          "panda_joint4",
+          "panda_joint5",
+          "panda_joint6",
+          "panda_joint7",
+          "robotiq_gripper"
+        ],
+        "scoreable": true
+      }
+    },
+    {
+      "case": "robochallenge_observation_bridge_aloha",
+      "status": "pass",
+      "detail": {
+        "source_robot": "aloha",
+        "scoreable": false,
+        "lossy_fields": [
+          "franka_joint7_dropped_for_6d_source_robot_state",
+          "dual_arm_state_synthesized_from_single_franka_arm"
+        ],
+        "required_next_steps": [
+          "calibrate camera names, resolution, and normalization against the concrete RoboChallenge checkpoint",
+          "retarget source robot action to Franka+Robotiq [N,8] or retrain a Franka action head",
+          "run non-scoring smoke before any RoboLab success-rate table"
+        ],
+        "payload": {
+          "prompt": "put the banana in the bowl",
+          "robot_type": "aloha",
+          "images": {
+            "cam_high": {
+              "shape": [
+                224,
+                224,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "cam_left_wrist": {
+              "shape": [
+                224,
+                224,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "cam_right_wrist": {
+              "shape": [
+                224,
+                224,
+                3
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "state": {
+            "shape": [
+              14
+            ],
+            "dtype": "float32"
+          },
+          "action_type": "joint"
+        }
+      }
+    },
+    {
+      "case": "robochallenge_observation_bridge_ur5",
+      "status": "pass",
+      "detail": {
+        "source_robot": "ur5",
+        "scoreable": false,
+        "lossy_fields": [
+          "franka_joint7_dropped_for_6d_source_robot_state"
+        ],
+        "required_next_steps": [
+          "calibrate camera names, resolution, and normalization against the concrete RoboChallenge checkpoint",
+          "retarget source robot action to Franka+Robotiq [N,8] or retrain a Franka action head",
+          "run non-scoring smoke before any RoboLab success-rate table"
+        ],
+        "payload": {
+          "prompt": "put the banana in the bowl",
+          "robot_type": "ur5",
+          "images": {
+            "cam_global": {
+              "shape": [
+                224,
+                224,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "cam_arm": {
+              "shape": [
+                224,
+                224,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "cam_side": {
+              "shape": [
+                224,
+                224,
+                3
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "state": {
+            "shape": [
+              7
+            ],
+            "dtype": "float32"
+          },
+          "action_type": "leftjoint"
+        }
+      }
+    },
+    {
+      "case": "robochallenge_observation_bridge_arx5",
+      "status": "pass",
+      "detail": {
+        "source_robot": "arx5",
+        "scoreable": false,
+        "lossy_fields": [
+          "franka_joint7_dropped_for_6d_source_robot_state"
+        ],
+        "required_next_steps": [
+          "calibrate camera names, resolution, and normalization against the concrete RoboChallenge checkpoint",
+          "retarget source robot action to Franka+Robotiq [N,8] or retrain a Franka action head",
+          "run non-scoring smoke before any RoboLab success-rate table"
+        ],
+        "payload": {
+          "prompt": "put the banana in the bowl",
+          "robot_type": "arx5",
+          "images": {
+            "cam_global": {
+              "shape": [
+                224,
+                224,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "cam_arm": {
+              "shape": [
+                224,
+                224,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "cam_side": {
+              "shape": [
+                224,
+                224,
+                3
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "state": {
+            "shape": [
+              7
+            ],
+            "dtype": "float32"
+          },
+          "action_type": "leftjoint"
+        }
+      }
+    },
+    {
+      "case": "robochallenge_observation_bridge_franka_compat_8d",
+      "status": "pass",
+      "detail": {
+        "source_robot": "franka_compat_8d",
+        "scoreable": false,
+        "lossy_fields": [],
+        "required_next_steps": [
+          "calibrate camera names, resolution, and normalization against the concrete RoboChallenge checkpoint",
+          "retarget source robot action to Franka+Robotiq [N,8] or retrain a Franka action head",
+          "run non-scoring smoke before any RoboLab success-rate table"
+        ],
+        "payload": {
+          "prompt": "put the banana in the bowl",
+          "robot_type": "franka_compat_8d",
+          "images": {
+            "cam_global": {
+              "shape": [
+                224,
+                224,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "cam_arm": {
+              "shape": [
+                224,
+                224,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "cam_side": {
+              "shape": [
+                224,
+                224,
+                3
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "state": {
+            "shape": [
+              8
+            ],
+            "dtype": "float32"
+          },
+          "action_type": "franka_jointpos"
+        }
+      }
+    },
+    {
+      "case": "robochallenge_aloha_14d_requires_retarget",
+      "status": "blocked_expected",
+      "error_type": "RetargetRequired",
+      "error": "aloha is dual-arm 14D; selecting the right 7D arm still leaves a 6-joint-source-to-7-joint-Franka retarget problem. Use a calibrated robot retargeter, IK/task-space bridge, or retrain a Franka+Robotiq action head."
+    },
+    {
+      "case": "robochallenge_ur5_7d_requires_retarget",
+      "status": "blocked_expected",
+      "error_type": "RetargetRequired",
+      "error": "ur5 is 7D [6 joints + gripper], not Franka 7 joints + Robotiq gripper. Use a calibrated robot retargeter, IK/task-space bridge, or retrain a Franka+Robotiq action head."
+    },
+    {
+      "case": "robochallenge_ur5_placeholder_shape_only",
+      "status": "pass",
+      "detail": {
+        "source_robot": "ur5",
+        "scoreable": false,
+        "lossy_fields": [
+          "placeholder_joint7_zero",
+          "source_robot_kinematics_not_retargeted"
+        ],
+        "required_next_steps": [
+          "replace placeholder with calibrated retargeter or retrained action head before scoring"
+        ],
+        "payload": {
+          "action_chunk": {
+            "shape": [
+              3,
+              8
+            ],
+            "dtype": "float32"
+          },
+          "contract": [
+            "panda_joint1",
+            "panda_joint2",
+            "panda_joint3",
+            "panda_joint4",
+            "panda_joint5",
+            "panda_joint6",
+            "panda_joint7",
+            "robotiq_gripper"
+          ]
+        }
+      }
+    },
+    {
+      "case": "rekep_requirement_inspection_minimal",
+      "status": "pass",
+      "detail": {
+        "rgb": {
+          "over_shoulder_left_camera": {
+            "shape": [
+              224,
+              224,
+              3
+            ],
+            "dtype": "uint8"
+          },
+          "over_shoulder_right_camera": {
+            "shape": [
+              224,
+              224,
+              3
+            ],
+            "dtype": "uint8"
+          },
+          "wrist_cam": {
+            "shape": [
+              224,
+              224,
+              3
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "depth": {},
+        "segmentation": {},
+        "camera": {},
+        "missing": [
+          "depth_or_pointcloud",
+          "segmentation_or_object_masks",
+          "camera_intrinsics_extrinsics"
+        ]
+      }
+    },
+    {
+      "case": "rekep_missing_depth_seg_camera_requires_planner_bridge",
+      "status": "blocked_expected",
+      "error_type": "PlannerBridgeRequired",
+      "error": "ReKep needs perception bridge before scoring; missing: depth_or_pointcloud, segmentation_or_object_masks, camera_intrinsics_extrinsics"
+    },
+    {
+      "case": "rekep_rich_perception_bundle_still_not_scoreable",
+      "status": "pass",
+      "detail": {
+        "scoreable": false,
+        "missing": [],
+        "required_next_steps": [
+          "run keypoint proposal on RGB-D and masks",
+          "bind 2D keypoints to 3D RoboLab/Isaac coordinates",
+          "generate and solve ReKep constraints",
+          "convert end-effector path to Franka+Robotiq [N,8] through IK/motion planner"
+        ],
+        "payload": {
+          "instruction": "put the banana in the bowl",
+          "perception_report": {
+            "rgb": {
+              "over_shoulder_left_camera": {
+                "shape": [
+                  224,
+                  224,
+                  3
+                ],
+                "dtype": "uint8"
+              },
+              "over_shoulder_right_camera": {
+                "shape": [
+                  224,
+                  224,
+                  3
+                ],
+                "dtype": "uint8"
+              },
+              "wrist_cam": {
+                "shape": [
+                  224,
+                  224,
+                  3
+                ],
+                "dtype": "uint8"
+              }
+            },
+            "depth": {
+              "over_shoulder_left_camera": {
+                "shape": [
+                  224,
+                  224
+                ],
+                "dtype": "float32"
+              }
+            },
+            "segmentation": {
+              "object_masks": {
+                "shape": [
+                  4,
+                  224,
+                  224
+                ],
+                "dtype": "uint8"
+              }
+            },
+            "camera": {
+              "intrinsics": {
+                "shape": [
+                  3,
+                  3
+                ],
+                "dtype": "float32"
+              },
+              "extrinsics": {
+                "shape": [
+                  4,
+                  4
+                ],
+                "dtype": "float32"
+              }
+            },
+            "missing": []
+          }
+        }
+      }
+    },
+    {
+      "case": "rekep_stage_plan_schema",
+      "status": "pass",
+      "detail": {
+        "instruction": "put the banana in the bowl",
+        "expected_intermediates": [
+          "rgbd_observation_bundle",
+          "object_masks_or_semantic_ids",
+          "2d_keypoints",
+          "3d_keypoints_in_world",
+          "language_conditioned_constraints",
+          "subgoal_sequence",
+          "end_effector_pose_path",
+          "franka_robotiq_action_chunk_Nx8"
+        ],
+        "success_metric": "same RoboLab episode_results.jsonl/subtask predicates as VLA policies",
+        "method_type": "planner_baseline_not_step_policy"
+      }
+    },
+    {
+      "case": "rekep_eef_path_requires_ik",
+      "status": "blocked_expected",
+      "error_type": "PlannerBridgeRequired",
+      "error": "ReKep eef path needs a Franka IK/motion-planner bridge before scoring."
+    },
+    {
+      "case": "rekep_eef_placeholder_shape_only",
+      "status": "pass",
+      "detail": {
+        "scoreable": false,
+        "missing": [
+          "franka_ik_motion_planner"
+        ],
+        "required_next_steps": [
+          "replace placeholder with IK/RMPFlow/cuRobo-generated joint positions"
+        ],
+        "payload": {
+          "action_chunk": {
+            "shape": [
+              2,
+              8
+            ],
+            "dtype": "float32"
+          },
+          "contract": [
+            "panda_joint1",
+            "panda_joint2",
+            "panda_joint3",
+            "panda_joint4",
+            "panda_joint5",
+            "panda_joint6",
+            "panda_joint7",
+            "robotiq_gripper"
+          ]
+        }
+      }
+    }
+  ]
+}

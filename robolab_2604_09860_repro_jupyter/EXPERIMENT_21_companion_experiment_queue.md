@@ -1035,3 +1035,15 @@
 
 本补充专门回答：Pi05 tuned、Pi05 base-DROID、RoboChallenge pi、ReKep、GR00T、Cosmos、Qwen/阿里模型之间的接口差异；`step 571/900` 与 `395/2700` 的含义；adapter-required 模型如何优化成可跑 RoboLab 的 `[N,8]` Franka+Robotiq action chunk；以及当前结果为何如此、训练数据应该怎么改。
 
+<!-- ROBOPLAY_ADAPTER_CONTRACT_UPDATE_START -->
+
+## 2026-06-22 08:35 - Adapter 契约验证补录
+
+- 新增文档：`EXPERIMENT_24_adapter_contract_validation.md`
+- 新增硬接口契约：`robolab_repro_artifacts/adapter_contracts/franka_robotiq_jointpos_contract.json`
+- 新增验证脚本：`scripts/validate_adapter_contracts.py`
+- 新增验证输出：`robolab_repro_artifacts/adapter_contracts/roboplay_companion_20260621_074050_adapter_contract_validation.json`
+
+结论：RoboChallenge/ReKep 已从“口头 adapter required”推进为可运行门禁。任何模型只有输出真实 Franka+Robotiq `[N,8]`，且不是 placeholder retarget，才允许进入 RoboLab 成功率表。
+
+<!-- ROBOPLAY_ADAPTER_CONTRACT_UPDATE_END -->

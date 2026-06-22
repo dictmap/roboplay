@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-06-22T08:35:00+08:00",
+  "name": "RoboLab Franka+Robotiq joint-position action contract",
+  "action_contract": {
+    "shape": "[N,8]",
+    "columns": [
+      "panda_joint1",
+      "panda_joint2",
+      "panda_joint3",
+      "panda_joint4",
+      "panda_joint5",
+      "panda_joint6",
+      "panda_joint7",
+      "robotiq_gripper"
+    ],
+    "scoreable_rule": "Only real policy/planner outputs satisfying [N,8] without placeholder retarget can enter RoboLab success-rate tables."
+  },
+  "observation_contract": {
+    "images": [
+      "image_obs.over_shoulder_left_camera",
+      "image_obs.over_shoulder_right_camera",
+      "image_obs.wrist_cam"
+    ],
+    "proprio": [
+      "proprio_obs.arm_joint_pos[...,7]",
+      "proprio_obs.gripper_pos[...,1]"
+    ],
+    "planner_optional": [
+      "depth_obs",
+      "segmentation_obs/object_masks",
+      "camera_obs intrinsics/extrinsics",
+      "ee_pos",
+      "ee_quat"
+    ]
+  },
+  "source_model_status": {
+    "pi05_robolab_tuned": "direct_scoreable_baseline",
+    "gr00t_droid": "client_can_emit_Nx8_but_current_no_flash_fallback_needs_official_server_rerun",
+    "cosmos3_nano_policy_droid": "interface_theoretically_compatible_but_4090_24gb_oom",
+    "robochallenge_aloha_table30v2": "dual_arm_14d_retarget_or_retrain_action_head_required",
+    "robochallenge_ur5_arx5": "single_arm_7d_retarget_or_retrain_action_head_required",
+    "rekep": "planner_baseline_requires_rgbd_seg_keypoints_ik_motion_planner_bridge",
+    "qwen_alibaba_vlm": "not_action_policy_requires_action_head_or_planner_bridge"
+  }
+}

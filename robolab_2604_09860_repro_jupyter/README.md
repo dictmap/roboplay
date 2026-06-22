@@ -35,6 +35,8 @@
 - `FINAL_ROBOLAB120_RESULTS_20260621.md`: Pi05 full RoboLab-120 final recap and cross-document update guide. Embedded in the notebook.
 - `CURRENT_ROBOLAB120_STATUS.md`: final RTX 4090 / Pi05 / RoboLab-120 checkpoint, with 120/120 artifact verification, success tables, integrity-check note, and model prefetch status. Embedded in the notebook.
 - `MODEL_DOWNLOADS_STATUS.md`: baseline model download/prefetch matrix for Cosmos, GR00T, Qwen and PaliGemma.
+- `EXPERIMENT_23_policy_interface_and_result_analysis.md`: policy interface boundary analysis for Pi05, RoboChallenge, ReKep, GR00T, Cosmos, PaliGemma and Qwen/Alibaba VLMs.
+- `EXPERIMENT_24_adapter_contract_validation.md`: executable adapter contract gate for RoboChallenge/ReKep against RoboLab Franka+Robotiq `[N,8]`.
 - `REMOTE_EVIDENCE_MANIFEST.md`: final evidence-boundary manifest explaining which proof is committed to GitHub and which raw artifacts remain on the RTX 4090.
 - `robolab_repro_artifacts/current_robolab120_status.json`: machine-readable status for the current full-120 run.
 - `SAMPLE_VIDEOS.md`: small GitHub-browsable sample video index. MP4 files live under `sample_videos/`.
@@ -99,6 +101,8 @@
 - `FINAL_ROBOLAB120_RESULTS_20260621.md`: Pi05 full RoboLab-120 final recap and cross-document update guide. Embedded in the notebook.
 - `CURRENT_ROBOLAB120_STATUS.md`: final RTX 4090 / Pi05 / RoboLab-120 checkpoint, with 120/120 artifact verification, success tables, integrity-check note, and model prefetch status. Embedded in the notebook.
 - `MODEL_DOWNLOADS_STATUS.md`: baseline model download/prefetch matrix for Cosmos, GR00T, Qwen and PaliGemma.
+- `EXPERIMENT_23_policy_interface_and_result_analysis.md`: policy interface boundary analysis for Pi05, RoboChallenge, ReKep, GR00T, Cosmos, PaliGemma and Qwen/Alibaba VLMs.
+- `EXPERIMENT_24_adapter_contract_validation.md`: executable adapter contract gate for RoboChallenge/ReKep against RoboLab Franka+Robotiq `[N,8]`.
 
 ## 使用方式
 

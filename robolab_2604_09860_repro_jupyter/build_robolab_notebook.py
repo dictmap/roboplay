@@ -437,6 +437,8 @@ def main() -> None:
 - `FINAL_ROBOLAB120_RESULTS_20260621.md`: Pi05 full RoboLab-120 final recap and cross-document update guide. Embedded in the notebook.
 - `CURRENT_ROBOLAB120_STATUS.md`: final RTX 4090 / Pi05 / RoboLab-120 checkpoint, with 120/120 artifact verification, success tables, integrity-check note, and model prefetch status. Embedded in the notebook.
 - `MODEL_DOWNLOADS_STATUS.md`: baseline model download/prefetch matrix for Cosmos, GR00T, Qwen and PaliGemma.
+- `EXPERIMENT_23_policy_interface_and_result_analysis.md`: policy interface boundary analysis for Pi05, RoboChallenge, ReKep, GR00T, Cosmos, PaliGemma and Qwen/Alibaba VLMs.
+- `EXPERIMENT_24_adapter_contract_validation.md`: executable adapter contract gate for RoboChallenge/ReKep against RoboLab Franka+Robotiq `[N,8]`.
             - `BananaInBowlTask` 的 headless smoke 已完成 2 step 并导出 episode log。这里的 `success: False` 是空动作/no-policy 运行的预期结果，不代表策略评测失败。
             - 已扩展到累计 21 个 no-policy 初始化 smoke，覆盖语义、颜色、空间关系、顺序组合、重定向、堆叠等任务属性；这些仍是环境初始化与日志导出验证，不是策略成功率。
             - README 中的 `uv run pytest tests/` 在当前 HEAD 返回 4，因为仓库没有 `tests/` 路径；这应记录为 README 与仓库当前文件面的不一致。
@@ -3969,6 +3971,8 @@ def main() -> None:
         md_file("FINAL_ROBOLAB120_RESULTS_20260621.md"),
         md_file("CURRENT_ROBOLAB120_STATUS.md"),
         md_file("MODEL_DOWNLOADS_STATUS.md"),
+        md_file("EXPERIMENT_23_policy_interface_and_result_analysis.md"),
+        md_file("EXPERIMENT_24_adapter_contract_validation.md"),
         md_file("REMOTE_EVIDENCE_MANIFEST.md"),
         md_file("SAMPLE_VIDEOS.md"),
         md(
@@ -5245,6 +5249,8 @@ def main() -> None:
 - `FINAL_ROBOLAB120_RESULTS_20260621.md`: Pi05 full RoboLab-120 final recap and cross-document update guide. Embedded in the notebook.
 - `CURRENT_ROBOLAB120_STATUS.md`: final RTX 4090 / Pi05 / RoboLab-120 checkpoint, with 120/120 artifact verification, success tables, integrity-check note, and model prefetch status. Embedded in the notebook.
 - `MODEL_DOWNLOADS_STATUS.md`: baseline model download/prefetch matrix for Cosmos, GR00T, Qwen and PaliGemma.
+- `EXPERIMENT_23_policy_interface_and_result_analysis.md`: policy interface boundary analysis for Pi05, RoboChallenge, ReKep, GR00T, Cosmos, PaliGemma and Qwen/Alibaba VLMs.
+- `EXPERIMENT_24_adapter_contract_validation.md`: executable adapter contract gate for RoboChallenge/ReKep against RoboLab Franka+Robotiq `[N,8]`.
 - `REMOTE_EVIDENCE_MANIFEST.md`: final evidence-boundary manifest explaining which proof is committed to GitHub and which raw artifacts remain on the RTX 4090.
 - `robolab_repro_artifacts/current_robolab120_status.json`: machine-readable status for the current full-120 run.
 - `SAMPLE_VIDEOS.md`: small GitHub-browsable sample video index. MP4 files live under `sample_videos/`.
@@ -5309,6 +5315,8 @@ def main() -> None:
 - `FINAL_ROBOLAB120_RESULTS_20260621.md`: Pi05 full RoboLab-120 final recap and cross-document update guide. Embedded in the notebook.
 - `CURRENT_ROBOLAB120_STATUS.md`: final RTX 4090 / Pi05 / RoboLab-120 checkpoint, with 120/120 artifact verification, success tables, integrity-check note, and model prefetch status. Embedded in the notebook.
 - `MODEL_DOWNLOADS_STATUS.md`: baseline model download/prefetch matrix for Cosmos, GR00T, Qwen and PaliGemma.
+- `EXPERIMENT_23_policy_interface_and_result_analysis.md`: policy interface boundary analysis for Pi05, RoboChallenge, ReKep, GR00T, Cosmos, PaliGemma and Qwen/Alibaba VLMs.
+- `EXPERIMENT_24_adapter_contract_validation.md`: executable adapter contract gate for RoboChallenge/ReKep against RoboLab Franka+Robotiq `[N,8]`.
 
 ## 使用方式
 
